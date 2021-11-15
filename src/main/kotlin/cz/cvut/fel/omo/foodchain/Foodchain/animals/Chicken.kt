@@ -1,4 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.animals
 
-class Chicken : BaseAnimal(){
+import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+
+class Chicken(weight: Double, feed: List<Crop>, age: Int) : BaseAnimal(weight, feed, age){
 }

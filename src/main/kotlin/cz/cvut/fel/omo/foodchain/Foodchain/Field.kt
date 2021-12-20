@@ -9,13 +9,11 @@ class Field {
     // TODO doba rustu
 
     private var crop : Crop
-    private var owner :Grower
     private val capacity : Int
     private var isRaised : Boolean = true
 
-    constructor(crop: Crop, owner: Grower, capacity: Int) {
+    constructor(crop: Crop, capacity: Int) {
         this.crop = crop
-        this.owner = owner
         this.capacity = capacity
     }
 

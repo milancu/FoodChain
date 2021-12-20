@@ -1,7 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.*
-import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 
 class Generator {
@@ -25,20 +25,28 @@ class Generator {
     }
 
     fun generateField() : Field{
-        return TODO()
+        var capacity = (1000..10000).random()
+        return Field(generateCrop(capacity), capacity)
     }
 
     fun generateFields() : List<Field>{
-        //random od 1..10
-        return TODO()
+        var listOfField : List<Field> = emptyList();
+        for (i in 1..(2..10).random()) {
+            listOfField.toMutableList().add(generateField())
+        }
+        return listOfField
     }
 
-    fun generateCrop() : Crop {
-        return TODO()
+    fun generateCrop(capacity : Int) : Crop {
+        var crop = CropName.getCropName()
+        return Crop(crop, capacity, 2)
     }
 
     fun generateCrops() : List<Crop>{
-        //random 10..30
-        return TODO();
+        var listOfCrop : List<Crop> = emptyList();
+        for (i in 10..(11..30).random()) {
+            listOfCrop.toMutableList().add(generateCrop((1000..10000).random()))
+        }
+        return listOfCrop
     }
 }

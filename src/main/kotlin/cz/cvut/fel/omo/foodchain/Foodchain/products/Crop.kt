@@ -1,26 +1,27 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.products
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Code
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import java.util.*
 
 class Crop {
-    private val name: String
+    private val name: CropName
     private var amount: Int
-    private val code : Code
+    private val uuid : UUID
     private var shopPrice : Double
-    private var productionCost : Int
+    private var productionCost : Double
     private val growthTime : Int
 
-    constructor(name: String, amount: Int, code: Code, shopPrice: Double, productionCost: Int, growthTime: Int) {
+    constructor(name: CropName, amount: Int, growthTime: Int) {
         this.name = name
         this.amount = amount
-        this.code = code
-        this.shopPrice = shopPrice
-        this.productionCost = productionCost
-        this.growthTime = growthTime
+        this.uuid = UUID.randomUUID()
+        this.shopPrice = name.shopPrice
+        this.productionCost = shopPrice * 0.01
+        this.growthTime = name.growthTime
     }
 
-    fun getName() : String{
+    fun getName() : CropName{
         return name
     }
 

@@ -2,16 +2,15 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 
-class Transport(subjectName : String, identier : Int, location : String, amountOfMoney : Double)
-    : BaseParty(subjectName, identier, location, amountOfMoney) {
-
+class Transport{
     companion object TransportCompany {
+        var name : String = "Transport S.R.O"
+        var identifier : String = "12345678"
+        var amountOfMoney : Double = 10000.00
+        var cropSupplies : List<Crop> = emptyList()
 
-        private var cropSupplies : List<Crop> = emptyList()
-
-        fun create(): Transport = TODO() //generator
-
-        fun getCropSuuplies() : List<Crop>{
+        fun transportCropSuplies() : List<Crop>{
+            amountOfMoney
             return cropSupplies
         }
 

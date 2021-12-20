@@ -14,8 +14,6 @@ open class BaseParty {
     protected val location : String
     protected var amountOfMoney : Double
 
-
-
     constructor(subjectName: String, identifier: Int, location: String, amountOfMoney: Double) {
         this.subjectName = subjectName
         this.identifier = identifier

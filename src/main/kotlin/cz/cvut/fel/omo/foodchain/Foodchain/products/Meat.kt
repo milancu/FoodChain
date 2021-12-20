@@ -19,4 +19,22 @@ class Meat {
         this.productionCost = productionCost
         this.amount = amount
     }
+
+    fun getType () : MeatType{
+        return this.type
+    }
+
+
+    fun getShopPrice() : Double{
+        return this.shopPrice
+    }
+
+    fun getProductionCost() : Double{
+        return this.productionCost
+    }
+
+    fun getAmount() : Double{
+        return this.amount
+    }
+
 }

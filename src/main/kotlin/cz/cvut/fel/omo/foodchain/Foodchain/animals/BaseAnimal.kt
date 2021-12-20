@@ -5,7 +5,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 
-open class BaseAnimal {
+open class BaseAnimal(animalType: AnimalType) {
     var weight: Double // TODO val podle toho, jestli budeme pracovat s vyvojem zvirete
     private var feed: CropType
     private var foodConsumption: Int
@@ -13,7 +13,7 @@ open class BaseAnimal {
     private var price: Double
     var animalName: String
 
-    constructor(animalType: AnimalType) {
+    init {
         when (animalType.animalName) {
             "Cow" -> {
                 this.weight = (150000..600000).random().toDouble()
@@ -63,14 +63,7 @@ open class BaseAnimal {
                 this.price = 1000.00
                 this.animalName = "Bee"
             }
-            else -> {
-                this.weight = (150000..600000).random().toDouble()
-                this.feed = CropType.CEREAL
-                this.foodConsumption = (7..10).random()
-                this.age = (1..10).random()
-                this.price = 1000.00
-                this.animalName = ""
-            }
+            else -> throw Exception("unexpected type")
         }
     }
 

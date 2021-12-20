@@ -4,7 +4,6 @@ import java.util.*
 
 enum class AnimalType(var animalName: String) {
 
-
     COW("Cow"),
     PIG("Pig"),
     CHICKEN("Chicken"),

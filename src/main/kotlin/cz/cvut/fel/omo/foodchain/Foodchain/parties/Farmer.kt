@@ -6,7 +6,11 @@ class Farmer(subjectName : String, identier : Int, location : String, amountOfMo
     : BaseParty(subjectName, identier, location, amountOfMoney) {
 
 
-    private var resources : List<Crop> = setInitialResources()
+    var resources : List<Crop> = setInitialResources()
+        get() = field
+        set(value){
+            resources = value
+    }
 
     fun setInitialResources() : List<Crop>{
              var initialResources : List<Crop> = TODO()
@@ -14,7 +18,14 @@ class Farmer(subjectName : String, identier : Int, location : String, amountOfMo
              return initialResources
        }
 
-    set(feed : Crop){
-
+    fun decreaseResource(feed : Crop) {
+        for(resource in resources){
+            if(resource.name == feed.name){
+                resource.amount = feed.amount
+            }
+        }
     }
+
+
+
 }

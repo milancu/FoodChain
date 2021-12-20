@@ -20,6 +20,11 @@ open class BaseAnimal {
 
     // funkce eat
     fun eatFeed(owner : Farmer, feed : Crop){
-        owner.
+
+        for(resource in owner.resources){
+            if(resource.name == feed.name && resource.amount >= feed.amount){
+                owner.decreaseResource(feed)
+            }
+        }
     }
 }

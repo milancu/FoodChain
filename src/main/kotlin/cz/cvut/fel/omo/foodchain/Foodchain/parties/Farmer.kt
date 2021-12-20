@@ -7,14 +7,15 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 class Farmer(subjectName: String, identier: Int, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, identier, location, amountOfMoney) {
 
-    var resources: List<Crop> = setInitialResources()
+    private var resources: List<Crop> = setInitialResources()
 
-    var animals: List<BaseAnimal> = setInitialAnimals()
+    private var animals: List<BaseAnimal> = setInitialAnimals()
+
+    private var animalsToProcessing: List<BaseAnimal> = animalsToProcessing();
 
     fun setInitialResources(): List<Crop> {
-        var initialResources: List<Crop> = TODO()
-        // TODO podle potravin
-        return initialResources
+        val generator = Generator()
+        return generator.generateCrops()
     }
 
     fun setInitialAnimals(): List<BaseAnimal> {
@@ -31,5 +32,26 @@ class Farmer(subjectName: String, identier: Int, location: String, amountOfMoney
         }
     }
 
+    fun animalsToProcessing(): List<BaseAnimal> {
+        val animalsToProcessing = ArrayList<BaseAnimal>()
 
+        animals.toList().iterator().forEach { animal ->
+            when (animal.animalName) {
+                "Cow" -> if (animal.getAge() > 3) animalsToProcessing.add(animal)
+                "Pig" -> if (animal.getAge() > 3) animalsToProcessing.add(animal)
+                "Chicken" -> if (animal.getAge() > 2) animalsToProcessing.add(animal)
+                "Goat" -> if (animal.getAge() > 4) animalsToProcessing.add(animal)
+                "Fish" -> if (animal.getAge() > 1) animalsToProcessing.add(animal)
+            }
+        }
+        return animalsToProcessing
+    }
+
+    fun getResources() : List<Crop>{
+        return this.resources
+    }
+
+    fun getAnimalsToProcessing(): List<BaseAnimal> {
+        return this.animalsToProcessing
+    }
 }

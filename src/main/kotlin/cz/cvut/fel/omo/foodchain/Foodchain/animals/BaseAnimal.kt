@@ -69,7 +69,7 @@ open class BaseAnimal(animalType: AnimalType) {
 
     // funkce eat
     fun eatFeed(owner: Farmer, feed: Crop) {
-        for (resource in owner.resources) {
+        for (resource in owner.getResources()) {
             if (resource.getName() == feed.getName() && resource.getAmount() >= feed.getAmount()) {
                 owner.decreaseResource(feed)
             }
@@ -77,5 +77,7 @@ open class BaseAnimal(animalType: AnimalType) {
         println("Dej jim nazrat vole, nemas zasoby hajzle")
     }
 
-
+    fun getAge() : Int{
+        return this.age
+    }
 }

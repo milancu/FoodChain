@@ -1,41 +1,22 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.products
 
-import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
-import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatName
-import java.util.*
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 
 class Meat {
-    private val name: MeatName
-    private var amount: Int
-    private val uuid: UUID
+    private val type: MeatType
     private var shopPrice: Double
     private var productionCost: Double
+    private var amount: Double
 
-    constructor(name: MeatName, amount: Int, growthTime: Int) {
-        this.name = name
+    constructor(
+        type: MeatType,
+        shopPrice: Double,
+        productionCost: Double,
+        amount: Double,
+    ) {
+        this.type = type
+        this.shopPrice = shopPrice
+        this.productionCost = productionCost
         this.amount = amount
-        this.uuid = UUID.randomUUID()
-        this.shopPrice = name.shopPrice
-        this.productionCost = shopPrice * 0.01
-    }
-
-    fun getName(): MeatName {
-        return name
-    }
-
-    fun getAmount(): Int {
-        return amount
-    }
-
-    fun getProductionCost(): Double {
-        return productionCost
-    }
-
-    fun getShopPrice(): Double {
-        return shopPrice
-    }
-
-    fun setAmount(value: Int) {
-        amount = value
     }
 }

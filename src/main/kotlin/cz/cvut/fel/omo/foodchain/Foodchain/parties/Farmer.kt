@@ -19,7 +19,7 @@ class Farmer(subjectName: String, identier: Int, location: String, amountOfMoney
 
     fun setInitialAnimals(): List<BaseAnimal> {
         val generator = Generator()
-        return generator.generateListOfAnimals()
+        return generator.generateAnimals()
     }
 
     fun decreaseResource(feed: Crop) {

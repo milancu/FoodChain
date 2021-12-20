@@ -1,6 +1,5 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.products
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Code
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import java.util.*
 
@@ -29,7 +28,7 @@ class Crop {
         return amount
     }
 
-    fun getProductionCost() : Int{
+    fun getProductionCost() : Double{
         return productionCost
     }
 

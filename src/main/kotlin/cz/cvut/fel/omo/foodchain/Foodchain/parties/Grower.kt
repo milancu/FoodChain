@@ -43,13 +43,13 @@ class Grower(subjectName : String, identier : Int, location : String, amountOfMo
 
     fun transportSupplies(){
         Transport.TransportCompany.takeCropSupplies(supplies)
+        supplies = emptyList();
     }
 
     fun sellSupplies() {
         for(supply in supplies){
             this.amountOfMoney += supply.getAmount() * supply.getShopPrice()
         }
-        supplies = emptyList();
     }
 
 

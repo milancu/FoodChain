@@ -11,8 +11,8 @@ class Transport(subjectName : String, identier : Int, location : String, amountO
 
         fun create(): Transport = TODO() //generator
 
-        fun expandSupplies(){
-            // TODO
+        fun getCropSuuplies() : List<Crop>{
+            return cropSupplies
         }
 
         fun takeCropSupplies(supplies : List<Crop>){
@@ -20,8 +20,6 @@ class Transport(subjectName : String, identier : Int, location : String, amountO
                 cropSupplies.toMutableList().add(supply)
             }
         }
-
-
 
     }
         // Tansprot price 0.1 plodiny, pocita se z ostatnich

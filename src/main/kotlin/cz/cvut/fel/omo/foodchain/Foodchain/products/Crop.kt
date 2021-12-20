@@ -8,10 +8,10 @@ class Crop {
     private var amount: Int
     private val code : Code
     private var shopPrice : Double
-    private var productionCost : Double
+    private var productionCost : Int
     private val growthTime : Int
 
-    constructor(name: String, amount: Int, code: Code, shopPrice: Double, productionCost: Double, growthTime: Int) {
+    constructor(name: String, amount: Int, code: Code, shopPrice: Double, productionCost: Int, growthTime: Int) {
         this.name = name
         this.amount = amount
         this.code = code
@@ -28,9 +28,20 @@ class Crop {
         return amount
     }
 
+    fun getProductionCost() : Int{
+        return productionCost
+    }
+
+    fun getShopPrice() : Double{
+        return shopPrice
+    }
+
     fun setAmount(value : Int){
         amount = value
     }
+
+
+
 
 
 

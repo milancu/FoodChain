@@ -4,7 +4,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.Field
 
 
-class Grower(subjectName : String, identier : Int, location : String, amountOfMoney : Int)
+class Grower(subjectName : String, identier : Int, location : String, amountOfMoney : Double)
     : BaseParty(subjectName, identier, location, amountOfMoney) {
 
     val fields : List<Field> = setInitialField()
@@ -18,10 +18,11 @@ class Grower(subjectName : String, identier : Int, location : String, amountOfMo
         return TODO()
     }
 
-    fun raiseAboutField(){
+    fun raiseField(){
         for(field in fields){
-            if(amountOfMoney >= 1000){
+            if(amountOfMoney >= field.getCrop().getProductionCost()){
                 field.setRaised(true)
+                amountOfMoney -= field.getCrop().getProductionCost();
             }
             else if(field.isRaised()){
                 field.setRaised(false)
@@ -37,8 +38,21 @@ class Grower(subjectName : String, identier : Int, location : String, amountOfMo
             harvestedCrop.toMutableList().add(field.getCrop())
             field.resetField()
         }
-        return harvestedCrop; //TODO prodavani obratem?
+        return harvestedCrop; //TODO proces, prodata doplnit harvest
     }
+
+    fun transportSupplies(){
+        Transport.TransportCompany.takeCropSupplies(supplies)
+    }
+
+    fun sellSupplies() {
+        for(supply in supplies){
+            this.amountOfMoney += supply.getAmount() * supply.getShopPrice()
+        }
+        supplies = emptyList();
+    }
+
+
 
 
 

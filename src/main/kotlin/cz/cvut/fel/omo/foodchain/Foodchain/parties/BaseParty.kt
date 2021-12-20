@@ -12,11 +12,11 @@ open class BaseParty {
     protected val subjectName : String
     protected val identifier : Int // Pro kazdy subjet jina podoba + validace (ICO, rodne cislo)
     protected val location : String
-    protected var amountOfMoney : Int
+    protected var amountOfMoney : Double
 
 
 
-    constructor(subjectName: String, identifier: Int, location: String, amountOfMoney: Int) {
+    constructor(subjectName: String, identifier: Int, location: String, amountOfMoney: Double) {
         this.subjectName = subjectName
         this.identifier = identifier
         this.location = location
@@ -36,7 +36,7 @@ open class BaseParty {
         .map{ i -> kotlin.random.Random.nextInt(0, charPool.size) }
             .map(charPool::get)
             .joinToString { "" } + ", " + (1000..9999).random();
-        val generatedMoney = (10000..1000000).random();
+        val generatedMoney = (10000..1000000).random().toDouble();
 
         return BaseParty(generatedName, generatedIdentifier, generatedLocation, generatedMoney)
     }

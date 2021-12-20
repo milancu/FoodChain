@@ -16,7 +16,7 @@ class Crop {
     private var productionCost : Double
     private val growthTime : Int
 
-    constructor(name: String, amount: Int, code: Code, shopPrice: Double, productionCost: Double, growthTime: Date) {
+    constructor(name: String, amount: Int, code: Code, shopPrice: Double, productionCost: Double, growthTime: Int) {
         this.name = name
         this.amount = amount
         this.code = code

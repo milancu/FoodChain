@@ -11,14 +11,12 @@ class Field {
     private var crop : Crop
     private var owner :Grower
     private val capacity : Int
-    private var amount : Int
     private var isRaised : Boolean = true
 
     constructor(crop: Crop, owner: Grower, capacity: Int) {
         this.crop = crop
         this.owner = owner
         this.capacity = capacity
-        this.amount = capacity
     }
 
     fun isRaised() : Boolean{
@@ -30,11 +28,14 @@ class Field {
     }
 
     fun decreaseProduction(){
-        amount = (amount * 0.8).roundToInt()
+        crop.setAmount((crop.getAmount() * 0.8).roundToInt())
     }
 
     fun resetField(){
-        amount = capacity;
+        crop.setAmount(capacity)
     }
 
+    fun getCrop() : Crop{
+       return crop
+    }
 }

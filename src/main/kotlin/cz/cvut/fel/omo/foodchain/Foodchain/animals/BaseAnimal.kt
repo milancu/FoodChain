@@ -20,11 +20,11 @@ open class BaseAnimal {
 
     // funkce eat
     fun eatFeed(owner : Farmer, feed : Crop){
-
         for(resource in owner.resources){
-            if(resource.name == feed.name && resource.amount >= feed.amount){
+            if(resource.getName() == feed.getName() && resource.getAmount() >= feed.getAmount()){
                 owner.decreaseResource(feed)
             }
         }
+        println("Dej jim nazrat vole, nemas zasoby hajzle")
     }
 }

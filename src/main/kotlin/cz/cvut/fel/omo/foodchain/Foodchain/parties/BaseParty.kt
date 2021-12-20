@@ -2,12 +2,19 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
 import javax.print.attribute.IntegerSyntax
 
+const val NAME_LENGTH = 12;
+const val IDENTIFIER_LENGTH = 8;
+const val LOCATION_LENGTH = 16;
+const val ALPHANUMERIC_REGEX = "[a-zA-Z0-9]+";
+
 open class BaseParty {
-    private val subjectName : String
-    private val identifier : Int // Pro kazdy subjet jina podoba + validace (ICO, rodne cislo)
-    private var location : String // TODO povolime zmeny?
-    // private var numberOfEmployees : Int // pouze pro firmy
-    private var amountOfMoney : Int
+
+    protected val subjectName : String
+    protected val identifier : Int // Pro kazdy subjet jina podoba + validace (ICO, rodne cislo)
+    protected val location : String
+    protected var amountOfMoney : Int
+
+
 
     constructor(subjectName: String, identifier: Int, location: String, amountOfMoney: Int) {
         this.subjectName = subjectName
@@ -15,4 +22,25 @@ open class BaseParty {
         this.location = location
         this.amountOfMoney = amountOfMoney
     }
+
+    // TODO nezapomen ze customers maj jako identifikator rodne cislo a ma se prepsat, mozno nepouzit tenhle generator na customera
+    fun generateNewParty() : BaseParty{
+        val charPool : List<Char> = ('a'..'z') + ('A'..'Z')
+
+        val generatedName = (1..NAME_LENGTH)
+            .map{ i -> kotlin.random.Random.nextInt(0, charPool.size) }
+            .map(charPool::get)
+            .joinToString { "" };
+        val generatedIdentifier = (10000000..99999999).random()
+        val generatedLocation = (1..LOCATION_LENGTH)
+        .map{ i -> kotlin.random.Random.nextInt(0, charPool.size) }
+            .map(charPool::get)
+            .joinToString { "" } + ", " + (1000..9999).random();
+        val generatedMoney = (10000..1000000).random();
+
+        return BaseParty(generatedName, generatedIdentifier, generatedLocation, generatedMoney)
+    }
+
+
+
 }

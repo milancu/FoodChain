@@ -4,13 +4,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Code
 import java.util.*
 
 class Crop {
-    val name: String
-        get() = field
-    var amount: Int
-        get() = field
-        set(value) {
-            amount = value
-        }
+    private val name: String
+    private var amount: Int
     private val code : Code
     private var shopPrice : Double
     private var productionCost : Double
@@ -24,6 +19,20 @@ class Crop {
         this.productionCost = productionCost
         this.growthTime = growthTime
     }
+
+    fun getName() : String{
+        return name
+    }
+
+    fun getAmount() : Int{
+        return amount
+    }
+
+    fun setAmount(value : Int){
+        amount = value
+    }
+
+
 
 
 }

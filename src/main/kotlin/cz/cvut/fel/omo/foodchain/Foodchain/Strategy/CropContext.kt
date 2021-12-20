@@ -21,7 +21,7 @@ class CropContext {
         this.strategy = strategy
     }
 
-    fun setStrategy(strategy : SeedsStrategy){
+    fun setStrategy(strategy : FlowerStrategy){
         this.strategy = strategy
     }
 

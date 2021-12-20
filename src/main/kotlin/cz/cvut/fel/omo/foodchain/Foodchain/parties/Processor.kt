@@ -1,6 +1,43 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Strategy.*
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
+import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+
 class Processor(subjectName : String, identier : Int, location : String, amountOfMoney : Double)
     : BaseParty(subjectName, identier, location, amountOfMoney) {
 
+    private val cerealStrategy : CerealCropStrategy = CerealCropStrategy();
+    private val flowerStrategy : FlowerCropStrategy = FlowerCropStrategy();
+    private val fruitStrategy : FruitCropStrategy = FruitCropStrategy();
+    private val legumesStrategy : LegumesCropStrategy = LegumesCropStrategy();
+    private val vegetableStrategy : VegetableCropStrategy = VegetableCropStrategy();
+
+    fun createProduct(crop : Crop) : Product {
+        var context : CropContext
+        when(crop.getType()){
+            CropType.CEREAL -> {
+                context = CropContext(cerealStrategy)
+                return context.processProduct(crop)
+            }
+            CropType.FRUIT -> {
+                context = CropContext(fruitStrategy)
+                return context.processProduct(crop)
+            }
+            CropType.VEGETABLE -> {
+                context = CropContext(vegetableStrategy)
+                return context.processProduct(crop)
+            }
+            CropType.LEGUMES -> {
+                context = CropContext(legumesStrategy)
+                return context.processProduct(crop)
+            }
+            CropType.FLOWER -> {
+                context = CropContext(flowerStrategy)
+                return context.processProduct(crop)
+            }
+            else -> throw Exception("Wrong crop type")
+        }
+    }
 }

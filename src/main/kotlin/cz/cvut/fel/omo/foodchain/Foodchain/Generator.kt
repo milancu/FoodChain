@@ -3,6 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.*
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.LOCATION_LENGTH
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.NAME_LENGTH
@@ -38,7 +39,8 @@ class Generator {
 
     fun generateCrop(capacity: Int): Crop {
         var crop = CropName.getCropName()
-        return Crop(crop, capacity, 2)
+        var type = CropType.getCropType()
+        return Crop(crop, type, capacity, 2)
     }
 
     fun generateCrops(): ArrayList<Crop> {

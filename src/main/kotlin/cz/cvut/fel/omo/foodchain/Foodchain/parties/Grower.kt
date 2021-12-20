@@ -35,6 +35,7 @@ class Grower(subjectName : String, identier : Int, location : String, amountOfMo
     fun harvest() : List<Crop>{
         var harvestedCrop = emptyList<Crop>()
         for(field in fields){
+            // TODO if splnena rustova podminka
             harvestedCrop.toMutableList().add(field.getCrop())
             field.resetField()
         }

@@ -1,6 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Strategy
 
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 class CropContext {
     var strategy : ProcessorCropStrategy
@@ -17,11 +18,11 @@ class CropContext {
         this.strategy = strategy
     }
 
-    fun setStrategy(strategy : LegumesStrategy){
+    fun setStrategy(strategy : LegumesCropStrategy){
         this.strategy = strategy
     }
 
-    fun setStrategy(strategy : FlowerStrategy){
+    fun setStrategy(strategy : FlowerCropStrategy){
         this.strategy = strategy
     }
 
@@ -29,8 +30,8 @@ class CropContext {
         this.strategy = strategy
     }
 
-    fun processProduct(crop : Crop){
-        strategy.execute(crop)
+    fun processProduct(crop : Crop) : Product{
+        return strategy.execute(crop)
     }
 
 

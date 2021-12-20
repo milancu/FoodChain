@@ -6,7 +6,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 
-class FlowerStrategy : ProcessorCropStrategy {
+class FlowerCropStrategy : ProcessorCropStrategy {
     override fun execute(crop: Crop): Product {
         when (crop.getName()) {
             CropName.FLEX -> return TODO()

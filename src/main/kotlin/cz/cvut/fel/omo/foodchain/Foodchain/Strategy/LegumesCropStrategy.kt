@@ -4,7 +4,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
-class LegumesStrategy : ProcessorCropStrategy {
+class LegumesCropStrategy : ProcessorCropStrategy {
     override fun execute(crop: Crop): Product {
         var random: Int = (1..2).random()
         when (random) {

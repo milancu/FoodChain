@@ -3,7 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.enums
 import java.util.*
 
 enum class CropName (val shopPrice: Double, val growthTime: Int){
-    APPLE(45.0, 23),
+    APPLE( 45.0, 23),
     BARLEY(10.0, 23),
     BEAN(10.0, 45),
     CORN(5.0, 12),

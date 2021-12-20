@@ -39,11 +39,4 @@ class Crop {
     fun setAmount(value : Int){
         amount = value
     }
-
-
-
-
-
-
-
 }

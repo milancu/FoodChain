@@ -1,10 +1,13 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Strategy
 
-import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatName
+import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
-class MeatCropStrategy : ProcessorCropStrategy {
-    override fun execute(crop: Crop): Product {
-        TODO("Not yet implemented")
+class MeatCropStrategy : ProcessorMeatStrategy {
+    override fun execute(meat: Meat): Product {
+        when(meat.getName()){
+            MeatName.HAM->
+        }
     }
 }

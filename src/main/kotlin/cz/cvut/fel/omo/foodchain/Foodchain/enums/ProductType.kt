@@ -2,7 +2,17 @@ package cz.cvut.fel.omo.foodchain.Foodchain.enums
 
 enum class ProductType {
     CEAREALS,
-    CORNFLAKES,
-    MUSLI,
-    VINE
+    FRUIT,
+    VEGETABLES,
+    LEGUMES,
+    BULKINGREDIENTS,
+    OTHERS,
+    SAUCE,
+    ICED,
+    CANS,
+    OIL,
+    XXX,
+    MEAT,
+    DRINK,
+    ALCOHOL,
 }

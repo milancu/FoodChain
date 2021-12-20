@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Strategy
 
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
@@ -9,6 +10,7 @@ class LegumesStrategy : ProcessorCropStrategy {
         when (random) {
             1 -> return Product(
                 "Raw" + crop.getName().toString(),
+                ProductType.LEGUMES,
                 listOf(crop),
                 crop.getShopPrice() * 1.2,
                 crop.getShopPrice(),
@@ -17,6 +19,7 @@ class LegumesStrategy : ProcessorCropStrategy {
             )
             else -> return Product(
                 "Can of " + crop.getName().toString(),
+                ProductType.CANS,
                 listOf(crop),
                 crop.getShopPrice() * 1.4,
                 crop.getShopPrice() + 5,

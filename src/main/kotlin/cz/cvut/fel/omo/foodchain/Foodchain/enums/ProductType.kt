@@ -1,7 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.enums
 
 enum class ProductType {
-    CEAREALS,
+    CEREALS,
     FRUIT,
     VEGETABLES,
     LEGUMES,
@@ -14,5 +14,5 @@ enum class ProductType {
     XXX,
     MEAT,
     DRINK,
-    ALCOHOL,
+    ALCOHOL
 }

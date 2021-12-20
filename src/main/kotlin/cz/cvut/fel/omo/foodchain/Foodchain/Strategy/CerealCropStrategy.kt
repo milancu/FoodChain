@@ -1,6 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Strategy
 
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
@@ -22,6 +23,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
         when (random) {
             1 -> return Product(
                 "Flour",
+                ProductType.BULKINGREDIENTS,
                 listOf(crop),
                 (15..40).random().toDouble(),
                 (2..5).random().toDouble(),
@@ -30,6 +32,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
             )
             else -> return Product(
                 "Coarse flour",
+                ProductType.BULKINGREDIENTS,
                 listOf(crop),
                 (10..30).random().toDouble(),
                 (1..4).random().toDouble(),
@@ -39,9 +42,11 @@ class CerealCropStrategy : ProcessorCropStrategy {
         }
     }
 
+    // TODO product beer
     fun prepareForBeer(crop: Crop): Product {
         return Product(
             crop.getName().toString(),
+            ProductType.CEREALS,
             listOf(crop),
             (4..6).random().toDouble(),
             (2..4).random().toDouble(),
@@ -55,6 +60,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
         when (random) {
             1 -> return Product(
                 "Boiled corn",
+                ProductType.VEGETABLES,
                 listOf(crop),
                 (40..45).random().toDouble(),
                 (2..5).random().toDouble(),
@@ -63,6 +69,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
             )
             2 -> return Product(
                 "Corn can",
+                ProductType.CANS,
                 listOf(crop),
                 (30..45).random().toDouble(),
                 (3..6).random().toDouble(),
@@ -71,6 +78,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
             )
             else -> return Product(
                 "Iced corn",
+                ProductType.ICED,
                 listOf(crop),
                 (30..35).random().toDouble(),
                 (1..2).random().toDouble(),
@@ -85,6 +93,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
         when (random) {
             1 -> return Product(
                 "Musli",
+                ProductType.CEREALS,
                 listOf(crop),
                 (15..30).random().toDouble(),
                 (2..6).random().toDouble(),
@@ -93,6 +102,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
             )
             else -> return Product(
                 "Oat flakes",
+                ProductType.CEREALS,
                 listOf(crop),
                 (20..35).random().toDouble(),
                 (1..2).random().toDouble(),

@@ -6,13 +6,5 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 
 interface ProcessorCropStrategy {
-    fun execute(crop : Crop) {
-        var randomIndex = (1..3).random();
-        when (randomIndex) {
-            1 ->
-            2 ->
-            3 ->
-        }
-
-    }
+    fun execute(crop : Crop)
 }

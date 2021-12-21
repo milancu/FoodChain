@@ -5,19 +5,15 @@ import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
 import java.util.*
 
-enum class AnimalType(var animalName: String) {
+@Component
+enum class AnimalType {
 
-    COW("Cow"),
-
-    PIG("Pig"),
-
-    CHICKEN("Chicken"),
-
-    GOAT("Goat"),
-
-    FISH("Fish"),
-
-    BEE("Bee");
+    COW,
+    PIG,
+    CHICKEN,
+    GOAT,
+    FISH,
+    BEE;
 
     companion object {
         fun getAnimal(): AnimalType {

@@ -12,23 +12,23 @@ class Butcher {
         animals.toList().iterator().forEach { animal ->
             when (animal.getName()) {
                 "Cow" -> {
-                    val shopPrice = 0.7 * animal.weight * MeatType.BEEF.price
-                    meatList.add(Meat(MeatType.BEEF, shopPrice, shopPrice * 1.4, 0.7 * animal.weight))
+                    val shopPrice = 0.7 * animal.getWeight() * MeatType.BEEF.price
+                    meatList.add(Meat(MeatType.BEEF, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight()))
                 }
 
                 "Pig" -> {
-                    val shopPrice = 0.7 * animal.weight * MeatType.PORK.price
-                    meatList.add(Meat(MeatType.PORK, shopPrice, shopPrice * 1.4, 0.7 * animal.weight))
+                    val shopPrice = 0.7 * animal.getWeight() * MeatType.PORK.price
+                    meatList.add(Meat(MeatType.PORK, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight()))
                 }
 
                 "Chicken" -> {
-                    val shopPrice = 0.7 * animal.weight * MeatType.CHICKEN.price
-                    meatList.add(Meat(MeatType.CHICKEN, shopPrice, shopPrice * 1.4, 0.7 * animal.weight))
+                    val shopPrice = 0.7 * animal.getWeight() * MeatType.CHICKEN.price
+                    meatList.add(Meat(MeatType.CHICKEN, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight()))
                 }
 
                 "Fish" -> {
-                    val shopPrice = 0.7 * animal.weight * MeatType.FISH.price
-                    meatList.add(Meat(MeatType.FISH, shopPrice, shopPrice * 1.4, 0.7 * animal.weight))
+                    val shopPrice = 0.7 * animal.getWeight() * MeatType.FISH.price
+                    meatList.add(Meat(MeatType.FISH, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight()))
                 }
             }
         }

@@ -4,9 +4,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
+import org.springframework.stereotype.Repository
 import java.util.*
 
 // TODO bude potreba neco pridavat nevystacime si s Product a Crop a name
+
 
 open class Product {
     private var name: String
@@ -18,11 +20,11 @@ open class Product {
     private var uuid: UUID
 
     constructor(
-        @Value("\${Product.name}") name: String,
-        @Value("\${Product.shopPrice}") shopPrice: Double,
-        @Value("\${Product.productionCost}") productionCost: Double,
-        @Value("\${Product.amount}") amount: Int,
-        @Value("\${Product.unit}") unit: String
+        name: String,
+        shopPrice: Double,
+        productionCost: Double,
+        amount: Int,
+        unit: String
     ) {
         this.name = name
         this.productType = ProductType.NOTSET
@@ -34,7 +36,7 @@ open class Product {
     }
 
 
-     open fun getProductType(): ProductType {
+    open fun getProductType(): ProductType {
         return this.productType
     }
 

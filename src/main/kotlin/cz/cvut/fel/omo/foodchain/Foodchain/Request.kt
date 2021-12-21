@@ -35,6 +35,10 @@ class Request {
             }
             var Invoice : Invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
 
+            processor.transportProducts()
+
+            retailer.buyProducts(Transport.transportProducts()) // todo invoice retailer a transport
+
 
         }
 

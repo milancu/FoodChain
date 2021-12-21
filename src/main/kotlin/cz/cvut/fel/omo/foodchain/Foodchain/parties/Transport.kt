@@ -41,6 +41,8 @@ class Transport{
             }
         }
 
+        // TODO odecet za opotrebeni aut a benzin a platy
+
     }
         // Tansprot price 0.1 plodiny, pocita se z ostatnich
 }

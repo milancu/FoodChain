@@ -23,4 +23,12 @@ open class Product(
     fun getProductType() : ProductType{
         return productType
     }
+
+    fun getShopPrice() : Double{
+        return shopPrice
+    }
+
+    fun getAmount() : Int{
+        return amount
+    }
 }

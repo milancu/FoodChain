@@ -3,8 +3,10 @@ package cz.cvut.fel.omo.foodchain.Foodchain
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.InvoiceType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Transport
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 class Request {
     companion object requestService{
@@ -16,13 +18,9 @@ class Request {
             // Faktury
             var money : Double = 0.0
             for(crop in crops){
-/*
-                println("amount: " + crop.getAmount() + " shopPrice: " + crop.getShopPrice())
-*/
                 money += crop.getAmount() * crop.getShopPrice()
             }
             var invoice : Invoice = Invoice(processor, grower, money, InvoiceType.CROP)
-            println("plus: " + money)
 
             grower.transportSupplies()
 
@@ -30,7 +28,13 @@ class Request {
             processor.payForInvoice(invoice)
         }
 
-        fun requestTransportToWarehouse(){
+        fun requestTransportToWarehouse(processor : Processor, retailer: Retailer, products : ArrayList<Product>){
+            var money : Double = 0.0
+            for(product in products){
+                money += product.getAmount() * product.getShopPrice()
+            }
+            var Invoice : Invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
+
 
         }
 

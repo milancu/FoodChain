@@ -17,6 +17,7 @@ class Processor(subjectName : String, identier : Int, location : String, amountO
 
     private var cropSupplies : ArrayList<Crop> = ArrayList()
     private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
+    private var products : ArrayList<Product> = ArrayList()
 
     fun createProduct(crop : Crop) : Product {
         var context : CropContext
@@ -55,17 +56,16 @@ class Processor(subjectName : String, identier : Int, location : String, amountO
         }
     }
 
-/*    fun payForSupplies(supplies : ArrayList<Crop>){
-        for(supply in supplies){
-            amountOfMoney -= supply.getShopPrice()
-        }
-    }*/
-
     fun takeCropSupplies(supplies : ArrayList<Crop>){
         for(supply in supplies){
             cropSupplies.add(supply)
         }
     }
 
+    fun transportProducts(){
+        Transport.TransportCompany.takeProducts(products)
+        products = ArrayList()
+
+    }
 
 }

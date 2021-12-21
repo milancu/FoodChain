@@ -16,7 +16,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.2,
                 crop.getShopPrice(),
                 1,
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             CropName.CUCCUMBER -> return createFromCucumber(crop)
             CropName.TOMATO -> return createFromTomato(crop)
@@ -27,7 +28,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.2,
                 crop.getShopPrice(),
                 (0.65 * crop.getAmount()).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             else -> throw Exception("Wrong crop name input")
         }
@@ -42,7 +44,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.2,
                 crop.getShopPrice(),
                 1,
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             2 -> return CropProduct(
                 "Ketchup",
@@ -50,7 +53,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.2 + 25,
                 crop.getShopPrice() + 25,
                 (crop.getAmount() * 0.60).toInt(),
-                "l"
+                "l",
+                crop.getOriginID()
             )
             3 -> return CropProduct(
                 "Dried tomatoes",
@@ -58,7 +62,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.2 + 15,
                 crop.getShopPrice() + 15,
                 (crop.getAmount() * 0.85).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 "Cropped tomatoes",
@@ -66,7 +71,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.2 + 10,
                 crop.getShopPrice() + 10,
                 (crop.getAmount() * 0.85).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
         }
     }
@@ -80,7 +86,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.2,
                 crop.getShopPrice(),
                 1,
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 "jar of sour" + crop.getName().toString(),
@@ -88,7 +95,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 2.5,
                 crop.getShopPrice() + 20,
                 1,
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
         }
     }
@@ -102,7 +110,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.2,
                 crop.getShopPrice(),
                 1,
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 "Onion rings",
@@ -110,7 +119,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 2.0,
                 crop.getShopPrice() + 10,
                 (0.9 * crop.getAmount()).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
         }
     }
@@ -124,7 +134,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.2,
                 crop.getShopPrice(),
                 1,
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             2 -> return CropProduct(
                 "Chips",
@@ -132,7 +143,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 2.5,
                 crop.getShopPrice() + 15,
                 (0.75 * crop.getAmount()).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 "French fries",
@@ -140,7 +152,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.8,
                 crop.getShopPrice() + 25,
                 (0.65 * crop.getAmount()).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
         }
     }

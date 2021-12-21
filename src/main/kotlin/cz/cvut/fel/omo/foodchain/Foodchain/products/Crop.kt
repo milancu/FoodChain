@@ -12,6 +12,7 @@ class Crop {
     private var shopPrice : Double
     private var productionCost : Double
     private val growthTime : Int
+    private val origin : UUID
 
     constructor(name: CropName, type : CropType, amount: Int, growthTime: Int) {
         this.name = name
@@ -21,6 +22,11 @@ class Crop {
         this.shopPrice = name.shopPrice
         this.productionCost = shopPrice * 0.01
         this.growthTime = name.growthTime
+        this.origin = UUID.randomUUID()
+    }
+
+    fun getOriginID() : UUID{
+        return this.origin
     }
 
     fun getName() : CropName{

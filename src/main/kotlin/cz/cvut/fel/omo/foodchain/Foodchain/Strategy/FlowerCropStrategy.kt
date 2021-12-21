@@ -28,7 +28,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (40..60).random().toDouble(),
                 (2..5).random().toDouble(),
                 (crop.getAmount() * 0.75).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 "Flex material",
@@ -36,7 +37,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (250..600).random().toDouble(),
                 (40..60).random().toDouble(),
                 (crop.getAmount() * 0.15).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
         }
     }
@@ -50,7 +52,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (30..60).random().toDouble(),
                 (5..10).random().toDouble(),
                 (crop.getAmount() * 0.15).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 "Sunflower oil",
@@ -58,7 +61,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (40..75).random().toDouble(),
                 (15..20).random().toDouble(),
                 (crop.getAmount() * 0.15).toInt(),
-                "l"
+                "l",
+                crop.getOriginID()
             )
         }
     }
@@ -72,7 +76,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (40..60).random().toDouble(),
                 (2..5).random().toDouble(),
                 (crop.getAmount() * 0.75).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 "Opium",
@@ -80,7 +85,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (250..600).random().toDouble(),
                 (40..60).random().toDouble(),
                 (crop.getAmount() * 0.15).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
         }
     }
@@ -94,7 +100,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (150..250).random().toDouble(),
                 (2..5).random().toDouble(),
                 (crop.getAmount() * 0.2).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             2 -> return CropProduct(
                 "Hemp ointment",
@@ -102,7 +109,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (400..1500).random().toDouble(),
                 (100..350).random().toDouble(),
                 (crop.getAmount() * 0.8).toInt(),
-                "l"
+                "l",
+                crop.getOriginID()
             )
             3 -> return CropProduct(
                 "Hemp protein",
@@ -110,7 +118,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (80..200).random().toDouble(),
                 (40..65).random().toDouble(),
                 (crop.getAmount() * 0.2).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             4 -> return CropProduct(
                 "Hemp cookies",
@@ -118,7 +127,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (800..1500).random().toDouble(),
                 (300..600).random().toDouble(),
                 (crop.getAmount() * 0.1).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             5 -> return CropProduct(
                 "Hemp oil",
@@ -126,7 +136,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (60..140).random().toDouble(),
                 (20..40).random().toDouble(),
                 (crop.getAmount() * 0.1).toInt(),
-                "l"
+                "l",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 "Weed",
@@ -134,7 +145,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (600..1200).random().toDouble(),
                 (250..450).random().toDouble(),
                 (crop.getAmount() * 0.1).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
         }
     }
@@ -148,7 +160,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (40..60).random().toDouble(),
                 (2..5).random().toDouble(),
                 (crop.getAmount() * 0.75).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 "Biofuel",
@@ -156,7 +169,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                 (250..600).random().toDouble(),
                 (40..60).random().toDouble(),
                 (crop.getAmount() * 0.15).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
         }
     }

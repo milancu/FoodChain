@@ -15,7 +15,8 @@ class LegumesCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.2,
                 crop.getShopPrice(),
                 1,
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 "Can of " + crop.getName().toString(),
@@ -23,7 +24,8 @@ class LegumesCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.4,
                 crop.getShopPrice() + 5,
                 1,
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
         }
     }

@@ -28,7 +28,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                 (15..40).random().toDouble(),
                 (2..5).random().toDouble(),
                 (crop.getAmount() * 0.4).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 "Coarse flour",
@@ -36,7 +37,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                 (10..30).random().toDouble(),
                 (1..4).random().toDouble(),
                 (crop.getAmount() * 0.4).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
         }
     }
@@ -49,7 +51,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
             (4..6).random().toDouble(),
             (2..4).random().toDouble(),
             (crop.getAmount() * 0.25).toInt(),
-            "kg"
+            "kg",
+            crop.getOriginID()
         )
     }
 
@@ -62,7 +65,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                 (40..45).random().toDouble(),
                 (2..5).random().toDouble(),
                 (crop.getAmount() * 0.95).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             2 -> return CropProduct(
                 "Corn can",
@@ -70,7 +74,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                 (30..45).random().toDouble(),
                 (3..6).random().toDouble(),
                 (crop.getAmount() * 0.4).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 "Iced corn",
@@ -78,7 +83,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                 (30..35).random().toDouble(),
                 (1..2).random().toDouble(),
                 (crop.getAmount() * 0.4).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
         }
     }
@@ -92,7 +98,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                 (15..30).random().toDouble(),
                 (2..6).random().toDouble(),
                 (crop.getAmount() * 0.75).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 "Oat flakes",
@@ -100,7 +107,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                 (20..35).random().toDouble(),
                 (1..2).random().toDouble(),
                 (crop.getAmount() * 0.75).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
         }
     }

@@ -8,7 +8,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 class FruitCropStrategy : ProcessorCropStrategy {
     override fun execute(crop: Crop): Product {
-        if(crop.getName() == CropName.GRAPEVINE){
+        if (crop.getName() == CropName.GRAPEVINE) {
             return createFromVine(crop);
         }
         val random: Int = (1..4).random()
@@ -19,7 +19,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.4,
                 crop.getShopPrice(),
                 1,
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             2 -> return CropProduct(
                 crop.getName().toString() + "jam",
@@ -27,7 +28,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() + 50,
                 crop.getShopPrice(),
                 (crop.getAmount() * 0.85).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
             3 -> return CropProduct(
                 crop.getName().toString() + "juice",
@@ -35,7 +37,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() + 50,
                 crop.getShopPrice(),
                 (crop.getAmount() * 0.85).toInt(),
-                "l"
+                "l",
+                crop.getOriginID()
             )
             else -> return CropProduct(
                 crop.getName().toString() + "compote",
@@ -43,12 +46,13 @@ class FruitCropStrategy : ProcessorCropStrategy {
                 (crop.getShopPrice() + 40),
                 crop.getShopPrice(),
                 (crop.getAmount() * 0.85).toInt(),
-                "kg"
+                "kg",
+                crop.getOriginID()
             )
         }
     }
 
-    fun createFromVine(crop : Crop) : Product{
+    fun createFromVine(crop: Crop): Product {
         val random: Int = (1..2).random()
         when (random) {
             1 -> return CropProduct(
@@ -57,14 +61,18 @@ class FruitCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice() * 1.4,
                 crop.getShopPrice(),
                 1,
-                "kg")
+                "kg",
+                crop.getOriginID()
+            )
             else -> return CropProduct(
                 "Vine" + (2010..2022).random(),
                 ProductType.ALCOHOL,
                 crop.getShopPrice() + 120,
                 crop.getShopPrice() * 2.45,
                 1,
-                "l")
+                "l",
+                crop.getOriginID()
+            )
         }
     }
 }

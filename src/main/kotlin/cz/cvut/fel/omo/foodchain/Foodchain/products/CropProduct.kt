@@ -4,6 +4,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
+import java.util.*
 
 //@Component
 class CropProduct(
@@ -19,8 +20,10 @@ class CropProduct(
 
     private var unit: String,
 
+    private var origin: UUID,
 
-    ) :  Product(name, shopPrice, productionCost, amount, unit) {
+
+    ) :  Product(name, shopPrice, productionCost, amount, unit, origin) {
     override fun getAmount(): Int {
         return amount
     }
@@ -31,5 +34,9 @@ class CropProduct(
 
     override fun getShopPrice(): Double {
         return shopPrice
+    }
+
+    override fun getOriginId(): UUID {
+        return this.origin
     }
 }

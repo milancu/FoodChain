@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.Strategy.*
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
@@ -8,11 +9,14 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 class Processor(subjectName : String, identier : Int, location : String, amountOfMoney : Double)
     : BaseParty(subjectName, identier, location, amountOfMoney) {
 
-    private val cerealStrategy : CerealCropStrategy = CerealCropStrategy();
-    private val flowerStrategy : FlowerCropStrategy = FlowerCropStrategy();
-    private val fruitStrategy : FruitCropStrategy = FruitCropStrategy();
-    private val legumesStrategy : LegumesCropStrategy = LegumesCropStrategy();
-    private val vegetableStrategy : VegetableCropStrategy = VegetableCropStrategy();
+    private val cerealStrategy : CerealCropStrategy = CerealCropStrategy()
+    private val flowerStrategy : FlowerCropStrategy = FlowerCropStrategy()
+    private val fruitStrategy : FruitCropStrategy = FruitCropStrategy()
+    private val legumesStrategy : LegumesCropStrategy = LegumesCropStrategy()
+    private val vegetableStrategy : VegetableCropStrategy = VegetableCropStrategy()
+
+    private var cropSupplies : ArrayList<Crop> = ArrayList()
+    private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
 
     fun createProduct(crop : Crop) : Product {
         var context : CropContext
@@ -40,4 +44,27 @@ class Processor(subjectName : String, identier : Int, location : String, amountO
             else -> throw Exception("Wrong crop type")
         }
     }
+
+    fun payForInvoice(invoice: Invoice){
+        if(amountOfMoney >= invoice.getPrice()){
+            invoice.payInvoice()
+            invoice.getContractor().takeMoney(invoice.getPrice())
+        } else {
+            unpaidInvoices.add(invoice)
+        }
+    }
+
+/*    fun payForSupplies(supplies : ArrayList<Crop>){
+        for(supply in supplies){
+            amountOfMoney -= supply.getShopPrice()
+        }
+    }*/
+
+    fun takeCropSupplies(supplies : ArrayList<Crop>){
+        for(supply in supplies){
+            cropSupplies.add(supply)
+        }
+    }
+
+
 }

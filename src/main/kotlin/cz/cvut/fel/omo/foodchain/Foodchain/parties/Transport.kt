@@ -9,16 +9,16 @@ class Transport{
         var amountOfMoney : Double = 10000.00
         var cropSupplies : ArrayList<Crop> = ArrayList<Crop>()
 
-        fun transportCropSuplies() : List<Crop>{
+        fun transportCropSuplies() : ArrayList<Crop>{
             for(supply in cropSupplies){
-                amountOfMoney += supply.getShopPrice() * supply.getAmount() * 0.1
+                amountOfMoney += supply.getShopPrice() * supply.getAmount() * 0.1 // TODO od koho si je vezme
             }
             return cropSupplies
         }
 
-        fun takeCropSupplies(supplies : List<Crop>){
+        fun takeCropSupplies(supplies : ArrayList<Crop>){
             for(supply in supplies){
-                cropSupplies.toMutableList().add(supply)
+                cropSupplies.add(supply)
             }
         }
 

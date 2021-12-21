@@ -44,4 +44,8 @@ open class BaseParty {
     fun changeAmountOfMoney(value : Int){
         amountOfMoney += value
     }
+
+    fun takeMoney(value : Double){
+        amountOfMoney += value
+    }
 }

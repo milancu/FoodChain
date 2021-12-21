@@ -10,11 +10,6 @@ open class FoodchainApplication
 fun main(args: Array<String>) {
 	runApplication<FoodchainApplication>(*args)
 
-	var generator = Generator()
-	var animals = generator.generateAnimals()
-
-	for(i in animals){
-		println(i.animalName + ", " + i.weight + "g")
-	}
+	var channel : Channel = Channel()
 
 }

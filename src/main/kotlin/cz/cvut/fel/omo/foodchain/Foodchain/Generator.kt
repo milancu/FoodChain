@@ -4,11 +4,9 @@ import cz.cvut.fel.omo.foodchain.Foodchain.animals.*
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
-import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
-import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
-import cz.cvut.fel.omo.foodchain.Foodchain.parties.LOCATION_LENGTH
-import cz.cvut.fel.omo.foodchain.Foodchain.parties.NAME_LENGTH
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.*
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+import kotlin.random.Random.Default.nextInt
 
 class Generator {
 
@@ -56,13 +54,13 @@ class Generator {
     fun generateNewParty(): BaseParty {
         val charPool: List<Char> = ('a'..'z') + ('A'..'Z')
 
-        val generatedName = (1..NAME_LENGTH)
-            .map { i -> kotlin.random.Random.nextInt(0, charPool.size) }
+        val generatedName = (1..NAME_LENGTH) //TODO NEFUNGUJE GENEROVANI NAZVU
+            .map { i -> nextInt(0, charPool.size) }
             .map(charPool::get)
             .joinToString { "" };
         val generatedIdentifier = (10000000..99999999).random()
-        val generatedLocation = (1..LOCATION_LENGTH)
-            .map { i -> kotlin.random.Random.nextInt(0, charPool.size) }
+        val generatedLocation = (1..LOCATION_LENGTH) //TODO NEFUNGUJE GENEROVANI NAZVU
+            .map { i -> nextInt(0, charPool.size) }
             .map(charPool::get)
             .joinToString { "" } + ", " + (1000..9999).random();
         val generatedMoney = (10000..1000000).random().toDouble();
@@ -73,6 +71,19 @@ class Generator {
     fun generateGrower() : Grower {
         val base : BaseParty = generateNewParty()
         return Grower(base.getSubjectName(), base.getIdentifier(), base.getLocation(), base.getAmountOfMoney())
+    }
+
+    fun generateProcessor() : Processor {
+        val base : BaseParty = generateNewParty()
+        return Processor(base.getSubjectName(), base.getIdentifier(), base.getLocation(), base.getAmountOfMoney())
+    }
+
+    fun generateGrowers() : ArrayList<Grower>{
+        var growers : ArrayList<Grower> = ArrayList()
+        for(i in 1..10){
+            growers.add(generateGrower())
+        }
+        return growers;
     }
 
 

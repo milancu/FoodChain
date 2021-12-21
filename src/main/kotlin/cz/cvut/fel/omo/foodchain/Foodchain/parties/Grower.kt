@@ -8,15 +8,15 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 class Grower(subjectName : String, identier : Int, location : String, amountOfMoney : Double)
     : BaseParty(subjectName, identier, location, amountOfMoney) {
 
-    val fields : List<Field> = setInitialField()
-    var supplies : List<Crop> = setInitalSupplies()
+    private val fields : ArrayList<Field> = setInitialField()
+    private var supplies : ArrayList<Crop> = setInitalSupplies()
 
-    fun setInitialField() : List<Field>{
+    fun setInitialField() : ArrayList<Field>{
         val generator : Generator = Generator()
         return generator.generateFields()
     }
 
-    fun setInitalSupplies() : List<Crop>{
+    fun setInitalSupplies() : ArrayList<Crop>{
         val generator : Generator = Generator()
         return generator.generateCrops()
     }
@@ -35,19 +35,24 @@ class Grower(subjectName : String, identier : Int, location : String, amountOfMo
         }
     }
 
-    fun harvest() : List<Crop>{
-        var harvestedCrop = emptyList<Crop>()
+    fun harvest(){
+        var harvestedCrop : ArrayList<Crop> = ArrayList()
         for(field in fields){
             // TODO if splnena rustova podminka
-            harvestedCrop.toMutableList().add(field.getCrop())
+            harvestedCrop.add(field.getCrop())
             field.resetField()
         }
-        return harvestedCrop; //TODO proces, prodata doplnit harvest
+
+        for(crop in harvestedCrop){
+            supplies.add(crop)
+        }
     }
+
 
     fun transportSupplies(){
         Transport.TransportCompany.takeCropSupplies(supplies)
-        supplies = emptyList();
+        // TODO odecet za dopravu, faktura...
+        supplies = ArrayList();
     }
 
     fun sellSupplies() {
@@ -55,6 +60,11 @@ class Grower(subjectName : String, identier : Int, location : String, amountOfMo
             this.amountOfMoney += supply.getAmount() * supply.getShopPrice()
         }
     }
+
+    fun getSupplies() : ArrayList<Crop> {
+        return supplies
+    }
+
 }
 
 

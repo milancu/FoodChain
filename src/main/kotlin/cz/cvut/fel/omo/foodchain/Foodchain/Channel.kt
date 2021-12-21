@@ -1,16 +1,40 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Transport
 
 class Channel {
 
-    val generator : Generator = Generator()
+    constructor(){
+        val generator : Generator = Generator()
 
-    val grower1 : Grower = generator.generateGrower()
-    val grower2 : Grower = generator.generateGrower()
-    val grower3 : Grower = generator.generateGrower()
-    val grower4 : Grower = generator.generateGrower()
+        val growers : ArrayList<Grower> = generator.generateGrowers()
+        println(growers.size)
+        val processor : Processor = generator.generateProcessor()
+        println(processor.getIdentifier())
+        println(processor.getSubjectName())
+        println(processor.getLocation())
+        println(processor.getAmountOfMoney())
+
+
+        // REQUEST - STATIKA
+        // TRANSPORT - STATIKA
+
+        for(grower in growers){
+            Request.requestTransportToProcessor(grower, processor, grower.getSupplies())
+            grower.harvest();
+        }
+
+        println(processor.getAmountOfMoney())
 
 
 
+
+
+
+
+
+
+    }
 }

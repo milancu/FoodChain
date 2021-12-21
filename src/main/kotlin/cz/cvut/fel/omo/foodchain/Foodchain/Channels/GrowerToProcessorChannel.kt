@@ -11,7 +11,7 @@ class GrowerToProcessorChannel {
     private var processors : ArrayList<Processor>
 
     constructor(){
-        println("PHASE 1.0 - Farmers and processors creation")
+        println("PHASE 1.0 - Growers and processors creation")
 
         val generator : Generator = Generator()
 
@@ -21,6 +21,19 @@ class GrowerToProcessorChannel {
 
         println("Growers: " + growers.size)
         println("Processors: " + processors.size)
+        println()
+    }
+
+    fun printStats(){
+        println("CURRENT STATE")
+        for(grower in growers){
+            println("Grover: " + grower.getIdentifier() + " : money : " + grower.getAmountOfMoney() + " : supllies : " + grower.getSupplies().size)
+        }
+        for(processor in processors){
+            println("Processor: " + processor.getIdentifier() + " : money : " + processor.getAmountOfMoney()
+                    + " : supplies : " + processor.getStockSuppliesSize() + " : products : " + processor.getStockProductsSize())
+        }
+        println()
     }
 
     fun runSimulation(){
@@ -31,15 +44,9 @@ class GrowerToProcessorChannel {
         // REQUEST - STATIKA
         // TRANSPORT - STATIKA
 
-
         for(grower in growers){
             Request.requestTransportToProcessor(grower, processors.get(0), grower.getSupplies())
             grower.harvest();
-            println("Grover: " + grower.getIdentifier() + " : money : " + grower.getAmountOfMoney() + " : supllies : " + grower.getSupplies().size)
-        }
-
-        for(processor in processors){
-            println("Processor: " + processor.getIdentifier() + " : money : " + processor.getAmountOfMoney())
         }
     }
 

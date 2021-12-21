@@ -10,11 +10,16 @@ class ProcessorToRetailerChannel {
     private var retailers : ArrayList<Retailer>
 
     constructor(processors : ArrayList<Processor>){
+        println("PHASE 2.0 - Retailers creation")
 
         val generator : Generator = Generator()
 
         this.processors = processors
         retailers = generator.generateRetailers(2)
+
+        println("Processors: " + processors.size)
+        println("Retailers: " + retailers.size)
+        println()
     }
 
     fun runSimulation(){

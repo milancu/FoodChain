@@ -13,6 +13,10 @@ class RetailerToCustomerChannel {
         this.customers = ArrayList()
     }
 
+    fun runSimulation(){
+        //TODO()
+    }
+
     fun addCustomer(customer : Customer){
         customers.add(customer)
     }

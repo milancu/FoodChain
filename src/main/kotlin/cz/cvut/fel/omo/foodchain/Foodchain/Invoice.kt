@@ -2,6 +2,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.InvoiceType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
+import java.util.*
 
 class Invoice {
 
@@ -10,6 +11,7 @@ class Invoice {
     private val price : Double
     private val note : InvoiceType
     private var isPaid : Boolean
+    private var code : UUID
 
     constructor(subscriber: BaseParty, contractor: BaseParty, price: Double, note: InvoiceType) {
         this.subscriber = subscriber
@@ -17,6 +19,7 @@ class Invoice {
         this.price = price
         this.note = note
         this.isPaid = false
+        this.code = UUID.randomUUID()
     }
 
     fun getSubscriber() : BaseParty{
@@ -33,6 +36,10 @@ class Invoice {
 
     fun getNote() : InvoiceType{
         return note
+    }
+
+    fun getCode() : UUID{
+        return code
     }
 
     fun isPaid() :Boolean{

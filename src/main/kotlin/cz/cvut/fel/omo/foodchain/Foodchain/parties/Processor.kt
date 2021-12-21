@@ -57,8 +57,10 @@ class Processor(subjectName : String, identier : Int, location : String, amountO
             invoice.payInvoice()
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
+            println("Faktura " + invoice.getCode() + " zaplacena")
         } else {
             unpaidInvoices.add(invoice)
+            println("!Faktura " + invoice.getCode() + " NENI uhrazena")
         }
     }
 
@@ -72,5 +74,15 @@ class Processor(subjectName : String, identier : Int, location : String, amountO
         Transport.TransportCompany.takeProducts(products)
         products = ArrayList()
     }
+
+    fun getStockSuppliesSize() : Int{
+        return cropSupplies.size
+    }
+
+    fun getStockProductsSize() : Int{
+        return products.size
+    }
+
+
 
 }

@@ -11,7 +11,7 @@ class Crop {
     private val uuid : UUID
     private var shopPrice : Double
     private var productionCost : Double
-    private val growthTime : Int
+    private var growthTime : Int
     private val origin : UUID
 
     constructor(name: CropName, type : CropType, amount: Int, growthTime: Int) {
@@ -49,7 +49,17 @@ class Crop {
         return type
     }
 
+    fun getGrowth() : Int{
+        return growthTime
+    }
+
     fun setAmount(value : Int){
         amount = value
     }
+
+    fun resetCrop(){
+        growthTime = 0
+    }
+
+
 }

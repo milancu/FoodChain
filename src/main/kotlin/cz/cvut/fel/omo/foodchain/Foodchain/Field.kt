@@ -30,6 +30,7 @@ class Field {
     }
 
     fun resetField(){
+        crop.resetCrop()
         crop.setAmount(capacity)
     }
 

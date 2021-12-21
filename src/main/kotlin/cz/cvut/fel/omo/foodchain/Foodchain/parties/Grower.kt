@@ -38,14 +38,18 @@ class Grower(subjectName : String, identier : Int, location : String, amountOfMo
     fun harvest(){
         var harvestedCrop : ArrayList<Crop> = ArrayList()
         for(field in fields){
-            // TODO if splnena rustova podminka
-            harvestedCrop.add(field.getCrop())
-            field.resetField()
+            if(field.getCrop().getGrowth() >= 10){
+                println("Plodina " + field.getCrop().getName() + " sklizena v poctu " + field.getCrop().getAmount())
+                harvestedCrop.add(field.getCrop())
+                field.resetField()
+            }
         }
 
         for(crop in harvestedCrop){
             supplies.add(crop)
         }
+
+        println()
     }
 
     fun transportSupplies(){

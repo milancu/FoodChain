@@ -15,7 +15,7 @@ class GrowerToProcessorChannel {
 
         growers = generator.generateGrowers(2)
         processors = generator.generateProcessors(2)
-        val processor : Processor = generator.generateProcessor() // TODO jak rozhodovat, jakej processor se vybere
+        // TODO jak rozhodovat, jakej processor se vybere
 
         // TODO
        /* println(processor.getSubjectName())
@@ -26,7 +26,7 @@ class GrowerToProcessorChannel {
         // TRANSPORT - STATIKA
 
         for(grower in growers){
-            Request.requestTransportToProcessor(grower, processor, grower.getSupplies())
+            Request.requestTransportToProcessor(grower, processors.get(0), grower.getSupplies())
             grower.harvest();
         }
     }

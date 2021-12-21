@@ -11,12 +11,12 @@ class Grower(subjectName : String, identier : Int, location : String, amountOfMo
     private val fields : ArrayList<Field> = setInitialField()
     private var supplies : ArrayList<Crop> = setInitalSupplies()
 
-    fun setInitialField() : ArrayList<Field>{
+    private fun setInitialField() : ArrayList<Field>{
         val generator : Generator = Generator()
         return generator.generateFields()
     }
 
-    fun setInitalSupplies() : ArrayList<Crop>{
+    private fun setInitalSupplies() : ArrayList<Crop>{
         val generator : Generator = Generator()
         return generator.generateCrops()
     }

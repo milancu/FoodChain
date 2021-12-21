@@ -20,7 +20,7 @@ class Generator {
         return BaseAnimal(AnimalType.getAnimal())
     }
 
-    private fun generateAnimals(): ArrayList<BaseAnimal> {
+    public fun generateAnimals(): ArrayList<BaseAnimal> {
         var listOfAnimals = ArrayList<BaseAnimal>();
 
         for (i in 10..(10..50).random()) {
@@ -34,7 +34,7 @@ class Generator {
         return Field(generateCrop(capacity), capacity)
     }
 
-    private fun generateFields(): ArrayList<Field> {
+    public fun generateFields(): ArrayList<Field> {
         var listOfField = ArrayList<Field>();
         for (i in 1..(2..10).random()) {
             listOfField.add(generateField())
@@ -48,7 +48,7 @@ class Generator {
         return Crop(crop, type, capacity, 2)
     }
 
-    private fun generateCrops(): ArrayList<Crop> {
+    public fun generateCrops(): ArrayList<Crop> {
         var listOfCrop = ArrayList<Crop>();
         for (i in 10..(11..30).random()) {
             listOfCrop.add(generateCrop((1000..10000).random()))
@@ -94,7 +94,7 @@ class Generator {
         return Retailer(base.getSubjectName(), base.getIdentifier(), base.getLocation(), base.getAmountOfMoney())
     }
 
-    private fun generateGrowers(number : Int) : ArrayList<Grower>{
+    public fun generateGrowers(number : Int) : ArrayList<Grower>{
         var growers : ArrayList<Grower> = ArrayList()
         for(i in 1..number){
             growers.add(generateGrower())
@@ -102,7 +102,7 @@ class Generator {
         return growers;
     }
 
-    fun generateFarmers(number : Int) : ArrayList<Farmer>{
+    public fun generateFarmers(number : Int) : ArrayList<Farmer>{
         var farmers : ArrayList<Farmer> = ArrayList()
         for(i in 1..number){
             farmers.add(generateFarmer())
@@ -110,7 +110,7 @@ class Generator {
         return farmers;
     }
 
-    fun generateProcessors(number : Int) : ArrayList<Processor>{
+    public fun generateProcessors(number : Int) : ArrayList<Processor>{
         var processors : ArrayList<Processor> = ArrayList()
         for(i in 1..number){
             processors.add(generateProcessor())
@@ -118,7 +118,7 @@ class Generator {
         return processors
     }
 
-    fun generateRetailers(number : Int) : ArrayList<Retailer>{
+    public fun generateRetailers(number : Int) : ArrayList<Retailer>{
         var retailers : ArrayList<Retailer> = ArrayList()
         for(i in 1..number){
             retailers.add(generateRetailer())

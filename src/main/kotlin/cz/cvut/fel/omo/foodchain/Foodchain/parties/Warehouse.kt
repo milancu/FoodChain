@@ -19,7 +19,7 @@ class Warehouse{
         for(product in storagedProducts){
             if(product.getProductType() == wantedType){
                 toReturn.add(product)
-                // TODO odebrat po nalezeni
+                storagedProducts.remove(product)
             }
         }
         return toReturn
@@ -34,7 +34,4 @@ class Warehouse{
     fun takeIn(product : Product){
         storagedProducts.add(product)
     }
-
-
-
 }

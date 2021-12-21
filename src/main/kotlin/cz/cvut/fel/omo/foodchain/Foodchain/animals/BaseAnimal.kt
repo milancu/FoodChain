@@ -1,28 +1,27 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.animals
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observable
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
+import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import java.util.*
-import kotlin.collections.ArrayList
 
 
-open class BaseAnimal : Observable{
-    override val observers: ArrayList<Observer> = ArrayList()
+open class BaseAnimal : Subject {
+    private var observers: List<Observer> = ArrayList()
 
     private var weight: Double // TODO val podle toho, jestli budeme pracovat s vyvojem zvirete
     private var feed: CropType
     private var foodConsumption: Int
     private var age: Int
     private var price: Double
-    private var animalName : String
-    private var animalType : AnimalType
-    private var origin : UUID
+    private var animalName: String
+    private var animalType: AnimalType
+    private var origin: UUID
 
-    constructor(animalType : AnimalType){
+    constructor(animalType: AnimalType) {
         when (animalType) {
             AnimalType.COW -> {
                 this.weight = (150000..600000).random().toDouble()
@@ -33,7 +32,7 @@ open class BaseAnimal : Observable{
                 this.animalName = "Cow"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                sendUpdateEvent()
+                notifyUpdate(origin, "Krava")
             }
             AnimalType.PIG -> {
                 this.weight = (150000..600000).random().toDouble()
@@ -44,7 +43,7 @@ open class BaseAnimal : Observable{
                 this.animalName = "Pig"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                sendUpdateEvent()
+                notifyUpdate(origin, "Krava")
             }
             AnimalType.CHICKEN -> {
                 this.weight = (1500..3000).random().toDouble()
@@ -55,9 +54,9 @@ open class BaseAnimal : Observable{
                 this.animalName = "Chicken"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                sendUpdateEvent()
+                notifyUpdate(origin, "Krava")
             }
-            AnimalType.GOAT-> {
+            AnimalType.GOAT -> {
                 this.weight = (150000..400000).random().toDouble()
                 this.feed = CropType.CEREAL
                 this.foodConsumption = (5..8).random()
@@ -66,7 +65,7 @@ open class BaseAnimal : Observable{
                 this.animalName = "Goat"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                sendUpdateEvent()
+                notifyUpdate(origin, "Krava")
             }
             AnimalType.FISH -> {
                 this.weight = (1500..6000).random().toDouble()
@@ -77,7 +76,7 @@ open class BaseAnimal : Observable{
                 this.animalName = "Fish"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                sendUpdateEvent()
+                notifyUpdate(origin, "Krava")
             }
             AnimalType.BEE -> {
                 this.weight = (1..15).random().toDouble()
@@ -88,7 +87,7 @@ open class BaseAnimal : Observable{
                 this.animalName = "Bee"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                sendUpdateEvent()
+                notifyUpdate(origin, "Krava")
             }
             else -> throw Exception("unexpected type")
         }
@@ -103,18 +102,35 @@ open class BaseAnimal : Observable{
         }
         println("Dej jim nazrat vole, nemas zasoby hajzle")
     }
-    fun getAge() : Int{
+
+    fun getAge(): Int {
         return this.age
     }
-    fun getWeight() : Double{
+
+    fun getWeight(): Double {
         return this.weight
     }
-    fun getName() : String{
+
+    fun getName(): String {
         return this.animalName
     }
-    fun getOriginId() : UUID {
+
+    fun getOriginId(): UUID {
         return this.origin
     }
 
+    override fun attach(o: Observer) {
+        observers.toMutableList().add(o)
+    }
+
+    override fun detach(o: Observer) {
+        observers.toMutableList().remove(o)
+    }
+
+    override fun notifyUpdate(uuid: UUID, report: String) {
+        for(i in observers){
+            i.update(uuid, report)
+        }
+    }
 
 }

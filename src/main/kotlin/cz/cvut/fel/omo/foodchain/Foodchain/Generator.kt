@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.*
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
@@ -16,8 +17,14 @@ const val IDENTIFIER_MAX = 99999999
 
 class Generator {
 
+    companion object {
+        var report = Report()
+    }
+
     private fun generateAnimal(): BaseAnimal {
-        return BaseAnimal(AnimalType.getAnimal())
+        var animal = BaseAnimal(AnimalType.getAnimal())
+        animal.attach(report)
+        return animal
     }
 
     public fun generateAnimals(): ArrayList<BaseAnimal> {

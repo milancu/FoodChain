@@ -48,9 +48,10 @@ class Request {
             for(product in products){
                 money += product.getAmount() * product.getShopPrice()
             }
-            var Invoice : Invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
+            var invoice : Invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
 
             processor.transportProducts()
+            println("Vznik faktury " + invoice.getCode())
 
             retailer.buyProducts(Transport.transportProducts()) // todo invoice retailer a transport
 

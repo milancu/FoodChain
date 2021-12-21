@@ -48,6 +48,10 @@ class Farmer(subjectName: String, identier: Int, location: String, amountOfMoney
                 "Fish" -> if (animal.getAge() > 1) animalsToProcessing.add(animal)
             }
         }
+
+        // TODO otestovat
+        animals.toMutableList().removeAll(animalsToProcessing)
+
         return animalsToProcessing
     }
 

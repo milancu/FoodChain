@@ -11,7 +11,9 @@ class Channel {
 
         val growers : ArrayList<Grower> = generator.generateGrowers()
         val processor : Processor = generator.generateProcessor()
-        println(processor.getAmountOfMoney())
+       /* println(processor.getAmountOfMoney())*/
+
+
         // TODO
        /* println(processor.getSubjectName())
         println(processor.getLocation())*/
@@ -22,20 +24,8 @@ class Channel {
         // TRANSPORT - STATIKA
 
         for(grower in growers){
-            /*println(grower.getSupplies().size.toString() +  " / ")*/
             Request.requestTransportToProcessor(grower, processor, grower.getSupplies())
             grower.harvest();
         }
-
-        println(processor.getAmountOfMoney())
-
-
-
-
-
-
-
-
-
     }
 }

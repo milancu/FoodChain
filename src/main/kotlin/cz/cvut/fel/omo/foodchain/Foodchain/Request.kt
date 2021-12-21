@@ -22,13 +22,12 @@ class Request {
                 money += crop.getAmount() * crop.getShopPrice()
             }
             var invoice : Invoice = Invoice(processor, grower, money, InvoiceType.CROP)
-            println("minus: " + money)
+            println("plus: " + money)
 
-            grower.sellSupplies() // Pokud funguje predavani budu zpusobovat duplicitni odecet
             grower.transportSupplies()
 
             processor.takeCropSupplies(Transport.transportCropSuplies()) // todo invoice processorem a transportem
-            processor.payForInvoice(invoice) // todo RIZIKO DVOJIHO ZAPLACENI, Presneji melo by k nemu dojit
+            processor.payForInvoice(invoice)
         }
 
         fun requestTransportToWarehouse(){

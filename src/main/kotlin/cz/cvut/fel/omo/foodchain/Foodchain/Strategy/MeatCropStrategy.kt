@@ -26,6 +26,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Dumpling",
                     MeatProductType.BEEFDUMPLING.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
@@ -34,6 +35,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "BeefShoulder",
                     MeatProductType.BEEFSHOULDER.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
@@ -42,6 +44,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Bovinecheek",
                     MeatProductType.BOVINECHEEK.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
@@ -50,6 +53,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Beeftenderloin",
                     MeatProductType.BEEFTENDERLOIN.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 18).toInt(),
@@ -67,6 +71,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Chicken thigh",
                     MeatProductType.CHICKENTHIGH.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
@@ -75,6 +80,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Chicken breast",
                     MeatProductType.CHICKENBREAST.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
@@ -83,6 +89,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Chicken wings",
                     MeatProductType.CHICKENWINGS.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
@@ -100,6 +107,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Pork dumpling",
                     MeatProductType.PORKDUMPLING.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
@@ -108,6 +116,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Pork roast",
                     MeatProductType.PORKROAST.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
@@ -116,6 +125,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Pork leg",
                     MeatProductType.PORKLEG.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
@@ -124,6 +134,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Pork flank",
                     MeatProductType.PORKFLANK.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
@@ -141,6 +152,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Pork dumpling",
                     FishType.CARP.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
@@ -149,6 +161,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Pork roast",
                     FishType.BREAM.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
@@ -157,6 +170,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Pork leg",
                     FishType.EEL.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
@@ -165,6 +179,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Pork flank",
                     FishType.ZANDER.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
@@ -173,6 +188,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Pork flank",
                     FishType.CATFISH.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
@@ -181,6 +197,7 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                 MeatProduct(
                     "Pork flank",
                     FishType.PERCH.toString(),
+                    ProductType.MEAT,
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),

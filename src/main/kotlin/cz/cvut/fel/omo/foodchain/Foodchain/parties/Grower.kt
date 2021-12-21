@@ -55,11 +55,11 @@ class Grower(subjectName : String, identier : Int, location : String, amountOfMo
         supplies = ArrayList();
     }
 
-    fun sellSupplies() {
+/*    fun sellSupplies() {
         for(supply in supplies){
             this.amountOfMoney += supply.getAmount() * supply.getShopPrice()
         }
-    }
+    }*/
 
     fun getSupplies() : ArrayList<Crop> {
         return supplies

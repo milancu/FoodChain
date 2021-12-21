@@ -1,15 +1,19 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.products
 
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
+
 class MeatProduct(
-    name: String,
-    private var type: String,
-    shopPrice: Double,
-    productionCost: Double,
-    amount: Int,
-    unit: String,
+    private var name: String,
+    private var typeOfMeat: String,
+    private var type: ProductType,
+    private var shopPrice: Double,
+    private var productionCost: Double,
+    private var amount: Int,
+    private var unit: String,
 ) :
     Product(
         name,
+        type,
         shopPrice,
         productionCost,
         amount,

@@ -16,4 +16,5 @@ enum class ProductType {
     DRINK,
     ALCOHOL,
     MILKPRODUCT,
+    NOTSET
 }

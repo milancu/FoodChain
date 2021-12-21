@@ -7,6 +7,7 @@ import java.util.*
 
 open class Product(
     private val name: String,
+    private var productType: ProductType,
     private var shopPrice: Double,
     private var productionCost: Double,
     private var amount: Int,
@@ -16,5 +17,10 @@ open class Product(
 
     init {
         this.uuid = UUID.randomUUID()
+        this.productType = ProductType.NOTSET
+    }
+
+    fun getProductType() : ProductType{
+        return productType
     }
 }

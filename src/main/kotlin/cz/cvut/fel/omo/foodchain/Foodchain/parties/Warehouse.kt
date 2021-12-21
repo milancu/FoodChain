@@ -34,4 +34,8 @@ class Warehouse{
     fun takeIn(product : Product){
         storagedProducts.add(product)
     }
+
+    fun getStockSize() : Int{
+        return storagedProducts.size
+    }
 }

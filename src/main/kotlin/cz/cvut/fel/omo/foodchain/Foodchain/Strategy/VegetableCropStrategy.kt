@@ -31,7 +31,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 "kg",
                 crop.getOriginID()
             )
-            else -> throw Exception("Wrong crop name input")
+            else -> throw Exception("Wrong crop name input: " + crop.getName() + "Vegetable strategy")
         }
     }
 

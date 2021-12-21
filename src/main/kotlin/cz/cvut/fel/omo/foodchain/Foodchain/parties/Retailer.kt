@@ -30,7 +30,6 @@ class Retailer(subjectName : String, identier : Int, location : String, amountOf
         prepareMap.put(ProductType.MEAT, 0)
         prepareMap.put(ProductType.DRINK, 0)
         prepareMap.put(ProductType.ALCOHOL, 0)
-        prepareMap.put(ProductType.MILKPRODUCT, 0)
         return prepareMap
     }
 
@@ -75,6 +74,13 @@ class Retailer(subjectName : String, identier : Int, location : String, amountOf
         }
     }
 
+    fun getStockSize() : Int{
+        return availableProducts.size
+    }
+
+    fun getWarehouseStockSize() : Int{
+        return warehouse.getStockSize()
+    }
 
 
 }

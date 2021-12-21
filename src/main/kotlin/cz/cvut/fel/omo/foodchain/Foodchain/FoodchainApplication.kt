@@ -22,6 +22,11 @@ fun main(args: Array<String>) {
 	// TODO TIMER, aby nebylo nutny spoustet vsechny run zvlast
 
 	channelG2P.printStats()
+	channelP2R.printStats()
+
+	println()
+	println("ONE WEEK LATER")
+	println()
 
 	// poskoceni o tyden
 	channelG2P.runSimulation()
@@ -30,5 +35,6 @@ fun main(args: Array<String>) {
 	channelRTC.runSimulation()
 
 	channelG2P.printStats()
+	channelP2R.printStats()
 
 }

@@ -39,13 +39,14 @@ class Request {
 
             //farmer.transportSupplies() // TODO
 
-            processor.takeCropSupplies(Transport.transportCropSuplies()) // todo invoice processorem a transportem
-            processor.payForInvoice(invoice)
+            processor.takeCropSupplies(Transport.transportCropSuplies()) // todo invoice FAKTORY a transportem
+            processor.payForInvoice(invoice) // TODO predelej tu factory
         }
 
-        fun requestTransportToWarehouse(processor : Processor, retailer: Retailer, products : ArrayList<Product>){
+        fun requestTransportToWarehouse(processor : Processor, retailer: Retailer){
             var money : Double = 0.0
-            for(product in products){
+            processor.transportProducts()
+            for(product in Transport.transportProducts()){
                 money += product.getAmount() * product.getShopPrice()
             }
             var invoice : Invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
@@ -54,12 +55,7 @@ class Request {
             println("Vznik faktury " + invoice.getCode())
 
             retailer.buyProducts(Transport.transportProducts()) // todo invoice retailer a transport
-
-
-        }
-
-        fun requestTransportToRetailer(){
-
+            retailer.payForInvoice(invoice)
         }
 
     }

@@ -5,11 +5,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 class Transport{
     companion object TransportCompany {
-        var name : String = "Transport S.R.O"
-        var identifier : String = "12345678"
-        var amountOfMoney : Double = 10000.00
-        var cropSupplies : ArrayList<Crop> = ArrayList()
-        var products : ArrayList<Product> = ArrayList()
+        private var name : String = "Transport S.R.O"
+        private var identifier : String = "12345678"
+        private var amountOfMoney : Double = 10000.00
+        private var cropSupplies : ArrayList<Crop> = ArrayList()
+        private var products : ArrayList<Product> = ArrayList()
 
         fun transportCropSuplies() : ArrayList<Crop>{
             var toTransport : ArrayList<Crop> = cropSupplies

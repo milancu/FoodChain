@@ -17,13 +17,9 @@ const val IDENTIFIER_MAX = 99999999
 
 class Generator {
 
-    companion object {
-        var report = Report()
-    }
-
     private fun generateAnimal(): BaseAnimal {
         var animal = BaseAnimal(AnimalType.getAnimal())
-        animal.attach(report)
+        animal.attach(Report)
         return animal
     }
 

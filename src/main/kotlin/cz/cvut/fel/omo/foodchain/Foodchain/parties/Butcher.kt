@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
@@ -13,22 +14,30 @@ class Butcher {
             when (animal.getName()) {
                 "Cow" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.BEEF.price
-                    meatList.add(Meat(MeatType.BEEF, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId()))
+                    var beef = Meat(MeatType.BEEF, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
+                    beef.attach(Report)
+                    meatList.add(beef)
                 }
 
                 "Pig" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.PORK.price
-                    meatList.add(Meat(MeatType.PORK, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId()))
+                    var pork = Meat(MeatType.PORK, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
+                    pork.attach(Report)
+                    meatList.add(pork)
                 }
 
                 "Chicken" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.CHICKEN.price
-                    meatList.add(Meat(MeatType.CHICKEN, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId()))
+                    var chicken = Meat(MeatType.CHICKEN, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
+                    chicken.attach(Report)
+                    meatList.add(chicken)
                 }
 
                 "Fish" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.FISH.price
-                    meatList.add(Meat(MeatType.FISH, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId()))
+                    var fish = Meat(MeatType.FISH, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
+                    fish.attach(Report)
+                    meatList.add(fish)
                 }
             }
         }

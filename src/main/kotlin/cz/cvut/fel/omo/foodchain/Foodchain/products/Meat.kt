@@ -1,9 +1,14 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.products
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
+import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import java.util.*
 
-class Meat {
+class Meat : Subject{
+    companion object {
+        private var observers: ArrayList<Observer> = ArrayList()
+    }
     private val type: MeatType
     private var shopPrice: Double
     private var productionCost: Double
@@ -22,6 +27,7 @@ class Meat {
         this.productionCost = productionCost
         this.amount = amount
         this.origin = origin
+        notifyUpdate(origin, this.type.toString() + " " + this.shopPrice + "Kc" + this.amount + "g")
     }
 
     fun getOriginID() : UUID{
@@ -43,6 +49,20 @@ class Meat {
 
     fun getAmount() : Double{
         return this.amount
+    }
+
+    override fun attach(o: Observer) {
+        Meat.observers.add(o)
+    }
+
+    override fun detach(o: Observer) {
+        Meat.observers.remove(o)
+    }
+
+    override fun notifyUpdate(uuid: UUID, report: String) {
+        for(i in Meat.observers){
+            i.update(uuid, report)
+        }
     }
 
 }

@@ -9,22 +9,16 @@ import java.util.*
 
 class MeatProduct(
     private var name: String,
-
     private var typeOfMeat: String,
-
     private var productType: ProductType,
-
     private var shopPrice: Double,
-
     private var productionCost: Double,
-
     private var amount: Int,
-
     private var unit: String,
-
     private var origin: UUID,
 
 ) : Product(name, shopPrice, productionCost, amount, unit, origin) {
+
     override fun getAmount(): Int {
         return amount
     }

@@ -1,9 +1,10 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Observer
 
+import jdk.internal.org.jline.keymap.KeyMap.key
 import java.util.*
-import kotlin.collections.ArrayList
 
-class Report : Observer{
+
+object Report : Observer {
 
     var reports = hashMapOf<UUID, ArrayList<String>>()
 
@@ -11,23 +12,21 @@ class Report : Observer{
         println("Singleton class invoked.")
     }
 
-    fun getReport(uuid: UUID) : ArrayList<String>? {
+    fun getReport(uuid: UUID): ArrayList<String>? {
         return reports.get(uuid)
     }
 
+
     override fun update(uuid: UUID, report: String) {
-        if(!reports.containsKey(uuid)){
-            var newReport = ArrayList<String>()
+        if (!reports.containsKey(uuid)) {
+            var newReport: ArrayList<String> = ArrayList<String>()
             newReport.add(report)
             reports.put(uuid, newReport)
         } else {
-            var existingReport = reports.get(uuid)
-            if (existingReport != null) {
-                existingReport.add(report)
-            }
-            if (existingReport != null) {
-                reports.put(uuid, existingReport)
-            };
+
+            var set: ArrayList<String> = reports.get(uuid)!!
+            set.add(report)
+            reports.put(uuid, set);
         }
     }
 }

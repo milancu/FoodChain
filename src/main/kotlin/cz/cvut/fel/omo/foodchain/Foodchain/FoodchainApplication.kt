@@ -4,6 +4,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Channels.FarmerToProcessorChannel
 import cz.cvut.fel.omo.foodchain.Foodchain.Channels.GrowerToProcessorChannel
 import cz.cvut.fel.omo.foodchain.Foodchain.Channels.ProcessorToRetailerChannel
 import cz.cvut.fel.omo.foodchain.Foodchain.Channels.RetailerToCustomerChannel
+import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -41,5 +42,14 @@ fun main(args: Array<String>) {
 
 	channelP2R.runSimulation()
 	channelP2R.printStats()
+
+
+	println("#############################################################")
+	var generator : Generator = Generator()
+
+	for(i in generator.generateAnimals()){
+		var id = i.getOriginId()
+		println(Report.getReport(id)!!.get(0))
+	}
 
 }

@@ -1,5 +1,8 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.products
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
+import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
+import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
@@ -10,7 +13,10 @@ import java.util.*
 // TODO bude potreba neco pridavat nevystacime si s Product a Crop a name
 
 
-open class Product {
+open class Product : Subject{
+    companion object {
+        private var observers: ArrayList<Observer> = ArrayList()
+    }
     private var name: String
     private var productType: ProductType
     private var shopPrice: Double
@@ -36,6 +42,7 @@ open class Product {
         this.unit = unit
         this.uuid = UUID.randomUUID()
         this.origin = origin
+        notifyUpdate(origin, this.name + " " + this.shopPrice + "Kc" + this.amount + "g")
     }
 
     open fun getOriginId() : UUID{
@@ -52,5 +59,19 @@ open class Product {
 
     open fun getAmount(): Int {
         return amount
+    }
+
+    override fun attach(o: Observer) {
+        Product.observers.add(o)
+    }
+
+    override fun detach(o: Observer) {
+        Product.observers.remove(o)
+    }
+
+    override fun notifyUpdate(uuid: UUID, report: String) {
+        for(i in Product.observers){
+            i.update(uuid, report)
+        }
     }
 }

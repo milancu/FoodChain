@@ -59,7 +59,7 @@ class Generator {
             CropName.FLEX -> return CropType.FLOWER
             CropName.GRAPEVINE -> return CropType.FRUIT
             CropName.HEMP -> return CropType.FLOWER
-            CropName.HOP -> return CropType.FLOWER
+            CropName.HOP -> return CropType.CEREAL
             CropName.LENTIL -> return CropType.LEGUMES
             CropName.OATS -> return CropType.CEREAL
             CropName.OILSEED -> return CropType.FLOWER

@@ -15,7 +15,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
             CropName.OILSEED -> return createFromOilSeed(crop)
             CropName.POPPY -> return createFromPoppy(crop)
             CropName.SUNFLOWER -> return createFromSunflower(crop)
-            else -> throw Exception("Wrong crop name input")
+            else -> throw Exception("Wrong crop name input " + crop.getName())
         }
     }
 

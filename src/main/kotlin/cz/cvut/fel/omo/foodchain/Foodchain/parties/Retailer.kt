@@ -42,9 +42,12 @@ class Retailer(subjectName : String, identier : Int, location : String, amountOf
             invoice.payInvoice()
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
+            println("Faktura " + invoice.getCode() + " zaplacena")
         } else {
             unpaidInvoices.add(invoice)
+            println("!Faktura " + invoice.getCode() + " NENI uhrazena")
         }
+        println()
     }
 
     fun vacateWarehouse(){

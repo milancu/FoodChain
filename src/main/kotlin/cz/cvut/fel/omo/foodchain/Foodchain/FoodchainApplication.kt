@@ -24,17 +24,22 @@ fun main(args: Array<String>) {
 	channelG2P.printStats()
 	channelP2R.printStats()
 
-	println()
 	println("ONE WEEK LATER")
 	println()
 
 	// poskoceni o tyden
 	channelG2P.runSimulation()
-	channelF2P.runSimulation()
+	channelF2P.runSimulation() //todo
 	channelP2R.runSimulation()
-	channelRTC.runSimulation()
+	channelRTC.runSimulation() //todo
 
-	channelG2P.printStats()
+	//channelG2P.printStats()
+	channelP2R.printStats()
+
+	println("TWO WEEKS LATER")
+	println()
+
+	channelP2R.runSimulation()
 	channelP2R.printStats()
 
 }

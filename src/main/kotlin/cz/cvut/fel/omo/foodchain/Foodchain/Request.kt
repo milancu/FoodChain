@@ -29,7 +29,8 @@ class Request {
 
         fun requestTransportToMeatFactory(farmer: Farmer, processor: Processor, crops : ArrayList<Crop>){
             println("Proces transportace (from farmer " + farmer.getIdentifier() + " to processor) " + processor.getIdentifier())
-            // Faktury
+
+            // Faktura
             var money : Double = 0.0
             for(crop in crops){
                 money += crop.getAmount() * crop.getShopPrice()
@@ -44,12 +45,18 @@ class Request {
         }
 
         fun requestTransportToWarehouse(processor : Processor, retailer: Retailer){
+            println("Proces transportace (from processor " + processor.getIdentifier() + " to retailer " + retailer.getIdentifier())
+
+            // Faktura
             var money : Double = 0.0
-            processor.transportProducts()
+
+            processor.transportProducts() //TODO tady to pada ...
+
             for(product in Transport.transportProducts()){
                 money += product.getAmount() * product.getShopPrice()
             }
             var invoice : Invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
+
 
             processor.transportProducts()
             println("Vznik faktury " + invoice.getCode())

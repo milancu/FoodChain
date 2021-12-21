@@ -16,7 +16,7 @@ class Transport{
             for(supply in cropSupplies){
                 amountOfMoney += supply.getShopPrice() * supply.getAmount() * 0.1 // TODO od koho si je vezme
             }
-            cropSupplies = ArrayList()
+            this.cropSupplies = ArrayList()
             return toTransport
         }
 
@@ -25,19 +25,20 @@ class Transport{
             for(product in products){
                 amountOfMoney += product.getShopPrice() * product.getAmount() * 0.1 //TODO invoice smerem od transportu
             }
-            products = ArrayList()
+            this.products = ArrayList()
             return toTransport
         }
 
         fun takeCropSupplies(supplies : ArrayList<Crop>){
+            if(supplies.size == 0) return
             for(supply in supplies){
-                cropSupplies.add(supply)
+                this.cropSupplies.add(supply)
             }
         }
 
         fun takeProducts(products : ArrayList<Product>){
             for(product in products){
-                products.add(product)
+                this.products.add(product)
             }
         }
 

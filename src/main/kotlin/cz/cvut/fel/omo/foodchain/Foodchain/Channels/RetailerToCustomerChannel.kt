@@ -14,7 +14,7 @@ class RetailerToCustomerChannel {
     }
 
     fun runSimulation(){
-        //TODO()
+        //TODO() // nezapomen na
     }
 
     fun addCustomer(customer : Customer){

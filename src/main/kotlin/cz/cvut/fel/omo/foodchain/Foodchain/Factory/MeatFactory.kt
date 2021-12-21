@@ -3,12 +3,13 @@ package cz.cvut.fel.omo.foodchain.Foodchain.Factory
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.FishType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
+import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 class MeatFactory {
 
-    fun packagePorkDumpling(): Product {
+    fun packagePorkDumpling(meat: Meat): Product {
         return MeatProduct(
             "Pork Dumpling 300g",
             MeatProductType.PORKDUMPLING.toString(),
@@ -16,11 +17,12 @@ class MeatFactory {
             150.0,
             180.0,
             300,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packagePorkRoast(): Product {
+    fun packagePorkRoast(meat: Meat): Product {
         return MeatProduct(
             "Pork Roast 300g",
             MeatProductType.PORKROAST.toString(),
@@ -28,11 +30,12 @@ class MeatFactory {
             160.0,
             170.0,
             300,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packagePorkLeg(): Product {
+    fun packagePorkLeg(meat: Meat): Product {
         return MeatProduct(
             "Pork Leg 400g",
             MeatProductType.PORKLEG.toString(),
@@ -40,11 +43,12 @@ class MeatFactory {
             180.0,
             200.0,
             400,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packagePorkFlank(): Product {
+    fun packagePorkFlank(meat: Meat): Product {
         return MeatProduct(
             "Pork Flank 200g",
             MeatProductType.PORKFLANK.toString(),
@@ -52,11 +56,12 @@ class MeatFactory {
             180.0,
             200.0,
             200,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packageBeefTenderloin(): Product {
+    fun packageBeefTenderloin(meat: Meat): Product {
         return MeatProduct(
             "Beef TenderLoin 400g",
             MeatProductType.BEEFTENDERLOIN.toString(),
@@ -64,11 +69,12 @@ class MeatFactory {
             280.0,
             330.0,
             400,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packageBovineCheek(): Product {
+    fun packageBovineCheek(meat: Meat): Product {
         return MeatProduct(
             "Bovine Cheek 300g",
             MeatProductType.BOVINECHEEK.toString(),
@@ -76,11 +82,12 @@ class MeatFactory {
             220.0,
             270.0,
             300,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packageBeefShoulder(): Product {
+    fun packageBeefShoulder(meat: Meat): Product {
         return MeatProduct(
             "Beef Shoulder 300g",
             MeatProductType.BEEFSHOULDER.toString(),
@@ -88,11 +95,12 @@ class MeatFactory {
             220.0,
             270.0,
             300,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packageBeefDumpling(): Product {
+    fun packageBeefDumpling(meat: Meat): Product {
         return MeatProduct(
             "Beef Dumpling 300g",
             MeatProductType.BEEFDUMPLING.toString(),
@@ -100,11 +108,12 @@ class MeatFactory {
             220.0,
             270.0,
             300,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packageChickenThigh(): Product {
+    fun packageChickenThigh(meat: Meat): Product {
         return MeatProduct(
             "Chicken Thigh 100g",
             MeatProductType.CHICKENTHIGH.toString(),
@@ -112,11 +121,12 @@ class MeatFactory {
             90.0,
             110.0,
             100,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packageChickenBreast(): Product {
+    fun packageChickenBreast(meat: Meat): Product {
         return MeatProduct(
             "Chicken Thigh 150g",
             MeatProductType.CHICKENBREAST.toString(),
@@ -124,11 +134,12 @@ class MeatFactory {
             120.0,
             160.0,
             150,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packageChickenWings(): Product {
+    fun packageChickenWings(meat: Meat): Product {
         return MeatProduct(
             "Chicken Wings 150g",
             MeatProductType.CHICKENWINGS.toString(),
@@ -136,11 +147,12 @@ class MeatFactory {
             120.0,
             160.0,
             150,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packageCarp(): Product {
+    fun packageCarp(meat: Meat): Product {
         return MeatProduct(
             "Carp 750g",
             FishType.CARP.toString(),
@@ -148,11 +160,12 @@ class MeatFactory {
             420.0,
             560.0,
             750,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packageBream(): Product {
+    fun packageBream(meat: Meat): Product {
         return MeatProduct(
             "Bream 750g",
             FishType.BREAM.toString(),
@@ -160,11 +173,12 @@ class MeatFactory {
             400.0,
             540.0,
             750,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packageEel(): Product {
+    fun packageEel(meat: Meat): Product {
         return MeatProduct(
             "Eel 800g",
             FishType.EEL.toString(),
@@ -172,11 +186,12 @@ class MeatFactory {
             500.0,
             640.0,
             800,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packageZander(): Product {
+    fun packageZander(meat: Meat): Product {
         return MeatProduct(
             "Zander 600g",
             FishType.ZANDER.toString(),
@@ -184,11 +199,12 @@ class MeatFactory {
             500.0,
             640.0,
             600,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packageCatfish(): Product {
+    fun packageCatfish(meat: Meat): Product {
         return MeatProduct(
             "Catfish 600g",
             FishType.CATFISH.toString(),
@@ -196,11 +212,12 @@ class MeatFactory {
             500.0,
             640.0,
             600,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 
-    fun packagePerch(): Product {
+    fun packagePerch(meat: Meat): Product {
         return MeatProduct(
             "Perch 600g",
             FishType.PERCH.toString(),
@@ -208,7 +225,8 @@ class MeatFactory {
             500.0,
             640.0,
             600,
-            "g"
+            "g",
+            meat.getOriginID()
         )
     }
 }

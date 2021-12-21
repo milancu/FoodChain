@@ -18,13 +18,15 @@ open class Product {
     private var amount: Int
     private var unit: String
     private var uuid: UUID
+    private var origin: UUID
 
     constructor(
         name: String,
         shopPrice: Double,
         productionCost: Double,
         amount: Int,
-        unit: String
+        unit: String,
+        origin: UUID
     ) {
         this.name = name
         this.productType = ProductType.NOTSET
@@ -33,8 +35,12 @@ open class Product {
         this.amount = amount
         this.unit = unit
         this.uuid = UUID.randomUUID()
+        this.origin = origin
     }
 
+    open fun getOriginId() : UUID{
+        return this.origin
+    }
 
     open fun getProductType(): ProductType {
         return this.productType

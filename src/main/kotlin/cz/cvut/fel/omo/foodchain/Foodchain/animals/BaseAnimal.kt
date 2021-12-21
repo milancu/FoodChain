@@ -4,6 +4,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+import java.util.*
 
 open class BaseAnimal {
     private var weight: Double // TODO val podle toho, jestli budeme pracovat s vyvojem zvirete
@@ -13,6 +14,7 @@ open class BaseAnimal {
     private var price: Double
     private var animalName : String
     private var animalType : AnimalType
+    private var origin : UUID
 
     constructor(animalType : AnimalType){
         when (animalType) {
@@ -24,6 +26,7 @@ open class BaseAnimal {
                 this.price = 1000.00
                 this.animalName = "Cow"
                 this.animalType = animalType
+                this.origin = UUID.randomUUID()
             }
             AnimalType.PIG -> {
                 this.weight = (150000..600000).random().toDouble()
@@ -33,6 +36,7 @@ open class BaseAnimal {
                 this.price = 8000.00
                 this.animalName = "Pig"
                 this.animalType = animalType
+                this.origin = UUID.randomUUID()
             }
             AnimalType.CHICKEN -> {
                 this.weight = (1500..3000).random().toDouble()
@@ -42,6 +46,7 @@ open class BaseAnimal {
                 this.price = 100.00
                 this.animalName = "Chicken"
                 this.animalType = animalType
+                this.origin = UUID.randomUUID()
             }
             AnimalType.GOAT-> {
                 this.weight = (150000..400000).random().toDouble()
@@ -51,6 +56,7 @@ open class BaseAnimal {
                 this.price = 900.00
                 this.animalName = "Goat"
                 this.animalType = animalType
+                this.origin = UUID.randomUUID()
             }
             AnimalType.FISH -> {
                 this.weight = (1500..6000).random().toDouble()
@@ -60,6 +66,7 @@ open class BaseAnimal {
                 this.price = 1000.00
                 this.animalName = "Fish"
                 this.animalType = animalType
+                this.origin = UUID.randomUUID()
             }
             AnimalType.BEE -> {
                 this.weight = (1..15).random().toDouble()
@@ -69,6 +76,7 @@ open class BaseAnimal {
                 this.price = 1000.00
                 this.animalName = "Bee"
                 this.animalType = animalType
+                this.origin = UUID.randomUUID()
             }
             else -> throw Exception("unexpected type")
         }
@@ -91,5 +99,8 @@ open class BaseAnimal {
     }
     fun getName() : String{
         return this.animalName
+    }
+    fun getOriginId() : UUID {
+        return this.origin
     }
 }

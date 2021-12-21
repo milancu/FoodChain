@@ -30,7 +30,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 ),
                 MeatProduct(
                     "BeefShoulder",
@@ -39,7 +40,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 ),
                 MeatProduct(
                     "Bovinecheek",
@@ -48,7 +50,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 ),
                 MeatProduct(
                     "Beeftenderloin",
@@ -57,7 +60,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 18).toInt(),
-                    "k=g"
+                    "kg",
+                    meat.getOriginID()
                 )
             )
         )
@@ -75,7 +79,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 ),
                 MeatProduct(
                     "Chicken breast",
@@ -84,7 +89,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 ),
                 MeatProduct(
                     "Chicken wings",
@@ -93,7 +99,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 )
             )
         )
@@ -111,7 +118,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 ),
                 MeatProduct(
                     "Pork roast",
@@ -120,7 +128,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 ),
                 MeatProduct(
                     "Pork leg",
@@ -129,7 +138,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 ),
                 MeatProduct(
                     "Pork flank",
@@ -138,7 +148,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 )
             )
         )
@@ -156,7 +167,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 ),
                 MeatProduct(
                     "Pork roast",
@@ -165,7 +177,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 ),
                 MeatProduct(
                     "Pork leg",
@@ -174,7 +187,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 ),
                 MeatProduct(
                     "Pork flank",
@@ -183,7 +197,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 ),
                 MeatProduct(
                     "Pork flank",
@@ -192,7 +207,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 ),
                 MeatProduct(
                     "Pork flank",
@@ -201,7 +217,8 @@ class MeatCropStrategy : ProcessorMeatStrategy {
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
-                    "kg"
+                    "kg",
+                    meat.getOriginID()
                 )
             )
         )

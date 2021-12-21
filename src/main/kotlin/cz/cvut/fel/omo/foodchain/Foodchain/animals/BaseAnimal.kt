@@ -4,16 +4,20 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Component
 
-open class BaseAnimal(animalType: AnimalType) {
+@Component
+open class BaseAnimal {
     var weight: Double // TODO val podle toho, jestli budeme pracovat s vyvojem zvirete
     private var feed: CropType
     private var foodConsumption: Int
     private var age: Int
     private var price: Double
-    var animalName: String
+    private var animalName : String
 
-    init {
+    @Autowired
+    constructor(animalType : AnimalType){
         when (animalType.animalName) {
             "Cow" -> {
                 this.weight = (150000..600000).random().toDouble()

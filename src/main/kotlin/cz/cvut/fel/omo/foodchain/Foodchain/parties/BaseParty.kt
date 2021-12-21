@@ -1,7 +1,5 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
-import javax.print.attribute.IntegerSyntax
-
 const val NAME_LENGTH = 12;
 const val IDENTIFIER_LENGTH = 8;
 const val LOCATION_LENGTH = 16;

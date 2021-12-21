@@ -5,6 +5,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.LOCATION_LENGTH
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.NAME_LENGTH
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
@@ -68,4 +69,11 @@ class Generator {
 
         return BaseParty(generatedName, generatedIdentifier, generatedLocation, generatedMoney)
     }
+
+    fun generateGrower() : Grower {
+        val base : BaseParty = generateNewParty()
+        return Grower(base.getSubjectName(), base.getIdentifier(), base.getLocation(), base.getAmountOfMoney())
+    }
+
+
 }

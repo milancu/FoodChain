@@ -20,4 +20,28 @@ open class BaseParty {
         this.location = location
         this.amountOfMoney = amountOfMoney
     }
+
+    @JvmName("getName")
+    fun getSubjectName() : String{
+        return subjectName
+    }
+
+    @JvmName("getId")
+    fun getIdentifier() : Int{
+        return identifier
+    }
+
+    @JvmName("getLoc")
+    fun getLocation() : String{
+        return location
+    }
+
+    @JvmName("getMoney")
+    fun getAmountOfMoney() : Double{
+        return amountOfMoney
+    }
+
+    fun changeAmountOfMoney(value : Int){
+        amountOfMoney += value
+    }
 }

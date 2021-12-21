@@ -7,10 +7,12 @@ class Transport{
         var name : String = "Transport S.R.O"
         var identifier : String = "12345678"
         var amountOfMoney : Double = 10000.00
-        var cropSupplies : List<Crop> = emptyList()
+        var cropSupplies : ArrayList<Crop> = ArrayList<Crop>()
 
         fun transportCropSuplies() : List<Crop>{
-            amountOfMoney
+            for(supply in cropSupplies){
+                amountOfMoney += supply.getShopPrice() * supply.getAmount() * 0.1
+            }
             return cropSupplies
         }
 

@@ -2,6 +2,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.Field
+import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 
 
 class Grower(subjectName : String, identier : Int, location : String, amountOfMoney : Double)
@@ -11,11 +12,13 @@ class Grower(subjectName : String, identier : Int, location : String, amountOfMo
     var supplies : List<Crop> = setInitalSupplies()
 
     fun setInitialField() : List<Field>{
-        return TODO()
+        val generator : Generator = Generator()
+        return generator.generateFields()
     }
 
     fun setInitalSupplies() : List<Crop>{
-        return TODO()
+        val generator : Generator = Generator()
+        return generator.generateCrops()
     }
 
     fun raiseField(){
@@ -52,11 +55,6 @@ class Grower(subjectName : String, identier : Int, location : String, amountOfMo
             this.amountOfMoney += supply.getAmount() * supply.getShopPrice()
         }
     }
-
-
-
-
-
 }
 
 

@@ -1,9 +1,12 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Strategy
 
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.FishType
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
+import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 class MeatCropStrategy : ProcessorMeatStrategy {
@@ -20,37 +23,33 @@ class MeatCropStrategy : ProcessorMeatStrategy {
         var meats = ArrayList<Product>()
         meats.addAll(
             listOf(
-                Product(
+                MeatProduct(
                     "Dumpling",
-                    ProductType.BEEFDUMPLING,
-                    TODO(),
+                    MeatProductType.BEEFDUMPLING.toString(),
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
                     "kg"
                 ),
-                Product(
+                MeatProduct(
                     "BeefShoulder",
-                    ProductType.BEEFSHOULDER,
-                    TODO(),
+                    MeatProductType.BEEFSHOULDER.toString(),
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
                     "kg"
                 ),
-                Product(
+                MeatProduct(
                     "Bovinecheek",
-                    ProductType.BOVINECHEEK,
-                    TODO(),
+                    MeatProductType.BOVINECHEEK.toString(),
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
                     "kg"
                 ),
-                Product(
+                MeatProduct(
                     "Beeftenderloin",
-                    ProductType.BEEFTENDERLOIN,
-                    TODO(),
+                    MeatProductType.BEEFTENDERLOIN.toString(),
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 18).toInt(),
@@ -65,28 +64,25 @@ class MeatCropStrategy : ProcessorMeatStrategy {
         var meats = ArrayList<Product>()
         meats.addAll(
             listOf(
-                Product(
+                MeatProduct(
                     "Chicken thigh",
-                    ProductType.CHICKENTHIGH,
-                    TODO(),
+                    MeatProductType.CHICKENTHIGH.toString(),
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
                     "kg"
                 ),
-                Product(
+                MeatProduct(
                     "Chicken breast",
-                    ProductType.CHICKENBREAST,
-                    TODO(),
+                    MeatProductType.CHICKENBREAST.toString(),
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
                     "kg"
                 ),
-                Product(
+                MeatProduct(
                     "Chicken wings",
-                    ProductType.CHICKENWINGS,
-                    TODO(),
+                    MeatProductType.CHICKENWINGS.toString(),
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
@@ -101,37 +97,33 @@ class MeatCropStrategy : ProcessorMeatStrategy {
         var meats = ArrayList<Product>()
         meats.addAll(
             listOf(
-                Product(
+                MeatProduct(
                     "Pork dumpling",
-                    ProductType.PORKDUMPLING,
-                    TODO(),
+                    MeatProductType.PORKDUMPLING.toString(),
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
                     "kg"
                 ),
-                Product(
+                MeatProduct(
                     "Pork roast",
-                    ProductType.PORKROAST,
-                    TODO(),
+                    MeatProductType.PORKROAST.toString(),
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 8).toInt(),
                     "kg"
                 ),
-                Product(
+                MeatProduct(
                     "Pork leg",
-                    ProductType.PORKLEG,
-                    TODO(),
+                    MeatProductType.PORKLEG.toString(),
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
                     "kg"
                 ),
-                Product(
+                MeatProduct(
                     "Pork flank",
-                    ProductType.PORKFLANK,
-                    TODO(),
+                    MeatProductType.PORKFLANK.toString(),
                     meat.getShopPrice() / 4,
                     (meat.getShopPrice() / 4) * 1.4,
                     (meat.getAmount() / 16).toInt(),
@@ -143,7 +135,60 @@ class MeatCropStrategy : ProcessorMeatStrategy {
     }
 
     fun executeFish(meat: Meat): ArrayList<Product> {
-        return TODO();
+        var meats = ArrayList<Product>()
+        meats.addAll(
+            listOf(
+                MeatProduct(
+                    "Pork dumpling",
+                    FishType.CARP.toString(),
+                    meat.getShopPrice() / 4,
+                    (meat.getShopPrice() / 4) * 1.4,
+                    (meat.getAmount() / 8).toInt(),
+                    "kg"
+                ),
+                MeatProduct(
+                    "Pork roast",
+                    FishType.BREAM.toString(),
+                    meat.getShopPrice() / 4,
+                    (meat.getShopPrice() / 4) * 1.4,
+                    (meat.getAmount() / 8).toInt(),
+                    "kg"
+                ),
+                MeatProduct(
+                    "Pork leg",
+                    FishType.EEL.toString(),
+                    meat.getShopPrice() / 4,
+                    (meat.getShopPrice() / 4) * 1.4,
+                    (meat.getAmount() / 16).toInt(),
+                    "kg"
+                ),
+                MeatProduct(
+                    "Pork flank",
+                    FishType.ZANDER.toString(),
+                    meat.getShopPrice() / 4,
+                    (meat.getShopPrice() / 4) * 1.4,
+                    (meat.getAmount() / 16).toInt(),
+                    "kg"
+                ),
+                MeatProduct(
+                    "Pork flank",
+                    FishType.CATFISH.toString(),
+                    meat.getShopPrice() / 4,
+                    (meat.getShopPrice() / 4) * 1.4,
+                    (meat.getAmount() / 16).toInt(),
+                    "kg"
+                ),
+                MeatProduct(
+                    "Pork flank",
+                    FishType.PERCH.toString(),
+                    meat.getShopPrice() / 4,
+                    (meat.getShopPrice() / 4) * 1.4,
+                    (meat.getAmount() / 16).toInt(),
+                    "kg"
+                )
+            )
+        )
+        return meats;
     }
 
 

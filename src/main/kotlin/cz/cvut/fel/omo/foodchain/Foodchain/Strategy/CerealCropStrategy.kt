@@ -3,6 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.Strategy
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+import cz.cvut.fel.omo.foodchain.Foodchain.products.CropProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 class CerealCropStrategy : ProcessorCropStrategy {
@@ -21,19 +22,17 @@ class CerealCropStrategy : ProcessorCropStrategy {
     fun createFromGrain(crop: Crop): Product {
         var random: Int = (1..2).random()
         when (random) {
-            1 -> return Product(
+            1 -> return CropProduct(
                 "Flour",
                 ProductType.BULKINGREDIENTS,
-                listOf(crop),
                 (15..40).random().toDouble(),
                 (2..5).random().toDouble(),
                 (crop.getAmount() * 0.4).toInt(),
                 "kg"
             )
-            else -> return Product(
+            else -> return CropProduct(
                 "Coarse flour",
                 ProductType.BULKINGREDIENTS,
-                listOf(crop),
                 (10..30).random().toDouble(),
                 (1..4).random().toDouble(),
                 (crop.getAmount() * 0.4).toInt(),
@@ -44,10 +43,9 @@ class CerealCropStrategy : ProcessorCropStrategy {
 
     // TODO product beer
     fun prepareForBeer(crop: Crop): Product {
-        return Product(
+        return CropProduct(
             crop.getName().toString(),
             ProductType.CEREALS,
-            listOf(crop),
             (4..6).random().toDouble(),
             (2..4).random().toDouble(),
             (crop.getAmount() * 0.25).toInt(),
@@ -58,28 +56,25 @@ class CerealCropStrategy : ProcessorCropStrategy {
     fun createFromCorn(crop: Crop): Product {
         var random: Int = (1..3).random()
         when (random) {
-            1 -> return Product(
+            1 -> return CropProduct(
                 "Boiled corn",
                 ProductType.VEGETABLES,
-                listOf(crop),
                 (40..45).random().toDouble(),
                 (2..5).random().toDouble(),
                 (crop.getAmount() * 0.95).toInt(),
                 "kg"
             )
-            2 -> return Product(
+            2 -> return CropProduct(
                 "Corn can",
                 ProductType.CANS,
-                listOf(crop),
                 (30..45).random().toDouble(),
                 (3..6).random().toDouble(),
                 (crop.getAmount() * 0.4).toInt(),
                 "kg"
             )
-            else -> return Product(
+            else -> return CropProduct(
                 "Iced corn",
                 ProductType.ICED,
-                listOf(crop),
                 (30..35).random().toDouble(),
                 (1..2).random().toDouble(),
                 (crop.getAmount() * 0.4).toInt(),
@@ -91,19 +86,17 @@ class CerealCropStrategy : ProcessorCropStrategy {
     fun createFromOats(crop: Crop): Product {
         var random: Int = (1..2).random()
         when (random) {
-            1 -> return Product(
+            1 -> return CropProduct(
                 "Musli",
                 ProductType.CEREALS,
-                listOf(crop),
                 (15..30).random().toDouble(),
                 (2..6).random().toDouble(),
                 (crop.getAmount() * 0.75).toInt(),
                 "kg"
             )
-            else -> return Product(
+            else -> return CropProduct(
                 "Oat flakes",
                 ProductType.CEREALS,
-                listOf(crop),
                 (20..35).random().toDouble(),
                 (1..2).random().toDouble(),
                 (crop.getAmount() * 0.75).toInt(),

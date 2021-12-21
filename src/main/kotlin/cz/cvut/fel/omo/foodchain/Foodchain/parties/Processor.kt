@@ -47,9 +47,12 @@ class Processor(subjectName : String, identier : Int, location : String, amountO
 
     fun payForInvoice(invoice: Invoice){
         if(amountOfMoney >= invoice.getPrice()){
+            println("Mam prachy brasko")
             invoice.payInvoice()
             invoice.getContractor().takeMoney(invoice.getPrice())
+            amountOfMoney -= invoice.getPrice()
         } else {
+            println("Nemam lovake brasko / " + amountOfMoney + " / " + invoice.getPrice())
             unpaidInvoices.add(invoice)
         }
     }

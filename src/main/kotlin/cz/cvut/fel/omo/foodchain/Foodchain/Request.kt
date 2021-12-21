@@ -16,9 +16,13 @@ class Request {
             // Faktury
             var money : Double = 0.0
             for(crop in crops){
+/*
+                println("amount: " + crop.getAmount() + " shopPrice: " + crop.getShopPrice())
+*/
                 money += crop.getAmount() * crop.getShopPrice()
             }
             var invoice : Invoice = Invoice(processor, grower, money, InvoiceType.CROP)
+            println("minus: " + money)
 
             grower.sellSupplies() // Pokud funguje predavani budu zpusobovat duplicitni odecet
             grower.transportSupplies()

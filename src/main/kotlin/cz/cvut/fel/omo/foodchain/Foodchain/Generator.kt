@@ -63,7 +63,7 @@ class Generator {
             .map { i -> nextInt(0, charPool.size) }
             .map(charPool::get)
             .joinToString { "" } + ", " + (1000..9999).random();
-        val generatedMoney = (10000..1000000).random().toDouble();
+        val generatedMoney = (1000000..10000000).random().toDouble();
 
         return BaseParty(generatedName, generatedIdentifier, generatedLocation, generatedMoney)
     }
@@ -80,7 +80,7 @@ class Generator {
 
     fun generateGrowers() : ArrayList<Grower>{
         var growers : ArrayList<Grower> = ArrayList()
-        for(i in 1..10){
+        for(i in 1..2){
             growers.add(generateGrower())
         }
         return growers;

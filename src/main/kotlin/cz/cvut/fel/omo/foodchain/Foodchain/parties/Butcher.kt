@@ -10,7 +10,7 @@ class Butcher {
         var meatList = ArrayList<Meat>()
 
         animals.toList().iterator().forEach { animal ->
-            when (animal.animalName) {
+            when (animal.getName()) {
                 "Cow" -> {
                     val shopPrice = 0.7 * animal.weight * MeatType.BEEF.price
                     meatList.add(Meat(MeatType.BEEF, shopPrice, shopPrice * 1.4, 0.7 * animal.weight))

@@ -36,7 +36,7 @@ class Farmer(subjectName: String, identier: Int, location: String, amountOfMoney
         val animalsToProcessing = ArrayList<BaseAnimal>()
 
         animals.toList().iterator().forEach { animal ->
-            when (animal.animalName) {
+            when (animal.getName()) {
                 "Cow" -> if (animal.getAge() > 3) animalsToProcessing.add(animal)
                 "Pig" -> if (animal.getAge() > 3) animalsToProcessing.add(animal)
                 "Chicken" -> if (animal.getAge() > 2) animalsToProcessing.add(animal)

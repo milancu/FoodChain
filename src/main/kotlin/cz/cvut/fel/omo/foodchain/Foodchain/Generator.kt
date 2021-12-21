@@ -8,8 +8,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.parties.*
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import kotlin.random.Random.Default.nextInt
 
-const val GROWERS = 5
-const val RETAILER = 5
+
 const val FINANCE_MIN = 1000000
 const val FINANCE_MAX = 10000000
 const val IDENTIFIER_MIN = 10000000
@@ -80,17 +79,25 @@ class Generator {
         return Grower(base.getSubjectName(), base.getIdentifier(), base.getLocation(), base.getAmountOfMoney())
     }
 
+    fun generateGrowers(number : Int) : ArrayList<Grower>{
+        var growers : ArrayList<Grower> = ArrayList()
+        for(i in 1..number){
+            growers.add(generateGrower())
+        }
+        return growers;
+    }
+
     fun generateProcessor() : Processor {
         val base : BaseParty = generateNewParty()
         return Processor(base.getSubjectName(), base.getIdentifier(), base.getLocation(), base.getAmountOfMoney())
     }
 
-    fun generateGrowers() : ArrayList<Grower>{
-        var growers : ArrayList<Grower> = ArrayList()
-        for(i in 1..GROWERS){
-            growers.add(generateGrower())
+    fun generateProcessors(number : Int) : ArrayList<Processor>{
+        var processors : ArrayList<Processor> = ArrayList()
+        for(i in 1..number){
+            processors.add(generateProcessor())
         }
-        return growers;
+        return processors
     }
 
     fun generateRetailer() : Retailer{
@@ -98,9 +105,9 @@ class Generator {
         return Retailer(base.getSubjectName(), base.getIdentifier(), base.getLocation(), base.getAmountOfMoney())
     }
 
-    fun generateRetailers() : ArrayList<Retailer>{
+    fun generateRetailers(number : Int) : ArrayList<Retailer>{
         var retailers : ArrayList<Retailer> = ArrayList()
-        for(i in 1..RETAILER){
+        for(i in 1..number){
             retailers.add(generateRetailer())
         }
         return retailers

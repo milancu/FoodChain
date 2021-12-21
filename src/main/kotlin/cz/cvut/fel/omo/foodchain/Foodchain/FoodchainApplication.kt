@@ -19,6 +19,9 @@ fun main(args: Array<String>) {
 	var channelP2R : ProcessorToRetailerChannel = ProcessorToRetailerChannel(channelG2P.getProcessors())
 	var channelRTC : RetailerToCustomerChannel = RetailerToCustomerChannel(channelP2R.getRetailers())
 
+	// TODO TIMER, aby nebylo nutny spoustet vsechny run zvlast
 
+	channelG2P.runSimulation() // poskoceni o tyden
+	channelP2R.runSimulation()
 
 }

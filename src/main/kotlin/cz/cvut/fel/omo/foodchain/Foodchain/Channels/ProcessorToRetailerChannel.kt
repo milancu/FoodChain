@@ -10,10 +10,15 @@ class ProcessorToRetailerChannel {
     private var retailers : ArrayList<Retailer>
 
     constructor(processors : ArrayList<Processor>){
+
         val generator : Generator = Generator()
 
         this.processors = processors
         retailers = generator.generateRetailers(2)
+    }
+
+    fun runSimulation(){
+
     }
 
     fun getRetailers() : ArrayList<Retailer>{

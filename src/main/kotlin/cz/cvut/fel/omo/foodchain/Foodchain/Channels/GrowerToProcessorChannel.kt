@@ -11,23 +11,35 @@ class GrowerToProcessorChannel {
     private var processors : ArrayList<Processor>
 
     constructor(){
+        println("PHASE 1.0 - Farmers and processors creation")
+
         val generator : Generator = Generator()
 
         growers = generator.generateGrowers(2)
         processors = generator.generateProcessors(2)
         // TODO jak rozhodovat, jakej processor se vybere
 
-        // TODO
-       /* println(processor.getSubjectName())
-        println(processor.getLocation())*/
+        println("Growers: " + growers.size)
+        println("Processors: " + processors.size)
+    }
 
+    fun runSimulation(){
+        // TODO / oprava generatoru
+        /* println(processor.getSubjectName())
+         println(processor.getLocation())*/
 
         // REQUEST - STATIKA
         // TRANSPORT - STATIKA
 
+
         for(grower in growers){
             Request.requestTransportToProcessor(grower, processors.get(0), grower.getSupplies())
             grower.harvest();
+            println("Grover: " + grower.getIdentifier() + " : money : " + grower.getAmountOfMoney() + " : supllies : " + grower.getSupplies().size)
+        }
+
+        for(processor in processors){
+            println("Processor: " + processor.getIdentifier() + " : money : " + processor.getAmountOfMoney())
         }
     }
 

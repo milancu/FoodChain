@@ -46,6 +46,12 @@ class Processor(subjectName : String, identier : Int, location : String, amountO
         }
     }
 
+    fun processProduct(){
+        for(supply in cropSupplies){
+            products.add(createProduct(supply))
+        }
+    }
+
     fun payForInvoice(invoice: Invoice){
         if(amountOfMoney >= invoice.getPrice()){
             invoice.payInvoice()
@@ -65,7 +71,6 @@ class Processor(subjectName : String, identier : Int, location : String, amountO
     fun transportProducts(){
         Transport.TransportCompany.takeProducts(products)
         products = ArrayList()
-
     }
 
 }

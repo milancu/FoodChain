@@ -8,6 +8,13 @@ import cz.cvut.fel.omo.foodchain.Foodchain.parties.*
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import kotlin.random.Random.Default.nextInt
 
+const val GROWERS = 5
+const val RETAILER = 5
+const val FINANCE_MIN = 1000000
+const val FINANCE_MAX = 10000000
+const val IDENTIFIER_MIN = 10000000
+const val IDENTIFIER_MAX = 99999999
+
 class Generator {
 
     fun generateAnimal(): BaseAnimal {
@@ -58,12 +65,12 @@ class Generator {
             .map { i -> nextInt(0, charPool.size) }
             .map(charPool::get)
             .joinToString { "" };
-        val generatedIdentifier = (10000000..99999999).random()
+        val generatedIdentifier = (IDENTIFIER_MIN..IDENTIFIER_MAX).random()
         val generatedLocation = (1..LOCATION_LENGTH) //TODO NEFUNGUJE GENEROVANI NAZVU
             .map { i -> nextInt(0, charPool.size) }
             .map(charPool::get)
             .joinToString { "" } + ", " + (1000..9999).random();
-        val generatedMoney = (1000000..10000000).random().toDouble();
+        val generatedMoney = (FINANCE_MIN..FINANCE_MAX).random().toDouble();
 
         return BaseParty(generatedName, generatedIdentifier, generatedLocation, generatedMoney)
     }
@@ -80,10 +87,23 @@ class Generator {
 
     fun generateGrowers() : ArrayList<Grower>{
         var growers : ArrayList<Grower> = ArrayList()
-        for(i in 1..2){
+        for(i in 1..GROWERS){
             growers.add(generateGrower())
         }
         return growers;
+    }
+
+    fun generateRetailer() : Retailer{
+        val base : BaseParty = generateNewParty();
+        return Retailer(base.getSubjectName(), base.getIdentifier(), base.getLocation(), base.getAmountOfMoney())
+    }
+
+    fun generateRetailers() : ArrayList<Retailer>{
+        var retailers : ArrayList<Retailer> = ArrayList()
+        for(i in 1..RETAILER){
+            retailers.add(generateRetailer())
+        }
+        return retailers
     }
 
 

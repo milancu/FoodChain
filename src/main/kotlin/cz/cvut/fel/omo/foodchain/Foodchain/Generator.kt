@@ -98,10 +98,10 @@ class Generator {
     private fun generateNewParty(): BaseParty {
         val charPool: List<Char> = ('a'..'z') + ('A'..'Z')
 
-        val generatedName = (1..NAME_LENGTH) //TODO NEFUNGUJE GENEROVANI NAZVU
+        val generatedName = (1..NAME_LENGTH)
             .map { charPool.random() }
             .joinToString("")
-        val generatedLocation = (1..LOCATION_LENGTH) //TODO NEFUNGUJE GENEROVANI NAZVU
+        val generatedLocation = (1..LOCATION_LENGTH)
             .map { charPool.random() }
             .joinToString("") + ", " + (1000..9999).random()
         val generatedMoney = (FINANCE_MIN..FINANCE_MAX).random().toDouble();

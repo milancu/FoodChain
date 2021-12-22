@@ -12,6 +12,8 @@ import org.springframework.boot.runApplication
 @SpringBootApplication
 open class FoodchainApplication
 
+// global config
+
 fun main(args: Array<String>) {
 	runApplication<FoodchainApplication>(*args)
 
@@ -22,17 +24,17 @@ fun main(args: Array<String>) {
 
 	// TODO TIMER, aby nebylo nutny spoustet vsechny run zvlast
 
-	/*channelG2P.printStats()
+	channelG2P.printStats()
 	channelP2R.printStats()
 	channelP2R.printStats()
-	channelRTC.printStats()*/
+	channelRTC.printStats()
 
 	println("ONE WEEK LATER")
 	println()
 
 	// poskoceni o tyden
 	channelG2P.runSimulation()
-	/*channelF2P.runSimulation()
+	channelF2P.runSimulation()
 	channelP2R.runSimulation()
 	channelRTC.runSimulation() //todo
 
@@ -62,5 +64,4 @@ fun main(args: Array<String>) {
 		var id = i.getOriginId()
 		println(Report.getReport(id)!!.get(0))
 	}
-*/
 }

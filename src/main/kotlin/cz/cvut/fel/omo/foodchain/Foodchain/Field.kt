@@ -47,6 +47,10 @@ class Field : Subject{
        return crop
     }
 
+    fun growCrop(){
+        crop.grow()
+    }
+
     override fun attach(o: Observer) {
         Field.observers.add(o)
     }

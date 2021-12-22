@@ -28,7 +28,7 @@ class Crop : Subject {
         this.uuid = UUID.randomUUID()
         this.shopPrice = name.shopPrice
         this.productionCost = shopPrice * 0.01
-        this.growthTime = name.growthTime
+        this.growthTime = growthTime
         this.origin = UUID.randomUUID()
         notifyUpdate(origin, this.name.toString() + " " + this.amount.toString() + "kg")
 
@@ -68,6 +68,10 @@ class Crop : Subject {
 
     fun resetCrop(){
         growthTime = 0
+    }
+
+    fun grow(){
+        growthTime++;
     }
 
     override fun attach(o: Observer) {

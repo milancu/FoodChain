@@ -37,15 +37,6 @@ class GrowerToProcessorChannel {
     }
 
     fun runSimulation(){
-
-        // TODO / oprava generatoru
-
-        println(processors.get(0).getSubjectName())
-        println(processors.get(0).getLocation())
-
-        // REQUEST - STATIKA
-        // TRANSPORT - STATIKA
-
         for(grower in growers){
             Request.requestTransportToProcessor(grower, processors.get(0), grower.getSupplies())
             grower.harvest();

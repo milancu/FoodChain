@@ -18,7 +18,6 @@ object Report : Observer {
             newReport.add(report)
             reports.put(uuid, newReport)
         } else {
-
             var set: ArrayList<String> = reports.get(uuid)!!
             set.add(report)
             reports.put(uuid, set);

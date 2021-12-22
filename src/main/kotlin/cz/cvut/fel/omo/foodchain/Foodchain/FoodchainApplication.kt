@@ -6,32 +6,18 @@ import org.springframework.boot.runApplication
 @SpringBootApplication
 open class FoodchainApplication
 
-// todo global config
 
 fun main(args: Array<String>) {
 
 	runApplication<FoodchainApplication>(*args)
 	val simulation : Simulation = Simulation()
 
-	println("ONE WEEK LATER")
-	println()
-	simulation.runWeek()
+	for(i in (1..Config.WEEKS)){
+		println(i.toString() + ". WEEK")
+		println()
+		simulation.runWeek()
+	}
 
-	println("TWO WEEKS LATER")
-	println()
-	simulation.runWeek()
-
-	println("THREE WEEKS LATER")
-	println()
-	simulation.runWeek()
-
-	println("FOUR WEEKS LATER")
-	println()
-	simulation.runWeek()
-
-	println("FIVE WEEKS LATER")
-	println()
-	simulation.runWeek()
 
 	/*println("#############################################################")
 	var generator : Generator = Generator()

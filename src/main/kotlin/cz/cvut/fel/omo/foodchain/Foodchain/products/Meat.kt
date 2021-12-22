@@ -61,7 +61,7 @@ class Meat : Subject {
 
     override fun notifyUpdate() {
         for (i in observers) {
-            i.update(this.origin, "")
+            i.update(this.origin, "NEW MEAT, " + this.type + ", amount: " + this.amount + "kg, in week: " + Week.acutalWeek)
         }
     }
 

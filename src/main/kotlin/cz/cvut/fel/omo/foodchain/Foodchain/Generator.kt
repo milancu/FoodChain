@@ -97,14 +97,13 @@ class Generator {
             .map { i -> nextInt(0, charPool.size) }
             .map(charPool::get)
             .joinToString { "" };
-        val generatedIdentifier = (IDENTIFIER_MIN..IDENTIFIER_MAX).random()
         val generatedLocation = (1..LOCATION_LENGTH) //TODO NEFUNGUJE GENEROVANI NAZVU
             .map { i -> nextInt(0, charPool.size) }
             .map(charPool::get)
             .joinToString { "" } + ", " + (1000..9999).random();
         val generatedMoney = (FINANCE_MIN..FINANCE_MAX).random().toDouble();
 
-        return BaseParty(generatedName, generatedIdentifier, generatedLocation, generatedMoney)
+        return BaseParty(generatedName, generatedLocation, generatedMoney)
     }
 
     private fun generateFarmer(): Farmer {

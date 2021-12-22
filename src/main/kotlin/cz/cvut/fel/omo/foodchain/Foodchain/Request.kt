@@ -29,8 +29,8 @@ class Request {
             println()
         }
 
-        fun requestTransportToMeatFactory(farmer: Farmer, processor: Processor){
-            println("Proces transportace (from farmer " + farmer.getIdentifier() + " to processor) " + processor.getIdentifier())
+        fun requestTransportToMeatFactory(farmer: Farmer, meatFactory: MeatFactory){
+            println("Proces transportace (from farmer " + farmer.getIdentifier() + " to processor) " + meatFactory.getIdentifier())
 
             // Poslani zvirat na jatka
             var processedAnimals : ArrayList<Meat> = farmer.callButcher()
@@ -40,7 +40,7 @@ class Request {
             for(animal in processedAnimals){
                 money += animal.getAmount() * animal.getShopPrice()
             }
-            var invoice : Invoice = Invoice(processor, farmer, money, InvoiceType.MEAT)
+            var invoice : Invoice = Invoice(meatFactory, farmer, money, InvoiceType.MEAT)
             println("Vznik faktury " + invoice.getCode())
 
             val meatFactory : MeatFactory = MeatFactory()

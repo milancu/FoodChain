@@ -12,9 +12,9 @@ open class BaseParty {
     protected val location : String
     protected var amountOfMoney : Double
 
-    constructor(subjectName: String, identifier: Int, location: String, amountOfMoney: Double) {
+    constructor(subjectName: String, location: String, amountOfMoney: Double) {
         this.subjectName = subjectName
-        this.identifier = identifier
+        this.identifier = (10000000..99999999).random()
         this.location = location
         this.amountOfMoney = amountOfMoney
     }

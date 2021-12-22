@@ -34,7 +34,7 @@ fun main(args: Array<String>) {
 	channelP2R.runSimulation()
 	channelRTC.runSimulation() //todo
 
-	//channelG2P.printStats()
+	channelG2P.printStats()
 	channelP2R.printStats()
 
 	println("TWO WEEKS LATER")
@@ -44,12 +44,12 @@ fun main(args: Array<String>) {
 	channelP2R.printStats()
 
 
-	println("#############################################################")
+	/*println("#############################################################")
 	var generator : Generator = Generator()
 
 	for(i in generator.generateAnimals()){
 		var id = i.getOriginId()
 		println(Report.getReport(id)!!.get(0))
-	}
+	}*/
 
 }

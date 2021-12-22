@@ -6,25 +6,18 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.FishType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
-class MeatFactory {
+class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) :
+    BaseParty(subjectName, location, amountOfMoney){
 
-    private var amountOfMoney : Double = setInitialMoney()
-    private val ico : Int = setICO()
     private var meatsForProducts : ArrayList<Meat> = ArrayList()
     private var productToSell : ArrayList<Product> = ArrayList()
     private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
 
-    fun setInitialMoney() : Double{
-        return (1000000..10000000).random().toDouble()
-    }
-
-    fun setICO() : Int{
-        return (10000000..99999999).random()
-    }
 
     fun takeMeat(newMeats : ArrayList<Meat>){
         for(meat in newMeats){

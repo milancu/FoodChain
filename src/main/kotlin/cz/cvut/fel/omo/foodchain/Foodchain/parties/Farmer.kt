@@ -5,8 +5,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 
-class Farmer(subjectName: String, identier: Int, location: String, amountOfMoney: Double) :
-    BaseParty(subjectName, identier, location, amountOfMoney) {
+class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
+    BaseParty(subjectName, location, amountOfMoney) {
 
     private var resources: List<Crop> = setInitialResources()
 

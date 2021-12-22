@@ -7,6 +7,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 class VeganStrategy : CustomerStrategy {
     override fun execute(products : ArrayList<Product>) : Double{
         var spended : Double = 0.0
+        var toRemove : ArrayList<Product> = ArrayList()
 
         for (product in products) {
             if (product.getProductType() != ProductType.MEAT
@@ -15,11 +16,17 @@ class VeganStrategy : CustomerStrategy {
                     product.decreaseAmount(Config.VEGAN_SHOP_SIZE)
                     spended += Config.VEGAN_SHOP_SIZE * product.getShopPrice()
                 } else {
-                    products.remove(product)
+                    toRemove.add(product)
                 }
             }
         }
-
+        removeProducts(products, toRemove)
         return spended
+    }
+
+    fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>){
+        for(product in toRemove){
+            original.remove(product)
+        }
     }
 }

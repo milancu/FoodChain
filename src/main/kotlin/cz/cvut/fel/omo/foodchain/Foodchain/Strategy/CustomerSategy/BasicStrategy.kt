@@ -9,6 +9,7 @@ class BasicStrategy : CustomerStrategy {
         var spended : Double = 0.0
 
         val productTypeMap: HashMap<ProductType, Int> = productMapInit()
+        var toRemove : ArrayList<Product> = ArrayList()
 
         for(product in products){
             if(productTypeMap.get(product.getProductType())!! < Config.STANDARD_SHOP_SIZE){
@@ -16,15 +17,18 @@ class BasicStrategy : CustomerStrategy {
                     product.decreaseAmount(Config.STANDARD_SHOP_SIZE)
                     spended += Config.STANDARD_SHOP_SIZE * product.getShopPrice()
                 } else {
-                    products.remove(product)
+                    toRemove.add(product)
                 }
             }
         }
+        removeProducts(products, toRemove)
         return spended
     }
 
-    fun removeProducts(){
-
+    fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>){
+        for(product in toRemove){
+            original.remove(product)
+        }
     }
 
     fun productMapInit(): HashMap<ProductType, Int> {

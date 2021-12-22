@@ -17,6 +17,8 @@ class Butcher {
                     var beef = Meat(MeatType.BEEF, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
                     meatList.add(beef)
                     animal.notifyAnimalWasProcessed()
+                    beef.attach(Report)
+                    beef.notifyUpdate()
                 }
 
                 "Pig" -> {
@@ -24,6 +26,8 @@ class Butcher {
                     var pork = Meat(MeatType.PORK, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
                     meatList.add(pork)
                     animal.notifyAnimalWasProcessed()
+                    pork.attach(Report)
+                    pork.notifyUpdate()
                 }
 
                 "Chicken" -> {
@@ -31,6 +35,8 @@ class Butcher {
                     var chicken = Meat(MeatType.CHICKEN, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
                     meatList.add(chicken)
                     animal.notifyAnimalWasProcessed()
+                    chicken.attach(Report)
+                    chicken.notifyUpdate()
                 }
 
                 "Fish" -> {
@@ -38,6 +44,8 @@ class Butcher {
                     var fish = Meat(MeatType.FISH, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
                     meatList.add(fish)
                     animal.notifyAnimalWasProcessed()
+                    fish.attach(Report)
+                    fish.notifyUpdate()
                 }
             }
         }

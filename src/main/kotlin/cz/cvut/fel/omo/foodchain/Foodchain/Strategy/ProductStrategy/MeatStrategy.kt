@@ -72,6 +72,14 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
+        Dumpling.attach(Report)
+        BeefShoulder.attach(Report)
+        Bovinecheek.attach(Report)
+        Beeftenderloin.attach(Report)
+        Dumpling.notifyUpdate()
+        BeefShoulder.notifyUpdate()
+        Bovinecheek.notifyUpdate()
+        Beeftenderloin.notifyUpdate()
 
         meats.addAll(
             listOf(
@@ -113,6 +121,14 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
+
+        ChickenThigh.attach(Report)
+        ChickenBreast.attach(Report)
+        ChickenWings.attach(Report)
+
+        ChickenThigh.notifyUpdate()
+        ChickenBreast.notifyUpdate()
+        ChickenWings.notifyUpdate()
 
         meats.addAll(
             listOf(
@@ -164,6 +180,17 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
+
+        PorkDumpling.attach(Report)
+        PorkRoast.attach(Report)
+        PorkLeg.attach(Report)
+        PorkFlank.attach(Report)
+
+        PorkDumpling.notifyUpdate()
+        PorkRoast.notifyUpdate()
+        PorkLeg.notifyUpdate()
+        PorkFlank.notifyUpdate()
+
         meats.addAll(
             listOf(
                 PorkDumpling, PorkRoast, PorkLeg, PorkFlank
@@ -234,6 +261,21 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
+
+        carp.attach(Report)
+        bream.attach(Report)
+        eel.attach(Report)
+        zander.attach(Report)
+        catfish.attach(Report)
+        perch.attach(Report)
+
+        carp.notifyUpdate()
+        bream.notifyUpdate()
+        eel.notifyUpdate()
+        zander.notifyUpdate()
+        catfish.notifyUpdate()
+        perch.notifyUpdate()
+
         meats.addAll(
             listOf(
                 carp, bream, eel, zander, catfish, perch

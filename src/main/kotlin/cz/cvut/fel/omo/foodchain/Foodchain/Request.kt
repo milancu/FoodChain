@@ -162,6 +162,7 @@ class Request {
         fun requestGoShopping(retailer : Retailer, customer: Customer){
             var money : Double = customer.buyProducts(retailer.getAvailableProducts())
             var invoice : Invoice = Invoice(customer, retailer, money, InvoiceType.SHOPPING)
+            println("Customer: " + customer.getIdentifier() + " utratil: " + money + " za nakupy a ma: " + customer.getAmountOfMoney()) // TODO CHYBA
             customer.payForShopping(invoice)
         }
     }

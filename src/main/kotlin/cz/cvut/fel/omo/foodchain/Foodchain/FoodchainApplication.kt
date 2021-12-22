@@ -19,5 +19,5 @@ fun main(args: Array<String>) {
 		simulation.runWeek()
 	}
 
-	Report.export()
+	/*Report.export()*/
 }

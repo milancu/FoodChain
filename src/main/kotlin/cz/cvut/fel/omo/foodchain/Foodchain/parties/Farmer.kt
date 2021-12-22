@@ -1,6 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
+import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
@@ -8,17 +9,18 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
 
-    private var resources: List<Crop> = setInitialResources()
-    private var animals: List<BaseAnimal> = setInitialAnimals()
-    private var animalsToProcessing: List<BaseAnimal> = animalsToProcessing();
+    private var resources: ArrayList<Crop> = setInitialResources()
+    private var animals: ArrayList<BaseAnimal> = setInitialAnimals()
+    private var animalsToProcessing: ArrayList<BaseAnimal> = animalsToProcessing();
+    private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
     private val butcher : Butcher = Butcher()
 
-    fun setInitialResources(): List<Crop> {
+    fun setInitialResources(): ArrayList<Crop> {
         val generator = Generator()
         return generator.generateCrops()
     }
 
-    fun setInitialAnimals(): List<BaseAnimal> {
+    fun setInitialAnimals(): ArrayList<BaseAnimal> {
         val generator = Generator()
         return generator.generateAnimals()
     }
@@ -52,11 +54,11 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         return animalsToProcessing
     }
 
-    fun getResources() : List<Crop>{
+    fun getResources() : ArrayList<Crop>{
         return this.resources
     }
 
-    fun getAnimalsToProcessing(): List<BaseAnimal> {
+    fun getAnimalsToProcessing(): ArrayList<BaseAnimal> {
         return this.animalsToProcessing
     }
 
@@ -75,7 +77,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     fun controlResources(){
         for(crop in resources){
             if(crop.getAmount() <= 5){
-                resources.toMutableList().remove(crop)
+                resources.remove(crop)
             }
         }
     }
@@ -100,7 +102,26 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
 
     // todo nakup cropu od growera
 
-    fun buyNeededCrop(){
+    fun needResource() : Boolean{
+        if(resources.size != 0) return true
+        return false
+    }
 
+    fun takeResources(crop : Crop){
+        resources.add(crop)
+    }
+
+    fun payForInvoice(invoice : Invoice){
+        if (amountOfMoney >= invoice.getPrice()) {
+            invoice.getContractor().takeMoney(invoice.getPrice())
+            amountOfMoney -= invoice.getPrice()
+            println("Faktura " + invoice.getCode() + " zaplacena")
+            invoice.notifyPaidInvoice()
+        } else {
+            unpaidInvoices.add(invoice)
+            println("!Faktura " + invoice.getCode() + " NENI uhrazena")
+            invoice.notifyUnpaidInvoice()
+        }
+        println()
     }
 }

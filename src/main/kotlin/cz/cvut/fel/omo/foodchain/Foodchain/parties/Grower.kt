@@ -66,6 +66,10 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
         return supplies
     }
 
+    fun addEmergencyCrop(crop : Crop){
+        supplies.add(crop)
+    }
+
 }
 
 

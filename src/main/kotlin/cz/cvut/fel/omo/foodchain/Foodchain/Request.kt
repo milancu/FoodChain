@@ -2,6 +2,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Factory.MeatFactory
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.InvoiceType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.*
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
@@ -80,8 +81,22 @@ class Request {
 
         }
 
-        fun requestFarmerBuyCrops(farmer: Farmer, grower: Grower){
-            // TODO
+        fun requestFarmerBuyCrops(farmer: Farmer, grower: Grower, time: Int){
+            println("Farmer: " + farmer.getIdentifier() + " nakupuje zasoby od " + grower.getIdentifier())
+
+            var money: Double = 0.0
+
+            for(crop in grower.getSupplies()){
+                if(crop.getType() == CropType.CEREAL){
+                    money += crop.getAmount() * crop.getShopPrice()
+                    farmer.takeResources(crop)
+                    grower.getSupplies().remove(crop)
+                    break
+                }
+            }
+
+            var invoice: Invoice = Invoice(farmer, grower, money, InvoiceType.PRODUCT, time)
+            farmer.payForInvoice(invoice)
         }
     }
 }

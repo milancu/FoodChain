@@ -25,6 +25,7 @@ class Simulation {
     }
 
     private fun runSimulation(){
+        channelG2F.runSimulation()
         channelG2P.runSimulation(time)
         channelF2P.runSimulation(time)
         channelP2R.runSimulation(time)

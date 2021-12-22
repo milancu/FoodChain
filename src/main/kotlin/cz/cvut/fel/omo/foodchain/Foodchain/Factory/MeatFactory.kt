@@ -13,38 +13,46 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) :
-    BaseParty(subjectName, location, amountOfMoney){
+    BaseParty(subjectName, location, amountOfMoney) {
 
-    private var meatsForProducts : ArrayList<Meat> = ArrayList()
-    private var productToSell : ArrayList<Product> = ArrayList()
-    private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
+    private var meatsForProducts: ArrayList<Meat> = ArrayList()
+    private var productToSell: ArrayList<Product> = ArrayList()
+    private var unpaidInvoices: ArrayList<Invoice> = ArrayList()
 
-    fun getMeatResources() : Int{
+    fun getMeatResources(): Int {
         return meatsForProducts.size
     }
 
-    fun getPreparedPorducts() : Int{
+    fun getPreparedPorducts(): Int {
         return meatsForProducts.size
     }
 
-    fun takeMeat(newMeats : ArrayList<Meat>){
-        for(meat in newMeats){
+    fun takeMeat(newMeats: ArrayList<Meat>) {
+        for (meat in newMeats) {
             meatsForProducts.add(meat)
         }
     }
 
-    fun transportProducts(){
+    fun transportProducts() {
         Transport.takeProducts(productToSell)
         productToSell = ArrayList()
     }
 
-    fun payForInvoice(invoice: Invoice){
-        if(amountOfMoney >= invoice.getPrice()){
+    fun payForInvoice(invoice: Invoice) {
+        if (amountOfMoney >= invoice.getPrice()) {
             invoice.payInvoice()
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
             println("Faktura " + invoice.getCode() + " zaplacena")
-            invoice.notifyPaidInvoice()
+            invoice.notifyUpdate(
+                invoice.getCode(), "NEW INVOICE " +
+                        "subscriber: " + invoice.getSubscriber().getSubjectName() +
+                        ", ico: " + invoice.getSubscriber().getIdentifier() +
+                        " contractor: " + invoice.getContractor().getSubjectName() +
+                        ", ico: " + invoice.getContractor().getIdentifier() +
+                        ", price: " + invoice.getPrice() + " note: " + invoice.getNote().toString() +
+                        ", create date: " + invoice.getCreateTime().toString() + "\n"
+            )
         } else {
             unpaidInvoices.add(invoice)
             println("!Faktura " + invoice.getCode() + " NENI uhrazena")
@@ -52,36 +60,36 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         }
     }
 
-    fun packageProduct(){
-        for(meat in meatsForProducts){
-            when(meat.getType()){
-                MeatType.PORK ->{
-                    for(i in 1..(meat.getAmount()/1600).toInt()){
+    fun packageProduct() {
+        for (meat in meatsForProducts) {
+            when (meat.getType()) {
+                MeatType.PORK -> {
+                    for (i in 1..(meat.getAmount() / 1600).toInt()) {
                         productToSell.add(packagePorkDumpling(meat))
                         productToSell.add(packagePorkRoast(meat))
                         productToSell.add(packagePorkFlank(meat))
                     }
-                    for(i in 1..4){
+                    for (i in 1..4) {
                         productToSell.add(packagePorkLeg(meat))
                     }
                 }
-                MeatType.BEEF ->{
-                    for(i in 1..(meat.getAmount()/1600).toInt()){
+                MeatType.BEEF -> {
+                    for (i in 1..(meat.getAmount() / 1600).toInt()) {
                         productToSell.add(packageBeefTenderloin(meat))
                         productToSell.add(packageBovineCheek(meat))
                         productToSell.add(packageBeefShoulder(meat))
                         productToSell.add(packageBeefDumpling(meat))
                     }
                 }
-                MeatType.CHICKEN ->{
+                MeatType.CHICKEN -> {
                     productToSell.add(packageChickenBreast(meat))
-                    for(i in 1..2){
+                    for (i in 1..2) {
                         productToSell.add(packageChickenThigh(meat))
                         productToSell.add(packageChickenWings(meat))
                     }
                 }
-                MeatType.FISH ->{
-                    for(i in 1..(meat.getAmount()/1600).toInt()){
+                MeatType.FISH -> {
+                    for (i in 1..(meat.getAmount() / 1600).toInt()) {
                         productToSell.add(packageCarp(meat))
                         productToSell.add(packageBream(meat))
                         productToSell.add(packageEel(meat))
@@ -107,6 +115,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -123,6 +137,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -139,6 +159,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -155,6 +181,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -171,6 +203,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -187,6 +225,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -203,6 +247,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -219,6 +269,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -235,6 +291,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -251,6 +313,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -267,6 +335,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -283,6 +357,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -299,6 +379,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -315,6 +401,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -331,6 +423,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -347,6 +445,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 
@@ -363,6 +467,12 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         )
         meat.notifyMeatWasPackaged()
         product.attach(Report)
+        product.notifyUpdate(
+            meat.getOriginID(),
+            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
+                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
+                    product.getCreateAt() + "\n"
+        )
         return product
     }
 }

@@ -19,6 +19,7 @@ object Report : Observer {
                 for (j in reportList) {
                     out.println(j)
                 }
+                out.println("##############################################")
             }
         }
 

@@ -8,9 +8,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
 import java.util.*
 
 class Invoice : Subject {
-    companion object {
-        private var observers: ArrayList<Observer> = ArrayList()
-    }
+
+    private var observers: ArrayList<Observer> = ArrayList()
 
     private val subscriber: BaseParty // odberatel
     private val contractor: BaseParty // dodavatel
@@ -29,15 +28,10 @@ class Invoice : Subject {
         this.isPaid = false
         this.code = UUID.randomUUID()
         this.createTime = Week.acutalWeek
-        notifyUpdate(
-            this.code,
-            "subscriber: " + this.subscriber.getSubjectName() +
-                    ", ico: " + this.subscriber.getIdentifier() + "\n" +
-                    " contractor: " + this.contractor.getSubjectName() +
-                    ", ico: " + this.contractor.getIdentifier() + "\n" +
-                    ", price: " + this.price + " note: " + this.note.toString() + "\n" +
-                    ", create date: " + this.createTime.toString()
-        )
+    }
+
+    fun getCreateTime(): Int {
+        return this.createTime
     }
 
     fun getSubscriber(): BaseParty {
@@ -72,15 +66,15 @@ class Invoice : Subject {
 
 
     override fun attach(o: Observer) {
-        Invoice.observers.add(o)
+        observers.add(o)
     }
 
     override fun detach(o: Observer) {
-        Invoice.observers.remove(o)
+        observers.remove(o)
     }
 
     override fun notifyUpdate(uuid: UUID, report: String) {
-        for (i in Invoice.observers) {
+        for (i in observers) {
             i.update(uuid, report)
         }
     }
@@ -89,12 +83,12 @@ class Invoice : Subject {
         notifyUpdate(
             this.code,
             "subscriber: " + this.subscriber.getSubjectName() +
-                    ", ico: " + this.subscriber.getIdentifier() + "\n" +
+                    ", ico: " + this.subscriber.getIdentifier() +
                     " contractor: " + this.contractor.getSubjectName() +
-                    ", ico: " + this.contractor.getIdentifier() + "\n" +
-                    ", price: " + this.price + " note: " + this.note.toString() + "\n" +
-                    ", create date: " + this.createTime.toString() + "\n" +
-                    ", was not paid"
+                    ", ico: " + this.contractor.getIdentifier() +
+                    ", price: " + this.price + " note: " + this.note.toString() +
+                    ", create date: " + this.createTime.toString() +
+                    ", was not paid" + "\n"
         )
     }
 
@@ -102,12 +96,12 @@ class Invoice : Subject {
         notifyUpdate(
             this.code,
             "subscriber: " + this.subscriber.getSubjectName() +
-                    ", ico: " + this.subscriber.getIdentifier() + "\n" +
+                    ", ico: " + this.subscriber.getIdentifier() +
                     " contractor: " + this.contractor.getSubjectName() +
-                    ", ico: " + this.contractor.getIdentifier() + "\n" +
-                    ", price: " + this.price + " note: " + this.note.toString() + "\n" +
-                    ", create date: " + this.createTime.toString() + "\n" +
-                    ", was paid in: " + this.paidTime.toString()
+                    ", ico: " + this.contractor.getIdentifier() +
+                    ", price: " + this.price + " note: " + this.note.toString() +
+                    ", create date: " + this.createTime.toString() +
+                    ", was paid in: " + this.paidTime.toString() + "\n"
         )
     }
 

@@ -15,6 +15,7 @@ class Generator {
     public fun generateAnimal(): BaseAnimal {
         var animal = BaseAnimal(AnimalType.getAnimal())
         animal.attach(Report)
+        animal.notifyUpdate(animal.getOriginId(), "NEW ANIMAL " + animal.getName() + " Weight: " + animal.getWeight() + "\n")
         return animal
     }
 
@@ -31,6 +32,7 @@ class Generator {
         var capacity = (Config.FIELD_CAPACITY_MIN..Config.FIELD_CAPACITY_MAX).random()
         val field = Field(generateCrop(capacity), capacity)
         field.attach(Report)
+        field.notifyUpdate(field.getUUID(), "NEW FIELD, Type: " + field.getCrop().getType() + ", capacity: " + field.getCapacity() + "\n")
         return field
     }
 
@@ -48,6 +50,7 @@ class Generator {
         var growthTime = (0..Config.FLOWER_MAX_AGE).random()
         var crop = Crop(cropName, type, capacity, growthTime)
         crop.attach(Report)
+        crop.notifyUpdate(crop.getUUID(), "NEW CROP " +  crop.getName() + ", "+ crop.getType() + ", capacity: " + crop.getCapacity() + "\n")
         return crop
     }
 

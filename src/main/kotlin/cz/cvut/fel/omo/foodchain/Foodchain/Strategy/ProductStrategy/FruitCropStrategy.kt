@@ -22,9 +22,11 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
+
                 crop.notifyCropWasExecuted()
                 return product
 
@@ -37,9 +39,11 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     (crop.getAmount() * 0.85).toInt(),
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
+
                 crop.notifyCropWasExecuted()
                 return product
             }
@@ -51,9 +55,11 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     (crop.getAmount() * 0.85).toInt(),
                     "l",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
+
                 crop.notifyCropWasExecuted()
                 return product
             }
@@ -65,9 +71,11 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     (crop.getAmount() * 0.85).toInt(),
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
+
                 crop.notifyCropWasExecuted()
                 return product
             }
@@ -85,9 +93,11 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
+
                 crop.notifyCropWasExecuted()
                 return product
             }
@@ -99,9 +109,11 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() * 2.45,
                     1,
                     "l",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
+
                 crop.notifyCropWasExecuted()
                 return product
             }

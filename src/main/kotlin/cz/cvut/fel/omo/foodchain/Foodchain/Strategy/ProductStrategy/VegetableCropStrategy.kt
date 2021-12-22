@@ -18,7 +18,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice(),
                 1,
                 "kg",
-                crop.getOriginID()
+                crop.getUUID()
             )
             CropName.CUCCUMBER -> return createFromCucumber(crop)
             CropName.TOMATO -> return createFromTomato(crop)
@@ -30,7 +30,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 crop.getShopPrice(),
                 (0.65 * crop.getAmount()).toInt(),
                 "kg",
-                crop.getOriginID()
+                crop.getUUID()
             )
             else -> throw Exception("Wrong crop name input: " + crop.getName() + "Vegetable strategy")
         }
@@ -47,9 +47,13 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(
+                    product.getOriginId(),
+                    "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n"
+                )
                 crop.notifyCropWasExecuted()
                 return product
             }
@@ -61,9 +65,13 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 25,
                     (crop.getAmount() * 0.60).toInt(),
                     "l",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(
+                    product.getOriginId(),
+                    "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n"
+                )
                 crop.notifyCropWasExecuted()
                 return product
             }
@@ -75,9 +83,13 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 15,
                     (crop.getAmount() * 0.85).toInt(),
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(
+                    product.getOriginId(),
+                    "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n"
+                )
                 crop.notifyCropWasExecuted()
                 return product
             }
@@ -89,10 +101,15 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 10,
                     (crop.getAmount() * 0.85).toInt(),
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(
+                    product.getOriginId(),
+                    "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n"
+                )
                 crop.notifyCropWasExecuted()
+
                 return product
             }
         }
@@ -109,9 +126,13 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(
+                    product.getOriginId(),
+                    "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n"
+                )
                 crop.notifyCropWasExecuted()
                 return product
             }
@@ -123,9 +144,13 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 20,
                     1,
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(
+                    product.getOriginId(),
+                    "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n"
+                )
                 crop.notifyCropWasExecuted()
                 return product
             }
@@ -143,9 +168,13 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(
+                    product.getOriginId(),
+                    "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n"
+                )
                 crop.notifyCropWasExecuted()
                 return product
             }
@@ -157,9 +186,13 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 10,
                     (0.9 * crop.getAmount()).toInt(),
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(
+                    product.getOriginId(),
+                    "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n"
+                )
                 crop.notifyCropWasExecuted()
                 return product
             }
@@ -177,9 +210,13 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(
+                    product.getOriginId(),
+                    "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n"
+                )
                 crop.notifyCropWasExecuted()
                 return product
             }
@@ -191,9 +228,13 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 15,
                     (0.75 * crop.getAmount()).toInt(),
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(
+                    product.getOriginId(),
+                    "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n"
+                )
                 crop.notifyCropWasExecuted()
                 return product
             }
@@ -205,9 +246,13 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 25,
                     (0.65 * crop.getAmount()).toInt(),
                     "kg",
-                    crop.getOriginID()
+                    crop.getUUID()
                 )
                 product.attach(Report)
+                product.notifyUpdate(
+                    product.getOriginId(),
+                    "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n"
+                )
                 crop.notifyCropWasExecuted()
                 return product
             }

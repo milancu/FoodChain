@@ -31,4 +31,8 @@ class MeatProduct(
     override fun getOriginId(): UUID {
         return this.origin
     }
+
+    override fun getName() : String{
+        return this.name
+    }
 }

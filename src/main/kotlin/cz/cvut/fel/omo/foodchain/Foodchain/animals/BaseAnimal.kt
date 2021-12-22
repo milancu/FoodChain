@@ -11,9 +11,9 @@ import java.util.*
 
 
 open class BaseAnimal : Subject {
-    companion object {
-        private var observers: ArrayList<Observer> = ArrayList()
-    }
+
+    private var observers: ArrayList<Observer> = ArrayList()
+
 
     private var weight: Double
     private var feed: CropType
@@ -35,7 +35,6 @@ open class BaseAnimal : Subject {
                 this.animalName = "Cow"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g" + "\n")
             }
             AnimalType.PIG -> {
                 this.weight = (150000..600000).random().toDouble()
@@ -46,7 +45,6 @@ open class BaseAnimal : Subject {
                 this.animalName = "Pig"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g" + "\n")
             }
             AnimalType.CHICKEN -> {
                 this.weight = (1500..3000).random().toDouble()
@@ -57,7 +55,6 @@ open class BaseAnimal : Subject {
                 this.animalName = "Chicken"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g" + "\n")
             }
             AnimalType.GOAT -> {
                 this.weight = (150000..400000).random().toDouble()
@@ -68,7 +65,6 @@ open class BaseAnimal : Subject {
                 this.animalName = "Goat"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g" + "\n")
             }
             AnimalType.FISH -> {
                 this.weight = (1500..6000).random().toDouble()
@@ -79,7 +75,6 @@ open class BaseAnimal : Subject {
                 this.animalName = "Fish"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g" + "\n")
             }
             else -> throw Exception("unexpected type")
         }
@@ -99,7 +94,7 @@ open class BaseAnimal : Subject {
         return this.age
     }
 
-    fun getFeed() : CropType{
+    fun getFeed(): CropType {
         return this.feed
     }
 
@@ -115,15 +110,15 @@ open class BaseAnimal : Subject {
         return this.origin
     }
 
-    fun increaseWeight(){
+    fun increaseWeight() {
         this.weight *= 1.1
     }
 
-    fun decreaseWeight(){
+    fun decreaseWeight() {
         this.weight *= 0.9
     }
 
-    fun growAnimal(){
+    fun growAnimal() {
         this.age++
     }
 
@@ -136,17 +131,23 @@ open class BaseAnimal : Subject {
     }
 
     override fun notifyUpdate(uuid: UUID, report: String) {
-        for(i in observers){
+        for (i in observers) {
             i.update(uuid, report)
         }
     }
 
-    fun notifyAnimalMoveToProcess(){
-        notifyUpdate(this.origin, this.animalName + " is ready to process, age: " + this.age.toString() + " week: " + Week.acutalWeek.toString() + "\n")
+    fun notifyAnimalMoveToProcess() {
+        notifyUpdate(
+            this.origin,
+            this.animalName + " is ready to process, age: " + this.age.toString() + " in week: " + Week.acutalWeek.toString() + "\n"
+        )
     }
 
-    fun notifyProcessed(){
-        notifyUpdate(this.origin, this.animalName + " animal was processed " + " week: " + Week.acutalWeek.toString() + "\n")
+    fun notifyProcessed() {
+        notifyUpdate(
+            this.origin,
+            this.animalName + " animal was processed " + " in week: " + Week.acutalWeek.toString() + "\n"
+        )
     }
 
 }

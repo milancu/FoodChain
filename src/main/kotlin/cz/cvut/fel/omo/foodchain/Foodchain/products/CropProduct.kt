@@ -24,6 +24,11 @@ class CropProduct(
 
 
     ) :  Product(name, shopPrice, productionCost, amount, unit, origin) {
+
+    override fun getName() : String{
+        return this.name
+    }
+
     override fun getAmount(): Int {
         return amount
     }

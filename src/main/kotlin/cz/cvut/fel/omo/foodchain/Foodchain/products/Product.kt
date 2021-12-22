@@ -2,13 +2,14 @@ package cz.cvut.fel.omo.foodchain.Foodchain.products
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
+import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import java.util.*
 
-open class Product : Subject{
-    companion object {
-        private var observers: ArrayList<Observer> = ArrayList()
-    }
+open class Product : Subject {
+
+    private var observers: ArrayList<Observer> = ArrayList()
+
     private var name: String
     private var productType: ProductType
     private var shopPrice: Double
@@ -17,6 +18,7 @@ open class Product : Subject{
     private var unit: String
     private var uuid: UUID
     private var origin: UUID
+    private var createdAt : Int
 
     constructor(
         name: String,
@@ -34,10 +36,14 @@ open class Product : Subject{
         this.unit = unit
         this.uuid = UUID.randomUUID()
         this.origin = origin
-        notifyUpdate(origin, this.name + " " + this.shopPrice + "Kc" + this.amount + "g" + "\n")
+        this.createdAt = Week.acutalWeek
     }
 
-    open fun getOriginId() : UUID{
+    fun getCreateAt() : Int {
+        return this.createdAt
+    }
+
+    open fun getOriginId(): UUID {
         return this.origin
     }
 
@@ -53,16 +59,20 @@ open class Product : Subject{
         return amount
     }
 
+    open fun getName() : String{
+        return this.name
+    }
+
     override fun attach(o: Observer) {
-        Product.observers.add(o)
+        observers.add(o)
     }
 
     override fun detach(o: Observer) {
-        Product.observers.remove(o)
+        observers.remove(o)
     }
 
     override fun notifyUpdate(uuid: UUID, report: String) {
-        for(i in Product.observers){
+        for (i in observers) {
             i.update(uuid, report)
         }
     }

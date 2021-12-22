@@ -8,9 +8,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import java.util.*
 
 class Crop : Subject {
-    companion object {
-        private var observers: ArrayList<Observer> = ArrayList()
-    }
+
+    private var observers: ArrayList<Observer> = ArrayList()
 
     private val name: CropName
     private val type: CropType
@@ -19,7 +18,6 @@ class Crop : Subject {
     private var shopPrice: Double
     private var productionCost: Double
     private var growthTime: Int
-    private val origin: UUID
 
     constructor(name: CropName, type: CropType, amount: Int, growthTime: Int) {
         this.name = name
@@ -29,11 +27,14 @@ class Crop : Subject {
         this.shopPrice = name.shopPrice
         this.productionCost = shopPrice * 0.01
         this.growthTime = growthTime
-        this.origin = UUID.randomUUID()
     }
 
-    fun getOriginID(): UUID {
-        return this.origin
+    fun getUUID(): UUID {
+        return this.uuid
+    }
+
+    fun getCapacity(): Int {
+        return this.amount
     }
 
     fun getName(): CropName {
@@ -77,38 +78,32 @@ class Crop : Subject {
     }
 
     override fun attach(o: Observer) {
-        Crop.observers.add(o)
+        observers.add(o)
     }
 
     override fun detach(o: Observer) {
-        Crop.observers.remove(o)
+        observers.remove(o)
     }
 
     override fun notifyUpdate(uuid: UUID, report: String) {
-        for (i in Crop.observers) {
+        for (i in observers) {
             i.update(uuid, report)
         }
     }
 
     fun notifyCropWasExecuted() {
         notifyUpdate(
-            origin,
-            this.name.toString() + "\n" +
-                    ", Crop was executed " + "\n" +
-                    this.type.toString() + " \n" +
-                    this.amount.toString() + "kg" + "\n" +
-                    " shopprice: " + this.shopPrice.toString() + "\n"
+            this.uuid,
+            "Crop has been executed, name: " + this.name.toString() + ", type: " + this.type.toString() + ", amount: " +
+                    this.amount.toString() + "kg," + " shopprice: " + this.shopPrice.toString() + "\n"
         )
     }
 
     fun notifyCropWasHarvested() {
         notifyUpdate(
-            origin,
-            this.name.toString() + "\n" +
-                    ", Crop was harvested " + "\n" +
-                    this.type.toString() + " \n" +
-                    this.amount.toString() + "kg" + "\n" +
-                    " shopprice: " + this.shopPrice.toString() + "\n"
+            this.uuid,
+            "Crop has been harvested, name: " + this.name.toString() + ", type: " + this.type.toString() + ", amount: " +
+                    this.amount.toString() + "kg," + " shopprice: " + this.shopPrice.toString() + "\n"
         )
     }
 }

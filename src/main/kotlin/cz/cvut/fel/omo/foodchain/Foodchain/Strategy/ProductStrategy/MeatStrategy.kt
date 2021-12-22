@@ -13,10 +13,6 @@ import kotlin.collections.ArrayList
 
 class MeatStrategy : ProcessorMeatStrategy {
 
-    companion object {
-        private var observers: ArrayList<Observer> = ArrayList()
-    }
-
     override fun execute(meat: Meat): ArrayList<Product> {
         when (meat.getType()) {
             MeatType.BEEF -> {

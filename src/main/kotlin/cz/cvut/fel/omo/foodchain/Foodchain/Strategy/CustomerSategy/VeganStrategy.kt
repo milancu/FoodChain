@@ -4,6 +4,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 class VeganStrategy : CustomerStrategy {
     override fun execute(products : ArrayList<Product>) : Double{
-        TODO("Not yet implemented")
+        var spended : Double = 0.0
+
+        return spended
     }
 }

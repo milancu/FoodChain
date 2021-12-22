@@ -18,8 +18,8 @@ fun main(args: Array<String>) {
 		println()
 		simulation.runWeek()
 	}
-<<<<<<< HEAD
-=======
+/*<<<<<<< HEAD
+=======*/
 
 	/*var generator = Generator()
 

@@ -3,12 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.Strategy.ProductStrategy
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
-class CropContext {
-    var strategy : ProcessorCropStrategy
-
-    constructor(strategy: ProcessorCropStrategy) {
-        this.strategy = strategy
-    }
+class CropContext(var strategy: ProcessorCropStrategy) {
 
     fun setStrategy(strategy : CerealCropStrategy){
         this.strategy = strategy

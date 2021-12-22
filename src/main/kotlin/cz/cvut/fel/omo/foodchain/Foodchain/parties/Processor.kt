@@ -20,7 +20,7 @@ class Processor(subjectName : String,  location : String, amountOfMoney : Double
     private var products : ArrayList<Product> = ArrayList()
 
     fun createProduct(crop : Crop) : Product {
-        var context : CropContext
+        val context : CropContext
         when(crop.getType()){
             CropType.CEREAL -> {
                 context = CropContext(cerealStrategy)
@@ -84,7 +84,4 @@ class Processor(subjectName : String,  location : String, amountOfMoney : Double
     fun getStockProductsSize() : Int{
         return products.size
     }
-
-
-
 }

@@ -109,7 +109,7 @@ class Generator {
         return Customer(base.getSubjectName(), base.getLocation(), money)
     }
 
-    private fun generateCustomers() : ArrayList<Customer>{
+    fun generateCustomers() : ArrayList<Customer>{
         val customers: ArrayList<Customer> = ArrayList()
         for (i in 1..Config.CUSTOMERS) {
             customers.add(generateCustomer())

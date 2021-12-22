@@ -87,6 +87,10 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         return warehouse.getStockSize()
     }
 
+    fun getAvailableProducts() : ArrayList<Product>{
+        return availableProducts
+    }
+
 
     // TODO do channelu/requestu
     fun warehouseManagementPayment(){

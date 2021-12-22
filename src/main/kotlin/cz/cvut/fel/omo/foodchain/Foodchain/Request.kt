@@ -61,7 +61,7 @@ class Request {
             // Faktura
             var money: Double = 0.0
 
-            processor.transportProducts() //TODO tady to pada ...
+            processor.transportProducts()
 
             for (product in Transport.transportProducts()) {
                 money += product.getAmount() * product.getShopPrice()

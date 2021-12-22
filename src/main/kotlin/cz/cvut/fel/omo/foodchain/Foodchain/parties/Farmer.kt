@@ -37,7 +37,6 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     fun animalsToProcessing(): ArrayList<BaseAnimal> {
         val animalsToProcessing = ArrayList<BaseAnimal>()
 
-        // TODO vyhazovani z listu
         animals.toList().iterator().forEach { animal ->
             when (animal.getName()) {
                 "Cow" -> {
@@ -107,7 +106,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         }
     }
 
-    fun feedAnimal(){ // todo do requestu
+    fun feedAnimal(){
         var feeded : Boolean = false
         for(animal in animals){
             for(crop in resources){
@@ -117,15 +116,19 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
                     break
                 }
             }
-            if(feeded){ animal.increaseWeight() }
-            else { animal.decreaseWeight() }
+            if(feeded){
+                animal.increaseWeight()
+                println("Zvire " + animal.getName() + animal.getOriginId() + " bylo nakrmeno")
+            }
+            else {
+                println("Zvire " + animal.getName() + animal.getOriginId() + " ZUSTALO o hladu, potrebuje dokoupit zasoby")
+                animal.decreaseWeight()
+            }
 
             controlResources()
             animal.growAnimal()
         }
     }
-
-    // todo nakup cropu od growera
 
     fun needResource() : Boolean{
         if(resources.size != 0) return true

@@ -15,7 +15,7 @@ open class BaseAnimal : Subject {
         private var observers: ArrayList<Observer> = ArrayList()
     }
 
-    private var weight: Double // TODO val podle toho, jestli budeme pracovat s vyvojem zvirete
+    private var weight: Double
     private var feed: CropType
     private var foodConsumption: Int
     private var age: Int

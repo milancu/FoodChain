@@ -59,8 +59,20 @@ class Transport{
             }
         }
 
-        // TODO odecet za opotrebeni aut a benzin a platy
-
+        // TODO odecet za opotrebeni aut a benzin a platy - nezapomen to zavolat
+        fun cargoDeduction(){
+            var costs : Double = 0.0
+            for(meat in meats){
+                costs += meat.getShopPrice() * meat.getAmount() * 0.025
+            }
+            for(crop in cropSupplies){
+                costs += crop.getShopPrice() * crop.getAmount() * 0.025
+            }
+            for(product in products){
+                costs += product.getShopPrice() * product.getAmount() * 0.025
+            }
+            this.amountOfMoney -= costs
+            println("Dopravni spolecnost na nakladech utratila: " + costs)
+        }
     }
-        // Tansprot price 0.1 plodiny, pocita se z ostatnich
 }

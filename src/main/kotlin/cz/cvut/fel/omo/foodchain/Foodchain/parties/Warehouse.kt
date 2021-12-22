@@ -38,4 +38,12 @@ class Warehouse{
     fun getStockSize() : Int{
         return storagedProducts.size
     }
+
+    fun warehouseManagementPayment() : Double{
+        var costs : Double = 0.0
+        for(product in storagedProducts){
+            costs += product.getAmount() * 10.0
+        }
+        return costs
+    }
 }

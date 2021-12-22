@@ -8,7 +8,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
 
-    private var warehouse: Warehouse = Warehouse() //TODO odecet financi za plnost skladu
+    private var warehouse: Warehouse = Warehouse()
     private var availableProducts: ArrayList<Product> = ArrayList()
     private var unpaidInvoices: ArrayList<Invoice> = ArrayList()
     private var productTypeMap: HashMap<ProductType, Int> = productMapInit()
@@ -88,6 +88,8 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
     }
 
 
+    // TODO do channelu/requestu
+    fun warehouseManagementPayment(){
+        this.amountOfMoney -= warehouse.warehouseManagementPayment()
+    }
 }
-
-// TODO system slev? :D

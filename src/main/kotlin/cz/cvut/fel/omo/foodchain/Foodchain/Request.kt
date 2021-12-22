@@ -106,7 +106,7 @@ class Request {
             retailer.payForInvoice(invoice)
         }
 
-        fun requestFarmerBuyCrops(farmer: Farmer, grower: Grower, time: Int){
+        fun requestFarmerBuyCrops(farmer: Farmer, grower: Grower){
             println("Farmer: " + farmer.getIdentifier() + " nakupuje zasoby od " + grower.getIdentifier())
 
             var money: Double = 0.0

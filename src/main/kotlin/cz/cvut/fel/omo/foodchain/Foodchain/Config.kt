@@ -3,21 +3,12 @@ package cz.cvut.fel.omo.foodchain.Foodchain
 class Config {
     companion object params {
         // main config
-<<<<<<< HEAD
         const val WEEKS : Int = 52
         const val GROWERS : Int = 1
         const val FARMERS : Int = 1
         const val PROCESSORS : Int = 1
         const val CUSTOMERS : Int = 20
         const val RETAILERS : Int = 1
-=======
-        const val WEEKS : Int = 5
-        const val GROWERS : Int = 3
-        const val FARMERS : Int = 3
-        const val PROCESSORS : Int = 3
-        const val CUSTOMERS : Int = 1000
-        const val RETAILERS : Int = 3
->>>>>>> eeb8db401dc9dc6c5002c1e955340a0e5f3a4bee
 
         const val STANDARD_SHOP_SIZE : Int = 10
         const val VEGAN_SHOP_SIZE : Int = 2

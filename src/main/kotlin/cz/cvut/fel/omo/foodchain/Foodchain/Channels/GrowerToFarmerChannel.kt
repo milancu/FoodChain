@@ -20,7 +20,7 @@ class GrowerToFarmerChannel : Channel{
     override fun runSimulation(){
         for(farmer in farmers){
             if(farmer.needResource()){
-                Request.requestFarmerBuyCrops(farmer, findCorrectSupplier(), 1) //todo ooprava
+                Request.requestFarmerBuyCrops(farmer, findCorrectSupplier())
             }
             farmer.payDebts()
         }

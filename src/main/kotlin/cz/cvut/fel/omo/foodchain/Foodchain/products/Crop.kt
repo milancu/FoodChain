@@ -30,8 +30,6 @@ class Crop : Subject {
         this.productionCost = shopPrice * 0.01
         this.growthTime = growthTime
         this.origin = UUID.randomUUID()
-        notifyUpdate(uuid, this.name.toString() + " " + this.amount.toString() + "kg" + "\n")
-
     }
 
     fun getOriginID(): UUID {

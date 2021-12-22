@@ -23,8 +23,7 @@ class Field : Subject{
         this.crop = crop
         this.capacity = capacity
         this.uuid = UUID.randomUUID()
-        notifyUpdate(this.uuid, "crop type: " + this.crop.getType().toString() + " , capacity " + this.capacity.toString())
-    }
+     }
 
     fun isRaised() : Boolean{
         return isRaised;

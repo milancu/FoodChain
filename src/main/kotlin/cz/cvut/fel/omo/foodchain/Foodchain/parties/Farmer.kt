@@ -145,7 +145,11 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
                 println("Zvire " + animal.getName() + " " + animal.getOriginId() + " ZUSTALO o hladu, potrebuje dokoupit zasoby")
                 animal.decreaseWeight()
             }
+        }
+    }
 
+    fun growAnimals(){
+        for(animal in animals){
             animal.growAnimal()
         }
     }

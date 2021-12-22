@@ -15,7 +15,7 @@ class FarmerToMeatFactoryChannel : Channel{
     constructor(){
         println("PHASE 1.1 - Farmers, buthcers and meaaFactory creation")
         val generator : Generator = Generator()
-        this.farmers = generator.generateFarmers(Config.FARMERS)
+        this.farmers = generator.generateFarmers()
         this.meatFactory = generator.generateFactory()
 
         println("Farmers: " + farmers.size)

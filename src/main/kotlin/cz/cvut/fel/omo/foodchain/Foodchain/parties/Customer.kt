@@ -1,14 +1,16 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
-class Customer(subjectName : String, location : String, amountOfMoney : Double)
-    : BaseParty(subjectName, location, amountOfMoney) {
+import cz.cvut.fel.omo.foodchain.Foodchain.Config
 
-    var salary : Double = (15000..80000).random().toDouble()
+class Customer(subjectName: String, location: String, amountOfMoney: Double) :
+    BaseParty(subjectName, location, amountOfMoney) {
 
-    fun receiveSalary(){
+    var salary: Double = (Config.SALARY_MIN..Config.SALARY_MAX).random().toDouble()
+
+    fun receiveSalary() {
         this.amountOfMoney += salary
     }
 
-    }
+}
 
 

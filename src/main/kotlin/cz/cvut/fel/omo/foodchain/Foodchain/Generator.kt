@@ -21,14 +21,14 @@ class Generator {
     public fun generateAnimals(): ArrayList<BaseAnimal> {
         var listOfAnimals = ArrayList<BaseAnimal>();
 
-        for (i in 10..(10..50).random()) {
+        for (i in 1..(Config.ANIMALS_MIN..Config.ANIMALS_MAX).random()) {
             listOfAnimals.add(generateAnimal())
         }
         return listOfAnimals
     }
 
     private fun generateField(): Field {
-        var capacity = (1000..10000).random()
+        var capacity = (Config.FIELD_CAPACITY_MIN..Config.FIELD_CAPACITY_MAX).random()
         val field = Field(generateCrop(capacity), capacity)
         field.attach(Report)
         return field
@@ -36,7 +36,7 @@ class Generator {
 
     public fun generateFields(): ArrayList<Field> {
         var listOfField = ArrayList<Field>();
-        for (i in 1..(2..10).random()) {
+        for (i in 1..(Config.MIN_FIELDS..Config.MAX_FIELDS).random()) {
             listOfField.add(generateField())
         }
         return listOfField
@@ -45,7 +45,7 @@ class Generator {
     private fun generateCrop(capacity: Int): Crop {
         var cropName = CropName.getCropName()
         var type = setType(cropName)
-        var growthTime = (0..10).random()
+        var growthTime = (0..Config.FLOWER_MAX_AGE).random()
         var crop = Crop(cropName, type, capacity, growthTime)
         crop.attach(Report)
         return crop
@@ -82,8 +82,8 @@ class Generator {
 
     public fun generateCrops(): ArrayList<Crop> {
         var listOfCrop = ArrayList<Crop>();
-        for (i in 10..(11..30).random()) {
-            listOfCrop.add(generateCrop((1000..10000).random()))
+        for (i in 1..(Config.MIN_DEAFAULT_CROPTYPES..Config.MAX_DEFAULT_CROPTYPES).random()) {
+            listOfCrop.add(generateCrop((Config.MIN_DEFAULT_CROPS..Config.MAX_DEFAULT_CROPS).random()))
         }
         return listOfCrop
     }
@@ -101,6 +101,20 @@ class Generator {
         val generatedMoney = (Config.FINANCE_MIN..Config.FINANCE_MAX).random().toDouble();
 
         return BaseParty(generatedName, generatedLocation, generatedMoney)
+    }
+
+    private fun generateCustomer() : Customer{
+        val base: BaseParty = generateNewParty()
+        val money : Double = (Config.SALARY_MIN..Config.SALARY_MAX).random().toDouble()
+        return Customer(base.getSubjectName(), base.getLocation(), money)
+    }
+
+    private fun generateCustomers() : ArrayList<Customer>{
+        val customers: ArrayList<Customer> = ArrayList()
+        for (i in 1..Config.CUSTOMERS) {
+            customers.add(generateCustomer())
+        }
+        return customers;
     }
 
     private fun generateFarmer(): Farmer {
@@ -128,33 +142,33 @@ class Generator {
         return MeatFactory(base.getSubjectName(), base.getLocation(), base.getAmountOfMoney())
     }
 
-    public fun generateGrowers(number: Int): ArrayList<Grower> {
-        var growers: ArrayList<Grower> = ArrayList()
-        for (i in 1..number) {
+    public fun generateGrowers(): ArrayList<Grower> {
+        val growers: ArrayList<Grower> = ArrayList()
+        for (i in 1..Config.GROWERS) {
             growers.add(generateGrower())
         }
         return growers;
     }
 
-    public fun generateFarmers(number: Int): ArrayList<Farmer> {
-        var farmers: ArrayList<Farmer> = ArrayList()
-        for (i in 1..number) {
+    public fun generateFarmers(): ArrayList<Farmer> {
+        val farmers: ArrayList<Farmer> = ArrayList()
+        for (i in 1..Config.FARMERS) {
             farmers.add(generateFarmer())
         }
         return farmers;
     }
 
-    public fun generateProcessors(number: Int): ArrayList<Processor> {
-        var processors: ArrayList<Processor> = ArrayList()
-        for (i in 1..number) {
+    public fun generateProcessors(): ArrayList<Processor> {
+        val processors: ArrayList<Processor> = ArrayList()
+        for (i in 1..Config.PROCESSORS) {
             processors.add(generateProcessor())
         }
         return processors
     }
 
-    public fun generateRetailers(number: Int): ArrayList<Retailer> {
-        var retailers: ArrayList<Retailer> = ArrayList()
-        for (i in 1..number) {
+    public fun generateRetailers(): ArrayList<Retailer> {
+        val retailers: ArrayList<Retailer> = ArrayList()
+        for (i in 1..Config.RETAILERS) {
             retailers.add(generateRetailer())
         }
         return retailers

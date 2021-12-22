@@ -17,7 +17,7 @@ class ProcessorToRetailerChannel : Channel{
         val generator : Generator = Generator()
 
         this.processors = processors
-        this.retailers = generator.generateRetailers(Config.RETAILERS)
+        this.retailers = generator.generateRetailers()
 
         println("Processors: " + processors.size)
         println("Retailers: " + retailers.size)

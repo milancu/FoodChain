@@ -44,11 +44,13 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         if (amountOfMoney >= invoice.getPrice()) {
             invoice.payInvoice()
             invoice.getContractor().takeMoney(invoice.getPrice())
+            invoice.notifyPaid()
             amountOfMoney -= invoice.getPrice()
             println("Faktura " + invoice.getCode() + " zaplacena")
         } else {
             unpaidInvoices.add(invoice)
             println("!Faktura " + invoice.getCode() + " NENI uhrazena")
+            invoice.notifyUnpaid()
         }
         println()
     }

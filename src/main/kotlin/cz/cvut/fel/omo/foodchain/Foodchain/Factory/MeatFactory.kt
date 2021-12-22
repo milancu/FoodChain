@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Factory
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.FishType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatProductType
@@ -11,8 +12,19 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 class MeatFactory {
 
-    var meatsForProducts : ArrayList<Meat> = ArrayList()
-    var productToSell : ArrayList<Product> = ArrayList()
+    private var amountOfMoney : Double = setInitialMoney()
+    private val ico : Int = setICO()
+    private var meatsForProducts : ArrayList<Meat> = ArrayList()
+    private var productToSell : ArrayList<Product> = ArrayList()
+    private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
+
+    fun setInitialMoney() : Double{
+        return (1000000..10000000).random().toDouble()
+    }
+
+    fun setICO() : Int{
+        return (10000000..99999999).random()
+    }
 
     fun takeMeat(newMeats : ArrayList<Meat>){
         for(meat in newMeats){
@@ -20,7 +32,19 @@ class MeatFactory {
         }
     }
 
-    fun packageProduct() : ArrayList<Product>{
+    fun payForInvoice(invoice: Invoice){
+        if(amountOfMoney >= invoice.getPrice()){
+            invoice.payInvoice()
+            invoice.getContractor().takeMoney(invoice.getPrice())
+            amountOfMoney -= invoice.getPrice()
+            println("Faktura " + invoice.getCode() + " zaplacena")
+        } else {
+            unpaidInvoices.add(invoice)
+            println("!Faktura " + invoice.getCode() + " NENI uhrazena")
+        }
+    }
+
+    fun packageProduct(){
         for(meat in meatsForProducts){
             when(meat.getType()){
                 MeatType.PORK ->{
@@ -50,9 +74,7 @@ class MeatFactory {
                 }
             }
         }
-        return productToSell
     }
-
 
     fun packagePorkDumpling(meat: Meat): Product {
         var product = MeatProduct(

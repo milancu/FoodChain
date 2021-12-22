@@ -46,15 +46,9 @@ class Request {
             val meatFactory : MeatFactory = MeatFactory()
             Transport.takeMeat(processedAnimals) //todo platba pro transport
             meatFactory.takeMeat(Transport.transportMeats())
+            meatFactory.payForInvoice(invoice)
 
-
-
-
-
-            //farmer.transportSupplies() // TODO
-
-            processor.takeCropSupplies(Transport.transportCropSuplies()) // todo invoice FAKTORY a transportem
-            processor.payForInvoice(invoice) // TODO predelej tu factory
+            println()
         }
 
         fun requestTransportToWarehouse(processor : Processor, retailer: Retailer){
@@ -78,5 +72,8 @@ class Request {
             retailer.payForInvoice(invoice)
         }
 
+        fun requestTransportToWarehouse(meatFactory: MeatFactory, retailer: Retailer){
+
+        }
     }
 }

@@ -76,4 +76,8 @@ open class Product : Subject {
             i.update(uuid, report)
         }
     }
+
+    fun decreaseAmount(value : Int){
+        this.amount -= value
+    }
 }

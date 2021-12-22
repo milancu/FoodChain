@@ -4,5 +4,6 @@ enum class InvoiceType {
     CROP,
     MEAT,
     PRODUCT,
-    TRANSPORT
+    TRANSPORT,
+    SHOPPING
 }

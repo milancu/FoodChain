@@ -29,7 +29,7 @@ class CustomerContext {
         this.strategy = strategy
     }
 
-    fun goShopping() : ArrayList<Product>{
-        return strategy.execute()
+    fun goShopping(products : ArrayList<Product>) : Double{
+        return strategy.execute(products)
     }
 }

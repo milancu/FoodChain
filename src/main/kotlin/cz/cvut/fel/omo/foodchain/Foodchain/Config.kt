@@ -10,6 +10,8 @@ class Config {
         const val CUSTOMERS : Int = 20
         const val RETAILERS : Int = 1
 
+        const val STANDARD_SHOP_SIZE : Int = 10
+
         const val SALARY_MIN = 10000
         const val SALARY_MAX = 80000
 

@@ -18,10 +18,17 @@ fun main(args: Array<String>) {
 		println()
 		simulation.runWeek()
 	}
+<<<<<<< HEAD
+=======
+
+	/*var generator = Generator()
+
+	generator.generateAnimals()
+>>>>>>> 7b473f66a356e0fe848bc070448b93ade7420904
 
 	Report.export()
 	println("####################")
-
+*/
 
 	/*println("#############################################################")
 	var generator : Generator = Generator()

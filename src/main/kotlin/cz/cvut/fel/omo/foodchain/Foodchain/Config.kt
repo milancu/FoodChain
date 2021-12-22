@@ -4,11 +4,11 @@ class Config {
     companion object params {
         // main config
         const val WEEKS : Int = 52
-        const val GROWERS : Int = 1
-        const val FARMERS : Int = 1
-        const val PROCESSORS : Int = 1
-        const val CUSTOMERS : Int = 20
-        const val RETAILERS : Int = 1
+        const val GROWERS : Int = 5
+        const val FARMERS : Int = 5
+        const val PROCESSORS : Int = 5
+        const val CUSTOMERS : Int = 5000
+        const val RETAILERS : Int = 5
 
         const val STANDARD_SHOP_SIZE : Int = 10
         const val VEGAN_SHOP_SIZE : Int = 2

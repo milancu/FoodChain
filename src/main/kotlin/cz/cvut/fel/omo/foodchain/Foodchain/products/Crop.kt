@@ -85,9 +85,9 @@ class Crop : Subject {
         observers.remove(o)
     }
 
-    override fun notifyUpdate(uuid: UUID, report: String) {
+    override fun notifyUpdate() {
         for (i in observers) {
-            i.update(uuid, report)
+            i.update(this.uuid, "")
         }
     }
 }

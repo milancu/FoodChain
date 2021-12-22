@@ -30,7 +30,7 @@ class Crop : Subject {
         this.productionCost = shopPrice * 0.01
         this.growthTime = growthTime
         this.origin = UUID.randomUUID()
-        notifyUpdate(origin, this.name.toString() + " " + this.amount.toString() + "kg")
+        notifyUpdate(uuid, this.name.toString() + " " + this.amount.toString() + "kg" + "\n")
 
     }
 
@@ -98,19 +98,19 @@ class Crop : Subject {
             this.name.toString() + "\n" +
                     ", Crop was executed " + "\n" +
                     this.type.toString() + " \n" +
-                    this.amount.toString() + "kg" +
-                    " shopprice: " + this.shopPrice.toString()
+                    this.amount.toString() + "kg" + "\n" +
+                    " shopprice: " + this.shopPrice.toString() + "\n"
         )
     }
 
-    fun notifyCropWasHarvested(){
+    fun notifyCropWasHarvested() {
         notifyUpdate(
             origin,
             this.name.toString() + "\n" +
                     ", Crop was harvested " + "\n" +
                     this.type.toString() + " \n" +
-                    this.amount.toString() + "kg" +
-                    " shopprice: " + this.shopPrice.toString()
+                    this.amount.toString() + "kg" + "\n" +
+                    " shopprice: " + this.shopPrice.toString() + "\n"
         )
     }
 }

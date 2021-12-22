@@ -28,7 +28,7 @@ class Meat : Subject{
         this.productionCost = productionCost
         this.amount = amount
         this.origin = origin
-        notifyUpdate(origin, this.type.toString() + " " + this.shopPrice + "Kc" + this.amount + "g")
+        notifyUpdate(origin, this.type.toString() + " " + this.shopPrice + "Kc" + this.amount + "g" + "\n")
     }
 
     fun getOriginID() : UUID{
@@ -67,11 +67,11 @@ class Meat : Subject{
     }
 
     fun notifyMeatWasProcessed(){
-        notifyUpdate(this.origin, this.type.toString() + " was processed, amount: " + this.amount.toString() + " week: " + Week.acutalWeek.toString())
+        notifyUpdate(this.origin, this.type.toString() + " was processed, amount: " + this.amount.toString() + " week: " + Week.acutalWeek.toString() + "\n")
     }
 
     fun notifyMeatWasPackaged(){
-        notifyUpdate(this.origin, this.type.toString() + " was packaged, amount: " + this.amount.toString() + " price: " + this.shopPrice.toString() + " week: " + Week.acutalWeek.toString())
+        notifyUpdate(this.origin, this.type.toString() + " was packaged, amount: " + this.amount.toString() + " price: " + this.shopPrice.toString() + " week: " + Week.acutalWeek.toString() + "\n")
     }
 
 }

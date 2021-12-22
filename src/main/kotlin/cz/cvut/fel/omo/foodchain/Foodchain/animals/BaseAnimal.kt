@@ -35,7 +35,7 @@ open class BaseAnimal : Subject {
                 this.animalName = "Cow"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g")
+                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g" + "\n")
             }
             AnimalType.PIG -> {
                 this.weight = (150000..600000).random().toDouble()
@@ -46,7 +46,7 @@ open class BaseAnimal : Subject {
                 this.animalName = "Pig"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g")
+                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g" + "\n")
             }
             AnimalType.CHICKEN -> {
                 this.weight = (1500..3000).random().toDouble()
@@ -57,7 +57,7 @@ open class BaseAnimal : Subject {
                 this.animalName = "Chicken"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g")
+                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g" + "\n")
             }
             AnimalType.GOAT -> {
                 this.weight = (150000..400000).random().toDouble()
@@ -68,7 +68,7 @@ open class BaseAnimal : Subject {
                 this.animalName = "Goat"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g")
+                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g" + "\n")
             }
             AnimalType.FISH -> {
                 this.weight = (1500..6000).random().toDouble()
@@ -79,7 +79,7 @@ open class BaseAnimal : Subject {
                 this.animalName = "Fish"
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
-                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g")
+                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g" + "\n")
             }
             else -> throw Exception("unexpected type")
         }
@@ -142,11 +142,11 @@ open class BaseAnimal : Subject {
     }
 
     fun notifyAnimalMoveToProcess(){
-        notifyUpdate(this.origin, this.animalName + " is ready to process, age: " + this.age.toString() + " week: " + Week.acutalWeek.toString())
+        notifyUpdate(this.origin, this.animalName + " is ready to process, age: " + this.age.toString() + " week: " + Week.acutalWeek.toString() + "\n")
     }
 
     fun notifyProcessed(){
-        notifyUpdate(this.origin, this.animalName + " animal was processed " + " week: " + Week.acutalWeek.toString())
+        notifyUpdate(this.origin, this.animalName + " animal was processed " + " week: " + Week.acutalWeek.toString() + "\n")
     }
 
 }

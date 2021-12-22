@@ -34,7 +34,7 @@ open class Product : Subject{
         this.unit = unit
         this.uuid = UUID.randomUUID()
         this.origin = origin
-        notifyUpdate(origin, this.name + " " + this.shopPrice + "Kc" + this.amount + "g")
+        notifyUpdate(origin, this.name + " " + this.shopPrice + "Kc" + this.amount + "g" + "\n")
     }
 
     open fun getOriginId() : UUID{

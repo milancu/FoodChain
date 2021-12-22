@@ -1,16 +1,29 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Observer
 
 
-import com.github.doyaaaaaken.kotlincsv.dsl.context.WriteQuoteMode
-import com.github.doyaaaaaken.kotlincsv.dsl.csvWriter
+import java.io.File
 import java.util.*
-
+import kotlin.collections.ArrayList
 
 
 object Report : Observer {
 
+    fun export() {
+        val fileName = "src/main/resources/exportFoodChain.txt"
+        var file = File(fileName)
 
+        file.printWriter().use { out ->
+            reports.forEach { (key) ->
+                out.println(key)
+                var reportList : ArrayList<String> = reports.get(key)!!
+                for (j in reportList) {
+                    out.println(j)
+                }
+            }
+        }
 
+        println("Writed to file")
+    }
 
 
     var reports = hashMapOf<UUID, ArrayList<String>>()
@@ -25,10 +38,8 @@ object Report : Observer {
             var newReport: ArrayList<String> = ArrayList<String>()
             newReport.add(report)
             reports.put(uuid, newReport)
-        } else {
-            var set: ArrayList<String> = reports.get(uuid)!!
-            set.add(report)
-            reports.put(uuid, set);
+        } else if(reports.containsKey(uuid)) {
+            reports.get(uuid)?.add(report)
         }
     }
 }

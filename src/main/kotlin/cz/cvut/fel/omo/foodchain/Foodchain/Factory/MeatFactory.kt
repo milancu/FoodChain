@@ -280,7 +280,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         var product = MeatProduct(
             "Bream 750g", FishType.BREAM.toString(), ProductType.MEAT, 400.0, 540.0, 750, "g", meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 

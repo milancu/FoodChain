@@ -43,6 +43,7 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
                 println("Plodina " + field.getCrop().getName() + " sklizena v poctu " + field.getCrop().getAmount())
                 var crop = field.getCrop()
                 harvestedCrop.add(crop)
+                crop.notifyWasHarvested()
                 field.resetField()
             } else {
                 field.growCrop()

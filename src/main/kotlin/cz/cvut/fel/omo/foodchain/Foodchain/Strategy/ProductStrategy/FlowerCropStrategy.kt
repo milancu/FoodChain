@@ -33,7 +33,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -46,7 +47,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }
@@ -65,7 +67,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -78,7 +81,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "l",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }
@@ -97,7 +101,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -110,7 +115,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }
@@ -129,7 +135,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             2 -> {
@@ -142,7 +149,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "l",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             3 -> {
@@ -155,7 +163,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             4 -> {
@@ -168,7 +177,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             5 -> {
@@ -181,7 +191,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "l",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -194,7 +205,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }
@@ -213,7 +225,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -226,7 +239,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }

@@ -42,11 +42,13 @@ class Generator {
         return listOfField
     }
 
-    private fun generateCrop(capacity: Int): Crop {
+    public fun generateCrop(capacity: Int): Crop {
         var cropName = CropName.getCropName()
         var type = setType(cropName)
         var growthTime = (0..Config.FLOWER_MAX_AGE).random()
         var crop = Crop(cropName, type, capacity, growthTime)
+        crop.attach(Report)
+        crop.notifyUpdate()
         return crop
     }
 

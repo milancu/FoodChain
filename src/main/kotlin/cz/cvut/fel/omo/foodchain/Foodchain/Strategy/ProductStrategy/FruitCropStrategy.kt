@@ -24,7 +24,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
 
             }
@@ -38,7 +39,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             3 -> {
@@ -51,7 +53,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     "l",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -64,7 +67,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }
@@ -83,7 +87,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -96,7 +101,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     "l",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }

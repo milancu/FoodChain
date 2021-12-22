@@ -14,12 +14,13 @@ object Report : Observer {
 
         file.printWriter().use { out ->
             reports.forEach { (key) ->
-                out.println(key)
+                out.println("UUID: " + key)
                 var reportList : ArrayList<String> = reports.get(key)!!
                 for (j in reportList) {
                     out.println(j)
                 }
                 out.println("##############################################")
+                out.println("\n")
             }
         }
 

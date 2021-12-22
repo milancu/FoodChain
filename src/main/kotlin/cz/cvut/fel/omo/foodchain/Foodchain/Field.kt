@@ -10,7 +10,6 @@ import kotlin.math.roundToInt
 
 class Field {
 
-
     private var crop: Crop
     private val capacity: Int
     private var isRaised: Boolean = true
@@ -43,8 +42,8 @@ class Field {
     }
 
     fun resetField() {
-        crop.resetCrop()
-        crop.setAmount(capacity)
+        var generator = Generator()
+        this.crop = generator.generateCrop(1)
     }
 
     fun getCrop(): Crop {

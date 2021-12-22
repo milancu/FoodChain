@@ -21,7 +21,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             CropName.CUCCUMBER -> return createFromCucumber(crop)
@@ -37,7 +38,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> throw Exception("Wrong crop name input: " + crop.getName() + "Vegetable strategy")
@@ -58,7 +60,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
 
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             2 -> {
@@ -72,7 +75,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
 
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             3 -> {
@@ -86,7 +90,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
 
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -101,7 +106,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 )
 
 
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }
@@ -121,7 +127,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
 
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -135,7 +142,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
 
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }
@@ -155,7 +163,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
 
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -169,7 +178,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
 
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }
@@ -189,7 +199,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
 
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             2 -> {
@@ -203,7 +214,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
 
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -217,7 +229,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
 
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }

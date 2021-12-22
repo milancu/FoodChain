@@ -2,6 +2,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.products
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
+import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
@@ -87,7 +88,13 @@ class Crop : Subject {
 
     override fun notifyUpdate() {
         for (i in observers) {
-            i.update(this.uuid, "")
+            i.update(this.uuid, "NEW CROP, " + this.name + ", amount: " + this.amount + "kg, in week: " + Week.acutalWeek)
+        }
+    }
+
+    fun notifyWasHarvested(){
+        for (i in observers) {
+            i.update(this.uuid, "CROP HAS BEEN HARVESTED IN WEEK: " + Week.acutalWeek)
         }
     }
 }

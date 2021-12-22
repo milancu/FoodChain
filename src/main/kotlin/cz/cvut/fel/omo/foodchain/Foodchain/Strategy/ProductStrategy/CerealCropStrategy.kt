@@ -33,7 +33,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -46,7 +47,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }
@@ -63,7 +65,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
             "kg",
             crop.getUUID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -80,7 +83,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             2 -> {
@@ -93,7 +97,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -106,7 +111,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }
@@ -125,7 +131,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -138,7 +145,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }

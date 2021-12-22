@@ -20,7 +20,8 @@ class LegumesCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
             else -> {
@@ -33,7 +34,8 @@ class LegumesCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-
+                product.attach(Report)
+                product.notifyUpdate()
                 return product
             }
         }

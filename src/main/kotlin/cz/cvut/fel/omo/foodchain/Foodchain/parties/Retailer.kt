@@ -84,7 +84,7 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
 
     fun fillIn() {
         for (product in warehouse.getStoragedProducts()) {
-            if (productMapInit().get(product.getProductType())!! < 100) {
+            if (productMapInit().get(product.getProductType())!! < 10) {
                 availableProducts.add(product)
                 warehouse.getStoragedProducts().remove(product)
             }

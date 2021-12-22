@@ -95,7 +95,7 @@ class Crop : Subject {
         notifyUpdate(
             this.uuid,
             "Crop has been executed, name: " + this.name.toString() + ", type: " + this.type.toString() + ", amount: " +
-                    this.amount.toString() + "kg," + " shopprice: " + this.shopPrice.toString() + "\n"
+                    this.amount.toString() + "kg," + " shopprice: " + this.shopPrice.toString()
         )
     }
 
@@ -103,7 +103,7 @@ class Crop : Subject {
         notifyUpdate(
             this.uuid,
             "Crop has been harvested, name: " + this.name.toString() + ", type: " + this.type.toString() + ", amount: " +
-                    this.amount.toString() + "kg," + " shopprice: " + this.shopPrice.toString() + "\n"
+                    this.amount.toString() + "kg," + " shopprice: " + this.shopPrice.toString()
         )
     }
 }

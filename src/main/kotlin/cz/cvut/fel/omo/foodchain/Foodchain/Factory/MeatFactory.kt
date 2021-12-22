@@ -44,15 +44,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
             println("Faktura " + invoice.getCode() + " zaplacena")
-            invoice.notifyUpdate(
-                invoice.getCode(), "NEW INVOICE " +
-                        "subscriber: " + invoice.getSubscriber().getSubjectName() +
-                        ", ico: " + invoice.getSubscriber().getIdentifier() +
-                        " contractor: " + invoice.getContractor().getSubjectName() +
-                        ", ico: " + invoice.getContractor().getIdentifier() +
-                        ", price: " + invoice.getPrice() + " note: " + invoice.getNote().toString() +
-                        ", create date: " + invoice.getCreateTime().toString() + "\n"
-            )
+            invoice.notifyPaidInvoice()
         } else {
             unpaidInvoices.add(invoice)
             println("!Faktura " + invoice.getCode() + " NENI uhrazena")
@@ -119,7 +111,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -141,7 +133,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -163,7 +155,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -185,7 +177,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -207,7 +199,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -229,7 +221,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -251,7 +243,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -273,7 +265,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -295,7 +287,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -317,7 +309,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -339,7 +331,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -361,7 +353,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -383,7 +375,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -405,7 +397,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -427,7 +419,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -449,7 +441,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }
@@ -471,7 +463,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getOriginID(),
             "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
                     ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt() + "\n"
+                    product.getCreateAt()
         )
         return product
     }

@@ -88,7 +88,7 @@ class Invoice : Subject {
                     ", ico: " + this.contractor.getIdentifier() +
                     ", price: " + this.price + " note: " + this.note.toString() +
                     ", create date: " + this.createTime.toString() +
-                    ", was not paid" + "\n"
+                    ", was not paid"
         )
     }
 
@@ -100,8 +100,8 @@ class Invoice : Subject {
                     " contractor: " + this.contractor.getSubjectName() +
                     ", ico: " + this.contractor.getIdentifier() +
                     ", price: " + this.price + " note: " + this.note.toString() +
-                    ", create date: " + this.createTime.toString() +
-                    ", was paid in: " + this.paidTime.toString() + "\n"
+                    ", create date: " + this.createTime +
+                    ", was paid in: " + this.paidTime
         )
     }
 

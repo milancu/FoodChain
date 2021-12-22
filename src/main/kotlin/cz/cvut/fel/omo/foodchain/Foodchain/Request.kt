@@ -30,8 +30,7 @@ class Request {
                         " contractor: " + invoice.getContractor().getSubjectName() +
                         ", ico: " + invoice.getContractor().getIdentifier() +
                         ", price: " + invoice.getPrice() + " note: " + invoice.getNote().toString() +
-                        ", create date: " + invoice.getCreateTime().toString() +
-                        ", was not paid" + "\n")
+                        ", create date: " + invoice.getCreateTime().toString())
             println("Vznik faktury " + invoice.getCode())
 
             grower.transportSupplies()
@@ -62,8 +61,7 @@ class Request {
                         " contractor: " + invoice.getContractor().getSubjectName() +
                         ", ico: " + invoice.getContractor().getIdentifier() +
                         ", price: " + invoice.getPrice() + " note: " + invoice.getNote().toString() +
-                        ", create date: " + invoice.getCreateTime().toString() +
-                        ", was not paid" + "\n")
+                        ", create date: " + invoice.getCreateTime().toString() )
             println("Vznik faktury " + invoice.getCode())
 
             Transport.takeMeat(processedAnimals) //todo platba pro transport
@@ -93,8 +91,7 @@ class Request {
                         " contractor: " + invoice.getContractor().getSubjectName() +
                         ", ico: " + invoice.getContractor().getIdentifier() +
                         ", price: " + invoice.getPrice() + " note: " + invoice.getNote().toString() +
-                        ", create date: " + invoice.getCreateTime().toString() +
-                        ", was not paid" + "\n")
+                        ", create date: " + invoice.getCreateTime().toString() )
             println("Vznik faktury " + invoice.getCode())
 
             /*processor.transportProducts()*/ //todo redundance? nevidim duvod, radsi zkontrolovat
@@ -123,8 +120,7 @@ class Request {
                         " contractor: " + invoice.getContractor().getSubjectName() +
                         ", ico: " + invoice.getContractor().getIdentifier() +
                         ", price: " + invoice.getPrice() + " note: " + invoice.getNote().toString() +
-                        ", create date: " + invoice.getCreateTime().toString() +
-                        ", was not paid" + "\n")
+                        ", create date: " + invoice.getCreateTime().toString())
             println("Vznik faktury " + invoice.getCode())
 
             retailer.buyProducts(Transport.transportProducts()) // todo invoice retailer a transport
@@ -154,8 +150,7 @@ class Request {
                         " contractor: " + invoice.getContractor().getSubjectName() +
                         ", ico: " + invoice.getContractor().getIdentifier() +
                         ", price: " + invoice.getPrice() + " note: " + invoice.getNote().toString() +
-                        ", create date: " + invoice.getCreateTime().toString() +
-                        ", was not paid" + "\n")
+                        ", create date: " + invoice.getCreateTime().toString())
             println("Vznik faktury " + invoice.getCode())
             farmer.payForInvoice(invoice)
         }

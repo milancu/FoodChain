@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Factory.MeatFactory
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.*
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
@@ -108,22 +109,27 @@ class Generator {
 
     private fun generateFarmer(): Farmer {
         val base: BaseParty = generateNewParty()
-        return Farmer(base.getSubjectName(), base.getIdentifier(), base.getLocation(), base.getAmountOfMoney())
+        return Farmer(base.getSubjectName(), base.getLocation(), base.getAmountOfMoney())
     }
 
     private fun generateGrower(): Grower {
         val base: BaseParty = generateNewParty()
-        return Grower(base.getSubjectName(), base.getIdentifier(), base.getLocation(), base.getAmountOfMoney())
+        return Grower(base.getSubjectName(), base.getLocation(), base.getAmountOfMoney())
     }
 
     private fun generateProcessor(): Processor {
         val base: BaseParty = generateNewParty()
-        return Processor(base.getSubjectName(), base.getIdentifier(), base.getLocation(), base.getAmountOfMoney())
+        return Processor(base.getSubjectName(), base.getLocation(), base.getAmountOfMoney())
     }
 
     private fun generateRetailer(): Retailer {
         val base: BaseParty = generateNewParty();
-        return Retailer(base.getSubjectName(), base.getIdentifier(), base.getLocation(), base.getAmountOfMoney())
+        return Retailer(base.getSubjectName(), base.getLocation(), base.getAmountOfMoney())
+    }
+
+    public fun generateFactory() : MeatFactory{
+        val base: BaseParty = generateNewParty()
+        return MeatFactory(base.getSubjectName(), base.getLocation(), base.getAmountOfMoney())
     }
 
     public fun generateGrowers(number: Int): ArrayList<Grower> {

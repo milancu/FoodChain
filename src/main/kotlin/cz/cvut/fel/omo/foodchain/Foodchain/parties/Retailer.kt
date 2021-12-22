@@ -5,8 +5,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
-class Retailer(subjectName : String, identier : Int, location : String, amountOfMoney : Double)
-    : BaseParty(subjectName, identier, location, amountOfMoney) {
+class Retailer(subjectName : String, location : String, amountOfMoney : Double)
+    : BaseParty(subjectName, location, amountOfMoney) {
 
     private var warehouse : Warehouse = Warehouse() //TODO odecet financi za plnost skladu
     private var availableProducts : ArrayList<Product> = ArrayList()

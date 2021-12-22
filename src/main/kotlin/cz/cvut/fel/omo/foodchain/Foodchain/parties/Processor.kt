@@ -6,8 +6,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
-class Processor(subjectName : String, identier : Int, location : String, amountOfMoney : Double)
-    : BaseParty(subjectName, identier, location, amountOfMoney) {
+class Processor(subjectName : String,  location : String, amountOfMoney : Double)
+    : BaseParty(subjectName,  location, amountOfMoney) {
 
     private val cerealStrategy : CerealCropStrategy = CerealCropStrategy()
     private val flowerStrategy : FlowerCropStrategy = FlowerCropStrategy()

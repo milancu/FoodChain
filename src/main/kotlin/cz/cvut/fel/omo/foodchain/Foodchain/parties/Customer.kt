@@ -1,7 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
-class Customer(subjectName : String, identier : Int, location : String, amountOfMoney : Double)
-    : BaseParty(subjectName, identier, location, amountOfMoney) {
+class Customer(subjectName : String, location : String, amountOfMoney : Double)
+    : BaseParty(subjectName, location, amountOfMoney) {
 }
 
 // TODO customer add MOney pizzo

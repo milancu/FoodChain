@@ -5,8 +5,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Field
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 
 
-class Grower(subjectName : String, identier : Int, location : String, amountOfMoney : Double)
-    : BaseParty(subjectName, identier, location, amountOfMoney) {
+class Grower(subjectName : String, location : String, amountOfMoney : Double)
+    : BaseParty(subjectName, location, amountOfMoney) {
 
     private val fields : ArrayList<Field> = setInitialField()
     private var supplies : ArrayList<Crop> = setInitalSupplies()

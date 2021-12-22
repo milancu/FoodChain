@@ -43,7 +43,6 @@ class Request {
             var invoice : Invoice = Invoice(meatFactory, farmer, money, InvoiceType.MEAT)
             println("Vznik faktury " + invoice.getCode())
 
-            val meatFactory : MeatFactory = MeatFactory()
             Transport.takeMeat(processedAnimals) //todo platba pro transport
             meatFactory.takeMeat(Transport.transportMeats())
             meatFactory.payForInvoice(invoice)

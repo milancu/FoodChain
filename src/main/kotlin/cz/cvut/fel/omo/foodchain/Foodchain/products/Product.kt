@@ -73,7 +73,8 @@ open class Product : Subject {
 
     override fun notifyUpdate() {
         for (i in observers) {
-            i.update(this.uuid, "")
+            i.update(this.origin,
+                "NEW PRODUCT, " + this.name + ", amount: " + this.amount + "g, shop price: " + this.shopPrice + " in week:" + Week.acutalWeek)
         }
     }
 

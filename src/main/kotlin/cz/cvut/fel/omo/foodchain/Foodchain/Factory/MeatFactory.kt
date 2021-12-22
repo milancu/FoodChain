@@ -54,17 +54,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         for (meat in meatsForProducts) {
             when (meat.getType()) {
                 MeatType.PORK -> {
-
                     productToSell.add(packagePorkDumpling(meat))
                     productToSell.add(packagePorkRoast(meat))
                     productToSell.add(packagePorkFlank(meat))
-
                     for (i in 1..4) {
                         productToSell.add(packagePorkLeg(meat))
                     }
                 }
                 MeatType.BEEF -> {
-
                     productToSell.add(packageBeefTenderloin(meat))
                     productToSell.add(packageBovineCheek(meat))
                     productToSell.add(packageBeefShoulder(meat))
@@ -79,17 +76,19 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
                     }
                 }
                 MeatType.FISH -> {
-
-                    productToSell.add(packageCarp(meat))
-                    productToSell.add(packageBream(meat))
-                    productToSell.add(packageEel(meat))
-                    productToSell.add(packageZander(meat))
-                    productToSell.add(packageCatfish(meat))
-                    productToSell.add(packagePerch(meat))
-
+                    var random = (1..6).random()
+                    when (random) {
+                        1 -> productToSell.add(packageCarp(meat))
+                        2 -> productToSell.add(packageBream(meat))
+                        3 -> productToSell.add(packageEel(meat))
+                        4 -> productToSell.add(packageZander(meat))
+                        5 -> productToSell.add(packageCatfish(meat))
+                        6 -> productToSell.add(packagePerch(meat))
+                    }
                 }
             }
         }
+        meatsForProducts.clear()
     }
 
     fun packagePorkDumpling(meat: Meat): Product {
@@ -103,6 +102,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -117,6 +118,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -131,7 +134,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -146,7 +150,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -161,7 +166,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -176,7 +182,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -191,7 +198,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -206,7 +214,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -221,7 +230,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -236,7 +246,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -251,7 +262,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -259,7 +271,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         var product = MeatProduct(
             "Carp 750g", FishType.CARP.toString(), ProductType.MEAT, 420.0, 560.0, 750, "g", meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -275,7 +288,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         var product = MeatProduct(
             "Eel 800g", FishType.EEL.toString(), ProductType.MEAT, 500.0, 640.0, 800, "g", meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -283,7 +297,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         var product = MeatProduct(
             "Zander 600g", FishType.ZANDER.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -291,7 +306,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         var product = MeatProduct(
             "Catfish 600g", FishType.CATFISH.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 
@@ -299,7 +315,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         var product = MeatProduct(
             "Perch 600g", FishType.PERCH.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginID()
         )
-
+        product.attach(Report)
+        product.notifyUpdate()
         return product
     }
 }

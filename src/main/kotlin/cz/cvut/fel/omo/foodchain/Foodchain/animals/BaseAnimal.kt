@@ -131,8 +131,27 @@ open class BaseAnimal : Subject {
 
     override fun notifyUpdate() {
         for (i in observers) {
-            i.update(this.origin,
-                "NEW ANIMAL, " + this.animalName + ", weight: " + this.weight + "g, age:" + this.age
+            i.update(
+                this.origin,
+                "NEW ANIMAL, " + this.animalName + ", weight: " + this.weight + "g, age:" + this.age + " in week:" + Week.acutalWeek
+            )
+        }
+    }
+
+    fun notifyAnimalWasMoveToProcess(){
+        for (i in observers) {
+            i.update(
+                this.origin,
+                "ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: " + Week.acutalWeek
+            )
+        }
+    }
+
+    fun notifyAnimalWasProcessed(){
+        for (i in observers) {
+            i.update(
+                this.origin,
+                "ANIMAL HAS BEEN PROCESSED IN WEEK: " + Week.acutalWeek
             )
         }
     }

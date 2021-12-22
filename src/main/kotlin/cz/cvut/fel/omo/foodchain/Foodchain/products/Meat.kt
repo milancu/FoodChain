@@ -2,6 +2,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.products
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
+import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import java.util.*
 
@@ -63,6 +64,14 @@ class Meat : Subject{
         for(i in Meat.observers){
             i.update(uuid, report)
         }
+    }
+
+    fun notifyMeatWasProcessed(){
+        notifyUpdate(this.origin, this.type.toString() + " was processed, amount: " + this.amount.toString() + " week: " + Week.acutalWeek.toString())
+    }
+
+    fun notifyMeatWasPackaged(){
+        notifyUpdate(this.origin, this.type.toString() + " was packaged, amount: " + this.amount.toString() + " price: " + this.shopPrice.toString() + " week: " + Week.acutalWeek.toString())
     }
 
 }

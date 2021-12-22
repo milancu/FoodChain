@@ -40,11 +40,36 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         // TODO vyhazovani z listu
         animals.toList().iterator().forEach { animal ->
             when (animal.getName()) {
-                "Cow" -> if (animal.getAge() > 30) animalsToProcessing.add(animal)
-                "Pig" -> if (animal.getAge() > 20) animalsToProcessing.add(animal)
-                "Chicken" -> if (animal.getAge() > 10) animalsToProcessing.add(animal)
-                "Goat" -> if (animal.getAge() > 15) animalsToProcessing.add(animal)
-                "Fish" -> if (animal.getAge() > 5) animalsToProcessing.add(animal)
+                "Cow" -> {
+                    if (animal.getAge() > 30) {
+                        animalsToProcessing.add(animal)
+                        animal.notifyAnimalMoveToProcess()
+                    }
+                }
+                "Pig" -> {
+                    if (animal.getAge() > 20) {
+                        animalsToProcessing.add(animal)
+                        animal.notifyAnimalMoveToProcess()
+                    }
+                }
+                "Chicken" -> {
+                    if (animal.getAge() > 10) {
+                        animalsToProcessing.add(animal)
+                        animal.notifyAnimalMoveToProcess()
+                    }
+                }
+                "Goat" -> {
+                    if (animal.getAge() > 15) {
+                        animalsToProcessing.add(animal)
+                        animal.notifyAnimalMoveToProcess()
+                    }
+                }
+                "Fish" -> {
+                    if (animal.getAge() > 5) {
+                        animalsToProcessing.add(animal)
+                        animal.notifyAnimalMoveToProcess()
+                    }
+                }
             }
         }
 

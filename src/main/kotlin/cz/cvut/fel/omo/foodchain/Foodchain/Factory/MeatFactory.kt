@@ -99,6 +99,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -114,6 +115,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -129,6 +131,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -144,6 +147,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -159,6 +163,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -174,6 +179,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -189,6 +195,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -204,6 +211,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -219,6 +227,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -234,6 +243,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -249,6 +259,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -264,6 +275,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -279,6 +291,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -294,6 +307,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -309,6 +323,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -324,6 +339,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }
@@ -339,6 +355,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
+        meat.notifyMeatWasPackaged()
         product.attach(Report)
         return product
     }

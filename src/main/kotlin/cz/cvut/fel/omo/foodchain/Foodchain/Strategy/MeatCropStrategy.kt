@@ -24,15 +24,19 @@ class MeatCropStrategy : ProcessorMeatStrategy {
     override fun execute(meat: Meat): ArrayList<Product> {
         when (meat.getType()) {
             MeatType.BEEF -> {
+                meat.notifyMeatWasProcessed()
                 return executeBeef(meat)
             }
             MeatType.FISH -> {
+                meat.notifyMeatWasProcessed()
                 return executeFish(meat)
             }
             MeatType.CHICKEN -> {
+                meat.notifyMeatWasProcessed()
                 return executeChicken(meat)
             }
             MeatType.PORK -> {
+                meat.notifyMeatWasProcessed()
                 return executePork(meat)
             }
         }

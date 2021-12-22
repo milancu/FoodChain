@@ -142,11 +142,11 @@ open class BaseAnimal : Subject {
     }
 
     fun notifyAnimalMoveToProcess(){
-        notifyUpdate(this.origin, this.animalName + " is ready to process " + this.age.toString() + " week: " + Week.acutalWeek.toString())
+        notifyUpdate(this.origin, this.animalName + " is ready to process, age: " + this.age.toString() + " week: " + Week.acutalWeek.toString())
     }
 
-    fun notifyMoveProcessed(){
-        notifyUpdate(this.origin, this.animalName + " is ready to process " + this.age.toString() + " week: " + Week.acutalWeek.toString())
+    fun notifyProcessed(){
+        notifyUpdate(this.origin, this.animalName + " animal was processed " + " week: " + Week.acutalWeek.toString())
     }
 
 }

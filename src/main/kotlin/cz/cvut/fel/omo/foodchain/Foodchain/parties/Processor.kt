@@ -1,7 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
-import cz.cvut.fel.omo.foodchain.Foodchain.Strategy.*
+import cz.cvut.fel.omo.foodchain.Foodchain.Strategy.ProductStrategy.*
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product

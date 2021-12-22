@@ -16,8 +16,8 @@ class GrowerToProcessorChannel : Channel{
 
         val generator : Generator = Generator()
 
-        growers = generator.generateGrowers(Config.GROWERS)
-        processors = generator.generateProcessors(Config.PROCESSORS)
+        growers = generator.generateGrowers()
+        processors = generator.generateProcessors()
         // TODO jak rozhodovat, jakej processor se vybere
 
         println("Growers: " + growers.size)

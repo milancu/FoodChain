@@ -1,4 +1,4 @@
-package cz.cvut.fel.omo.foodchain.Foodchain.Strategy
+package cz.cvut.fel.omo.foodchain.Foodchain.Strategy.ProductStrategy
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName

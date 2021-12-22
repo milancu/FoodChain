@@ -15,53 +15,23 @@ open class FoodchainApplication
 // global config
 
 fun main(args: Array<String>) {
+
 	runApplication<FoodchainApplication>(*args)
-
-	var channelG2P : GrowerToProcessorChannel = GrowerToProcessorChannel()
-	var channelF2P : FarmerToProcessorChannel = FarmerToProcessorChannel()
-	var channelP2R : ProcessorToRetailerChannel = ProcessorToRetailerChannel(channelG2P.getProcessors())
-	var channelRTC : RetailerToCustomerChannel = RetailerToCustomerChannel(channelP2R.getRetailers())
-
-	// TODO TIMER, aby nebylo nutny spoustet vsechny run zvlast
-
-	channelG2P.printStats()
-	channelP2R.printStats()
-	channelP2R.printStats()
-	channelRTC.printStats()
+	val simulation : Simulation = Simulation()
 
 	println("ONE WEEK LATER")
 	println()
-
-	// poskoceni o tyden
-	channelG2P.runSimulation()
-	channelF2P.runSimulation()
-	channelP2R.runSimulation()
-	channelRTC.runSimulation() //todo
-
-	channelG2P.printStats()
-	channelF2P.printStats()
-	channelP2R.printStats()
-	channelRTC.printStats() //todo
-
+	simulation.runWeek()
 
 	println("TWO WEEKS LATER")
 	println()
+	simulation.runWeek()
 
-	channelP2R.runSimulation()
-	channelF2P.runSimulation()
-	channelP2R.runSimulation()
-	channelRTC.runSimulation() //todo
-
-	channelG2P.printStats()
-	channelF2P.printStats()
-	channelP2R.printStats()
-	channelRTC.printStats() //todo
-
-	println("#############################################################")
+	/*println("#############################################################")
 	var generator : Generator = Generator()
 
 	for(i in generator.generateAnimals()){
 		var id = i.getOriginId()
 		println(Report.getReport(id)!!.get(0))
-	}
+	}*/
 }

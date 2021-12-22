@@ -22,6 +22,7 @@ class Request {
                 money += crop.getAmount() * crop.getShopPrice()
             }
             var invoice: Invoice = Invoice(processor, grower, money, InvoiceType.CROP)
+            Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
@@ -49,6 +50,7 @@ class Request {
                 money += animal.getAmount() * animal.getShopPrice()
             }
             var invoice: Invoice = Invoice(meatFactory, farmer, money, InvoiceType.MEAT)
+            Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
@@ -74,6 +76,7 @@ class Request {
                 money += product.getAmount() * product.getShopPrice()
             }
             var invoice: Invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
+            Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
@@ -94,6 +97,7 @@ class Request {
                 money += product.getAmount() * product.getShopPrice()
             }
             var invoice: Invoice = Invoice(retailer, meatFactory, money, InvoiceType.PRODUCT)
+            Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
@@ -117,6 +121,7 @@ class Request {
             }
 
             var invoice: Invoice = Invoice(farmer, grower, money, InvoiceType.PRODUCT)
+            Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())

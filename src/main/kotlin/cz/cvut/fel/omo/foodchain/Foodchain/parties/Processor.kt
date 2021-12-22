@@ -50,6 +50,7 @@ class Processor(subjectName : String,  location : String, amountOfMoney : Double
         for(supply in cropSupplies){
             products.add(createProduct(supply))
         }
+        cropSupplies = ArrayList()
     }
 
     fun payForInvoice(invoice: Invoice){
@@ -71,6 +72,7 @@ class Processor(subjectName : String,  location : String, amountOfMoney : Double
         for (invoice in unpaidInvoices) {
             if (amountOfMoney >= invoice.getPrice()) {
                 toRemove.add(invoice)
+                invoice.notifyPaid()
                 invoice.payInvoice()
                 amountOfMoney -= invoice.getPrice()
             }

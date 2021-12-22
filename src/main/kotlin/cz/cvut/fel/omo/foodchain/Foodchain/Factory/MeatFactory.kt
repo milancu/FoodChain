@@ -64,6 +64,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             if (amountOfMoney >= invoice.getPrice()) {
                 toRemove.add(invoice)
                 invoice.payInvoice()
+                invoice.notifyPaid()
                 amountOfMoney -= invoice.getPrice()
             }
         }
@@ -261,7 +262,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
 
     fun packageChickenBreast(meat: Meat): Product {
         var product = MeatProduct(
-            "Chicken Thigh 150g",
+            "Chicken Breast 150g",
             MeatProductType.CHICKENBREAST.toString(),
             ProductType.MEAT,
             120.0,

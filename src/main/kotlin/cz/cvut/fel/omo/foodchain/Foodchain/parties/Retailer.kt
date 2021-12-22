@@ -61,6 +61,7 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
             if (amountOfMoney >= invoice.getPrice()) {
                 toRemove.add(invoice)
                 invoice.payInvoice()
+                invoice.notifyPaid()
                 amountOfMoney -= invoice.getPrice()
             }
         }

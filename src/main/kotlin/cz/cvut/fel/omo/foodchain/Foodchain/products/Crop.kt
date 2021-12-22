@@ -88,7 +88,7 @@ class Crop : Subject {
 
     override fun notifyUpdate() {
         for (i in observers) {
-            i.update(this.uuid, "NEW CROP, " + this.name + ", amount: " + this.amount + "kg, in week: " + Week.acutalWeek)
+            i.update(this.uuid, "NEW CROP, " + this.name + ", amount: " + this.amount + "g, in week: " + Week.acutalWeek)
         }
     }
 

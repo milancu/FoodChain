@@ -52,9 +52,9 @@ class Processor(subjectName : String,  location : String, amountOfMoney : Double
         }
     }
 
-    fun payForInvoice(invoice: Invoice, time :Int){
+    fun payForInvoice(invoice: Invoice){
         if(amountOfMoney >= invoice.getPrice()){
-            invoice.payInvoice(time)
+            invoice.payInvoice()
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
             println("Faktura " + invoice.getCode() + " zaplacena")

@@ -21,14 +21,14 @@ class Invoice : Subject {
     private var createTime: Int
     private var paidTime: Int = 0
 
-    constructor(subscriber: BaseParty, contractor: BaseParty, price: Double, note: InvoiceType, createTime: Int) {
+    constructor(subscriber: BaseParty, contractor: BaseParty, price: Double, note: InvoiceType) {
         this.subscriber = subscriber
         this.contractor = contractor
         this.price = price
         this.note = note
         this.isPaid = false
         this.code = UUID.randomUUID()
-        this.createTime = createTime
+        this.createTime = Week.acutalWeek
         notifyUpdate(
             this.code,
             "subscriber: " + this.subscriber.getSubjectName() +
@@ -64,8 +64,8 @@ class Invoice : Subject {
         return isPaid
     }
 
-    fun payInvoice(paidTime: Int) {
-        this.paidTime = paidTime
+    fun payInvoice() {
+        this.paidTime = Week.acutalWeek
         isPaid = true
         notifyPaidInvoice()
     }

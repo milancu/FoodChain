@@ -23,10 +23,18 @@ class MeatCropStrategy : ProcessorMeatStrategy {
 
     override fun execute(meat: Meat): ArrayList<Product> {
         when (meat.getType()) {
-            MeatType.BEEF -> return executeBeef(meat)
-            MeatType.FISH -> return executeFish(meat)
-            MeatType.CHICKEN -> return executeChicken(meat)
-            MeatType.PORK -> return executePork(meat)
+            MeatType.BEEF -> {
+                return executeBeef(meat)
+            }
+            MeatType.FISH -> {
+                return executeFish(meat)
+            }
+            MeatType.CHICKEN -> {
+                return executeChicken(meat)
+            }
+            MeatType.PORK -> {
+                return executePork(meat)
+            }
         }
     }
 

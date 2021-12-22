@@ -14,14 +14,14 @@ class Request {
 
         // TODO kam ukladat faktury
 
-        fun requestTransportToProcessor(grower: Grower, processor: Processor, crops: ArrayList<Crop>, time: Int) {
+        fun requestTransportToProcessor(grower: Grower, processor: Processor, crops: ArrayList<Crop>) {
             println("Proces transportace (from farmer " + grower.getIdentifier() + " to processor) " + processor.getIdentifier())
             // Faktury
             var money: Double = 0.0
             for (crop in crops) {
                 money += crop.getAmount() * crop.getShopPrice()
             }
-            var invoice: Invoice = Invoice(processor, grower, money, InvoiceType.CROP, time)
+            var invoice: Invoice = Invoice(processor, grower, money, InvoiceType.CROP)
             invoice.attach(Report)
             println("Vznik faktury " + invoice.getCode())
 
@@ -29,11 +29,11 @@ class Request {
             grower.raiseField()
 
             processor.takeCropSupplies(Transport.transportCropSuplies()) // todo invoice processorem a transportem
-            processor.payForInvoice(invoice, time)
+            processor.payForInvoice(invoice)
             println()
         }
 
-        fun requestTransportToMeatFactory(farmer: Farmer, meatFactory: MeatFactory, time: Int) {
+        fun requestTransportToMeatFactory(farmer: Farmer, meatFactory: MeatFactory) {
             println("Proces transportace (from farmer " + farmer.getIdentifier() + " to processor) " + meatFactory.getIdentifier())
 
             // Poslani zvirat na jatka
@@ -44,18 +44,18 @@ class Request {
             for (animal in processedAnimals) {
                 money += animal.getAmount() * animal.getShopPrice()
             }
-            var invoice: Invoice = Invoice(meatFactory, farmer, money, InvoiceType.MEAT, time)
+            var invoice: Invoice = Invoice(meatFactory, farmer, money, InvoiceType.MEAT)
             invoice.attach(Report)
             println("Vznik faktury " + invoice.getCode())
 
             Transport.takeMeat(processedAnimals) //todo platba pro transport
             meatFactory.takeMeat(Transport.transportMeats())
-            meatFactory.payForInvoice(invoice, time)
+            meatFactory.payForInvoice(invoice)
 
             println()
         }
 
-        fun requestTransportToWarehouse(processor: Processor, retailer: Retailer, time: Int) {
+        fun requestTransportToWarehouse(processor: Processor, retailer: Retailer) {
             println("Proces transportace (from processor " + processor.getIdentifier() + " to retailer " + retailer.getIdentifier())
 
             // Faktura
@@ -66,7 +66,7 @@ class Request {
             for (product in Transport.transportProducts()) {
                 money += product.getAmount() * product.getShopPrice()
             }
-            var invoice: Invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT, time)
+            var invoice: Invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
             invoice.attach(Report)
 
 
@@ -74,7 +74,7 @@ class Request {
             println("Vznik faktury " + invoice.getCode())
 
             retailer.buyProducts(Transport.transportProducts()) // todo invoice retailer a transport
-            retailer.payForInvoice(invoice, time)
+            retailer.payForInvoice(invoice)
         }
 
         fun requestTransportToWarehouse(meatFactory: MeatFactory, retailer: Retailer) {
@@ -95,7 +95,7 @@ class Request {
                 }
             }
 
-            var invoice: Invoice = Invoice(farmer, grower, money, InvoiceType.PRODUCT, time)
+            var invoice: Invoice = Invoice(farmer, grower, money, InvoiceType.PRODUCT)
             farmer.payForInvoice(invoice)
         }
     }

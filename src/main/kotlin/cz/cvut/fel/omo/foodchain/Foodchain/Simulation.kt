@@ -4,7 +4,6 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Channels.*
 
 class Simulation {
 
-    private var time : Int = 1
     private var channelG2P : GrowerToProcessorChannel = GrowerToProcessorChannel()
     private var channelF2P : FarmerToProcessorChannel = FarmerToProcessorChannel()
     private var channelG2F : GrowerToFarmerChannel = GrowerToFarmerChannel(channelG2P.getGrowers(), channelF2P.getFarmers())
@@ -14,7 +13,7 @@ class Simulation {
     fun runWeek(){
         printStats()
         runSimulation()
-        time++
+        Week.acutalWeek++
     }
 
     private fun printStats(){
@@ -26,10 +25,10 @@ class Simulation {
 
     private fun runSimulation(){
         channelG2F.runSimulation()
-        channelG2P.runSimulation(time)
-        channelF2P.runSimulation(time)
-        channelP2R.runSimulation(time)
-        channelRTC.runSimulation(time) //todo
+        channelG2P.runSimulation()
+        channelF2P.runSimulation()
+        channelP2R.runSimulation()
+        channelRTC.runSimulation() //todo
     }
 
 }

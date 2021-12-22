@@ -9,11 +9,9 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
 
-    // TODO buy new animal
-
     private var resources: ArrayList<Crop> = setInitialResources()
     private var animals: ArrayList<BaseAnimal> = setInitialAnimals()
-    private var animalsToProcessing: ArrayList<BaseAnimal> = animalsToProcessing();
+    private var animalsToProcessing: ArrayList<BaseAnimal> = ArrayList();
     private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
     private val butcher : Butcher = Butcher()
 
@@ -74,10 +72,25 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
             }
         }
 
-        // TODO otestovat
-        animals.toMutableList().removeAll(animalsToProcessing)
+        println("Aktualni pocet zvirat : " + animals.size)
+        println("Na jatka bylo poslano : " + animalsToProcessing.size + " zvirat")
+        animals.removeAll(animalsToProcessing)
+        println("Aktualni pocet zvirat : " + animals.size)
+        buyNewAnimals(animalsToProcessing.size)
+        println("Po dokoupeni pocet zvirat : " + animals.size)
 
         return animalsToProcessing
+    }
+
+    fun buyNewAnimals(value : Int){
+        val generator : Generator = Generator()
+        if(value != 0) {
+            for (i in (1..value)) {
+                val newAnimal: BaseAnimal = generator.generateAnimal()
+                animals.add(newAnimal)
+                this.amountOfMoney -= newAnimal.getWeight() // todo letmej typ
+            }
+        }
     }
 
     fun getResources() : ArrayList<Crop>{

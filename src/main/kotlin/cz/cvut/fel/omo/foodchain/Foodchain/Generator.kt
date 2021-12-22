@@ -12,7 +12,7 @@ import kotlin.random.Random.Default.nextInt
 
 class Generator {
 
-    private fun generateAnimal(): BaseAnimal {
+    public fun generateAnimal(): BaseAnimal {
         var animal = BaseAnimal(AnimalType.getAnimal())
         animal.attach(Report)
         return animal

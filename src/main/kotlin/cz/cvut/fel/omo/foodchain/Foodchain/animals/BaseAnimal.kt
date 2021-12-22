@@ -2,6 +2,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.animals
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
+import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
@@ -138,6 +139,14 @@ open class BaseAnimal : Subject {
         for(i in observers){
             i.update(uuid, report)
         }
+    }
+
+    fun notifyAnimalMoveToProcess(){
+        notifyUpdate(this.origin, this.animalName + " is ready to process " + this.age.toString() + " week: " + Week.acutalWeek.toString())
+    }
+
+    fun notifyMoveProcessed(){
+        notifyUpdate(this.origin, this.animalName + " is ready to process " + this.age.toString() + " week: " + Week.acutalWeek.toString())
     }
 
 }

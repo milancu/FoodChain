@@ -90,20 +90,4 @@ class Crop : Subject {
             i.update(uuid, report)
         }
     }
-
-    fun notifyCropWasExecuted() {
-        notifyUpdate(
-            this.uuid,
-            "Crop has been executed, name: " + this.name.toString() + ", type: " + this.type.toString() + ", amount: " +
-                    this.amount.toString() + "kg," + " shopprice: " + this.shopPrice.toString()
-        )
-    }
-
-    fun notifyCropWasHarvested() {
-        notifyUpdate(
-            this.uuid,
-            "Crop has been harvested, name: " + this.name.toString() + ", type: " + this.type.toString() + ", amount: " +
-                    this.amount.toString() + "kg," + " shopprice: " + this.shopPrice.toString()
-        )
-    }
 }

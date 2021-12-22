@@ -43,11 +43,9 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
             println("Faktura " + invoice.getCode() + " zaplacena")
-            invoice.notifyPaidInvoice()
         } else {
             unpaidInvoices.add(invoice)
             println("!Faktura " + invoice.getCode() + " NENI uhrazena")
-            invoice.notifyUnpaidInvoice()
         }
         println()
     }

@@ -134,19 +134,4 @@ open class BaseAnimal : Subject {
             i.update(uuid, report)
         }
     }
-
-    fun notifyAnimalMoveToProcess() {
-        notifyUpdate(
-            this.origin,
-            this.animalName + " is ready to process, age: " + this.age.toString() + " in week: " + Week.acutalWeek.toString()
-        )
-    }
-
-    fun notifyProcessed() {
-        notifyUpdate(
-            this.origin,
-            this.animalName + " animal was processed " + " in week: " + Week.acutalWeek.toString()
-        )
-    }
-
 }

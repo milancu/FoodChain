@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Channels
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Config
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
@@ -15,8 +16,8 @@ class GrowerToProcessorChannel : Channel{
 
         val generator : Generator = Generator()
 
-        growers = generator.generateGrowers(2)
-        processors = generator.generateProcessors(2)
+        growers = generator.generateGrowers(Config.GROWERS)
+        processors = generator.generateProcessors(Config.PROCESSORS)
         // TODO jak rozhodovat, jakej processor se vybere
 
         println("Growers: " + growers.size)

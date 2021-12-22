@@ -10,7 +10,7 @@ class RetailerToCustomerChannel : Channel{
 
     constructor(retailers : ArrayList<Retailer>){
         this.retailers = retailers
-        this.customers = ArrayList()
+        this.customers = ArrayList() // TODO SOLO GENERATOR
     }
 
     override fun runSimulation(){

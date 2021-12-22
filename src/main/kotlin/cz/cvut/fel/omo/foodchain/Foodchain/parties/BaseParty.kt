@@ -1,10 +1,5 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
-const val NAME_LENGTH = 12;
-const val IDENTIFIER_LENGTH = 8;
-const val LOCATION_LENGTH = 16;
-const val ALPHANUMERIC_REGEX = "[a-zA-Z0-9]+";
-
 open class BaseParty {
 
     protected val subjectName : String

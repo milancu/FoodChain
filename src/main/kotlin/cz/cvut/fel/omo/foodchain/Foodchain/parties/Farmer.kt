@@ -9,6 +9,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
 
+    // TODO buy new animal
+
     private var resources: ArrayList<Crop> = setInitialResources()
     private var animals: ArrayList<BaseAnimal> = setInitialAnimals()
     private var animalsToProcessing: ArrayList<BaseAnimal> = animalsToProcessing();

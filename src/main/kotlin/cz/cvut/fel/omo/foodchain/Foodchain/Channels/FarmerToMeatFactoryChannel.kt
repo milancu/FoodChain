@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Channels
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Config
 import cz.cvut.fel.omo.foodchain.Foodchain.Factory.MeatFactory
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 import cz.cvut.fel.omo.foodchain.Foodchain.Request
@@ -14,7 +15,7 @@ class FarmerToMeatFactoryChannel : Channel{
     constructor(){
         println("PHASE 1.1 - Farmers, buthcers and meaaFactory creation")
         val generator : Generator = Generator()
-        this.farmers = generator.generateFarmers(2)
+        this.farmers = generator.generateFarmers(Config.FARMERS)
         this.meatFactory = generator.generateFactory()
 
         println("Farmers: " + farmers.size)

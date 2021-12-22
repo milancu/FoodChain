@@ -10,12 +10,6 @@ import cz.cvut.fel.omo.foodchain.Foodchain.parties.*
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import kotlin.random.Random.Default.nextInt
 
-
-const val FINANCE_MIN = 1000000
-const val FINANCE_MAX = 10000000
-const val IDENTIFIER_MIN = 10000000
-const val IDENTIFIER_MAX = 99999999
-
 class Generator {
 
     private fun generateAnimal(): BaseAnimal {
@@ -98,13 +92,13 @@ class Generator {
     private fun generateNewParty(): BaseParty {
         val charPool: List<Char> = ('a'..'z') + ('A'..'Z')
 
-        val generatedName = (1..NAME_LENGTH)
+        val generatedName = (1..Config.NAME_LENGTH)
             .map { charPool.random() }
             .joinToString("")
-        val generatedLocation = (1..LOCATION_LENGTH)
+        val generatedLocation = (1..Config.LOCATION_LENGTH)
             .map { charPool.random() }
             .joinToString("") + ", " + (1000..9999).random()
-        val generatedMoney = (FINANCE_MIN..FINANCE_MAX).random().toDouble();
+        val generatedMoney = (Config.FINANCE_MIN..Config.FINANCE_MAX).random().toDouble();
 
         return BaseParty(generatedName, generatedLocation, generatedMoney)
     }

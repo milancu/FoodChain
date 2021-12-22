@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Channels
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Config
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
@@ -16,7 +17,7 @@ class ProcessorToRetailerChannel : Channel{
         val generator : Generator = Generator()
 
         this.processors = processors
-        retailers = generator.generateRetailers(2)
+        this.retailers = generator.generateRetailers(Config.RETAILERS)
 
         println("Processors: " + processors.size)
         println("Retailers: " + retailers.size)

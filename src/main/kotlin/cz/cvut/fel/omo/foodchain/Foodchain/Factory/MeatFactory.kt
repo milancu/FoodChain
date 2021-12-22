@@ -3,6 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.Factory
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.FishType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatProductType
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
@@ -19,6 +20,38 @@ class MeatFactory {
         }
     }
 
+    fun packageProduct() : ArrayList<Product>{
+        for(meat in meatsForProducts){
+            when(meat.getType()){
+                MeatType.PORK ->{
+                    productToSell.add(packagePorkDumpling(meat))
+                    productToSell.add(packagePorkRoast(meat))
+                    productToSell.add(packagePorkLeg(meat))
+                    productToSell.add(packagePorkFlank(meat))
+                }
+                MeatType.BEEF ->{
+                    productToSell.add(packageBeefTenderloin(meat))
+                    productToSell.add(packageBovineCheek(meat))
+                    productToSell.add(packageBeefShoulder(meat))
+                    productToSell.add(packageBeefDumpling(meat))
+                }
+                MeatType.CHICKEN ->{
+                    productToSell.add(packageChickenThigh(meat))
+                    productToSell.add(packageChickenBreast(meat))
+                    productToSell.add(packageChickenWings(meat))
+                }
+                MeatType.FISH ->{
+                    productToSell.add(packageCarp(meat))
+                    productToSell.add(packageBream(meat))
+                    productToSell.add(packageEel(meat))
+                    productToSell.add(packageZander(meat))
+                    productToSell.add(packageCatfish(meat))
+                    productToSell.add(packagePerch(meat))
+                }
+            }
+        }
+        return productToSell
+    }
 
 
     fun packagePorkDumpling(meat: Meat): Product {

@@ -48,10 +48,14 @@ class MeatFactory {
         for(meat in meatsForProducts){
             when(meat.getType()){
                 MeatType.PORK ->{
-                    productToSell.add(packagePorkDumpling(meat))
-                    productToSell.add(packagePorkRoast(meat))
-                    productToSell.add(packagePorkLeg(meat))
-                    productToSell.add(packagePorkFlank(meat))
+                    for(i in 1..(meat.getAmount()/1600).toInt()){
+                        productToSell.add(packagePorkDumpling(meat))
+                        productToSell.add(packagePorkRoast(meat))
+                        productToSell.add(packagePorkFlank(meat))
+                    }
+                    for(i in 1..4){
+                        productToSell.add(packagePorkLeg(meat))
+                    }
                 }
                 MeatType.BEEF ->{
                     productToSell.add(packageBeefTenderloin(meat))
@@ -60,9 +64,12 @@ class MeatFactory {
                     productToSell.add(packageBeefDumpling(meat))
                 }
                 MeatType.CHICKEN ->{
-                    productToSell.add(packageChickenThigh(meat))
+
                     productToSell.add(packageChickenBreast(meat))
                     productToSell.add(packageChickenWings(meat))
+                    for(i in 1..2){
+                        productToSell.add(packageChickenThigh(meat))
+                    }
                 }
                 MeatType.FISH ->{
                     productToSell.add(packageCarp(meat))

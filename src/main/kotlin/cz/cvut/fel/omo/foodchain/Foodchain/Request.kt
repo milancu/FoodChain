@@ -165,5 +165,9 @@ class Request {
             println("Customer: " + customer.getIdentifier() + " utratil: " + money + " za nakupy a ma: " + customer.getAmountOfMoney()) // TODO CHYBA
             customer.payForShopping(invoice)
         }
+
+        fun requestTakeOutToShop(retailer: Retailer){
+            retailer.fillIn()
+        }
     }
 }

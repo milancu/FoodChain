@@ -25,7 +25,15 @@ class RetailerToCustomerChannel : Channel{
     }
 
     override fun printStats(){
-        //TODO
+        println("CURRENT STATE PROCESSOR / RETAILER - CHANNEL")
+        for(retailer in retailers){
+            println("Retailer: " + retailer.getIdentifier() + " : money : " + retailer.getAmountOfMoney()
+                    + " : available products : " + retailer.getStockSize() + " : warehouseProducts : " + retailer.getWarehouseStockSize())
+        }
+        for(customer in customers){
+            println("Processor: " + customer.getIdentifier() + " : money : " + customer.getAmountOfMoney())
+        }
+        println()
     }
 
     fun addCustomer(customer : Customer){

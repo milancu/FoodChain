@@ -15,6 +15,7 @@ class Simulation {
         //printStats()
         runSimulation()
         Week.acutalWeek++
+        channelRTC.printStats() // todo odstranit pak
     }
 
     private fun printStats(){

@@ -27,7 +27,7 @@ class FarmerToMeatFactoryChannel : Channel{
             print("Priprava ke zpracovani zvirat")
             Request.requestTransportToMeatFactory(farmer, meatFactory)
             println("maso zpracovano a pripavano a pripraveno k odvozu")
-            //farmer.feedAnimal() // TODO
+            farmer.feedAnimal() // TODO
             farmer.growAnimals()
         }
     }

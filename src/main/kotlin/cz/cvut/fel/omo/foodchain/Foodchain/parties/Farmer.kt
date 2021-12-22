@@ -113,29 +113,26 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         return animalsToProcessing.size
     }
 
-/*    fun controlResources(){
-        if(resources.size != 0){
-            for(crop in resources){
-                if(crop.getAmount() <= 5){
-                    resources.remove(crop)
-                }
-            }
+    fun removeUsedResources(crops : ArrayList<Crop>){
+        for(crop in crops){
+            resources.remove(crop)
         }
-    }*/
+    }
 
     fun feedAnimal(){
         var feeded : Boolean = false
         for(animal in animals){
-
+            var toRemove : ArrayList<Crop> = ArrayList()
             for (crop in resources) {
                 if (crop.getAmount() >= 5) {
                     feeded = true
                     crop.decreaseAmount()
                     break
                 } else {
-                    resources.remove(crop)
+                    toRemove.add(crop)
                 }
             }
+            removeUsedResources(toRemove)
 
             if(feeded){
                 animal.increaseWeight()

@@ -61,7 +61,6 @@ class Invoice : Subject {
     fun payInvoice() {
         this.paidTime = Week.acutalWeek
         isPaid = true
-        notifyPaidInvoice()
     }
 
 
@@ -78,31 +77,4 @@ class Invoice : Subject {
             i.update(uuid, report)
         }
     }
-
-    fun notifyUnpaidInvoice() {
-        notifyUpdate(
-            this.code,
-            "subscriber: " + this.subscriber.getSubjectName() +
-                    ", ico: " + this.subscriber.getIdentifier() +
-                    " contractor: " + this.contractor.getSubjectName() +
-                    ", ico: " + this.contractor.getIdentifier() +
-                    ", price: " + this.price + " note: " + this.note.toString() +
-                    ", create date: " + this.createTime.toString() +
-                    ", was not paid"
-        )
-    }
-
-    fun notifyPaidInvoice() {
-        notifyUpdate(
-            this.code,
-            "subscriber: " + this.subscriber.getSubjectName() +
-                    ", ico: " + this.subscriber.getIdentifier() +
-                    " contractor: " + this.contractor.getSubjectName() +
-                    ", ico: " + this.contractor.getIdentifier() +
-                    ", price: " + this.price + " note: " + this.note.toString() +
-                    ", create date: " + this.createTime +
-                    ", was paid in: " + this.paidTime
-        )
-    }
-
 }

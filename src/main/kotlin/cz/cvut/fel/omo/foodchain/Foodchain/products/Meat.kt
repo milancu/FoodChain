@@ -66,18 +66,5 @@ class Meat : Subject {
         }
     }
 
-    fun notifyMeatWasProcessed() {
-        notifyUpdate(
-            this.origin,
-            this.type.toString() + " was processed, amount: " + this.amount.toString() + " week: " + Week.acutalWeek.toString()
-        )
-    }
-
-    fun notifyMeatWasPackaged() {
-        notifyUpdate(
-            this.origin,
-            this.type.toString() + " was packaged, amount: " + this.amount.toString() + " price: " + this.shopPrice.toString() + " week: " + Week.acutalWeek.toString()
-        )
-    }
 
 }

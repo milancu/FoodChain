@@ -24,9 +24,6 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
 
@@ -41,9 +38,6 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -57,9 +51,6 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     "l",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -73,9 +64,6 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -95,9 +83,6 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -111,9 +96,6 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     "l",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }

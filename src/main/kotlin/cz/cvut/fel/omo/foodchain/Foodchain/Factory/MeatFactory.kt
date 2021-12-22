@@ -44,11 +44,9 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
             println("Faktura " + invoice.getCode() + " zaplacena")
-            invoice.notifyPaidInvoice()
         } else {
             unpaidInvoices.add(invoice)
             println("!Faktura " + invoice.getCode() + " NENI uhrazena")
-            invoice.notifyUnpaidInvoice()
         }
     }
 
@@ -56,22 +54,22 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         for (meat in meatsForProducts) {
             when (meat.getType()) {
                 MeatType.PORK -> {
-                    for (i in 1..(meat.getAmount() / 1600).toInt()) {
-                        productToSell.add(packagePorkDumpling(meat))
-                        productToSell.add(packagePorkRoast(meat))
-                        productToSell.add(packagePorkFlank(meat))
-                    }
+
+                    productToSell.add(packagePorkDumpling(meat))
+                    productToSell.add(packagePorkRoast(meat))
+                    productToSell.add(packagePorkFlank(meat))
+
                     for (i in 1..4) {
                         productToSell.add(packagePorkLeg(meat))
                     }
                 }
                 MeatType.BEEF -> {
-                    for (i in 1..(meat.getAmount() / 1600).toInt()) {
-                        productToSell.add(packageBeefTenderloin(meat))
-                        productToSell.add(packageBovineCheek(meat))
-                        productToSell.add(packageBeefShoulder(meat))
-                        productToSell.add(packageBeefDumpling(meat))
-                    }
+
+                    productToSell.add(packageBeefTenderloin(meat))
+                    productToSell.add(packageBovineCheek(meat))
+                    productToSell.add(packageBeefShoulder(meat))
+                    productToSell.add(packageBeefDumpling(meat))
+
                 }
                 MeatType.CHICKEN -> {
                     productToSell.add(packageChickenBreast(meat))
@@ -81,14 +79,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
                     }
                 }
                 MeatType.FISH -> {
-                    for (i in 1..(meat.getAmount() / 1600).toInt()) {
-                        productToSell.add(packageCarp(meat))
-                        productToSell.add(packageBream(meat))
-                        productToSell.add(packageEel(meat))
-                        productToSell.add(packageZander(meat))
-                        productToSell.add(packageCatfish(meat))
-                        productToSell.add(packagePerch(meat))
-                    }
+
+                    productToSell.add(packageCarp(meat))
+                    productToSell.add(packageBream(meat))
+                    productToSell.add(packageEel(meat))
+                    productToSell.add(packageZander(meat))
+                    productToSell.add(packageCatfish(meat))
+                    productToSell.add(packagePerch(meat))
+
                 }
             }
         }
@@ -105,14 +103,6 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
         return product
     }
 
@@ -126,14 +116,6 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             300,
             "g",
             meat.getOriginID()
-        )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
         )
         return product
     }
@@ -149,14 +131,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
@@ -171,14 +146,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
@@ -193,14 +161,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
@@ -215,14 +176,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
@@ -237,14 +191,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
@@ -259,14 +206,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
@@ -281,14 +221,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
@@ -303,14 +236,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
@@ -325,146 +251,55 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             "g",
             meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
     fun packageCarp(meat: Meat): Product {
         var product = MeatProduct(
-            "Carp 750g",
-            FishType.CARP.toString(),
-            ProductType.MEAT,
-            420.0,
-            560.0,
-            750,
-            "g",
-            meat.getOriginID()
+            "Carp 750g", FishType.CARP.toString(), ProductType.MEAT, 420.0, 560.0, 750, "g", meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
     fun packageBream(meat: Meat): Product {
         var product = MeatProduct(
-            "Bream 750g",
-            FishType.BREAM.toString(),
-            ProductType.MEAT,
-            400.0,
-            540.0,
-            750,
-            "g",
-            meat.getOriginID()
+            "Bream 750g", FishType.BREAM.toString(), ProductType.MEAT, 400.0, 540.0, 750, "g", meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
     fun packageEel(meat: Meat): Product {
         var product = MeatProduct(
-            "Eel 800g",
-            FishType.EEL.toString(),
-            ProductType.MEAT,
-            500.0,
-            640.0,
-            800,
-            "g",
-            meat.getOriginID()
+            "Eel 800g", FishType.EEL.toString(), ProductType.MEAT, 500.0, 640.0, 800, "g", meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
     fun packageZander(meat: Meat): Product {
         var product = MeatProduct(
-            "Zander 600g",
-            FishType.ZANDER.toString(),
-            ProductType.MEAT,
-            500.0,
-            640.0,
-            600,
-            "g",
-            meat.getOriginID()
+            "Zander 600g", FishType.ZANDER.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
     fun packageCatfish(meat: Meat): Product {
         var product = MeatProduct(
-            "Catfish 600g",
-            FishType.CATFISH.toString(),
-            ProductType.MEAT,
-            500.0,
-            640.0,
-            600,
-            "g",
-            meat.getOriginID()
+            "Catfish 600g", FishType.CATFISH.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 
     fun packagePerch(meat: Meat): Product {
         var product = MeatProduct(
-            "Perch 600g",
-            FishType.PERCH.toString(),
-            ProductType.MEAT,
-            500.0,
-            640.0,
-            600,
-            "g",
-            meat.getOriginID()
+            "Perch 600g", FishType.PERCH.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginID()
         )
-        meat.notifyMeatWasPackaged()
-        product.attach(Report)
-        product.notifyUpdate(
-            meat.getOriginID(),
-            "NEW PRODUCT created from meat. " + product.getName() + ", type: " + product.getProductType() +
-                    ", amount: " + product.getAmount() + ", shopprice:" + product.getShopPrice() + ", createAt: " +
-                    product.getCreateAt()
-        )
+
         return product
     }
 }

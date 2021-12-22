@@ -33,9 +33,6 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -49,9 +46,6 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -71,9 +65,6 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -87,9 +78,6 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "l",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -109,9 +97,6 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -125,9 +110,6 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -147,9 +129,6 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -163,9 +142,6 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "l",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -179,13 +155,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                product.notifyUpdate(
-                    product.getOriginId(),
-                    "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n"
-                )
 
-                crop.notifyCropWasExecuted()
                 return product
             }
             4 -> {
@@ -198,9 +168,6 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -214,9 +181,6 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "l",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -230,9 +194,6 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -252,9 +213,6 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }
@@ -268,9 +226,6 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     "kg",
                     crop.getUUID()
                 )
-                product.attach(Report)
-                crop.notifyCropWasExecuted()
-                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
 
                 return product
             }

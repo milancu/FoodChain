@@ -16,19 +16,15 @@ class MeatStrategy : ProcessorMeatStrategy {
     override fun execute(meat: Meat): ArrayList<Product> {
         when (meat.getType()) {
             MeatType.BEEF -> {
-                meat.notifyMeatWasProcessed()
                 return executeBeef(meat)
             }
             MeatType.FISH -> {
-                meat.notifyMeatWasProcessed()
                 return executeFish(meat)
             }
             MeatType.CHICKEN -> {
-                meat.notifyMeatWasProcessed()
                 return executeChicken(meat)
             }
             MeatType.PORK -> {
-                meat.notifyMeatWasProcessed()
                 return executePork(meat)
             }
         }
@@ -76,10 +72,6 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        Dumpling.attach(Report)
-        BeefShoulder.attach(Report)
-        Bovinecheek.attach(Report)
-        Beeftenderloin.attach(Report)
 
         meats.addAll(
             listOf(
@@ -121,9 +113,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        ChickenThigh.attach(Report)
-        ChickenBreast.attach(Report)
-        ChickenWings.attach(Report)
+
         meats.addAll(
             listOf(
                 ChickenThigh, ChickenBreast, ChickenWings
@@ -174,10 +164,6 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        PorkDumpling.attach(Report)
-        PorkRoast.attach(Report)
-        PorkLeg.attach(Report)
-        PorkFlank.attach(Report)
         meats.addAll(
             listOf(
                 PorkDumpling, PorkRoast, PorkLeg, PorkFlank
@@ -248,12 +234,6 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        carp.attach(Report)
-        bream.attach(Report)
-        eel.attach(Report)
-        zander.attach(Report)
-        catfish.attach(Report)
-        perch.attach(Report)
         meats.addAll(
             listOf(
                 carp, bream, eel, zander, catfish, perch

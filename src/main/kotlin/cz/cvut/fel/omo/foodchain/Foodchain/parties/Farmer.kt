@@ -42,31 +42,26 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
                 "Cow" -> {
                     if (animal.getAge() > 30) {
                         animalsToProcessing.add(animal)
-                        animal.notifyAnimalMoveToProcess()
                     }
                 }
                 "Pig" -> {
                     if (animal.getAge() > 20) {
                         animalsToProcessing.add(animal)
-                        animal.notifyAnimalMoveToProcess()
                     }
                 }
                 "Chicken" -> {
                     if (animal.getAge() > 10) {
                         animalsToProcessing.add(animal)
-                        animal.notifyAnimalMoveToProcess()
                     }
                 }
                 "Goat" -> {
                     if (animal.getAge() > 15) {
                         animalsToProcessing.add(animal)
-                        animal.notifyAnimalMoveToProcess()
                     }
                 }
                 "Fish" -> {
                     if (animal.getAge() > 5) {
                         animalsToProcessing.add(animal)
-                        animal.notifyAnimalMoveToProcess()
                     }
                 }
             }
@@ -165,11 +160,9 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
             println("Faktura " + invoice.getCode() + " zaplacena")
-            invoice.notifyPaidInvoice()
         } else {
             unpaidInvoices.add(invoice)
             println("!Faktura " + invoice.getCode() + " NENI uhrazena")
-            invoice.notifyUnpaidInvoice()
         }
         println()
     }

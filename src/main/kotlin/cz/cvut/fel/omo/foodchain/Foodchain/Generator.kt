@@ -104,7 +104,6 @@ class Generator {
         return listOfCrop
     }
 
-    // TODO nezapomen ze customers maj jako identifikator rodne cislo a ma se prepsat, mozno nepouzit tenhle generator na customera
     private fun generateNewParty(): BaseParty {
         val charPool: List<Char> = ('a'..'z') + ('A'..'Z')
 

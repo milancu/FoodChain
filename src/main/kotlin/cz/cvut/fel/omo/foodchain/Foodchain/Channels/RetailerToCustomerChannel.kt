@@ -17,11 +17,12 @@ class RetailerToCustomerChannel : Channel{
     }
 
     override fun runSimulation(){
+        payForWarehouse()
         fillShops()
         for(customer in customers){
-            /*var retailer : Retailer = retailers.get( (0..retailers.size-1).random() )*/
+            var retailer : Retailer = retailers.get( (0..retailers.size-1).random() )
             customer.receiveSalary()
-            Request.requestGoShopping(retailers.get(0), customer)
+            Request.requestGoShopping(retailer, customer)
             customer.payDebts()
         }
     }
@@ -38,11 +39,17 @@ class RetailerToCustomerChannel : Channel{
         println()
     }
 
-    fun fillShops(){
+    private fun fillShops(){
         for(retailer in retailers){
             Request.requestTakeOutToShop(retailer)
             println("Retailer: " + retailer.getIdentifier() + " naskladnil " + retailer.getStockSize() + " produktu.")
             println("Warehouse obsahuje " + retailer.getWarehouseStockSize() + " produktu")
+        }
+    }
+
+    private fun payForWarehouse(){
+        for(retailer in retailers){
+            retailer.warehouseManagementPayment()
         }
     }
 

@@ -110,8 +110,6 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         return availableProducts
     }
 
-
-    // TODO do channelu/requestu
     fun warehouseManagementPayment(){
         this.amountOfMoney -= warehouse.warehouseManagementPayment()
     }

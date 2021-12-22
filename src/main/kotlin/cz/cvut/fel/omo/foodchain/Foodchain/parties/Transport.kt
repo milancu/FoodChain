@@ -10,7 +10,7 @@ class Transport{
         private var identifier : String = "12345678"
         private var amountOfMoney : Double = 10000.00
         private var cropSupplies : ArrayList<Crop> = ArrayList()
-        var products : ArrayList<Product> = ArrayList() //todo private
+        private var products : ArrayList<Product> = ArrayList()
         private var meats : ArrayList<Meat> = ArrayList()
 
         fun transportCropSuplies() : ArrayList<Crop>{

@@ -14,14 +14,15 @@ class MeatFactoryToRetailerChannel : Channel{
     }
 
     override fun runSimulation(){
+        var retailer : Retailer = retailers.get( (0..retailers.size-1).random() )
         println("CURRENT STATE MEATFACTORY / RETAILER - CHANNEL")
         println("Zahajeni zpracovani masnych produktu : " + meatFactory.getPreparedPorducts() + " zasoby: " + meatFactory.getMeatResources())
         Request.requestProccessMeat(meatFactory)
         println("Masne produkty pripraveny : " + meatFactory.getPreparedPorducts() + " zasoby: " + meatFactory.getMeatResources())
-        Request.requestTransportToWarehouse(meatFactory, retailers.get(0)) // TODO not get 0, to samy u process
+        Request.requestTransportToWarehouse(meatFactory, retailer) // TODO not get 0, to samy u process
         println("Masne produkty prevezeny do prodeje, aktualni stav produktu : " + meatFactory.getPreparedPorducts())
         println()
-        retailers.get(0).payDebts()
+        retailer.payDebts()
     }
 
     override fun printStats() {

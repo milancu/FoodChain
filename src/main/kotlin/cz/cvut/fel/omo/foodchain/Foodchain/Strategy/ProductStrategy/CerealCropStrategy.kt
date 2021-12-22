@@ -54,15 +54,14 @@ class CerealCropStrategy : ProcessorCropStrategy {
         }
     }
 
-    // TODO product beer
     fun prepareForBeer(crop: Crop): Product {
         val product = CropProduct(
-            crop.getName().toString(),
-            ProductType.CEREALS,
+            "Beer",
+            ProductType.ALCOHOL,
             (4..6).random().toDouble(),
             (2..4).random().toDouble(),
             (crop.getAmount() * 0.25).toInt(),
-            "kg",
+            "l",
             crop.getUUID()
         )
         product.attach(Report)

@@ -36,7 +36,7 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
     fun buyProducts(products: ArrayList<Product>) {
         println("Do warehouse privezeno: " + products.size)
         warehouse.takeIn(products)
-        println("Naskladneno: " + warehouse.getStockSize())
+        println("Naskladneno celkem typu produktu: " + warehouse.getStockSize())
         println()
     }
 

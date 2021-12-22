@@ -37,6 +37,9 @@ class Request {
 
             // Poslani zvirat na jatka
             var processedAnimals: ArrayList<Meat> = farmer.callButcher()
+            /*println("/////////////////////////////////////////////")*/
+            println("Na jatka poslano : " + processedAnimals.size)
+            /*println("/////////////////////////////////////////////")*/
 
             // Faktura
             var money: Double = 0.0
@@ -49,6 +52,11 @@ class Request {
 
             Transport.takeMeat(processedAnimals) //todo platba pro transport
             meatFactory.takeMeat(Transport.transportMeats())
+
+            println("------------------------------")
+            println("befeleme1: " + meatFactory.getMeatResources())
+            println("--------------------------------")
+
             meatFactory.payForInvoice(invoice)
 
             println()

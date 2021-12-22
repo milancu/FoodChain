@@ -1,11 +1,5 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Channels.FarmerToProcessorChannel
-import cz.cvut.fel.omo.foodchain.Foodchain.Channels.GrowerToProcessorChannel
-import cz.cvut.fel.omo.foodchain.Foodchain.Channels.ProcessorToRetailerChannel
-import cz.cvut.fel.omo.foodchain.Foodchain.Channels.RetailerToCustomerChannel
-import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
-import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 

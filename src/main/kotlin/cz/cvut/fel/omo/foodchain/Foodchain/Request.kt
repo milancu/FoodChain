@@ -58,26 +58,42 @@ class Request {
         fun requestTransportToWarehouse(processor: Processor, retailer: Retailer) {
             println("Proces transportace (from processor " + processor.getIdentifier() + " to retailer " + retailer.getIdentifier())
 
+            processor.transportProducts()
+
             // Faktura
             var money: Double = 0.0
-
-            processor.transportProducts()
 
             for (product in Transport.transportProducts()) {
                 money += product.getAmount() * product.getShopPrice()
             }
             var invoice: Invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
             invoice.attach(Report)
-
-
-            processor.transportProducts()
             println("Vznik faktury " + invoice.getCode())
+
+            /*processor.transportProducts()*/ //todo redundance? nevidim duvod, radsi zkontrolovat
 
             retailer.buyProducts(Transport.transportProducts()) // todo invoice retailer a transport
             retailer.payForInvoice(invoice)
         }
 
         fun requestTransportToWarehouse(meatFactory: MeatFactory, retailer: Retailer) {
+            println("Proces transportace (from Vodnany  to retailer " + retailer.getIdentifier())
+
+            meatFactory.transportProducts()
+            println()
+
+            // Faktura
+            var money : Double = 0.0
+            for (product in Transport.transportProducts()){
+                money += product.getAmount() * product.getShopPrice()
+            }
+            var invoice: Invoice = Invoice(retailer, meatFactory, money, InvoiceType.PRODUCT)
+            invoice.attach(Report)
+            println("Vznik faktury " + invoice.getCode())
+
+            retailer.buyProducts(Transport.transportProducts()) // todo invoice retailer a transport
+            retailer.payForInvoice(invoice)
+
 
         }
 
@@ -96,6 +112,7 @@ class Request {
             }
 
             var invoice: Invoice = Invoice(farmer, grower, money, InvoiceType.PRODUCT)
+            println("Vznik faktury " + invoice.getCode())
             farmer.payForInvoice(invoice)
         }
     }

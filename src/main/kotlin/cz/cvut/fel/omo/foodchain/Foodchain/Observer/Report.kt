@@ -7,10 +7,6 @@ object Report : Observer {
 
     var reports = hashMapOf<UUID, ArrayList<String>>()
 
-    init {
-        println("Singleton class invoked.")
-    }
-
     fun getReport(uuid: UUID): ArrayList<String>? {
         return reports.get(uuid)
     }

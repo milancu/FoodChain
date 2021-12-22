@@ -73,7 +73,7 @@ class Processor(subjectName : String,  location : String, amountOfMoney : Double
     }
 
     fun transportProducts(){
-        Transport.TransportCompany.takeProducts(products)
+        Transport.takeProducts(products)
         products = ArrayList()
     }
 

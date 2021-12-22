@@ -6,10 +6,10 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Butcher
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
 
-class FarmerToProcessorChannel {
+class FarmerToMeatFactoryChannel {
 
     private var farmers : ArrayList<Farmer>
-    val meatFactory : MeatFactory
+    private val meatFactory : MeatFactory
 
     constructor(){
         println("PHASE 1.1 - Farmers, buthcers and meaaFactory creation")
@@ -45,6 +45,10 @@ class FarmerToProcessorChannel {
 
     fun getFarmers() : ArrayList<Farmer>{
         return farmers
+    }
+
+    fun getMeatFactory() : MeatFactory{
+        return meatFactory
     }
 
 }

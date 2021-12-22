@@ -7,6 +7,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Transport
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
@@ -30,6 +31,11 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         for(meat in newMeats){
             meatsForProducts.add(meat)
         }
+    }
+
+    fun transportProducts(){
+        Transport.takeProducts(productToSell)
+        productToSell = ArrayList()
     }
 
     fun payForInvoice(invoice: Invoice){

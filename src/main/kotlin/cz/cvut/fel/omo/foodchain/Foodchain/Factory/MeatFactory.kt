@@ -51,26 +51,29 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
                     }
                 }
                 MeatType.BEEF ->{
-                    productToSell.add(packageBeefTenderloin(meat))
-                    productToSell.add(packageBovineCheek(meat))
-                    productToSell.add(packageBeefShoulder(meat))
-                    productToSell.add(packageBeefDumpling(meat))
+                    for(i in 1..(meat.getAmount()/1600).toInt()){
+                        productToSell.add(packageBeefTenderloin(meat))
+                        productToSell.add(packageBovineCheek(meat))
+                        productToSell.add(packageBeefShoulder(meat))
+                        productToSell.add(packageBeefDumpling(meat))
+                    }
                 }
                 MeatType.CHICKEN ->{
-
                     productToSell.add(packageChickenBreast(meat))
-                    productToSell.add(packageChickenWings(meat))
                     for(i in 1..2){
                         productToSell.add(packageChickenThigh(meat))
+                        productToSell.add(packageChickenWings(meat))
                     }
                 }
                 MeatType.FISH ->{
-                    productToSell.add(packageCarp(meat))
-                    productToSell.add(packageBream(meat))
-                    productToSell.add(packageEel(meat))
-                    productToSell.add(packageZander(meat))
-                    productToSell.add(packageCatfish(meat))
-                    productToSell.add(packagePerch(meat))
+                    for(i in 1..(meat.getAmount()/1600).toInt()){
+                        productToSell.add(packageCarp(meat))
+                        productToSell.add(packageBream(meat))
+                        productToSell.add(packageEel(meat))
+                        productToSell.add(packageZander(meat))
+                        productToSell.add(packageCatfish(meat))
+                        productToSell.add(packagePerch(meat))
+                    }
                 }
             }
         }

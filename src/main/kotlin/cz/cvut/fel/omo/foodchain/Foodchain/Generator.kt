@@ -35,7 +35,9 @@ class Generator {
 
     private fun generateField(): Field {
         var capacity = (1000..10000).random()
-        return Field(generateCrop(capacity), capacity)
+        val field = Field(generateCrop(capacity), capacity)
+        field.attach(Report)
+        return field
     }
 
     public fun generateFields(): ArrayList<Field> {

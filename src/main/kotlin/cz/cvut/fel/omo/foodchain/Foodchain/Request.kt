@@ -1,6 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Factory.MeatFactory
+import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.InvoiceType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.*
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
@@ -20,9 +21,11 @@ class Request {
                 money += crop.getAmount() * crop.getShopPrice()
             }
             var invoice : Invoice = Invoice(processor, grower, money, InvoiceType.CROP)
+            invoice.attach(Report)
             println("Vznik faktury " + invoice.getCode())
 
             grower.transportSupplies()
+            grower.raiseField()
 
             processor.takeCropSupplies(Transport.transportCropSuplies()) // todo invoice processorem a transportem
             processor.payForInvoice(invoice)
@@ -41,6 +44,7 @@ class Request {
                 money += animal.getAmount() * animal.getShopPrice()
             }
             var invoice : Invoice = Invoice(meatFactory, farmer, money, InvoiceType.MEAT)
+            invoice.attach(Report)
             println("Vznik faktury " + invoice.getCode())
 
             Transport.takeMeat(processedAnimals) //todo platba pro transport

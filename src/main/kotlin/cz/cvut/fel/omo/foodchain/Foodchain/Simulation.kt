@@ -1,15 +1,13 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Channels.FarmerToProcessorChannel
-import cz.cvut.fel.omo.foodchain.Foodchain.Channels.GrowerToProcessorChannel
-import cz.cvut.fel.omo.foodchain.Foodchain.Channels.ProcessorToRetailerChannel
-import cz.cvut.fel.omo.foodchain.Foodchain.Channels.RetailerToCustomerChannel
+import cz.cvut.fel.omo.foodchain.Foodchain.Channels.*
 
 class Simulation {
 
     private var time : Int = 1
     private var channelG2P : GrowerToProcessorChannel = GrowerToProcessorChannel()
     private var channelF2P : FarmerToProcessorChannel = FarmerToProcessorChannel()
+    private var channelG2F : GrowerToFarmerChannel = GrowerToFarmerChannel(channelG2P.getGrowers(), channelF2P.getFarmers())
     private var channelP2R : ProcessorToRetailerChannel = ProcessorToRetailerChannel(channelG2P.getProcessors())
     private var channelRTC : RetailerToCustomerChannel = RetailerToCustomerChannel(channelP2R.getRetailers())
 

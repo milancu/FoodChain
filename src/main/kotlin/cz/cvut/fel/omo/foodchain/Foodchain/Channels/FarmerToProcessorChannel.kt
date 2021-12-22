@@ -42,7 +42,8 @@ class FarmerToProcessorChannel {
         println()
     }
 
-
-
+    fun getFarmers() : ArrayList<Farmer>{
+        return farmers
+    }
 
 }

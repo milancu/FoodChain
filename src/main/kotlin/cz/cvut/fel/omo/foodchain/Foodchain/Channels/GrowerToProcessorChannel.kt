@@ -55,4 +55,8 @@ class GrowerToProcessorChannel {
         return processors
     }
 
+    fun getGrowers() : ArrayList<Grower>{
+        return growers
+    }
+
 }

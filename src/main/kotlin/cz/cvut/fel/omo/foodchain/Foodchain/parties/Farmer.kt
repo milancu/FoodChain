@@ -74,7 +74,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
 
     fun controlResources(){
         for(crop in resources){
-            if(crop.getAmount() <= 0){
+            if(crop.getAmount() <= 5){
                 resources.toMutableList().remove(crop)
             }
         }
@@ -84,7 +84,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         var feeded : Boolean = false
         for(animal in animals){
             for(crop in resources){
-                if(crop.getType() == animal.getFeed()){
+                if(crop.getAmount() >= 5){
                     feeded = true
                     crop.decreaseAmount()
                     break
@@ -100,4 +100,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
 
     // todo nakup cropu od growera
 
+    fun buyNeededCrop(){
+
+    }
 }

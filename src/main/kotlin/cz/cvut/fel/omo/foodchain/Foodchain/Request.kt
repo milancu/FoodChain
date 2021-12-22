@@ -79,5 +79,9 @@ class Request {
         fun requestTransportToWarehouse(meatFactory: MeatFactory, retailer: Retailer) {
 
         }
+
+        fun requestFarmerBuyCrops(farmer: Farmer, grower: Grower){
+            // TODO
+        }
     }
 }

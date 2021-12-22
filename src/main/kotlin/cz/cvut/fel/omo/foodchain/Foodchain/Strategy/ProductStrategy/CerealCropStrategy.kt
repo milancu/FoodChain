@@ -34,8 +34,9 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
                 product.attach(Report)
-                product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
                 crop.notifyCropWasExecuted()
+                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
+
                 return product
             }
             else -> {
@@ -49,9 +50,9 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
                 product.attach(Report)
-                product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
-
                 crop.notifyCropWasExecuted()
+                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
+
                 return product
             }
         }
@@ -69,9 +70,9 @@ class CerealCropStrategy : ProcessorCropStrategy {
             crop.getUUID()
         )
         product.attach(Report)
-        product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
-
         crop.notifyCropWasExecuted()
+        product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
+
         return product
     }
 
@@ -89,9 +90,9 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
                 product.attach(Report)
-                product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
-
                 crop.notifyCropWasExecuted()
+                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
+
                 return product
             }
             2 -> {
@@ -105,9 +106,9 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
                 product.attach(Report)
-                product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
-
                 crop.notifyCropWasExecuted()
+                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
+
                 return product
             }
             else -> {
@@ -121,9 +122,9 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
                 product.attach(Report)
-                product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
-
                 crop.notifyCropWasExecuted()
+                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
+
                 return product
             }
         }
@@ -143,9 +144,9 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
                 product.attach(Report)
-                product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
-
                 crop.notifyCropWasExecuted()
+                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
+
                 return product
             }
             else -> {
@@ -159,9 +160,9 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getUUID()
                 )
                 product.attach(Report)
-                product.notifyUpdate(product.getOriginId(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount() + "\n")
-
                 crop.notifyCropWasExecuted()
+                product.notifyUpdate(crop.getUUID(), "NEW PRODUCT " + product.getProductType() + ", Name: " + product.getName() + ", Amount: " + product.getAmount())
+
                 return product
             }
         }

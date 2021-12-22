@@ -29,7 +29,7 @@ open class BaseAnimal : Subject {
                 this.weight = (150000..600000).random().toDouble()
                 this.feed = CropType.CEREAL
                 this.foodConsumption = (7..10).random()
-                this.age = (1..10).random()
+                this.age = (1..30).random()
                 this.price = 1000.00
                 this.animalName = "Cow"
                 this.animalType = animalType
@@ -40,7 +40,7 @@ open class BaseAnimal : Subject {
                 this.weight = (150000..600000).random().toDouble()
                 this.feed = CropType.CEREAL
                 this.foodConsumption = (6..10).random()
-                this.age = (1..7).random()
+                this.age = (1..20).random()
                 this.price = 8000.00
                 this.animalName = "Pig"
                 this.animalType = animalType
@@ -51,7 +51,7 @@ open class BaseAnimal : Subject {
                 this.weight = (1500..3000).random().toDouble()
                 this.feed = CropType.CEREAL
                 this.foodConsumption = (1..3).random()
-                this.age = (1..3).random()
+                this.age = (1..10).random()
                 this.price = 100.00
                 this.animalName = "Chicken"
                 this.animalType = animalType
@@ -62,7 +62,7 @@ open class BaseAnimal : Subject {
                 this.weight = (150000..400000).random().toDouble()
                 this.feed = CropType.CEREAL
                 this.foodConsumption = (5..8).random()
-                this.age = (1..10).random()
+                this.age = (1..15).random()
                 this.price = 900.00
                 this.animalName = "Goat"
                 this.animalType = animalType
@@ -73,7 +73,7 @@ open class BaseAnimal : Subject {
                 this.weight = (1500..6000).random().toDouble()
                 this.feed = CropType.CEREAL
                 this.foodConsumption = (1..5).random()
-                this.age = (1..10).random()
+                this.age = (1..5).random()
                 this.price = 1000.00
                 this.animalName = "Fish"
                 this.animalType = animalType
@@ -98,6 +98,10 @@ open class BaseAnimal : Subject {
         return this.age
     }
 
+    fun getFeed() : CropType{
+        return this.feed
+    }
+
     fun getWeight(): Double {
         return this.weight
     }
@@ -108,6 +112,18 @@ open class BaseAnimal : Subject {
 
     fun getOriginId(): UUID {
         return this.origin
+    }
+
+    fun increaseWeight(){
+        this.weight *= 1.1
+    }
+
+    fun decreaseWeight(){
+        this.weight *= 0.9
+    }
+
+    fun growAnimal(){
+        this.age++
     }
 
     override fun attach(o: Observer) {

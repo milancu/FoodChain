@@ -38,11 +38,11 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         // TODO vyhazovani z listu
         animals.toList().iterator().forEach { animal ->
             when (animal.getName()) {
-                "Cow" -> if (animal.getAge() > 3) animalsToProcessing.add(animal)
-                "Pig" -> if (animal.getAge() > 3) animalsToProcessing.add(animal)
-                "Chicken" -> if (animal.getAge() > 2) animalsToProcessing.add(animal)
-                "Goat" -> if (animal.getAge() > 4) animalsToProcessing.add(animal)
-                "Fish" -> if (animal.getAge() > 1) animalsToProcessing.add(animal)
+                "Cow" -> if (animal.getAge() > 30) animalsToProcessing.add(animal)
+                "Pig" -> if (animal.getAge() > 20) animalsToProcessing.add(animal)
+                "Chicken" -> if (animal.getAge() > 10) animalsToProcessing.add(animal)
+                "Goat" -> if (animal.getAge() > 15) animalsToProcessing.add(animal)
+                "Fish" -> if (animal.getAge() > 5) animalsToProcessing.add(animal)
             }
         }
 
@@ -72,8 +72,32 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         return animalsToProcessing.size
     }
 
+    fun controlResources(){
+        for(crop in resources){
+            if(crop.getAmount() <= 0){
+                resources.toMutableList().remove(crop)
+            }
+        }
+    }
+
+    fun feedAnimal(){ // todo do requestu
+        var feeded : Boolean = false
+        for(animal in animals){
+            for(crop in resources){
+                if(crop.getType() == animal.getFeed()){
+                    feeded = true
+                    crop.decreaseAmount()
+                    break
+                }
+            }
+            if(feeded){ animal.increaseWeight() }
+            else { animal.decreaseWeight() }
+
+            controlResources()
+            animal.growAnimal()
+        }
+    }
 
     // todo nakup cropu od growera
-    // krmeni
 
 }

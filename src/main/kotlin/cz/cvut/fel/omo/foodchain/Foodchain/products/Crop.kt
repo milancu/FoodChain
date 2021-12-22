@@ -63,7 +63,11 @@ class Crop : Subject {
     }
 
     fun setAmount(value : Int){
-        amount = value
+        this.amount = value
+    }
+
+    fun decreaseAmount(){
+        this.amount -= 5
     }
 
     fun resetCrop(){

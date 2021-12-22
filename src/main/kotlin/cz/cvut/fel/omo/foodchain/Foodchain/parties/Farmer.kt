@@ -165,6 +165,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
             println("Faktura " + invoice.getCode() + " zaplacena")
+            invoice.payInvoice()
             invoice.notifyPaid()
         } else {
             unpaidInvoices.add(invoice)

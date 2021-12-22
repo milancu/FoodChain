@@ -54,6 +54,15 @@ class Generator {
         return crop
     }
 
+    private fun generateFeed(capacity: Int): Crop {
+        var cropName = CropName.getCropName()
+        var growthTime = (0..Config.FLOWER_MAX_AGE).random()
+        var crop = Crop(cropName, CropType.CEREAL, capacity, growthTime)
+        crop.attach(Report)
+        crop.notifyUpdate(crop.getUUID(), "NEW CROP " +  crop.getName() + ", "+ crop.getType() + ", capacity: " + crop.getCapacity() + "\n")
+        return crop
+    }
+
     private fun setType(name: CropName): CropType {
         when (name) {
             CropName.APPLE -> return CropType.FRUIT
@@ -87,6 +96,14 @@ class Generator {
         var listOfCrop = ArrayList<Crop>();
         for (i in 1..(Config.MIN_DEAFAULT_CROPTYPES..Config.MAX_DEFAULT_CROPTYPES).random()) {
             listOfCrop.add(generateCrop((Config.MIN_DEFAULT_CROPS..Config.MAX_DEFAULT_CROPS).random()))
+        }
+        return listOfCrop
+    }
+
+    public fun generateFeedingForAnimal(): ArrayList<Crop> {
+        var listOfCrop = ArrayList<Crop>();
+        for (i in 1..(Config.MIN_DEAFAULT_CROPTYPES..Config.MAX_DEFAULT_CROPTYPES).random()) {
+            listOfCrop.add(generateFeed((Config.MIN_DEFAULT_CROPS..Config.MAX_DEFAULT_CROPS).random()))
         }
         return listOfCrop
     }

@@ -17,7 +17,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
 
     fun setInitialResources(): ArrayList<Crop> {
         val generator = Generator()
-        return generator.generateCrops()
+        return generator.generateFeedingForAnimal()
     }
 
     fun setInitialAnimals(): ArrayList<BaseAnimal> {
@@ -113,34 +113,39 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         return animalsToProcessing.size
     }
 
-    fun controlResources(){
-        for(crop in resources){
-            if(crop.getAmount() <= 5){
-                resources.remove(crop)
+/*    fun controlResources(){
+        if(resources.size != 0){
+            for(crop in resources){
+                if(crop.getAmount() <= 5){
+                    resources.remove(crop)
+                }
             }
         }
-    }
+    }*/
 
     fun feedAnimal(){
         var feeded : Boolean = false
         for(animal in animals){
-            for(crop in resources){
-                if(crop.getAmount() >= 5){
+
+            for (crop in resources) {
+                if (crop.getAmount() >= 5) {
                     feeded = true
                     crop.decreaseAmount()
                     break
+                } else {
+                    resources.remove(crop)
                 }
             }
+
             if(feeded){
                 animal.increaseWeight()
-                println("Zvire " + animal.getName() + animal.getOriginId() + " bylo nakrmeno")
+                println("Zvire " + animal.getName() + " " + animal.getOriginId() + " bylo nakrmeno")
             }
             else {
-                println("Zvire " + animal.getName() + animal.getOriginId() + " ZUSTALO o hladu, potrebuje dokoupit zasoby")
+                println("Zvire " + animal.getName() + " " + animal.getOriginId() + " ZUSTALO o hladu, potrebuje dokoupit zasoby")
                 animal.decreaseWeight()
             }
 
-            controlResources()
             animal.growAnimal()
         }
     }

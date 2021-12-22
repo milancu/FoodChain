@@ -22,15 +22,6 @@ class Request {
                 money += crop.getAmount() * crop.getShopPrice()
             }
             var invoice: Invoice = Invoice(processor, grower, money, InvoiceType.CROP)
-            invoice.attach(Report)
-            invoice.notifyUpdate(invoice.getCode(),
-                "NEW INVOICE " +
-                "subscriber: " + invoice.getSubscriber().getSubjectName() +
-                        ", ico: " + invoice.getSubscriber().getIdentifier() +
-                        " contractor: " + invoice.getContractor().getSubjectName() +
-                        ", ico: " + invoice.getContractor().getIdentifier() +
-                        ", price: " + invoice.getPrice() + " note: " + invoice.getNote().toString() +
-                        ", create date: " + invoice.getCreateTime().toString())
             println("Vznik faktury " + invoice.getCode())
 
             grower.transportSupplies()
@@ -53,15 +44,7 @@ class Request {
                 money += animal.getAmount() * animal.getShopPrice()
             }
             var invoice: Invoice = Invoice(meatFactory, farmer, money, InvoiceType.MEAT)
-            invoice.attach(Report)
-            invoice.notifyUpdate(invoice.getCode(),
-                "NEW INVOICE " +
-                        "subscriber: " + invoice.getSubscriber().getSubjectName() +
-                        ", ico: " + invoice.getSubscriber().getIdentifier() +
-                        " contractor: " + invoice.getContractor().getSubjectName() +
-                        ", ico: " + invoice.getContractor().getIdentifier() +
-                        ", price: " + invoice.getPrice() + " note: " + invoice.getNote().toString() +
-                        ", create date: " + invoice.getCreateTime().toString() )
+
             println("Vznik faktury " + invoice.getCode())
 
             Transport.takeMeat(processedAnimals) //todo platba pro transport
@@ -83,15 +66,6 @@ class Request {
                 money += product.getAmount() * product.getShopPrice()
             }
             var invoice: Invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
-            invoice.attach(Report)
-            invoice.notifyUpdate(invoice.getCode(),
-                "NEW INVOICE " +
-                        "subscriber: " + invoice.getSubscriber().getSubjectName() +
-                        ", ico: " + invoice.getSubscriber().getIdentifier() +
-                        " contractor: " + invoice.getContractor().getSubjectName() +
-                        ", ico: " + invoice.getContractor().getIdentifier() +
-                        ", price: " + invoice.getPrice() + " note: " + invoice.getNote().toString() +
-                        ", create date: " + invoice.getCreateTime().toString() )
             println("Vznik faktury " + invoice.getCode())
 
             /*processor.transportProducts()*/ //todo redundance? nevidim duvod, radsi zkontrolovat
@@ -112,15 +86,7 @@ class Request {
                 money += product.getAmount() * product.getShopPrice()
             }
             var invoice: Invoice = Invoice(retailer, meatFactory, money, InvoiceType.PRODUCT)
-            invoice.attach(Report)
-            invoice.notifyUpdate(invoice.getCode(),
-                "NEW INVOICE " +
-                        "subscriber: " + invoice.getSubscriber().getSubjectName() +
-                        ", ico: " + invoice.getSubscriber().getIdentifier() +
-                        " contractor: " + invoice.getContractor().getSubjectName() +
-                        ", ico: " + invoice.getContractor().getIdentifier() +
-                        ", price: " + invoice.getPrice() + " note: " + invoice.getNote().toString() +
-                        ", create date: " + invoice.getCreateTime().toString())
+
             println("Vznik faktury " + invoice.getCode())
 
             retailer.buyProducts(Transport.transportProducts()) // todo invoice retailer a transport
@@ -142,15 +108,7 @@ class Request {
             }
 
             var invoice: Invoice = Invoice(farmer, grower, money, InvoiceType.PRODUCT)
-            invoice.attach(Report)
-            invoice.notifyUpdate(invoice.getCode(),
-                "NEW INVOICE " +
-                        "subscriber: " + invoice.getSubscriber().getSubjectName() +
-                        ", ico: " + invoice.getSubscriber().getIdentifier() +
-                        " contractor: " + invoice.getContractor().getSubjectName() +
-                        ", ico: " + invoice.getContractor().getIdentifier() +
-                        ", price: " + invoice.getPrice() + " note: " + invoice.getNote().toString() +
-                        ", create date: " + invoice.getCreateTime().toString())
+
             println("Vznik faktury " + invoice.getCode())
             farmer.payForInvoice(invoice)
         }

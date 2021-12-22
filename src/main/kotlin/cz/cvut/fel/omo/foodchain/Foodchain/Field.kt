@@ -8,9 +8,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import java.util.*
 import kotlin.math.roundToInt
 
-class Field : Subject {
+class Field {
 
-    private var observers: ArrayList<Observer> = ArrayList()
 
     private var crop: Crop
     private val capacity: Int
@@ -54,19 +53,5 @@ class Field : Subject {
 
     fun growCrop() {
         crop.grow()
-    }
-
-    override fun attach(o: Observer) {
-        observers.add(o)
-    }
-
-    override fun detach(o: Observer) {
-        observers.remove(o)
-    }
-
-    override fun notifyUpdate(uuid: UUID, report: String) {
-        for (i in observers) {
-            i.update(uuid, report)
-        }
     }
 }

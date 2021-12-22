@@ -129,9 +129,11 @@ open class BaseAnimal : Subject {
         observers.remove(o)
     }
 
-    override fun notifyUpdate(uuid: UUID, report: String) {
+    override fun notifyUpdate() {
         for (i in observers) {
-            i.update(uuid, report)
+            i.update(this.origin,
+                "NEW ANIMAL, " + this.animalName + ", weight: " + this.weight + "g, age:" + this.age
+            )
         }
     }
 }

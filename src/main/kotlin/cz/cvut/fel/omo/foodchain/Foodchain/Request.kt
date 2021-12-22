@@ -1,8 +1,10 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Factory.MeatFactory
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.InvoiceType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.*
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 class Request {
@@ -27,16 +29,27 @@ class Request {
             println()
         }
 
-        fun requestTransportToMeatFactory(farmer: Farmer, processor: Processor, crops : ArrayList<Crop>){
+        fun requestTransportToMeatFactory(farmer: Farmer, processor: Processor){
             println("Proces transportace (from farmer " + farmer.getIdentifier() + " to processor) " + processor.getIdentifier())
+
+            // Poslani zvirat na jatka
+            var processedAnimals : ArrayList<Meat> = farmer.callButcher()
 
             // Faktura
             var money : Double = 0.0
-            for(crop in crops){
-                money += crop.getAmount() * crop.getShopPrice()
+            for(animal in processedAnimals){
+                money += animal.getAmount() * animal.getShopPrice()
             }
-            var invoice : Invoice = Invoice(processor, farmer, money, InvoiceType.CROP)
+            var invoice : Invoice = Invoice(processor, farmer, money, InvoiceType.MEAT)
             println("Vznik faktury " + invoice.getCode())
+
+            val meatFactory : MeatFactory = MeatFactory()
+            Transport.takeMeat(processedAnimals) //todo platba pro transport
+            meatFactory.takeMeat(Transport.transportMeats())
+
+
+
+
 
             //farmer.transportSupplies() // TODO
 

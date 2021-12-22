@@ -10,6 +10,17 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 class MeatFactory {
 
+    var meatsForProducts : ArrayList<Meat> = ArrayList()
+    var productToSell : ArrayList<Product> = ArrayList()
+
+    fun takeMeat(newMeats : ArrayList<Meat>){
+        for(meat in newMeats){
+            meatsForProducts.add(meat)
+        }
+    }
+
+
+
     fun packagePorkDumpling(meat: Meat): Product {
         var product = MeatProduct(
             "Pork Dumpling 300g",

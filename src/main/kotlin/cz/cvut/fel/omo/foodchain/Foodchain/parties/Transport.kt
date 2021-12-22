@@ -1,6 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 class Transport{
@@ -10,6 +11,7 @@ class Transport{
         private var amountOfMoney : Double = 10000.00
         private var cropSupplies : ArrayList<Crop> = ArrayList()
         private var products : ArrayList<Product> = ArrayList()
+        private var meats : ArrayList<Meat> = ArrayList()
 
         fun transportCropSuplies() : ArrayList<Crop>{
             var toTransport : ArrayList<Crop> = cropSupplies
@@ -29,6 +31,15 @@ class Transport{
             return toTransport
         }
 
+        fun transportMeats() : ArrayList<Meat>{
+            var toTransport : ArrayList<Meat> = meats
+            for(meat in meats){
+                amountOfMoney += meat.getShopPrice() * meat.getAmount() * 0.1 //TODO invoice smerem od transportu
+            }
+            this.meats = ArrayList()
+            return toTransport
+        }
+
         fun takeCropSupplies(supplies : ArrayList<Crop>){
             if(supplies.size == 0) return
             for(supply in supplies){
@@ -39,6 +50,12 @@ class Transport{
         fun takeProducts(products : ArrayList<Product>){
             for(product in products){
                 this.products.add(product)
+            }
+        }
+
+        fun takeMeat(meats : ArrayList<Meat>){
+            for(meat in meats){
+                this.meats.add(meat)
             }
         }
 

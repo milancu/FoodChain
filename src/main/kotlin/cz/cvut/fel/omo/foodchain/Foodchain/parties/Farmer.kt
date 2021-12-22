@@ -67,5 +67,11 @@ class Farmer(subjectName: String, identier: Int, location: String, amountOfMoney
         return butcher.proccessAnimal(animalsToProcessing())
     }
 
+
+
+    // todo nakup cropu od growera
+    // krmeni
+
+
     // TODO Transport and pay pro factory
 }

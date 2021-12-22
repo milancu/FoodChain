@@ -1,6 +1,5 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Observer
 
-import jdk.internal.org.jline.keymap.KeyMap.key
 import java.util.*
 
 

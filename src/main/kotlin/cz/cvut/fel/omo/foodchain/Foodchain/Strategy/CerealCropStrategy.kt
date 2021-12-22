@@ -34,6 +34,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -47,6 +48,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }
@@ -64,6 +66,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
             crop.getOriginID()
         )
         product.attach(Report)
+        crop.notifyCropWasExecuted()
         return product
     }
 
@@ -81,6 +84,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             2 -> {
@@ -94,6 +98,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -107,6 +112,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }
@@ -126,6 +132,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -139,6 +146,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }

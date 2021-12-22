@@ -13,15 +13,15 @@ class Crop : Subject {
     }
 
     private val name: CropName
-    private val type : CropType
+    private val type: CropType
     private var amount: Int
-    private val uuid : UUID
-    private var shopPrice : Double
-    private var productionCost : Double
-    private var growthTime : Int
-    private val origin : UUID
+    private val uuid: UUID
+    private var shopPrice: Double
+    private var productionCost: Double
+    private var growthTime: Int
+    private val origin: UUID
 
-    constructor(name: CropName, type : CropType, amount: Int, growthTime: Int) {
+    constructor(name: CropName, type: CropType, amount: Int, growthTime: Int) {
         this.name = name
         this.type = type
         this.amount = amount
@@ -34,47 +34,47 @@ class Crop : Subject {
 
     }
 
-    fun getOriginID() : UUID{
+    fun getOriginID(): UUID {
         return this.origin
     }
 
-    fun getName() : CropName{
+    fun getName(): CropName {
         return name
     }
 
-    fun getAmount() : Int{
+    fun getAmount(): Int {
         return amount
     }
 
-    fun getProductionCost() : Double{
+    fun getProductionCost(): Double {
         return productionCost
     }
 
-    fun getShopPrice() : Double{
+    fun getShopPrice(): Double {
         return shopPrice
     }
 
-    fun getType() : CropType{
+    fun getType(): CropType {
         return type
     }
 
-    fun getGrowth() : Int{
+    fun getGrowth(): Int {
         return growthTime
     }
 
-    fun setAmount(value : Int){
+    fun setAmount(value: Int) {
         this.amount = value
     }
 
-    fun decreaseAmount(){
+    fun decreaseAmount() {
         this.amount -= 5
     }
 
-    fun resetCrop(){
+    fun resetCrop() {
         growthTime = 0
     }
 
-    fun grow(){
+    fun grow() {
         growthTime++;
     }
 
@@ -87,8 +87,30 @@ class Crop : Subject {
     }
 
     override fun notifyUpdate(uuid: UUID, report: String) {
-        for(i in Crop.observers){
+        for (i in Crop.observers) {
             i.update(uuid, report)
         }
+    }
+
+    fun notifyCropWasExecuted() {
+        notifyUpdate(
+            origin,
+            this.name.toString() + "\n" +
+                    ", Crop was executed " + "\n" +
+                    this.type.toString() + " \n" +
+                    this.amount.toString() + "kg" +
+                    " shopprice: " + this.shopPrice.toString()
+        )
+    }
+
+    fun notifyCropWasHarvested(){
+        notifyUpdate(
+            origin,
+            this.name.toString() + "\n" +
+                    ", Crop was harvested " + "\n" +
+                    this.type.toString() + " \n" +
+                    this.amount.toString() + "kg" +
+                    " shopprice: " + this.shopPrice.toString()
+        )
     }
 }

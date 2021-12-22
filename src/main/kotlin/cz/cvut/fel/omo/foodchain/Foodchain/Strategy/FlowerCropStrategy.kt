@@ -34,6 +34,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -47,6 +48,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }
@@ -66,6 +68,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -79,6 +82,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }
@@ -98,6 +102,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -111,6 +116,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }
@@ -130,6 +136,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             2 -> {
@@ -143,6 +150,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             3 -> {
@@ -156,6 +164,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             4 -> {
@@ -169,6 +178,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             5 -> {
@@ -182,6 +192,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -195,6 +206,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }
@@ -214,6 +226,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -227,6 +240,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }

@@ -50,6 +50,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             2 -> {
@@ -63,6 +64,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             3 -> {
@@ -76,6 +78,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -89,6 +92,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }
@@ -108,6 +112,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -121,6 +126,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }
@@ -140,6 +146,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -153,6 +160,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }
@@ -172,6 +180,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             2 -> {
@@ -185,6 +194,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -198,6 +208,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }

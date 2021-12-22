@@ -21,6 +21,7 @@ class LegumesCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -34,6 +35,7 @@ class LegumesCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }

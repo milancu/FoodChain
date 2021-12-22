@@ -25,6 +25,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
 
             }
@@ -39,6 +40,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             3 -> {
@@ -52,6 +54,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -65,6 +68,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }
@@ -84,6 +88,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
             else -> {
@@ -97,6 +102,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getOriginID()
                 )
                 product.attach(Report)
+                crop.notifyCropWasExecuted()
                 return product
             }
         }

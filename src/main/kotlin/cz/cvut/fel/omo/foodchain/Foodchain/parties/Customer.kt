@@ -59,9 +59,11 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
         if(recipe.getPrice() <= this.amountOfMoney){
             amountOfMoney -= recipe.getPrice()
             recipe.getContractor().takeMoney(recipe.getPrice())
+            recipe.notifyPaid()
         } else {
             creditCardDebts.add(recipe)
             println("Vznika dluh na kreditni karte v castce " + recipe.getPrice())
+            recipe.notifyUnpaid()
         }
     }
 

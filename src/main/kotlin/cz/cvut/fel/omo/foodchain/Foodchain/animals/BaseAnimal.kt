@@ -80,17 +80,6 @@ open class BaseAnimal : Subject {
                 this.origin = UUID.randomUUID()
                 notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g")
             }
-            AnimalType.BEE -> {
-                this.weight = (1..15).random().toDouble()
-                this.feed = CropType.CEREAL
-                this.foodConsumption = 1
-                this.age = (1..10).random()
-                this.price = 1000.00
-                this.animalName = "Bee"
-                this.animalType = animalType
-                this.origin = UUID.randomUUID()
-                notifyUpdate(origin, this.animalName + " " + this.weight.toString() + "g")
-            }
             else -> throw Exception("unexpected type")
         }
     }

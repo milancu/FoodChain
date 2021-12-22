@@ -11,8 +11,7 @@ enum class AnimalType {
     PIG,
     CHICKEN,
     GOAT,
-    FISH,
-    BEE;
+    FISH;
 
     companion object {
         fun getAnimal(): AnimalType {

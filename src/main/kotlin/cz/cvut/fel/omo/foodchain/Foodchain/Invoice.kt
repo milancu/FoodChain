@@ -18,14 +18,17 @@ class Invoice : Subject {
     private val note: InvoiceType
     private var isPaid: Boolean
     private var code: UUID
+    private var createTime: Int
+    private var paidTime: Int = 0
 
-    constructor(subscriber: BaseParty, contractor: BaseParty, price: Double, note: InvoiceType) {
+    constructor(subscriber: BaseParty, contractor: BaseParty, price: Double, note: InvoiceType, createTime: Int) {
         this.subscriber = subscriber
         this.contractor = contractor
         this.price = price
         this.note = note
         this.isPaid = false
         this.code = UUID.randomUUID()
+        this.createTime = createTime
         notifyUpdate(
             this.code,
             "subscriber: " + this.subscriber.getSubjectName() +
@@ -33,7 +36,7 @@ class Invoice : Subject {
                     " contractor: " + this.contractor.getSubjectName() +
                     ", ico: " + this.contractor.getIdentifier() + "\n" +
                     ", price: " + this.price + " note: " + this.note.toString() + "\n" +
-                    ", ispaid: " + this.isPaid.toString()
+                    ", create date: " + this.createTime.toString()
         )
     }
 
@@ -61,9 +64,12 @@ class Invoice : Subject {
         return isPaid
     }
 
-    fun payInvoice() {
+    fun payInvoice(paidTime: Int) {
+        this.paidTime = paidTime
         isPaid = true
+        notifyPaidInvoice()
     }
+
 
     override fun attach(o: Observer) {
         Invoice.observers.add(o)
@@ -79,7 +85,7 @@ class Invoice : Subject {
         }
     }
 
-    fun notifyUnpaidInvoice(){
+    fun notifyUnpaidInvoice() {
         notifyUpdate(
             this.code,
             "subscriber: " + this.subscriber.getSubjectName() +
@@ -87,11 +93,12 @@ class Invoice : Subject {
                     " contractor: " + this.contractor.getSubjectName() +
                     ", ico: " + this.contractor.getIdentifier() + "\n" +
                     ", price: " + this.price + " note: " + this.note.toString() + "\n" +
-                    ", ispaid: " + this.isPaid.toString()
+                    ", create date: " + this.createTime.toString() + "\n" +
+                    ", was not paid"
         )
     }
 
-    fun notifyPaidInvoice(){
+    fun notifyPaidInvoice() {
         notifyUpdate(
             this.code,
             "subscriber: " + this.subscriber.getSubjectName() +
@@ -99,7 +106,8 @@ class Invoice : Subject {
                     " contractor: " + this.contractor.getSubjectName() +
                     ", ico: " + this.contractor.getIdentifier() + "\n" +
                     ", price: " + this.price + " note: " + this.note.toString() + "\n" +
-                    ", ispaid: " + this.isPaid.toString()
+                    ", create date: " + this.createTime.toString() + "\n" +
+                    ", was paid in: " + this.paidTime.toString()
         )
     }
 

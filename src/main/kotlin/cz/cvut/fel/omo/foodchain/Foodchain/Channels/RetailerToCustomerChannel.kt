@@ -13,7 +13,7 @@ class RetailerToCustomerChannel {
         this.customers = ArrayList()
     }
 
-    fun runSimulation(){
+    fun runSimulation(time :Int){
         //TODO() // nezapomen na
     }
 

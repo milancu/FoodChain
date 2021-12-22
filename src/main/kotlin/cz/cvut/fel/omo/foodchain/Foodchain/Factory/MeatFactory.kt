@@ -32,15 +32,17 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         }
     }
 
-    fun payForInvoice(invoice: Invoice){
+    fun payForInvoice(invoice: Invoice, time :Int){
         if(amountOfMoney >= invoice.getPrice()){
-            invoice.payInvoice()
+            invoice.payInvoice(time)
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
             println("Faktura " + invoice.getCode() + " zaplacena")
+            invoice.notifyPaidInvoice()
         } else {
             unpaidInvoices.add(invoice)
             println("!Faktura " + invoice.getCode() + " NENI uhrazena")
+            invoice.notifyUnpaidInvoice()
         }
     }
 

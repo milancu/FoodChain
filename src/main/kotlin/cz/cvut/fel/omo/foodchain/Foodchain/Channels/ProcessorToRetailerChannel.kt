@@ -36,9 +36,9 @@ class ProcessorToRetailerChannel {
         println()
     }
 
-    fun runSimulation(){
+    fun runSimulation(time :Int){
         for(processor in processors){
-            Request.requestTransportToWarehouse(processor, retailers.get(0))
+            Request.requestTransportToWarehouse(processor, retailers.get(0), time)
             println("Priprava k vytvareni vyrobku")
             processor.processProduct()
             println("Produkty vytvoreny")

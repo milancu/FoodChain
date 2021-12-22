@@ -27,10 +27,10 @@ class Simulation {
     }
 
     private fun runSimulation(){
-        channelG2P.runSimulation()
-        channelF2P.runSimulation()
-        channelP2R.runSimulation()
-        channelRTC.runSimulation() //todo
+        channelG2P.runSimulation(time)
+        channelF2P.runSimulation(time)
+        channelP2R.runSimulation(time)
+        channelRTC.runSimulation(time) //todo
     }
 
 }

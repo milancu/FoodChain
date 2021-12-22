@@ -36,9 +36,9 @@ class GrowerToProcessorChannel {
         println()
     }
 
-    fun runSimulation(){
+    fun runSimulation(time :Int){
         for(grower in growers){
-            Request.requestTransportToProcessor(grower, processors.get(0), grower.getSupplies())
+            Request.requestTransportToProcessor(grower, processors.get(0), grower.getSupplies(), time)
             grower.harvest();
         }
     }

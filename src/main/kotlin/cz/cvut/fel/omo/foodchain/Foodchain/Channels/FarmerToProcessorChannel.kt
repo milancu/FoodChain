@@ -21,10 +21,10 @@ class FarmerToProcessorChannel {
         println()
     }
 
-    fun runSimulation(){
+    fun runSimulation(time :Int){
         for(farmer in farmers){
             print("Priprava ke zpracovani zvirat")
-            Request.requestTransportToMeatFactory(farmer, meatFactory)
+            Request.requestTransportToMeatFactory(farmer, meatFactory, time)
             println("maso zpracovano a pripavano a pripraveno k odvozu")
         }
     }

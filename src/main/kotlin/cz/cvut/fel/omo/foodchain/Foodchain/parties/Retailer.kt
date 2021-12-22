@@ -5,17 +5,17 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
-class Retailer(subjectName : String, location : String, amountOfMoney : Double)
-    : BaseParty(subjectName, location, amountOfMoney) {
+class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
+    BaseParty(subjectName, location, amountOfMoney) {
 
-    private var warehouse : Warehouse = Warehouse() //TODO odecet financi za plnost skladu
-    private var availableProducts : ArrayList<Product> = ArrayList()
-    private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
-    private var productTypeMap : HashMap<ProductType, Int> = productMapInit()
+    private var warehouse: Warehouse = Warehouse() //TODO odecet financi za plnost skladu
+    private var availableProducts: ArrayList<Product> = ArrayList()
+    private var unpaidInvoices: ArrayList<Invoice> = ArrayList()
+    private var productTypeMap: HashMap<ProductType, Int> = productMapInit()
 
 
-    fun productMapInit() : HashMap<ProductType, Int>{
-        var prepareMap : HashMap<ProductType, Int> = HashMap<ProductType, Int> ()
+    fun productMapInit(): HashMap<ProductType, Int> {
+        var prepareMap: HashMap<ProductType, Int> = HashMap<ProductType, Int>()
         prepareMap.put(ProductType.CEREALS, 0)
         prepareMap.put(ProductType.FRUIT, 0)
         prepareMap.put(ProductType.VEGETABLES, 0)
@@ -33,26 +33,28 @@ class Retailer(subjectName : String, location : String, amountOfMoney : Double)
         return prepareMap
     }
 
-    fun buyProducts(products : ArrayList<Product>){
+    fun buyProducts(products: ArrayList<Product>) {
         warehouse.takeIn(products)
     }
 
-    fun payForInvoice(invoice: Invoice){
-        if(amountOfMoney >= invoice.getPrice()){
-            invoice.payInvoice()
+    fun payForInvoice(invoice: Invoice, time: Int) {
+        if (amountOfMoney >= invoice.getPrice()) {
+            invoice.payInvoice(time)
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
             println("Faktura " + invoice.getCode() + " zaplacena")
+            invoice.notifyPaidInvoice()
         } else {
             unpaidInvoices.add(invoice)
             println("!Faktura " + invoice.getCode() + " NENI uhrazena")
+            invoice.notifyUnpaidInvoice()
         }
         println()
     }
 
-    fun vacateWarehouse(){
-        for(product in warehouse.getStoragedProducts()){
-            var count : Int? = productTypeMap.get(product.getProductType())
+    fun vacateWarehouse() {
+        for (product in warehouse.getStoragedProducts()) {
+            var count: Int? = productTypeMap.get(product.getProductType())
             count = count?.plus(product.getAmount())
             if (count != null) {
                 productTypeMap.put(product.getProductType(), count)
@@ -61,27 +63,27 @@ class Retailer(subjectName : String, location : String, amountOfMoney : Double)
         }
     }
 
-    fun fillIn(){
-        for(product in warehouse.getStoragedProducts()){
-            if(productMapInit().get(product.getProductType())!! < 100){
+    fun fillIn() {
+        for (product in warehouse.getStoragedProducts()) {
+            if (productMapInit().get(product.getProductType())!! < 100) {
                 availableProducts.add(product)
                 warehouse.getStoragedProducts().remove(product)
             }
         }
     }
 
-    fun fillIn(type : ProductType){
-        var newProducts : ArrayList<Product> = warehouse.getSpecificProducts(type)
-        for(product in newProducts){
+    fun fillIn(type: ProductType) {
+        var newProducts: ArrayList<Product> = warehouse.getSpecificProducts(type)
+        for (product in newProducts) {
             availableProducts.add(product)
         }
     }
 
-    fun getStockSize() : Int{
+    fun getStockSize(): Int {
         return availableProducts.size
     }
 
-    fun getWarehouseStockSize() : Int{
+    fun getWarehouseStockSize(): Int {
         return warehouse.getStockSize()
     }
 

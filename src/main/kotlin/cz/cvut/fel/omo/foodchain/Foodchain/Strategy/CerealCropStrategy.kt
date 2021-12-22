@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Strategy
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
@@ -20,32 +21,40 @@ class CerealCropStrategy : ProcessorCropStrategy {
     }
 
     fun createFromGrain(crop: Crop): Product {
-        var random: Int = (1..2).random()
+        val random: Int = (1..2).random()
         when (random) {
-            1 -> return CropProduct(
-                "Flour",
-                ProductType.BULKINGREDIENTS,
-                (15..40).random().toDouble(),
-                (2..5).random().toDouble(),
-                (crop.getAmount() * 0.4).toInt(),
-                "kg",
-                crop.getOriginID()
-            )
-            else -> return CropProduct(
-                "Coarse flour",
-                ProductType.BULKINGREDIENTS,
-                (10..30).random().toDouble(),
-                (1..4).random().toDouble(),
-                (crop.getAmount() * 0.4).toInt(),
-                "kg",
-                crop.getOriginID()
-            )
+            1 -> {
+                val product = CropProduct(
+                    "Flour",
+                    ProductType.BULKINGREDIENTS,
+                    (15..40).random().toDouble(),
+                    (2..5).random().toDouble(),
+                    (crop.getAmount() * 0.4).toInt(),
+                    "kg",
+                    crop.getOriginID()
+                )
+                product.attach(Report)
+                return product
+            }
+            else -> {
+                val product = CropProduct(
+                    "Coarse flour",
+                    ProductType.BULKINGREDIENTS,
+                    (10..30).random().toDouble(),
+                    (1..4).random().toDouble(),
+                    (crop.getAmount() * 0.4).toInt(),
+                    "kg",
+                    crop.getOriginID()
+                )
+                product.attach(Report)
+                return product
+            }
         }
     }
 
     // TODO product beer
     fun prepareForBeer(crop: Crop): Product {
-        return CropProduct(
+        val product = CropProduct(
             crop.getName().toString(),
             ProductType.CEREALS,
             (4..6).random().toDouble(),
@@ -54,62 +63,84 @@ class CerealCropStrategy : ProcessorCropStrategy {
             "kg",
             crop.getOriginID()
         )
+        product.attach(Report)
+        return product
     }
 
     fun createFromCorn(crop: Crop): Product {
-        var random: Int = (1..3).random()
+        val random: Int = (1..3).random()
         when (random) {
-            1 -> return CropProduct(
-                "Boiled corn",
-                ProductType.VEGETABLES,
-                (40..45).random().toDouble(),
-                (2..5).random().toDouble(),
-                (crop.getAmount() * 0.95).toInt(),
-                "kg",
-                crop.getOriginID()
-            )
-            2 -> return CropProduct(
-                "Corn can",
-                ProductType.CANS,
-                (30..45).random().toDouble(),
-                (3..6).random().toDouble(),
-                (crop.getAmount() * 0.4).toInt(),
-                "kg",
-                crop.getOriginID()
-            )
-            else -> return CropProduct(
-                "Iced corn",
-                ProductType.ICED,
-                (30..35).random().toDouble(),
-                (1..2).random().toDouble(),
-                (crop.getAmount() * 0.4).toInt(),
-                "kg",
-                crop.getOriginID()
-            )
+            1 -> {
+                val product = CropProduct(
+                    "Boiled corn",
+                    ProductType.VEGETABLES,
+                    (40..45).random().toDouble(),
+                    (2..5).random().toDouble(),
+                    (crop.getAmount() * 0.95).toInt(),
+                    "kg",
+                    crop.getOriginID()
+                )
+                product.attach(Report)
+                return product
+            }
+            2 -> {
+                val product = CropProduct(
+                    "Corn can",
+                    ProductType.CANS,
+                    (30..45).random().toDouble(),
+                    (3..6).random().toDouble(),
+                    (crop.getAmount() * 0.4).toInt(),
+                    "kg",
+                    crop.getOriginID()
+                )
+                product.attach(Report)
+                return product
+            }
+            else -> {
+                val product = CropProduct(
+                    "Iced corn",
+                    ProductType.ICED,
+                    (30..35).random().toDouble(),
+                    (1..2).random().toDouble(),
+                    (crop.getAmount() * 0.4).toInt(),
+                    "kg",
+                    crop.getOriginID()
+                )
+                product.attach(Report)
+                return product
+            }
         }
     }
 
     fun createFromOats(crop: Crop): Product {
-        var random: Int = (1..2).random()
+        val random: Int = (1..2).random()
         when (random) {
-            1 -> return CropProduct(
-                "Musli",
-                ProductType.CEREALS,
-                (15..30).random().toDouble(),
-                (2..6).random().toDouble(),
-                (crop.getAmount() * 0.75).toInt(),
-                "kg",
-                crop.getOriginID()
-            )
-            else -> return CropProduct(
-                "Oat flakes",
-                ProductType.CEREALS,
-                (20..35).random().toDouble(),
-                (1..2).random().toDouble(),
-                (crop.getAmount() * 0.75).toInt(),
-                "kg",
-                crop.getOriginID()
-            )
+            1 -> {
+                val product = CropProduct(
+                    "Musli",
+                    ProductType.CEREALS,
+                    (15..30).random().toDouble(),
+                    (2..6).random().toDouble(),
+                    (crop.getAmount() * 0.75).toInt(),
+                    "kg",
+                    crop.getOriginID()
+                )
+                product.attach(Report)
+                return product
+            }
+            else -> {
+                val product = CropProduct(
+                    "Oat flakes",
+                    ProductType.CEREALS,
+                    (20..35).random().toDouble(),
+                    (1..2).random().toDouble(),
+                    (crop.getAmount() * 0.75).toInt(),
+                    "kg",
+                    crop.getOriginID()
+                )
+                product.attach(Report)
+                return product
+            }
         }
     }
 }

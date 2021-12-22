@@ -1,10 +1,17 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.products
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
+import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
+import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import java.util.*
 
-class Crop {
+class Crop : Subject {
+    companion object {
+        private var observers: ArrayList<Observer> = ArrayList()
+    }
+
     private val name: CropName
     private val type : CropType
     private var amount: Int
@@ -23,6 +30,8 @@ class Crop {
         this.productionCost = shopPrice * 0.01
         this.growthTime = name.growthTime
         this.origin = UUID.randomUUID()
+        notifyUpdate(origin, this.name.toString() + " " + this.amount.toString() + "kg")
+
     }
 
     fun getOriginID() : UUID{
@@ -61,5 +70,17 @@ class Crop {
         growthTime = 0
     }
 
+    override fun attach(o: Observer) {
+        Crop.observers.add(o)
+    }
 
+    override fun detach(o: Observer) {
+        Crop.observers.remove(o)
+    }
+
+    override fun notifyUpdate(uuid: UUID, report: String) {
+        for(i in Crop.observers){
+            i.update(uuid, report)
+        }
+    }
 }

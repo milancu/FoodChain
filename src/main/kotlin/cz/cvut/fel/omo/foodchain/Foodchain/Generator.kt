@@ -47,10 +47,12 @@ class Generator {
     }
 
     private fun generateCrop(capacity: Int): Crop {
-        var crop = CropName.getCropName()
-        var type = setType(crop)
+        var cropName = CropName.getCropName()
+        var type = setType(cropName)
         var growthTime = (0..10).random()
-        return Crop(crop, type, capacity, growthTime)
+        var crop = Crop(cropName, type, capacity, growthTime)
+        crop.attach(Report)
+        return crop
     }
 
     private fun setType(name: CropName): CropType {

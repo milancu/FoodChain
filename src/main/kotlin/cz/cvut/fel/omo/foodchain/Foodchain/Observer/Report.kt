@@ -1,9 +1,17 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Observer
 
+
+import com.github.doyaaaaaken.kotlincsv.dsl.context.WriteQuoteMode
+import com.github.doyaaaaaken.kotlincsv.dsl.csvWriter
 import java.util.*
 
 
+
 object Report : Observer {
+
+
+
+
 
     var reports = hashMapOf<UUID, ArrayList<String>>()
 

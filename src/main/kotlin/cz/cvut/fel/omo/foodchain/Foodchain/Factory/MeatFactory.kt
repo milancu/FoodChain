@@ -31,12 +31,16 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         for (meat in newMeats) {
             meatsForProducts.add(meat)
         }
+        println("Prevzato masa k zabaleni: " + meatsForProducts.size)
     }
 
     fun transportProducts() {
+        println("/////////////////////////////////////////////")
+        println("Aktualne v meetfactory typu produktu k odvezeni: " + productToSell.size)
         Transport.takeProducts(productToSell)
-        println("Aktualne prevazeno produktu : " + Transport.products.size)
+        println("Aktualne prevezeno produktu z MeatFactory: " + Transport.products.size)
         productToSell = ArrayList()
+        println("/////////////////////////////////////////////")
         println()
     }
 
@@ -50,11 +54,11 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             unpaidInvoices.add(invoice)
             println("!Faktura " + invoice.getCode() + " NENI uhrazena")
         }
-        meatsForProducts = ArrayList()
     }
 
     fun packageProduct() {
         for (meat in meatsForProducts) {
+            println("Maso puvodu : " + meat.getOriginID() + " je baleno")
             when (meat.getType()) {
                 MeatType.PORK -> {
                     productToSell.add(packagePorkDumpling(meat))
@@ -91,7 +95,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
                 }
             }
         }
-        meatsForProducts.clear()
+        meatsForProducts = ArrayList()
     }
 
     fun packagePorkDumpling(meat: Meat): Product {

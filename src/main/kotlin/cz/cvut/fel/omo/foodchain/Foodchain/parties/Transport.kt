@@ -57,9 +57,11 @@ class Transport{
         }
 
         fun takeMeat(meats : ArrayList<Meat>){
+            println("transport prebira masa : " + meats.size)
             for(meat in meats){
                 this.meats.add(meat)
             }
+            println("Transport prevzal masa : " + this.meats.size)
         }
 
         // TODO odecet za opotrebeni aut a benzin a platy - nezapomen to zavolat

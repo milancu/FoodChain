@@ -32,7 +32,7 @@ class Simulation {
         channelF2M.runSimulation()
         channelP2R.runSimulation()
         channelM2R.runSimulation()
-        channelRTC.runSimulation() //todo
+        channelRTC.runSimulation()
     }
 
 }

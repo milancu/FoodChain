@@ -7,6 +7,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 class MeatLoverStrategy : CustomerStrategy {
     override fun execute(products: ArrayList<Product>): Double {
         var spended: Double = 0.0
+        var toRemove : ArrayList<Product> = ArrayList()
 
         for (product in products) {
             if (product.getProductType() == ProductType.MEAT ||
@@ -17,10 +18,17 @@ class MeatLoverStrategy : CustomerStrategy {
                     product.decreaseAmount(Config.WORKOUT_SHOP_SIZE)
                     spended += Config.WORKOUT_SHOP_SIZE * product.getShopPrice()
                 } else {
-                    products.remove(product)
+                    toRemove.add(product)
                 }
             }
         }
+        removeProducts(products, toRemove)
         return spended
+    }
+
+    fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>){
+        for(product in toRemove){
+            original.remove(product)
+        }
     }
 }

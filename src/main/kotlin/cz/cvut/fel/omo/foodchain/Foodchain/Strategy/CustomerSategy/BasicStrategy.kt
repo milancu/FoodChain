@@ -17,6 +17,7 @@ class BasicStrategy : CustomerStrategy {
                     product.decreaseAmount(Config.STANDARD_SHOP_SIZE)
                     spended += Config.STANDARD_SHOP_SIZE * product.getShopPrice()
                 } else {
+                    println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
                     toRemove.add(product)
                 }
             }

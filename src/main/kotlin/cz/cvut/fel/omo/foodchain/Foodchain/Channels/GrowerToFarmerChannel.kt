@@ -22,6 +22,7 @@ class GrowerToFarmerChannel : Channel{
             if(farmer.needResource()){
                 Request.requestFarmerBuyCrops(farmer, findCorrectSupplier(), 1) //todo ooprava
             }
+            farmer.payDebts()
         }
     }
 

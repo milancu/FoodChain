@@ -4,10 +4,10 @@ class Config {
     companion object params {
         // main config
         const val WEEKS : Int = 5
-        const val GROWERS : Int = 2
+        const val GROWERS : Int = 1
         const val FARMERS : Int = 1
         const val PROCESSORS : Int = 1
-        const val CUSTOMERS : Int = 10
+        const val CUSTOMERS : Int = 10000
         const val RETAILERS : Int = 1
 
         const val STANDARD_SHOP_SIZE : Int = 10
@@ -26,7 +26,7 @@ class Config {
         const val FLOWER_MAX_AGE = 10
 
         const val MIN_FIELDS = 2
-        const val MAX_FIELDS = 5
+        const val MAX_FIELDS = 10
 
         const val MIN_DEAFAULT_CROPTYPES = 5
         const val MAX_DEFAULT_CROPTYPES = 10

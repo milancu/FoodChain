@@ -17,6 +17,7 @@ class VeganStrategy : CustomerStrategy {
                     spended += Config.VEGAN_SHOP_SIZE * product.getShopPrice()
                 } else {
                     toRemove.add(product)
+                    println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
                 }
             }
         }

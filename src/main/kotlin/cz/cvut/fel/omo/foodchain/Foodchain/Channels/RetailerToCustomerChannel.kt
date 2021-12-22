@@ -22,6 +22,7 @@ class RetailerToCustomerChannel : Channel{
             /*var retailer : Retailer = retailers.get( (0..retailers.size-1).random() )*/
             customer.receiveSalary()
             Request.requestGoShopping(retailers.get(0), customer)
+            customer.payDebts()
         }
     }
 

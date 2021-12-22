@@ -19,6 +19,7 @@ class MeatLoverStrategy : CustomerStrategy {
                     spended += Config.WORKOUT_SHOP_SIZE * product.getShopPrice()
                 } else {
                     toRemove.add(product)
+                    println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
                 }
             }
         }

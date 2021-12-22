@@ -43,6 +43,7 @@ class ProcessorToRetailerChannel : Channel{
             println("Priprava k vytvareni vyrobku")
             processor.processProduct()
             println("Produkty vytvoreny")
+            retailers.get(0).payDebts()
         }
     }
 

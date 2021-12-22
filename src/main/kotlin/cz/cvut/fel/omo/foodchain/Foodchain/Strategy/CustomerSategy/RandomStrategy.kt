@@ -17,6 +17,7 @@ class RandomStrategy : CustomerStrategy {
                     spended += randomSize * product.getShopPrice()
                 } else {
                     toRemove.add(product)
+                    println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
                 }
             }
         }

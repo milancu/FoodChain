@@ -56,10 +56,6 @@ class Request {
             Transport.takeMeat(processedAnimals) //todo platba pro transport
             meatFactory.takeMeat(Transport.transportMeats())
 
-            println("------------------------------")
-            println("befeleme1: " + meatFactory.getMeatResources())
-            println("--------------------------------")
-
             meatFactory.payForInvoice(invoice)
 
             println()

@@ -173,4 +173,19 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         }
         println()
     }
+
+    fun payDebts() {
+        var toRemove: ArrayList<Invoice> = ArrayList()
+        for (invoice in unpaidInvoices) {
+            if (amountOfMoney >= invoice.getPrice()) {
+                toRemove.add(invoice)
+                invoice.payInvoice()
+                amountOfMoney -= invoice.getPrice()
+            }
+        }
+        for (invoice in toRemove) {
+            println("Penize za " + invoice.getCode() + " splaceny")
+            unpaidInvoices.remove(invoice)
+        }
+    }
 }

@@ -33,6 +33,7 @@ class GrowerToProcessorChannel : Channel{
         for(processor in processors){
             println("Processor: " + processor.getIdentifier() + " : money : " + processor.getAmountOfMoney()
                     + " : supplies : " + processor.getStockSuppliesSize() + " : products : " + processor.getStockProductsSize())
+            processor.payDebts()
         }
         println()
     }

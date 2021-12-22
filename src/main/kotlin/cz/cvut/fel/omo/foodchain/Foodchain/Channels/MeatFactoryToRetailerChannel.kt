@@ -21,7 +21,7 @@ class MeatFactoryToRetailerChannel : Channel{
         Request.requestTransportToWarehouse(meatFactory, retailers.get(0)) // TODO not get 0, to samy u process
         println("Masne produkty prevezeny do prodeje, aktualni stav produktu : " + meatFactory.getPreparedPorducts())
         println()
-
+        retailers.get(0).payDebts()
     }
 
     override fun printStats() {

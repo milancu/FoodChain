@@ -21,12 +21,25 @@ class FarmerToProcessorChannel {
         println()
     }
 
-    fun runSimulation(){ // todo copypaste
+    fun runSimulation(){
         for(farmer in farmers){
             print("Priprava ke zpracovani zvirat")
             Request.requestTransportToMeatFactory(farmer, meatFactory)
             println("maso zpracovano a pripavano a pripraveno k odvozu")
         }
+    }
+
+    fun printStats() {
+        println("CURRENT STATE FARMER / MEATFACTORY - CHANNEL")
+        for (farmer in farmers) {
+            println("farmer: " + farmer.getIdentifier() + " : money : " + farmer.getAmountOfMoney() + " : animals : "
+                    + farmer.getNumberOfAnimals() + " : animals to processed : " + farmer.getNumberOfAnimalsToProcess())
+        }
+        println(
+            "MeatFactory: " + meatFactory.getIdentifier() + " : money : " + meatFactory.getAmountOfMoney()
+                    + " : resources : " + meatFactory.getMeatResources() + " : prepared : " + meatFactory.getPreparedPorducts()
+        )
+        println()
     }
 
 

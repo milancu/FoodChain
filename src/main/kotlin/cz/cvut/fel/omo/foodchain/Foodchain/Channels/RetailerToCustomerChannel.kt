@@ -17,6 +17,10 @@ class RetailerToCustomerChannel {
         //TODO() // nezapomen na
     }
 
+    fun printStats(){
+        //TODO
+    }
+
     fun addCustomer(customer : Customer){
         customers.add(customer)
     }

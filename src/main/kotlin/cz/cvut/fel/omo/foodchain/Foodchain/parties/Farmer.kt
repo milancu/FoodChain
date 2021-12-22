@@ -9,11 +9,8 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
 
     private var resources: List<Crop> = setInitialResources()
-
     private var animals: List<BaseAnimal> = setInitialAnimals()
-
     private var animalsToProcessing: List<BaseAnimal> = animalsToProcessing();
-
     private val butcher : Butcher = Butcher()
 
     fun setInitialResources(): List<Crop> {
@@ -67,11 +64,16 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         return butcher.proccessAnimal(animalsToProcessing())
     }
 
+    fun getNumberOfAnimals() : Int{
+        return animals.size
+    }
+
+    fun getNumberOfAnimalsToProcess() : Int{
+        return animalsToProcessing.size
+    }
 
 
     // todo nakup cropu od growera
     // krmeni
 
-
-    // TODO Transport and pay pro factory
 }

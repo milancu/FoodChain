@@ -25,7 +25,7 @@ class GrowerToProcessorChannel {
     }
 
     fun printStats(){
-        println("CURRENT STATE")
+        println("CURRENT STATE - GROWER / PROCESSOR - CHANNEL")
         for(grower in growers){
             println("Grover: " + grower.getIdentifier() + " : money : " + grower.getAmountOfMoney() + " : supllies : " + grower.getSupplies().size)
         }
@@ -37,6 +37,7 @@ class GrowerToProcessorChannel {
     }
 
     fun runSimulation(){
+
         // TODO / oprava generatoru
         /* println(processor.getSubjectName())
          println(processor.getLocation())*/

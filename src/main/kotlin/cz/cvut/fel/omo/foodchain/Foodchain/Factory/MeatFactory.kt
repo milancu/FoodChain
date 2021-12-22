@@ -18,6 +18,13 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
     private var productToSell : ArrayList<Product> = ArrayList()
     private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
 
+    fun getMeatResources() : Int{
+        return meatsForProducts.size
+    }
+
+    fun getPreparedPorducts() : Int{
+        return meatsForProducts.size
+    }
 
     fun takeMeat(newMeats : ArrayList<Meat>){
         for(meat in newMeats){

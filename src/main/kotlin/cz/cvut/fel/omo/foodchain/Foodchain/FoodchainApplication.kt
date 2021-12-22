@@ -24,25 +24,36 @@ fun main(args: Array<String>) {
 
 	channelG2P.printStats()
 	channelP2R.printStats()
+	channelP2R.printStats()
+	channelRTC.printStats()
 
 	println("ONE WEEK LATER")
 	println()
 
 	// poskoceni o tyden
 	channelG2P.runSimulation()
-	channelF2P.runSimulation() //todo
+	channelF2P.runSimulation()
 	channelP2R.runSimulation()
 	channelRTC.runSimulation() //todo
 
 	channelG2P.printStats()
+	channelF2P.printStats()
 	channelP2R.printStats()
+	channelRTC.printStats() //todo
+
 
 	println("TWO WEEKS LATER")
 	println()
 
 	channelP2R.runSimulation()
+	channelF2P.runSimulation()
 	channelP2R.printStats()
+	channelRTC.runSimulation() //todo
 
+	channelG2P.printStats()
+	channelF2P.printStats()
+	channelP2R.printStats()
+	channelRTC.printStats() //todo
 
 	/*println("#############################################################")
 	var generator : Generator = Generator()

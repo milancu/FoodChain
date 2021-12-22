@@ -24,7 +24,7 @@ class ProcessorToRetailerChannel {
     }
 
     fun printStats(){
-        println("CURRENT STATE")
+        println("CURRENT STATE PROCESSOR / RETAILER - CHANNEL")
         for(processor in processors){
             println("Processor: " + processor.getIdentifier() + " : money : " + processor.getAmountOfMoney()
                     + " : supplies : " + processor.getStockSuppliesSize() + " : products : " + processor.getStockProductsSize())

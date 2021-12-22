@@ -39,8 +39,9 @@ class GrowerToProcessorChannel {
     fun runSimulation(){
 
         // TODO / oprava generatoru
-        /* println(processor.getSubjectName())
-         println(processor.getLocation())*/
+
+        println(processors.get(0).getSubjectName())
+        println(processors.get(0).getLocation())
 
         // REQUEST - STATIKA
         // TRANSPORT - STATIKA

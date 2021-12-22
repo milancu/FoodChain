@@ -97,13 +97,11 @@ class Generator {
         val charPool: List<Char> = ('a'..'z') + ('A'..'Z')
 
         val generatedName = (1..NAME_LENGTH) //TODO NEFUNGUJE GENEROVANI NAZVU
-            .map { i -> nextInt(0, charPool.size) }
-            .map(charPool::get)
-            .joinToString { "" };
+            .map { charPool.random() }
+            .joinToString("")
         val generatedLocation = (1..LOCATION_LENGTH) //TODO NEFUNGUJE GENEROVANI NAZVU
-            .map { i -> nextInt(0, charPool.size) }
-            .map(charPool::get)
-            .joinToString { "" } + ", " + (1000..9999).random();
+            .map { charPool.random() }
+            .joinToString("") + ", " + (1000..9999).random()
         val generatedMoney = (FINANCE_MIN..FINANCE_MAX).random().toDouble();
 
         return BaseParty(generatedName, generatedLocation, generatedMoney)

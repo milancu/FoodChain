@@ -74,7 +74,19 @@ class Invoice : Subject {
 
     override fun notifyUpdate() {
         for (i in observers) {
-            i.update(this.code, "")
+            i.update(this.code, "NEW INVOICE, Subsriber: " + this.subscriber + ", Contractor: " + this.contractor + ", price: " + this.price + ", in week:" + Week.acutalWeek)
+        }
+    }
+
+    fun notifyPaid(){
+        for (i in observers) {
+            i.update(this.code, "INVOICE HAS BEEN PAID, Subsriber: " + this.subscriber + ", Contractor: " + this.contractor + ", price: " + this.price + ", in week:" + Week.acutalWeek)
+        }
+    }
+
+    fun notifyUnpaid(){
+        for (i in observers) {
+            i.update(this.code, "INVOICE HAS NOT BEEN PAID, Subsriber: " + this.subscriber + ", Contractor: " + this.contractor + ", price: " + this.price)
         }
     }
 }

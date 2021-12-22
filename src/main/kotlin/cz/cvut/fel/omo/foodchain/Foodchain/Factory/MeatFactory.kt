@@ -45,9 +45,11 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             invoice.payInvoice()
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
+            invoice.notifyPaid()
             println("Faktura " + invoice.getCode() + " zaplacena")
         } else {
             unpaidInvoices.add(invoice)
+            invoice.notifyUnpaid()
             println("!Faktura " + invoice.getCode() + " NENI uhrazena")
         }
         meatsForProducts = ArrayList()

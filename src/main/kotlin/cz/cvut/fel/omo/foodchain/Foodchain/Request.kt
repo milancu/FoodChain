@@ -22,6 +22,8 @@ class Request {
                 money += crop.getAmount() * crop.getShopPrice()
             }
             var invoice: Invoice = Invoice(processor, grower, money, InvoiceType.CROP)
+            invoice.attach(Report)
+            invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
 
             grower.transportSupplies()
@@ -47,7 +49,8 @@ class Request {
                 money += animal.getAmount() * animal.getShopPrice()
             }
             var invoice: Invoice = Invoice(meatFactory, farmer, money, InvoiceType.MEAT)
-
+            invoice.attach(Report)
+            invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
 
             Transport.takeMeat(processedAnimals) //todo platba pro transport
@@ -75,6 +78,8 @@ class Request {
                 money += product.getAmount() * product.getShopPrice()
             }
             var invoice: Invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
+            invoice.attach(Report)
+            invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
 
             retailer.buyProducts(transportedProducts) // todo invoice retailer a transport
@@ -93,6 +98,8 @@ class Request {
                 money += product.getAmount() * product.getShopPrice()
             }
             var invoice: Invoice = Invoice(retailer, meatFactory, money, InvoiceType.PRODUCT)
+            invoice.attach(Report)
+            invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
 
             retailer.buyProducts(transportedProducts) // todo invoice retailer a transport
@@ -114,7 +121,8 @@ class Request {
             }
 
             var invoice: Invoice = Invoice(farmer, grower, money, InvoiceType.PRODUCT)
-
+            invoice.attach(Report)
+            invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
             farmer.payForInvoice(invoice)
         }
@@ -126,6 +134,8 @@ class Request {
         fun requestGoShopping(retailer : Retailer, customer: Customer){
             var money : Double = customer.buyProducts(retailer.getAvailableProducts())
             var invoice : Invoice = Invoice(customer, retailer, money, InvoiceType.SHOPPING)
+            invoice.attach(Report)
+            invoice.notifyUpdate()
             println("Customer: " + customer.getIdentifier() + " utratil: " + money + " za nakupy a ma: " + customer.getAmountOfMoney()) // TODO CHYBA
             customer.payForShopping(invoice)
         }

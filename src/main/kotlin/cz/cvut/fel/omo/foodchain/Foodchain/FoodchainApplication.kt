@@ -6,7 +6,7 @@ import org.springframework.boot.runApplication
 @SpringBootApplication
 open class FoodchainApplication
 
-// global config
+// todo global config
 
 fun main(args: Array<String>) {
 
@@ -18,6 +18,18 @@ fun main(args: Array<String>) {
 	simulation.runWeek()
 
 	println("TWO WEEKS LATER")
+	println()
+	simulation.runWeek()
+
+	println("THREE WEEKS LATER")
+	println()
+	simulation.runWeek()
+
+	println("FOUR WEEKS LATER")
+	println()
+	simulation.runWeek()
+
+	println("FIVE WEEKS LATER")
 	println()
 	simulation.runWeek()
 

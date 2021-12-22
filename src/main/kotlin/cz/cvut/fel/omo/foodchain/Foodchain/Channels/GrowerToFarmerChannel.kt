@@ -7,7 +7,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 
-class GrowerToFarmerChannel {
+class GrowerToFarmerChannel : Channel{
     private var farmers : ArrayList<Farmer>
     private var growers : ArrayList<Grower>
 
@@ -17,12 +17,16 @@ class GrowerToFarmerChannel {
     }
 
     // run simulation musi byt pred porcesorem
-    fun runSimulation(){
+    override fun runSimulation(){
         for(farmer in farmers){
             if(farmer.needResource()){
                 Request.requestFarmerBuyCrops(farmer, findCorrectSupplier(), 1) //todo ooprava
             }
         }
+    }
+
+    override fun printStats() {
+        TODO("Not yet implemented")
     }
 
     fun findCorrectSupplier() : Grower{

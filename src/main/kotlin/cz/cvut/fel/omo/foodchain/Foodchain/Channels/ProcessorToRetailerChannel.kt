@@ -5,7 +5,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 
-class ProcessorToRetailerChannel {
+class ProcessorToRetailerChannel : Channel{
 
     private var processors : ArrayList<Processor>
     private var retailers : ArrayList<Retailer>
@@ -23,7 +23,7 @@ class ProcessorToRetailerChannel {
         println()
     }
 
-    fun printStats(){
+    override fun printStats(){
         println("CURRENT STATE PROCESSOR / RETAILER - CHANNEL")
         for(processor in processors){
             println("Processor: " + processor.getIdentifier() + " : money : " + processor.getAmountOfMoney()
@@ -36,7 +36,7 @@ class ProcessorToRetailerChannel {
         println()
     }
 
-    fun runSimulation(){
+    override fun runSimulation(){
         for(processor in processors){
             Request.requestTransportToWarehouse(processor, retailers.get(0))
             println("Priprava k vytvareni vyrobku")

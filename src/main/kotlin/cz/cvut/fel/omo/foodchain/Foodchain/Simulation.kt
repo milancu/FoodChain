@@ -22,6 +22,7 @@ class Simulation {
         channelF2M.printStats()
         channelP2R.printStats()
         channelP2R.printStats()
+        channelM2R.printStats()
         channelRTC.printStats()
     }
 
@@ -30,6 +31,7 @@ class Simulation {
         channelG2P.runSimulation()
         channelF2M.runSimulation()
         channelP2R.runSimulation()
+        channelM2R.runSimulation()
         channelRTC.runSimulation() //todo
     }
 

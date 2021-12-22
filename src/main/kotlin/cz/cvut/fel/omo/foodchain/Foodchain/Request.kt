@@ -93,8 +93,6 @@ class Request {
 
             retailer.buyProducts(Transport.transportProducts()) // todo invoice retailer a transport
             retailer.payForInvoice(invoice)
-
-
         }
 
         fun requestFarmerBuyCrops(farmer: Farmer, grower: Grower, time: Int){
@@ -114,6 +112,10 @@ class Request {
             var invoice: Invoice = Invoice(farmer, grower, money, InvoiceType.PRODUCT)
             println("Vznik faktury " + invoice.getCode())
             farmer.payForInvoice(invoice)
+        }
+
+        fun requestProccessMeat(meatFactory: MeatFactory){
+            meatFactory.packageProduct()
         }
     }
 }

@@ -6,7 +6,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Butcher
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
 
-class FarmerToMeatFactoryChannel {
+class FarmerToMeatFactoryChannel : Channel{
 
     private var farmers : ArrayList<Farmer>
     private val meatFactory : MeatFactory
@@ -21,7 +21,7 @@ class FarmerToMeatFactoryChannel {
         println()
     }
 
-    fun runSimulation(){
+    override fun runSimulation(){
         for(farmer in farmers){
             print("Priprava ke zpracovani zvirat")
             Request.requestTransportToMeatFactory(farmer, meatFactory)
@@ -30,7 +30,7 @@ class FarmerToMeatFactoryChannel {
         }
     }
 
-    fun printStats() {
+    override fun printStats() {
         println("CURRENT STATE FARMER / MEATFACTORY - CHANNEL")
         for (farmer in farmers) {
             println("farmer: " + farmer.getIdentifier() + " : money : " + farmer.getAmountOfMoney() + " : animals : "

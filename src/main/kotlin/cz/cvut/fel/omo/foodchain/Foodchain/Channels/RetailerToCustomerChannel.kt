@@ -3,7 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.Channels
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Customer
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 
-class RetailerToCustomerChannel {
+class RetailerToCustomerChannel : Channel{
 
     private var retailers : ArrayList<Retailer>
     private var customers : ArrayList<Customer>
@@ -13,11 +13,11 @@ class RetailerToCustomerChannel {
         this.customers = ArrayList()
     }
 
-    fun runSimulation(){
+    override fun runSimulation(){
         //TODO() // nezapomen na
     }
 
-    fun printStats(){
+    override fun printStats(){
         //TODO
     }
 

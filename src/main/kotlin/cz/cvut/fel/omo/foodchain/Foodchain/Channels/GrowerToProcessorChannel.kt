@@ -5,7 +5,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
 
-class GrowerToProcessorChannel {
+class GrowerToProcessorChannel : Channel{
 
     private var growers : ArrayList<Grower>
     private var processors : ArrayList<Processor>
@@ -24,7 +24,7 @@ class GrowerToProcessorChannel {
         println()
     }
 
-    fun printStats(){
+    override fun printStats(){
         println("CURRENT STATE - GROWER / PROCESSOR - CHANNEL")
         for(grower in growers){
             println("Grover: " + grower.getIdentifier() + " : money : " + grower.getAmountOfMoney() + " : supllies : " + grower.getSupplies().size)
@@ -36,7 +36,7 @@ class GrowerToProcessorChannel {
         println()
     }
 
-    fun runSimulation(){
+    override fun runSimulation(){
         for(grower in growers){
             Request.requestTransportToProcessor(grower, processors.get(0), grower.getSupplies())
             grower.harvest();

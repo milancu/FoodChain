@@ -24,7 +24,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
     }
 
     fun getPreparedPorducts(): Int {
-        return meatsForProducts.size
+        return productToSell.size
     }
 
     fun takeMeat(newMeats: ArrayList<Meat>) {
@@ -35,7 +35,9 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
 
     fun transportProducts() {
         Transport.takeProducts(productToSell)
+        println("Aktualne prevazeno produktu : " + Transport.products.size)
         productToSell = ArrayList()
+        println()
     }
 
     fun payForInvoice(invoice: Invoice) {
@@ -48,6 +50,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             unpaidInvoices.add(invoice)
             println("!Faktura " + invoice.getCode() + " NENI uhrazena")
         }
+        meatsForProducts = ArrayList()
     }
 
     fun packageProduct() {

@@ -17,6 +17,7 @@ class RetailerToCustomerChannel : Channel{
     }
 
     override fun runSimulation(){
+        fillShops()
         for(customer in customers){
             /*var retailer : Retailer = retailers.get( (0..retailers.size-1).random() )*/
             customer.receiveSalary()
@@ -25,15 +26,23 @@ class RetailerToCustomerChannel : Channel{
     }
 
     override fun printStats(){
-        println("CURRENT STATE PROCESSOR / RETAILER - CHANNEL")
+        println("CURRENT STATE RETAILER / CUSTOMER - CHANNEL")
         for(retailer in retailers){
             println("Retailer: " + retailer.getIdentifier() + " : money : " + retailer.getAmountOfMoney()
                     + " : available products : " + retailer.getStockSize() + " : warehouseProducts : " + retailer.getWarehouseStockSize())
         }
         for(customer in customers){
-            println("Processor: " + customer.getIdentifier() + " : money : " + customer.getAmountOfMoney())
+            println("Customer: " + customer.getIdentifier() + " : money : " + customer.getAmountOfMoney())
         }
         println()
+    }
+
+    fun fillShops(){
+        for(retailer in retailers){
+            Request.requestTakeOutToShop(retailer)
+            println("Retailer: " + retailer.getIdentifier() + " naskladnil " + retailer.getStockSize() + " produktu.")
+            println("Warehouse obsahuje " + retailer.getWarehouseStockSize() + " produktu")
+        }
     }
 
     fun addCustomer(customer : Customer){

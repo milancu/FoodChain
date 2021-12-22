@@ -10,7 +10,7 @@ class Transport{
         private var identifier : String = "12345678"
         private var amountOfMoney : Double = 10000.00
         private var cropSupplies : ArrayList<Crop> = ArrayList()
-        private var products : ArrayList<Product> = ArrayList()
+        var products : ArrayList<Product> = ArrayList() //todo private
         private var meats : ArrayList<Meat> = ArrayList()
 
         fun transportCropSuplies() : ArrayList<Crop>{
@@ -24,6 +24,9 @@ class Transport{
 
         fun transportProducts() : ArrayList<Product>{
             var toTransport : ArrayList<Product> = products
+            /*println("/////////////////////////////////////")
+            println("k prevezeni: " + toTransport.size)
+            println("/////////////////////////////////////")*/
             for(product in products){
                 amountOfMoney += product.getShopPrice() * product.getAmount() * 0.1 //TODO invoice smerem od transportu
             }

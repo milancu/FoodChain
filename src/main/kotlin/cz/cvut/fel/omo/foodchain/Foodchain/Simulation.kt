@@ -12,10 +12,9 @@ class Simulation {
     private var channelRTC : RetailerToCustomerChannel = RetailerToCustomerChannel(channelP2R.getRetailers())
 
     fun runWeek(){
-        //printStats()
         runSimulation()
+        printStats()
         Week.acutalWeek++
-        channelRTC.printStats() // todo odstranit pak
     }
 
     private fun printStats(){

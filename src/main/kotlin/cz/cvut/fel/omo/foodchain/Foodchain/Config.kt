@@ -3,11 +3,11 @@ package cz.cvut.fel.omo.foodchain.Foodchain
 class Config {
     companion object params {
         // main config
-        const val WEEKS : Int = 52
-        const val GROWERS : Int = 2
-        const val FARMERS : Int = 2
+        const val WEEKS : Int = 4
+        const val GROWERS : Int = 1
+        const val FARMERS : Int = 1
         const val PROCESSORS : Int = 1
-        const val CUSTOMERS : Int = 20
+        const val CUSTOMERS : Int = 10
         const val RETAILERS : Int = 1
 
         const val STANDARD_SHOP_SIZE : Int = 10
@@ -17,8 +17,8 @@ class Config {
         const val SALARY_MIN = 10000
         const val SALARY_MAX = 80000
 
-        const val ANIMALS_MIN = 30
-        const val ANIMALS_MAX = 50
+        const val ANIMALS_MIN = 10
+        const val ANIMALS_MAX = 15
 
         const val FIELD_CAPACITY_MIN = 100
         const val FIELD_CAPACITY_MAX = 1000
@@ -26,7 +26,7 @@ class Config {
         const val FLOWER_MAX_AGE = 10
 
         const val MIN_FIELDS = 2
-        const val MAX_FIELDS = 10
+        const val MAX_FIELDS = 5
 
         const val MIN_DEAFAULT_CROPTYPES = 5
         const val MAX_DEFAULT_CROPTYPES = 10

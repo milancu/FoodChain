@@ -22,8 +22,6 @@ class ProcessorToRetailerChannel : Channel{
         println("Processors: " + processors.size)
         println("Retailers: " + retailers.size)
         println()
-
-        fillShops()
     }
 
     override fun printStats(){
@@ -48,12 +46,7 @@ class ProcessorToRetailerChannel : Channel{
         }
     }
 
-    fun fillShops(){
-        for(retailer in retailers){
-            Request.requestTakeOutToShop(retailer)
-            println("Retailer: " + retailer.getIdentifier() + " naskladnil " + retailer.getStockSize() + " produktu.")
-        }
-    }
+
 
     fun getRetailers() : ArrayList<Retailer>{
         return retailers

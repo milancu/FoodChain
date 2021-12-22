@@ -31,7 +31,6 @@ class GrowerToFarmerChannel : Channel{
 
     fun findCorrectSupplier() : Grower{
         for(grower in growers){
-            println(growers.size)
             for(crop in grower.getSupplies()){
                 if(crop.getType() == CropType.CEREAL){
                     return grower

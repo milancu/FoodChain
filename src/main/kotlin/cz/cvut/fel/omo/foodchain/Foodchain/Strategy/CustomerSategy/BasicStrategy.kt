@@ -23,6 +23,10 @@ class BasicStrategy : CustomerStrategy {
         return spended
     }
 
+    fun removeProducts(){
+
+    }
+
     fun productMapInit(): HashMap<ProductType, Int> {
         var prepareMap: HashMap<ProductType, Int> = HashMap<ProductType, Int>()
         prepareMap.put(ProductType.CEREALS, 0)

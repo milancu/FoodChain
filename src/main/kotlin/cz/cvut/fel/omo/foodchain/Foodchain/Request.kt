@@ -58,19 +58,18 @@ class Request {
             println("Proces transportace (from processor " + processor.getIdentifier() + " to retailer " + retailer.getIdentifier())
 
             processor.transportProducts()
+            var transportedProducts : ArrayList<Product> = Transport.transportProducts()
 
             // Faktura
             var money: Double = 0.0
 
-            for (product in Transport.transportProducts()) {
+            for (product in transportedProducts) {
                 money += product.getAmount() * product.getShopPrice()
             }
             var invoice: Invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
             println("Vznik faktury " + invoice.getCode())
 
-            /*processor.transportProducts()*/ //todo redundance? nevidim duvod, radsi zkontrolovat
-
-            retailer.buyProducts(Transport.transportProducts()) // todo invoice retailer a transport
+            retailer.buyProducts(transportedProducts) // todo invoice retailer a transport
             retailer.payForInvoice(invoice)
         }
 
@@ -78,18 +77,17 @@ class Request {
             println("Proces transportace (from Vodnany  to retailer " + retailer.getIdentifier())
 
             meatFactory.transportProducts()
-            println()
+            var transportedProducts : ArrayList<Product> = Transport.transportProducts()
 
             // Faktura
             var money : Double = 0.0
-            for (product in Transport.transportProducts()){
+            for (product in transportedProducts){
                 money += product.getAmount() * product.getShopPrice()
             }
             var invoice: Invoice = Invoice(retailer, meatFactory, money, InvoiceType.PRODUCT)
-
             println("Vznik faktury " + invoice.getCode())
 
-            retailer.buyProducts(Transport.transportProducts()) // todo invoice retailer a transport
+            retailer.buyProducts(transportedProducts) // todo invoice retailer a transport
             retailer.payForInvoice(invoice)
         }
 

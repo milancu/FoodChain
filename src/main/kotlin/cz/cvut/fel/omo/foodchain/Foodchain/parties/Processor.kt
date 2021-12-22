@@ -50,6 +50,7 @@ class Processor(subjectName : String,  location : String, amountOfMoney : Double
         for(supply in cropSupplies){
             products.add(createProduct(supply))
         }
+        cropSupplies = ArrayList()
     }
 
     fun payForInvoice(invoice: Invoice){

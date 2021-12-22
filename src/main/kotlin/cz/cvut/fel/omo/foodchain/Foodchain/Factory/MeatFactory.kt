@@ -35,13 +35,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
     }
 
     fun transportProducts() {
-        println("/////////////////////////////////////////////")
-        println("Aktualne v meetfactory typu produktu k odvezeni: " + productToSell.size)
         Transport.takeProducts(productToSell)
-        println("Aktualne prevezeno produktu z MeatFactory: " + Transport.products.size)
         productToSell = ArrayList()
-        println("/////////////////////////////////////////////")
-        println()
     }
 
     fun payForInvoice(invoice: Invoice) {

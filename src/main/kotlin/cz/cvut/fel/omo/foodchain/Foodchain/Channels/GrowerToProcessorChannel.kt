@@ -5,6 +5,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 
 class GrowerToProcessorChannel : Channel{
 
@@ -40,8 +41,10 @@ class GrowerToProcessorChannel : Channel{
 
     override fun runSimulation(){
         for(grower in growers){
-            Request.requestTransportToProcessor(grower, processors.get(0), grower.getSupplies())
+            var processor : Processor = processors.get( (0..processors.size-1).random() )
+            Request.requestTransportToProcessor(grower, processor, grower.getSupplies())
             grower.harvest();
+            processor.payDebts()
         }
     }
 

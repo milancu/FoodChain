@@ -39,11 +39,12 @@ class ProcessorToRetailerChannel : Channel{
 
     override fun runSimulation(){
         for(processor in processors){
-            Request.requestTransportToWarehouse(processor, retailers.get(0))
+            var retailer : Retailer = retailers.get( (0..retailers.size-1).random() )
+            Request.requestTransportToWarehouse(processor, retailer)
             println("Priprava k vytvareni vyrobku")
             processor.processProduct()
             println("Produkty vytvoreny")
-            retailers.get(0).payDebts()
+            retailer.payDebts()
         }
     }
 

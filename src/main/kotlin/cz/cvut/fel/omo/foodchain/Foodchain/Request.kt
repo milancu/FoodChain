@@ -132,7 +132,7 @@ class Request {
             var invoice : Invoice = Invoice(customer, retailer, money, InvoiceType.SHOPPING)
             invoice.attach(Report)
             invoice.notifyUpdate()
-            println("Customer: " + customer.getIdentifier() + " utratil: " + money + " za nakupy a ma: " + customer.getAmountOfMoney()) // TODO CHYBA
+            println("Customer: " + customer.getIdentifier() + " utratil: " + money + " za nakupy a ma: " + customer.getAmountOfMoney())
             customer.payForShopping(invoice)
         }
 

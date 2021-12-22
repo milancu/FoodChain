@@ -4,11 +4,11 @@ class Config {
     companion object params {
         // main config
         const val WEEKS : Int = 5
-        const val GROWERS : Int = 1
-        const val FARMERS : Int = 1
-        const val PROCESSORS : Int = 1
-        const val CUSTOMERS : Int = 10000
-        const val RETAILERS : Int = 1
+        const val GROWERS : Int = 3
+        const val FARMERS : Int = 3
+        const val PROCESSORS : Int = 3
+        const val CUSTOMERS : Int = 1000
+        const val RETAILERS : Int = 3
 
         const val STANDARD_SHOP_SIZE : Int = 10
         const val VEGAN_SHOP_SIZE : Int = 2
@@ -42,8 +42,5 @@ class Config {
         const val IDENTIFIER_LENGTH = 8;
         const val LOCATION_LENGTH = 16;
         const val ALPHANUMERIC_REGEX = "[a-zA-Z0-9]+";
-
-        //TODO other global settings
-
     }
 }

@@ -88,7 +88,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
             for (i in (1..value)) {
                 val newAnimal: BaseAnimal = generator.generateAnimal()
                 animals.add(newAnimal)
-                this.amountOfMoney -= newAnimal.getWeight() // todo letmej typ
+                this.amountOfMoney -= newAnimal.getWeight()
             }
         }
     }

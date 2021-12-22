@@ -27,7 +27,7 @@ class GrowerToFarmerChannel : Channel{
     }
 
     override fun printStats() {
-        TODO("Not yet implemented")
+        // Zde se neaktualizuji podstatne statistiky, jednalo by se o redundanci
     }
 
     fun findCorrectSupplier() : Grower{

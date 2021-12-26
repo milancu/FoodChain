@@ -6,6 +6,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Iterator.AnimalToProcess
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Component
 
 class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
@@ -14,7 +16,11 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     private var animals: ArrayList<BaseAnimal> = setInitialAnimals()
     private var animalsToProcessing: ArrayList<BaseAnimal> = ArrayList();
     private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
+
+    @Autowired
     private val butcher : Butcher = Butcher()
+
+    @Autowired
     private val animalToProcess : AnimalToProcess = AnimalToProcess() //ITERATOR
 
     fun setInitialResources(): ArrayList<Crop> {

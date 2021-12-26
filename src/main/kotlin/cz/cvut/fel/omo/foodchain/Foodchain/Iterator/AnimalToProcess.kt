@@ -2,11 +2,11 @@ package cz.cvut.fel.omo.foodchain.Foodchain.Iterator
 
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 
-class AnimalToProcess : CustomIterator {
+class AnimalToProcess() : CustomIterator {
 
     private var animalList : ArrayList<BaseAnimal>;
 
-    constructor() {
+    init {
         this.animalList = ArrayList<BaseAnimal>()
     }
 

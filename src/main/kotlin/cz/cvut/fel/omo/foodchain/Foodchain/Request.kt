@@ -9,6 +9,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
+/**
+ * Request
+ *
+ * @constructor Create empty Request
+ */
 class Request {
     companion object requestService {
 

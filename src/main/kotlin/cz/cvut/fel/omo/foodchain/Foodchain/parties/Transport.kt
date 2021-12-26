@@ -6,6 +6,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 import kotlin.math.cos
 
+/**
+ * Transport
+ *
+ * @constructor Create empty Transport
+ */
 class Transport{
     companion object TransportCompany {
 

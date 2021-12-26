@@ -7,8 +7,19 @@ import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 
+/**
+ * Butcher
+ *
+ * @constructor Create empty Butcher
+ */
 class Butcher {
 
+    /**
+     * Proccess animal
+     *
+     * @param animals
+     * @return
+     */
     fun proccessAnimal(animals: ArrayList<BaseAnimal>): ArrayList<Meat> {
         var meatList = ArrayList<Meat>()
 
@@ -63,6 +74,12 @@ class Butcher {
         return meatList
     }
 
+    /**
+     * Proccess animal u s i n g i t e r a t o r
+     *
+     * @param animals
+     * @return
+     */
     fun proccessAnimalUSINGITERATOR(animals: AnimalToProcess): ArrayList<Meat> { //ITERATOR
         var meatList = ArrayList<Meat>()
 

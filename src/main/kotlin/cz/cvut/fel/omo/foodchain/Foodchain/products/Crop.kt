@@ -8,6 +8,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import java.util.*
 
+/**
+ * Crop
+ *
+ * @constructor Create empty Crop
+ */
 class Crop : Subject {
 
     private var observers: ArrayList<Observer> = ArrayList()
@@ -30,50 +35,107 @@ class Crop : Subject {
         this.growthTime = growthTime
     }
 
+    /**
+     * Get u u i d
+     *
+     * @return
+     */
     fun getUUID(): UUID {
         return this.uuid
     }
 
+    /**
+     * Get capacity
+     *
+     * @return
+     */
     fun getCapacity(): Int {
         return this.amount
     }
 
+    /**
+     * Get name
+     *
+     * @return
+     */
     fun getName(): CropName {
         return name
     }
 
+    /**
+     * Get amount
+     *
+     * @return
+     */
     fun getAmount(): Int {
         return amount
     }
 
+    /**
+     * Get production cost
+     *
+     * @return
+     */
     fun getProductionCost(): Double {
         return productionCost
     }
 
+    /**
+     * Get shop price
+     *
+     * @return
+     */
     fun getShopPrice(): Double {
         return shopPrice
     }
 
+    /**
+     * Get type
+     *
+     * @return
+     */
     fun getType(): CropType {
         return type
     }
 
+    /**
+     * Get growth
+     *
+     * @return
+     */
     fun getGrowth(): Int {
         return growthTime
     }
 
+    /**
+     * Set amount
+     *
+     * @param value
+     */
     fun setAmount(value: Int) {
         this.amount = value
     }
 
+    /**
+     * Decrease amount
+     *
+     */
     fun decreaseAmount() {
         this.amount -= 5
     }
 
+    /**
+     * Reset crop
+     *
+     */
     fun resetCrop() {
         growthTime = 0
     }
 
+    /**
+     * Grow
+     *
+     */
     fun grow() {
         growthTime++;
     }
@@ -92,6 +154,10 @@ class Crop : Subject {
         }
     }
 
+    /**
+     * Notify was harvested
+     *
+     */
     fun notifyWasHarvested(){
         for (i in observers) {
             i.update(this.uuid, "CROP HAS BEEN HARVESTED IN WEEK: " + Week.acutalWeek)

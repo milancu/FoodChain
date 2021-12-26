@@ -7,6 +7,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Butcher
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
 
+/**
+ * Farmer to meat factory channel
+ *
+ * @constructor Create empty Farmer to meat factory channel
+ */
 class FarmerToMeatFactoryChannel : Channel{
 
     private var farmers : ArrayList<Farmer>
@@ -47,10 +52,20 @@ class FarmerToMeatFactoryChannel : Channel{
         println()
     }
 
+    /**
+     * Get farmers
+     *
+     * @return
+     */
     fun getFarmers() : ArrayList<Farmer>{
         return farmers
     }
 
+    /**
+     * Get meat factory
+     *
+     * @return
+     */
     fun getMeatFactory() : MeatFactory{
         return meatFactory
     }

@@ -5,6 +5,15 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
+/**
+ * Retailer
+ *
+ * @constructor
+ *
+ * @param subjectName
+ * @param location
+ * @param amountOfMoney
+ */
 class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
 
@@ -14,6 +23,11 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
     private var productTypeMap: HashMap<ProductType, Int> = productMapInit()
 
 
+    /**
+     * Product map init
+     *
+     * @return
+     */
     fun productMapInit(): HashMap<ProductType, Int> {
         var prepareMap: HashMap<ProductType, Int> = HashMap<ProductType, Int>()
         prepareMap.put(ProductType.CEREALS, 0)
@@ -33,6 +47,11 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         return prepareMap
     }
 
+    /**
+     * Buy products
+     *
+     * @param products
+     */
     fun buyProducts(products: ArrayList<Product>) {
         println("Do warehouse privezeno: " + products.size)
         warehouse.takeIn(products)
@@ -40,6 +59,11 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         println()
     }
 
+    /**
+     * Pay for invoice
+     *
+     * @param invoice
+     */
     fun payForInvoice(invoice: Invoice) {
         if (amountOfMoney >= invoice.getPrice()) {
             invoice.payInvoice()
@@ -55,6 +79,10 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         println()
     }
 
+    /**
+     * Pay debts
+     *
+     */
     fun payDebts() {
         var toRemove: ArrayList<Invoice> = ArrayList()
         for (invoice in unpaidInvoices) {
@@ -71,6 +99,10 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         }
     }
 
+    /**
+     * Vacate warehouse
+     *
+     */
     fun vacateWarehouse() {
         for (product in warehouse.getStoragedProducts()) {
             var count: Int? = productTypeMap.get(product.getProductType())
@@ -82,6 +114,10 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         }
     }
 
+    /**
+     * Fill in
+     *
+     */
     fun fillIn() {
         for (product in warehouse.getStoragedProducts()) {
             if (productMapInit().get(product.getProductType())!! < 10) {
@@ -91,6 +127,11 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         }
     }
 
+    /**
+     * Fill in
+     *
+     * @param type
+     */
     fun fillIn(type: ProductType) {
         var newProducts: ArrayList<Product> = warehouse.getSpecificProducts(type)
         for (product in newProducts) {
@@ -98,18 +139,37 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         }
     }
 
+    /**
+     * Get stock size
+     *
+     * @return
+     */
     fun getStockSize(): Int {
         return availableProducts.size
     }
 
+    /**
+     * Get warehouse stock size
+     *
+     * @return
+     */
     fun getWarehouseStockSize(): Int {
         return warehouse.getStockSize()
     }
 
+    /**
+     * Get available products
+     *
+     * @return
+     */
     fun getAvailableProducts() : ArrayList<Product>{
         return availableProducts
     }
 
+    /**
+     * Warehouse management payment
+     *
+     */
     fun warehouseManagementPayment(){
         this.amountOfMoney -= warehouse.warehouseManagementPayment()
     }

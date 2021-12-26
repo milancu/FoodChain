@@ -4,6 +4,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Config
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
+/**
+ * Basic strategy
+ *
+ * @constructor Create empty Basic strategy
+ */
 class BasicStrategy : CustomerStrategy {
     override fun execute(products : ArrayList<Product>) : Double{
         var spended : Double = 0.0
@@ -26,12 +31,23 @@ class BasicStrategy : CustomerStrategy {
         return spended
     }
 
+    /**
+     * Remove products
+     *
+     * @param original
+     * @param toRemove
+     */
     fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>){
         for(product in toRemove){
             original.remove(product)
         }
     }
 
+    /**
+     * Product map init
+     *
+     * @return
+     */
     fun productMapInit(): HashMap<ProductType, Int> {
         var prepareMap: HashMap<ProductType, Int> = HashMap<ProductType, Int>()
         prepareMap.put(ProductType.CEREALS, 0)

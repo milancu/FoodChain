@@ -5,6 +5,15 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Field
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 
 
+/**
+ * Grower
+ *
+ * @constructor
+ *
+ * @param subjectName
+ * @param location
+ * @param amountOfMoney
+ */
 class Grower(subjectName : String, location : String, amountOfMoney : Double)
     : BaseParty(subjectName, location, amountOfMoney) {
 
@@ -21,6 +30,10 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
         return generator.generateCrops()
     }
 
+    /**
+     * Raise field
+     *
+     */
     fun raiseField(){
         for(field in fields){
             if(amountOfMoney >= field.getCrop().getProductionCost()){
@@ -35,6 +48,10 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
         }
     }
 
+    /**
+     * Harvest
+     *
+     */
     fun harvest(){
         var harvestedCrop : ArrayList<Crop> = ArrayList()
         for(field in fields){
@@ -58,16 +75,30 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
         println()
     }
 
+    /**
+     * Transport supplies
+     *
+     */
     fun transportSupplies(){
         Transport.TransportCompany.takeCropSupplies(supplies)
         // TODO odecet za dopravu, faktura...
         supplies = ArrayList();
     }
 
+    /**
+     * Get supplies
+     *
+     * @return
+     */
     fun getSupplies() : ArrayList<Crop> {
         return supplies
     }
 
+    /**
+     * Add emergency crop
+     *
+     * @param crop
+     */
     fun addEmergencyCrop(crop : Crop){
         supplies.add(crop)
     }

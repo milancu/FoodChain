@@ -5,6 +5,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Customer
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 
+/**
+ * Retailer to customer channel
+ *
+ * @constructor Create empty Retailer to customer channel
+ */
 class RetailerToCustomerChannel : Channel{
 
     private var retailers : ArrayList<Retailer>
@@ -55,6 +60,11 @@ class RetailerToCustomerChannel : Channel{
         }
     }
 
+    /**
+     * Add customer
+     *
+     * @param customer
+     */
     fun addCustomer(customer : Customer){
         customers.add(customer)
     }

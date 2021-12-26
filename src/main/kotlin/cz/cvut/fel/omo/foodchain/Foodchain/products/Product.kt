@@ -6,6 +6,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import java.util.*
 
+/**
+ * Product
+ *
+ * @constructor Create empty Product
+ */
 open class Product : Subject {
 
     private var observers: ArrayList<Observer> = ArrayList()
@@ -39,26 +44,56 @@ open class Product : Subject {
         this.createdAt = Week.acutalWeek
     }
 
+    /**
+     * Get create at
+     *
+     * @return
+     */
     fun getCreateAt() : Int {
         return this.createdAt
     }
 
+    /**
+     * Get origin id
+     *
+     * @return
+     */
     open fun getOriginId(): UUID {
         return this.origin
     }
 
+    /**
+     * Get product type
+     *
+     * @return
+     */
     open fun getProductType(): ProductType {
         return this.productType
     }
 
+    /**
+     * Get shop price
+     *
+     * @return
+     */
     open fun getShopPrice(): Double {
         return shopPrice
     }
 
+    /**
+     * Get amount
+     *
+     * @return
+     */
     open fun getAmount(): Int {
         return amount
     }
 
+    /**
+     * Get name
+     *
+     * @return
+     */
     open fun getName() : String{
         return this.name
     }
@@ -78,6 +113,11 @@ open class Product : Subject {
         }
     }
 
+    /**
+     * Decrease amount
+     *
+     * @param value
+     */
     fun decreaseAmount(value : Int){
         this.amount -= value
     }

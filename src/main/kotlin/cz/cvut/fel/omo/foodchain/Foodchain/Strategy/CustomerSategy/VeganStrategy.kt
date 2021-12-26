@@ -4,6 +4,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Config
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
+/**
+ * Vegan strategy
+ *
+ * @constructor Create empty Vegan strategy
+ */
 class VeganStrategy : CustomerStrategy {
     override fun execute(products : ArrayList<Product>) : Double{
         var spended : Double = 0.0
@@ -25,6 +30,12 @@ class VeganStrategy : CustomerStrategy {
         return spended
     }
 
+    /**
+     * Remove products
+     *
+     * @param original
+     * @param toRemove
+     */
     fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>){
         for(product in toRemove){
             original.remove(product)

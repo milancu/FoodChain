@@ -8,6 +8,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Transport
 import java.util.*
 
+/**
+ * Invoice
+ *
+ * @constructor Create empty Invoice
+ */
 class Invoice : Subject {
 
     private var observers: ArrayList<Observer> = ArrayList()
@@ -31,34 +36,73 @@ class Invoice : Subject {
         this.createTime = Week.acutalWeek
     }
 
+    /**
+     * Get create time
+     *
+     * @return
+     */
     fun getCreateTime(): Int {
         return this.createTime
     }
 
+    /**
+     * Get subscriber
+     *
+     * @return
+     */
     fun getSubscriber(): BaseParty {
         return subscriber
     }
 
+    /**
+     * Get contractor
+     *
+     * @return
+     */
     fun getContractor(): BaseParty {
         return contractor
     }
 
+    /**
+     * Get price
+     *
+     * @return
+     */
     fun getPrice(): Double {
         return price
     }
 
+    /**
+     * Get note
+     *
+     * @return
+     */
     fun getNote(): InvoiceType {
         return note
     }
 
+    /**
+     * Get code
+     *
+     * @return
+     */
     fun getCode(): UUID {
         return code
     }
 
+    /**
+     * Is paid
+     *
+     * @return
+     */
     fun isPaid(): Boolean {
         return isPaid
     }
 
+    /**
+     * Pay invoice
+     *
+     */
     fun payInvoice() {
         this.paidTime = Week.acutalWeek
         isPaid = true
@@ -79,12 +123,20 @@ class Invoice : Subject {
         }
     }
 
+    /**
+     * Notify paid
+     *
+     */
     fun notifyPaid(){
         for (i in observers) {
             i.update(this.code, "INVOICE HAS BEEN PAID, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + this.price + ", in week:" + Week.acutalWeek)
         }
     }
 
+    /**
+     * Notify unpaid
+     *
+     */
     fun notifyUnpaid(){
         for (i in observers) {
             i.update(this.code, "INVOICE HAS NOT BEEN PAID, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + this.price)

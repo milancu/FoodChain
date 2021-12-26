@@ -7,6 +7,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.CropProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
+/**
+ * Vegetable crop strategy
+ *
+ * @constructor Create empty Vegetable crop strategy
+ */
 class VegetableCropStrategy : ProcessorCropStrategy {
     override fun execute(crop: Crop): Product {
         when (crop.getName()) {
@@ -46,6 +51,12 @@ class VegetableCropStrategy : ProcessorCropStrategy {
         }
     }
 
+    /**
+     * Create from tomato
+     *
+     * @param crop
+     * @return
+     */
     fun createFromTomato(crop: Crop): Product {
         var random: Int = (1..4).random()
         when (random) {
@@ -113,6 +124,12 @@ class VegetableCropStrategy : ProcessorCropStrategy {
         }
     }
 
+    /**
+     * Create from cucumber
+     *
+     * @param crop
+     * @return
+     */
     fun createFromCucumber(crop: Crop): Product {
         var random: Int = (1..2).random()
         when (random) {
@@ -149,6 +166,12 @@ class VegetableCropStrategy : ProcessorCropStrategy {
         }
     }
 
+    /**
+     * Create from onion
+     *
+     * @param crop
+     * @return
+     */
     fun createFromOnion(crop: Crop): Product {
         var random: Int = (1..2).random()
         when (random) {
@@ -185,6 +208,12 @@ class VegetableCropStrategy : ProcessorCropStrategy {
         }
     }
 
+    /**
+     * Create from potato
+     *
+     * @param crop
+     * @return
+     */
     fun createFromPotato(crop: Crop): Product {
         var random: Int = (1..3).random()
         when (random) {

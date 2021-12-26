@@ -4,6 +4,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Factory.MeatFactory
 import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 
+/**
+ * Meat factory to retailer channel
+ *
+ * @constructor Create empty Meat factory to retailer channel
+ */
 class MeatFactoryToRetailerChannel : Channel{
     private var retailers : ArrayList<Retailer>
     private var meatFactory : MeatFactory

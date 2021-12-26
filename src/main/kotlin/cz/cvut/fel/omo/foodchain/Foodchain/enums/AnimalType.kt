@@ -5,6 +5,11 @@ import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
 import java.util.*
 
+/**
+ * Animal type
+ *
+ * @constructor Create empty Animal type
+ */
 enum class AnimalType {
 
     COW,

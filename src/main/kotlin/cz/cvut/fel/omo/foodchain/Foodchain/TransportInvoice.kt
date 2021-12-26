@@ -7,6 +7,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Transport
 import java.util.*
 
+/**
+ * Transport invoice
+ *
+ * @constructor Create empty Transport invoice
+ */
 class TransportInvoice : Subject {
 
     private var observers: ArrayList<Observer> = ArrayList()
@@ -30,34 +35,73 @@ class TransportInvoice : Subject {
         this.createTime = Week.acutalWeek
     }
 
+    /**
+     * Get create time
+     *
+     * @return
+     */
     fun getCreateTime(): Int {
         return this.createTime
     }
 
+    /**
+     * Get subscriber
+     *
+     * @return
+     */
     fun getSubscriber(): BaseParty {
         return subscriber
     }
 
+    /**
+     * Get contractor
+     *
+     * @return
+     */
     fun getContractor(): Transport.TransportCompany {
         return contractor
     }
 
+    /**
+     * Get price
+     *
+     * @return
+     */
     fun getPrice(): Double {
         return price
     }
 
+    /**
+     * Get note
+     *
+     * @return
+     */
     fun getNote(): InvoiceType {
         return note
     }
 
+    /**
+     * Get code
+     *
+     * @return
+     */
     fun getCode(): UUID {
         return code
     }
 
+    /**
+     * Is paid
+     *
+     * @return
+     */
     fun isPaid(): Boolean {
         return isPaid
     }
 
+    /**
+     * Pay invoice
+     *
+     */
     fun payInvoice() {
         this.paidTime = Week.acutalWeek
         isPaid = true
@@ -81,6 +125,10 @@ class TransportInvoice : Subject {
         }
     }
 
+    /**
+     * Notify paid
+     *
+     */
     fun notifyPaid() {
         for (i in observers) {
             i.update(
@@ -90,6 +138,10 @@ class TransportInvoice : Subject {
         }
     }
 
+    /**
+     * Notify unpaid
+     *
+     */
     fun notifyUnpaid() {
         for (i in observers) {
             i.update(

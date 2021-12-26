@@ -7,6 +7,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.CropProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
+/**
+ * Cereal crop strategy
+ *
+ * @constructor Create empty Cereal crop strategy
+ */
 class CerealCropStrategy : ProcessorCropStrategy {
     override fun execute(crop: Crop): Product {
         when (crop.getName()) {
@@ -20,6 +25,12 @@ class CerealCropStrategy : ProcessorCropStrategy {
         }
     }
 
+    /**
+     * Create from grain
+     *
+     * @param crop
+     * @return
+     */
     fun createFromGrain(crop: Crop): Product {
         val random: Int = (1..2).random()
         when (random) {
@@ -54,6 +65,12 @@ class CerealCropStrategy : ProcessorCropStrategy {
         }
     }
 
+    /**
+     * Prepare for beer
+     *
+     * @param crop
+     * @return
+     */
     fun prepareForBeer(crop: Crop): Product {
         val product = CropProduct(
             "Beer",
@@ -69,6 +86,12 @@ class CerealCropStrategy : ProcessorCropStrategy {
         return product
     }
 
+    /**
+     * Create from corn
+     *
+     * @param crop
+     * @return
+     */
     fun createFromCorn(crop: Crop): Product {
         val random: Int = (1..3).random()
         when (random) {
@@ -117,6 +140,12 @@ class CerealCropStrategy : ProcessorCropStrategy {
         }
     }
 
+    /**
+     * Create from oats
+     *
+     * @param crop
+     * @return
+     */
     fun createFromOats(crop: Crop): Product {
         val random: Int = (1..2).random()
         when (random) {

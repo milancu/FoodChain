@@ -6,6 +6,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 
+/**
+ * Processor to retailer channel
+ *
+ * @constructor Create empty Processor to retailer channel
+ */
 class ProcessorToRetailerChannel : Channel{
 
     private var processors : ArrayList<Processor>
@@ -49,11 +54,20 @@ class ProcessorToRetailerChannel : Channel{
     }
 
 
-
+    /**
+     * Get retailers
+     *
+     * @return
+     */
     fun getRetailers() : ArrayList<Retailer>{
         return retailers
     }
 
+    /**
+     * Add retailer
+     *
+     * @param retailer
+     */
     fun addRetailer(retailer: Retailer){
         retailers.add(retailer)
     }

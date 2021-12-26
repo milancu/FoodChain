@@ -7,6 +7,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 
+/**
+ * Grower to processor channel
+ *
+ * @constructor Create empty Grower to processor channel
+ */
 class GrowerToProcessorChannel : Channel{
 
     private var growers : ArrayList<Grower>
@@ -48,18 +53,38 @@ class GrowerToProcessorChannel : Channel{
         }
     }
 
+    /**
+     * Add grower
+     *
+     * @param grower
+     */
     fun addGrower(grower : Grower){
         growers.add(grower)
     }
 
+    /**
+     * Add proccessor
+     *
+     * @param processor
+     */
     fun addProccessor(processor: Processor){
         processors.add(processor)
     }
 
+    /**
+     * Get processors
+     *
+     * @return
+     */
     fun getProcessors() : ArrayList<Processor>{
         return processors
     }
 
+    /**
+     * Get growers
+     *
+     * @return
+     */
     fun getGrowers() : ArrayList<Grower>{
         return growers
     }

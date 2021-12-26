@@ -2,6 +2,11 @@ package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
 
+/**
+ * Config
+ *
+ * @constructor Create empty Config
+ */
 class Config {
     companion object params {
         // main config

@@ -2,6 +2,11 @@ package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Channels.*
 
+/**
+ * Simulation
+ *
+ * @constructor Create empty Simulation
+ */
 class Simulation {
 
     private var channelG2P : GrowerToProcessorChannel = GrowerToProcessorChannel()
@@ -13,6 +18,10 @@ class Simulation {
 
     private var channels : ArrayList<Channel> = ArrayList()
 
+    /**
+     * Run week
+     *
+     */
     fun runWeek(){
         runSimulation()
         printStats()

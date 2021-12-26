@@ -2,6 +2,12 @@ package cz.cvut.fel.omo.foodchain.Foodchain.enums
 
 import java.util.*
 
+/**
+ * Crop name
+ *
+ * @property shopPrice
+ * @constructor Create empty Crop name
+ */
 enum class CropName (val shopPrice: Double){
     APPLE( 45.0),
     BARLEY(10.0),

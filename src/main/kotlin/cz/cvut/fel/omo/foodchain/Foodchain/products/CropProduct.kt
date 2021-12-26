@@ -6,7 +6,18 @@ import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
 import java.util.*
 
-//@Component
+/**
+ * Crop product
+ *
+ * @property name
+ * @property type
+ * @property shopPrice
+ * @property productionCost
+ * @property amount
+ * @property unit
+ * @property origin
+ * @constructor Create empty Crop product
+ *///@Component
 class CropProduct(
     private var name: String,
 

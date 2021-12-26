@@ -11,6 +11,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 import kotlin.collections.ArrayList
 
+/**
+ * Meat strategy
+ *
+ * @constructor Create empty Meat strategy
+ */
 class MeatStrategy : ProcessorMeatStrategy {
 
     override fun execute(meat: Meat): ArrayList<Product> {
@@ -30,6 +35,12 @@ class MeatStrategy : ProcessorMeatStrategy {
         }
     }
 
+    /**
+     * Execute beef
+     *
+     * @param meat
+     * @return
+     */
     fun executeBeef(meat: Meat): ArrayList<Product> {
         var meats = ArrayList<Product>()
         var Dumpling = MeatProduct(
@@ -89,6 +100,12 @@ class MeatStrategy : ProcessorMeatStrategy {
         return meats;
     }
 
+    /**
+     * Execute chicken
+     *
+     * @param meat
+     * @return
+     */
     fun executeChicken(meat: Meat): ArrayList<Product> {
         var meats = ArrayList<Product>()
         var ChickenThigh = MeatProduct(
@@ -138,6 +155,12 @@ class MeatStrategy : ProcessorMeatStrategy {
         return meats;
     }
 
+    /**
+     * Execute pork
+     *
+     * @param meat
+     * @return
+     */
     fun executePork(meat: Meat): ArrayList<Product> {
         var meats = ArrayList<Product>()
         var PorkDumpling = MeatProduct(
@@ -199,6 +222,12 @@ class MeatStrategy : ProcessorMeatStrategy {
         return meats;
     }
 
+    /**
+     * Execute fish
+     *
+     * @param meat
+     * @return
+     */
     fun executeFish(meat: Meat): ArrayList<Product> {
         var meats = ArrayList<Product>()
         var carp = MeatProduct(

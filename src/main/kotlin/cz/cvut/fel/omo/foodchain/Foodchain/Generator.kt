@@ -10,8 +10,18 @@ import cz.cvut.fel.omo.foodchain.Foodchain.parties.*
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import kotlin.random.Random.Default.nextInt
 
+/**
+ * Generator
+ *
+ * @constructor Create empty Generator
+ */
 class Generator {
 
+    /**
+     * Generate animal
+     *
+     * @return
+     */
     public fun generateAnimal(): BaseAnimal {
         var animal = BaseAnimal(AnimalType.getAnimal())
         animal.attach(Report)
@@ -19,6 +29,11 @@ class Generator {
         return animal
     }
 
+    /**
+     * Generate animals
+     *
+     * @return
+     */
     public fun generateAnimals(): ArrayList<BaseAnimal> {
         var listOfAnimals = ArrayList<BaseAnimal>();
 
@@ -34,6 +49,11 @@ class Generator {
         return field
     }
 
+    /**
+     * Generate fields
+     *
+     * @return
+     */
     public fun generateFields(): ArrayList<Field> {
         var listOfField = ArrayList<Field>();
         for (i in 1..(Config.MIN_FIELDS..Config.MAX_FIELDS).random()) {
@@ -42,6 +62,12 @@ class Generator {
         return listOfField
     }
 
+    /**
+     * Generate crop
+     *
+     * @param capacity
+     * @return
+     */
     public fun generateCrop(capacity: Int): Crop {
         var cropName = CropName.getCropName()
         var type = setType(cropName)
@@ -88,6 +114,11 @@ class Generator {
         }
     }
 
+    /**
+     * Generate crops
+     *
+     * @return
+     */
     public fun generateCrops(): ArrayList<Crop> {
         var listOfCrop = ArrayList<Crop>();
         for (i in 1..(Config.MIN_DEAFAULT_CROPTYPES..Config.MAX_DEFAULT_CROPTYPES).random()) {
@@ -96,6 +127,11 @@ class Generator {
         return listOfCrop
     }
 
+    /**
+     * Generate feeding for animal
+     *
+     * @return
+     */
     public fun generateFeedingForAnimal(): ArrayList<Crop> {
         var listOfCrop = ArrayList<Crop>();
         for (i in 1..(Config.MIN_DEAFAULT_CROPTYPES..Config.MAX_DEFAULT_CROPTYPES).random()) {
@@ -124,6 +160,11 @@ class Generator {
         return Customer(base.getSubjectName(), base.getLocation(), money)
     }
 
+    /**
+     * Generate customers
+     *
+     * @return
+     */
     fun generateCustomers() : ArrayList<Customer>{
         val customers: ArrayList<Customer> = ArrayList()
         for (i in 1..Config.CUSTOMERS) {
@@ -152,11 +193,21 @@ class Generator {
         return Retailer(base.getSubjectName(), base.getLocation(), base.getAmountOfMoney())
     }
 
+    /**
+     * Generate factory
+     *
+     * @return
+     */
     public fun generateFactory() : MeatFactory{
         val base: BaseParty = generateNewParty()
         return MeatFactory(base.getSubjectName(), base.getLocation(), base.getAmountOfMoney())
     }
 
+    /**
+     * Generate growers
+     *
+     * @return
+     */
     public fun generateGrowers(): ArrayList<Grower> {
         val growers: ArrayList<Grower> = ArrayList()
         for (i in 1..Config.GROWERS) {
@@ -165,6 +216,11 @@ class Generator {
         return growers;
     }
 
+    /**
+     * Generate farmers
+     *
+     * @return
+     */
     public fun generateFarmers(): ArrayList<Farmer> {
         val farmers: ArrayList<Farmer> = ArrayList()
         for (i in 1..Config.FARMERS) {
@@ -173,6 +229,11 @@ class Generator {
         return farmers;
     }
 
+    /**
+     * Generate processors
+     *
+     * @return
+     */
     public fun generateProcessors(): ArrayList<Processor> {
         val processors: ArrayList<Processor> = ArrayList()
         for (i in 1..Config.PROCESSORS) {
@@ -181,6 +242,11 @@ class Generator {
         return processors
     }
 
+    /**
+     * Generate retailers
+     *
+     * @return
+     */
     public fun generateRetailers(): ArrayList<Retailer> {
         val retailers: ArrayList<Retailer> = ArrayList()
         for (i in 1..Config.RETAILERS) {

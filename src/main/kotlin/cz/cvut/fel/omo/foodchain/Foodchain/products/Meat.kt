@@ -6,6 +6,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import java.util.*
 
+/**
+ * Meat
+ *
+ * @constructor Create empty Meat
+ */
 class Meat : Subject {
 
     private var observers: ArrayList<Observer> = ArrayList()
@@ -30,23 +35,48 @@ class Meat : Subject {
         this.origin = origin
     }
 
+    /**
+     * Get origin i d
+     *
+     * @return
+     */
     fun getOriginID(): UUID {
         return this.origin
     }
 
+    /**
+     * Get type
+     *
+     * @return
+     */
     fun getType(): MeatType {
         return this.type
     }
 
 
+    /**
+     * Get shop price
+     *
+     * @return
+     */
     fun getShopPrice(): Double {
         return this.shopPrice
     }
 
+    /**
+     * Get production cost
+     *
+     * @return
+     */
     fun getProductionCost(): Double {
         return this.productionCost
     }
 
+    /**
+     * Get amount
+     *
+     * @return
+     */
     fun getAmount(): Double {
         return this.amount
     }

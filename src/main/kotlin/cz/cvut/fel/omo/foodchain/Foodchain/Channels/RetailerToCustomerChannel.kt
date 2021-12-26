@@ -5,14 +5,17 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Customer
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 
-class RetailerToCustomerChannel : Channel{
+/**
+ * Retailer to customer channel
+ *
+ * @constructor Create empty Retailer to customer channel
+ */
+class RetailerToCustomerChannel(private var retailers: ArrayList<Retailer>) : Channel{
 
-    private var retailers : ArrayList<Retailer>
     private var customers : ArrayList<Customer>
-    var generator : Generator = Generator()
+    private var generator : Generator = Generator()
 
-    constructor(retailers : ArrayList<Retailer>){
-        this.retailers = retailers
+    init {
         this.customers = generator.generateCustomers()
     }
 
@@ -20,7 +23,7 @@ class RetailerToCustomerChannel : Channel{
         payForWarehouse()
         fillShops()
         for(customer in customers){
-            var retailer : Retailer = retailers.get( (0..retailers.size-1).random() )
+            val retailer : Retailer = retailers[(0 until retailers.size).random()]
             customer.receiveSalary()
             Request.requestGoShopping(retailer, customer)
             customer.payDebts()
@@ -55,6 +58,11 @@ class RetailerToCustomerChannel : Channel{
         }
     }
 
+    /**
+     * Add customer
+     *
+     * @param customer
+     */
     fun addCustomer(customer : Customer){
         customers.add(customer)
     }

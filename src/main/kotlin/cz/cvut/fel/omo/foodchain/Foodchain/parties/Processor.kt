@@ -6,7 +6,16 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
-class Processor(subjectName : String,  location : String, amountOfMoney : Double)
+/**
+ * Processor
+ *
+ * @constructor
+ *
+ * @param subjectName
+ * @param location
+ * @param amountOfMoney
+ */
+class Processor(subjectName : String, location : String, amountOfMoney : Double)
     : BaseParty(subjectName,  location, amountOfMoney) {
 
     private val cerealStrategy : CerealCropStrategy = CerealCropStrategy()
@@ -19,7 +28,13 @@ class Processor(subjectName : String,  location : String, amountOfMoney : Double
     private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
     private var products : ArrayList<Product> = ArrayList()
 
-    fun createProduct(crop : Crop) : Product {
+    /**
+     * Create product
+     *
+     * @param crop
+     * @return
+     */
+    private fun createProduct(crop : Crop) : Product {
         val context : CropContext
         when(crop.getType()){
             CropType.CEREAL -> {
@@ -46,6 +61,10 @@ class Processor(subjectName : String,  location : String, amountOfMoney : Double
         }
     }
 
+    /**
+     * Process product
+     *
+     */
     fun processProduct(){
         for(supply in cropSupplies){
             products.add(createProduct(supply))
@@ -53,6 +72,11 @@ class Processor(subjectName : String,  location : String, amountOfMoney : Double
         cropSupplies = ArrayList()
     }
 
+    /**
+     * Pay for invoice
+     *
+     * @param invoice
+     */
     fun payForInvoice(invoice: Invoice){
         if(amountOfMoney >= invoice.getPrice()){
             invoice.payInvoice()
@@ -67,14 +91,16 @@ class Processor(subjectName : String,  location : String, amountOfMoney : Double
         }
     }
 
+    /**
+     * Pay debts
+     *
+     */
     fun payDebts() {
-        var toRemove: ArrayList<Invoice> = ArrayList()
+        val toRemove: ArrayList<Invoice> = ArrayList()
         for (invoice in unpaidInvoices) {
             if (amountOfMoney >= invoice.getPrice()) {
                 toRemove.add(invoice)
-                invoice.notifyPaid()
-                invoice.payInvoice()
-                amountOfMoney -= invoice.getPrice()
+                payForInvoice(invoice)
             }
         }
         for (invoice in toRemove) {
@@ -83,21 +109,40 @@ class Processor(subjectName : String,  location : String, amountOfMoney : Double
         }
     }
 
+    /**
+     * Take crop supplies
+     *
+     * @param supplies
+     */
     fun takeCropSupplies(supplies : ArrayList<Crop>){
         for(supply in supplies){
             cropSupplies.add(supply)
         }
     }
 
+    /**
+     * Transport products
+     *
+     */
     fun transportProducts(){
         Transport.takeProducts(products)
         products = ArrayList()
     }
 
+    /**
+     * Get stock supplies size
+     *
+     * @return
+     */
     fun getStockSuppliesSize() : Int{
         return cropSupplies.size
     }
 
+    /**
+     * Get stock products size
+     *
+     * @return
+     */
     fun getStockProductsSize() : Int{
         return products.size
     }

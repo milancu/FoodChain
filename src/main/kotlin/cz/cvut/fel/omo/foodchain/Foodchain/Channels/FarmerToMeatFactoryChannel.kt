@@ -1,23 +1,25 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Channels
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Config
 import cz.cvut.fel.omo.foodchain.Foodchain.Factory.MeatFactory
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 import cz.cvut.fel.omo.foodchain.Foodchain.Request
-import cz.cvut.fel.omo.foodchain.Foodchain.parties.Butcher
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
 
+/**
+ * Farmer to meat factory channel
+ *
+ * @constructor Create empty Farmer to meat factory channel
+ */
 class FarmerToMeatFactoryChannel : Channel{
 
     private var farmers : ArrayList<Farmer>
     private val meatFactory : MeatFactory
 
-    constructor(){
+    init {
         println("PHASE 1.1 - Farmers, buthcers and meaaFactory creation")
-        val generator : Generator = Generator()
+        val generator = Generator()
         this.farmers = generator.generateFarmers()
         this.meatFactory = generator.generateFactory()
-
         println("Farmers: " + farmers.size)
         println()
     }
@@ -47,10 +49,20 @@ class FarmerToMeatFactoryChannel : Channel{
         println()
     }
 
+    /**
+     * Get farmers
+     *
+     * @return
+     */
     fun getFarmers() : ArrayList<Farmer>{
         return farmers
     }
 
+    /**
+     * Get meat factory
+     *
+     * @return
+     */
     fun getMeatFactory() : MeatFactory{
         return meatFactory
     }

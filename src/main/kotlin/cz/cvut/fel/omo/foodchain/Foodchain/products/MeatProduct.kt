@@ -4,6 +4,19 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import java.util.*
 
 
+/**
+ * Meat product
+ *
+ * @property name
+ * @property typeOfMeat
+ * @property productType
+ * @property shopPrice
+ * @property productionCost
+ * @property amount
+ * @property unit
+ * @property origin
+ * @constructor Create empty Meat product
+ */
 class MeatProduct(
     private var name: String,
     private var typeOfMeat: String,

@@ -5,12 +5,17 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
 import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
-import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
-import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import java.util.*
 
 
-open class BaseAnimal : Subject {
+/**
+ * Base animal
+ *
+ * @constructor
+ *
+ * @param animalType
+ */
+open class BaseAnimal(animalType: AnimalType) : Subject {
 
     private var observers: ArrayList<Observer> = ArrayList()
 
@@ -23,7 +28,7 @@ open class BaseAnimal : Subject {
     private var animalType: AnimalType
     private var origin: UUID
 
-    constructor(animalType: AnimalType) {
+    init {
         when (animalType) {
             AnimalType.COW -> {
                 this.weight = (150000..600000).random().toDouble()
@@ -75,48 +80,65 @@ open class BaseAnimal : Subject {
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
             }
-            else -> throw Exception("unexpected type")
         }
     }
 
-    // funkce eat
-    fun eatFeed(owner: Farmer, feed: Crop) {
-        for (resource in owner.getResources()) {
-            if (resource.getName() == feed.getName() && resource.getAmount() >= feed.getAmount()) {
-                owner.decreaseResource(feed)
-            }
-        }
-        println("Dej jim nazrat vole, nemas zasoby hajzle")
-    }
-
+    /**
+     * Get age
+     *
+     * @return
+     */
     fun getAge(): Int {
         return this.age
     }
 
-    fun getFeed(): CropType {
-        return this.feed
-    }
-
+    /**
+     * Get weight
+     *
+     * @return
+     */
     fun getWeight(): Double {
         return this.weight
     }
 
+    /**
+     * Get name
+     *
+     * @return
+     */
     fun getName(): String {
         return this.animalName
     }
 
+    /**
+     * Get origin id
+     *
+     * @return
+     */
     fun getOriginId(): UUID {
         return this.origin
     }
 
+    /**
+     * Increase weight
+     *
+     */
     fun increaseWeight() {
         this.weight *= 1.1
     }
 
+    /**
+     * Decrease weight
+     *
+     */
     fun decreaseWeight() {
         this.weight *= 0.9
     }
 
+    /**
+     * Grow animal
+     *
+     */
     fun growAnimal() {
         this.age++
     }
@@ -138,6 +160,10 @@ open class BaseAnimal : Subject {
         }
     }
 
+    /**
+     * Notify animal was move to process
+     *
+     */
     fun notifyAnimalWasMoveToProcess(){
         for (i in observers) {
             i.update(
@@ -147,6 +173,10 @@ open class BaseAnimal : Subject {
         }
     }
 
+    /**
+     * Notify animal was processed
+     *
+     */
     fun notifyAnimalWasProcessed(){
         for (i in observers) {
             i.update(

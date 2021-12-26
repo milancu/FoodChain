@@ -4,22 +4,20 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Factory.MeatFactory
 import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 
-class MeatFactoryToRetailerChannel : Channel{
-    private var retailers : ArrayList<Retailer>
-    private var meatFactory : MeatFactory
-
-    constructor(meatFactory: MeatFactory, retailers: ArrayList<Retailer>) {
-        this.retailers = retailers
-        this.meatFactory = meatFactory
-    }
+/**
+ * Meat factory to retailer channel
+ *
+ * @constructor Create empty Meat factory to retailer channel
+ */
+class MeatFactoryToRetailerChannel(private var meatFactory: MeatFactory, private var retailers: ArrayList<Retailer>) : Channel{
 
     override fun runSimulation(){
-        var retailer : Retailer = retailers.get( (0..retailers.size-1).random() )
+        val retailer : Retailer = retailers[(0 until retailers.size).random()]
         println("CURRENT STATE MEATFACTORY / RETAILER - CHANNEL")
         println("Zahajeni zpracovani masnych produktu : " + meatFactory.getPreparedPorducts() + " zasoby: " + meatFactory.getMeatResources())
         Request.requestProccessMeat(meatFactory)
         println("Masne produkty pripraveny : " + meatFactory.getPreparedPorducts() + " zasoby: " + meatFactory.getMeatResources())
-        Request.requestTransportToWarehouse(meatFactory, retailer) // TODO not get 0, to samy u process
+        Request.requestTransportToWarehouse(meatFactory, retailer)
         println("Masne produkty prevezeny do prodeje, aktualni stav produktu : " + meatFactory.getPreparedPorducts())
         println()
         retailer.payDebts()

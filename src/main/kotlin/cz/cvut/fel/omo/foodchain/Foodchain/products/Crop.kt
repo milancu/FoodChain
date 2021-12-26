@@ -3,79 +3,115 @@ package cz.cvut.fel.omo.foodchain.Foodchain.products
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
 import cz.cvut.fel.omo.foodchain.Foodchain.Week
-import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import java.util.*
 
-class Crop : Subject {
+/**
+ * Crop
+ *
+ * @constructor Create empty Crop
+ */
+class Crop(
+    private val name: CropName,
+    private val type: CropType,
+    private var amount: Int,
+    private var growthTime: Int
+) : Subject {
 
     private var observers: ArrayList<Observer> = ArrayList()
 
-    private val name: CropName
-    private val type: CropType
-    private var amount: Int
-    private val uuid: UUID
-    private var shopPrice: Double
-    private var productionCost: Double
-    private var growthTime: Int
+    private val uuid: UUID = UUID.randomUUID()
+    private var shopPrice: Double = name.shopPrice
+    private var productionCost: Double = shopPrice * 0.01
 
-    constructor(name: CropName, type: CropType, amount: Int, growthTime: Int) {
-        this.name = name
-        this.type = type
-        this.amount = amount
-        this.uuid = UUID.randomUUID()
-        this.shopPrice = name.shopPrice
-        this.productionCost = shopPrice * 0.01
-        this.growthTime = growthTime
-    }
-
+    /**
+     * Get u u i d
+     *
+     * @return
+     */
     fun getUUID(): UUID {
         return this.uuid
     }
 
-    fun getCapacity(): Int {
-        return this.amount
-    }
-
+    /**
+     * Get name
+     *
+     * @return
+     */
     fun getName(): CropName {
         return name
     }
 
+    /**
+     * Get amount
+     *
+     * @return
+     */
     fun getAmount(): Int {
         return amount
     }
 
+    /**
+     * Get production cost
+     *
+     * @return
+     */
     fun getProductionCost(): Double {
         return productionCost
     }
 
+    /**
+     * Get shop price
+     *
+     * @return
+     */
     fun getShopPrice(): Double {
         return shopPrice
     }
 
+    /**
+     * Get type
+     *
+     * @return
+     */
     fun getType(): CropType {
         return type
     }
 
+    /**
+     * Get growth
+     *
+     * @return
+     */
     fun getGrowth(): Int {
         return growthTime
     }
 
+    /**
+     * Set amount
+     *
+     * @param value
+     */
     fun setAmount(value: Int) {
         this.amount = value
     }
 
+    /**
+     * Decrease amount
+     *
+     */
     fun decreaseAmount() {
         this.amount -= 5
     }
 
-    fun resetCrop() {
-        growthTime = 0
-    }
 
+    /**
+     * Grow
+     *
+     */
     fun grow() {
-        growthTime++;
+        growthTime++
     }
 
     override fun attach(o: Observer) {
@@ -92,6 +128,10 @@ class Crop : Subject {
         }
     }
 
+    /**
+     * Notify was harvested
+     *
+     */
     fun notifyWasHarvested(){
         for (i in observers) {
             i.update(this.uuid, "CROP HAS BEEN HARVESTED IN WEEK: " + Week.acutalWeek)

@@ -9,12 +9,23 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 
+// TODO duplicity kodu a iterator - Mila nebudu ti sem smatat
+
+/**
+ * Farmer
+ *
+ * @constructor
+ *
+ * @param subjectName
+ * @param location
+ * @param amountOfMoney
+ */
 class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
 
     private var resources: ArrayList<Crop> = setInitialResources()
     private var animals: ArrayList<BaseAnimal> = setInitialAnimals()
-    private var animalsToProcessing: ArrayList<BaseAnimal> = ArrayList();
+    private var animalsToProcessing: ArrayList<BaseAnimal> = ArrayList()
     private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
 
     @Autowired
@@ -23,26 +34,33 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     @Autowired
     private val animalToProcess : AnimalToProcess = AnimalToProcess() //ITERATOR
 
-    fun setInitialResources(): ArrayList<Crop> {
+    /**
+     * Set initial resources
+     *
+     * @return
+     */
+    private fun setInitialResources(): ArrayList<Crop> {
         val generator = Generator()
         return generator.generateFeedingForAnimal()
     }
 
-    fun setInitialAnimals(): ArrayList<BaseAnimal> {
+    /**
+     * Set initial animals
+     *
+     * @return
+     */
+    private fun setInitialAnimals(): ArrayList<BaseAnimal> {
         val generator = Generator()
         return generator.generateAnimals()
     }
 
-    fun decreaseResource(feed: Crop) {
-        for (resource in resources) {
-            if (resource.getName() == feed.getName()) {
-                val realValue: Int = resource.getAmount() - feed.getAmount();
-                resource.setAmount(realValue)
-            }
-        }
-    }
 
-    fun animalsToProcessing(): ArrayList<BaseAnimal> {
+    /**
+     * Animals to processing
+     *
+     * @return
+     */
+    private fun animalsToProcessing(): ArrayList<BaseAnimal> {
         val animalsToProcessing = ArrayList<BaseAnimal>()
 
         animals.iterator().forEach { animal ->
@@ -90,6 +108,11 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         return animalsToProcessing
     }
 
+    /**
+     * Animals to processing u s i n g i t e r a t o r
+     *
+     * @return
+     */
     fun animalsToProcessingUSINGITERATOR(): AnimalToProcess { //ITERATOR
         animals.iterator().forEach { animal ->
             when (animal.getName()) {
@@ -137,8 +160,13 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     }
 
 
-    fun buyNewAnimals(value : Int){
-        val generator : Generator = Generator()
+    /**
+     * Buy new animals
+     *
+     * @param value
+     */
+    private fun buyNewAnimals(value : Int){
+        val generator = Generator()
         if(value != 0) {
             for (i in (1..value)) {
                 val newAnimal: BaseAnimal = generator.generateAnimal()
@@ -148,40 +176,70 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         }
     }
 
-    fun getResources() : ArrayList<Crop>{
-        return this.resources
-    }
-
+    /**
+     * Get animals to processing
+     *
+     * @return
+     */
     fun getAnimalsToProcessing(): ArrayList<BaseAnimal> {
         return this.animalsToProcessing
     }
 
+    /**
+     * Call butcher
+     *
+     * @return
+     */
     fun callButcher() : ArrayList<Meat>{
         return butcher.proccessAnimal(animalsToProcessing())
     }
 
+    /**
+     * Call butcher u s i n g i t e r a t o r
+     *
+     * @return
+     */
     fun callButcherUSINGITERATOR() : ArrayList<Meat>{ //ITERATOR
         return butcher.proccessAnimalUSINGITERATOR(animalToProcess)
     }
 
+    /**
+     * Get number of animals
+     *
+     * @return
+     */
     fun getNumberOfAnimals() : Int{
         return animals.size
     }
 
+    /**
+     * Get number of animals to process
+     *
+     * @return
+     */
     fun getNumberOfAnimalsToProcess() : Int{
         return animalsToProcessing.size
     }
 
-    fun removeUsedResources(crops : ArrayList<Crop>){
+    /**
+     * Remove used resources
+     *
+     * @param crops
+     */
+    private fun removeUsedResources(crops : ArrayList<Crop>){
         for(crop in crops){
             resources.remove(crop)
         }
     }
 
+    /**
+     * Feed animal
+     *
+     */
     fun feedAnimal(){
-        var feeded : Boolean = false
+        var feeded = false
         for(animal in animals){
-            var toRemove : ArrayList<Crop> = ArrayList()
+            val toRemove : ArrayList<Crop> = ArrayList()
             for (crop in resources) {
                 if (crop.getAmount() >= 5) {
                     feeded = true
@@ -204,21 +262,40 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         }
     }
 
+    /**
+     * Grow animals
+     *
+     */
     fun growAnimals(){
         for(animal in animals){
             animal.growAnimal()
         }
     }
 
+    /**
+     * Need resource
+     *
+     * @return
+     */
     fun needResource() : Boolean{
         if(resources.size != 0) return true
         return false
     }
 
+    /**
+     * Take resources
+     *
+     * @param crop
+     */
     fun takeResources(crop : Crop){
         resources.add(crop)
     }
 
+    /**
+     * Pay for invoice
+     *
+     * @param invoice
+     */
     fun payForInvoice(invoice : Invoice){
         if (amountOfMoney >= invoice.getPrice()) {
             invoice.getContractor().takeMoney(invoice.getPrice())
@@ -234,8 +311,12 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         println()
     }
 
+    /**
+     * Pay debts
+     *
+     */
     fun payDebts() {
-        var toRemove: ArrayList<Invoice> = ArrayList()
+        val toRemove: ArrayList<Invoice> = ArrayList()
         for (invoice in unpaidInvoices) {
             if (amountOfMoney >= invoice.getPrice()) {
                 toRemove.add(invoice)

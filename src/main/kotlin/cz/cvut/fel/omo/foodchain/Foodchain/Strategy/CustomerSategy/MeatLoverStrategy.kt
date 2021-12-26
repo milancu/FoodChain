@@ -4,10 +4,15 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Config
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
+/**
+ * Meat lover strategy
+ *
+ * @constructor Create empty Meat lover strategy
+ */
 class MeatLoverStrategy : CustomerStrategy {
     override fun execute(products: ArrayList<Product>): Double {
-        var spended: Double = 0.0
-        var toRemove : ArrayList<Product> = ArrayList()
+        var spended = 0.0
+        val toRemove : ArrayList<Product> = ArrayList()
 
         for (product in products) {
             if (product.getProductType() == ProductType.MEAT ||
@@ -27,7 +32,13 @@ class MeatLoverStrategy : CustomerStrategy {
         return spended
     }
 
-    fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>){
+    /**
+     * Remove products
+     *
+     * @param original
+     * @param toRemove
+     */
+    private fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>){
         for(product in toRemove){
             original.remove(product)
         }

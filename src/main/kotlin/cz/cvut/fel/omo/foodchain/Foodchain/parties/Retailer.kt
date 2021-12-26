@@ -2,9 +2,17 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
-import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
+/**
+ * Retailer
+ *
+ * @constructor
+ *
+ * @param subjectName
+ * @param location
+ * @param amountOfMoney
+ */
 class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
 
@@ -14,25 +22,35 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
     private var productTypeMap: HashMap<ProductType, Int> = productMapInit()
 
 
-    fun productMapInit(): HashMap<ProductType, Int> {
-        var prepareMap: HashMap<ProductType, Int> = HashMap<ProductType, Int>()
-        prepareMap.put(ProductType.CEREALS, 0)
-        prepareMap.put(ProductType.FRUIT, 0)
-        prepareMap.put(ProductType.VEGETABLES, 0)
-        prepareMap.put(ProductType.LEGUMES, 0)
-        prepareMap.put(ProductType.BULKINGREDIENTS, 0)
-        prepareMap.put(ProductType.OTHERS, 0)
-        prepareMap.put(ProductType.SAUCE, 0)
-        prepareMap.put(ProductType.ICED, 0)
-        prepareMap.put(ProductType.CANS, 0)
-        prepareMap.put(ProductType.OIL, 0)
-        prepareMap.put(ProductType.XXX, 0)
-        prepareMap.put(ProductType.MEAT, 0)
-        prepareMap.put(ProductType.DRINK, 0)
-        prepareMap.put(ProductType.ALCOHOL, 0)
+    /**
+     * Product map init
+     *
+     * @return
+     */
+    private fun productMapInit(): HashMap<ProductType, Int> {
+        val prepareMap: HashMap<ProductType, Int> = HashMap()
+        prepareMap[ProductType.CEREALS] = 0
+        prepareMap[ProductType.FRUIT] = 0
+        prepareMap[ProductType.VEGETABLES] = 0
+        prepareMap[ProductType.LEGUMES] = 0
+        prepareMap[ProductType.BULKINGREDIENTS] = 0
+        prepareMap[ProductType.OTHERS] = 0
+        prepareMap[ProductType.SAUCE] = 0
+        prepareMap[ProductType.ICED] = 0
+        prepareMap[ProductType.CANS] = 0
+        prepareMap[ProductType.OIL] = 0
+        prepareMap[ProductType.XXX] = 0
+        prepareMap[ProductType.MEAT] = 0
+        prepareMap[ProductType.DRINK] = 0
+        prepareMap[ProductType.ALCOHOL] = 0
         return prepareMap
     }
 
+    /**
+     * Buy products
+     *
+     * @param products
+     */
     fun buyProducts(products: ArrayList<Product>) {
         println("Do warehouse privezeno: " + products.size)
         warehouse.takeIn(products)
@@ -40,6 +58,11 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         println()
     }
 
+    /**
+     * Pay for invoice
+     *
+     * @param invoice
+     */
     fun payForInvoice(invoice: Invoice) {
         if (amountOfMoney >= invoice.getPrice()) {
             invoice.payInvoice()
@@ -55,14 +78,16 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         println()
     }
 
+    /**
+     * Pay debts
+     *
+     */
     fun payDebts() {
-        var toRemove: ArrayList<Invoice> = ArrayList()
+        val toRemove: ArrayList<Invoice> = ArrayList()
         for (invoice in unpaidInvoices) {
             if (amountOfMoney >= invoice.getPrice()) {
                 toRemove.add(invoice)
-                invoice.payInvoice()
-                invoice.notifyPaid()
-                amountOfMoney -= invoice.getPrice()
+                payForInvoice(invoice)
             }
         }
         for (invoice in toRemove) {
@@ -71,45 +96,77 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         }
     }
 
+    /**
+     * Vacate warehouse
+     *
+     */
     fun vacateWarehouse() {
         for (product in warehouse.getStoragedProducts()) {
-            var count: Int? = productTypeMap.get(product.getProductType())
+            var count: Int? = productTypeMap[product.getProductType()]
             count = count?.plus(product.getAmount())
             if (count != null) {
-                productTypeMap.put(product.getProductType(), count)
+                productTypeMap[product.getProductType()] = count
             }
             availableProducts.add(product)
         }
     }
 
+    /**
+     * Fill in
+     *
+     */
     fun fillIn() {
         for (product in warehouse.getStoragedProducts()) {
-            if (productMapInit().get(product.getProductType())!! < 10) {
+            if (productMapInit()[product.getProductType()]!! < 10) {
                 availableProducts.add(product)
                 warehouse.getStoragedProducts().remove(product)
             }
         }
     }
 
+    /**
+     * Fill in
+     *
+     * @param type
+     */
     fun fillIn(type: ProductType) {
-        var newProducts: ArrayList<Product> = warehouse.getSpecificProducts(type)
+        val newProducts: ArrayList<Product> = warehouse.getSpecificProducts(type)
         for (product in newProducts) {
             availableProducts.add(product)
         }
     }
 
+    /**
+     * Get stock size
+     *
+     * @return
+     */
     fun getStockSize(): Int {
         return availableProducts.size
     }
 
+    /**
+     * Get warehouse stock size
+     *
+     * @return
+     */
     fun getWarehouseStockSize(): Int {
         return warehouse.getStockSize()
     }
 
+    /**
+     * Get available products
+     *
+     * @return
+     */
     fun getAvailableProducts() : ArrayList<Product>{
         return availableProducts
     }
 
+    /**
+     * Warehouse management payment
+     *
+     */
     fun warehouseManagementPayment(){
         this.amountOfMoney -= warehouse.warehouseManagementPayment()
     }

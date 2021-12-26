@@ -7,14 +7,12 @@ import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 
-class GrowerToFarmerChannel : Channel{
-    private var farmers : ArrayList<Farmer>
-    private var growers : ArrayList<Grower>
-
-    constructor(growers: ArrayList<Grower>, farmers: ArrayList<Farmer>) {
-        this.farmers = farmers
-        this.growers = growers
-    }
+/**
+ * Grower to farmer channel
+ *
+ * @constructor Create empty Grower to farmer channel
+ */
+class GrowerToFarmerChannel(private var growers: ArrayList<Grower>, private var farmers: ArrayList<Farmer>) : Channel{
 
     // run simulation musi byt pred porcesorem
     override fun runSimulation(){
@@ -30,6 +28,11 @@ class GrowerToFarmerChannel : Channel{
         // Zde se neaktualizuji podstatne statistiky, jednalo by se o redundanci
     }
 
+    /**
+     * Find correct supplier
+     *
+     * @return
+     */
     fun findCorrectSupplier() : Grower{
         for(grower in growers){
             for(crop in grower.getSupplies()){
@@ -39,8 +42,8 @@ class GrowerToFarmerChannel : Channel{
             }
         }
         println("Nedostatek vhodnych dodavatelu v CR")
-        var exoticGrower : Grower = Grower("sosGrower", "Exotica", 0.0)
-        var exoticCrop : Crop = Crop(CropName.WHEET, CropType.CEREAL, 50, 0)
+        val exoticGrower = Grower("sosGrower", "Exotica", 0.0)
+        val exoticCrop = Crop(CropName.WHEET, CropType.CEREAL, 50, 0)
         exoticGrower.addEmergencyCrop(exoticCrop)
         return exoticGrower
     }

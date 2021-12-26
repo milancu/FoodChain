@@ -12,21 +12,45 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
+/**
+ * Meat factory
+ *
+ * @constructor
+ *
+ * @param subjectName
+ * @param location
+ * @param amountOfMoney
+ */
 class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
 
     private var meatsForProducts: ArrayList<Meat> = ArrayList()
     private var productToSell: ArrayList<Product> = ArrayList()
-    private var unpaidInvoices: ArrayList<Invoice> = ArrayList()
+    private val unpaidInvoices: ArrayList<Invoice> = ArrayList()
 
+    /**
+     * Get meat resources
+     *
+     * @return
+     */
     fun getMeatResources(): Int {
         return meatsForProducts.size
     }
 
+    /**
+     * Get prepared porducts
+     *
+     * @return
+     */
     fun getPreparedPorducts(): Int {
         return productToSell.size
     }
 
+    /**
+     * Take meat
+     *
+     * @param newMeats
+     */
     fun takeMeat(newMeats: ArrayList<Meat>) {
         for (meat in newMeats) {
             meatsForProducts.add(meat)
@@ -34,11 +58,20 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         println("Prevzato masa k zabaleni: " + meatsForProducts.size)
     }
 
+    /**
+     * Transport products
+     *
+     */
     fun transportProducts() {
         Transport.takeProducts(productToSell)
         productToSell = ArrayList()
     }
 
+    /**
+     * Pay for invoice
+     *
+     * @param invoice
+     */
     fun payForInvoice(invoice: Invoice) {
         if (amountOfMoney >= invoice.getPrice()) {
             invoice.payInvoice()
@@ -53,14 +86,16 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         }
     }
 
+    /**
+     * Pay debts
+     *
+     */
     fun payDebts() {
-        var toRemove: ArrayList<Invoice> = ArrayList()
+        val toRemove: ArrayList<Invoice> = ArrayList()
         for (invoice in unpaidInvoices) {
             if (amountOfMoney >= invoice.getPrice()) {
+                payForInvoice(invoice)
                 toRemove.add(invoice)
-                invoice.payInvoice()
-                invoice.notifyPaid()
-                amountOfMoney -= invoice.getPrice()
             }
         }
         for (invoice in toRemove) {
@@ -69,6 +104,10 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         }
     }
 
+    /**
+     * Package product
+     *
+     */
     fun packageProduct() {
         for (meat in meatsForProducts) {
             println("Maso puvodu : " + meat.getOriginID() + " je baleno")
@@ -96,8 +135,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
                     }
                 }
                 MeatType.FISH -> {
-                    var random = (1..6).random()
-                    when (random) {
+                    when ((1..6).random()) {
                         1 -> productToSell.add(packageCarp(meat))
                         2 -> productToSell.add(packageBream(meat))
                         3 -> productToSell.add(packageEel(meat))
@@ -111,8 +149,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         meatsForProducts = ArrayList()
     }
 
-    fun packagePorkDumpling(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package pork dumpling
+     *
+     * @param meat
+     * @return
+     */
+    private fun packagePorkDumpling(meat: Meat): Product {
+        val product = MeatProduct(
             "Pork Dumpling 300g",
             MeatProductType.PORKDUMPLING.toString(),
             ProductType.MEAT,
@@ -127,8 +171,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packagePorkRoast(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package pork roast
+     *
+     * @param meat
+     * @return
+     */
+    private fun packagePorkRoast(meat: Meat): Product {
+        val product = MeatProduct(
             "Pork Roast 300g",
             MeatProductType.PORKROAST.toString(),
             ProductType.MEAT,
@@ -143,8 +193,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packagePorkLeg(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package pork leg
+     *
+     * @param meat
+     * @return
+     */
+    private fun packagePorkLeg(meat: Meat): Product {
+        val product = MeatProduct(
             "Pork Leg 400g",
             MeatProductType.PORKLEG.toString(),
             ProductType.MEAT,
@@ -159,8 +215,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packagePorkFlank(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package pork flank
+     *
+     * @param meat
+     * @return
+     */
+    private fun packagePorkFlank(meat: Meat): Product {
+        val product = MeatProduct(
             "Pork Flank 200g",
             MeatProductType.PORKFLANK.toString(),
             ProductType.MEAT,
@@ -175,8 +237,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packageBeefTenderloin(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package beef tenderloin
+     *
+     * @param meat
+     * @return
+     */
+    private fun packageBeefTenderloin(meat: Meat): Product {
+        val product = MeatProduct(
             "Beef TenderLoin 400g",
             MeatProductType.BEEFTENDERLOIN.toString(),
             ProductType.MEAT,
@@ -191,8 +259,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packageBovineCheek(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package bovine cheek
+     *
+     * @param meat
+     * @return
+     */
+    private fun packageBovineCheek(meat: Meat): Product {
+        val product = MeatProduct(
             "Bovine Cheek 300g",
             MeatProductType.BOVINECHEEK.toString(),
             ProductType.MEAT,
@@ -207,8 +281,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packageBeefShoulder(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package beef shoulder
+     *
+     * @param meat
+     * @return
+     */
+    private fun packageBeefShoulder(meat: Meat): Product {
+        val product = MeatProduct(
             "Beef Shoulder 300g",
             MeatProductType.BEEFSHOULDER.toString(),
             ProductType.MEAT,
@@ -223,8 +303,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packageBeefDumpling(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package beef dumpling
+     *
+     * @param meat
+     * @return
+     */
+    private fun packageBeefDumpling(meat: Meat): Product {
+        val product = MeatProduct(
             "Beef Dumpling 300g",
             MeatProductType.BEEFDUMPLING.toString(),
             ProductType.MEAT,
@@ -239,8 +325,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packageChickenThigh(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package chicken thigh
+     *
+     * @param meat
+     * @return
+     */
+    private fun packageChickenThigh(meat: Meat): Product {
+        val product = MeatProduct(
             "Chicken Thigh 100g",
             MeatProductType.CHICKENTHIGH.toString(),
             ProductType.MEAT,
@@ -255,8 +347,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packageChickenBreast(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package chicken breast
+     *
+     * @param meat
+     * @return
+     */
+    private fun packageChickenBreast(meat: Meat): Product {
+        val product = MeatProduct(
             "Chicken Breast 150g",
             MeatProductType.CHICKENBREAST.toString(),
             ProductType.MEAT,
@@ -271,8 +369,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packageChickenWings(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package chicken wings
+     *
+     * @param meat
+     * @return
+     */
+    private fun packageChickenWings(meat: Meat): Product {
+        val product = MeatProduct(
             "Chicken Wings 150g",
             MeatProductType.CHICKENWINGS.toString(),
             ProductType.MEAT,
@@ -287,8 +391,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packageCarp(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package carp
+     *
+     * @param meat
+     * @return
+     */
+    private fun packageCarp(meat: Meat): Product {
+        val product = MeatProduct(
             "Carp 750g", FishType.CARP.toString(), ProductType.MEAT, 420.0, 560.0, 750, "g", meat.getOriginID()
         )
         product.attach(Report)
@@ -296,8 +406,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packageBream(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package bream
+     *
+     * @param meat
+     * @return
+     */
+    private fun packageBream(meat: Meat): Product {
+        val product = MeatProduct(
             "Bream 750g", FishType.BREAM.toString(), ProductType.MEAT, 400.0, 540.0, 750, "g", meat.getOriginID()
         )
         product.attach(Report)
@@ -305,8 +421,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packageEel(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package eel
+     *
+     * @param meat
+     * @return
+     */
+    private fun packageEel(meat: Meat): Product {
+        val product = MeatProduct(
             "Eel 800g", FishType.EEL.toString(), ProductType.MEAT, 500.0, 640.0, 800, "g", meat.getOriginID()
         )
         product.attach(Report)
@@ -314,8 +436,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packageZander(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package zander
+     *
+     * @param meat
+     * @return
+     */
+    private fun packageZander(meat: Meat): Product {
+        val product = MeatProduct(
             "Zander 600g", FishType.ZANDER.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginID()
         )
         product.attach(Report)
@@ -323,8 +451,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packageCatfish(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package catfish
+     *
+     * @param meat
+     * @return
+     */
+    private fun packageCatfish(meat: Meat): Product {
+        val product = MeatProduct(
             "Catfish 600g", FishType.CATFISH.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginID()
         )
         product.attach(Report)
@@ -332,8 +466,14 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         return product
     }
 
-    fun packagePerch(meat: Meat): Product {
-        var product = MeatProduct(
+    /**
+     * Package perch
+     *
+     * @param meat
+     * @return
+     */
+    private fun packagePerch(meat: Meat): Product {
+        val product = MeatProduct(
             "Perch 600g", FishType.PERCH.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginID()
         )
         product.attach(Report)

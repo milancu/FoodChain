@@ -5,6 +5,15 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.Strategy.CustomerSategy.*
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
+/**
+ * Customer
+ *
+ * @constructor
+ *
+ * @param subjectName
+ * @param location
+ * @param amountOfMoney
+ */
 class Customer(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
 
@@ -20,8 +29,7 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
 
     private fun chooseStrategy() : CustomerContext{
         val context : CustomerContext
-        val random : Int = (1..5).random()
-        when(random){
+        when((1..5).random()){
             1 -> {
                 context = CustomerContext(basicStrategy)
                 return context
@@ -45,19 +53,33 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
         }
     }
 
+    /**
+     * Receive salary
+     *
+     */
     fun receiveSalary() {
         this.amountOfMoney += salary
     }
 
-    // Produkty nebudeme ukladat, budou vyrazeny z obehu, stejne by se nezpracovavaly, nebo resetovaly
-    fun buyProducts(products : ArrayList<Product>) : Double {
-        val spendedMoney : Double = context.goShopping(products)
-        return spendedMoney
+    /**
+     * Buy products
+     *
+     * @param products
+     * @return
+     */// Produkty nebudeme ukladat, budou vyrazeny z obehu, stejne by se nezpracovavaly, nebo resetovaly
+    fun buyProducts(products: ArrayList<Product>): Double {
+        return context.goShopping(products)
     }
 
+    /**
+     * Pay for shopping
+     *
+     * @param recipe
+     */
     fun payForShopping(recipe : Invoice){
         if(recipe.getPrice() <= this.amountOfMoney){
             amountOfMoney -= recipe.getPrice()
+            recipe.payInvoice()
             recipe.getContractor().takeMoney(recipe.getPrice())
             recipe.notifyPaid()
         } else {
@@ -67,14 +89,16 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
         }
     }
 
+    /**
+     * Pay debts
+     *
+     */
     fun payDebts(){
-        var toRemove : ArrayList<Invoice> = ArrayList()
+        val toRemove : ArrayList<Invoice> = ArrayList()
         for(invoice in creditCardDebts){
             if(amountOfMoney >= invoice.getPrice()){
                 toRemove.add(invoice)
-                invoice.payInvoice()
-                invoice.notifyPaid()
-                amountOfMoney -= invoice.getPrice()
+                payForShopping(invoice)
             }
         }
         for(invoice in toRemove){

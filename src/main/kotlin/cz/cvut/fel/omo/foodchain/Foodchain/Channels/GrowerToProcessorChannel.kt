@@ -1,26 +1,25 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Channels
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Config
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 import cz.cvut.fel.omo.foodchain.Foodchain.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
-import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 
+/**
+ * Grower to processor channel
+ *
+ * @constructor Create empty Grower to processor channel
+ */
 class GrowerToProcessorChannel : Channel{
 
     private var growers : ArrayList<Grower>
     private var processors : ArrayList<Processor>
 
-    constructor(){
+    init {
         println("PHASE 1.0 - Growers and processors creation")
-
-        val generator : Generator = Generator()
-
+        val generator = Generator()
         growers = generator.generateGrowers()
         processors = generator.generateProcessors()
-        // TODO jak rozhodovat, jakej processor se vybere
-
         println("Growers: " + growers.size)
         println("Processors: " + processors.size)
         println()
@@ -41,25 +40,45 @@ class GrowerToProcessorChannel : Channel{
 
     override fun runSimulation(){
         for(grower in growers){
-            var processor : Processor = processors.get( (0..processors.size-1).random() )
+            val processor = processors[(0 until processors.size).random()]
             Request.requestTransportToProcessor(grower, processor, grower.getSupplies())
-            grower.harvest();
+            grower.harvest()
             processor.payDebts()
         }
     }
 
+    /**
+     * Add grower
+     *
+     * @param grower
+     */
     fun addGrower(grower : Grower){
         growers.add(grower)
     }
 
+    /**
+     * Add proccessor
+     *
+     * @param processor
+     */
     fun addProccessor(processor: Processor){
         processors.add(processor)
     }
 
+    /**
+     * Get processors
+     *
+     * @return
+     */
     fun getProcessors() : ArrayList<Processor>{
         return processors
     }
 
+    /**
+     * Get growers
+     *
+     * @return
+     */
     fun getGrowers() : ArrayList<Grower>{
         return growers
     }

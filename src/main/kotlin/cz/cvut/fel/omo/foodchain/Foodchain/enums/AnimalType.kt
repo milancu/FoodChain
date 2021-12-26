@@ -1,10 +1,12 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.enums
 
-import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.beans.factory.annotation.Value
-import org.springframework.stereotype.Component
 import java.util.*
 
+/**
+ * Animal type
+ *
+ * @constructor Create empty Animal type
+ */
 enum class AnimalType {
 
     COW,
@@ -16,7 +18,7 @@ enum class AnimalType {
     companion object {
         fun getAnimal(): AnimalType {
             val random = Random()
-            return AnimalType.values()[random.nextInt(AnimalType.values().size)]
+            return values()[random.nextInt(values().size)]
         }
     }
 }

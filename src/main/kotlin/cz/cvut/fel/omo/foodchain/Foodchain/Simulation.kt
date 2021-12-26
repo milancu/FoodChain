@@ -2,6 +2,11 @@ package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Channels.*
 
+/**
+ * Simulation
+ *
+ * @constructor Create empty Simulation
+ */
 class Simulation {
 
     private var channelG2P : GrowerToProcessorChannel = GrowerToProcessorChannel()
@@ -11,6 +16,10 @@ class Simulation {
     private var channelM2R : MeatFactoryToRetailerChannel = MeatFactoryToRetailerChannel(channelF2M.getMeatFactory() ,channelP2R.getRetailers())
     private var channelRTC : RetailerToCustomerChannel = RetailerToCustomerChannel(channelP2R.getRetailers())
 
+    /**
+     * Run week
+     *
+     */
     fun runWeek(){
         runSimulation()
         printStats()

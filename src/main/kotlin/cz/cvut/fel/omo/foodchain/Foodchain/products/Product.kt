@@ -6,59 +6,78 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import java.util.*
 
-open class Product : Subject {
+//TODO jakto ze productionCost neni pouzita? Vyres, zbytek asi mila? Date?
+
+/**
+ * Product
+ *
+ * @constructor Create empty Product
+ */
+open class Product(
+    private var name: String,
+    private var shopPrice: Double,
+    private var productionCost: Double,
+    private var amount: Int,
+    private var unit: String,
+    private var origin: UUID
+) : Subject {
 
     private var observers: ArrayList<Observer> = ArrayList()
 
-    private var name: String
-    private var productType: ProductType
-    private var shopPrice: Double
-    private var productionCost: Double
-    private var amount: Int
-    private var unit: String
-    private var uuid: UUID
-    private var origin: UUID
-    private var createdAt : Int
+    private var productType: ProductType = ProductType.NOTSET
+    private var uuid: UUID = UUID.randomUUID()
+    private var createdAt : Int = Week.acutalWeek
 
-    constructor(
-        name: String,
-        shopPrice: Double,
-        productionCost: Double,
-        amount: Int,
-        unit: String,
-        origin: UUID
-    ) {
-        this.name = name
-        this.productType = ProductType.NOTSET
-        this.shopPrice = shopPrice
-        this.productionCost = productionCost
-        this.amount = amount
-        this.unit = unit
-        this.uuid = UUID.randomUUID()
-        this.origin = origin
-        this.createdAt = Week.acutalWeek
-    }
-
+    /**
+     * Get create at
+     *
+     * @return
+     */
     fun getCreateAt() : Int {
         return this.createdAt
     }
 
+    /**
+     * Get origin id
+     *
+     * @return
+     */
     open fun getOriginId(): UUID {
         return this.origin
     }
 
+    /**
+     * Get product type
+     *
+     * @return
+     */
     open fun getProductType(): ProductType {
         return this.productType
     }
 
+    /**
+     * Get shop price
+     *
+     * @return
+     */
     open fun getShopPrice(): Double {
         return shopPrice
     }
 
+    /**
+     * Get amount
+     *
+     * @return
+     */
     open fun getAmount(): Int {
         return amount
     }
 
+    /**
+     * Get name
+     *
+     * @return
+     */
     open fun getName() : String{
         return this.name
     }
@@ -78,6 +97,11 @@ open class Product : Subject {
         }
     }
 
+    /**
+     * Decrease amount
+     *
+     * @param value
+     */
     fun decreaseAmount(value : Int){
         this.amount -= value
     }

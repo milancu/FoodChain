@@ -1,14 +1,17 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+import kotlin.math.cos
 
 class Transport{
     companion object TransportCompany {
-        private var name : String = "Transport S.R.O"
-        private var identifier : String = "12345678"
-        private var amountOfMoney : Double = 10000.00
+
+        var transport : BaseParty = BaseParty("Transport S.R.O", "Unknown", 10000.00)
+
+        /*private var amountOfMoney : Double = 10000.00*/
         private var cropSupplies : ArrayList<Crop> = ArrayList()
         private var products : ArrayList<Product> = ArrayList()
         private var meats : ArrayList<Meat> = ArrayList()
@@ -16,7 +19,10 @@ class Transport{
         fun transportCropSuplies() : ArrayList<Crop>{
             var toTransport : ArrayList<Crop> = cropSupplies
             for(supply in cropSupplies){
+                transport.changeAmountOfMoney((supply.getShopPrice() * supply.getAmount() * 0.1))
+/*
                 amountOfMoney += supply.getShopPrice() * supply.getAmount() * 0.1 // TODO od koho si je vezme
+*/
             }
             this.cropSupplies = ArrayList()
             return toTransport
@@ -24,11 +30,11 @@ class Transport{
 
         fun transportProducts() : ArrayList<Product>{
             var toTransport : ArrayList<Product> = products
-            /*println("/////////////////////////////////////")
-            println("k prevezeni: " + toTransport.size)
-            println("/////////////////////////////////////")*/
             for(product in products){
+                transport.changeAmountOfMoney((product.getShopPrice() * product.getAmount() * 0.1))
+/*
                 amountOfMoney += product.getShopPrice() * product.getAmount() * 0.1 //TODO invoice smerem od transportu
+*/
             }
             this.products = ArrayList()
             return toTransport
@@ -37,7 +43,10 @@ class Transport{
         fun transportMeats() : ArrayList<Meat>{
             var toTransport : ArrayList<Meat> = meats
             for(meat in meats){
+                transport.changeAmountOfMoney((meat.getShopPrice() * meat.getAmount() * 0.1))
+/*
                 amountOfMoney += meat.getShopPrice() * meat.getAmount() * 0.1 //TODO invoice smerem od transportu
+*/
             }
             this.meats = ArrayList()
             return toTransport
@@ -64,7 +73,7 @@ class Transport{
             println("Transport prevzal masa : " + this.meats.size)
         }
 
-        // TODO odecet za opotrebeni aut a benzin a platy - nezapomen to zavolat
+
         fun cargoDeduction(){
             var costs : Double = 0.0
             for(meat in meats){
@@ -76,8 +85,15 @@ class Transport{
             for(product in products){
                 costs += product.getShopPrice() * product.getAmount() * 0.025
             }
+/*
             this.amountOfMoney -= costs
+*/
+            transport.changeAmountOfMoney(-costs)
             println("Dopravni spolecnost na nakladech utratila: " + costs)
+        }
+
+        fun getIdentifier() : Int{
+            return transport.getIdentifier()
         }
     }
 }

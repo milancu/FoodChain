@@ -28,9 +28,14 @@ class Request {
             println("Vznik faktury " + invoice.getCode())
 
             grower.transportSupplies()
+            Transport.cargoDeduction()
             grower.raiseField()
 
-            processor.takeCropSupplies(Transport.transportCropSuplies()) // todo invoice processorem a transportem
+            // TODO new Invoice
+            var transportInvoice : Invoice = Invoice(processor, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
+            processor.payForInvoice(transportInvoice)
+
+            processor.takeCropSupplies(Transport.transportCropSuplies())
             processor.payForInvoice(invoice)
             println()
         }
@@ -40,9 +45,7 @@ class Request {
 
             // Poslani zvirat na jatka
             var processedAnimals: ArrayList<Meat> = farmer.callButcher()
-            /*println("/////////////////////////////////////////////")*/
             println("Na jatka poslano : " + processedAnimals.size)
-            /*println("/////////////////////////////////////////////")*/
 
             // Faktura
             var money: Double = 0.0
@@ -55,8 +58,13 @@ class Request {
             invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
 
-            Transport.takeMeat(processedAnimals) //todo platba pro transport
+            Transport.takeMeat(processedAnimals)
+            Transport.cargoDeduction()
             meatFactory.takeMeat(Transport.transportMeats())
+
+            // TODO new Invoice
+            var transportInvoice : Invoice = Invoice(meatFactory, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
+            meatFactory.payForInvoice(transportInvoice)
 
             meatFactory.payForInvoice(invoice)
 
@@ -67,6 +75,7 @@ class Request {
             println("Proces transportace (from processor " + processor.getIdentifier() + " to retailer " + retailer.getIdentifier())
 
             processor.transportProducts()
+            Transport.cargoDeduction()
             var transportedProducts : ArrayList<Product> = Transport.transportProducts()
 
             // Faktura
@@ -81,6 +90,10 @@ class Request {
             invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
 
+            // TODO new Invoice
+            var transportInvoice : Invoice = Invoice(retailer, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
+            retailer.payForInvoice(transportInvoice)
+
             retailer.buyProducts(transportedProducts) // todo invoice retailer a transport
             retailer.payForInvoice(invoice)
         }
@@ -89,18 +102,23 @@ class Request {
             println("Proces transportace (from Vodnany  to retailer " + retailer.getIdentifier())
 
             meatFactory.transportProducts()
-            var transportedProducts : ArrayList<Product> = Transport.transportProducts()
+            Transport.cargoDeduction()
+            val transportedProducts : ArrayList<Product> = Transport.transportProducts()
 
             // Faktura
             var money : Double = 0.0
             for (product in transportedProducts){
                 money += product.getAmount() * product.getShopPrice()
             }
-            var invoice: Invoice = Invoice(retailer, meatFactory, money, InvoiceType.PRODUCT)
+            val invoice: Invoice = Invoice(retailer, meatFactory, money, InvoiceType.PRODUCT)
             Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
+
+            // TODO new Invoice
+            var transportInvoice : Invoice = Invoice(retailer, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
+            retailer.payForInvoice(transportInvoice)
 
             retailer.buyProducts(transportedProducts) // todo invoice retailer a transport
             retailer.payForInvoice(invoice)

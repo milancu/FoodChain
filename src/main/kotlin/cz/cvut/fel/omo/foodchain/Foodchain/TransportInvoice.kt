@@ -2,18 +2,17 @@ package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
-import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.InvoiceType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Transport
 import java.util.*
 
-class Invoice : Subject {
+class TransportInvoice : Subject {
 
     private var observers: ArrayList<Observer> = ArrayList()
 
     private val subscriber: BaseParty // odberatel
-    private val contractor: BaseParty // dodavatel
+    private val contractor: Transport.TransportCompany // dodavatel
     private val price: Double
     private val note: InvoiceType
     private var isPaid: Boolean
@@ -21,7 +20,7 @@ class Invoice : Subject {
     private var createTime: Int
     private var paidTime: Int = 0
 
-    constructor(subscriber: BaseParty, contractor: BaseParty, price: Double, note: InvoiceType) {
+    constructor(subscriber: BaseParty, contractor: Transport.TransportCompany, price: Double, note: InvoiceType) {
         this.subscriber = subscriber
         this.contractor = contractor
         this.price = price
@@ -39,7 +38,7 @@ class Invoice : Subject {
         return subscriber
     }
 
-    fun getContractor(): BaseParty {
+    fun getContractor(): Transport.TransportCompany {
         return contractor
     }
 
@@ -75,19 +74,28 @@ class Invoice : Subject {
 
     override fun notifyUpdate() {
         for (i in observers) {
-            i.update(this.code, "NEW INVOICE, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + this.price + ", in week:" + Week.acutalWeek)
+            i.update(
+                this.code,
+                "NEW INVOICE, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + this.price + ", in week:" + Week.acutalWeek
+            )
         }
     }
 
-    fun notifyPaid(){
+    fun notifyPaid() {
         for (i in observers) {
-            i.update(this.code, "INVOICE HAS BEEN PAID, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + this.price + ", in week:" + Week.acutalWeek)
+            i.update(
+                this.code,
+                "INVOICE HAS BEEN PAID, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + this.price + ", in week:" + Week.acutalWeek
+            )
         }
     }
 
-    fun notifyUnpaid(){
+    fun notifyUnpaid() {
         for (i in observers) {
-            i.update(this.code, "INVOICE HAS NOT BEEN PAID, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + this.price)
+            i.update(
+                this.code,
+                "INVOICE HAS NOT BEEN PAID, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + this.price
+            )
         }
     }
 }

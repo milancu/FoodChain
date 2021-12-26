@@ -1,5 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
+
 class Config {
     companion object params {
         // main config
@@ -7,7 +9,7 @@ class Config {
         const val GROWERS : Int = 5
         const val FARMERS : Int = 5
         const val PROCESSORS : Int = 5
-        const val CUSTOMERS : Int = 5000
+        const val CUSTOMERS : Int = 10000
         const val RETAILERS : Int = 5
 
         const val STANDARD_SHOP_SIZE : Int = 10
@@ -39,8 +41,10 @@ class Config {
         const val IDENTIFIER_MIN = 10000000
         const val IDENTIFIER_MAX = 99999999
         const val NAME_LENGTH = 12;
-        const val IDENTIFIER_LENGTH = 8;
-        const val LOCATION_LENGTH = 16;
-        const val ALPHANUMERIC_REGEX = "[a-zA-Z0-9]+";
+        const val IDENTIFIER_LENGTH = 8
+        const val LOCATION_LENGTH = 16
+        const val ALPHANUMERIC_REGEX = "[a-zA-Z0-9]+"
+
+        const val TRANSPORT_TAX = 0.1
     }
 }

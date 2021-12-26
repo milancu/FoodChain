@@ -34,7 +34,7 @@ open class BaseParty {
         return amountOfMoney
     }
 
-    fun changeAmountOfMoney(value : Int){
+    fun changeAmountOfMoney(value : Double){
         amountOfMoney += value
     }
 

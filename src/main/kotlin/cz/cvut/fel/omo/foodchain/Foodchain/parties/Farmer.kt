@@ -2,6 +2,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
+import cz.cvut.fel.omo.foodchain.Foodchain.Iterator.AnimalToProcess
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
@@ -14,6 +15,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     private var animalsToProcessing: ArrayList<BaseAnimal> = ArrayList();
     private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
     private val butcher : Butcher = Butcher()
+    private val animalToProcess : AnimalToProcess = AnimalToProcess() //ITERATOR
 
     fun setInitialResources(): ArrayList<Crop> {
         val generator = Generator()
@@ -82,6 +84,53 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         return animalsToProcessing
     }
 
+    fun animalsToProcessingUSINGITERATOR(): AnimalToProcess { //ITERATOR
+        animals.iterator().forEach { animal ->
+            when (animal.getName()) {
+                "Cow" -> {
+                    if (animal.getAge() > 30) {
+                        animalToProcess.add(animal)
+                        animal.notifyAnimalWasMoveToProcess()
+                    }
+                }
+                "Pig" -> {
+                    if (animal.getAge() > 20) {
+                        animalToProcess.add(animal)
+                        animal.notifyAnimalWasMoveToProcess()
+                    }
+                }
+                "Chicken" -> {
+                    if (animal.getAge() > 10) {
+                        animalToProcess.add(animal)
+                        animal.notifyAnimalWasMoveToProcess()
+                    }
+                }
+                "Goat" -> {
+                    if (animal.getAge() > 15) {
+                        animalToProcess.add(animal)
+                        animal.notifyAnimalWasMoveToProcess()
+                    }
+                }
+                "Fish" -> {
+                    if (animal.getAge() > 5) {
+                        animalToProcess.add(animal)
+                        animal.notifyAnimalWasMoveToProcess()
+                    }
+                }
+            }
+        }
+
+        println("Aktualni pocet zvirat : " + animals.size)
+        println("Na jatka bylo poslano : " + animalToProcess.getSize() + " zvirat")
+        animals.removeAll(animalToProcess.getAnimalList())
+        println("Aktualni pocet zvirat : " + animals.size)
+        buyNewAnimals(animalToProcess.getSize())
+        println("Po dokoupeni pocet zvirat : " + animals.size)
+
+        return animalToProcess
+    }
+
+
     fun buyNewAnimals(value : Int){
         val generator : Generator = Generator()
         if(value != 0) {
@@ -103,6 +152,10 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
 
     fun callButcher() : ArrayList<Meat>{
         return butcher.proccessAnimal(animalsToProcessing())
+    }
+
+    fun callButcherUSINGITERATOR() : ArrayList<Meat>{ //ITERATOR
+        return butcher.proccessAnimalUSINGITERATOR(animalToProcess)
     }
 
     fun getNumberOfAnimals() : Int{

@@ -1,9 +1,5 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
-import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
-import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
-import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import java.util.*
 import kotlin.math.roundToInt
@@ -13,27 +9,10 @@ import kotlin.math.roundToInt
  *
  * @constructor Create empty Field
  */
-class Field {
+class Field(private var crop: Crop, private val capacity: Int) {
 
-    private var crop: Crop
-    private val capacity: Int
     private var isRaised: Boolean = true
-    private var uuid: UUID
-
-    constructor(crop: Crop, capacity: Int) {
-        this.crop = crop
-        this.capacity = capacity
-        this.uuid = UUID.randomUUID()
-    }
-
-    /**
-     * Get u u i d
-     *
-     * @return
-     */
-    fun getUUID(): UUID {
-        return this.uuid
-    }
+    private var uuid: UUID = UUID.randomUUID()
 
     /**
      * Get capacity
@@ -50,7 +29,7 @@ class Field {
      * @return
      */
     fun isRaised(): Boolean {
-        return isRaised;
+        return isRaised
     }
 
     /**
@@ -59,7 +38,7 @@ class Field {
      * @param value
      */
     fun setRaised(value: Boolean) {
-        isRaised = value;
+        isRaised = value
     }
 
     /**
@@ -75,7 +54,7 @@ class Field {
      *
      */
     fun resetField() {
-        var generator = Generator()
+        val generator = Generator()
         this.crop = generator.generateCrop(1)
     }
 

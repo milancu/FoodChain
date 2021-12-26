@@ -3,7 +3,6 @@ package cz.cvut.fel.omo.foodchain.Foodchain.products
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
 import cz.cvut.fel.omo.foodchain.Foodchain.Week
-import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import java.util.*
@@ -13,27 +12,18 @@ import java.util.*
  *
  * @constructor Create empty Crop
  */
-class Crop : Subject {
+class Crop(
+    private val name: CropName,
+    private val type: CropType,
+    private var amount: Int,
+    private var growthTime: Int
+) : Subject {
 
     private var observers: ArrayList<Observer> = ArrayList()
 
-    private val name: CropName
-    private val type: CropType
-    private var amount: Int
-    private val uuid: UUID
-    private var shopPrice: Double
-    private var productionCost: Double
-    private var growthTime: Int
-
-    constructor(name: CropName, type: CropType, amount: Int, growthTime: Int) {
-        this.name = name
-        this.type = type
-        this.amount = amount
-        this.uuid = UUID.randomUUID()
-        this.shopPrice = name.shopPrice
-        this.productionCost = shopPrice * 0.01
-        this.growthTime = growthTime
-    }
+    private val uuid: UUID = UUID.randomUUID()
+    private var shopPrice: Double = name.shopPrice
+    private var productionCost: Double = shopPrice * 0.01
 
     /**
      * Get u u i d
@@ -42,15 +32,6 @@ class Crop : Subject {
      */
     fun getUUID(): UUID {
         return this.uuid
-    }
-
-    /**
-     * Get capacity
-     *
-     * @return
-     */
-    fun getCapacity(): Int {
-        return this.amount
     }
 
     /**
@@ -124,20 +105,13 @@ class Crop : Subject {
         this.amount -= 5
     }
 
-    /**
-     * Reset crop
-     *
-     */
-    fun resetCrop() {
-        growthTime = 0
-    }
 
     /**
      * Grow
      *
      */
     fun grow() {
-        growthTime++;
+        growthTime++
     }
 
     override fun attach(o: Observer) {

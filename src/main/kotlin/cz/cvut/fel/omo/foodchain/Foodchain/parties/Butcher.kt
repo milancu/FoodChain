@@ -21,13 +21,13 @@ class Butcher {
      * @return
      */
     fun proccessAnimal(animals: ArrayList<BaseAnimal>): ArrayList<Meat> {
-        var meatList = ArrayList<Meat>()
+        val meatList = ArrayList<Meat>()
 
         animals.toList().iterator().forEach { animal ->
             when (animal.getName()) {
                 "Cow" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.BEEF.price
-                    var beef =
+                    val beef =
                         Meat(MeatType.BEEF, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
                     meatList.add(beef)
                     animal.notifyAnimalWasProcessed()
@@ -37,7 +37,7 @@ class Butcher {
 
                 "Pig" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.PORK.price
-                    var pork =
+                    val pork =
                         Meat(MeatType.PORK, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
                     meatList.add(pork)
                     animal.notifyAnimalWasProcessed()
@@ -47,7 +47,7 @@ class Butcher {
 
                 "Chicken" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.CHICKEN.price
-                    var chicken = Meat(
+                    val chicken = Meat(
                         MeatType.CHICKEN,
                         shopPrice,
                         shopPrice * 1.4,
@@ -62,7 +62,7 @@ class Butcher {
 
                 "Fish" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.FISH.price
-                    var fish =
+                    val fish =
                         Meat(MeatType.FISH, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
                     meatList.add(fish)
                     animal.notifyAnimalWasProcessed()
@@ -81,7 +81,7 @@ class Butcher {
      * @return
      */
     fun proccessAnimalUSINGITERATOR(animals: AnimalToProcess): ArrayList<Meat> { //ITERATOR
-        var meatList = ArrayList<Meat>()
+        val meatList = ArrayList<Meat>()
 
         val iterator: CustomIterator = animals
         while (iterator.hasNext()) {
@@ -89,7 +89,7 @@ class Butcher {
             when (animal.getName()) {
                 "Cow" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.BEEF.price
-                    var beef = Meat(
+                    val beef = Meat(
                         MeatType.BEEF,
                         shopPrice,
                         shopPrice * 1.4,
@@ -104,7 +104,7 @@ class Butcher {
 
                 "Pig" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.PORK.price
-                    var pork = Meat(
+                    val pork = Meat(
                         MeatType.PORK,
                         shopPrice,
                         shopPrice * 1.4,
@@ -119,7 +119,7 @@ class Butcher {
 
                 "Chicken" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.CHICKEN.price
-                    var chicken = Meat(
+                    val chicken = Meat(
                         MeatType.CHICKEN,
                         shopPrice,
                         shopPrice * 1.4,
@@ -134,7 +134,7 @@ class Butcher {
 
                 "Fish" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.FISH.price
-                    var fish = Meat(
+                    val fish = Meat(
                         MeatType.FISH,
                         shopPrice,
                         shopPrice * 1.4,

@@ -11,29 +11,15 @@ import java.util.*
  *
  * @constructor Create empty Meat
  */
-class Meat : Subject {
+class Meat(
+    private val type: MeatType,
+    private var shopPrice: Double,
+    private var productionCost: Double,
+    private var amount: Double,
+    private var origin: UUID
+) : Subject {
 
     private var observers: ArrayList<Observer> = ArrayList()
-
-    private val type: MeatType
-    private var shopPrice: Double
-    private var productionCost: Double
-    private var amount: Double
-    private var origin: UUID
-
-    constructor(
-        type: MeatType,
-        shopPrice: Double,
-        productionCost: Double,
-        amount: Double,
-        origin: UUID
-    ) {
-        this.type = type
-        this.shopPrice = shopPrice
-        this.productionCost = productionCost
-        this.amount = amount
-        this.origin = origin
-    }
 
     /**
      * Get origin i d

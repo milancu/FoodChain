@@ -15,12 +15,12 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  */
 class FlowerCropStrategy : ProcessorCropStrategy {
     override fun execute(crop: Crop): Product {
-        when (crop.getName()) {
-            CropName.FLEX -> return createFromFlex(crop)
-            CropName.HEMP -> return createFromHemp(crop)
-            CropName.OILSEED -> return createFromOilSeed(crop)
-            CropName.POPPY -> return createFromPoppy(crop)
-            CropName.SUNFLOWER -> return createFromSunflower(crop)
+        return when (crop.getName()) {
+            CropName.FLEX -> createFromFlex(crop)
+            CropName.HEMP -> createFromHemp(crop)
+            CropName.OILSEED -> createFromOilSeed(crop)
+            CropName.POPPY -> createFromPoppy(crop)
+            CropName.SUNFLOWER -> createFromSunflower(crop)
             else -> throw Exception("Wrong crop name input " + crop.getName())
         }
     }
@@ -31,9 +31,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun createFromFlex(crop: Crop): Product {
-        var random: Int = (1..2).random()
-        when (random) {
+    private fun createFromFlex(crop: Crop): Product {
+        when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
                     "Flex powder",
@@ -71,9 +70,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun createFromSunflower(crop: Crop): Product {
-        var random: Int = (1..2).random()
-        when (random) {
+    private fun createFromSunflower(crop: Crop): Product {
+        when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
                     "Sunflower seeds",
@@ -111,9 +109,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun createFromPoppy(crop: Crop): Product {
-        var random: Int = (1..2).random()
-        when (random) {
+    private fun createFromPoppy(crop: Crop): Product {
+        when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
                     "Milled poppy",
@@ -151,9 +148,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun createFromHemp(crop: Crop): Product {
-        var random: Int = (1..6).random()
-        when (random) {
+    private fun createFromHemp(crop: Crop): Product {
+        when ((1..6).random()) {
             1 -> {
                 val product = CropProduct(
                     "Hemp Tea",
@@ -247,9 +243,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun createFromOilSeed(crop: Crop): Product {
-        var random: Int = (1..2).random()
-        when (random) {
+    private fun createFromOilSeed(crop: Crop): Product {
+        when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
                     "Oilseed oil",

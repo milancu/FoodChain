@@ -2,7 +2,6 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
-import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 /**
@@ -28,22 +27,22 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      * @return
      */
-    fun productMapInit(): HashMap<ProductType, Int> {
-        var prepareMap: HashMap<ProductType, Int> = HashMap<ProductType, Int>()
-        prepareMap.put(ProductType.CEREALS, 0)
-        prepareMap.put(ProductType.FRUIT, 0)
-        prepareMap.put(ProductType.VEGETABLES, 0)
-        prepareMap.put(ProductType.LEGUMES, 0)
-        prepareMap.put(ProductType.BULKINGREDIENTS, 0)
-        prepareMap.put(ProductType.OTHERS, 0)
-        prepareMap.put(ProductType.SAUCE, 0)
-        prepareMap.put(ProductType.ICED, 0)
-        prepareMap.put(ProductType.CANS, 0)
-        prepareMap.put(ProductType.OIL, 0)
-        prepareMap.put(ProductType.XXX, 0)
-        prepareMap.put(ProductType.MEAT, 0)
-        prepareMap.put(ProductType.DRINK, 0)
-        prepareMap.put(ProductType.ALCOHOL, 0)
+    private fun productMapInit(): HashMap<ProductType, Int> {
+        val prepareMap: HashMap<ProductType, Int> = HashMap()
+        prepareMap[ProductType.CEREALS] = 0
+        prepareMap[ProductType.FRUIT] = 0
+        prepareMap[ProductType.VEGETABLES] = 0
+        prepareMap[ProductType.LEGUMES] = 0
+        prepareMap[ProductType.BULKINGREDIENTS] = 0
+        prepareMap[ProductType.OTHERS] = 0
+        prepareMap[ProductType.SAUCE] = 0
+        prepareMap[ProductType.ICED] = 0
+        prepareMap[ProductType.CANS] = 0
+        prepareMap[ProductType.OIL] = 0
+        prepareMap[ProductType.XXX] = 0
+        prepareMap[ProductType.MEAT] = 0
+        prepareMap[ProductType.DRINK] = 0
+        prepareMap[ProductType.ALCOHOL] = 0
         return prepareMap
     }
 
@@ -84,13 +83,11 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      */
     fun payDebts() {
-        var toRemove: ArrayList<Invoice> = ArrayList()
+        val toRemove: ArrayList<Invoice> = ArrayList()
         for (invoice in unpaidInvoices) {
             if (amountOfMoney >= invoice.getPrice()) {
                 toRemove.add(invoice)
-                invoice.payInvoice()
-                invoice.notifyPaid()
-                amountOfMoney -= invoice.getPrice()
+                payForInvoice(invoice)
             }
         }
         for (invoice in toRemove) {
@@ -105,10 +102,10 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
      */
     fun vacateWarehouse() {
         for (product in warehouse.getStoragedProducts()) {
-            var count: Int? = productTypeMap.get(product.getProductType())
+            var count: Int? = productTypeMap[product.getProductType()]
             count = count?.plus(product.getAmount())
             if (count != null) {
-                productTypeMap.put(product.getProductType(), count)
+                productTypeMap[product.getProductType()] = count
             }
             availableProducts.add(product)
         }
@@ -120,7 +117,7 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
      */
     fun fillIn() {
         for (product in warehouse.getStoragedProducts()) {
-            if (productMapInit().get(product.getProductType())!! < 10) {
+            if (productMapInit()[product.getProductType()]!! < 10) {
                 availableProducts.add(product)
                 warehouse.getStoragedProducts().remove(product)
             }
@@ -133,7 +130,7 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
      * @param type
      */
     fun fillIn(type: ProductType) {
-        var newProducts: ArrayList<Product> = warehouse.getSpecificProducts(type)
+        val newProducts: ArrayList<Product> = warehouse.getSpecificProducts(type)
         for (product in newProducts) {
             availableProducts.add(product)
         }

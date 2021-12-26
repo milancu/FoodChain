@@ -5,17 +5,17 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
 import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
-import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
-import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import java.util.*
 
 
 /**
  * Base animal
  *
- * @constructor Create empty Base animal
+ * @constructor
+ *
+ * @param animalType
  */
-open class BaseAnimal : Subject {
+open class BaseAnimal(animalType: AnimalType) : Subject {
 
     private var observers: ArrayList<Observer> = ArrayList()
 
@@ -28,7 +28,7 @@ open class BaseAnimal : Subject {
     private var animalType: AnimalType
     private var origin: UUID
 
-    constructor(animalType: AnimalType) {
+    init {
         when (animalType) {
             AnimalType.COW -> {
                 this.weight = (150000..600000).random().toDouble()
@@ -80,23 +80,7 @@ open class BaseAnimal : Subject {
                 this.animalType = animalType
                 this.origin = UUID.randomUUID()
             }
-            else -> throw Exception("unexpected type")
         }
-    }
-
-    /**
-     * Eat feed
-     *
-     * @param owner
-     * @param feed
-     */// funkce eat
-    fun eatFeed(owner: Farmer, feed: Crop) {
-        for (resource in owner.getResources()) {
-            if (resource.getName() == feed.getName() && resource.getAmount() >= feed.getAmount()) {
-                owner.decreaseResource(feed)
-            }
-        }
-        println("Dej jim nazrat vole, nemas zasoby hajzle")
     }
 
     /**
@@ -106,15 +90,6 @@ open class BaseAnimal : Subject {
      */
     fun getAge(): Int {
         return this.age
-    }
-
-    /**
-     * Get feed
-     *
-     * @return
-     */
-    fun getFeed(): CropType {
-        return this.feed
     }
 
     /**

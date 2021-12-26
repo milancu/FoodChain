@@ -4,7 +4,6 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.Field
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 
-
 /**
  * Grower
  *
@@ -21,12 +20,12 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
     private var supplies : ArrayList<Crop> = setInitalSupplies()
 
     private fun setInitialField() : ArrayList<Field>{
-        val generator : Generator = Generator()
+        val generator = Generator()
         return generator.generateFields()
     }
 
     private fun setInitalSupplies() : ArrayList<Crop>{
-        val generator : Generator = Generator()
+        val generator = Generator()
         return generator.generateCrops()
     }
 
@@ -38,7 +37,7 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
         for(field in fields){
             if(amountOfMoney >= field.getCrop().getProductionCost()){
                 field.setRaised(true)
-                amountOfMoney -= field.getCrop().getProductionCost();
+                amountOfMoney -= field.getCrop().getProductionCost()
             }
             else if(field.isRaised()){
                 field.setRaised(false)
@@ -53,12 +52,12 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
      *
      */
     fun harvest(){
-        var harvestedCrop : ArrayList<Crop> = ArrayList()
+        val harvestedCrop : ArrayList<Crop> = ArrayList()
         for(field in fields){
             println("Plodina vek: " + field.getCrop().getGrowth())
             if(field.getCrop().getGrowth() >= 10){
                 println("Plodina " + field.getCrop().getName() + " sklizena v poctu " + field.getCrop().getAmount())
-                var crop = field.getCrop()
+                val crop = field.getCrop()
                 harvestedCrop.add(crop)
                 crop.notifyWasHarvested()
                 field.resetField()
@@ -80,8 +79,7 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
      *
      */
     fun transportSupplies(){
-        Transport.TransportCompany.takeCropSupplies(supplies)
-        // TODO odecet za dopravu, faktura...
+        Transport.takeCropSupplies(supplies)
         supplies = ArrayList();
     }
 

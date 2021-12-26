@@ -17,7 +17,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
         when (crop.getName()) {
             CropName.POTATO -> return createFromPotato(crop)
             CropName.SALAD -> {
-                var product = CropProduct(
+                val product = CropProduct(
                     crop.getName().toString(),
                     ProductType.VEGETABLES,
                     crop.getShopPrice() * 1.2,
@@ -34,7 +34,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
             CropName.TOMATO -> return createFromTomato(crop)
             CropName.ONION -> return createFromOnion(crop)
             CropName.SUGARBEAT -> {
-                var product = CropProduct(
+                val product = CropProduct(
                     "Suggar",
                     ProductType.BULKINGREDIENTS,
                     crop.getShopPrice() * 1.2,
@@ -57,9 +57,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun createFromTomato(crop: Crop): Product {
-        var random: Int = (1..4).random()
-        when (random) {
+    private fun createFromTomato(crop: Crop): Product {
+        when ((1..4).random()) {
             1 -> {
                 val product = CropProduct(
                     crop.getName().toString(),
@@ -130,9 +129,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun createFromCucumber(crop: Crop): Product {
-        var random: Int = (1..2).random()
-        when (random) {
+    private fun createFromCucumber(crop: Crop): Product {
+        when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
                     crop.getName().toString(),
@@ -172,9 +170,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun createFromOnion(crop: Crop): Product {
-        var random: Int = (1..2).random()
-        when (random) {
+    private fun createFromOnion(crop: Crop): Product {
+        when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
                     crop.getName().toString(),
@@ -214,9 +211,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun createFromPotato(crop: Crop): Product {
-        var random: Int = (1..3).random()
-        when (random) {
+    private fun createFromPotato(crop: Crop): Product {
+        when ((1..3).random()) {
             1 -> {
                 val product = CropProduct(
                     crop.getName().toString(),

@@ -15,10 +15,9 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 class FruitCropStrategy : ProcessorCropStrategy {
     override fun execute(crop: Crop): Product {
         if (crop.getName() == CropName.GRAPEVINE) {
-            return createFromVine(crop);
+            return createFromVine(crop)
         }
-        val random: Int = (1..4).random()
-        when (random) {
+        when ((1..4).random()) {
             1 -> {
                 val product = CropProduct(
                     crop.getName().toString(),
@@ -85,9 +84,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun createFromVine(crop: Crop): Product {
-        val random: Int = (1..2).random()
-        when (random) {
+    private fun createFromVine(crop: Crop): Product {
+        when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
                     crop.getName().toString(),

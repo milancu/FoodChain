@@ -1,10 +1,8 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
-import kotlin.math.cos
 
 /**
  * Transport
@@ -22,7 +20,7 @@ class Transport{
         private var meats : ArrayList<Meat> = ArrayList()
 
         fun transportCropSuplies() : ArrayList<Crop>{
-            var toTransport : ArrayList<Crop> = cropSupplies
+            val toTransport : ArrayList<Crop> = cropSupplies
             for(supply in cropSupplies){
                 transport.changeAmountOfMoney((supply.getShopPrice() * supply.getAmount() * 0.1))
 /*
@@ -34,7 +32,7 @@ class Transport{
         }
 
         fun transportProducts() : ArrayList<Product>{
-            var toTransport : ArrayList<Product> = products
+            val toTransport : ArrayList<Product> = products
             for(product in products){
                 transport.changeAmountOfMoney((product.getShopPrice() * product.getAmount() * 0.1))
 /*
@@ -46,7 +44,7 @@ class Transport{
         }
 
         fun transportMeats() : ArrayList<Meat>{
-            var toTransport : ArrayList<Meat> = meats
+            val toTransport : ArrayList<Meat> = meats
             for(meat in meats){
                 transport.changeAmountOfMoney((meat.getShopPrice() * meat.getAmount() * 0.1))
 /*
@@ -80,7 +78,7 @@ class Transport{
 
 
         fun cargoDeduction(){
-            var costs : Double = 0.0
+            var costs = 0.0
             for(meat in meats){
                 costs += meat.getShopPrice() * meat.getAmount() * 0.025
             }
@@ -94,7 +92,7 @@ class Transport{
             this.amountOfMoney -= costs
 */
             transport.changeAmountOfMoney(-costs)
-            println("Dopravni spolecnost na nakladech utratila: " + costs)
+            println("Dopravni spolecnost na nakladech utratila: $costs")
         }
 
         fun getIdentifier() : Int{

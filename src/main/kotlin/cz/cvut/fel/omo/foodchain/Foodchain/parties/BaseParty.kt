@@ -5,19 +5,14 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
  *
  * @constructor Create empty Base party
  */
-open class BaseParty {
+open class BaseParty(
+    private val subjectName: String,
+    private val location: String,
+    protected var amountOfMoney: Double
+) {
 
-    protected val subjectName : String
-    protected val identifier : Int // Pro kazdy subjet jina podoba + validace (ICO, rodne cislo)
-    protected val location : String
-    protected var amountOfMoney : Double
-
-    constructor(subjectName: String, location: String, amountOfMoney: Double) {
-        this.subjectName = subjectName
-        this.identifier = (10000000..99999999).random()
-        this.location = location
-        this.amountOfMoney = amountOfMoney
-    }
+    private val identifier : Int =
+        (10000000..99999999).random()
 
     /**
      * Get subject name

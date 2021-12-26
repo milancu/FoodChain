@@ -8,7 +8,6 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.*
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
-import kotlin.random.Random.Default.nextInt
 
 /**
  * Generator
@@ -22,8 +21,8 @@ class Generator {
      *
      * @return
      */
-    public fun generateAnimal(): BaseAnimal {
-        var animal = BaseAnimal(AnimalType.getAnimal())
+    fun generateAnimal(): BaseAnimal {
+        val animal = BaseAnimal(AnimalType.getAnimal())
         animal.attach(Report)
         animal.notifyUpdate()
         return animal
@@ -34,8 +33,8 @@ class Generator {
      *
      * @return
      */
-    public fun generateAnimals(): ArrayList<BaseAnimal> {
-        var listOfAnimals = ArrayList<BaseAnimal>();
+    fun generateAnimals(): ArrayList<BaseAnimal> {
+        val listOfAnimals = ArrayList<BaseAnimal>()
 
         for (i in 1..(Config.ANIMALS_MIN..Config.ANIMALS_MAX).random()) {
             listOfAnimals.add(generateAnimal())
@@ -44,9 +43,8 @@ class Generator {
     }
 
     private fun generateField(): Field {
-        var capacity = (Config.FIELD_CAPACITY_MIN..Config.FIELD_CAPACITY_MAX).random()
-        val field = Field(generateCrop(capacity), capacity)
-        return field
+        val capacity = (Config.FIELD_CAPACITY_MIN..Config.FIELD_CAPACITY_MAX).random()
+        return Field(generateCrop(capacity), capacity)
     }
 
     /**
@@ -54,8 +52,8 @@ class Generator {
      *
      * @return
      */
-    public fun generateFields(): ArrayList<Field> {
-        var listOfField = ArrayList<Field>();
+    fun generateFields(): ArrayList<Field> {
+        val listOfField = ArrayList<Field>()
         for (i in 1..(Config.MIN_FIELDS..Config.MAX_FIELDS).random()) {
             listOfField.add(generateField())
         }
@@ -68,21 +66,20 @@ class Generator {
      * @param capacity
      * @return
      */
-    public fun generateCrop(capacity: Int): Crop {
-        var cropName = CropName.getCropName()
-        var type = setType(cropName)
-        var growthTime = (0..Config.FLOWER_MAX_AGE).random()
-        var crop = Crop(cropName, type, capacity, growthTime)
+    fun generateCrop(capacity: Int): Crop {
+        val cropName = CropName.getCropName()
+        val type = setType(cropName)
+        val growthTime = (0..Config.FLOWER_MAX_AGE).random()
+        val crop = Crop(cropName, type, capacity, growthTime)
         crop.attach(Report)
         crop.notifyUpdate()
         return crop
     }
 
     private fun generateFeed(capacity: Int): Crop {
-        var cropName = CropName.getCropName()
-        var growthTime = (0..Config.FLOWER_MAX_AGE).random()
-        var crop = Crop(cropName, CropType.CEREAL, capacity, growthTime)
-        return crop
+        val cropName = CropName.getCropName()
+        val growthTime = (0..Config.FLOWER_MAX_AGE).random()
+        return Crop(cropName, CropType.CEREAL, capacity, growthTime)
     }
 
     private fun setType(name: CropName): CropType {
@@ -119,8 +116,8 @@ class Generator {
      *
      * @return
      */
-    public fun generateCrops(): ArrayList<Crop> {
-        var listOfCrop = ArrayList<Crop>();
+    fun generateCrops(): ArrayList<Crop> {
+        val listOfCrop = ArrayList<Crop>()
         for (i in 1..(Config.MIN_DEAFAULT_CROPTYPES..Config.MAX_DEFAULT_CROPTYPES).random()) {
             listOfCrop.add(generateCrop((Config.MIN_DEFAULT_CROPS..Config.MAX_DEFAULT_CROPS).random()))
         }
@@ -132,8 +129,8 @@ class Generator {
      *
      * @return
      */
-    public fun generateFeedingForAnimal(): ArrayList<Crop> {
-        var listOfCrop = ArrayList<Crop>();
+    fun generateFeedingForAnimal(): ArrayList<Crop> {
+        val listOfCrop = ArrayList<Crop>()
         for (i in 1..(Config.MIN_DEAFAULT_CROPTYPES..Config.MAX_DEFAULT_CROPTYPES).random()) {
             listOfCrop.add(generateFeed((Config.MIN_DEFAULT_CROPS..Config.MAX_DEFAULT_CROPS).random()))
         }
@@ -149,7 +146,7 @@ class Generator {
         val generatedLocation = (1..Config.LOCATION_LENGTH)
             .map { charPool.random() }
             .joinToString("") + ", " + (1000..9999).random()
-        val generatedMoney = (Config.FINANCE_MIN..Config.FINANCE_MAX).random().toDouble();
+        val generatedMoney = (Config.FINANCE_MIN..Config.FINANCE_MAX).random().toDouble()
 
         return BaseParty(generatedName, generatedLocation, generatedMoney)
     }
@@ -170,7 +167,7 @@ class Generator {
         for (i in 1..Config.CUSTOMERS) {
             customers.add(generateCustomer())
         }
-        return customers;
+        return customers
     }
 
     private fun generateFarmer(): Farmer {
@@ -189,7 +186,7 @@ class Generator {
     }
 
     private fun generateRetailer(): Retailer {
-        val base: BaseParty = generateNewParty();
+        val base: BaseParty = generateNewParty()
         return Retailer(base.getSubjectName(), base.getLocation(), base.getAmountOfMoney())
     }
 
@@ -198,7 +195,7 @@ class Generator {
      *
      * @return
      */
-    public fun generateFactory() : MeatFactory{
+    fun generateFactory() : MeatFactory{
         val base: BaseParty = generateNewParty()
         return MeatFactory(base.getSubjectName(), base.getLocation(), base.getAmountOfMoney())
     }
@@ -208,12 +205,12 @@ class Generator {
      *
      * @return
      */
-    public fun generateGrowers(): ArrayList<Grower> {
+    fun generateGrowers(): ArrayList<Grower> {
         val growers: ArrayList<Grower> = ArrayList()
         for (i in 1..Config.GROWERS) {
             growers.add(generateGrower())
         }
-        return growers;
+        return growers
     }
 
     /**
@@ -221,12 +218,12 @@ class Generator {
      *
      * @return
      */
-    public fun generateFarmers(): ArrayList<Farmer> {
+    fun generateFarmers(): ArrayList<Farmer> {
         val farmers: ArrayList<Farmer> = ArrayList()
         for (i in 1..Config.FARMERS) {
             farmers.add(generateFarmer())
         }
-        return farmers;
+        return farmers
     }
 
     /**
@@ -234,7 +231,7 @@ class Generator {
      *
      * @return
      */
-    public fun generateProcessors(): ArrayList<Processor> {
+    fun generateProcessors(): ArrayList<Processor> {
         val processors: ArrayList<Processor> = ArrayList()
         for (i in 1..Config.PROCESSORS) {
             processors.add(generateProcessor())
@@ -247,7 +244,7 @@ class Generator {
      *
      * @return
      */
-    public fun generateRetailers(): ArrayList<Retailer> {
+    fun generateRetailers(): ArrayList<Retailer> {
         val retailers: ArrayList<Retailer> = ArrayList()
         for (i in 1..Config.RETAILERS) {
             retailers.add(generateRetailer())

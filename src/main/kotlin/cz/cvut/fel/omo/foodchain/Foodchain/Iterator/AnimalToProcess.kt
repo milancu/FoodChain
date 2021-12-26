@@ -9,20 +9,16 @@ import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
  */
 class AnimalToProcess : CustomIterator {
 
-    private var animalList : ArrayList<BaseAnimal>;
-
-    constructor() {
-        this.animalList = ArrayList<BaseAnimal>()
-    }
+    private var animalList : ArrayList<BaseAnimal> = ArrayList()
 
     override fun hasNext(): Boolean {
-        return !animalList.isEmpty()
+        return animalList.isNotEmpty()
     }
 
     override fun next(): BaseAnimal {
         val animal = animalList[0]
         animalList.drop(0)
-        return animal;
+        return animal
     }
 
     /**
@@ -32,14 +28,6 @@ class AnimalToProcess : CustomIterator {
      */
     fun add(animal: BaseAnimal) {
         animalList.add(animal)
-    }
-
-    /**
-     * Clear list
-     *
-     */
-    fun clearList() {
-        animalList = ArrayList<BaseAnimal>();
     }
 
     /**

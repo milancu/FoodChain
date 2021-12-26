@@ -1,21 +1,19 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
-import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
-
 /**
  * Config
  *
  * @constructor Create empty Config
  */
 class Config {
-    companion object params {
+    companion object Params {
         // main config
-        const val WEEKS : Int = 52
-        const val GROWERS : Int = 5
-        const val FARMERS : Int = 5
-        const val PROCESSORS : Int = 5
-        const val CUSTOMERS : Int = 10000
-        const val RETAILERS : Int = 5
+        const val WEEKS : Int = 10
+        const val GROWERS : Int = 2
+        const val FARMERS : Int = 2
+        const val PROCESSORS : Int = 2
+        const val CUSTOMERS : Int = 100
+        const val RETAILERS : Int = 2
 
         const val STANDARD_SHOP_SIZE : Int = 10
         const val VEGAN_SHOP_SIZE : Int = 2
@@ -43,12 +41,8 @@ class Config {
 
         const val FINANCE_MIN = 1000000
         const val FINANCE_MAX = 10000000
-        const val IDENTIFIER_MIN = 10000000
-        const val IDENTIFIER_MAX = 99999999
-        const val NAME_LENGTH = 12;
-        const val IDENTIFIER_LENGTH = 8
+        const val NAME_LENGTH = 12
         const val LOCATION_LENGTH = 16
-        const val ALPHANUMERIC_REGEX = "[a-zA-Z0-9]+"
 
         const val TRANSPORT_TAX = 0.1
     }

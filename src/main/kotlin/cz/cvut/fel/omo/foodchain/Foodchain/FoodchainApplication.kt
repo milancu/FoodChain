@@ -10,7 +10,7 @@ import org.springframework.boot.runApplication
  * @constructor Create empty Foodchain application
  */
 @SpringBootApplication
-open class FoodchainApplication
+class FoodchainApplication
 
 
 /**
@@ -21,10 +21,10 @@ open class FoodchainApplication
 fun main(args: Array<String>) {
 
 	runApplication<FoodchainApplication>(*args)
-	val simulation : Simulation = Simulation()
+	val simulation = Simulation()
 
 	for(i in (1..Config.WEEKS)){
-		println(i.toString() + ". WEEK")
+		println("$i. WEEK")
 		println()
 		simulation.runWeek()
 	}

@@ -34,7 +34,7 @@ class Processor(subjectName : String, location : String, amountOfMoney : Double)
      * @param crop
      * @return
      */
-    fun createProduct(crop : Crop) : Product {
+    private fun createProduct(crop : Crop) : Product {
         val context : CropContext
         when(crop.getType()){
             CropType.CEREAL -> {
@@ -96,13 +96,11 @@ class Processor(subjectName : String, location : String, amountOfMoney : Double)
      *
      */
     fun payDebts() {
-        var toRemove: ArrayList<Invoice> = ArrayList()
+        val toRemove: ArrayList<Invoice> = ArrayList()
         for (invoice in unpaidInvoices) {
             if (amountOfMoney >= invoice.getPrice()) {
                 toRemove.add(invoice)
-                invoice.notifyPaid()
-                invoice.payInvoice()
-                amountOfMoney -= invoice.getPrice()
+                payForInvoice(invoice)
             }
         }
         for (invoice in toRemove) {

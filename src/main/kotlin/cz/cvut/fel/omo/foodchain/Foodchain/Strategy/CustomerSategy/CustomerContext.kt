@@ -7,12 +7,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  *
  * @constructor Create empty Customer context
  */
-class CustomerContext {
-    var strategy : CustomerStrategy
-
-    constructor(strategy: CustomerStrategy) {
-        this.strategy = strategy
-    }
+class CustomerContext(var strategy: CustomerStrategy) {
 
     /**
      * Set strategy

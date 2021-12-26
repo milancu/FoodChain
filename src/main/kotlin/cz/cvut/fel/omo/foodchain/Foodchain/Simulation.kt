@@ -16,8 +16,6 @@ class Simulation {
     private var channelM2R : MeatFactoryToRetailerChannel = MeatFactoryToRetailerChannel(channelF2M.getMeatFactory() ,channelP2R.getRetailers())
     private var channelRTC : RetailerToCustomerChannel = RetailerToCustomerChannel(channelP2R.getRetailers())
 
-    private var channels : ArrayList<Channel> = ArrayList()
-
     /**
      * Run week
      *

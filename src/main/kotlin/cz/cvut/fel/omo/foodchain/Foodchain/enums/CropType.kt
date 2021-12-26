@@ -13,7 +13,7 @@ enum class CropType {
     companion object {
         fun getCropType(): CropType {
             val random = Random()
-            return CropType.values()[random.nextInt(CropType.values().size)]
+            return values()[random.nextInt(values().size)]
         }
     }
 }

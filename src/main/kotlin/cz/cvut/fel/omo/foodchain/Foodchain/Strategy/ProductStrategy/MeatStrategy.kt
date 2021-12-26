@@ -1,6 +1,5 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.Strategy.ProductStrategy
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.FishType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatProductType
@@ -19,18 +18,18 @@ import kotlin.collections.ArrayList
 class MeatStrategy : ProcessorMeatStrategy {
 
     override fun execute(meat: Meat): ArrayList<Product> {
-        when (meat.getType()) {
+        return when (meat.getType()) {
             MeatType.BEEF -> {
-                return executeBeef(meat)
+                executeBeef(meat)
             }
             MeatType.FISH -> {
-                return executeFish(meat)
+                executeFish(meat)
             }
             MeatType.CHICKEN -> {
-                return executeChicken(meat)
+                executeChicken(meat)
             }
             MeatType.PORK -> {
-                return executePork(meat)
+                executePork(meat)
             }
         }
     }
@@ -41,9 +40,9 @@ class MeatStrategy : ProcessorMeatStrategy {
      * @param meat
      * @return
      */
-    fun executeBeef(meat: Meat): ArrayList<Product> {
-        var meats = ArrayList<Product>()
-        var Dumpling = MeatProduct(
+    private fun executeBeef(meat: Meat): ArrayList<Product> {
+        val meats = ArrayList<Product>()
+        val dumpling = MeatProduct(
             "Dumpling",
             MeatProductType.BEEFDUMPLING.toString(),
             ProductType.MEAT,
@@ -53,7 +52,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        var BeefShoulder = MeatProduct(
+        val beefShoulder = MeatProduct(
             "BeefShoulder",
             MeatProductType.BEEFSHOULDER.toString(),
             ProductType.MEAT,
@@ -63,7 +62,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        var Bovinecheek = MeatProduct(
+        val bovinecheek = MeatProduct(
             "Bovinecheek",
             MeatProductType.BOVINECHEEK.toString(),
             ProductType.MEAT,
@@ -73,7 +72,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        var Beeftenderloin = MeatProduct(
+        val beeftenderloin = MeatProduct(
             "Beeftenderloin",
             MeatProductType.BEEFTENDERLOIN.toString(),
             ProductType.MEAT,
@@ -83,21 +82,21 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        Dumpling.attach(Report)
-        BeefShoulder.attach(Report)
-        Bovinecheek.attach(Report)
-        Beeftenderloin.attach(Report)
-        Dumpling.notifyUpdate()
-        BeefShoulder.notifyUpdate()
-        Bovinecheek.notifyUpdate()
-        Beeftenderloin.notifyUpdate()
+        dumpling.attach(Report)
+        beefShoulder.attach(Report)
+        bovinecheek.attach(Report)
+        beeftenderloin.attach(Report)
+        dumpling.notifyUpdate()
+        beefShoulder.notifyUpdate()
+        bovinecheek.notifyUpdate()
+        beeftenderloin.notifyUpdate()
 
         meats.addAll(
             listOf(
-                Dumpling, BeefShoulder, Bovinecheek, Beeftenderloin
+                dumpling, beefShoulder, bovinecheek, beeftenderloin
             )
         )
-        return meats;
+        return meats
     }
 
     /**
@@ -106,9 +105,9 @@ class MeatStrategy : ProcessorMeatStrategy {
      * @param meat
      * @return
      */
-    fun executeChicken(meat: Meat): ArrayList<Product> {
-        var meats = ArrayList<Product>()
-        var ChickenThigh = MeatProduct(
+    private fun executeChicken(meat: Meat): ArrayList<Product> {
+        val meats = ArrayList<Product>()
+        val chickenThigh = MeatProduct(
             "Chicken thigh",
             MeatProductType.CHICKENTHIGH.toString(),
             ProductType.MEAT,
@@ -118,7 +117,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        var ChickenBreast = MeatProduct(
+        val chickenBreast = MeatProduct(
             "Chicken breast",
             MeatProductType.CHICKENBREAST.toString(),
             ProductType.MEAT,
@@ -128,7 +127,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        var ChickenWings = MeatProduct(
+        val chickenWings = MeatProduct(
             "Chicken wings",
             MeatProductType.CHICKENWINGS.toString(),
             ProductType.MEAT,
@@ -139,20 +138,20 @@ class MeatStrategy : ProcessorMeatStrategy {
             meat.getOriginID()
         )
 
-        ChickenThigh.attach(Report)
-        ChickenBreast.attach(Report)
-        ChickenWings.attach(Report)
+        chickenThigh.attach(Report)
+        chickenBreast.attach(Report)
+        chickenWings.attach(Report)
 
-        ChickenThigh.notifyUpdate()
-        ChickenBreast.notifyUpdate()
-        ChickenWings.notifyUpdate()
+        chickenThigh.notifyUpdate()
+        chickenBreast.notifyUpdate()
+        chickenWings.notifyUpdate()
 
         meats.addAll(
             listOf(
-                ChickenThigh, ChickenBreast, ChickenWings
+                chickenThigh, chickenBreast, chickenWings
             )
         )
-        return meats;
+        return meats
     }
 
     /**
@@ -161,9 +160,9 @@ class MeatStrategy : ProcessorMeatStrategy {
      * @param meat
      * @return
      */
-    fun executePork(meat: Meat): ArrayList<Product> {
-        var meats = ArrayList<Product>()
-        var PorkDumpling = MeatProduct(
+    private fun executePork(meat: Meat): ArrayList<Product> {
+        val meats = ArrayList<Product>()
+        val porkDumpling = MeatProduct(
             "Pork dumpling",
             MeatProductType.PORKDUMPLING.toString(),
             ProductType.MEAT,
@@ -173,7 +172,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        var PorkRoast = MeatProduct(
+        val porkRoast = MeatProduct(
             "Pork roast",
             MeatProductType.PORKROAST.toString(),
             ProductType.MEAT,
@@ -183,7 +182,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        var PorkLeg = MeatProduct(
+        val porkLeg = MeatProduct(
             "Pork leg",
             MeatProductType.PORKLEG.toString(),
             ProductType.MEAT,
@@ -193,7 +192,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        var PorkFlank = MeatProduct(
+        val porkFlank = MeatProduct(
             "Pork flank",
             MeatProductType.PORKFLANK.toString(),
             ProductType.MEAT,
@@ -204,22 +203,22 @@ class MeatStrategy : ProcessorMeatStrategy {
             meat.getOriginID()
         )
 
-        PorkDumpling.attach(Report)
-        PorkRoast.attach(Report)
-        PorkLeg.attach(Report)
-        PorkFlank.attach(Report)
+        porkDumpling.attach(Report)
+        porkRoast.attach(Report)
+        porkLeg.attach(Report)
+        porkFlank.attach(Report)
 
-        PorkDumpling.notifyUpdate()
-        PorkRoast.notifyUpdate()
-        PorkLeg.notifyUpdate()
-        PorkFlank.notifyUpdate()
+        porkDumpling.notifyUpdate()
+        porkRoast.notifyUpdate()
+        porkLeg.notifyUpdate()
+        porkFlank.notifyUpdate()
 
         meats.addAll(
             listOf(
-                PorkDumpling, PorkRoast, PorkLeg, PorkFlank
+                porkDumpling, porkRoast, porkLeg, porkFlank
             )
         )
-        return meats;
+        return meats
     }
 
     /**
@@ -228,9 +227,9 @@ class MeatStrategy : ProcessorMeatStrategy {
      * @param meat
      * @return
      */
-    fun executeFish(meat: Meat): ArrayList<Product> {
-        var meats = ArrayList<Product>()
-        var carp = MeatProduct(
+    private fun executeFish(meat: Meat): ArrayList<Product> {
+        val meats = ArrayList<Product>()
+        val carp = MeatProduct(
             "CARP",
             FishType.CARP.toString(),
             ProductType.MEAT,
@@ -240,7 +239,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        var bream = MeatProduct(
+        val bream = MeatProduct(
             "BREAM",
             FishType.BREAM.toString(),
             ProductType.MEAT,
@@ -250,7 +249,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        var eel = MeatProduct(
+        val eel = MeatProduct(
             "EEL",
             FishType.EEL.toString(),
             ProductType.MEAT,
@@ -260,7 +259,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        var zander = MeatProduct(
+        val zander = MeatProduct(
             "ZANDER",
             FishType.ZANDER.toString(),
             ProductType.MEAT,
@@ -270,7 +269,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        var catfish = MeatProduct(
+        val catfish = MeatProduct(
             "CATFISH",
             FishType.CATFISH.toString(),
             ProductType.MEAT,
@@ -280,7 +279,7 @@ class MeatStrategy : ProcessorMeatStrategy {
             "kg",
             meat.getOriginID()
         )
-        var perch = MeatProduct(
+        val perch = MeatProduct(
             "PERCH",
             FishType.PERCH.toString(),
             ProductType.MEAT,
@@ -310,7 +309,7 @@ class MeatStrategy : ProcessorMeatStrategy {
                 carp, bream, eel, zander, catfish, perch
             )
         )
-        return meats;
+        return meats
     }
 
 

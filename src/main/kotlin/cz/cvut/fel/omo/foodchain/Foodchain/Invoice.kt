@@ -2,10 +2,8 @@ package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
-import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.InvoiceType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
-import cz.cvut.fel.omo.foodchain.Foodchain.parties.Transport
 import java.util.*
 
 /**
@@ -13,24 +11,19 @@ import java.util.*
  *
  * @constructor Create empty Invoice
  */
-class Invoice : Subject {
+class Invoice(// odberatel
+    private val subscriber: BaseParty,// dodavatel
+    private val contractor: BaseParty, private val price: Double, private val note: InvoiceType
+) : Subject {
 
     private var observers: ArrayList<Observer> = ArrayList()
 
-    private val subscriber: BaseParty // odberatel
-    private val contractor: BaseParty // dodavatel
-    private val price: Double
-    private val note: InvoiceType
     private var isPaid: Boolean
     private var code: UUID
     private var createTime: Int
     private var paidTime: Int = 0
 
-    constructor(subscriber: BaseParty, contractor: BaseParty, price: Double, note: InvoiceType) {
-        this.subscriber = subscriber
-        this.contractor = contractor
-        this.price = price
-        this.note = note
+    init {
         this.isPaid = false
         this.code = UUID.randomUUID()
         this.createTime = Week.acutalWeek

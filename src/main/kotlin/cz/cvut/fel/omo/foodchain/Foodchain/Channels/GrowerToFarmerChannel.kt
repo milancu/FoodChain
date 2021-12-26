@@ -12,14 +12,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
  *
  * @constructor Create empty Grower to farmer channel
  */
-class GrowerToFarmerChannel : Channel{
-    private var farmers : ArrayList<Farmer>
-    private var growers : ArrayList<Grower>
-
-    constructor(growers: ArrayList<Grower>, farmers: ArrayList<Farmer>) {
-        this.farmers = farmers
-        this.growers = growers
-    }
+class GrowerToFarmerChannel(private var growers: ArrayList<Grower>, private var farmers: ArrayList<Farmer>) : Channel{
 
     // run simulation musi byt pred porcesorem
     override fun runSimulation(){
@@ -49,8 +42,8 @@ class GrowerToFarmerChannel : Channel{
             }
         }
         println("Nedostatek vhodnych dodavatelu v CR")
-        var exoticGrower : Grower = Grower("sosGrower", "Exotica", 0.0)
-        var exoticCrop : Crop = Crop(CropName.WHEET, CropType.CEREAL, 50, 0)
+        val exoticGrower = Grower("sosGrower", "Exotica", 0.0)
+        val exoticCrop = Crop(CropName.WHEET, CropType.CEREAL, 50, 0)
         exoticGrower.addEmergencyCrop(exoticCrop)
         return exoticGrower
     }

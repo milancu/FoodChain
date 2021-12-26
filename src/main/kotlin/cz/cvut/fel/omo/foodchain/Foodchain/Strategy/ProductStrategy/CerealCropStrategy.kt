@@ -14,13 +14,13 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  */
 class CerealCropStrategy : ProcessorCropStrategy {
     override fun execute(crop: Crop): Product {
-        when (crop.getName()) {
-            CropName.BARLEY -> return prepareForBeer(crop)
-            CropName.CORN -> return createFromCorn(crop)
-            CropName.OATS -> return createFromOats(crop)
-            CropName.RYE -> return createFromGrain(crop)
-            CropName.WHEET -> return createFromGrain(crop)
-            CropName.HOP -> return prepareForBeer(crop)
+        return when (crop.getName()) {
+            CropName.BARLEY -> prepareForBeer(crop)
+            CropName.CORN -> createFromCorn(crop)
+            CropName.OATS -> createFromOats(crop)
+            CropName.RYE -> createFromGrain(crop)
+            CropName.WHEET -> createFromGrain(crop)
+            CropName.HOP -> prepareForBeer(crop)
             else -> throw Exception("Wrong crop name input")
         }
     }
@@ -31,9 +31,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun createFromGrain(crop: Crop): Product {
-        val random: Int = (1..2).random()
-        when (random) {
+    private fun createFromGrain(crop: Crop): Product {
+        when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
                     "Flour",
@@ -71,7 +70,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun prepareForBeer(crop: Crop): Product {
+    private fun prepareForBeer(crop: Crop): Product {
         val product = CropProduct(
             "Beer",
             ProductType.ALCOHOL,
@@ -92,9 +91,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun createFromCorn(crop: Crop): Product {
-        val random: Int = (1..3).random()
-        when (random) {
+    private fun createFromCorn(crop: Crop): Product {
+        when ((1..3).random()) {
             1 -> {
                 val product = CropProduct(
                     "Boiled corn",
@@ -146,9 +144,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    fun createFromOats(crop: Crop): Product {
-        val random: Int = (1..2).random()
-        when (random) {
+    private fun createFromOats(crop: Crop): Product {
+        when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
                     "Musli",

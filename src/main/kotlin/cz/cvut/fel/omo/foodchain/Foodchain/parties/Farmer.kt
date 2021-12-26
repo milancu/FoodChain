@@ -7,6 +7,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 
+// TODO duplicity kodu a iterator - Mila nebudu ti sem smatat
+
 /**
  * Farmer
  *
@@ -21,7 +23,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
 
     private var resources: ArrayList<Crop> = setInitialResources()
     private var animals: ArrayList<BaseAnimal> = setInitialAnimals()
-    private var animalsToProcessing: ArrayList<BaseAnimal> = ArrayList();
+    private var animalsToProcessing: ArrayList<BaseAnimal> = ArrayList()
     private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
     private val butcher : Butcher = Butcher()
     private val animalToProcess : AnimalToProcess = AnimalToProcess() //ITERATOR
@@ -31,7 +33,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      * @return
      */
-    fun setInitialResources(): ArrayList<Crop> {
+    private fun setInitialResources(): ArrayList<Crop> {
         val generator = Generator()
         return generator.generateFeedingForAnimal()
     }
@@ -41,31 +43,18 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      * @return
      */
-    fun setInitialAnimals(): ArrayList<BaseAnimal> {
+    private fun setInitialAnimals(): ArrayList<BaseAnimal> {
         val generator = Generator()
         return generator.generateAnimals()
     }
 
-    /**
-     * Decrease resource
-     *
-     * @param feed
-     */
-    fun decreaseResource(feed: Crop) {
-        for (resource in resources) {
-            if (resource.getName() == feed.getName()) {
-                val realValue: Int = resource.getAmount() - feed.getAmount();
-                resource.setAmount(realValue)
-            }
-        }
-    }
 
     /**
      * Animals to processing
      *
      * @return
      */
-    fun animalsToProcessing(): ArrayList<BaseAnimal> {
+    private fun animalsToProcessing(): ArrayList<BaseAnimal> {
         val animalsToProcessing = ArrayList<BaseAnimal>()
 
         animals.iterator().forEach { animal ->
@@ -170,8 +159,8 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      * @param value
      */
-    fun buyNewAnimals(value : Int){
-        val generator : Generator = Generator()
+    private fun buyNewAnimals(value : Int){
+        val generator = Generator()
         if(value != 0) {
             for (i in (1..value)) {
                 val newAnimal: BaseAnimal = generator.generateAnimal()
@@ -179,15 +168,6 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
                 this.amountOfMoney -= newAnimal.getWeight()
             }
         }
-    }
-
-    /**
-     * Get resources
-     *
-     * @return
-     */
-    fun getResources() : ArrayList<Crop>{
-        return this.resources
     }
 
     /**
@@ -240,7 +220,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      * @param crops
      */
-    fun removeUsedResources(crops : ArrayList<Crop>){
+    private fun removeUsedResources(crops : ArrayList<Crop>){
         for(crop in crops){
             resources.remove(crop)
         }
@@ -251,9 +231,9 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      */
     fun feedAnimal(){
-        var feeded : Boolean = false
+        var feeded = false
         for(animal in animals){
-            var toRemove : ArrayList<Crop> = ArrayList()
+            val toRemove : ArrayList<Crop> = ArrayList()
             for (crop in resources) {
                 if (crop.getAmount() >= 5) {
                     feeded = true
@@ -330,7 +310,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      */
     fun payDebts() {
-        var toRemove: ArrayList<Invoice> = ArrayList()
+        val toRemove: ArrayList<Invoice> = ArrayList()
         for (invoice in unpaidInvoices) {
             if (amountOfMoney >= invoice.getPrice()) {
                 toRemove.add(invoice)

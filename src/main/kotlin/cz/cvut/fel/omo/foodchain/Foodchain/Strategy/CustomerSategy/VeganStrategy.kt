@@ -11,8 +11,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  */
 class VeganStrategy : CustomerStrategy {
     override fun execute(products : ArrayList<Product>) : Double{
-        var spended : Double = 0.0
-        var toRemove : ArrayList<Product> = ArrayList()
+        var spended = 0.0
+        val toRemove : ArrayList<Product> = ArrayList()
 
         for (product in products) {
             if (product.getProductType() != ProductType.MEAT
@@ -36,7 +36,7 @@ class VeganStrategy : CustomerStrategy {
      * @param original
      * @param toRemove
      */
-    fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>){
+    private fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>){
         for(product in toRemove){
             original.remove(product)
         }

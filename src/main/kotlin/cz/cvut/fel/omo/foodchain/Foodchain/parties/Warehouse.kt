@@ -19,7 +19,7 @@ class Warehouse{
      */
     @JvmName("getProducts")
     fun getStoragedProducts() : ArrayList<Product>{
-        var toReturn : ArrayList<Product> = storagedProducts
+        val toReturn : ArrayList<Product> = storagedProducts
         storagedProducts = ArrayList()
         return toReturn
     }
@@ -31,7 +31,7 @@ class Warehouse{
      * @return
      */
     fun getSpecificProducts(wantedType : ProductType) : ArrayList<Product>{
-        var toReturn : ArrayList<Product> = ArrayList()
+        val toReturn : ArrayList<Product> = ArrayList()
         for(product in storagedProducts){
             if(product.getProductType() == wantedType){
                 toReturn.add(product)
@@ -57,7 +57,7 @@ class Warehouse{
      *
      * @param product
      */
-    fun takeIn(product : Product){
+    private fun takeIn(product : Product){
         storagedProducts.add(product)
     }
 
@@ -76,7 +76,7 @@ class Warehouse{
      * @return
      */
     fun warehouseManagementPayment() : Double{
-        var costs : Double = 0.0
+        var costs = 0.0
         for(product in storagedProducts){
             costs += product.getAmount() * 10.0
         }

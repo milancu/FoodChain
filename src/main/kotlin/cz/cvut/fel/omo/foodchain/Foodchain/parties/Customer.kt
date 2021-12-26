@@ -29,8 +29,7 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
 
     private fun chooseStrategy() : CustomerContext{
         val context : CustomerContext
-        val random : Int = (1..5).random()
-        when(random){
+        when((1..5).random()){
             1 -> {
                 context = CustomerContext(basicStrategy)
                 return context
@@ -68,9 +67,8 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
      * @param products
      * @return
      */// Produkty nebudeme ukladat, budou vyrazeny z obehu, stejne by se nezpracovavaly, nebo resetovaly
-    fun buyProducts(products : ArrayList<Product>) : Double {
-        val spendedMoney : Double = context.goShopping(products)
-        return spendedMoney
+    fun buyProducts(products: ArrayList<Product>): Double {
+        return context.goShopping(products)
     }
 
     /**
@@ -81,6 +79,7 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
     fun payForShopping(recipe : Invoice){
         if(recipe.getPrice() <= this.amountOfMoney){
             amountOfMoney -= recipe.getPrice()
+            recipe.payInvoice()
             recipe.getContractor().takeMoney(recipe.getPrice())
             recipe.notifyPaid()
         } else {
@@ -95,13 +94,11 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      */
     fun payDebts(){
-        var toRemove : ArrayList<Invoice> = ArrayList()
+        val toRemove : ArrayList<Invoice> = ArrayList()
         for(invoice in creditCardDebts){
             if(amountOfMoney >= invoice.getPrice()){
                 toRemove.add(invoice)
-                invoice.payInvoice()
-                invoice.notifyPaid()
-                amountOfMoney -= invoice.getPrice()
+                payForShopping(invoice)
             }
         }
         for(invoice in toRemove){

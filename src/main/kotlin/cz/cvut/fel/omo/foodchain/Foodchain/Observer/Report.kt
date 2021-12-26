@@ -10,12 +10,12 @@ object Report : Observer {
 
     fun export() {
         val fileName = "src/main/resources/exportFoodChain.txt"
-        var file = File(fileName)
+        val file = File(fileName)
 
         file.printWriter().use { out ->
             reports.forEach { (key) ->
-                out.println("UUID: " + key)
-                var reportList : ArrayList<String> = reports.get(key)!!
+                with(out) { println("UUID: $key") }
+                val reportList : ArrayList<String> = reports[key]!!
                 for (j in reportList) {
                     out.println(j)
                 }
@@ -28,20 +28,21 @@ object Report : Observer {
     }
 
 
-    var reports = hashMapOf<UUID, ArrayList<String>>()
+    private var reports = hashMapOf<UUID, ArrayList<String>>()
 
+    // TODO je k necemu?
     fun getReport(uuid: UUID): ArrayList<String>? {
-        return reports.get(uuid)
+        return reports[uuid]
     }
 
 
     override fun update(uuid: UUID, report: String) {
         if (!reports.containsKey(uuid)) {
-            var newReport: ArrayList<String> = ArrayList<String>()
+            val newReport: ArrayList<String> = ArrayList()
             newReport.add(report)
-            reports.put(uuid, newReport)
+            reports[uuid] = newReport
         } else if(reports.containsKey(uuid)) {
-            reports.get(uuid)?.add(report)
+            reports[uuid]?.add(report)
         }
     }
 }

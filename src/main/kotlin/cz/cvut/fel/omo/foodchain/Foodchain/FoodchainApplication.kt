@@ -11,9 +11,20 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class FoodchainApplication {
 
-    @GetMapping("/start")
-    fun start() {
 
+    @GetMapping("/start")
+    fun sayHello(
+        @RequestParam(value = "WEEKS") WEEKS: Int,
+        @RequestParam(value = "GROWERS") GROWERS: Int,
+        @RequestParam(value = "FARMERS") FARMERS: Int,
+        @RequestParam(value = "PROCESSORS") PROCESSORS: Int,
+        @RequestParam(value = "CUSTOMERS") CUSTOMERS: Int,
+        @RequestParam(value = "RETAILERS") RETAILERS: Int,
+        @RequestParam(value = "STANDARD_SHOP_SIZE") STANDARD_SHOP_SIZE: Int,
+        @RequestParam(value = "VEGAN_SHOP_SIZE") VEGAN_SHOP_SIZE: Int,
+        @RequestParam(value = "WORKOUT_SHOP_SIZE") WORKOUT_SHOP_SIZE: Int
+    ) {
+        
     }
 }
 

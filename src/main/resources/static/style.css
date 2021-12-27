@@ -58,12 +58,12 @@ body {
 }
 
 #inputs {
-    margin-top: -20px;
-    text-align: center;
-
+    margin: auto;
+    display: inline-block;
 }
 
 input {
+    display: inline-block;
     padding: 10px 10px;
     margin: 8px 12px;
     border-radius: 10px;
@@ -72,14 +72,17 @@ input {
     font-family: "Agency FB";
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
+
 }
 
 label {
     font-size: 18px;
     font-family: "Agency FB";
     font-weight: bold;
-    display: inline-block;
     color: #ea9d8d;
+    display: inline-block;
+    text-align: right;
 }
 
 div label {

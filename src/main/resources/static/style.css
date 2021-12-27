@@ -30,6 +30,7 @@ body {
     transition-duration: 0.4s;
     margin: auto;
     position: relative;
+    margin-top: 15px;
 }
 
 #mainButton:hover {
@@ -44,9 +45,27 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#week{
-    padding: 12px 20px;
-    margin: 8px 10px;
+#topicConfig{
+    text-align: center;
+    color: white;
+    font-family: "Agency FB";
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.configForm {
+    text-align: center;
+}
+
+#inputs {
+    margin-top: -20px;
+    text-align: center;
+
+}
+
+input {
+    padding: 10px 10px;
+    margin: 8px 12px;
     border-radius: 10px;
     border: none;
     font-size: 18px;
@@ -54,4 +73,18 @@ body {
     font-weight: bold;
     text-align: center;
 }
+
+label {
+    font-size: 18px;
+    font-family: "Agency FB";
+    font-weight: bold;
+    display: inline-block;
+    color: #ea9d8d;
+}
+
+div label {
+    display: block;
+}
+
+
 

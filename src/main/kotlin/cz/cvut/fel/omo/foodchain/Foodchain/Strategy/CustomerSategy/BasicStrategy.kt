@@ -24,6 +24,7 @@ class BasicStrategy : CustomerStrategy {
                 } else {
                     println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
                     toRemove.add(product)
+                    product.getState().changeToNextState()
                 }
             }
         }

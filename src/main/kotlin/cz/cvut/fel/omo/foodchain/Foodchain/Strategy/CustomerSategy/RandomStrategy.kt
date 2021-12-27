@@ -22,6 +22,7 @@ class RandomStrategy : CustomerStrategy {
                 } else {
                     toRemove.add(product)
                     println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
+                    product.getState().changeToNextState()
                 }
             }
         }

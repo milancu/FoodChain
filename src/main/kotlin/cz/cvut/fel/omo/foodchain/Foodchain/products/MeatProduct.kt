@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.products
 
+import cz.cvut.fel.omo.foodchain.Foodchain.State.State
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import java.util.*
 
@@ -26,8 +27,8 @@ class MeatProduct(
     private var amount: Int,
     private var unit: String,
     private var origin: UUID,
-
-) : Product(name, shopPrice, productionCost, amount, unit, origin) {
+    state : State
+) : Product(name, shopPrice, productionCost, amount, unit, origin, state) {
 
     override fun getAmount(): Int {
         return amount

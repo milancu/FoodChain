@@ -2,6 +2,9 @@ package cz.cvut.fel.omo.foodchain.Foodchain.products
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
+import cz.cvut.fel.omo.foodchain.Foodchain.State.Context
+import cz.cvut.fel.omo.foodchain.Foodchain.State.CropState
+import cz.cvut.fel.omo.foodchain.Foodchain.State.State
 import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
@@ -17,13 +20,16 @@ class Crop(
     private val type: CropType,
     private var amount: Int,
     private var growthTime: Int
-) : Subject {
+) : Subject, Context {
 
     private var observers: ArrayList<Observer> = ArrayList()
 
     private val uuid: UUID = UUID.randomUUID()
     private var shopPrice: Double = name.shopPrice
     private var productionCost: Double = shopPrice * 0.01
+    private var state : State = CropState(this, uuid)
+
+
 
     /**
      * Get u u i d
@@ -136,5 +142,13 @@ class Crop(
         for (i in observers) {
             i.update(this.uuid, "CROP HAS BEEN HARVESTED IN WEEK: " + Week.acutalWeek)
         }
+    }
+
+    override fun setState(state: State) {
+        this.state = state
+    }
+
+    fun getState() : State{
+        return state
     }
 }

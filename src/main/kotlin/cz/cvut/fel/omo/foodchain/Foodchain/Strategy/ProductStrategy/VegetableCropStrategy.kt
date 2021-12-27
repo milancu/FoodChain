@@ -24,7 +24,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -41,7 +42,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     (0.65 * crop.getAmount()).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -67,7 +69,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
 
                 product.attach(Report)
@@ -82,7 +85,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 25,
                     (crop.getAmount() * 0.60).toInt(),
                     "l",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
 
                 product.attach(Report)
@@ -97,7 +101,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 15,
                     (crop.getAmount() * 0.85).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
 
                 product.attach(Report)
@@ -112,7 +117,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 10,
                     (crop.getAmount() * 0.85).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
 
 
@@ -139,7 +145,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
 
                 product.attach(Report)
@@ -154,7 +161,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 20,
                     1,
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
 
                 product.attach(Report)
@@ -180,7 +188,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
 
                 product.attach(Report)
@@ -195,7 +204,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 10,
                     (0.9 * crop.getAmount()).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
 
                 product.attach(Report)
@@ -221,7 +231,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
 
                 product.attach(Report)
@@ -236,7 +247,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 15,
                     (0.75 * crop.getAmount()).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
 
                 product.attach(Report)
@@ -251,7 +263,8 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 25,
                     (0.65 * crop.getAmount()).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
 
                 product.attach(Report)

@@ -2,6 +2,8 @@ package cz.cvut.fel.omo.foodchain.Foodchain.products
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
+import cz.cvut.fel.omo.foodchain.Foodchain.State.Context
+import cz.cvut.fel.omo.foodchain.Foodchain.State.State
 import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import java.util.*
@@ -16,8 +18,9 @@ class Meat(
     private var shopPrice: Double,
     private var productionCost: Double,
     private var amount: Double,
-    private var origin: UUID
-) : Subject {
+    private var origin: UUID,
+    private var state : State
+) : Subject, Context {
 
     private var observers: ArrayList<Observer> = ArrayList()
 
@@ -81,5 +84,11 @@ class Meat(
         }
     }
 
+    override fun setState(state: State) {
+        this.state = state
+    }
 
+    fun getState() : State{
+        return state
+    }
 }

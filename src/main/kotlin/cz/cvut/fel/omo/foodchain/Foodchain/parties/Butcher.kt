@@ -10,14 +10,21 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 class Butcher {
 
     fun proccessAnimal(animals: ArrayList<BaseAnimal>): ArrayList<Meat> {
-        var meatList = ArrayList<Meat>()
+        val meatList = ArrayList<Meat>()
 
         animals.toList().iterator().forEach { animal ->
             when (animal.getName()) {
                 "Cow" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.BEEF.price
-                    var beef =
-                        Meat(MeatType.BEEF, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
+                    val beef =
+                        Meat(
+                            MeatType.BEEF,
+                            shopPrice,
+                            shopPrice * 1.4,
+                            0.7 * animal.getWeight(),
+                            animal.getOriginId(),
+                            animal.getState().changeToNextState()
+                        )
                     meatList.add(beef)
                     animal.notifyAnimalWasProcessed()
                     beef.attach(Report)
@@ -26,8 +33,15 @@ class Butcher {
 
                 "Pig" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.PORK.price
-                    var pork =
-                        Meat(MeatType.PORK, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
+                    val pork =
+                        Meat(
+                            MeatType.PORK,
+                            shopPrice,
+                            shopPrice * 1.4,
+                            0.7 * animal.getWeight(),
+                            animal.getOriginId(),
+                            animal.getState().changeToNextState()
+                        )
                     meatList.add(pork)
                     animal.notifyAnimalWasProcessed()
                     pork.attach(Report)
@@ -36,12 +50,13 @@ class Butcher {
 
                 "Chicken" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.CHICKEN.price
-                    var chicken = Meat(
+                    val chicken = Meat(
                         MeatType.CHICKEN,
                         shopPrice,
                         shopPrice * 1.4,
                         0.7 * animal.getWeight(),
-                        animal.getOriginId()
+                        animal.getOriginId(),
+                        animal.getState().changeToNextState()
                     )
                     meatList.add(chicken)
                     animal.notifyAnimalWasProcessed()
@@ -51,8 +66,15 @@ class Butcher {
 
                 "Fish" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.FISH.price
-                    var fish =
-                        Meat(MeatType.FISH, shopPrice, shopPrice * 1.4, 0.7 * animal.getWeight(), animal.getOriginId())
+                    val fish =
+                        Meat(
+                            MeatType.FISH,
+                            shopPrice,
+                            shopPrice * 1.4,
+                            0.7 * animal.getWeight(),
+                            animal.getOriginId(),
+                            animal.getState().changeToNextState()
+                        )
                     meatList.add(fish)
                     animal.notifyAnimalWasProcessed()
                     fish.attach(Report)
@@ -64,7 +86,7 @@ class Butcher {
     }
 
     fun proccessAnimalUSINGITERATOR(animals: AnimalToProcess): ArrayList<Meat> { //ITERATOR
-        var meatList = ArrayList<Meat>()
+        val meatList = ArrayList<Meat>()
 
         val iterator: CustomIterator = animals
         while (iterator.hasNext()) {
@@ -72,12 +94,12 @@ class Butcher {
             when (animal.getName()) {
                 "Cow" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.BEEF.price
-                    var beef = Meat(
+                    val beef = Meat(
                         MeatType.BEEF,
                         shopPrice,
                         shopPrice * 1.4,
                         0.7 * animal.getWeight(),
-                        animal.getOriginId()
+                        animal.getOriginId(), animal.getState().changeToNextState().changeToNextState()
                     )
                     meatList.add(beef)
                     animal.notifyAnimalWasProcessed()
@@ -87,12 +109,12 @@ class Butcher {
 
                 "Pig" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.PORK.price
-                    var pork = Meat(
+                    val pork = Meat(
                         MeatType.PORK,
                         shopPrice,
                         shopPrice * 1.4,
                         0.7 * animal.getWeight(),
-                        animal.getOriginId()
+                        animal.getOriginId(), animal.getState().changeToNextState()
                     )
                     meatList.add(pork)
                     animal.notifyAnimalWasProcessed()
@@ -102,12 +124,12 @@ class Butcher {
 
                 "Chicken" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.CHICKEN.price
-                    var chicken = Meat(
+                    val chicken = Meat(
                         MeatType.CHICKEN,
                         shopPrice,
                         shopPrice * 1.4,
                         0.7 * animal.getWeight(),
-                        animal.getOriginId()
+                        animal.getOriginId(), animal.getState().changeToNextState()
                     )
                     meatList.add(chicken)
                     animal.notifyAnimalWasProcessed()
@@ -117,12 +139,12 @@ class Butcher {
 
                 "Fish" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.FISH.price
-                    var fish = Meat(
+                    val fish = Meat(
                         MeatType.FISH,
                         shopPrice,
                         shopPrice * 1.4,
                         0.7 * animal.getWeight(),
-                        animal.getOriginId()
+                        animal.getOriginId(), animal.getState().changeToNextState()
                     )
                     meatList.add(fish)
                     animal.notifyAnimalWasProcessed()

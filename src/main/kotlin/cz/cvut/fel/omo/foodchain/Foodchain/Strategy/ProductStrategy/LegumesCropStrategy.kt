@@ -23,7 +23,8 @@ class LegumesCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -37,7 +38,8 @@ class LegumesCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() + 5,
                     1,
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()

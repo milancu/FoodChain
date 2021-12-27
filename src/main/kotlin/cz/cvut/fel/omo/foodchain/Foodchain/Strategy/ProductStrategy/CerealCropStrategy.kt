@@ -41,7 +41,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     (2..5).random().toDouble(),
                     (crop.getAmount() * 0.4).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -55,7 +56,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     (1..4).random().toDouble(),
                     (crop.getAmount() * 0.4).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -78,7 +80,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
             (2..4).random().toDouble(),
             (crop.getAmount() * 0.25).toInt(),
             "l",
-            crop.getUUID()
+            crop.getUUID(),
+            crop.getState().changeToNextState()
         )
         product.attach(Report)
         product.notifyUpdate()
@@ -101,7 +104,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     (2..5).random().toDouble(),
                     (crop.getAmount() * 0.95).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -115,7 +119,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     (3..6).random().toDouble(),
                     (crop.getAmount() * 0.4).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -129,7 +134,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     (1..2).random().toDouble(),
                     (crop.getAmount() * 0.4).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -154,7 +160,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     (2..6).random().toDouble(),
                     (crop.getAmount() * 0.75).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -168,7 +175,8 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     (1..2).random().toDouble(),
                     (crop.getAmount() * 0.75).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()

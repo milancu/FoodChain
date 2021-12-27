@@ -41,7 +41,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (2..5).random().toDouble(),
                     (crop.getAmount() * 0.75).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -55,7 +56,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (40..60).random().toDouble(),
                     (crop.getAmount() * 0.15).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -80,7 +82,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (5..10).random().toDouble(),
                     (crop.getAmount() * 0.15).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -94,7 +97,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (15..20).random().toDouble(),
                     (crop.getAmount() * 0.15).toInt(),
                     "l",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -119,7 +123,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (2..5).random().toDouble(),
                     (crop.getAmount() * 0.75).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -133,7 +138,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (40..60).random().toDouble(),
                     (crop.getAmount() * 0.15).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -158,7 +164,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (2..5).random().toDouble(),
                     (crop.getAmount() * 0.2).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -172,7 +179,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (100..350).random().toDouble(),
                     (crop.getAmount() * 0.8).toInt(),
                     "l",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -186,7 +194,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (40..65).random().toDouble(),
                     (crop.getAmount() * 0.2).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -200,7 +209,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (300..600).random().toDouble(),
                     (crop.getAmount() * 0.1).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -214,7 +224,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (20..40).random().toDouble(),
                     (crop.getAmount() * 0.1).toInt(),
                     "l",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -228,7 +239,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (250..450).random().toDouble(),
                     (crop.getAmount() * 0.1).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -253,7 +265,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (2..5).random().toDouble(),
                     (crop.getAmount() * 0.75).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -267,7 +280,8 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     (40..60).random().toDouble(),
                     (crop.getAmount() * 0.15).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()

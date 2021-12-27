@@ -2,13 +2,16 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Component
 
 /**
  * Warehouse
  *
  * @constructor Create empty Warehouse
  */
-class Warehouse{
+@Component
+class Warehouse @Autowired constructor() {
 
     private var storagedProducts : ArrayList<Product> = ArrayList()
 
@@ -17,7 +20,6 @@ class Warehouse{
      *
      * @return
      */
-    @JvmName("getProducts")
     fun getStoragedProducts() : ArrayList<Product>{
         val toReturn : ArrayList<Product> = storagedProducts
         storagedProducts = ArrayList()

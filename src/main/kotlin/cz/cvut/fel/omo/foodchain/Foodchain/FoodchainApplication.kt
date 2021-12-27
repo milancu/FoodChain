@@ -3,16 +3,14 @@ package cz.cvut.fel.omo.foodchain.Foodchain
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RequestParam
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.stereotype.Controller
+import org.springframework.web.bind.annotation.*
 
 @SpringBootApplication
-@RestController
+@Controller
 class FoodchainApplication {
 
-
-    @GetMapping("/start")
+    @GetMapping(value = ["/start"])
     fun start(
         @RequestParam(value = "WEEKS") WEEKS: Int,
         @RequestParam(value = "GROWERS") GROWERS: Int,
@@ -26,6 +24,15 @@ class FoodchainApplication {
     ) {
         val simulation: Simulation = Simulation()
 
+        Config.WEEKS = WEEKS;
+        Config.GROWERS = GROWERS;
+        Config.FARMERS = FARMERS;
+        Config.PROCESSORS = PROCESSORS;
+        Config.CUSTOMERS = CUSTOMERS;
+        Config.RETAILERS = RETAILERS;
+        Config.STANDARD_SHOP_SIZE = STANDARD_SHOP_SIZE;
+        Config.VEGAN_SHOP_SIZE = VEGAN_SHOP_SIZE;
+        Config.WORKOUT_SHOP_SIZE = WORKOUT_SHOP_SIZE;
 
         for (i in (1..Config.WEEKS)) {
             println(i.toString() + ". WEEK")
@@ -34,6 +41,7 @@ class FoodchainApplication {
         }
 
         Report.export()
+        String.format("Hello %s!", "milan");
     }
 }
 

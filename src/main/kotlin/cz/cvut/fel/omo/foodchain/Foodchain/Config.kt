@@ -8,16 +8,16 @@ package cz.cvut.fel.omo.foodchain.Foodchain
 class Config {
     companion object Params {
         // main config
-        const val WEEKS : Int = 10
-        const val GROWERS : Int = 2
-        const val FARMERS : Int = 2
-        const val PROCESSORS : Int = 2
-        const val CUSTOMERS : Int = 100
-        const val RETAILERS : Int = 2
+        var WEEKS: Int = 10;
+        var GROWERS: Int = 2
+        var FARMERS: Int = 2
+        var PROCESSORS: Int = 2
+        var CUSTOMERS: Int = 100
+        var RETAILERS: Int = 2
 
-        const val STANDARD_SHOP_SIZE : Int = 10
-        const val VEGAN_SHOP_SIZE : Int = 2
-        const val WORKOUT_SHOP_SIZE : Int = 5
+        var STANDARD_SHOP_SIZE: Int = 10
+        var VEGAN_SHOP_SIZE: Int = 2
+        var WORKOUT_SHOP_SIZE: Int = 5
 
         const val SALARY_MIN = 10000
         const val SALARY_MAX = 80000

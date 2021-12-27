@@ -13,7 +13,7 @@ class FoodchainApplication {
 
 
     @GetMapping("/start")
-    fun sayHello(
+    fun start(
         @RequestParam(value = "WEEKS") WEEKS: Int,
         @RequestParam(value = "GROWERS") GROWERS: Int,
         @RequestParam(value = "FARMERS") FARMERS: Int,
@@ -24,7 +24,16 @@ class FoodchainApplication {
         @RequestParam(value = "VEGAN_SHOP_SIZE") VEGAN_SHOP_SIZE: Int,
         @RequestParam(value = "WORKOUT_SHOP_SIZE") WORKOUT_SHOP_SIZE: Int
     ) {
-        
+        val simulation: Simulation = Simulation()
+
+
+        for (i in (1..Config.WEEKS)) {
+            println(i.toString() + ". WEEK")
+            println()
+            simulation.runWeek()
+        }
+
+        Report.export()
     }
 }
 
@@ -33,12 +42,4 @@ fun main(args: Array<String>) {
     runApplication<FoodchainApplication>(*args)
 }
 
-//val simulation: Simulation = Simulation()
-//
-//for (i in (1..Config.WEEKS)) {
-//    println(i.toString() + ". WEEK")
-//    println()
-//    simulation.runWeek()
-//}
-//
-//Report.export()
+

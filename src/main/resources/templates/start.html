@@ -7,7 +7,11 @@
 </head>
 <body>
 <div id="topic">
-    <p>FOOD CHAIN</p>
+    <p th:text="REPORTS"></p>
 </div>
+
+<ol>
+    <li class="reportLine" th:each="report : ${reports}" th:text="${report}"></li><br/>
+</ol>
 </body>
 </html>

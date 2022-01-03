@@ -4,6 +4,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.Observer
 import java.io.File
 import java.util.*
 import kotlin.collections.ArrayList
+import kotlin.collections.HashMap
 
 
 object Report : Observer {
@@ -30,11 +31,6 @@ object Report : Observer {
 
     private var reports = hashMapOf<UUID, ArrayList<String>>()
 
-    // TODO je k necemu?
-    fun getReport(uuid: UUID): ArrayList<String>? {
-        return reports[uuid]
-    }
-
 
     override fun update(uuid: UUID, report: String) {
         if (!reports.containsKey(uuid)) {
@@ -44,5 +40,9 @@ object Report : Observer {
         } else if(reports.containsKey(uuid)) {
             reports[uuid]?.add(report)
         }
+    }
+
+    fun getReports(): HashMap<UUID, ArrayList<String>> {
+        return reports;
     }
 }

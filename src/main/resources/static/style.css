@@ -90,4 +90,19 @@ div label {
 }
 
 
+.reportLine{
+    border: 1px solid;
+    padding: 15px;
+    background: #ffffff7a;
+    border-radius: 10px;
+    font-family: 'AGENCY FB';
+    font-weight: bold;
+    margin: 15px;
+    font-size: 18px;
+}
+
+
+
+
+
 

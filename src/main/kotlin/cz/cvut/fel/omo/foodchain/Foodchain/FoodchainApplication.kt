@@ -4,7 +4,10 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.stereotype.Controller
-import org.springframework.web.bind.annotation.*
+import org.springframework.ui.Model
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RequestParam
+import java.util.*
 
 @SpringBootApplication
 @Controller
@@ -20,7 +23,8 @@ class FoodchainApplication {
         @RequestParam(value = "RETAILERS") RETAILERS: Int,
         @RequestParam(value = "STANDARD_SHOP_SIZE") STANDARD_SHOP_SIZE: Int,
         @RequestParam(value = "VEGAN_SHOP_SIZE") VEGAN_SHOP_SIZE: Int,
-        @RequestParam(value = "WORKOUT_SHOP_SIZE") WORKOUT_SHOP_SIZE: Int
+        @RequestParam(value = "WORKOUT_SHOP_SIZE") WORKOUT_SHOP_SIZE: Int,
+        model : Model
     ) {
         val simulation: Simulation = Simulation()
 
@@ -40,8 +44,11 @@ class FoodchainApplication {
             simulation.runWeek()
         }
 
+        val list = arrayListOf<Int>()
+        list.addAll(listOf(1, 2, 3))
+
         Report.export()
-        String.format("Hello %s!", "milan");
+        model.addAttribute("reports", Report.getReports())
     }
 }
 

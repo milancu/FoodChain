@@ -23,9 +23,6 @@ class Transport{
             val toTransport : ArrayList<Crop> = cropSupplies
             for(supply in cropSupplies){
                 transport.changeAmountOfMoney((supply.getShopPrice() * supply.getAmount() * 0.1))
-/*
-                amountOfMoney += supply.getShopPrice() * supply.getAmount() * 0.1 // TODO od koho si je vezme
-*/
             }
             this.cropSupplies = ArrayList()
             return toTransport
@@ -35,9 +32,6 @@ class Transport{
             val toTransport : ArrayList<Product> = products
             for(product in products){
                 transport.changeAmountOfMoney((product.getShopPrice() * product.getAmount() * 0.1))
-/*
-                amountOfMoney += product.getShopPrice() * product.getAmount() * 0.1 //TODO invoice smerem od transportu
-*/
             }
             this.products = ArrayList()
             return toTransport
@@ -47,9 +41,6 @@ class Transport{
             val toTransport : ArrayList<Meat> = meats
             for(meat in meats){
                 transport.changeAmountOfMoney((meat.getShopPrice() * meat.getAmount() * 0.1))
-/*
-                amountOfMoney += meat.getShopPrice() * meat.getAmount() * 0.1 //TODO invoice smerem od transportu
-*/
             }
             this.meats = ArrayList()
             return toTransport
@@ -88,9 +79,6 @@ class Transport{
             for(product in products){
                 costs += product.getShopPrice() * product.getAmount() * 0.025
             }
-/*
-            this.amountOfMoney -= costs
-*/
             transport.changeAmountOfMoney(-costs)
             println("Dopravni spolecnost na nakladech utratila: $costs")
         }

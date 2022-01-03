@@ -7,7 +7,6 @@ import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.stereotype.Component
 
 // TODO duplicity kodu a iterator - Mila nebudu ti sem smatat
 

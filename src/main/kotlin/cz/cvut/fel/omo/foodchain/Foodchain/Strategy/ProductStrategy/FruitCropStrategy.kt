@@ -26,7 +26,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -41,7 +42,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     (crop.getAmount() * 0.85).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -55,7 +57,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     (crop.getAmount() * 0.85).toInt(),
                     "l",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -69,7 +72,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     (crop.getAmount() * 0.85).toInt(),
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -94,7 +98,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice(),
                     1,
                     "kg",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()
@@ -108,7 +113,8 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getShopPrice() * 2.45,
                     1,
                     "l",
-                    crop.getUUID()
+                    crop.getUUID(),
+                    crop.getState().changeToNextState()
                 )
                 product.attach(Report)
                 product.notifyUpdate()

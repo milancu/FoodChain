@@ -3,6 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
 import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+import org.springframework.beans.factory.annotation.Autowired
 
 /**
  * Retailer
@@ -16,6 +17,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
 
+    @Autowired
     private var warehouse: Warehouse = Warehouse()
     private var availableProducts: ArrayList<Product> = ArrayList()
     private var unpaidInvoices: ArrayList<Invoice> = ArrayList()

@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.products
 
+import cz.cvut.fel.omo.foodchain.Foodchain.State.State
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import java.util.*
 
@@ -17,21 +18,14 @@ import java.util.*
  *///@Component
 class CropProduct(
     private var name: String,
-
     private var type: ProductType,
-
     private var shopPrice: Double,
-
     private var productionCost: Double,
-
     private var amount: Int,
-
     private var unit: String,
-
     private var origin: UUID,
-
-
-    ) :  Product(name, shopPrice, productionCost, amount, unit, origin) {
+    state : State
+    ) :  Product(name, shopPrice, productionCost, amount, unit, origin, state) {
 
     override fun getName() : String{
         return this.name

@@ -50,7 +50,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 8).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         val beefShoulder = MeatProduct(
             "BeefShoulder",
@@ -60,7 +61,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 8).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         val bovinecheek = MeatProduct(
             "Bovinecheek",
@@ -70,7 +72,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 16).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         val beeftenderloin = MeatProduct(
             "Beeftenderloin",
@@ -80,7 +83,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 18).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         dumpling.attach(Report)
         beefShoulder.attach(Report)
@@ -115,7 +119,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 8).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         val chickenBreast = MeatProduct(
             "Chicken breast",
@@ -125,7 +130,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 8).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         val chickenWings = MeatProduct(
             "Chicken wings",
@@ -135,7 +141,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 16).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
 
         chickenThigh.attach(Report)
@@ -170,7 +177,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 8).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         val porkRoast = MeatProduct(
             "Pork roast",
@@ -180,7 +188,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 8).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         val porkLeg = MeatProduct(
             "Pork leg",
@@ -190,7 +199,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 16).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         val porkFlank = MeatProduct(
             "Pork flank",
@@ -200,7 +210,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 16).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
 
         porkDumpling.attach(Report)
@@ -237,7 +248,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 8).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         val bream = MeatProduct(
             "BREAM",
@@ -247,7 +259,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 8).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         val eel = MeatProduct(
             "EEL",
@@ -257,7 +270,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 16).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         val zander = MeatProduct(
             "ZANDER",
@@ -267,7 +281,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 16).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         val catfish = MeatProduct(
             "CATFISH",
@@ -277,7 +292,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 16).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
         val perch = MeatProduct(
             "PERCH",
@@ -287,7 +303,8 @@ class MeatStrategy : ProcessorMeatStrategy {
             (meat.getShopPrice() / 4) * 1.4,
             (meat.getAmount() / 16).toInt(),
             "kg",
-            meat.getOriginID()
+            meat.getOriginID(),
+            meat.getState().changeToNextState()
         )
 
         carp.attach(Report)

@@ -2,6 +2,9 @@ package cz.cvut.fel.omo.foodchain.Foodchain.animals
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
+import cz.cvut.fel.omo.foodchain.Foodchain.State.AnimalState
+import cz.cvut.fel.omo.foodchain.Foodchain.State.Context
+import cz.cvut.fel.omo.foodchain.Foodchain.State.State
 import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
@@ -15,7 +18,7 @@ import java.util.*
  *
  * @param animalType
  */
-open class BaseAnimal(animalType: AnimalType) : Subject {
+class BaseAnimal(animalType: AnimalType) : Subject, Context {
 
     private var observers: ArrayList<Observer> = ArrayList()
 
@@ -26,59 +29,49 @@ open class BaseAnimal(animalType: AnimalType) : Subject {
     private var price: Double
     private var animalName: String
     private var animalType: AnimalType
-    private var origin: UUID
+    private var origin: UUID = UUID.randomUUID()
+    private var state : State
 
     init {
+        this.animalType = animalType
+        this.feed = CropType.CEREAL
+        this.state = AnimalState(this, origin)
+
         when (animalType) {
             AnimalType.COW -> {
                 this.weight = (150000..600000).random().toDouble()
-                this.feed = CropType.CEREAL
                 this.foodConsumption = (7..10).random()
                 this.age = (1..30).random()
                 this.price = 1000.00
                 this.animalName = "Cow"
-                this.animalType = animalType
-                this.origin = UUID.randomUUID()
             }
             AnimalType.PIG -> {
                 this.weight = (150000..600000).random().toDouble()
-                this.feed = CropType.CEREAL
                 this.foodConsumption = (6..10).random()
                 this.age = (1..20).random()
                 this.price = 8000.00
                 this.animalName = "Pig"
-                this.animalType = animalType
-                this.origin = UUID.randomUUID()
             }
             AnimalType.CHICKEN -> {
                 this.weight = (1500..3000).random().toDouble()
-                this.feed = CropType.CEREAL
                 this.foodConsumption = (1..3).random()
                 this.age = (1..10).random()
                 this.price = 100.00
                 this.animalName = "Chicken"
-                this.animalType = animalType
-                this.origin = UUID.randomUUID()
             }
             AnimalType.GOAT -> {
                 this.weight = (150000..400000).random().toDouble()
-                this.feed = CropType.CEREAL
                 this.foodConsumption = (5..8).random()
                 this.age = (1..15).random()
                 this.price = 900.00
                 this.animalName = "Goat"
-                this.animalType = animalType
-                this.origin = UUID.randomUUID()
             }
             AnimalType.FISH -> {
                 this.weight = (1500..6000).random().toDouble()
-                this.feed = CropType.CEREAL
                 this.foodConsumption = (1..5).random()
                 this.age = (1..5).random()
                 this.price = 1000.00
                 this.animalName = "Fish"
-                this.animalType = animalType
-                this.origin = UUID.randomUUID()
             }
         }
     }
@@ -184,5 +177,13 @@ open class BaseAnimal(animalType: AnimalType) : Subject {
                 "ANIMAL HAS BEEN PROCESSED IN WEEK: " + Week.acutalWeek
             )
         }
+    }
+
+    override fun setState(state: State) {
+        this.state = state
+    }
+
+    fun getState() : State{
+        return state
     }
 }

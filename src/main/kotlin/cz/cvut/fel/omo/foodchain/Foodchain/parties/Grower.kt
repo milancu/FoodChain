@@ -80,7 +80,7 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
      */
     fun transportSupplies(){
         Transport.takeCropSupplies(supplies)
-        supplies = ArrayList();
+        supplies = ArrayList()
     }
 
     /**

@@ -2,6 +2,10 @@ package cz.cvut.fel.omo.foodchain.Foodchain.products
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
+import cz.cvut.fel.omo.foodchain.Foodchain.State.Context
+import cz.cvut.fel.omo.foodchain.Foodchain.State.CropState
+import cz.cvut.fel.omo.foodchain.Foodchain.State.ProductState
+import cz.cvut.fel.omo.foodchain.Foodchain.State.State
 import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import java.util.*
@@ -19,14 +23,16 @@ open class Product(
     private var productionCost: Double,
     private var amount: Int,
     private var unit: String,
-    private var origin: UUID
-) : Subject {
+    private var origin: UUID,
+    private var state : State
+) : Subject, Context {
 
     private var observers: ArrayList<Observer> = ArrayList()
 
     private var productType: ProductType = ProductType.NOTSET
     private var uuid: UUID = UUID.randomUUID()
     private var createdAt : Int = Week.acutalWeek
+
 
     /**
      * Get create at
@@ -104,5 +110,17 @@ open class Product(
      */
     fun decreaseAmount(value : Int){
         this.amount -= value
+    }
+
+    override fun setState(state: State) {
+        this.state = state
+    }
+
+/*    fun changeState() {
+        this.state.changeToNextState()
+    }*/
+
+    fun getState() : State{
+        return state
     }
 }

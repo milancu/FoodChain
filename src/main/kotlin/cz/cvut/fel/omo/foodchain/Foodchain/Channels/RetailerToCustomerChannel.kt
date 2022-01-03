@@ -46,9 +46,6 @@ class RetailerToCustomerChannel(private var retailers: ArrayList<Retailer>) : Ch
         for(retailer in retailers){
             Request.requestTakeOutToShop(retailer)
             println("Retailer: " + retailer.getIdentifier() + " naskladnil " + retailer.getStockSize() + " produktu.")
-/*
-            println("Warehouse obsahuje " + retailer.getWarehouseStockSize() + " produktu")
-*/
         }
     }
 

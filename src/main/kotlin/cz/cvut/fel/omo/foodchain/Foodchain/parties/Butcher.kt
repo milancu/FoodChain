@@ -9,83 +9,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 
 class Butcher {
 
-    fun proccessAnimal(animals: ArrayList<BaseAnimal>): ArrayList<Meat> {
-        val meatList = ArrayList<Meat>()
 
-        animals.toList().iterator().forEach { animal ->
-            when (animal.getName()) {
-                "Cow" -> {
-                    val shopPrice = 0.7 * animal.getWeight() * MeatType.BEEF.price
-                    val beef =
-                        Meat(
-                            MeatType.BEEF,
-                            shopPrice,
-                            shopPrice * 1.4,
-                            0.7 * animal.getWeight(),
-                            animal.getOriginId(),
-                            animal.getState().changeToNextState()
-                        )
-                    meatList.add(beef)
-                    animal.notifyAnimalWasProcessed()
-                    beef.attach(Report)
-                    beef.notifyUpdate()
-                }
-
-                "Pig" -> {
-                    val shopPrice = 0.7 * animal.getWeight() * MeatType.PORK.price
-                    val pork =
-                        Meat(
-                            MeatType.PORK,
-                            shopPrice,
-                            shopPrice * 1.4,
-                            0.7 * animal.getWeight(),
-                            animal.getOriginId(),
-                            animal.getState().changeToNextState()
-                        )
-                    meatList.add(pork)
-                    animal.notifyAnimalWasProcessed()
-                    pork.attach(Report)
-                    pork.notifyUpdate()
-                }
-
-                "Chicken" -> {
-                    val shopPrice = 0.7 * animal.getWeight() * MeatType.CHICKEN.price
-                    val chicken = Meat(
-                        MeatType.CHICKEN,
-                        shopPrice,
-                        shopPrice * 1.4,
-                        0.7 * animal.getWeight(),
-                        animal.getOriginId(),
-                        animal.getState().changeToNextState()
-                    )
-                    meatList.add(chicken)
-                    animal.notifyAnimalWasProcessed()
-                    chicken.attach(Report)
-                    chicken.notifyUpdate()
-                }
-
-                "Fish" -> {
-                    val shopPrice = 0.7 * animal.getWeight() * MeatType.FISH.price
-                    val fish =
-                        Meat(
-                            MeatType.FISH,
-                            shopPrice,
-                            shopPrice * 1.4,
-                            0.7 * animal.getWeight(),
-                            animal.getOriginId(),
-                            animal.getState().changeToNextState()
-                        )
-                    meatList.add(fish)
-                    animal.notifyAnimalWasProcessed()
-                    fish.attach(Report)
-                    fish.notifyUpdate()
-                }
-            }
-        }
-        return meatList
-    }
-
-    fun proccessAnimalUSINGITERATOR(animals: AnimalToProcess): ArrayList<Meat> { //ITERATOR
+    fun proccessAnimal(animals: AnimalToProcess): ArrayList<Meat> { //ITERATOR
         val meatList = ArrayList<Meat>()
 
         val iterator: CustomIterator = animals

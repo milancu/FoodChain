@@ -55,64 +55,11 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
 
 
     /**
-     * Animals to processing
-     *
-     * @return
-     */
-    private fun animalsToProcessing(): ArrayList<BaseAnimal> {
-        val animalsToProcessing = ArrayList<BaseAnimal>()
-
-        animals.iterator().forEach { animal ->
-            when (animal.getName()) {
-                "Cow" -> {
-                    if (animal.getAge() > 30) {
-                        animalsToProcessing.add(animal)
-                        animal.notifyAnimalWasMoveToProcess()
-                    }
-                }
-                "Pig" -> {
-                    if (animal.getAge() > 20) {
-                        animalsToProcessing.add(animal)
-                        animal.notifyAnimalWasMoveToProcess()
-                    }
-                }
-                "Chicken" -> {
-                    if (animal.getAge() > 10) {
-                        animalsToProcessing.add(animal)
-                        animal.notifyAnimalWasMoveToProcess()
-                    }
-                }
-                "Goat" -> {
-                    if (animal.getAge() > 15) {
-                        animalsToProcessing.add(animal)
-                        animal.notifyAnimalWasMoveToProcess()
-                    }
-                }
-                "Fish" -> {
-                    if (animal.getAge() > 5) {
-                        animalsToProcessing.add(animal)
-                        animal.notifyAnimalWasMoveToProcess()
-                    }
-                }
-            }
-        }
-
-        println("Aktualni pocet zvirat : " + animals.size)
-        println("Na jatka bylo poslano : " + animalsToProcessing.size + " zvirat")
-        animals.removeAll(animalsToProcessing)
-        println("Aktualni pocet zvirat : " + animals.size)
-        buyNewAnimals(animalsToProcessing.size)
-        println("Po dokoupeni pocet zvirat : " + animals.size)
-
-        return animalsToProcessing
-    }
-
-    /**
      * Animals to processing u s i n g i t e r a t o r
      *
      * @return
      */
-    fun animalsToProcessingUSINGITERATOR(): AnimalToProcess { //ITERATOR
+    fun animalsToProcessing(): AnimalToProcess { //ITERATOR
         animals.iterator().forEach { animal ->
             when (animal.getName()) {
                 "Cow" -> {
@@ -185,21 +132,12 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     }
 
     /**
-     * Call butcher
-     *
-     * @return
-     */
-    fun callButcher() : ArrayList<Meat>{
-        return butcher.proccessAnimal(animalsToProcessing())
-    }
-
-    /**
      * Call butcher u s i n g i t e r a t o r
      *
      * @return
      */
-    fun callButcherUSINGITERATOR() : ArrayList<Meat>{ //ITERATOR
-        return butcher.proccessAnimalUSINGITERATOR(animalToProcess)
+    fun callButcher() : ArrayList<Meat>{ //ITERATOR
+        return butcher.proccessAnimal(animalToProcess)
     }
 
     /**

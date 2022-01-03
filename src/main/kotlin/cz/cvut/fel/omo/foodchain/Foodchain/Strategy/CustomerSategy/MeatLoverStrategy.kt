@@ -21,11 +21,13 @@ class MeatLoverStrategy : CustomerStrategy {
             ) {
                 if(product.getAmount() >= Config.WORKOUT_SHOP_SIZE){
                     product.decreaseAmount(Config.WORKOUT_SHOP_SIZE)
+                    product.notifyPurchased()
                     spended += Config.WORKOUT_SHOP_SIZE * product.getShopPrice()
                 } else {
                     toRemove.add(product)
                     println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
                     product.getState().changeToNextState()
+                    product.notifySoldOut()
                 }
             }
         }

@@ -17,7 +17,6 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 class Request {
     companion object RequestService {
 
-        // TODO kam ukladat faktury - Mila
 
         fun requestTransportToProcessor(grower: Grower, processor: Processor, crops: ArrayList<Crop>) {
             println("Proces transportace (from farmer " + grower.getIdentifier() + " to processor) " + processor.getIdentifier())
@@ -36,8 +35,10 @@ class Request {
             Transport.cargoDeduction()
             grower.raiseField()
 
-            // TODO new Invoice
             val transportInvoice = Invoice(processor, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
+            Invoices.invoices.add(transportInvoice)
+            transportInvoice.attach(Report)
+            transportInvoice.notifyUpdate()
             processor.payForInvoice(transportInvoice)
 
             processor.takeCropSupplies(Transport.transportCropSuplies())
@@ -67,10 +68,11 @@ class Request {
             Transport.cargoDeduction()
             meatFactory.takeMeat(Transport.transportMeats())
 
-            // TODO new Invoice
             val transportInvoice = Invoice(meatFactory, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
+            Invoices.invoices.add(transportInvoice)
+            transportInvoice.attach(Report)
+            transportInvoice.notifyUpdate()
             meatFactory.payForInvoice(transportInvoice)
-
             meatFactory.payForInvoice(invoice)
 
             println()
@@ -95,8 +97,10 @@ class Request {
             invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
 
-            // TODO new Invoice
             val transportInvoice = Invoice(retailer, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
+            Invoices.invoices.add(transportInvoice)
+            transportInvoice.attach(Report)
+            transportInvoice.notifyUpdate()
             retailer.payForInvoice(transportInvoice)
 
             retailer.buyProducts(transportedProducts)
@@ -121,8 +125,10 @@ class Request {
             invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
 
-            // TODO new Invoice
             val transportInvoice = Invoice(retailer, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
+            Invoices.invoices.add(transportInvoice)
+            transportInvoice.attach(Report);
+            transportInvoice.notifyUpdate();
             retailer.payForInvoice(transportInvoice)
 
             retailer.buyProducts(transportedProducts)
@@ -158,6 +164,7 @@ class Request {
         fun requestGoShopping(retailer : Retailer, customer: Customer){
             val money : Double = customer.buyProducts(retailer.getAvailableProducts())
             val invoice = Invoice(customer, retailer, money, InvoiceType.SHOPPING)
+            Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
             println("Customer: " + customer.getIdentifier() + " utratil: " + money + " za nakupy a ma: " + customer.getAmountOfMoney())

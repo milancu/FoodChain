@@ -50,12 +50,14 @@ class Transport{
             if(supplies.size == 0) return
             for(supply in supplies){
                 this.cropSupplies.add(supply)
+                supply.notifyTransport();
             }
         }
 
         fun takeProducts(products : ArrayList<Product>){
             for(product in products){
                 this.products.add(product)
+                product.notifyTransport();
             }
         }
 
@@ -63,6 +65,7 @@ class Transport{
             println("transport prebira masa : " + meats.size)
             for(meat in meats){
                 this.meats.add(meat)
+                meat.notifyTransport();
             }
             println("Transport prevzal masa : " + this.meats.size)
         }

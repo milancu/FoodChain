@@ -144,6 +144,13 @@ class Crop(
         }
     }
 
+    fun notifyTransport() {
+        for (i in observers) {
+            i.update(this.uuid,
+                "CROPT HAS BEEN SHIPPED, " + this.name + ", amount: " + this.amount + "g, in week:" + Week.acutalWeek)
+        }
+    }
+
     override fun setState(state: State) {
         this.state = state
     }

@@ -44,9 +44,6 @@ class FoodchainApplication {
             simulation.runWeek()
         }
 
-        val list = arrayListOf<Int>()
-        list.addAll(listOf(1, 2, 3))
-
         Report.export()
         model.addAttribute("reports", Report.getReports())
     }

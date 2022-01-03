@@ -19,11 +19,13 @@ class VeganStrategy : CustomerStrategy {
             ) {
                 if(product.getAmount() >= Config.STANDARD_SHOP_SIZE){
                     product.decreaseAmount(Config.VEGAN_SHOP_SIZE)
+                    product.notifyPurchased()
                     spended += Config.VEGAN_SHOP_SIZE * product.getShopPrice()
                 } else {
                     toRemove.add(product)
                     println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
                     product.getState().changeToNextState()
+                    product.notifySoldOut()
                 }
             }
         }

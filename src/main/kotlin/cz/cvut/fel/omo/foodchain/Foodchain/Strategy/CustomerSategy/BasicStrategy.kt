@@ -21,10 +21,12 @@ class BasicStrategy : CustomerStrategy {
                 if(product.getAmount() >= Config.STANDARD_SHOP_SIZE){
                     product.decreaseAmount(Config.STANDARD_SHOP_SIZE)
                     spended += Config.STANDARD_SHOP_SIZE * product.getShopPrice()
+                    product.notifyPurchased()
                 } else {
                     println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
                     toRemove.add(product)
                     product.getState().changeToNextState()
+                    product.notifySoldOut()
                 }
             }
         }

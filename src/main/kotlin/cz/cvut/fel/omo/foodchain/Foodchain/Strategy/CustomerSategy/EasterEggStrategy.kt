@@ -19,10 +19,12 @@ class EasterEggStrategy : CustomerStrategy {
             if(random == 1 || product.getProductType() == ProductType.XXX){
                 if(product.getAmount() >= randomSize){
                     product.decreaseAmount(randomSize)
+                    product.notifyPurchased()
                     spended += randomSize * product.getShopPrice()
                 } else {
                     toRemove.add(product)
                     println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
+                    product.notifySoldOut()
                     product.getState().changeToNextState()
                 }
             }

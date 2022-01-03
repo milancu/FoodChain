@@ -18,11 +18,13 @@ class RandomStrategy : CustomerStrategy {
             if(random == 1){
                 if(product.getAmount() >= randomSize){
                     product.decreaseAmount(randomSize)
+                    product.notifyPurchased()
                     spended += randomSize * product.getShopPrice()
                 } else {
                     toRemove.add(product)
                     println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
                     product.getState().changeToNextState()
+                    product.notifySoldOut()
                 }
             }
         }

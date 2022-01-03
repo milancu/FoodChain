@@ -84,6 +84,13 @@ class Meat(
         }
     }
 
+    fun notifyTransport() {
+        for (i in observers) {
+            i.update(this.origin,
+                "MEAT HAS BEEN SHIPPED, " + this.type + ", amount: " + this.amount + "g, in week: " + Week.acutalWeek)
+        }
+    }
+
     override fun setState(state: State) {
         this.state = state
     }

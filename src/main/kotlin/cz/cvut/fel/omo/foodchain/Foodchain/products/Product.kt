@@ -1,11 +1,9 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.products
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
-import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
-import cz.cvut.fel.omo.foodchain.Foodchain.State.Context
-import cz.cvut.fel.omo.foodchain.Foodchain.State.CropState
-import cz.cvut.fel.omo.foodchain.Foodchain.State.ProductState
-import cz.cvut.fel.omo.foodchain.Foodchain.State.State
+import cz.cvut.fel.omo.foodchain.Foodchain.observer.Observer
+import cz.cvut.fel.omo.foodchain.Foodchain.observer.Subject
+import cz.cvut.fel.omo.foodchain.Foodchain.states.Context
+import cz.cvut.fel.omo.foodchain.Foodchain.states.State
 import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import java.util.*

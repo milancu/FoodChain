@@ -1,8 +1,8 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Iterator.AnimalToProcess
-import cz.cvut.fel.omo.foodchain.Foodchain.Iterator.CustomIterator
-import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
+import cz.cvut.fel.omo.foodchain.Foodchain.iterator.AnimalToProcess
+import cz.cvut.fel.omo.foodchain.Foodchain.iterator.CustomIterator
+import cz.cvut.fel.omo.foodchain.Foodchain.observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat

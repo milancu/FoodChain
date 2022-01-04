@@ -1,10 +1,10 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.animals
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Observer
-import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Subject
-import cz.cvut.fel.omo.foodchain.Foodchain.State.AnimalState
-import cz.cvut.fel.omo.foodchain.Foodchain.State.Context
-import cz.cvut.fel.omo.foodchain.Foodchain.State.State
+import cz.cvut.fel.omo.foodchain.Foodchain.observer.Observer
+import cz.cvut.fel.omo.foodchain.Foodchain.observer.Subject
+import cz.cvut.fel.omo.foodchain.Foodchain.states.AnimalState
+import cz.cvut.fel.omo.foodchain.Foodchain.states.Context
+import cz.cvut.fel.omo.foodchain.Foodchain.states.State
 import cz.cvut.fel.omo.foodchain.Foodchain.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType

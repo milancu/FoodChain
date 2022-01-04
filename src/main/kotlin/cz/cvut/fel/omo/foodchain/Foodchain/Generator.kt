@@ -1,7 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Factory.MeatFactory
-import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
+import cz.cvut.fel.omo.foodchain.Foodchain.factory.MeatFactory
+import cz.cvut.fel.omo.foodchain.Foodchain.observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.*
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName

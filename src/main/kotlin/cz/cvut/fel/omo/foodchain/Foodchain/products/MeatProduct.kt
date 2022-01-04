@@ -1,6 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.products
 
-import cz.cvut.fel.omo.foodchain.Foodchain.State.State
+import cz.cvut.fel.omo.foodchain.Foodchain.states.State
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import java.util.*
 

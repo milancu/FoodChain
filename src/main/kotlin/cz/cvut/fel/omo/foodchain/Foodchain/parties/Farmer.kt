@@ -2,7 +2,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
-import cz.cvut.fel.omo.foodchain.Foodchain.Iterator.AnimalToProcess
+import cz.cvut.fel.omo.foodchain.Foodchain.iterator.AnimalToProcess
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat

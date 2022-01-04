@@ -1,13 +1,12 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Observer.Report
+import cz.cvut.fel.omo.foodchain.Foodchain.observer.Report
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam
-import java.util.*
 
 @SpringBootApplication
 @Controller

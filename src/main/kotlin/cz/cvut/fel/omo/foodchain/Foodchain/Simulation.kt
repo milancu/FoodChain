@@ -1,9 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Channels.*
-import org.springframework.stereotype.Controller
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RestController
+import cz.cvut.fel.omo.foodchain.Foodchain.channels.*
 
 /**
  * Simulation

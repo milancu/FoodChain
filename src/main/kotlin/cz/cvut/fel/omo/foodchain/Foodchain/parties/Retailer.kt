@@ -172,4 +172,8 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
     fun warehouseManagementPayment(){
         this.amountOfMoney -= warehouse.warehouseManagementPayment()
     }
+
+    fun refreshAvailableProducts(products: ArrayList<Product>){
+        this.availableProducts = products
+    }
 }

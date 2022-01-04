@@ -14,5 +14,5 @@ interface CustomerStrategy {
      * @param products
      * @return
      */
-    fun execute(products : ArrayList<Product>): Double
+    fun execute(products : ArrayList<Product>): Pair<Double, ArrayList<Product>>
 }

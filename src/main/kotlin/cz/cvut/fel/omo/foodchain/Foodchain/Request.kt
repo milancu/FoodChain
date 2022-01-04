@@ -162,7 +162,12 @@ class Request {
         }
 
         fun requestGoShopping(retailer : Retailer, customer: Customer){
-            val money : Double = customer.buyProducts(retailer.getAvailableProducts())
+            val pair : Pair<Double, ArrayList<Product>> = customer.buyProducts(retailer.getAvailableProducts())
+            val money : Double = pair.first
+            val products : ArrayList<Product> = pair.second
+
+            retailer.refreshAvailableProducts(products)
+
             val invoice = Invoice(customer, retailer, money, InvoiceType.SHOPPING)
             Invoices.invoices.add(invoice)
             invoice.attach(Report)

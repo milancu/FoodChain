@@ -22,7 +22,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     ProductType.VEGETABLES,
                     crop.getShopPrice() * 1.2,
                     crop.getShopPrice(),
-                    1,
+                    crop.getAmount(),
                     "kg",
                     crop.getUUID(),
                     crop.getState().changeToNextState()
@@ -67,7 +67,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     ProductType.VEGETABLES,
                     crop.getShopPrice() * 1.2,
                     crop.getShopPrice(),
-                    1,
+                    crop.getAmount(),
                     "kg",
                     crop.getUUID(),
                     crop.getState().changeToNextState()
@@ -143,7 +143,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     ProductType.VEGETABLES,
                     crop.getShopPrice() * 1.2,
                     crop.getShopPrice(),
-                    1,
+                    crop.getAmount(),
                     "kg",
                     crop.getUUID(),
                     crop.getState().changeToNextState()
@@ -159,7 +159,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     ProductType.VEGETABLES,
                     crop.getShopPrice() * 2.5,
                     crop.getShopPrice() + 20,
-                    1,
+                    (crop.getAmount()*0.5).toInt(),
                     "kg",
                     crop.getUUID(),
                     crop.getState().changeToNextState()
@@ -186,7 +186,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     ProductType.VEGETABLES,
                     crop.getShopPrice() * 1.2,
                     crop.getShopPrice(),
-                    1,
+                    crop.getAmount(),
                     "kg",
                     crop.getUUID(),
                     crop.getState().changeToNextState()
@@ -229,7 +229,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     ProductType.VEGETABLES,
                     crop.getShopPrice() * 1.2,
                     crop.getShopPrice(),
-                    1,
+                    crop.getAmount(),
                     "kg",
                     crop.getUUID(),
                     crop.getState().changeToNextState()

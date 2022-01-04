@@ -10,7 +10,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  * @constructor Create empty Meat lover strategy
  */
 class MeatLoverStrategy : CustomerStrategy {
-    override fun execute(products: ArrayList<Product>): Double {
+    override fun execute(products: ArrayList<Product>): Pair<Double, ArrayList<Product>> {
         var spended = 0.0
         val toRemove : ArrayList<Product> = ArrayList()
 
@@ -31,8 +31,9 @@ class MeatLoverStrategy : CustomerStrategy {
                 }
             }
         }
-        removeProducts(products, toRemove)
-        return spended
+        var productsToReturn = removeProducts(products, toRemove)
+        return Pair(spended, productsToReturn)
+        /*return spended*/
     }
 
     /**
@@ -41,9 +42,10 @@ class MeatLoverStrategy : CustomerStrategy {
      * @param original
      * @param toRemove
      */
-    private fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>){
+    private fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>) : ArrayList<Product>{
         for(product in toRemove){
             original.remove(product)
         }
+        return original
     }
 }

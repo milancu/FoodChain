@@ -15,7 +15,8 @@ import java.util.*
  * @property unit
  * @property origin
  * @constructor Create empty Crop product
- *///@Component
+ */
+//@Component
 class CropProduct(
     private var name: String,
     private var type: ProductType,
@@ -32,7 +33,7 @@ class CropProduct(
     }
 
     override fun getAmount(): Int {
-        return amount
+        return this.amount
     }
 
     override fun getProductType(): ProductType {
@@ -45,5 +46,9 @@ class CropProduct(
 
     override fun getOriginId(): UUID {
         return this.origin
+    }
+
+    override fun decreaseAmount(value : Int){
+        this.amount = this.amount - value
     }
 }

@@ -129,9 +129,8 @@ open class Product(
      *
      * @param value
      */
-    fun decreaseAmount(value : Int){
+    open fun decreaseAmount(value : Int){
         this.amount = this.amount - value
-        this.amount = 0;
     }
 
     override fun setState(state: State) {

@@ -24,7 +24,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     ProductType.FRUIT,
                     crop.getShopPrice() * 1.4,
                     crop.getShopPrice(),
-                    1,
+                    crop.getAmount(),
                     "kg",
                     crop.getUUID(),
                     crop.getState().changeToNextState()
@@ -96,7 +96,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     ProductType.FRUIT,
                     crop.getShopPrice() * 1.4,
                     crop.getShopPrice(),
-                    1,
+                    crop.getAmount(),
                     "kg",
                     crop.getUUID(),
                     crop.getState().changeToNextState()
@@ -111,7 +111,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     ProductType.ALCOHOL,
                     crop.getShopPrice() + 120,
                     crop.getShopPrice() * 2.45,
-                    1,
+                    (crop.getAmount() * 0.1).toInt(),
                     "l",
                     crop.getUUID(),
                     crop.getState().changeToNextState()

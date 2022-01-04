@@ -60,7 +60,7 @@ class CustomerContext(var strategy: CustomerStrategy) {
      * @param products
      * @return
      */
-    fun goShopping(products : ArrayList<Product>) : Double{
+    fun goShopping(products : ArrayList<Product>) : Pair<Double, ArrayList<Product>>{
         return strategy.execute(products)
     }
 }

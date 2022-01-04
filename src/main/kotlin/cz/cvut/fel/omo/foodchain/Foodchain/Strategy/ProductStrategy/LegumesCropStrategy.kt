@@ -21,7 +21,7 @@ class LegumesCropStrategy : ProcessorCropStrategy {
                     ProductType.LEGUMES,
                     crop.getShopPrice() * 1.2,
                     crop.getShopPrice(),
-                    1,
+                    crop.getAmount(),
                     "kg",
                     crop.getUUID(),
                     crop.getState().changeToNextState()
@@ -36,7 +36,7 @@ class LegumesCropStrategy : ProcessorCropStrategy {
                     ProductType.CANS,
                     crop.getShopPrice() * 1.4,
                     crop.getShopPrice() + 5,
-                    1,
+                    (crop.getAmount() * 0.8).toInt(),
                     "kg",
                     crop.getUUID(),
                     crop.getState().changeToNextState()

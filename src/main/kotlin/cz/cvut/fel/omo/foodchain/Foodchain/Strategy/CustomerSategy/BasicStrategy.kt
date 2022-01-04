@@ -10,7 +10,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  * @constructor Create empty Basic strategy
  */
 class BasicStrategy : CustomerStrategy {
-    override fun execute(products : ArrayList<Product>) : Double{
+    override fun execute(products : ArrayList<Product>) : Pair<Double, ArrayList<Product>>{
         var spended = 0.0
 
         val productTypeMap: HashMap<ProductType, Int> = productMapInit()
@@ -30,8 +30,11 @@ class BasicStrategy : CustomerStrategy {
                 }
             }
         }
-        removeProducts(products, toRemove)
+        var productsToReturn = removeProducts(products, toRemove)
+        return Pair(spended, productsToReturn)
+/*
         return spended
+*/
     }
 
     /**
@@ -40,10 +43,11 @@ class BasicStrategy : CustomerStrategy {
      * @param original
      * @param toRemove
      */
-    private fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>){
+    private fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>) : ArrayList<Product>{
         for(product in toRemove){
             original.remove(product)
         }
+        return original
     }
 
     /**

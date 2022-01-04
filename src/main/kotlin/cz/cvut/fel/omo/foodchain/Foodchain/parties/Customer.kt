@@ -67,7 +67,7 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
      * @param products
      * @return
      */// Produkty nebudeme ukladat, budou vyrazeny z obehu, stejne by se nezpracovavaly, nebo resetovaly
-    fun buyProducts(products: ArrayList<Product>): Double {
+    fun buyProducts(products: ArrayList<Product>): Pair<Double, ArrayList<Product>> {
         return context.goShopping(products)
     }
 

@@ -21,7 +21,7 @@ class MeatLoverStrategy : CustomerStrategy {
             ) {
                 if(product.getAmount() >= Config.WORKOUT_SHOP_SIZE){
                     product.decreaseAmount(Config.WORKOUT_SHOP_SIZE)
-                    product.notifyPurchased()
+                    product.notifyPurchased(3, product.getAmount())
                     spended += Config.WORKOUT_SHOP_SIZE * product.getShopPrice()
                 } else {
                     toRemove.add(product)

@@ -76,7 +76,7 @@ open class Product(
      * @return
      */
     open fun getAmount(): Int {
-        return amount
+        return this.amount
     }
 
     /**
@@ -110,10 +110,10 @@ open class Product(
         }
     }
 
-    fun notifyPurchased(){
+    fun notifyPurchased(x : Int, y :Int){
         for (i in observers) {
             i.update(this.origin,
-                "PRODUCT HAS BEEN PURCHASED, " + this.name + ", amount: " + this.amount + "g, shop price: " + this.shopPrice + " in week:" + Week.acutalWeek)
+                "PRODUCT HAS BEEN PURCHASED, " + this.name + ", amount: " + this.amount + "g, shop price: " + this.shopPrice + " in week:" + Week.acutalWeek + ", " + x.toString() + ", " + y.toString() + '\n')
         }
     }
 
@@ -130,7 +130,8 @@ open class Product(
      * @param value
      */
     fun decreaseAmount(value : Int){
-        this.amount -= value
+        this.amount = this.amount - value
+        this.amount = 0;
     }
 
     override fun setState(state: State) {

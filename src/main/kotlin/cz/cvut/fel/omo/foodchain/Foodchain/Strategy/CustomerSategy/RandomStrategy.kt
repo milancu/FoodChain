@@ -18,7 +18,7 @@ class RandomStrategy : CustomerStrategy {
             if(random == 1){
                 if(product.getAmount() >= randomSize){
                     product.decreaseAmount(randomSize)
-                    product.notifyPurchased()
+                    product.notifyPurchased(4, product.getAmount())
                     spended += randomSize * product.getShopPrice()
                 } else {
                     toRemove.add(product)

@@ -26,10 +26,9 @@ class ExportVisitor : Visitor{
             if(report.value.toString().contains("INVOICE")){
                 financeReports[report.key] = report.value
             } else if(report.value.toString().contains("ANIMAL")){
-                cropReports[report.key] = report.value
-            } else {
-                println(report.value)
                 animalReports[report.key] = report.value
+            } else {
+                cropReports[report.key] = report.value
             }
         }
         export()
@@ -63,4 +62,17 @@ class ExportVisitor : Visitor{
             }
         }
     }
+
+    fun getAnimals() : HashMap<UUID, ArrayList<String>>{
+        return animalReports
+    }
+
+    fun getCrops() : HashMap<UUID, ArrayList<String>>{
+        return cropReports
+    }
+
+    fun getInvoices() : HashMap<UUID, ArrayList<String>>{
+        return financeReports
+    }
+
 }

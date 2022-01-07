@@ -43,7 +43,7 @@ class GrowerToFarmerChannel(private var growers: ArrayList<Grower>, private var 
                 }
             }
         }
-        logger.info("Nedostatek vhodnych dodavatelu v CR")
+        logger.info("Nedostatek vhodnych dodavatelu v CR, zasoby budou zakoupeny ze zahranici")
         val exoticGrower = Grower("sosGrower", "Exotica", 0.0)
         val exoticCrop = Crop(CropName.WHEET, CropType.CEREAL, 50, 0)
         exoticGrower.addEmergencyCrop(exoticCrop)

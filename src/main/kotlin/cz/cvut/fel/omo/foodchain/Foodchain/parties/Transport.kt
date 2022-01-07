@@ -4,6 +4,9 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+import org.slf4j.LoggerFactory
+import java.util.*
+import kotlin.collections.ArrayList
 
 /**
  * Transport
@@ -13,9 +16,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 class Transport{
     companion object TransportCompany {
 
-        var transport : BaseParty = BaseParty("Transport S.R.O", "Unknown", 10000.00)
+        private var amountOfMoney : Double = 10000.00
+        var transport : BaseParty = BaseParty("Transport S.R.O", "Unknown", amountOfMoney)
 
-        /*private var amountOfMoney : Double = 10000.00*/
+        private val logger = LoggerFactory.getLogger(javaClass)
+
         private var cropSupplies : ArrayList<Crop> = ArrayList()
         private var products : ArrayList<Product> = ArrayList()
         private var meats : ArrayList<MeatProduct> = ArrayList()
@@ -63,12 +68,12 @@ class Transport{
         }
 
         fun takeMeat(meats : ArrayList<MeatProduct>){
-            println("transport prebira masa : " + meats.size)
+            logger.info("transport prebira masa : " + meats.size)
             for(meat in meats){
                 this.meats.add(meat)
                 meat.notifyTransport();
             }
-            println("Transport prevzal masa : " + this.meats.size)
+            logger.info("Transport prevzal masa : " + this.meats.size)
         }
 
 
@@ -84,10 +89,10 @@ class Transport{
                 costs += product.getShopPrice() * product.getAmount() * 0.025
             }
             transport.changeAmountOfMoney(-costs)
-            println("Dopravni spolecnost na nakladech utratila: $costs")
+            logger.info("Dopravni spolecnost na nakladech utratila: $costs")
         }
 
-        fun getIdentifier() : Int{
+        fun getIdentifier() : UUID{
             return transport.getIdentifier()
         }
     }

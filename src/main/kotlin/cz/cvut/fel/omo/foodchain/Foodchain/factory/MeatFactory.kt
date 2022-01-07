@@ -11,6 +11,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.parties.Transport
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+import org.slf4j.LoggerFactory
 
 /**
  * Meat factory
@@ -27,6 +28,8 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
     private var meatsForProducts: ArrayList<MeatProduct> = ArrayList()
     private var productToSell: ArrayList<Product> = ArrayList()
     private val unpaidInvoices: ArrayList<Invoice> = ArrayList()
+
+    private val logger = LoggerFactory.getLogger(javaClass)
 
     /**
      * Get meat resources
@@ -55,7 +58,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
         for (meat in newMeats) {
             meatsForProducts.add(meat)
         }
-        println("Prevzato masa k zabaleni: " + meatsForProducts.size)
+        logger.info("Prevzato masa k zabaleni: " + meatsForProducts.size)
     }
 
     /**
@@ -78,11 +81,11 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
             invoice.notifyPaid()
-            println("Faktura " + invoice.getCode() + " zaplacena")
+            logger.info("Faktura " + invoice.getCode() + " zaplacena")
         } else {
             unpaidInvoices.add(invoice)
             invoice.notifyUnpaid()
-            println("!Faktura " + invoice.getCode() + " NENI uhrazena")
+            logger.info("!Faktura " + invoice.getCode() + " NENI uhrazena")
         }
     }
 
@@ -99,7 +102,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             }
         }
         for (invoice in toRemove) {
-            println("Penize za " + invoice.getCode() + " splaceny")
+            logger.info("Penize za " + invoice.getCode() + " splaceny")
             unpaidInvoices.remove(invoice)
         }
     }
@@ -111,7 +114,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
     fun packageProduct() {
         productToSell = ArrayList()
         for (meat in meatsForProducts) {
-            println("Maso puvodu : " + meat.getOriginId() + " je baleno")
+            logger.info("Maso puvodu : " + meat.getOriginId() + " je baleno")
             when (meat.getTypeOfMeat()) {
                 MeatProductType.BEEFDUMPLING.toString() -> productToSell.add(packageBeefDumpling(meat))
                 MeatProductType.BEEFSHOULDER.toString() -> productToSell.add(packageBeefShoulder(meat))

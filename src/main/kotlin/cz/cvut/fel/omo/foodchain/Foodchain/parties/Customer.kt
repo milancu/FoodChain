@@ -4,6 +4,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.statics.Config
 import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.strategies.customer_strategy.*
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+import org.slf4j.LoggerFactory
 
 /**
  * Customer
@@ -22,6 +23,8 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
     private val meatLoverStrategy : MeatLoverStrategy = MeatLoverStrategy()
     private val randomStrategy : RandomStrategy = RandomStrategy()
     private val veganStrategy : VeganStrategy = VeganStrategy()
+
+    private val logger = LoggerFactory.getLogger(javaClass)
 
     private var salary: Double = (Config.SALARY_MIN..Config.SALARY_MAX).random().toDouble()
     private var context : CustomerContext = chooseStrategy()
@@ -84,7 +87,7 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
             recipe.notifyPaid()
         } else {
             creditCardDebts.add(recipe)
-            println("Vznika dluh na kreditni karte v castce " + recipe.getPrice())
+            logger.info("Vznika dluh na kreditni karte v castce " + recipe.getPrice())
             recipe.notifyUnpaid()
         }
     }
@@ -102,7 +105,7 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
             }
         }
         for(invoice in toRemove){
-            println("Penize za " + invoice.getCode() + " splaceny")
+            logger.info("Penize za " + invoice.getCode() + " splaceny")
             creditCardDebts.remove(invoice)
         }
     }

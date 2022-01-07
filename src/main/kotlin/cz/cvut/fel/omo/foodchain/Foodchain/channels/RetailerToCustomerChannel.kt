@@ -4,6 +4,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 import cz.cvut.fel.omo.foodchain.Foodchain.statics.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Customer
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
+import org.slf4j.LoggerFactory
 
 /**
  * Retailer to customer channel
@@ -14,6 +15,8 @@ class RetailerToCustomerChannel(private var retailers: ArrayList<Retailer>) : Ch
 
     private var customers : ArrayList<Customer>
     private var generator : Generator = Generator()
+
+    private val logger = LoggerFactory.getLogger(javaClass)
 
     init {
         this.customers = generator.generateCustomers()
@@ -31,21 +34,20 @@ class RetailerToCustomerChannel(private var retailers: ArrayList<Retailer>) : Ch
     }
 
     override fun printStats(){
-        println("CURRENT STATE RETAILER / CUSTOMER - CHANNEL")
+        logger.info("CURRENT STATE RETAILER / CUSTOMER - CHANNEL")
         for(retailer in retailers){
-            println("Retailer: " + retailer.getIdentifier() + " : money : " + retailer.getAmountOfMoney()
+            logger.info("Retailer: " + retailer.getIdentifier() + " : money : " + retailer.getAmountOfMoney()
                     + " : available products : " + retailer.getStockSize() + " : warehouseProducts : " + retailer.getWarehouseStockSize())
         }
         for(customer in customers){
-            println("Customer: " + customer.getIdentifier() + " : money : " + customer.getAmountOfMoney())
+            logger.info("Customer: " + customer.getIdentifier() + " : money : " + customer.getAmountOfMoney())
         }
-        println()
     }
 
     private fun fillShops(){
         for(retailer in retailers){
             Request.requestTakeOutToShop(retailer)
-            println("Retailer: " + retailer.getIdentifier() + " naskladnil " + retailer.getStockSize() + " produktu.")
+            logger.info("Retailer: " + retailer.getIdentifier() + " naskladnil " + retailer.getStockSize() + " produktu.")
         }
     }
 

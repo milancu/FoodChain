@@ -6,6 +6,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.iterator.AnimalToProcess
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
+import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 
 // TODO duplicity kodu a iterator - Mila nebudu ti sem smatat
@@ -26,6 +27,8 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     private var animals: ArrayList<BaseAnimal> = setInitialAnimals()
     private var animalsToProcessing: ArrayList<BaseAnimal> = ArrayList()
     private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
+
+    private val logger = LoggerFactory.getLogger(javaClass)
 
     @Autowired
     private val butcher : Butcher = Butcher()
@@ -96,12 +99,11 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
             }
         }
 
-        println("Aktualni pocet zvirat : " + animals.size)
-        println("Na jatka bylo poslano : " + animalToProcess.getSize() + " zvirat")
+        logger.info("Aktualni pocet zvirat : " + animals.size)
+        logger.info("Na jatka bylo poslano : " + animalToProcess.getSize() + " zvirat")
         animals.removeAll(animalToProcess.getAnimalList())
-        println("Aktualni pocet zvirat : " + animals.size)
         buyNewAnimals(animalToProcess.getSize())
-        println("Po dokoupeni pocet zvirat : " + animals.size)
+        logger.info("Zvirata byla dokoupena")
 
         return animalToProcess
     }
@@ -193,10 +195,10 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
 
             if(feeded){
                 animal.increaseWeight()
-                println("Zvire " + animal.getName() + " " + animal.getOriginId() + " bylo nakrmeno")
+                logger.info("Zvire " + animal.getName() + " " + animal.getOriginId() + " bylo nakrmeno")
             }
             else {
-                println("Zvire " + animal.getName() + " " + animal.getOriginId() + " ZUSTALO o hladu, potrebuje dokoupit zasoby")
+                logger.info("Zvire " + animal.getName() + " " + animal.getOriginId() + " ZUSTALO o hladu, potrebuje dokoupit zasoby")
                 animal.decreaseWeight()
             }
         }
@@ -240,15 +242,14 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         if (amountOfMoney >= invoice.getPrice()) {
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
-            println("Faktura " + invoice.getCode() + " zaplacena")
+            logger.info("Faktura " + invoice.getCode() + " zaplacena")
             invoice.payInvoice()
             invoice.notifyPaid()
         } else {
             unpaidInvoices.add(invoice)
-            println("!Faktura " + invoice.getCode() + " NENI uhrazena")
+            logger.info("!Faktura " + invoice.getCode() + " NENI uhrazena")
             invoice.notifyUnpaid()
         }
-        println()
     }
 
     /**
@@ -266,7 +267,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
             }
         }
         for (invoice in toRemove) {
-            println("Penize za " + invoice.getCode() + " splaceny")
+            logger.info("Penize za " + invoice.getCode() + " splaceny")
             unpaidInvoices.remove(invoice)
         }
     }

@@ -4,6 +4,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 import cz.cvut.fel.omo.foodchain.Foodchain.statics.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
+import org.slf4j.LoggerFactory
 
 /**
  * Grower to processor channel
@@ -15,27 +16,26 @@ class GrowerToProcessorChannel : Channel{
     private var growers : ArrayList<Grower>
     private var processors : ArrayList<Processor>
 
+    private val logger = LoggerFactory.getLogger(javaClass)
+
     init {
-        println("PHASE 1.0 - Growers and processors creation")
+        logger.info("PHASE 0 - Growers and processors creation")
         val generator = Generator()
         growers = generator.generateGrowers()
         processors = generator.generateProcessors()
-        println("Growers: " + growers.size)
-        println("Processors: " + processors.size)
-        println()
     }
 
     override fun printStats(){
-        println("CURRENT STATE - GROWER / PROCESSOR - CHANNEL")
+        logger.info("CURRENT STATE - GROWER / PROCESSOR - CHANNEL")
         for(grower in growers){
-            println("Grover: " + grower.getIdentifier() + " : money : " + grower.getAmountOfMoney() + " : supllies : " + grower.getSupplies().size)
+            logger.info("Grover: " + grower.getIdentifier() + " : money : " + grower.getAmountOfMoney()
+                    + " : supllies : " + grower.getSupplies().size)
         }
         for(processor in processors){
-            println("Processor: " + processor.getIdentifier() + " : money : " + processor.getAmountOfMoney()
+            logger.info("Processor: " + processor.getIdentifier() + " : money : " + processor.getAmountOfMoney()
                     + " : supplies : " + processor.getStockSuppliesSize() + " : products : " + processor.getStockProductsSize())
             processor.payDebts()
         }
-        println()
     }
 
     override fun runSimulation(){

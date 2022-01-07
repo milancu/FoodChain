@@ -2,6 +2,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.strategies.customer_strategy
 
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+import org.slf4j.LoggerFactory
 
 /**
  * Easter egg strategy
@@ -9,6 +10,9 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  * @constructor Create empty Easter egg strategy
  */
 class EasterEggStrategy : CustomerStrategy {
+
+    private val logger = LoggerFactory.getLogger(javaClass)
+
     override fun execute(products: ArrayList<Product>): Pair<Double, ArrayList<Product>> {
         var spended = 0.0
         val toRemove: ArrayList<Product> = ArrayList()
@@ -23,13 +27,13 @@ class EasterEggStrategy : CustomerStrategy {
                     spended += randomSize * product.getShopPrice()
                 } else {
                     toRemove.add(product)
-                    println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
+                    logger.info("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
                     product.notifySoldOut()
                     product.getState().changeToNextState()
                 }
             }
         }
-        var productsToReturn = removeProducts(products, toRemove)
+        val productsToReturn = removeProducts(products, toRemove)
         return Pair(spended, productsToReturn)
         /*return spended*/
     }

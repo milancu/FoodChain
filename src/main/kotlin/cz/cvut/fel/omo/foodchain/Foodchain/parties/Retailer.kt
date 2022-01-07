@@ -3,6 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
 import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 
 /**
@@ -23,6 +24,7 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
     private var unpaidInvoices: ArrayList<Invoice> = ArrayList()
     private var productTypeMap: HashMap<ProductType, Int> = productMapInit()
 
+    private val logger = LoggerFactory.getLogger(javaClass)
 
     /**
      * Product map init
@@ -54,10 +56,9 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
      * @param products
      */
     fun buyProducts(products: ArrayList<Product>) {
-        println("Do warehouse privezeno: " + products.size)
+        logger.info("Do warehouse privezeno: " + products.size)
         warehouse.takeIn(products)
-        println("Naskladneno celkem typu produktu: " + warehouse.getStockSize())
-        println()
+        logger.info("Naskladneno celkem typu produktu: " + warehouse.getStockSize())
     }
 
     /**
@@ -71,13 +72,12 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
             invoice.getContractor().takeMoney(invoice.getPrice())
             invoice.notifyPaid()
             amountOfMoney -= invoice.getPrice()
-            println("Faktura " + invoice.getCode() + " zaplacena")
+            logger.info("Faktura " + invoice.getCode() + " zaplacena")
         } else {
             unpaidInvoices.add(invoice)
-            println("!Faktura " + invoice.getCode() + " NENI uhrazena")
+            logger.info("!Faktura " + invoice.getCode() + " NENI uhrazena")
             invoice.notifyUnpaid()
         }
-        println()
     }
 
     /**
@@ -93,7 +93,7 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
             }
         }
         for (invoice in toRemove) {
-            println("Penize za " + invoice.getCode() + " splaceny")
+            logger.info("Penize za " + invoice.getCode() + " splaceny")
             unpaidInvoices.remove(invoice)
         }
     }

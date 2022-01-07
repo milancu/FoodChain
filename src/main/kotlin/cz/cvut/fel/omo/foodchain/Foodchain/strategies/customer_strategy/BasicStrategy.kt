@@ -3,6 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.strategies.customer_strategy
 import cz.cvut.fel.omo.foodchain.Foodchain.statics.Config
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+import org.slf4j.LoggerFactory
 
 /**
  * Basic strategy
@@ -10,6 +11,9 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  * @constructor Create empty Basic strategy
  */
 class BasicStrategy : CustomerStrategy {
+
+    private val logger = LoggerFactory.getLogger(javaClass)
+
     override fun execute(products : ArrayList<Product>) : Pair<Double, ArrayList<Product>>{
         var spended = 0.0
 
@@ -28,18 +32,15 @@ class BasicStrategy : CustomerStrategy {
                     spended += Config.STANDARD_SHOP_SIZE * product.getShopPrice()
                     product.notifyPurchased( product.getAmount());
                 } else {
-                    println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
+                    logger.info("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
                     toRemove.add(product)
                     product.getState().changeToNextState()
                     product.notifySoldOut()
                 }
             }
         }
-        var productsToReturn = removeProducts(products, toRemove)
+        val productsToReturn = removeProducts(products, toRemove)
         return Pair(spended, productsToReturn)
-/*
-        return spended
-*/
     }
 
     /**

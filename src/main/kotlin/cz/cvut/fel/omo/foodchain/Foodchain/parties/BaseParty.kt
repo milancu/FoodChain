@@ -1,5 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
+import java.util.*
+
 /**
  * Base party
  *
@@ -11,8 +13,7 @@ open class BaseParty(
     protected var amountOfMoney: Double
 ) {
 
-    private val identifier : Int =
-        (10000000..99999999).random()
+    private val identifier : UUID = UUID.randomUUID()
 
     /**
      * Get subject name
@@ -30,7 +31,7 @@ open class BaseParty(
      * @return
      */
     @JvmName("getId")
-    fun getIdentifier() : Int{
+    fun getIdentifier() : UUID{
         return identifier
     }
 

@@ -3,6 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.Field
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
+import org.slf4j.LoggerFactory
 
 /**
  * Grower
@@ -18,6 +19,8 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
 
     private val fields : ArrayList<Field> = setInitialField()
     private var supplies : ArrayList<Crop> = setInitalSupplies()
+
+    private val logger = LoggerFactory.getLogger(javaClass)
 
     private fun setInitialField() : ArrayList<Field>{
         val generator = Generator()
@@ -54,24 +57,22 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
     fun harvest(){
         val harvestedCrop : ArrayList<Crop> = ArrayList()
         for(field in fields){
-            println("Plodina vek: " + field.getCrop().getGrowth())
+            logger.info("Plodina vek: " + field.getCrop().getGrowth())
             if(field.getCrop().getGrowth() >= 10){
-                println("Plodina " + field.getCrop().getName() + " sklizena v poctu " + field.getCrop().getAmount())
+                logger.info("Plodina " + field.getCrop().getName() + " sklizena v poctu " + field.getCrop().getAmount())
                 val crop = field.getCrop()
                 harvestedCrop.add(crop)
                 crop.notifyWasHarvested()
                 field.resetField()
             } else {
                 field.growCrop()
-                println("Plodina " + field.getCrop().getName() + " vyrostla")
+                logger.info("Plodina " + field.getCrop().getName() + " vyrostla")
             }
         }
 
         for(crop in harvestedCrop){
             supplies.add(crop)
         }
-
-        println()
     }
 
     /**

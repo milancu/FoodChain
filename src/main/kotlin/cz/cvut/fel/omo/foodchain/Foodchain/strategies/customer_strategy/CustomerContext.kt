@@ -1,6 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.strategies.customer_strategy
 
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+import org.slf4j.LoggerFactory
 
 /**
  * Customer context

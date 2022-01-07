@@ -3,6 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.channels
 import cz.cvut.fel.omo.foodchain.Foodchain.factory.MeatFactory
 import cz.cvut.fel.omo.foodchain.Foodchain.statics.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
+import org.slf4j.LoggerFactory
 
 /**
  * Meat factory to retailer channel
@@ -11,25 +12,25 @@ import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
  */
 class MeatFactoryToRetailerChannel(private var meatFactory: MeatFactory, private var retailers: ArrayList<Retailer>) : Channel{
 
+    private val logger = LoggerFactory.getLogger(javaClass)
+
     override fun runSimulation(){
         val retailer : Retailer = retailers[(0 until retailers.size).random()]
-        println("CURRENT STATE MEATFACTORY / RETAILER - CHANNEL")
-        println("Zahajeni zpracovani masnych produktu : " + meatFactory.getPreparedPorducts() + " zasoby: " + meatFactory.getMeatResources())
+        logger.info("CURRENT STATE MEATFACTORY / RETAILER - CHANNEL")
+        logger.info("Zahajeni zpracovani masnych produktu : " + meatFactory.getPreparedPorducts() + " zasoby: " + meatFactory.getMeatResources())
         Request.requestProccessMeat(meatFactory)
-        println("Masne produkty pripraveny : " + meatFactory.getPreparedPorducts() + " zasoby: " + meatFactory.getMeatResources())
+        logger.info("Masne produkty pripraveny : " + meatFactory.getPreparedPorducts() + " zasoby: " + meatFactory.getMeatResources())
         Request.requestTransportToWarehouse(meatFactory, retailer)
-        println("Masne produkty prevezeny do prodeje, aktualni stav produktu : " + meatFactory.getPreparedPorducts())
-        println()
+        logger.info("Masne produkty prevezeny do prodeje, aktualni stav produktu : " + meatFactory.getPreparedPorducts())
         retailer.payDebts()
     }
 
     override fun printStats() {
-        println("MeatFactory: " + meatFactory.getIdentifier() + " : money : " + meatFactory.getAmountOfMoney()
+        logger.info("MeatFactory: " + meatFactory.getIdentifier() + " : money : " + meatFactory.getAmountOfMoney()
                 + " : supplies : " + meatFactory.getMeatResources() + " : products : " + meatFactory.getPreparedPorducts())
         for(retailer in retailers){
-            println("Retailer: " + retailer.getIdentifier() + " : money : " + retailer.getAmountOfMoney()
+            logger.info("Retailer: " + retailer.getIdentifier() + " : money : " + retailer.getAmountOfMoney()
                     + " : available products : " + retailer.getStockSize() + " : warehouseProducts : " + retailer.getWarehouseStockSize())
         }
-        println()
     }
 }

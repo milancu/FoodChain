@@ -5,6 +5,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.strategies.product_strategy.*
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+import org.slf4j.LoggerFactory
 
 /**
  * Processor
@@ -27,6 +28,8 @@ class Processor(subjectName : String, location : String, amountOfMoney : Double)
     private var cropSupplies : ArrayList<Crop> = ArrayList()
     private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
     private var products : ArrayList<Product> = ArrayList()
+
+    private val logger = LoggerFactory.getLogger(javaClass)
 
     /**
      * Create product
@@ -83,11 +86,11 @@ class Processor(subjectName : String, location : String, amountOfMoney : Double)
             invoice.getContractor().takeMoney(invoice.getPrice())
             amountOfMoney -= invoice.getPrice()
             invoice.notifyPaid()
-            println("Faktura " + invoice.getCode() + " zaplacena")
+            logger.info("Faktura " + invoice.getCode() + " zaplacena")
         } else {
             unpaidInvoices.add(invoice)
             invoice.notifyUnpaid()
-            println("!Faktura " + invoice.getCode() + " NENI uhrazena")
+            logger.info("!Faktura " + invoice.getCode() + " NENI uhrazena")
         }
     }
 
@@ -104,7 +107,7 @@ class Processor(subjectName : String, location : String, amountOfMoney : Double)
             }
         }
         for (invoice in toRemove) {
-            println("Penize za " + invoice.getCode() + " splaceny")
+            logger.info("Penize za " + invoice.getCode() + " splaceny")
             unpaidInvoices.remove(invoice)
         }
     }

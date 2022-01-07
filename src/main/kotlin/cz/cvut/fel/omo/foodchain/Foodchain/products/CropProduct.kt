@@ -16,7 +16,6 @@ import java.util.*
  * @property origin
  * @constructor Create empty Crop product
  */
-//@Component
 class CropProduct(
     private var name: String,
     private var type: ProductType,

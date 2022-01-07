@@ -70,10 +70,10 @@ class Request {
 
             val processedMeat =  ArrayList<MeatProduct>()
 
-            val meatStrategy = MeatStrategy();
+            val meatStrategy = MeatStrategy()
 
             for(meat in processedAnimals){
-                processedMeat.addAll(meatStrategy.execute(meat));
+                processedMeat.addAll(meatStrategy.execute(meat))
             }
 
 
@@ -138,8 +138,8 @@ class Request {
 
             val transportInvoice = Invoice(retailer, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
             Invoices.invoices.add(transportInvoice)
-            transportInvoice.attach(Report);
-            transportInvoice.notifyUpdate();
+            transportInvoice.attach(Report)
+            transportInvoice.notifyUpdate()
             retailer.payForInvoice(transportInvoice)
 
             retailer.buyProducts(transportedProducts)
@@ -179,16 +179,26 @@ class Request {
 
             retailer.refreshAvailableProducts(products)
 
+            // Faktura
+
             val invoice = Invoice(customer, retailer, money, InvoiceType.SHOPPING)
             Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
             logger.info("Customer: " + customer.getIdentifier() + " utratil: " + money + " za nakupy a ma: " + customer.getAmountOfMoney())
-            customer.payForShopping(invoice)
+            customer.payForInvoice(invoice)
         }
 
         fun requestTakeOutToShop(retailer: Retailer){
             retailer.fillIn()
+        }
+
+        fun proccesTheInvoice(invoice : Invoice, party : BaseParty){
+            Invoices.invoices.add(invoice)
+            invoice.attach(Report)
+            invoice.notifyUpdate()
+            logger.info("Customer: " + party.getIdentifier() + " utratil: " + invoice.getPrice() + " za nakupy a ma: " + party.getAmountOfMoney())
+            party.payForInvoice(invoice)
         }
     }
 }

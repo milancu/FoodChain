@@ -26,7 +26,6 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     private var resources: ArrayList<Crop> = setInitialResources()
     private var animals: ArrayList<BaseAnimal> = setInitialAnimals()
     private var animalsToProcessing: ArrayList<BaseAnimal> = ArrayList()
-    private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
 
     private val logger = LoggerFactory.getLogger(javaClass)
 
@@ -233,24 +232,6 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         resources.add(crop)
     }
 
-    /**
-     * Pay for invoice
-     *
-     * @param invoice
-     */
-    fun payForInvoice(invoice : Invoice){
-        if (amountOfMoney >= invoice.getPrice()) {
-            invoice.getContractor().takeMoney(invoice.getPrice())
-            amountOfMoney -= invoice.getPrice()
-            logger.info("Faktura " + invoice.getCode() + " zaplacena")
-            invoice.payInvoice()
-            invoice.notifyPaid()
-        } else {
-            unpaidInvoices.add(invoice)
-            logger.info("!Faktura " + invoice.getCode() + " NENI uhrazena")
-            invoice.notifyUnpaid()
-        }
-    }
 
     /**
      * Pay debts

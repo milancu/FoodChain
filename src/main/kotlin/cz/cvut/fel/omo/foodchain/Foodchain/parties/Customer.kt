@@ -79,7 +79,7 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      * @param recipe
      */
-    fun payForShopping(recipe : Invoice){
+    override fun payForInvoice(recipe : Invoice){
         if(recipe.getPrice() <= this.amountOfMoney){
             amountOfMoney -= recipe.getPrice()
             recipe.payInvoice()
@@ -101,7 +101,7 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
         for(invoice in creditCardDebts){
             if(amountOfMoney >= invoice.getPrice()){
                 toRemove.add(invoice)
-                payForShopping(invoice)
+                payForInvoice(invoice)
             }
         }
         for(invoice in toRemove){

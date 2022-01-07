@@ -1,6 +1,9 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
+import org.slf4j.LoggerFactory
 import java.util.*
+import kotlin.collections.ArrayList
 
 /**
  * Base party
@@ -14,6 +17,9 @@ open class BaseParty(
 ) {
 
     private val identifier : UUID = UUID.randomUUID()
+    protected var unpaidInvoices : ArrayList<Invoice> = ArrayList()
+
+    private val logger = LoggerFactory.getLogger(javaClass)
 
     /**
      * Get subject name
@@ -71,5 +77,19 @@ open class BaseParty(
      */
     fun takeMoney(value : Double){
         amountOfMoney += value
+    }
+
+    open fun payForInvoice(invoice : Invoice) {
+        if (amountOfMoney >= invoice.getPrice()) {
+            invoice.getContractor().takeMoney(invoice.getPrice())
+            amountOfMoney -= invoice.getPrice()
+            logger.info("Faktura " + invoice.getCode() + " zaplacena")
+            invoice.payInvoice()
+            invoice.notifyPaid()
+        } else {
+            unpaidInvoices.add(invoice)
+            logger.info("!Faktura " + invoice.getCode() + " NENI uhrazena")
+            invoice.notifyUnpaid()
+        }
     }
 }

@@ -21,7 +21,6 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
     @Autowired
     private var warehouse: Warehouse = Warehouse()
     private var availableProducts: ArrayList<Product> = ArrayList()
-    private var unpaidInvoices: ArrayList<Invoice> = ArrayList()
     private var productTypeMap: HashMap<ProductType, Int> = productMapInit()
 
     private val logger = LoggerFactory.getLogger(javaClass)
@@ -61,24 +60,6 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         logger.info("Naskladneno celkem typu produktu: " + warehouse.getStockSize())
     }
 
-    /**
-     * Pay for invoice
-     *
-     * @param invoice
-     */
-    fun payForInvoice(invoice: Invoice) {
-        if (amountOfMoney >= invoice.getPrice()) {
-            invoice.payInvoice()
-            invoice.getContractor().takeMoney(invoice.getPrice())
-            invoice.notifyPaid()
-            amountOfMoney -= invoice.getPrice()
-            logger.info("Faktura " + invoice.getCode() + " zaplacena")
-        } else {
-            unpaidInvoices.add(invoice)
-            logger.info("!Faktura " + invoice.getCode() + " NENI uhrazena")
-            invoice.notifyUnpaid()
-        }
-    }
 
     /**
      * Pay debts

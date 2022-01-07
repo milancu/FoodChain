@@ -26,7 +26,6 @@ class Processor(subjectName : String, location : String, amountOfMoney : Double)
     private val vegetableStrategy : VegetableCropStrategy = VegetableCropStrategy()
 
     private var cropSupplies : ArrayList<Crop> = ArrayList()
-    private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
     private var products : ArrayList<Product> = ArrayList()
 
     private val logger = LoggerFactory.getLogger(javaClass)
@@ -73,25 +72,6 @@ class Processor(subjectName : String, location : String, amountOfMoney : Double)
             products.add(createProduct(supply))
         }
         cropSupplies = ArrayList()
-    }
-
-    /**
-     * Pay for invoice
-     *
-     * @param invoice
-     */
-    fun payForInvoice(invoice: Invoice){
-        if(amountOfMoney >= invoice.getPrice()){
-            invoice.payInvoice()
-            invoice.getContractor().takeMoney(invoice.getPrice())
-            amountOfMoney -= invoice.getPrice()
-            invoice.notifyPaid()
-            logger.info("Faktura " + invoice.getCode() + " zaplacena")
-        } else {
-            unpaidInvoices.add(invoice)
-            invoice.notifyUnpaid()
-            logger.info("!Faktura " + invoice.getCode() + " NENI uhrazena")
-        }
     }
 
     /**

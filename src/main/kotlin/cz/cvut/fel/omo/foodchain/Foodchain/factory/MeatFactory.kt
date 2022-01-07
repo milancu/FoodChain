@@ -27,7 +27,6 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
 
     private var meatsForProducts: ArrayList<MeatProduct> = ArrayList()
     private var productToSell: ArrayList<Product> = ArrayList()
-    private val unpaidInvoices: ArrayList<Invoice> = ArrayList()
 
     private val logger = LoggerFactory.getLogger(javaClass)
 
@@ -68,25 +67,6 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
     fun transportProducts() {
         Transport.takeProducts(productToSell)
         productToSell = ArrayList()
-    }
-
-    /**
-     * Pay for invoice
-     *
-     * @param invoice
-     */
-    fun payForInvoice(invoice: Invoice) {
-        if (amountOfMoney >= invoice.getPrice()) {
-            invoice.payInvoice()
-            invoice.getContractor().takeMoney(invoice.getPrice())
-            amountOfMoney -= invoice.getPrice()
-            invoice.notifyPaid()
-            logger.info("Faktura " + invoice.getCode() + " zaplacena")
-        } else {
-            unpaidInvoices.add(invoice)
-            invoice.notifyUnpaid()
-            logger.info("!Faktura " + invoice.getCode() + " NENI uhrazena")
-        }
     }
 
     /**

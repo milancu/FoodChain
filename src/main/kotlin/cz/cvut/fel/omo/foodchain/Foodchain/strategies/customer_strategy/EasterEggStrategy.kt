@@ -19,7 +19,7 @@ class EasterEggStrategy : CustomerStrategy {
             if (random == 1 || product.getProductType() == ProductType.XXX) {
                 if (product.getAmount() >= randomSize) {
                     product.decreaseAmount(randomSize)
-                    product.notifyPurchased(5, product.getAmount())
+                    product.notifyPurchased(product.getAmount())
                     spended += randomSize * product.getShopPrice()
                 } else {
                     toRemove.add(product)

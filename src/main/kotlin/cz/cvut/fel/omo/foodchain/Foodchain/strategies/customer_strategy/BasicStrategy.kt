@@ -18,10 +18,15 @@ class BasicStrategy : CustomerStrategy {
 
         for(product in products){
             if(productTypeMap[product.getProductType()]!! < Config.STANDARD_SHOP_SIZE){
-                if(product.getAmount() >= Config.STANDARD_SHOP_SIZE){
+                if(product.getProductType() == ProductType.MEAT){
+                    product.notifyPurchased(product.getAmount())
+                    spended += Config.WORKOUT_SHOP_SIZE * product.getShopPrice()
+                    toRemove.add(product)
+                }
+                else if(product.getAmount() >= Config.STANDARD_SHOP_SIZE){
                     product.decreaseAmount(Config.STANDARD_SHOP_SIZE)
                     spended += Config.STANDARD_SHOP_SIZE * product.getShopPrice()
-                    product.notifyPurchased(1, product.getAmount());
+                    product.notifyPurchased( product.getAmount());
                 } else {
                     println("" + product.getProductType() + " " + product.getName() + " byl vyprodan")
                     toRemove.add(product)

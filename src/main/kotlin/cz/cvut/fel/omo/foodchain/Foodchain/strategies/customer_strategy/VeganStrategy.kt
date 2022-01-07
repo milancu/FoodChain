@@ -19,7 +19,7 @@ class VeganStrategy : CustomerStrategy {
             ) {
                 if(product.getAmount() >= Config.STANDARD_SHOP_SIZE){
                     product.decreaseAmount(Config.VEGAN_SHOP_SIZE)
-                    product.notifyPurchased(3, product.getAmount())
+                    product.notifyPurchased(product.getAmount())
                     spended += Config.VEGAN_SHOP_SIZE * product.getShopPrice()
                 } else {
                     toRemove.add(product)

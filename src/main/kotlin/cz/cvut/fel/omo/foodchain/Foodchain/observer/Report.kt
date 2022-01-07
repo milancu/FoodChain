@@ -16,29 +16,9 @@ object Report : Observer, Export {
 
     override fun accept(visitor: Visitor) = visitor.visit(export = this)
 
-    /*fun export() {
-        val fileName = "src/main/resources/exportFoodChain.txt"
-        val file = File(fileName)
-
-        file.printWriter().use { out ->
-            reports.forEach { (key) ->
-                with(out) { println("UUID: $key") }
-                val reportList : ArrayList<String> = reports[key]!!
-                for (j in reportList) {
-                    out.println(j)
-                }
-                out.println("##############################################")
-                out.println("\n")
-            }
-        }
-
-        println("Writed to file")
-    }*/
-
     fun prepareForExport() {
         accept(visitor)
     }
-
 
     private var reports = hashMapOf<UUID, ArrayList<String>>()
 
@@ -56,4 +36,18 @@ object Report : Observer, Export {
     fun getReports(): HashMap<UUID, ArrayList<String>> {
         return reports;
     }
+
+    fun getAnimals() : HashMap<UUID, ArrayList<String>>{
+        return visitor.getAnimals()
+    }
+
+    fun getInvoices() : HashMap<UUID, ArrayList<String>>{
+        return visitor.getInvoices()
+    }
+
+    fun getCrops() : HashMap<UUID, ArrayList<String>>{
+        return visitor.getCrops()
+    }
+
+
 }

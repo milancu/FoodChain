@@ -6,6 +6,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+import org.slf4j.LoggerFactory
 
 /**
  * Grower to farmer channel
@@ -14,7 +15,8 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
  */
 class GrowerToFarmerChannel(private var growers: ArrayList<Grower>, private var farmers: ArrayList<Farmer>) : Channel{
 
-    // run simulation musi byt pred procesorem
+    private val logger = LoggerFactory.getLogger(javaClass)
+
     override fun runSimulation(){
         for(farmer in farmers){
             if(farmer.needResource()){
@@ -41,7 +43,7 @@ class GrowerToFarmerChannel(private var growers: ArrayList<Grower>, private var 
                 }
             }
         }
-        println("Nedostatek vhodnych dodavatelu v CR")
+        logger.info("Nedostatek vhodnych dodavatelu v CR")
         val exoticGrower = Grower("sosGrower", "Exotica", 0.0)
         val exoticCrop = Crop(CropName.WHEET, CropType.CEREAL, 50, 0)
         exoticGrower.addEmergencyCrop(exoticCrop)

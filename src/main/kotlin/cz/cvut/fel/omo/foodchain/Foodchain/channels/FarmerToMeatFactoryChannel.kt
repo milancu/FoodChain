@@ -4,32 +4,30 @@ import cz.cvut.fel.omo.foodchain.Foodchain.factory.MeatFactory
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 import cz.cvut.fel.omo.foodchain.Foodchain.statics.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
+import org.slf4j.LoggerFactory
 
 /**
  * Farmer to meat factory channel
  *
  * @constructor Create empty Farmer to meat factory channel
  */
-class FarmerToMeatFactoryChannel : Channel{
+class FarmerToMeatFactoryChannel : Channel {
 
-    private var farmers : ArrayList<Farmer>
-    private val meatFactory : MeatFactory
+    private var farmers: ArrayList<Farmer>
+    private val meatFactory: MeatFactory
+    private val logger = LoggerFactory.getLogger(javaClass)
 
     init {
-        println("PHASE 1.1 - Farmers, buthcers and meaaFactory creation")
+        logger.info("PHASE 0 - Farmers, butchers and meatFactory creation")
         val generator = Generator()
         this.farmers = generator.generateFarmers()
         this.meatFactory = generator.generateFactory()
-        println("Farmers: " + farmers.size)
-        println()
     }
 
-    override fun runSimulation(){
-        for(farmer in farmers){
-            print("Priprava ke zpracovani zvirat")
+    override fun runSimulation() {
+        for (farmer in farmers) {
             Request.requestTransportToMeatFactory(farmer, meatFactory)
-
-            println("maso zpracovano a pripavano a pripraveno k odvozu")
+            logger.info("Maso zpracovano a pripaveno k odvozu")
             farmer.feedAnimal()
             farmer.growAnimals()
             meatFactory.payDebts()
@@ -37,16 +35,17 @@ class FarmerToMeatFactoryChannel : Channel{
     }
 
     override fun printStats() {
-        println("CURRENT STATE FARMER / MEATFACTORY - CHANNEL")
+        logger.info("CURRENT STATE FARMER / MEATFACTORY - CHANNEL")
         for (farmer in farmers) {
-            println("farmer: " + farmer.getIdentifier() + " : money : " + farmer.getAmountOfMoney() + " : animals : "
-                    + farmer.getNumberOfAnimals() + " : animals to processed : " + farmer.getNumberOfAnimalsToProcess())
+            logger.info(
+                "farmer: " + farmer.getIdentifier() + " : money : " + farmer.getAmountOfMoney() + " : animals : "
+                        + farmer.getNumberOfAnimals() + " : animals to processed : " + farmer.getNumberOfAnimalsToProcess()
+            )
         }
-        println(
+        logger.info(
             "MeatFactory: " + meatFactory.getIdentifier() + " : money : " + meatFactory.getAmountOfMoney()
                     + " : resources : " + meatFactory.getMeatResources() + " : prepared : " + meatFactory.getPreparedPorducts()
         )
-        println()
     }
 
     /**
@@ -54,7 +53,7 @@ class FarmerToMeatFactoryChannel : Channel{
      *
      * @return
      */
-    fun getFarmers() : ArrayList<Farmer>{
+    fun getFarmers(): ArrayList<Farmer> {
         return farmers
     }
 
@@ -63,7 +62,7 @@ class FarmerToMeatFactoryChannel : Channel{
      *
      * @return
      */
-    fun getMeatFactory() : MeatFactory{
+    fun getMeatFactory(): MeatFactory {
         return meatFactory
     }
 

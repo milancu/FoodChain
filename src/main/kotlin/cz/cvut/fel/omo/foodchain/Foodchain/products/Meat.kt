@@ -80,14 +80,14 @@ class Meat(
 
     override fun notifyUpdate() {
         for (i in observers) {
-            i.update(this.origin, "NEW MEAT, " + this.type + ", amount: " + this.amount + "g, in week: " + Week.acutalWeek)
+            i.update(this.origin, "NEW MEAT, " + this.type + ", amount: " + this.amount + "kg, in week: " + Week.acutalWeek)
         }
     }
 
     fun notifyTransport() {
         for (i in observers) {
             i.update(this.origin,
-                "MEAT HAS BEEN SHIPPED, " + this.type + ", amount: " + this.amount + "g, in week: " + Week.acutalWeek)
+                "MEAT HAS BEEN SHIPPED, " + this.type + ", amount: " + this.amount + "kg, in week: " + Week.acutalWeek)
         }
     }
 

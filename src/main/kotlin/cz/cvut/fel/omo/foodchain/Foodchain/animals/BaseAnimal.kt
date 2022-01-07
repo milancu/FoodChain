@@ -39,35 +39,35 @@ class BaseAnimal(animalType: AnimalType) : Subject, Context {
 
         when (animalType) {
             AnimalType.COW -> {
-                this.weight = (150000..600000).random().toDouble()
+                this.weight = (150..600).random().toDouble()
                 this.foodConsumption = (7..10).random()
                 this.age = (1..30).random()
                 this.price = 1000.00
                 this.animalName = "Cow"
             }
             AnimalType.PIG -> {
-                this.weight = (150000..600000).random().toDouble()
+                this.weight = (150..600).random().toDouble()
                 this.foodConsumption = (6..10).random()
                 this.age = (1..20).random()
                 this.price = 8000.00
                 this.animalName = "Pig"
             }
             AnimalType.CHICKEN -> {
-                this.weight = (1500..3000).random().toDouble()
+                this.weight = (1..3).random().toDouble()
                 this.foodConsumption = (1..3).random()
                 this.age = (1..10).random()
                 this.price = 100.00
                 this.animalName = "Chicken"
             }
             AnimalType.GOAT -> {
-                this.weight = (150000..400000).random().toDouble()
+                this.weight = (150..400).random().toDouble()
                 this.foodConsumption = (5..8).random()
                 this.age = (1..15).random()
                 this.price = 900.00
                 this.animalName = "Goat"
             }
             AnimalType.FISH -> {
-                this.weight = (1500..6000).random().toDouble()
+                this.weight = (1..6).random().toDouble()
                 this.foodConsumption = (1..5).random()
                 this.age = (1..5).random()
                 this.price = 1000.00
@@ -148,7 +148,7 @@ class BaseAnimal(animalType: AnimalType) : Subject, Context {
         for (i in observers) {
             i.update(
                 this.origin,
-                "NEW ANIMAL, " + this.animalName + ", weight: " + this.weight + "g, age:" + this.age + " in week:" + Week.acutalWeek
+                "NEW ANIMAL, " + this.animalName + ", weight: " + this.weight + "kg, age:" + this.age + " in week:" + Week.acutalWeek
             )
         }
     }

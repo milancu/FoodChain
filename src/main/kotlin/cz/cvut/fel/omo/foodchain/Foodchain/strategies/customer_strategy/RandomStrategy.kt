@@ -14,7 +14,7 @@ class RandomStrategy : CustomerStrategy {
 
         for(product in products){
             val random : Int = (0..1).random()
-            val randomSize : Int = /*(5..15).random()*/ 5
+            val randomSize : Int = /*(5..15).random()*/ 500
             if(random == 1){
                 if(product.getAmount() >= randomSize){
                     product.decreaseAmount(randomSize)

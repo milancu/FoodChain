@@ -9,13 +9,11 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 
 class Butcher {
 
-
     fun proccessAnimal(animals: AnimalToProcess): ArrayList<Meat> { //ITERATOR
         val meatList = ArrayList<Meat>()
 
-        val iterator: CustomIterator = animals
-        while (iterator.hasNext()) {
-            val animal: BaseAnimal = iterator.next()
+        while (animals.hasNext()) {
+            val animal: BaseAnimal = animals.next()
             when (animal.getName()) {
                 "Cow" -> {
                     val shopPrice = 0.7 * animal.getWeight() * MeatType.BEEF.price

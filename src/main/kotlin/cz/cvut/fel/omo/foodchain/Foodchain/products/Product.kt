@@ -101,21 +101,21 @@ open class Product(
         }
     }
 
-    fun notifyTransport() {
+    open fun notifyTransport() {
         for (i in observers) {
             i.update(this.origin,
                 "PRODUCT HAS BEEN SHIPPED, " + this.name + ", amount: " + this.amount + "g, shop price: " + this.shopPrice + " in week:" + Week.acutalWeek)
         }
     }
 
-    fun notifyPurchased(x : Int, y :Int){
+    open fun notifyPurchased(x : Int, y :Int){
         for (i in observers) {
             i.update(this.origin,
                 "PRODUCT HAS BEEN PURCHASED, " + this.name + ", amount: " + this.amount + "g, shop price: " + this.shopPrice + " in week:" + Week.acutalWeek + ", " + x.toString() + ", " + y.toString() + '\n')
         }
     }
 
-    fun notifySoldOut(){
+    open fun notifySoldOut(){
         for (i in observers) {
             i.update(this.origin,
                 "PRODUCT WAS SOLD OUT, in week:" + Week.acutalWeek)

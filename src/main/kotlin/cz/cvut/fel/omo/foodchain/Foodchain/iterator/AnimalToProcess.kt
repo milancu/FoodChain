@@ -16,7 +16,7 @@ class AnimalToProcess : CustomIterator {
 
     override fun next(): BaseAnimal {
         val animal = animalList[0]
-        animalList.drop(0)
+        animalList.removeAt(0)
         return animal;
     }
 

@@ -109,6 +109,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      *
      */
     fun packageProduct() {
+        productToSell = ArrayList()
         for (meat in meatsForProducts) {
             println("Maso puvodu : " + meat.getOriginID() + " je baleno")
             when (meat.getType()) {

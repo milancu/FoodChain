@@ -59,7 +59,8 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      * @return
      */
-    fun animalsToProcessing(): AnimalToProcess { //ITERATOR
+    fun animalsToProcessing(): AnimalToProcess {
+        animalToProcess.clearList()
         animals.iterator().forEach { animal ->
             when (animal.getName()) {
                 "Cow" -> {
@@ -137,7 +138,8 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      * @return
      */
     fun callButcher() : ArrayList<Meat>{ //ITERATOR
-        return butcher.proccessAnimal(animalToProcess)
+//        return butcher.proccessAnimal(animalToProcess)
+        return butcher.proccessAnimal(animalsToProcessing())
     }
 
     /**

@@ -17,7 +17,7 @@ class Config {
 
         var STANDARD_SHOP_SIZE: Int = 10
         var VEGAN_SHOP_SIZE: Int = 2
-        var WORKOUT_SHOP_SIZE: Int = 5
+        var WORKOUT_SHOP_SIZE: Int = 500
 
         const val SALARY_MIN = 10000
         const val SALARY_MAX = 80000

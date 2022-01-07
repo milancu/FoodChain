@@ -11,6 +11,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 import cz.cvut.fel.omo.foodchain.Foodchain.strategies.product_strategy.MeatStrategy
+import org.slf4j.LoggerFactory
 
 /**
  * Request
@@ -20,10 +21,10 @@ import cz.cvut.fel.omo.foodchain.Foodchain.strategies.product_strategy.MeatStrat
 class Request {
     companion object RequestService {
 
+        private val logger = LoggerFactory.getLogger(javaClass)
 
         fun requestTransportToProcessor(grower: Grower, processor: Processor, crops: ArrayList<Crop>) {
-            println("Proces transportace (from farmer " + grower.getIdentifier() + " to processor) " + processor.getIdentifier())
-            // Faktury
+            logger.info("Proces transportace (from farmer " + grower.getIdentifier() + " to processor) " + processor.getIdentifier())
             var money = 0.0
             for (crop in crops) {
                 money += crop.getAmount() * crop.getShopPrice()
@@ -32,7 +33,7 @@ class Request {
             Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
-            println("Vznik faktury " + invoice.getCode())
+            logger.info("Vznik faktury " + invoice.getCode())
 
             grower.transportSupplies()
             Transport.cargoDeduction()
@@ -46,15 +47,14 @@ class Request {
 
             processor.takeCropSupplies(Transport.transportCropSuplies())
             processor.payForInvoice(invoice)
-            println()
         }
 
         fun requestTransportToMeatFactory(farmer: Farmer, meatFactory: MeatFactory) {
-            println("Proces transportace (from farmer " + farmer.getIdentifier() + " to processor) " + meatFactory.getIdentifier())
+            logger.info("Proces transportace (from farmer " + farmer.getIdentifier() + " to processor) " + meatFactory.getIdentifier())
 
             // Poslani zvirat na jatka
             val processedAnimals: ArrayList<Meat> = farmer.callButcher() // pouze zabyte, musi se rozdelit na jednotlive casti jeste
-            println("Na jatka poslano : " + processedAnimals.size)
+            logger.info("Na jatka poslano : " + processedAnimals.size)
 
             // Faktura
             var money = 0.0
@@ -65,7 +65,7 @@ class Request {
             Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
-            println("Vznik faktury " + invoice.getCode())
+            logger.info("Vznik faktury " + invoice.getCode())
 
 
             val processedMeat =  ArrayList<MeatProduct>()
@@ -87,12 +87,10 @@ class Request {
             transportInvoice.notifyUpdate()
             meatFactory.payForInvoice(transportInvoice)
             meatFactory.payForInvoice(invoice)
-
-            println()
         }
 
         fun requestTransportToWarehouse(processor: Processor, retailer: Retailer) {
-            println("Proces transportace (from processor " + processor.getIdentifier() + " to retailer " + retailer.getIdentifier())
+            logger.info("Proces transportace (from processor " + processor.getIdentifier() + " to retailer " + retailer.getIdentifier())
 
             processor.transportProducts()
             Transport.cargoDeduction()
@@ -108,7 +106,7 @@ class Request {
             Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
-            println("Vznik faktury " + invoice.getCode())
+            logger.info("Vznik faktury " + invoice.getCode())
 
             val transportInvoice = Invoice(retailer, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
             Invoices.invoices.add(transportInvoice)
@@ -121,7 +119,7 @@ class Request {
         }
 
         fun requestTransportToWarehouse(meatFactory: MeatFactory, retailer: Retailer) {
-            println("Proces transportace (from Vodnany  to retailer " + retailer.getIdentifier())
+            logger.info("Proces transportace (from Vodnany  to retailer " + retailer.getIdentifier())
 
             meatFactory.transportProducts()
             Transport.cargoDeduction()
@@ -136,7 +134,7 @@ class Request {
             Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
-            println("Vznik faktury " + invoice.getCode())
+            logger.info("Vznik faktury " + invoice.getCode())
 
             val transportInvoice = Invoice(retailer, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
             Invoices.invoices.add(transportInvoice)
@@ -149,7 +147,7 @@ class Request {
         }
 
         fun requestFarmerBuyCrops(farmer: Farmer, grower: Grower){
-            println("Farmer: " + farmer.getIdentifier() + " nakupuje zasoby od " + grower.getIdentifier())
+            logger.info("Farmer: " + farmer.getIdentifier() + " nakupuje zasoby od " + grower.getIdentifier())
 
             var money = 0.0
 
@@ -166,7 +164,7 @@ class Request {
             Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
-            println("Vznik faktury " + invoice.getCode())
+            logger.info("Vznik faktury " + invoice.getCode())
             farmer.payForInvoice(invoice)
         }
 
@@ -185,7 +183,7 @@ class Request {
             Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()
-            println("Customer: " + customer.getIdentifier() + " utratil: " + money + " za nakupy a ma: " + customer.getAmountOfMoney())
+            logger.info("Customer: " + customer.getIdentifier() + " utratil: " + money + " za nakupy a ma: " + customer.getAmountOfMoney())
             customer.payForShopping(invoice)
         }
 

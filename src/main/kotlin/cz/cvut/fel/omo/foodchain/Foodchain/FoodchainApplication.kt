@@ -1,6 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.observer.Report
+import org.slf4j.LoggerFactory
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.stereotype.Controller
@@ -11,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestParam
 @SpringBootApplication
 @Controller
 class FoodchainApplication {
+
+    private val logger = LoggerFactory.getLogger(javaClass)
 
     @GetMapping(value = ["/start"])
     fun start(
@@ -27,19 +30,18 @@ class FoodchainApplication {
     ) {
         val simulation: Simulation = Simulation()
 
-        Config.WEEKS = WEEKS;
-        Config.GROWERS = GROWERS;
-        Config.FARMERS = FARMERS;
-        Config.PROCESSORS = PROCESSORS;
-        Config.CUSTOMERS = CUSTOMERS;
-        Config.RETAILERS = RETAILERS;
-        Config.STANDARD_SHOP_SIZE = STANDARD_SHOP_SIZE;
-        Config.VEGAN_SHOP_SIZE = VEGAN_SHOP_SIZE;
-        Config.WORKOUT_SHOP_SIZE = WORKOUT_SHOP_SIZE;
+        Config.WEEKS = WEEKS
+        Config.GROWERS = GROWERS
+        Config.FARMERS = FARMERS
+        Config.PROCESSORS = PROCESSORS
+        Config.CUSTOMERS = CUSTOMERS
+        Config.RETAILERS = RETAILERS
+        Config.STANDARD_SHOP_SIZE = STANDARD_SHOP_SIZE
+        Config.VEGAN_SHOP_SIZE = VEGAN_SHOP_SIZE
+        Config.WORKOUT_SHOP_SIZE = WORKOUT_SHOP_SIZE
 
         for (i in (1..Config.WEEKS)) {
-            println(i.toString() + ". WEEK")
-            println()
+            logger.info(i.toString() + ". WEEK")
             simulation.runWeek()
         }
 

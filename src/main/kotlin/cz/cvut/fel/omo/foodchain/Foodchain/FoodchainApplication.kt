@@ -8,6 +8,7 @@ import org.springframework.boot.runApplication
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 
 @SpringBootApplication
@@ -49,6 +50,21 @@ class FoodchainApplication {
         /* Report.export()*/
         Report.prepareForExport()
         model.addAttribute("reports", Report.getReports())
+    }
+
+    @RequestMapping(value = ["/invoices"])
+    fun invoices(model : Model) {
+        model.addAttribute("invoices", Report.getInvoices())
+    }
+
+    @RequestMapping(value = ["/animals"])
+    fun animals(model : Model) {
+        model.addAttribute("animals", Report.getAnimals())
+    }
+
+    @RequestMapping(value = ["/crops"])
+    fun crops(model : Model) {
+        model.addAttribute("crops", Report.getCrops())
     }
 }
 

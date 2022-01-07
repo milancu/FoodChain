@@ -97,7 +97,7 @@ open class Product(
     override fun notifyUpdate() {
         for (i in observers) {
             i.update(this.origin,
-                "NEW PRODUCT, " + this.name + ", amount: " + this.amount + "g, shop price: " + this.shopPrice + " in week:" + Week.acutalWeek)
+                "NEW PRODUCT, " + this.name + ", amount: " + this.amount + "kg, shop price: " + this.shopPrice + " in week:" + Week.acutalWeek)
         }
     }
 

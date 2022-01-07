@@ -100,6 +100,20 @@ div label {
     font-size: 18px;
 }
 
+.reports{
+    border-radius: 20px;
+    background-color: rgba(255, 211, 211, 0.38);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 25px;
+}
+
+.uuid{
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 20px;
+}
+
 
 
 

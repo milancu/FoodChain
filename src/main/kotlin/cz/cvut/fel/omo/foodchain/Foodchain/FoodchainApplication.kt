@@ -46,7 +46,7 @@ class FoodchainApplication {
             simulation.runWeek()
         }
 
-       /* Report.export()*/
+        /* Report.export()*/
         Report.prepareForExport()
         model.addAttribute("reports", Report.getReports())
     }
@@ -56,5 +56,3 @@ class FoodchainApplication {
 fun main(args: Array<String>) {
     runApplication<FoodchainApplication>(*args)
 }
-
-

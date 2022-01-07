@@ -1,5 +1,6 @@
-package cz.cvut.fel.omo.foodchain.Foodchain
+package cz.cvut.fel.omo.foodchain.Foodchain.statics
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.factory.MeatFactory
 import cz.cvut.fel.omo.foodchain.Foodchain.observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType

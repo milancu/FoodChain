@@ -1,6 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.channels
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Request
+import cz.cvut.fel.omo.foodchain.Foodchain.statics.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
@@ -14,7 +14,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
  */
 class GrowerToFarmerChannel(private var growers: ArrayList<Grower>, private var farmers: ArrayList<Farmer>) : Channel{
 
-    // run simulation musi byt pred porcesorem
+    // run simulation musi byt pred procesorem
     override fun runSimulation(){
         for(farmer in farmers){
             if(farmer.needResource()){

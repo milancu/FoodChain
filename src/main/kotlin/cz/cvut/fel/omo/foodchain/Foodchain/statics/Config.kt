@@ -1,4 +1,4 @@
-package cz.cvut.fel.omo.foodchain.Foodchain
+package cz.cvut.fel.omo.foodchain.Foodchain.statics
 
 /**
  * Config

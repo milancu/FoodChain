@@ -1,15 +1,22 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.observer
 
 
+import cz.cvut.fel.omo.foodchain.Foodchain.visitor.Export
+import cz.cvut.fel.omo.foodchain.Foodchain.visitor.ExportVisitor
+import cz.cvut.fel.omo.foodchain.Foodchain.visitor.Visitor
 import java.io.File
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
 
 
-object Report : Observer {
+object Report : Observer, Export {
 
-    fun export() {
+    private val visitor = ExportVisitor()
+
+    override fun accept(visitor: Visitor) = visitor.visit(export = this)
+
+    /*fun export() {
         val fileName = "src/main/resources/exportFoodChain.txt"
         val file = File(fileName)
 
@@ -26,6 +33,10 @@ object Report : Observer {
         }
 
         println("Writed to file")
+    }*/
+
+    fun prepareForExport() {
+        accept(visitor)
     }
 
 

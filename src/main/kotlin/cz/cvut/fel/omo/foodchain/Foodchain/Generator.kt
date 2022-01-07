@@ -8,6 +8,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.*
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+import cz.cvut.fel.omo.foodchain.Foodchain.statics.Config
 
 /**
  * Generator

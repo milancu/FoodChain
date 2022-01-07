@@ -1,6 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.observer.Report
+import cz.cvut.fel.omo.foodchain.Foodchain.statics.Config
 import org.slf4j.LoggerFactory
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -45,7 +46,8 @@ class FoodchainApplication {
             simulation.runWeek()
         }
 
-        Report.export()
+       /* Report.export()*/
+        Report.prepareForExport()
         model.addAttribute("reports", Report.getReports())
     }
 }

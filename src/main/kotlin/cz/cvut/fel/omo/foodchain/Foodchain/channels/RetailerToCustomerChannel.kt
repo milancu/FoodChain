@@ -1,7 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.channels
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
-import cz.cvut.fel.omo.foodchain.Foodchain.Request
+import cz.cvut.fel.omo.foodchain.Foodchain.statics.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Customer
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 

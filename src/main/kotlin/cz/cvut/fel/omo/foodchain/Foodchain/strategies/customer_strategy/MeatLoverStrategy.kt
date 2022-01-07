@@ -1,6 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.strategies.customer_strategy
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Config
+import cz.cvut.fel.omo.foodchain.Foodchain.statics.Config
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 

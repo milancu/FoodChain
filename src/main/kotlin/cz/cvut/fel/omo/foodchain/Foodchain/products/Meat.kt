@@ -4,7 +4,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.observer.Subject
 import cz.cvut.fel.omo.foodchain.Foodchain.states.Context
 import cz.cvut.fel.omo.foodchain.Foodchain.states.State
-import cz.cvut.fel.omo.foodchain.Foodchain.Week
+import cz.cvut.fel.omo.foodchain.Foodchain.statics.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import java.util.*
 

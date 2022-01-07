@@ -4,6 +4,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.observer.Observer
 import cz.cvut.fel.omo.foodchain.Foodchain.observer.Subject
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.InvoiceType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
+import cz.cvut.fel.omo.foodchain.Foodchain.statics.Week
 import java.util.*
 
 /**

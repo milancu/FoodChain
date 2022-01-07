@@ -1,6 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.channels.*
+import cz.cvut.fel.omo.foodchain.Foodchain.statics.Week
 
 /**
  * Simulation

@@ -22,12 +22,13 @@ class ExportVisitor : Visitor{
     }
 
     private fun proccessReports(){
-        for(report : MutableMap.MutableEntry<UUID, ArrayList<String>> in reports){
-            if(report.value.contains("INVOICE")){
+        for(report in reports){
+            if(report.value.toString().contains("INVOICE")){
                 financeReports[report.key] = report.value
-            } else if(report.value.contains("ANIMAL")){
+            } else if(report.value.toString().contains("ANIMAL")){
                 cropReports[report.key] = report.value
             } else {
+                println(report.value)
                 animalReports[report.key] = report.value
             }
         }

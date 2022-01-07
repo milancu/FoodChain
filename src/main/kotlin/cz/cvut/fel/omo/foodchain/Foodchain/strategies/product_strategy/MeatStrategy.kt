@@ -17,7 +17,7 @@ import kotlin.collections.ArrayList
  */
 class MeatStrategy : ProcessorMeatStrategy {
 
-    override fun execute(meat: Meat): ArrayList<Product> {
+    override fun execute(meat: Meat): ArrayList<MeatProduct> {
         return when (meat.getType()) {
             MeatType.BEEF -> {
                 executeBeef(meat)
@@ -40,8 +40,8 @@ class MeatStrategy : ProcessorMeatStrategy {
      * @param meat
      * @return
      */
-    private fun executeBeef(meat: Meat): ArrayList<Product> {
-        val meats = ArrayList<Product>()
+    private fun executeBeef(meat: Meat): ArrayList<MeatProduct> {
+        val meats = ArrayList<MeatProduct>()
         val dumpling = MeatProduct(
             "Dumpling",
             MeatProductType.BEEFDUMPLING.toString(),
@@ -109,8 +109,8 @@ class MeatStrategy : ProcessorMeatStrategy {
      * @param meat
      * @return
      */
-    private fun executeChicken(meat: Meat): ArrayList<Product> {
-        val meats = ArrayList<Product>()
+    private fun executeChicken(meat: Meat): ArrayList<MeatProduct> {
+        val meats = ArrayList<MeatProduct>()
         val chickenThigh = MeatProduct(
             "Chicken thigh",
             MeatProductType.CHICKENTHIGH.toString(),
@@ -167,8 +167,8 @@ class MeatStrategy : ProcessorMeatStrategy {
      * @param meat
      * @return
      */
-    private fun executePork(meat: Meat): ArrayList<Product> {
-        val meats = ArrayList<Product>()
+    private fun executePork(meat: Meat): ArrayList<MeatProduct> {
+        val meats = ArrayList<MeatProduct>()
         val porkDumpling = MeatProduct(
             "Pork dumpling",
             MeatProductType.PORKDUMPLING.toString(),
@@ -238,96 +238,110 @@ class MeatStrategy : ProcessorMeatStrategy {
      * @param meat
      * @return
      */
-    private fun executeFish(meat: Meat): ArrayList<Product> {
-        val meats = ArrayList<Product>()
-        val carp = MeatProduct(
-            "CARP",
-            FishType.CARP.toString(),
-            ProductType.MEAT,
-            meat.getShopPrice() / 4,
-            (meat.getShopPrice() / 4) * 1.4,
-            (meat.getAmount() / 8).toInt(),
-            "kg",
-            meat.getOriginID(),
-            meat.getState().changeToNextState()
-        )
-        val bream = MeatProduct(
-            "BREAM",
-            FishType.BREAM.toString(),
-            ProductType.MEAT,
-            meat.getShopPrice() / 4,
-            (meat.getShopPrice() / 4) * 1.4,
-            (meat.getAmount() / 8).toInt(),
-            "kg",
-            meat.getOriginID(),
-            meat.getState().changeToNextState()
-        )
-        val eel = MeatProduct(
-            "EEL",
-            FishType.EEL.toString(),
-            ProductType.MEAT,
-            meat.getShopPrice() / 4,
-            (meat.getShopPrice() / 4) * 1.4,
-            (meat.getAmount() / 16).toInt(),
-            "kg",
-            meat.getOriginID(),
-            meat.getState().changeToNextState()
-        )
-        val zander = MeatProduct(
-            "ZANDER",
-            FishType.ZANDER.toString(),
-            ProductType.MEAT,
-            meat.getShopPrice() / 4,
-            (meat.getShopPrice() / 4) * 1.4,
-            (meat.getAmount() / 16).toInt(),
-            "kg",
-            meat.getOriginID(),
-            meat.getState().changeToNextState()
-        )
-        val catfish = MeatProduct(
-            "CATFISH",
-            FishType.CATFISH.toString(),
-            ProductType.MEAT,
-            meat.getShopPrice() / 4,
-            (meat.getShopPrice() / 4) * 1.4,
-            (meat.getAmount() / 16).toInt(),
-            "kg",
-            meat.getOriginID(),
-            meat.getState().changeToNextState()
-        )
-        val perch = MeatProduct(
-            "PERCH",
-            FishType.PERCH.toString(),
-            ProductType.MEAT,
-            meat.getShopPrice() / 4,
-            (meat.getShopPrice() / 4) * 1.4,
-            (meat.getAmount() / 16).toInt(),
-            "kg",
-            meat.getOriginID(),
-            meat.getState().changeToNextState()
-        )
+    private fun executeFish(meat: Meat): ArrayList<MeatProduct> {
+        val meats = ArrayList<MeatProduct>()
+        when ((1..6).random()) {
+            1 -> {
+                val carp = MeatProduct(
+                    "CARP",
+                    FishType.CARP.toString(),
+                    ProductType.MEAT,
+                    meat.getShopPrice() / 4,
+                    (meat.getShopPrice() / 4) * 1.4,
+                    (meat.getAmount() / 8).toInt(),
+                    "kg",
+                    meat.getOriginID(),
+                    meat.getState().changeToNextState()
+                )
+                carp.attach(Report)
+                carp.notifyUpdate()
+                meats.add(carp)
+            }
+            2 -> {
+                val bream = MeatProduct(
+                    "BREAM",
+                    FishType.BREAM.toString(),
+                    ProductType.MEAT,
+                    meat.getShopPrice() / 4,
+                    (meat.getShopPrice() / 4) * 1.4,
+                    (meat.getAmount() / 8).toInt(),
+                    "kg",
+                    meat.getOriginID(),
+                    meat.getState().changeToNextState()
+                )
+                bream.attach(Report)
+                bream.notifyUpdate()
+                meats.add(bream)
 
-        carp.attach(Report)
-        bream.attach(Report)
-        eel.attach(Report)
-        zander.attach(Report)
-        catfish.attach(Report)
-        perch.attach(Report)
+            }
+            3 -> {
+                val eel = MeatProduct(
+                    "EEL",
+                    FishType.EEL.toString(),
+                    ProductType.MEAT,
+                    meat.getShopPrice() / 4,
+                    (meat.getShopPrice() / 4) * 1.4,
+                    (meat.getAmount() / 16).toInt(),
+                    "kg",
+                    meat.getOriginID(),
+                    meat.getState().changeToNextState()
+                )
+                eel.attach(Report)
+                eel.notifyUpdate()
+                meats.add(eel)
 
-        carp.notifyUpdate()
-        bream.notifyUpdate()
-        eel.notifyUpdate()
-        zander.notifyUpdate()
-        catfish.notifyUpdate()
-        perch.notifyUpdate()
+            }
+            4 -> {
+                val zander = MeatProduct(
+                    "ZANDER",
+                    FishType.ZANDER.toString(),
+                    ProductType.MEAT,
+                    meat.getShopPrice() / 4,
+                    (meat.getShopPrice() / 4) * 1.4,
+                    (meat.getAmount() / 16).toInt(),
+                    "kg",
+                    meat.getOriginID(),
+                    meat.getState().changeToNextState()
+                )
+                zander.attach(Report)
+                zander.notifyUpdate()
+                meats.add(zander)
 
-        meats.addAll(
-            listOf(
-                carp, bream, eel, zander, catfish, perch
-            )
-        )
+            }
+            5 -> {
+                val catfish = MeatProduct(
+                    "CATFISH",
+                    FishType.CATFISH.toString(),
+                    ProductType.MEAT,
+                    meat.getShopPrice() / 4,
+                    (meat.getShopPrice() / 4) * 1.4,
+                    (meat.getAmount() / 16).toInt(),
+                    "kg",
+                    meat.getOriginID(),
+                    meat.getState().changeToNextState()
+                )
+                catfish.attach(Report)
+                catfish.notifyUpdate()
+                meats.add(catfish)
+
+            }
+            6 -> {
+                val perch = MeatProduct(
+                    "PERCH",
+                    FishType.PERCH.toString(),
+                    ProductType.MEAT,
+                    meat.getShopPrice() / 4,
+                    (meat.getShopPrice() / 4) * 1.4,
+                    (meat.getAmount() / 16).toInt(),
+                    "kg",
+                    meat.getOriginID(),
+                    meat.getState().changeToNextState()
+                )
+                perch.attach(Report)
+                perch.notifyUpdate()
+                meats.add(perch)
+            }
+        }
         return meats
     }
-
-
 }

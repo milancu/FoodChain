@@ -55,4 +55,8 @@ class MeatProduct(
         this.amount = this.amount - value
     }
 
+    fun getTypeOfMeat() : String {
+        return this.typeOfMeat;
+    }
+
 }

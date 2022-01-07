@@ -24,7 +24,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
 
-    private var meatsForProducts: ArrayList<Meat> = ArrayList()
+    private var meatsForProducts: ArrayList<MeatProduct> = ArrayList()
     private var productToSell: ArrayList<Product> = ArrayList()
     private val unpaidInvoices: ArrayList<Invoice> = ArrayList()
 
@@ -51,7 +51,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      *
      * @param newMeats
      */
-    fun takeMeat(newMeats: ArrayList<Meat>) {
+    fun takeMeat(newMeats: ArrayList<MeatProduct>) {
         for (meat in newMeats) {
             meatsForProducts.add(meat)
         }
@@ -111,40 +111,33 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
     fun packageProduct() {
         productToSell = ArrayList()
         for (meat in meatsForProducts) {
-            println("Maso puvodu : " + meat.getOriginID() + " je baleno")
-            when (meat.getType()) {
-                MeatType.PORK -> {
-                    productToSell.add(packagePorkDumpling(meat))
-                    productToSell.add(packagePorkRoast(meat))
-                    productToSell.add(packagePorkFlank(meat))
+            println("Maso puvodu : " + meat.getOriginId() + " je baleno")
+            when (meat.getTypeOfMeat()) {
+                MeatProductType.BEEFDUMPLING.toString() -> productToSell.add(packageBeefDumpling(meat))
+                MeatProductType.BEEFSHOULDER.toString() -> productToSell.add(packageBeefShoulder(meat))
+                MeatProductType.BEEFTENDERLOIN.toString() -> productToSell.add(packageBeefTenderloin(meat))
+                MeatProductType.BOVINECHEEK.toString() -> productToSell.add(packageBovineCheek(meat))
+                MeatProductType.PORKFLANK.toString() -> productToSell.add(packagePorkFlank(meat))
+                MeatProductType.PORKDUMPLING.toString() -> productToSell.add(packagePorkDumpling(meat))
+                MeatProductType.PORKLEG.toString() -> {
                     for (i in 1..4) {
                         productToSell.add(packagePorkLeg(meat))
                     }
                 }
-                MeatType.BEEF -> {
-                    productToSell.add(packageBeefTenderloin(meat))
-                    productToSell.add(packageBovineCheek(meat))
-                    productToSell.add(packageBeefShoulder(meat))
-                    productToSell.add(packageBeefDumpling(meat))
-
-                }
-                MeatType.CHICKEN -> {
-                    productToSell.add(packageChickenBreast(meat))
+                MeatProductType.PORKROAST.toString() -> productToSell.add(packagePorkRoast(meat))
+                MeatProductType.CHICKENBREAST.toString() -> productToSell.add(packageChickenBreast(meat))
+                MeatProductType.CHICKENTHIGH.toString() -> productToSell.add(packageChickenThigh(meat))
+                MeatProductType.CHICKENWINGS.toString() -> {
                     for (i in 1..2) {
-                        productToSell.add(packageChickenThigh(meat))
                         productToSell.add(packageChickenWings(meat))
                     }
                 }
-                MeatType.FISH -> {
-                    when ((1..6).random()) {
-                        1 -> productToSell.add(packageCarp(meat))
-                        2 -> productToSell.add(packageBream(meat))
-                        3 -> productToSell.add(packageEel(meat))
-                        4 -> productToSell.add(packageZander(meat))
-                        5 -> productToSell.add(packageCatfish(meat))
-                        6 -> productToSell.add(packagePerch(meat))
-                    }
-                }
+                FishType.CARP.toString() -> productToSell.add(packageCarp(meat))
+                FishType.BREAM.toString() -> productToSell.add(packageBream(meat))
+                FishType.EEL.toString() -> productToSell.add(packageEel(meat))
+                FishType.ZANDER.toString() -> productToSell.add(packageZander(meat))
+                FishType.CATFISH.toString() -> productToSell.add(packageCatfish(meat))
+                FishType.PERCH.toString() -> productToSell.add(packagePerch(meat))
             }
         }
         meatsForProducts = ArrayList()
@@ -156,7 +149,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packagePorkDumpling(meat: Meat): Product {
+    private fun packagePorkDumpling(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
             "Pork Dumpling 300g",
             MeatProductType.PORKDUMPLING.toString(),
@@ -165,7 +158,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             180.0,
             300,
             "g",
-            meat.getOriginID(),
+            meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -179,7 +172,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packagePorkRoast(meat: Meat): Product {
+    private fun packagePorkRoast(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
             "Pork Roast 300g",
             MeatProductType.PORKROAST.toString(),
@@ -188,7 +181,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             170.0,
             300,
             "g",
-            meat.getOriginID(),
+            meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -202,7 +195,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packagePorkLeg(meat: Meat): Product {
+    private fun packagePorkLeg(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
             "Pork Leg 400g",
             MeatProductType.PORKLEG.toString(),
@@ -211,7 +204,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             200.0,
             400,
             "g",
-            meat.getOriginID(),
+            meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -225,7 +218,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packagePorkFlank(meat: Meat): Product {
+    private fun packagePorkFlank(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
             "Pork Flank 200g",
             MeatProductType.PORKFLANK.toString(),
@@ -234,7 +227,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             200.0,
             200,
             "g",
-            meat.getOriginID(),
+            meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -248,7 +241,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packageBeefTenderloin(meat: Meat): Product {
+    private fun packageBeefTenderloin(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
             "Beef TenderLoin 400g",
             MeatProductType.BEEFTENDERLOIN.toString(),
@@ -257,7 +250,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             330.0,
             400,
             "g",
-            meat.getOriginID(),
+            meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -271,7 +264,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packageBovineCheek(meat: Meat): Product {
+    private fun packageBovineCheek(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
             "Bovine Cheek 300g",
             MeatProductType.BOVINECHEEK.toString(),
@@ -280,7 +273,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             270.0,
             300,
             "g",
-            meat.getOriginID(),
+            meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -294,7 +287,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packageBeefShoulder(meat: Meat): Product {
+    private fun packageBeefShoulder(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
             "Beef Shoulder 300g",
             MeatProductType.BEEFSHOULDER.toString(),
@@ -303,7 +296,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             270.0,
             300,
             "g",
-            meat.getOriginID(),
+            meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -317,7 +310,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packageBeefDumpling(meat: Meat): Product {
+    private fun packageBeefDumpling(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
             "Beef Dumpling 300g",
             MeatProductType.BEEFDUMPLING.toString(),
@@ -326,7 +319,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             270.0,
             300,
             "g",
-            meat.getOriginID(),
+            meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -340,7 +333,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packageChickenThigh(meat: Meat): Product {
+    private fun packageChickenThigh(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
             "Chicken Thigh 100g",
             MeatProductType.CHICKENTHIGH.toString(),
@@ -349,7 +342,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             110.0,
             100,
             "g",
-            meat.getOriginID(),
+            meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -363,7 +356,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packageChickenBreast(meat: Meat): Product {
+    private fun packageChickenBreast(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
             "Chicken Breast 150g",
             MeatProductType.CHICKENBREAST.toString(),
@@ -372,7 +365,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             160.0,
             150,
             "g",
-            meat.getOriginID(),
+            meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -386,7 +379,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packageChickenWings(meat: Meat): Product {
+    private fun packageChickenWings(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
             "Chicken Wings 150g",
             MeatProductType.CHICKENWINGS.toString(),
@@ -395,7 +388,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             160.0,
             150,
             "g",
-            meat.getOriginID(),
+            meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -409,9 +402,9 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packageCarp(meat: Meat): Product {
+    private fun packageCarp(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
-            "Carp 750g", FishType.CARP.toString(), ProductType.MEAT, 420.0, 560.0, 750, "g", meat.getOriginID(),
+            "Carp 750g", FishType.CARP.toString(), ProductType.MEAT, 420.0, 560.0, 750, "g", meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -425,9 +418,9 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packageBream(meat: Meat): Product {
+    private fun packageBream(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
-            "Bream 750g", FishType.BREAM.toString(), ProductType.MEAT, 400.0, 540.0, 750, "g", meat.getOriginID(),
+            "Bream 750g", FishType.BREAM.toString(), ProductType.MEAT, 400.0, 540.0, 750, "g", meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -441,9 +434,9 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packageEel(meat: Meat): Product {
+    private fun packageEel(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
-            "Eel 800g", FishType.EEL.toString(), ProductType.MEAT, 500.0, 640.0, 800, "g", meat.getOriginID(),
+            "Eel 800g", FishType.EEL.toString(), ProductType.MEAT, 500.0, 640.0, 800, "g", meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -457,9 +450,9 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packageZander(meat: Meat): Product {
+    private fun packageZander(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
-            "Zander 600g", FishType.ZANDER.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginID(),
+            "Zander 600g", FishType.ZANDER.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -473,9 +466,9 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packageCatfish(meat: Meat): Product {
+    private fun packageCatfish(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
-            "Catfish 600g", FishType.CATFISH.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginID(),
+            "Catfish 600g", FishType.CATFISH.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)
@@ -489,9 +482,9 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
      * @param meat
      * @return
      */
-    private fun packagePerch(meat: Meat): Product {
+    private fun packagePerch(meat: MeatProduct): MeatProduct {
         val product = MeatProduct(
-            "Perch 600g", FishType.PERCH.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginID(),
+            "Perch 600g", FishType.PERCH.toString(), ProductType.MEAT, 500.0, 640.0, 600, "g", meat.getOriginId(),
             meat.getState().changeToNextState()
         )
         product.attach(Report)

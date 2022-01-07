@@ -139,6 +139,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      */
     fun callButcher() : ArrayList<Meat>{ //ITERATOR
 //        return butcher.proccessAnimal(animalToProcess)
+
         return butcher.proccessAnimal(animalsToProcessing())
     }
 

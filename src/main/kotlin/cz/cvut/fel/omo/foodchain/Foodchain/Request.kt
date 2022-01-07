@@ -7,7 +7,9 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.InvoiceType
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.*
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
+import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+import cz.cvut.fel.omo.foodchain.Foodchain.strategies.product_strategy.MeatStrategy
 
 /**
  * Request
@@ -50,7 +52,7 @@ class Request {
             println("Proces transportace (from farmer " + farmer.getIdentifier() + " to processor) " + meatFactory.getIdentifier())
 
             // Poslani zvirat na jatka
-            val processedAnimals: ArrayList<Meat> = farmer.callButcher()
+            val processedAnimals: ArrayList<Meat> = farmer.callButcher() // pouze zabyte, musi se rozdelit na jednotlive casti jeste
             println("Na jatka poslano : " + processedAnimals.size)
 
             // Faktura
@@ -64,7 +66,17 @@ class Request {
             invoice.notifyUpdate()
             println("Vznik faktury " + invoice.getCode())
 
-            Transport.takeMeat(processedAnimals)
+
+            val processedMeat =  ArrayList<MeatProduct>()
+
+            val meatStrategy = MeatStrategy();
+
+            for(meat in processedAnimals){
+                processedMeat.addAll(meatStrategy.execute(meat));
+            }
+
+
+            Transport.takeMeat(processedMeat)
             Transport.cargoDeduction()
             meatFactory.takeMeat(Transport.transportMeats())
 

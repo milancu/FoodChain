@@ -10,8 +10,15 @@
     <p th:text="REPORTS"></p>
 </div>
 
-<ol>
-    <li class="reportLine" th:each="report : ${reports}" th:text="${report}"></li><br/>
-</ol>
+
+<div th:each="report : ${reports}">
+    <ul class="reports">
+        <div th:text="${report.key}" class="uuid"></div>
+        <div th:each="x : ${report.value}">
+            <li class="reportLine" th:text="${x}"></li>
+        </div>
+    </ul>
+</div>
+
 </body>
 </html>

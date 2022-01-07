@@ -104,14 +104,14 @@ open class Product(
     open fun notifyTransport() {
         for (i in observers) {
             i.update(this.origin,
-                "PRODUCT HAS BEEN SHIPPED, " + this.name + ", amount: " + this.amount + "g, shop price: " + this.shopPrice + " in week:" + Week.acutalWeek)
+                "PRODUCT HAS BEEN SHIPPED, " + this.name + ", shop price: " + this.shopPrice + " in week:" + Week.acutalWeek)
         }
     }
 
-    open fun notifyPurchased(x : Int, y :Int){
+    open fun notifyPurchased(amount :Int){
         for (i in observers) {
             i.update(this.origin,
-                "PRODUCT HAS BEEN PURCHASED, " + this.name + ", amount: " + this.amount + "g, shop price: " + this.shopPrice + " in week:" + Week.acutalWeek + ", " + x.toString() + ", " + y.toString() + '\n')
+                "PRODUCT HAS BEEN PURCHASED, " + this.name + ", amount: " + amount.toString() + "g, shop price: " + this.shopPrice + " in week:" + Week.acutalWeek)
         }
     }
 

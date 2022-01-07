@@ -19,9 +19,14 @@ class MeatLoverStrategy : CustomerStrategy {
                 product.getProductType() == ProductType.OTHERS ||
                 product.getProductType() == ProductType.SAUCE
             ) {
-                if(product.getAmount() >= Config.WORKOUT_SHOP_SIZE){
+                if(product.getProductType() == ProductType.MEAT){
+                    product.notifyPurchased(product.getAmount())
+                    spended += Config.WORKOUT_SHOP_SIZE * product.getShopPrice()
+                    toRemove.add(product)
+                }
+                 else if(product.getAmount() >= Config.WORKOUT_SHOP_SIZE){
                     product.decreaseAmount(Config.WORKOUT_SHOP_SIZE)
-                    product.notifyPurchased(3, product.getAmount())
+                    product.notifyPurchased(product.getAmount())
                     spended += Config.WORKOUT_SHOP_SIZE * product.getShopPrice()
                 } else {
                     toRemove.add(product)

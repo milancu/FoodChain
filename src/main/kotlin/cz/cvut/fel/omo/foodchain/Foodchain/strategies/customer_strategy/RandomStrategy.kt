@@ -1,5 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.strategies.customer_strategy
 
+import cz.cvut.fel.omo.foodchain.Foodchain.Config
+import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 /**
@@ -14,11 +16,16 @@ class RandomStrategy : CustomerStrategy {
 
         for(product in products){
             val random : Int = (0..1).random()
-            val randomSize : Int = /*(5..15).random()*/ 500
+            val randomSize : Int = /*(5..15).random()*/ 50
             if(random == 1){
-                if(product.getAmount() >= randomSize){
+                if(product.getProductType() == ProductType.MEAT){
+                    product.notifyPurchased(product.getAmount())
+                    spended += Config.WORKOUT_SHOP_SIZE * product.getShopPrice()
+                    toRemove.add(product)
+                }
+                else if(product.getAmount() >= randomSize){
                     product.decreaseAmount(randomSize)
-                    product.notifyPurchased(4, product.getAmount())
+                    product.notifyPurchased(product.getAmount())
                     spended += randomSize * product.getShopPrice()
                 } else {
                     toRemove.add(product)

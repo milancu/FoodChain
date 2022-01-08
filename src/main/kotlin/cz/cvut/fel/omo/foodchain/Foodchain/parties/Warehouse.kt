@@ -77,7 +77,7 @@ class Warehouse @Autowired constructor() {
      *
      * @return
      */
-    fun warehouseManagementPayment() : Double{
+    fun callForPayment() : Double{
         var costs = 0.0
         for(product in storagedProducts){
             costs += product.getAmount() * 10.0

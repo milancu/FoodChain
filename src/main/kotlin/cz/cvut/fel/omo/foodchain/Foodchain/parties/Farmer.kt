@@ -3,7 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
 import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.iterator.AnimalToProcess
-import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
+import cz.cvut.fel.omo.foodchain.Foodchain.animals.Animal
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import org.slf4j.LoggerFactory
@@ -24,8 +24,8 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     BaseParty(subjectName, location, amountOfMoney) {
 
     private var resources: ArrayList<Crop> = setInitialResources()
-    private var animals: ArrayList<BaseAnimal> = setInitialAnimals()
-    private var animalsToProcessing: ArrayList<BaseAnimal> = ArrayList()
+    private var animals: ArrayList<Animal> = setInitialAnimals()
+    private var animalsToProcessing: ArrayList<Animal> = ArrayList()
 
     private val logger = LoggerFactory.getLogger(javaClass)
 
@@ -50,7 +50,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      * @return
      */
-    private fun setInitialAnimals(): ArrayList<BaseAnimal> {
+    private fun setInitialAnimals(): ArrayList<Animal> {
         val generator = Generator()
         return generator.generateAnimals()
     }
@@ -61,7 +61,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      * @return
      */
-    fun animalsToProcessing(): AnimalToProcess {
+    fun controlAnimalsForProcessing(): AnimalToProcess {
         animalToProcess.clearList()
         animals.iterator().forEach { animal ->
             when (animal.getName()) {
@@ -117,7 +117,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         val generator = Generator()
         if(value != 0) {
             for (i in (1..value)) {
-                val newAnimal: BaseAnimal = generator.generateAnimal()
+                val newAnimal: Animal = generator.generateAnimal()
                 animals.add(newAnimal)
                 this.amountOfMoney -= newAnimal.getWeight()
             }
@@ -129,7 +129,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      * @return
      */
-    fun getAnimalsToProcessing(): ArrayList<BaseAnimal> {
+    fun getAnimalsToProcessing(): ArrayList<Animal> {
         return this.animalsToProcessing
     }
 
@@ -141,7 +141,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
     fun callButcher() : ArrayList<Meat>{ //ITERATOR
 //        return butcher.proccessAnimal(animalToProcess)
 
-        return butcher.proccessAnimal(animalsToProcessing())
+        return butcher.proccessAnimal(controlAnimalsForProcessing())
     }
 
     /**
@@ -218,7 +218,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      * @return
      */
-    fun needResource() : Boolean{
+    fun controlResource() : Boolean{
         if(resources.size != 0) return true
         return false
     }
@@ -232,24 +232,4 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
         resources.add(crop)
     }
 
-
-    /**
-     * Pay debts
-     *
-     */
-    fun payDebts() {
-        val toRemove: ArrayList<Invoice> = ArrayList()
-        for (invoice in unpaidInvoices) {
-            if (amountOfMoney >= invoice.getPrice()) {
-                toRemove.add(invoice)
-                invoice.payInvoice()
-                invoice.notifyPaid()
-                amountOfMoney -= invoice.getPrice()
-            }
-        }
-        for (invoice in toRemove) {
-            logger.info("Penize za " + invoice.getCode() + " splaceny")
-            unpaidInvoices.remove(invoice)
-        }
-    }
 }

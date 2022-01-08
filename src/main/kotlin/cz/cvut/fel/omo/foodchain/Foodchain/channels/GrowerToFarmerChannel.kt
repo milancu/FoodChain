@@ -19,7 +19,7 @@ class GrowerToFarmerChannel(private var growers: ArrayList<Grower>, private var 
 
     override fun runSimulation(){
         for(farmer in farmers){
-            if(farmer.needResource()){
+            if(farmer.controlResource()){
                 Request.requestFarmerBuyCrops(farmer, findCorrectSupplier())
             }
             farmer.payDebts()

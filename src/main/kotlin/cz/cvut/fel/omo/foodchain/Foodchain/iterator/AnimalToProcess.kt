@@ -1,35 +1,35 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.iterator
 
-import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
+import cz.cvut.fel.omo.foodchain.Foodchain.animals.Animal
 
 class AnimalToProcess : CustomIterator {
 
-    private var animalList : ArrayList<BaseAnimal>;
+    private var animalList : ArrayList<Animal>;
 
     constructor() {
-        this.animalList = ArrayList<BaseAnimal>()
+        this.animalList = ArrayList<Animal>()
     }
 
     override fun hasNext(): Boolean {
         return !animalList.isEmpty()
     }
 
-    override fun next(): BaseAnimal {
+    override fun next(): Animal {
         val animal = animalList[0]
         animalList.removeAt(0)
         return animal;
     }
 
-    fun add(animal: BaseAnimal) {
+    fun add(animal: Animal) {
         animalList.add(animal)
     }
 
     fun clearList() {
-        animalList = ArrayList<BaseAnimal>();
+        animalList = ArrayList<Animal>();
     }
 
     @JvmName("getAnimalList1")
-    fun getAnimalList(): ArrayList<BaseAnimal> {
+    fun getAnimalList(): ArrayList<Animal> {
         return animalList
     }
 

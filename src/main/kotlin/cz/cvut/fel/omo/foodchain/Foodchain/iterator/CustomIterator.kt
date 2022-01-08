@@ -1,6 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.iterator
 
-import cz.cvut.fel.omo.foodchain.Foodchain.animals.BaseAnimal
+import cz.cvut.fel.omo.foodchain.Foodchain.animals.Animal
 
 /**
  * Custom iterator
@@ -20,5 +20,5 @@ interface CustomIterator {
      *
      * @return
      */
-    operator fun next(): BaseAnimal
+    operator fun next(): Animal
 }

@@ -70,24 +70,6 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
     }
 
     /**
-     * Pay debts
-     *
-     */
-    fun payDebts() {
-        val toRemove: ArrayList<Invoice> = ArrayList()
-        for (invoice in unpaidInvoices) {
-            if (amountOfMoney >= invoice.getPrice()) {
-                payForInvoice(invoice)
-                toRemove.add(invoice)
-            }
-        }
-        for (invoice in toRemove) {
-            logger.info("Penize za " + invoice.getCode() + " splaceny")
-            unpaidInvoices.remove(invoice)
-        }
-    }
-
-    /**
      * Package product
      *
      */

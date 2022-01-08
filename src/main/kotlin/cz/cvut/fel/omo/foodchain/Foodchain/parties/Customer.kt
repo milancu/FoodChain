@@ -28,7 +28,6 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
 
     private var salary: Double = (Config.SALARY_MIN..Config.SALARY_MAX).random().toDouble()
     private var context : CustomerContext = chooseStrategy()
-    private var creditCardDebts : ArrayList<Invoice> = ArrayList()
 
     private fun chooseStrategy() : CustomerContext{
         val context : CustomerContext
@@ -86,30 +85,11 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
             recipe.getContractor().takeMoney(recipe.getPrice())
             recipe.notifyPaid()
         } else {
-            creditCardDebts.add(recipe)
+            debts.add(recipe)
             logger.info("Vznika dluh na kreditni karte v castce " + recipe.getPrice())
             recipe.notifyUnpaid()
         }
     }
-
-    /**
-     * Pay debts
-     *
-     */
-    fun payDebts(){
-        val toRemove : ArrayList<Invoice> = ArrayList()
-        for(invoice in creditCardDebts){
-            if(amountOfMoney >= invoice.getPrice()){
-                toRemove.add(invoice)
-                payForInvoice(invoice)
-            }
-        }
-        for(invoice in toRemove){
-            logger.info("Penize za " + invoice.getCode() + " splaceny")
-            creditCardDebts.remove(invoice)
-        }
-    }
-
 
 }
 

@@ -91,9 +91,5 @@ class Transport{
             transport.changeAmountOfMoney(-costs)
             logger.info("Dopravni spolecnost na nakladech utratila: $costs")
         }
-
-        fun getIdentifier() : UUID{
-            return transport.getIdentifier()
-        }
     }
 }

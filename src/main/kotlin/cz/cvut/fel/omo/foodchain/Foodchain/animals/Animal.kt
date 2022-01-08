@@ -19,7 +19,7 @@ import java.util.*
  *
  * @param animalType
  */
-class BaseAnimal(animalType: AnimalType) : Subject, Context {
+class Animal(animalType: AnimalType) : Subject, Context {
 
     private var observers: ArrayList<Observer> = ArrayList()
 

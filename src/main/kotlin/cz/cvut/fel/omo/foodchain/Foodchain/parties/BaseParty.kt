@@ -18,6 +18,7 @@ open class BaseParty(
 
     private val identifier : UUID = UUID.randomUUID()
     protected var unpaidInvoices : ArrayList<Invoice> = ArrayList()
+    protected var debts : ArrayList<Invoice> = ArrayList()
 
     private val logger = LoggerFactory.getLogger(javaClass)
 
@@ -90,6 +91,24 @@ open class BaseParty(
             unpaidInvoices.add(invoice)
             logger.info("!Faktura " + invoice.getCode() + " NENI uhrazena")
             invoice.notifyUnpaid()
+        }
+    }
+
+    /**
+     * Pay debts
+     *
+     */
+    fun payDebts(){
+        val toRemove : ArrayList<Invoice> = ArrayList()
+        for(invoice in debts){
+            if(amountOfMoney >= invoice.getPrice()){
+                toRemove.add(invoice)
+                payForInvoice(invoice)
+            }
+        }
+        for(invoice in toRemove){
+            logger.info("Penize za " + invoice.getCode() + " splaceny")
+            debts.remove(invoice)
         }
     }
 }

@@ -64,25 +64,6 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
         logger.info("Naskladneno celkem typu produktu: " + warehouse.getStockSize())
     }
 
-
-    /**
-     * Pay debts
-     *
-     */
-    fun payDebts() {
-        val toRemove: ArrayList<Invoice> = ArrayList()
-        for (invoice in unpaidInvoices) {
-            if (amountOfMoney >= invoice.getPrice()) {
-                toRemove.add(invoice)
-                payForInvoice(invoice)
-            }
-        }
-        for (invoice in toRemove) {
-            logger.info("Penize za " + invoice.getCode() + " splaceny")
-            unpaidInvoices.remove(invoice)
-        }
-    }
-
     /**
      * Vacate warehouse
      *
@@ -154,8 +135,8 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
      * Warehouse management payment
      *
      */
-    fun warehouseManagementPayment(){
-        this.amountOfMoney -= warehouse.warehouseManagementPayment()
+    fun payForWarehouseManagement(){
+        this.amountOfMoney -= warehouse.callForPayment()
     }
 
     fun refreshAvailableProducts(products: ArrayList<Product>){
@@ -163,9 +144,11 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
     }
 
     fun checkResources(){
-        var toRemove : ArrayList<Product> = ArrayList()
+        val toRemove : ArrayList<Product> = ArrayList()
+        println("aaaaaaaaaaaaaaaaaaaaaaaaaaaa" + availableProducts.size)
         for(product : Product in availableProducts){
             product.increaseAge()
+            logger.info(product.getName() + "se blizi datu spotreby")
             if(product.getAge() >= Config.TIME_OF_PRODUCT_LIFE){
                 logger.info("" + product.getProductType() + " " + product.getName() + " se zkazil a byl vyhozen")
                 product.notifySpoiled()

@@ -39,7 +39,7 @@ class Request {
             val transportInvoice = Invoice(processor, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
             proccesTheInvoice(transportInvoice, processor)
 
-            processor.takeCropSupplies(Transport.transportCropSuplies())
+            processor.takeSupplies(Transport.transportCropSuplies())
         }
 
         fun requestTransportToMeatFactory(farmer: Farmer, meatFactory: MeatFactory) {

@@ -13,7 +13,7 @@ class Config {
         var FARMERS: Int = 2
         var PROCESSORS: Int = 2
         var CUSTOMERS: Int = 100
-        var RETAILERS: Int = 2
+        var RETAILERS: Int = 1
 
         var STANDARD_SHOP_SIZE: Int = 10
         var VEGAN_SHOP_SIZE: Int = 2

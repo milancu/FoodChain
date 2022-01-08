@@ -22,8 +22,8 @@ class Generator {
      *
      * @return
      */
-    fun generateAnimal(): BaseAnimal {
-        val animal = BaseAnimal(AnimalType.getAnimal())
+    fun generateAnimal(): Animal {
+        val animal = Animal(AnimalType.getAnimal())
         animal.attach(Report)
         animal.notifyUpdate()
         return animal
@@ -34,8 +34,8 @@ class Generator {
      *
      * @return
      */
-    fun generateAnimals(): ArrayList<BaseAnimal> {
-        val listOfAnimals = ArrayList<BaseAnimal>()
+    fun generateAnimals(): ArrayList<Animal> {
+        val listOfAnimals = ArrayList<Animal>()
 
         for (i in 1..(Config.ANIMALS_MIN..Config.ANIMALS_MAX).random()) {
             listOfAnimals.add(generateAnimal())

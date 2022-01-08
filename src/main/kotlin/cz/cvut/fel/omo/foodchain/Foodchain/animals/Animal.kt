@@ -13,7 +13,7 @@ import java.util.*
 
 
 /**
- * Base animal
+ * Animal
  *
  * @constructor
  *
@@ -180,10 +180,21 @@ class Animal(animalType: AnimalType) : Subject, Context {
         }
     }
 
+
+    /**
+     * Set state
+     *
+     * @param state
+     */
     override fun setState(state: State) {
         this.state = state
     }
 
+    /**
+     * Get state
+     *
+     * @return
+     */
     fun getState() : State{
         return state
     }

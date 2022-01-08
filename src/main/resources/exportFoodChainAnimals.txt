@@ -1,339 +1,309 @@
-UUID: 784b219a-667f-49c8-a2cb-2d9a8ad904eb
-NEW ANIMAL, Goat, weight: 277.0kg, age:5 in week:1
+UUID: 12d8f093-abe2-4df6-9910-86a606d62b3a
+NEW ANIMAL, Pig, weight: 446.0kg, age:4 in week:10
 
 
-UUID: f79097c9-a06f-49dd-bbb5-77bca9705094
-NEW ANIMAL, Chicken, weight: 2.0kg, age:2 in week:8
+UUID: aedb4b5d-3135-464c-8bcc-d84d2a59e62e
+NEW ANIMAL, Goat, weight: 190.0kg, age:4 in week:9
 
 
-UUID: df97019f-379d-4848-8727-4fc10e422673
-NEW ANIMAL, Cow, weight: 492.0kg, age:3 in week:5
-
-
-UUID: 8260e48e-2234-4127-874e-f4afb8163006
-NEW ANIMAL, Cow, weight: 261.0kg, age:3 in week:6
-
-
-UUID: e87757e3-11d5-4d4f-87f2-8bf0c3d4a5d6
-NEW ANIMAL, Fish, weight: 4.0kg, age:1 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 6
-ANIMAL HAS BEEN PROCESSED IN WEEK: 6
-NEW MEAT, FISH, amount: 4.5094280000000015kg, in week: 6
-NEW PRODUCT, CATFISH, amount: 0kg, shop price: 146.55641000000006 in week:6
-PRODUCT HAS BEEN SHIPPED, CATFISH, shop price: 146.55641000000006 in week:6
-NEW PRODUCT, Catfish 600g, amount: 600kg, shop price: 500.0 in week:6
-PRODUCT HAS BEEN SHIPPED, Catfish 600g, shop price: 500.0 in week:6
-PRODUCT HAS BEEN PURCHASED, Catfish 600g, amount: 600g, shop price: 500.0 in week:6
-
-
-UUID: 40a345a5-bd62-4563-8740-35f3c043c5f9
-NEW ANIMAL, Goat, weight: 256.0kg, age:8 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 9
-
-
-UUID: 5610dace-a3bf-4d38-b219-da7675a3789a
-NEW ANIMAL, Cow, weight: 185.0kg, age:19 in week:2
-
-
-UUID: 7276b344-ec83-4565-ac45-56a38ed0acf3
-NEW ANIMAL, Cow, weight: 504.0kg, age:2 in week:1
-
-
-UUID: fb2e4981-cf28-41c2-813d-7266c601270d
-NEW ANIMAL, Pig, weight: 577.0kg, age:11 in week:8
-
-
-UUID: 3a6bda0e-ebc1-4ea8-9fff-d87dfa3299aa
-NEW ANIMAL, Cow, weight: 296.0kg, age:11 in week:9
-
-
-UUID: ab017a25-7f79-4967-b28f-ff815f3f6229
-NEW ANIMAL, Fish, weight: 5.0kg, age:3 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 4
-ANIMAL HAS BEEN PROCESSED IN WEEK: 4
-NEW MEAT, FISH, amount: 4.6585kg, in week: 4
-NEW PRODUCT, ZANDER, amount: 0kg, shop price: 151.40125 in week:4
-PRODUCT HAS BEEN SHIPPED, ZANDER, shop price: 151.40125 in week:4
-NEW PRODUCT, Zander 600g, amount: 600kg, shop price: 500.0 in week:4
-PRODUCT HAS BEEN SHIPPED, Zander 600g, shop price: 500.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Zander 600g, amount: 600g, shop price: 500.0 in week:4
-
-
-UUID: 862639a5-4d3d-419f-83b9-7f97c05c6370
-NEW ANIMAL, Cow, weight: 439.0kg, age:20 in week:1
-
-
-UUID: c3b2a259-df55-4114-8589-5c88bd85ad06
-NEW ANIMAL, Chicken, weight: 1.0kg, age:7 in week:3
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 7
-ANIMAL HAS BEEN PROCESSED IN WEEK: 7
-NEW MEAT, CHICKEN, amount: 1.0248700000000004kg, in week: 7
-NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 25.62175000000001 in week:7
-NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 25.62175000000001 in week:7
-NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 25.62175000000001 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 25.62175000000001 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 25.62175000000001 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 25.62175000000001 in week:7
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:7
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:7
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:7
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:7
-PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:7
-
-
-UUID: e432741e-4161-4564-91cf-299571329c6d
-NEW ANIMAL, Cow, weight: 155.0kg, age:27 in week:1
+UUID: 1149df99-85b8-4c14-a910-774c7fdfa8f6
+NEW ANIMAL, Chicken, weight: 1.0kg, age:9 in week:3
 ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 5
 ANIMAL HAS BEEN PROCESSED IN WEEK: 5
-NEW MEAT, BEEF, amount: 158.85485000000003kg, in week: 5
-NEW PRODUCT, Dumpling, amount: 19kg, shop price: 7942.742500000001 in week:5
-NEW PRODUCT, BeefShoulder, amount: 19kg, shop price: 7942.742500000001 in week:5
-NEW PRODUCT, Bovinecheek, amount: 9kg, shop price: 7942.742500000001 in week:5
-NEW PRODUCT, Beeftenderloin, amount: 8kg, shop price: 7942.742500000001 in week:5
-PRODUCT HAS BEEN SHIPPED, Dumpling, shop price: 7942.742500000001 in week:5
-PRODUCT HAS BEEN SHIPPED, BeefShoulder, shop price: 7942.742500000001 in week:5
-PRODUCT HAS BEEN SHIPPED, Bovinecheek, shop price: 7942.742500000001 in week:5
-PRODUCT HAS BEEN SHIPPED, Beeftenderloin, shop price: 7942.742500000001 in week:5
-NEW PRODUCT, Beef Dumpling 300g, amount: 300kg, shop price: 220.0 in week:5
-NEW PRODUCT, Beef Shoulder 300g, amount: 300kg, shop price: 220.0 in week:5
-NEW PRODUCT, Bovine Cheek 300g, amount: 300kg, shop price: 220.0 in week:5
-NEW PRODUCT, Beef TenderLoin 400g, amount: 400kg, shop price: 280.0 in week:5
-PRODUCT HAS BEEN SHIPPED, Beef Dumpling 300g, shop price: 220.0 in week:5
-PRODUCT HAS BEEN SHIPPED, Beef Shoulder 300g, shop price: 220.0 in week:5
-PRODUCT HAS BEEN SHIPPED, Bovine Cheek 300g, shop price: 220.0 in week:5
-PRODUCT HAS BEEN SHIPPED, Beef TenderLoin 400g, shop price: 280.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:5
+NEW MEAT, CHICKEN, amount: 0.85kg, in week: 5
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 21.18 in week:5
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 21.18 in week:5
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 21.18 in week:5
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 21.18 in week:5
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 21.18 in week:5
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 21.18 in week:5
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:5
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:5
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:5
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 86g, shop price: 90.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 140g, shop price: 120.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 86g, shop price: 90.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 140g, shop price: 120.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:5
 
 
-UUID: a523ea47-6ca1-4252-b424-accba5ebaebf
-NEW ANIMAL, Goat, weight: 333.0kg, age:3 in week:8
-
-
-UUID: 14664796-5a94-4a3d-b58d-fe80f8463122
-NEW ANIMAL, Chicken, weight: 2.0kg, age:5 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 7
-ANIMAL HAS BEEN PROCESSED IN WEEK: 7
-NEW MEAT, CHICKEN, amount: 2.480185400000001kg, in week: 7
-NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 62.00463500000003 in week:7
-NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 62.00463500000003 in week:7
-NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 62.00463500000003 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 62.00463500000003 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 62.00463500000003 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 62.00463500000003 in week:7
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:7
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:7
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:7
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:7
-PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:7
-
-
-UUID: 8bdf0e2f-433e-44e5-85b8-28b49272ba65
-NEW ANIMAL, Chicken, weight: 3.0kg, age:1 in week:6
-
-
-UUID: 20a4d2ac-c0d2-4ba6-8045-9099b7de484c
-NEW ANIMAL, Goat, weight: 180.0kg, age:4 in week:1
-
-
-UUID: af6cd5aa-bba7-4a2a-93ff-9884014d724b
-NEW ANIMAL, Cow, weight: 195.0kg, age:6 in week:2
-
-
-UUID: 3fdd081c-c4b8-41d9-991d-8b3e8e55a9e1
-NEW ANIMAL, Fish, weight: 2.0kg, age:5 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 2
-ANIMAL HAS BEEN PROCESSED IN WEEK: 2
-NEW MEAT, FISH, amount: 1.54kg, in week: 2
-NEW PRODUCT, CATFISH, amount: 0kg, shop price: 50.050000000000004 in week:2
-PRODUCT HAS BEEN SHIPPED, CATFISH, shop price: 50.050000000000004 in week:2
-NEW PRODUCT, Catfish 600g, amount: 600kg, shop price: 500.0 in week:2
-PRODUCT HAS BEEN SHIPPED, Catfish 600g, shop price: 500.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Catfish 600g, amount: 600g, shop price: 500.0 in week:2
-
-
-UUID: 4ae84961-911f-4c4d-836d-cbe05b68a807
-NEW ANIMAL, Chicken, weight: 3.0kg, age:9 in week:10
-
-
-UUID: ab6cd865-9d65-4e7d-af4f-f7a3b1486989
-NEW ANIMAL, Chicken, weight: 1.0kg, age:9 in week:7
+UUID: 42719f5f-06fe-40c0-a4bb-ac758141d693
+NEW ANIMAL, Cow, weight: 472.0kg, age:29 in week:7
 ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 9
 ANIMAL HAS BEEN PROCESSED IN WEEK: 9
-NEW MEAT, CHICKEN, amount: 0.8470000000000001kg, in week: 9
-NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 21.175 in week:9
-NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 21.175 in week:9
-NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 21.175 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 21.175 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 21.175 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 21.175 in week:9
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:9
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:9
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:9
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:9
-PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:9
-PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:9
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:9
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:9
+NEW MEAT, BEEF, amount: 399.78kg, in week: 9
+NEW PRODUCT, Dumpling, amount: 49kg, shop price: 19989.2 in week:9
+NEW PRODUCT, BeefShoulder, amount: 49kg, shop price: 19989.2 in week:9
+NEW PRODUCT, Bovinecheek, amount: 24kg, shop price: 19989.2 in week:9
+NEW PRODUCT, Beeftenderloin, amount: 22kg, shop price: 19989.2 in week:9
+PRODUCT HAS BEEN SHIPPED, Dumpling, shop price: 19989.2 in week:9
+PRODUCT HAS BEEN SHIPPED, BeefShoulder, shop price: 19989.2 in week:9
+PRODUCT HAS BEEN SHIPPED, Bovinecheek, shop price: 19989.2 in week:9
+PRODUCT HAS BEEN SHIPPED, Beeftenderloin, shop price: 19989.2 in week:9
+NEW PRODUCT, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:9
+NEW PRODUCT, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:9
+NEW PRODUCT, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:9
+NEW PRODUCT, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Beef Dumpling 300g, shop price: 220.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Beef Shoulder 300g, shop price: 220.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Bovine Cheek 300g, shop price: 220.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Beef TenderLoin 400g, shop price: 280.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:9
 
 
-UUID: dde2ffbe-c258-42ef-9fd2-b18c438fcb04
-NEW ANIMAL, Chicken, weight: 3.0kg, age:3 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 9
-ANIMAL HAS BEEN PROCESSED IN WEEK: 9
-NEW MEAT, CHICKEN, amount: 4.501536501000002kg, in week: 9
-NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 112.53841252500006 in week:9
-NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 112.53841252500006 in week:9
-NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 112.53841252500006 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 112.53841252500006 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 112.53841252500006 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 112.53841252500006 in week:9
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:9
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:9
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:9
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:9
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:9
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:9
-PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:9
-PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:9
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:9
+UUID: f7a854f1-97f0-488d-9212-c327b7c62eda
+NEW ANIMAL, Pig, weight: 358.0kg, age:18 in week:2
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 5
+ANIMAL HAS BEEN PROCESSED IN WEEK: 5
+NEW MEAT, PORK, amount: 333.55kg, in week: 5
+NEW PRODUCT, Pork dumpling, amount: 41kg, shop price: 12508.07 in week:5
+NEW PRODUCT, Pork roast, amount: 41kg, shop price: 12508.07 in week:5
+NEW PRODUCT, Pork leg, amount: 20kg, shop price: 12508.07 in week:5
+NEW PRODUCT, Pork flank, amount: 20kg, shop price: 12508.07 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 12508.07 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 12508.07 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 12508.07 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 12508.07 in week:5
+NEW PRODUCT, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:5
+NEW PRODUCT, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:5
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:5
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:5
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:5
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:5
+NEW PRODUCT, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 395g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 388g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 387g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 194g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 395g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 388g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 387g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 194g, shop price: 180.0 in week:5
 
 
-UUID: 6d95335a-8047-48c2-aa84-d9141bc4ba20
-NEW ANIMAL, Goat, weight: 333.0kg, age:3 in week:1
+UUID: 606c3eba-e741-45af-a14c-c2f50fa4e12b
+NEW ANIMAL, Cow, weight: 227.0kg, age:10 in week:6
 
 
-UUID: 1c689a48-2824-44c8-99f9-c9e0193dc4d6
-NEW ANIMAL, Chicken, weight: 3.0kg, age:4 in week:10
+UUID: 37aca7c8-5e23-4cc3-ae3b-37262973bcff
+NEW ANIMAL, Chicken, weight: 2.0kg, age:3 in week:3
 
 
-UUID: 7cb685d0-7cf2-431f-8722-8bb17bc289e5
-NEW ANIMAL, Pig, weight: 448.0kg, age:7 in week:8
+UUID: 0b80e593-d3fd-4b50-a851-92b9f4bcf7fd
+NEW ANIMAL, Pig, weight: 218.0kg, age:1 in week:2
 
 
-UUID: 03669ec2-96e6-484b-acad-f0efe023562a
-NEW ANIMAL, Fish, weight: 5.0kg, age:4 in week:2
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 4
-ANIMAL HAS BEEN PROCESSED IN WEEK: 4
-NEW MEAT, FISH, amount: 4.235kg, in week: 4
-NEW PRODUCT, PERCH, amount: 0kg, shop price: 137.63750000000002 in week:4
-PRODUCT HAS BEEN SHIPPED, PERCH, shop price: 137.63750000000002 in week:4
-NEW PRODUCT, Perch 600g, amount: 600kg, shop price: 500.0 in week:4
-PRODUCT HAS BEEN SHIPPED, Perch 600g, shop price: 500.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Perch 600g, amount: 600g, shop price: 500.0 in week:4
+UUID: c098d075-e67b-4f41-8c4e-04c3ce7ca63a
+NEW ANIMAL, Fish, weight: 4.0kg, age:3 in week:10
 
 
-UUID: 2f85e71e-678b-46ef-afdd-0e915a9e1a69
-NEW ANIMAL, Cow, weight: 584.0kg, age:24 in week:1
+UUID: f5691f6b-83f1-4905-b12b-b17bef663cdc
+NEW ANIMAL, Cow, weight: 594.0kg, age:4 in week:1
+
+
+UUID: 477f946b-9c76-4fe7-bc6a-ce52522e698c
+NEW ANIMAL, Cow, weight: 477.0kg, age:16 in week:1
+
+
+UUID: 0cdf61e0-a8ed-4e41-9bad-9a90e730af81
+NEW ANIMAL, Fish, weight: 3.0kg, age:2 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 5
+ANIMAL HAS BEEN PROCESSED IN WEEK: 5
+NEW MEAT, FISH, amount: 3.07kg, in week: 5
+NEW PRODUCT, ZANDER, amount: 0kg, shop price: 99.92 in week:5
+PRODUCT HAS BEEN SHIPPED, ZANDER, shop price: 99.92 in week:5
+NEW PRODUCT, Zander 600g, amount: 600g, shop price: 500.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Zander 600g, shop price: 500.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Zander 600g, amount: 600g, shop price: 500.0 in week:5
+
+
+UUID: 08ad1dc1-37ec-4ea4-bfae-76789263e6b0
+NEW ANIMAL, Pig, weight: 543.0kg, age:7 in week:1
+
+
+UUID: dfe820a0-c5f6-48f0-8776-225fa73f007d
+NEW ANIMAL, Cow, weight: 377.0kg, age:19 in week:1
+
+
+UUID: 3b6f6e88-eac9-46f1-92f0-1b1c21f0ffe4
+NEW ANIMAL, Chicken, weight: 3.0kg, age:4 in week:1
 ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 8
 ANIMAL HAS BEEN PROCESSED IN WEEK: 8
-NEW MEAT, BEEF, amount: 796.6355504800005kg, in week: 8
-NEW PRODUCT, Dumpling, amount: 99kg, shop price: 39831.77752400003 in week:8
-NEW PRODUCT, BeefShoulder, amount: 99kg, shop price: 39831.77752400003 in week:8
-NEW PRODUCT, Bovinecheek, amount: 49kg, shop price: 39831.77752400003 in week:8
-NEW PRODUCT, Beeftenderloin, amount: 44kg, shop price: 39831.77752400003 in week:8
-PRODUCT HAS BEEN SHIPPED, Dumpling, shop price: 39831.77752400003 in week:8
-PRODUCT HAS BEEN SHIPPED, BeefShoulder, shop price: 39831.77752400003 in week:8
-PRODUCT HAS BEEN SHIPPED, Bovinecheek, shop price: 39831.77752400003 in week:8
-PRODUCT HAS BEEN SHIPPED, Beeftenderloin, shop price: 39831.77752400003 in week:8
-NEW PRODUCT, Beef Dumpling 300g, amount: 300kg, shop price: 220.0 in week:8
-NEW PRODUCT, Beef Shoulder 300g, amount: 300kg, shop price: 220.0 in week:8
-NEW PRODUCT, Bovine Cheek 300g, amount: 300kg, shop price: 220.0 in week:8
-NEW PRODUCT, Beef TenderLoin 400g, amount: 400kg, shop price: 280.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Beef Dumpling 300g, shop price: 220.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Beef Shoulder 300g, shop price: 220.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Bovine Cheek 300g, shop price: 220.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Beef TenderLoin 400g, shop price: 280.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:8
-
-
-UUID: 083ddd92-5700-4378-a759-f78a2a1d1e5d
-NEW ANIMAL, Goat, weight: 151.0kg, age:10 in week:5
-
-
-UUID: d7ad4024-1ade-4d6a-a055-9658aec1b3b9
-NEW ANIMAL, Cow, weight: 517.0kg, age:1 in week:8
-
-
-UUID: e407dd25-06b5-4a04-8b46-be7dc3a8e249
-NEW ANIMAL, Cow, weight: 466.0kg, age:3 in week:1
-
-
-UUID: 8a967f3e-f1cd-40bc-bfc7-f2fe640946bb
-NEW ANIMAL, Fish, weight: 6.0kg, age:2 in week:9
-
-
-UUID: 0cca50bc-29fe-44a6-93c0-76c5d0592120
-NEW ANIMAL, Chicken, weight: 2.0kg, age:5 in week:2
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 8
-ANIMAL HAS BEEN PROCESSED IN WEEK: 8
-NEW MEAT, CHICKEN, amount: 2.480185400000001kg, in week: 8
-NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 62.00463500000003 in week:8
-NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 62.00463500000003 in week:8
-NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 62.00463500000003 in week:8
-PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 62.00463500000003 in week:8
-PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 62.00463500000003 in week:8
-PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 62.00463500000003 in week:8
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:8
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:8
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:8
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:8
+NEW MEAT, CHICKEN, amount: 4.09kg, in week: 8
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 102.31 in week:8
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 102.31 in week:8
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 102.31 in week:8
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 102.31 in week:8
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 102.31 in week:8
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 102.31 in week:8
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:8
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:8
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:8
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:8
 PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:8
 PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:8
 PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:8
 PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:8
 PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 86g, shop price: 90.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 145g, shop price: 120.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 143g, shop price: 120.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 86g, shop price: 90.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 145g, shop price: 120.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 143g, shop price: 120.0 in week:8
 
 
-UUID: 184b252f-96cb-41cc-84ea-054120f5656e
-NEW ANIMAL, Pig, weight: 274.0kg, age:16 in week:3
+UUID: 8b352903-0f71-4499-a1a1-0b0343eb5cbf
+NEW ANIMAL, Pig, weight: 336.0kg, age:3 in week:1
+
+
+UUID: 7f884425-24f1-41f8-a395-c1ebd6d3c121
+NEW ANIMAL, Cow, weight: 422.0kg, age:30 in week:4
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 5
+ANIMAL HAS BEEN PROCESSED IN WEEK: 5
+NEW MEAT, BEEF, amount: 324.94kg, in week: 5
+NEW PRODUCT, Dumpling, amount: 40kg, shop price: 16247.0 in week:5
+NEW PRODUCT, BeefShoulder, amount: 40kg, shop price: 16247.0 in week:5
+NEW PRODUCT, Bovinecheek, amount: 20kg, shop price: 16247.0 in week:5
+NEW PRODUCT, Beeftenderloin, amount: 18kg, shop price: 16247.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Dumpling, shop price: 16247.0 in week:5
+PRODUCT HAS BEEN SHIPPED, BeefShoulder, shop price: 16247.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Bovinecheek, shop price: 16247.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Beeftenderloin, shop price: 16247.0 in week:5
+NEW PRODUCT, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:5
+NEW PRODUCT, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:5
+NEW PRODUCT, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:5
+NEW PRODUCT, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Beef Dumpling 300g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Beef Shoulder 300g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Bovine Cheek 300g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Beef TenderLoin 400g, shop price: 280.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Beef Dumpling 300g, amount: 285g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Beef Shoulder 300g, amount: 295g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Beef Dumpling 300g, amount: 285g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Beef Shoulder 300g, amount: 295g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:5
+
+
+UUID: 664d2a2f-3fa2-427a-baae-444284c96bb6
+NEW ANIMAL, Cow, weight: 282.0kg, age:21 in week:1
+
+
+UUID: 0bfd2923-2fd0-4e51-9e8a-b3324abde676
+NEW ANIMAL, Goat, weight: 372.0kg, age:14 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 3
+
+
+UUID: 6ea1e588-d2f1-4320-8ae7-a5e928b7b86e
+NEW ANIMAL, Fish, weight: 5.0kg, age:4 in week:8
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
+ANIMAL HAS BEEN PROCESSED IN WEEK: 10
+NEW MEAT, FISH, amount: 4.24kg, in week: 10
+NEW PRODUCT, BREAM, amount: 0kg, shop price: 137.64 in week:10
+PRODUCT HAS BEEN SHIPPED, BREAM, shop price: 137.64 in week:10
+NEW PRODUCT, Bream 750g, amount: 750g, shop price: 400.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Bream 750g, shop price: 400.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Bream 750g, amount: 750g, shop price: 400.0 in week:10
+
+
+UUID: 6512e1b7-8df3-4205-bb67-bc2648cebfef
+NEW ANIMAL, Cow, weight: 494.0kg, age:13 in week:5
+
+
+UUID: b54941de-bcd3-4b9f-9810-4ff3f7fdf6f0
+NEW ANIMAL, Goat, weight: 235.0kg, age:9 in week:2
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 9
+
+
+UUID: fe9a822d-841e-4a3d-b429-fd4d6fa2dd64
+NEW ANIMAL, Goat, weight: 340.0kg, age:12 in week:3
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 7
+
+
+UUID: bca4e294-b093-4084-8b89-e0acebfc48c7
+NEW ANIMAL, Chicken, weight: 1.0kg, age:6 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 6
+ANIMAL HAS BEEN PROCESSED IN WEEK: 6
+NEW MEAT, CHICKEN, amount: 1.13kg, in week: 6
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 28.18 in week:6
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 28.18 in week:6
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 28.18 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 28.18 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 28.18 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 28.18 in week:6
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:6
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:6
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:6
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 86g, shop price: 90.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 144g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 139g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 86g, shop price: 90.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 144g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 139g, shop price: 120.0 in week:6
+
+
+UUID: 757a44dc-5009-49da-a055-6fb84eeb064e
+NEW ANIMAL, Fish, weight: 3.0kg, age:1 in week:2
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 7
+ANIMAL HAS BEEN PROCESSED IN WEEK: 7
+NEW MEAT, FISH, amount: 3.38kg, in week: 7
+NEW PRODUCT, PERCH, amount: 0kg, shop price: 109.92 in week:7
+PRODUCT HAS BEEN SHIPPED, PERCH, shop price: 109.92 in week:7
+NEW PRODUCT, Perch 600g, amount: 600g, shop price: 500.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Perch 600g, shop price: 500.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Perch 600g, amount: 600g, shop price: 500.0 in week:7
+
+
+UUID: 617c5491-7fdc-4fd9-a2e7-ed7749088d34
+NEW ANIMAL, Pig, weight: 213.0kg, age:2 in week:6
+
+
+UUID: b316c6f6-d2e2-43ec-916f-f6fa281a8927
+NEW ANIMAL, Pig, weight: 587.0kg, age:14 in week:1
 ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 8
 ANIMAL HAS BEEN PROCESSED IN WEEK: 8
-NEW MEAT, PORK, amount: 308.89581800000013kg, in week: 8
-NEW PRODUCT, Pork dumpling, amount: 38kg, shop price: 11583.593175000005 in week:8
-NEW PRODUCT, Pork roast, amount: 38kg, shop price: 11583.593175000005 in week:8
-NEW PRODUCT, Pork leg, amount: 19kg, shop price: 11583.593175000005 in week:8
-NEW PRODUCT, Pork flank, amount: 19kg, shop price: 11583.593175000005 in week:8
-PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 11583.593175000005 in week:8
-PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 11583.593175000005 in week:8
-PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 11583.593175000005 in week:8
-PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 11583.593175000005 in week:8
-NEW PRODUCT, Pork Dumpling 300g, amount: 300kg, shop price: 150.0 in week:8
-NEW PRODUCT, Pork Roast 300g, amount: 300kg, shop price: 160.0 in week:8
-NEW PRODUCT, Pork Leg 400g, amount: 400kg, shop price: 180.0 in week:8
-NEW PRODUCT, Pork Leg 400g, amount: 400kg, shop price: 180.0 in week:8
-NEW PRODUCT, Pork Leg 400g, amount: 400kg, shop price: 180.0 in week:8
-NEW PRODUCT, Pork Leg 400g, amount: 400kg, shop price: 180.0 in week:8
-NEW PRODUCT, Pork Flank 200g, amount: 200kg, shop price: 180.0 in week:8
+NEW MEAT, PORK, amount: 800.73kg, in week: 8
+NEW PRODUCT, Pork dumpling, amount: 100kg, shop price: 30027.29 in week:8
+NEW PRODUCT, Pork roast, amount: 100kg, shop price: 30027.29 in week:8
+NEW PRODUCT, Pork leg, amount: 50kg, shop price: 30027.29 in week:8
+NEW PRODUCT, Pork flank, amount: 50kg, shop price: 30027.29 in week:8
+PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 30027.29 in week:8
+PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 30027.29 in week:8
+PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 30027.29 in week:8
+PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 30027.29 in week:8
+NEW PRODUCT, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:8
+NEW PRODUCT, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:8
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:8
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:8
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:8
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:8
+NEW PRODUCT, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:8
 PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:8
 PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:8
 PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:8
@@ -341,676 +311,1284 @@ PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:8
 PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:8
 PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:8
 PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:8
 PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:8
 PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:8
 PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 288g, shop price: 150.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 391g, shop price: 180.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 288g, shop price: 150.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 391g, shop price: 180.0 in week:8
 
 
-UUID: 6b5829de-842f-40f4-b94a-4d6c57458b6b
-NEW ANIMAL, Chicken, weight: 2.0kg, age:6 in week:8
+UUID: 8aec6c59-9aa1-4e4d-9baa-23c34f27dd50
+NEW ANIMAL, Pig, weight: 502.0kg, age:1 in week:1
 
 
-UUID: 76c51df0-dd11-475a-86d5-8e69c1266fbe
-NEW ANIMAL, Cow, weight: 350.0kg, age:30 in week:1
+UUID: 2f81de8d-e3a8-4474-9a21-063c38fd3b7e
+NEW ANIMAL, Chicken, weight: 1.0kg, age:8 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 4
+ANIMAL HAS BEEN PROCESSED IN WEEK: 4
+NEW MEAT, CHICKEN, amount: 0.93kg, in week: 4
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 23.29 in week:4
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 23.29 in week:4
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 23.29 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 23.29 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 23.29 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 23.29 in week:4
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:4
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:4
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+
+
+UUID: 37ec9164-69b9-4ad1-8b4a-24ce9eba3590
+NEW ANIMAL, Goat, weight: 248.0kg, age:6 in week:9
+
+
+UUID: 57f1ce6a-638d-48f9-a58c-98f7b1e15827
+NEW ANIMAL, Goat, weight: 165.0kg, age:12 in week:5
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 9
+
+
+UUID: acc95f4a-08bb-47c6-a6c9-55389fb3a3eb
+NEW ANIMAL, Chicken, weight: 2.0kg, age:2 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
+ANIMAL HAS BEEN PROCESSED IN WEEK: 10
+NEW MEAT, CHICKEN, amount: 3.3kg, in week: 10
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 82.53 in week:10
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 82.53 in week:10
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 82.53 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 82.53 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 82.53 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 82.53 in week:10
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:10
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:10
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
+
+
+UUID: eddca40c-10fb-4891-a902-198e8ffbe196
+NEW ANIMAL, Fish, weight: 1.0kg, age:5 in week:1
 ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 2
 ANIMAL HAS BEEN PROCESSED IN WEEK: 2
-NEW MEAT, BEEF, amount: 269.5kg, in week: 2
-NEW PRODUCT, Dumpling, amount: 33kg, shop price: 13475.0 in week:2
-NEW PRODUCT, BeefShoulder, amount: 33kg, shop price: 13475.0 in week:2
-NEW PRODUCT, Bovinecheek, amount: 16kg, shop price: 13475.0 in week:2
-NEW PRODUCT, Beeftenderloin, amount: 14kg, shop price: 13475.0 in week:2
-PRODUCT HAS BEEN SHIPPED, Dumpling, shop price: 13475.0 in week:2
-PRODUCT HAS BEEN SHIPPED, BeefShoulder, shop price: 13475.0 in week:2
-PRODUCT HAS BEEN SHIPPED, Bovinecheek, shop price: 13475.0 in week:2
-PRODUCT HAS BEEN SHIPPED, Beeftenderloin, shop price: 13475.0 in week:2
-NEW PRODUCT, Beef Dumpling 300g, amount: 300kg, shop price: 220.0 in week:2
-NEW PRODUCT, Beef Shoulder 300g, amount: 300kg, shop price: 220.0 in week:2
-NEW PRODUCT, Bovine Cheek 300g, amount: 300kg, shop price: 220.0 in week:2
-NEW PRODUCT, Beef TenderLoin 400g, amount: 400kg, shop price: 280.0 in week:2
+NEW MEAT, FISH, amount: 0.77kg, in week: 2
+NEW PRODUCT, PERCH, amount: 0kg, shop price: 25.03 in week:2
+PRODUCT HAS BEEN SHIPPED, PERCH, shop price: 25.03 in week:2
+NEW PRODUCT, Perch 600g, amount: 600g, shop price: 500.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Perch 600g, shop price: 500.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Perch 600g, amount: 600g, shop price: 500.0 in week:2
+
+
+UUID: afbab82e-34c0-4dfc-acbf-777f7812f91a
+NEW ANIMAL, Pig, weight: 152.0kg, age:5 in week:1
+
+
+UUID: e2152450-86c8-4835-a248-209b7da8eba0
+NEW ANIMAL, Goat, weight: 267.0kg, age:3 in week:1
+
+
+UUID: f51c6305-3d71-4893-b2e2-55023c41ed3c
+NEW ANIMAL, Pig, weight: 267.0kg, age:19 in week:5
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 7
+ANIMAL HAS BEEN PROCESSED IN WEEK: 7
+NEW MEAT, PORK, amount: 226.15kg, in week: 7
+NEW PRODUCT, Pork dumpling, amount: 28kg, shop price: 8480.59 in week:7
+NEW PRODUCT, Pork roast, amount: 28kg, shop price: 8480.59 in week:7
+NEW PRODUCT, Pork leg, amount: 14kg, shop price: 8480.59 in week:7
+NEW PRODUCT, Pork flank, amount: 14kg, shop price: 8480.59 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 8480.59 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 8480.59 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 8480.59 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 8480.59 in week:7
+NEW PRODUCT, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:7
+NEW PRODUCT, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:7
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+NEW PRODUCT, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:7
+
+
+UUID: 9fd189df-6b7a-4da8-a759-80ec79606b6e
+NEW ANIMAL, Chicken, weight: 2.0kg, age:9 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 3
+ANIMAL HAS BEEN PROCESSED IN WEEK: 3
+NEW MEAT, CHICKEN, amount: 1.69kg, in week: 3
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 42.35 in week:3
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 42.35 in week:3
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 42.35 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 42.35 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 42.35 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 42.35 in week:3
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:3
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:3
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
+
+
+UUID: 17cf686b-5f08-45e4-b2bf-77bdd61a0337
+NEW ANIMAL, Pig, weight: 377.0kg, age:16 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 6
+ANIMAL HAS BEEN PROCESSED IN WEEK: 6
+NEW MEAT, PORK, amount: 425.01kg, in week: 6
+NEW PRODUCT, Pork dumpling, amount: 53kg, shop price: 15938.01 in week:6
+NEW PRODUCT, Pork roast, amount: 53kg, shop price: 15938.01 in week:6
+NEW PRODUCT, Pork leg, amount: 26kg, shop price: 15938.01 in week:6
+NEW PRODUCT, Pork flank, amount: 26kg, shop price: 15938.01 in week:6
+PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 15938.01 in week:6
+PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 15938.01 in week:6
+PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 15938.01 in week:6
+PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 15938.01 in week:6
+NEW PRODUCT, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:6
+NEW PRODUCT, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:6
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:6
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:6
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:6
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:6
+NEW PRODUCT, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 393g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 395g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 389g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 387g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 393g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 395g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 389g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 387g, shop price: 180.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:6
+
+
+UUID: 6f211b24-c33a-4312-9ba2-5f0d181ef1fb
+NEW ANIMAL, Chicken, weight: 2.0kg, age:10 in week:10
+
+
+UUID: 67ebd06b-8405-462f-9912-53735a57b7fb
+NEW ANIMAL, Goat, weight: 199.0kg, age:4 in week:10
+
+
+UUID: 930b135c-ede9-44ac-959f-0b47baab0c09
+NEW ANIMAL, Chicken, weight: 1.0kg, age:8 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 4
+ANIMAL HAS BEEN PROCESSED IN WEEK: 4
+NEW MEAT, CHICKEN, amount: 0.93kg, in week: 4
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 23.29 in week:4
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 23.29 in week:4
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 23.29 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 23.29 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 23.29 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 23.29 in week:4
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:4
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:4
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+
+
+UUID: fef8ff41-1dc3-49b6-9d33-efd518fa91ba
+NEW ANIMAL, Cow, weight: 332.0kg, age:10 in week:8
+
+
+UUID: 5e6a9268-e0a5-4c3c-b4ef-00242b8239b9
+NEW ANIMAL, Fish, weight: 1.0kg, age:2 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 5
+ANIMAL HAS BEEN PROCESSED IN WEEK: 5
+NEW MEAT, FISH, amount: 1.02kg, in week: 5
+NEW PRODUCT, ZANDER, amount: 0kg, shop price: 33.31 in week:5
+PRODUCT HAS BEEN SHIPPED, ZANDER, shop price: 33.31 in week:5
+NEW PRODUCT, Zander 600g, amount: 600g, shop price: 500.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Zander 600g, shop price: 500.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Zander 600g, amount: 595g, shop price: 500.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Zander 600g, amount: 595g, shop price: 500.0 in week:5
+
+
+UUID: 4c39f0fc-c0a1-433e-bfe5-1c91a01aba58
+NEW ANIMAL, Pig, weight: 398.0kg, age:3 in week:1
+
+
+UUID: f39b9772-559a-44cb-a896-1e9d90997d46
+NEW ANIMAL, Fish, weight: 1.0kg, age:1 in week:3
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 8
+ANIMAL HAS BEEN PROCESSED IN WEEK: 8
+NEW MEAT, FISH, amount: 1.13kg, in week: 8
+NEW PRODUCT, CARP, amount: 0kg, shop price: 36.64 in week:8
+PRODUCT HAS BEEN SHIPPED, CARP, shop price: 36.64 in week:8
+NEW PRODUCT, Carp 750g, amount: 750g, shop price: 420.0 in week:8
+PRODUCT HAS BEEN SHIPPED, Carp 750g, shop price: 420.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Carp 750g, amount: 750g, shop price: 420.0 in week:8
+
+
+UUID: 2fcf60e0-2da4-4b72-9bb8-c6b85186de13
+NEW ANIMAL, Fish, weight: 2.0kg, age:3 in week:5
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 8
+ANIMAL HAS BEEN PROCESSED IN WEEK: 8
+NEW MEAT, FISH, amount: 1.86kg, in week: 8
+NEW PRODUCT, PERCH, amount: 0kg, shop price: 60.56 in week:8
+PRODUCT HAS BEEN SHIPPED, PERCH, shop price: 60.56 in week:8
+NEW PRODUCT, Perch 600g, amount: 600g, shop price: 500.0 in week:8
+PRODUCT HAS BEEN SHIPPED, Perch 600g, shop price: 500.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Perch 600g, amount: 591g, shop price: 500.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Perch 600g, amount: 580g, shop price: 500.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Perch 600g, amount: 580g, shop price: 500.0 in week:8
+
+
+UUID: e710d836-5f4c-4bff-9650-04f0bf2cb975
+NEW ANIMAL, Fish, weight: 2.0kg, age:3 in week:7
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
+ANIMAL HAS BEEN PROCESSED IN WEEK: 10
+NEW MEAT, FISH, amount: 1.86kg, in week: 10
+NEW PRODUCT, CARP, amount: 0kg, shop price: 60.56 in week:10
+PRODUCT HAS BEEN SHIPPED, CARP, shop price: 60.56 in week:10
+NEW PRODUCT, Carp 750g, amount: 750g, shop price: 420.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Carp 750g, shop price: 420.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Carp 750g, amount: 750g, shop price: 420.0 in week:10
+
+
+UUID: e4c8de85-568d-4060-ae27-be8b1d50f933
+NEW ANIMAL, Fish, weight: 1.0kg, age:2 in week:10
+
+
+UUID: 196d15d8-3dec-410e-b199-ef5c3d0e9fe8
+NEW ANIMAL, Pig, weight: 262.0kg, age:17 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 5
+ANIMAL HAS BEEN PROCESSED IN WEEK: 5
+NEW MEAT, PORK, amount: 268.52kg, in week: 5
+NEW PRODUCT, Pork dumpling, amount: 33kg, shop price: 10069.35 in week:5
+NEW PRODUCT, Pork roast, amount: 33kg, shop price: 10069.35 in week:5
+NEW PRODUCT, Pork leg, amount: 16kg, shop price: 10069.35 in week:5
+NEW PRODUCT, Pork flank, amount: 16kg, shop price: 10069.35 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 10069.35 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 10069.35 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 10069.35 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 10069.35 in week:5
+NEW PRODUCT, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:5
+NEW PRODUCT, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:5
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:5
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:5
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:5
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:5
+NEW PRODUCT, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 292g, shop price: 150.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 392g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 191g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 292g, shop price: 150.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 392g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 191g, shop price: 180.0 in week:5
+
+
+UUID: 8b541dce-c2f2-47e0-a169-b8081704fa98
+NEW ANIMAL, Pig, weight: 220.0kg, age:20 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 2
+ANIMAL HAS BEEN PROCESSED IN WEEK: 2
+NEW MEAT, PORK, amount: 169.4kg, in week: 2
+NEW PRODUCT, Pork dumpling, amount: 21kg, shop price: 6352.5 in week:2
+NEW PRODUCT, Pork roast, amount: 21kg, shop price: 6352.5 in week:2
+NEW PRODUCT, Pork leg, amount: 10kg, shop price: 6352.5 in week:2
+NEW PRODUCT, Pork flank, amount: 10kg, shop price: 6352.5 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 6352.5 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 6352.5 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 6352.5 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 6352.5 in week:2
+NEW PRODUCT, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:2
+NEW PRODUCT, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:2
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+NEW PRODUCT, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:2
+
+
+UUID: 802fe347-6b3d-4ce1-a59c-3203c2cf079d
+NEW ANIMAL, Fish, weight: 1.0kg, age:2 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 5
+ANIMAL HAS BEEN PROCESSED IN WEEK: 5
+NEW MEAT, FISH, amount: 1.02kg, in week: 5
+NEW PRODUCT, CARP, amount: 0kg, shop price: 33.31 in week:5
+PRODUCT HAS BEEN SHIPPED, CARP, shop price: 33.31 in week:5
+NEW PRODUCT, Carp 750g, amount: 750g, shop price: 420.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Carp 750g, shop price: 420.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Carp 750g, amount: 750g, shop price: 420.0 in week:5
+
+
+UUID: cf5c8112-672b-4a91-8ba2-d888ef58aefc
+NEW ANIMAL, Goat, weight: 156.0kg, age:15 in week:4
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 5
+
+
+UUID: 81070909-a3d5-44c1-9afe-8f14a9c1904f
+NEW ANIMAL, Fish, weight: 4.0kg, age:2 in week:2
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 6
+ANIMAL HAS BEEN PROCESSED IN WEEK: 6
+NEW MEAT, FISH, amount: 4.1kg, in week: 6
+NEW PRODUCT, CARP, amount: 0kg, shop price: 133.23 in week:6
+PRODUCT HAS BEEN SHIPPED, CARP, shop price: 133.23 in week:6
+NEW PRODUCT, Carp 750g, amount: 750g, shop price: 420.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Carp 750g, shop price: 420.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Carp 750g, amount: 743g, shop price: 420.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Carp 750g, amount: 743g, shop price: 420.0 in week:6
+
+
+UUID: e7bb1df5-2ab2-4521-8062-d570fa21e791
+NEW ANIMAL, Chicken, weight: 1.0kg, age:8 in week:6
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 9
+ANIMAL HAS BEEN PROCESSED IN WEEK: 9
+NEW MEAT, CHICKEN, amount: 0.93kg, in week: 9
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 23.29 in week:9
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 23.29 in week:9
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 23.29 in week:9
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 23.29 in week:9
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 23.29 in week:9
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 23.29 in week:9
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:9
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:9
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:9
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:9
+
+
+UUID: edffd989-5bdb-4171-8859-368392c3c941
+NEW ANIMAL, Cow, weight: 342.0kg, age:27 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 5
+ANIMAL HAS BEEN PROCESSED IN WEEK: 5
+NEW MEAT, BEEF, amount: 350.51kg, in week: 5
+NEW PRODUCT, Dumpling, amount: 43kg, shop price: 17525.28 in week:5
+NEW PRODUCT, BeefShoulder, amount: 43kg, shop price: 17525.28 in week:5
+NEW PRODUCT, Bovinecheek, amount: 21kg, shop price: 17525.28 in week:5
+NEW PRODUCT, Beeftenderloin, amount: 19kg, shop price: 17525.28 in week:5
+PRODUCT HAS BEEN SHIPPED, Dumpling, shop price: 17525.28 in week:5
+PRODUCT HAS BEEN SHIPPED, BeefShoulder, shop price: 17525.28 in week:5
+PRODUCT HAS BEEN SHIPPED, Bovinecheek, shop price: 17525.28 in week:5
+PRODUCT HAS BEEN SHIPPED, Beeftenderloin, shop price: 17525.28 in week:5
+NEW PRODUCT, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:5
+NEW PRODUCT, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:5
+NEW PRODUCT, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:5
+NEW PRODUCT, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Beef Dumpling 300g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Beef Shoulder 300g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Bovine Cheek 300g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Beef TenderLoin 400g, shop price: 280.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Beef Dumpling 300g, amount: 285g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Bovine Cheek 300g, amount: 288g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Beef Dumpling 300g, amount: 285g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Bovine Cheek 300g, amount: 288g, shop price: 220.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:5
+
+
+UUID: 7c6df2ca-bc44-4a67-bc0b-25ab01349795
+NEW ANIMAL, Pig, weight: 370.0kg, age:4 in week:4
+
+
+UUID: 3ad48011-713b-4467-ba5e-ca7b70a01494
+NEW ANIMAL, Cow, weight: 179.0kg, age:30 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 2
+ANIMAL HAS BEEN PROCESSED IN WEEK: 2
+NEW MEAT, BEEF, amount: 137.83kg, in week: 2
+NEW PRODUCT, Dumpling, amount: 17kg, shop price: 6891.5 in week:2
+NEW PRODUCT, BeefShoulder, amount: 17kg, shop price: 6891.5 in week:2
+NEW PRODUCT, Bovinecheek, amount: 8kg, shop price: 6891.5 in week:2
+NEW PRODUCT, Beeftenderloin, amount: 7kg, shop price: 6891.5 in week:2
+PRODUCT HAS BEEN SHIPPED, Dumpling, shop price: 6891.5 in week:2
+PRODUCT HAS BEEN SHIPPED, BeefShoulder, shop price: 6891.5 in week:2
+PRODUCT HAS BEEN SHIPPED, Bovinecheek, shop price: 6891.5 in week:2
+PRODUCT HAS BEEN SHIPPED, Beeftenderloin, shop price: 6891.5 in week:2
+NEW PRODUCT, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:2
+NEW PRODUCT, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:2
+NEW PRODUCT, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:2
+NEW PRODUCT, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:2
 PRODUCT HAS BEEN SHIPPED, Beef Dumpling 300g, shop price: 220.0 in week:2
 PRODUCT HAS BEEN SHIPPED, Beef Shoulder 300g, shop price: 220.0 in week:2
 PRODUCT HAS BEEN SHIPPED, Bovine Cheek 300g, shop price: 220.0 in week:2
 PRODUCT HAS BEEN SHIPPED, Beef TenderLoin 400g, shop price: 280.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:2
 PRODUCT HAS BEEN PURCHASED, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:2
 PRODUCT HAS BEEN PURCHASED, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:2
 PRODUCT HAS BEEN PURCHASED, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:2
 
 
-UUID: 09383d7c-e977-44ce-9bf0-c6d2b6f09274
-NEW ANIMAL, Fish, weight: 2.0kg, age:5 in week:7
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 8
-ANIMAL HAS BEEN PROCESSED IN WEEK: 8
-NEW MEAT, FISH, amount: 1.54kg, in week: 8
-NEW PRODUCT, BREAM, amount: 0kg, shop price: 50.050000000000004 in week:8
-PRODUCT HAS BEEN SHIPPED, BREAM, shop price: 50.050000000000004 in week:8
-NEW PRODUCT, Bream 750g, amount: 750kg, shop price: 400.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Bream 750g, shop price: 400.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Bream 750g, amount: 750g, shop price: 400.0 in week:8
-
-
-UUID: 01fc254b-2f78-4271-9859-e93aa22074a6
-NEW ANIMAL, Chicken, weight: 2.0kg, age:9 in week:6
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 8
-ANIMAL HAS BEEN PROCESSED IN WEEK: 8
-NEW MEAT, CHICKEN, amount: 1.6940000000000002kg, in week: 8
-NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 42.35 in week:8
-NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 42.35 in week:8
-NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 42.35 in week:8
-PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 42.35 in week:8
-PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 42.35 in week:8
-PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 42.35 in week:8
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:8
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:8
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:8
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:8
-
-
-UUID: 4bdc12cf-3300-4a43-894d-16fa18eebd54
-NEW ANIMAL, Goat, weight: 355.0kg, age:14 in week:8
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
-
-
-UUID: c6a7d78d-597d-45b8-8d59-27bf606c6e05
-NEW ANIMAL, Chicken, weight: 3.0kg, age:2 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
-ANIMAL HAS BEEN PROCESSED IN WEEK: 10
-NEW MEAT, CHICKEN, amount: 4.951690151100003kg, in week: 10
-NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 123.79225377750006 in week:10
-NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 123.79225377750006 in week:10
-NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 123.79225377750006 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 123.79225377750006 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 123.79225377750006 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 123.79225377750006 in week:10
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:10
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:10
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:10
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
-
-
-UUID: 16a64be4-07ea-4eff-8b0f-f6e39cd1210a
-NEW ANIMAL, Chicken, weight: 1.0kg, age:2 in week:5
-
-
-UUID: bff72860-12a0-4698-b07d-17934cd287f6
-NEW ANIMAL, Fish, weight: 5.0kg, age:5 in week:2
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 3
-ANIMAL HAS BEEN PROCESSED IN WEEK: 3
-NEW MEAT, FISH, amount: 3.8499999999999996kg, in week: 3
-NEW PRODUCT, CATFISH, amount: 0kg, shop price: 125.12499999999999 in week:3
-PRODUCT HAS BEEN SHIPPED, CATFISH, shop price: 125.12499999999999 in week:3
-NEW PRODUCT, Catfish 600g, amount: 600kg, shop price: 500.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Catfish 600g, shop price: 500.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Catfish 600g, amount: 600g, shop price: 500.0 in week:3
-
-
-UUID: 9d38ec02-f55f-4aa4-b68b-0bde092e38dd
-NEW ANIMAL, Goat, weight: 322.0kg, age:1 in week:9
-
-
-UUID: 668c021b-0634-4e6a-a707-de41f9b25855
-NEW ANIMAL, Goat, weight: 263.0kg, age:10 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 7
-
-
-UUID: 2f406e9f-15e9-49e0-9eb4-ad5c76ecbbbb
-NEW ANIMAL, Goat, weight: 164.0kg, age:7 in week:3
-
-
-UUID: 16ea0195-f214-4bf9-bc4d-60df2724374f
-NEW ANIMAL, Goat, weight: 189.0kg, age:14 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 3
-
-
-UUID: ffb2c615-f50f-43a4-91d6-0b6d9c25a3ff
-NEW ANIMAL, Chicken, weight: 1.0kg, age:2 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
-ANIMAL HAS BEEN PROCESSED IN WEEK: 10
-NEW MEAT, CHICKEN, amount: 1.6505633837000013kg, in week: 10
-NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 41.26408459250003 in week:10
-NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 41.26408459250003 in week:10
-NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 41.26408459250003 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 41.26408459250003 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 41.26408459250003 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 41.26408459250003 in week:10
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:10
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:10
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:10
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:10
-
-
-UUID: 5e756167-43aa-4c80-aba5-39916f280e49
-NEW ANIMAL, Goat, weight: 222.0kg, age:5 in week:1
-
-
-UUID: 099fcb57-2e0d-439e-98e6-0907cf1606c2
-NEW ANIMAL, Fish, weight: 6.0kg, age:1 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 6
-ANIMAL HAS BEEN PROCESSED IN WEEK: 6
-NEW MEAT, FISH, amount: 6.764142000000002kg, in week: 6
-NEW PRODUCT, CARP, amount: 0kg, shop price: 219.83461500000007 in week:6
-PRODUCT HAS BEEN SHIPPED, CARP, shop price: 219.83461500000007 in week:6
-NEW PRODUCT, Carp 750g, amount: 750kg, shop price: 420.0 in week:6
-PRODUCT HAS BEEN SHIPPED, Carp 750g, shop price: 420.0 in week:6
-PRODUCT HAS BEEN PURCHASED, Carp 750g, amount: 750g, shop price: 420.0 in week:6
-
-
-UUID: 65abd9a8-3ca4-48b7-98b1-39e27098b0b4
-NEW ANIMAL, Chicken, weight: 2.0kg, age:5 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 7
-ANIMAL HAS BEEN PROCESSED IN WEEK: 7
-NEW MEAT, CHICKEN, amount: 2.480185400000001kg, in week: 7
-NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 62.00463500000003 in week:7
-NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 62.00463500000003 in week:7
-NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 62.00463500000003 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 62.00463500000003 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 62.00463500000003 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 62.00463500000003 in week:7
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:7
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:7
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:7
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:7
-PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:7
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:7
-
-
-UUID: 2b0f19da-3961-4e4f-95e8-6363af33c330
-NEW ANIMAL, Goat, weight: 383.0kg, age:9 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 8
-
-
-UUID: ed96610b-7708-49a6-acdd-e83cfe367691
-NEW ANIMAL, Pig, weight: 541.0kg, age:17 in week:10
-
-
-UUID: da964e7b-5745-4af0-a93c-761618c58dc1
-NEW ANIMAL, Goat, weight: 339.0kg, age:10 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 7
-
-
-UUID: baaa95c4-bcae-4a7e-86af-30e4756cbeef
-NEW ANIMAL, Cow, weight: 448.0kg, age:15 in week:6
-
-
-UUID: 7f124b95-17dd-4665-9daa-11e389f0d6fb
-NEW ANIMAL, Pig, weight: 530.0kg, age:19 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 3
-ANIMAL HAS BEEN PROCESSED IN WEEK: 3
-NEW MEAT, PORK, amount: 448.91kg, in week: 3
-NEW PRODUCT, Pork dumpling, amount: 56kg, shop price: 16834.125 in week:3
-NEW PRODUCT, Pork roast, amount: 56kg, shop price: 16834.125 in week:3
-NEW PRODUCT, Pork leg, amount: 28kg, shop price: 16834.125 in week:3
-NEW PRODUCT, Pork flank, amount: 28kg, shop price: 16834.125 in week:3
-PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 16834.125 in week:3
-PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 16834.125 in week:3
-PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 16834.125 in week:3
-PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 16834.125 in week:3
-NEW PRODUCT, Pork Dumpling 300g, amount: 300kg, shop price: 150.0 in week:3
-NEW PRODUCT, Pork Roast 300g, amount: 300kg, shop price: 160.0 in week:3
-NEW PRODUCT, Pork Leg 400g, amount: 400kg, shop price: 180.0 in week:3
-NEW PRODUCT, Pork Leg 400g, amount: 400kg, shop price: 180.0 in week:3
-NEW PRODUCT, Pork Leg 400g, amount: 400kg, shop price: 180.0 in week:3
-NEW PRODUCT, Pork Leg 400g, amount: 400kg, shop price: 180.0 in week:3
-NEW PRODUCT, Pork Flank 200g, amount: 200kg, shop price: 180.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:3
-
-
-UUID: 151a480c-1e2e-449e-b05c-587f4a460dbd
-NEW ANIMAL, Goat, weight: 345.0kg, age:15 in week:4
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 5
-
-
-UUID: 0646a64e-d8b0-4634-84b7-d0d25cf0a166
-NEW ANIMAL, Chicken, weight: 1.0kg, age:2 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
-ANIMAL HAS BEEN PROCESSED IN WEEK: 10
-NEW MEAT, CHICKEN, amount: 1.6505633837000013kg, in week: 10
-NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 41.26408459250003 in week:10
-NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 41.26408459250003 in week:10
-NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 41.26408459250003 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 41.26408459250003 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 41.26408459250003 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 41.26408459250003 in week:10
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:10
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:10
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:10
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:10
-
-
-UUID: b1a91c7c-c9c1-45aa-82e2-c1932bd97396
-NEW ANIMAL, Cow, weight: 445.0kg, age:17 in week:9
-
-
-UUID: 18d10f3a-581c-4aa3-b2c7-f6a810c7bd7c
-NEW ANIMAL, Cow, weight: 375.0kg, age:16 in week:1
-
-
-UUID: 54394ad0-60fd-4394-88da-c1f551e1a7c7
-NEW ANIMAL, Fish, weight: 1.0kg, age:3 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 4
-ANIMAL HAS BEEN PROCESSED IN WEEK: 4
-NEW MEAT, FISH, amount: 0.9317000000000002kg, in week: 4
-NEW PRODUCT, CATFISH, amount: 0kg, shop price: 30.280250000000006 in week:4
-PRODUCT HAS BEEN SHIPPED, CATFISH, shop price: 30.280250000000006 in week:4
-NEW PRODUCT, Catfish 600g, amount: 600kg, shop price: 500.0 in week:4
-PRODUCT HAS BEEN SHIPPED, Catfish 600g, shop price: 500.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Catfish 600g, amount: 600g, shop price: 500.0 in week:4
-
-
-UUID: e05e03db-7aab-49f0-a7a9-4cb5e32e0661
-NEW ANIMAL, Fish, weight: 2.0kg, age:3 in week:3
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 6
-ANIMAL HAS BEEN PROCESSED IN WEEK: 6
-NEW MEAT, FISH, amount: 1.8634000000000004kg, in week: 6
-NEW PRODUCT, ZANDER, amount: 0kg, shop price: 60.56050000000001 in week:6
-PRODUCT HAS BEEN SHIPPED, ZANDER, shop price: 60.56050000000001 in week:6
-NEW PRODUCT, Zander 600g, amount: 600kg, shop price: 500.0 in week:6
-PRODUCT HAS BEEN SHIPPED, Zander 600g, shop price: 500.0 in week:6
-PRODUCT HAS BEEN PURCHASED, Zander 600g, amount: 600g, shop price: 500.0 in week:6
-
-
-UUID: c295b0e3-caa0-4185-ae9b-76df5d2535a3
-NEW ANIMAL, Pig, weight: 484.0kg, age:3 in week:1
-
-
-UUID: 711cbb93-6d47-482c-a634-4124c592b9f7
-NEW ANIMAL, Cow, weight: 337.0kg, age:3 in week:1
-
-
-UUID: 5f95138b-9e2b-42b6-823f-d4bab06d1afe
-NEW ANIMAL, Goat, weight: 309.0kg, age:7 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
-
-
-UUID: 1fa26dd3-8983-4995-bc22-c9180a363ffc
-NEW ANIMAL, Cow, weight: 525.0kg, age:3 in week:1
-
-
-UUID: bf085034-8771-4420-9f15-38980e5bd820
-NEW ANIMAL, Cow, weight: 592.0kg, age:6 in week:1
-
-
-UUID: 492dfa5e-5658-481f-a280-97f86a917341
-NEW ANIMAL, Fish, weight: 6.0kg, age:3 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 4
-ANIMAL HAS BEEN PROCESSED IN WEEK: 4
-NEW MEAT, FISH, amount: 5.590200000000001kg, in week: 4
-NEW PRODUCT, CARP, amount: 0kg, shop price: 181.68150000000003 in week:4
-PRODUCT HAS BEEN SHIPPED, CARP, shop price: 181.68150000000003 in week:4
-NEW PRODUCT, Carp 750g, amount: 750kg, shop price: 420.0 in week:4
-PRODUCT HAS BEEN SHIPPED, Carp 750g, shop price: 420.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Carp 750g, amount: 750g, shop price: 420.0 in week:4
-
-
-UUID: 4019936e-27c2-405d-9ede-f888325ba278
-NEW ANIMAL, Goat, weight: 321.0kg, age:10 in week:8
-
-
-UUID: b447a3f3-133b-43e6-8ec2-78bdebad8f26
-NEW ANIMAL, Goat, weight: 231.0kg, age:5 in week:1
-
-
-UUID: 98d37361-4832-470e-8782-1e0ff717ba8b
-NEW ANIMAL, Fish, weight: 3.0kg, age:2 in week:7
-
-
-UUID: 35591004-3c32-4852-97ee-c9e56adf984d
-NEW ANIMAL, Cow, weight: 260.0kg, age:24 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 8
-ANIMAL HAS BEEN PROCESSED IN WEEK: 8
-NEW MEAT, BEEF, amount: 354.66651220000017kg, in week: 8
-NEW PRODUCT, Dumpling, amount: 44kg, shop price: 17733.325610000007 in week:8
-NEW PRODUCT, BeefShoulder, amount: 44kg, shop price: 17733.325610000007 in week:8
-NEW PRODUCT, Bovinecheek, amount: 22kg, shop price: 17733.325610000007 in week:8
-NEW PRODUCT, Beeftenderloin, amount: 19kg, shop price: 17733.325610000007 in week:8
-PRODUCT HAS BEEN SHIPPED, Dumpling, shop price: 17733.325610000007 in week:8
-PRODUCT HAS BEEN SHIPPED, BeefShoulder, shop price: 17733.325610000007 in week:8
-PRODUCT HAS BEEN SHIPPED, Bovinecheek, shop price: 17733.325610000007 in week:8
-PRODUCT HAS BEEN SHIPPED, Beeftenderloin, shop price: 17733.325610000007 in week:8
-NEW PRODUCT, Beef Dumpling 300g, amount: 300kg, shop price: 220.0 in week:8
-NEW PRODUCT, Beef Shoulder 300g, amount: 300kg, shop price: 220.0 in week:8
-NEW PRODUCT, Bovine Cheek 300g, amount: 300kg, shop price: 220.0 in week:8
-NEW PRODUCT, Beef TenderLoin 400g, amount: 400kg, shop price: 280.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Beef Dumpling 300g, shop price: 220.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Beef Shoulder 300g, shop price: 220.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Bovine Cheek 300g, shop price: 220.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Beef TenderLoin 400g, shop price: 280.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:8
-
-
-UUID: 46d6ca53-35fa-4e94-b2ea-a8b6f8fd6de2
-NEW ANIMAL, Goat, weight: 382.0kg, age:15 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 2
-
-
-UUID: 8eaa2210-87aa-4911-98a1-076b2ce9b28a
-NEW ANIMAL, Pig, weight: 372.0kg, age:8 in week:1
-
-
-UUID: 43fc51ce-0957-4f8a-971d-287ebaa56e81
+UUID: 836574b1-9f72-4904-8ed8-3b1016f48a17
 NEW ANIMAL, Chicken, weight: 2.0kg, age:9 in week:1
 ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 3
 ANIMAL HAS BEEN PROCESSED IN WEEK: 3
-NEW MEAT, CHICKEN, amount: 1.6940000000000002kg, in week: 3
+NEW MEAT, CHICKEN, amount: 1.69kg, in week: 3
 NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 42.35 in week:3
 NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 42.35 in week:3
 NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 42.35 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 42.35 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 42.35 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 42.35 in week:3
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:3
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:3
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:3
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:3
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:3
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:3
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:3
 PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:3
 PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:3
 PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
 
 
-UUID: fd5044ad-46a6-4060-bf2b-f734ea2803bc
-NEW ANIMAL, Fish, weight: 3.0kg, age:5 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 2
-ANIMAL HAS BEEN PROCESSED IN WEEK: 2
-NEW MEAT, FISH, amount: 2.31kg, in week: 2
-NEW PRODUCT, CATFISH, amount: 0kg, shop price: 75.075 in week:2
-PRODUCT HAS BEEN SHIPPED, CATFISH, shop price: 75.075 in week:2
-NEW PRODUCT, Catfish 600g, amount: 600kg, shop price: 500.0 in week:2
-PRODUCT HAS BEEN SHIPPED, Catfish 600g, shop price: 500.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Catfish 600g, amount: 600g, shop price: 500.0 in week:2
+UUID: c92871b1-4e8f-4e14-808c-9516da042915
+NEW ANIMAL, Pig, weight: 357.0kg, age:9 in week:1
 
 
-UUID: 6f467459-0cef-417f-98c8-d5b485f1bab3
-NEW ANIMAL, Pig, weight: 391.0kg, age:8 in week:1
+UUID: d927defc-3f74-4356-9fdf-f01251498ef4
+NEW ANIMAL, Cow, weight: 185.0kg, age:28 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 4
+ANIMAL HAS BEEN PROCESSED IN WEEK: 4
+NEW MEAT, BEEF, amount: 172.36kg, in week: 4
+NEW PRODUCT, Dumpling, amount: 21kg, shop price: 8618.23 in week:4
+NEW PRODUCT, BeefShoulder, amount: 21kg, shop price: 8618.23 in week:4
+NEW PRODUCT, Bovinecheek, amount: 10kg, shop price: 8618.23 in week:4
+NEW PRODUCT, Beeftenderloin, amount: 9kg, shop price: 8618.23 in week:4
+PRODUCT HAS BEEN SHIPPED, Dumpling, shop price: 8618.23 in week:4
+PRODUCT HAS BEEN SHIPPED, BeefShoulder, shop price: 8618.23 in week:4
+PRODUCT HAS BEEN SHIPPED, Bovinecheek, shop price: 8618.23 in week:4
+PRODUCT HAS BEEN SHIPPED, Beeftenderloin, shop price: 8618.23 in week:4
+NEW PRODUCT, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:4
+NEW PRODUCT, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:4
+NEW PRODUCT, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:4
+NEW PRODUCT, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Beef Dumpling 300g, shop price: 220.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Beef Shoulder 300g, shop price: 220.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Bovine Cheek 300g, shop price: 220.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Beef TenderLoin 400g, shop price: 280.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:4
 
 
-UUID: 994e3274-9aa5-4751-aab5-d322924cabac
-NEW ANIMAL, Fish, weight: 6.0kg, age:1 in week:1
+UUID: 989151df-2c7b-4ae9-930a-9c8c261645c5
+NEW ANIMAL, Chicken, weight: 1.0kg, age:1 in week:6
+
+
+UUID: 2d247464-efea-4c6e-acc6-24082207ac81
+NEW ANIMAL, Fish, weight: 1.0kg, age:2 in week:9
+
+
+UUID: 633ba654-195e-4f47-b598-291b59a7f7dc
+NEW ANIMAL, Goat, weight: 219.0kg, age:8 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 9
+
+
+UUID: 481fc813-951d-47da-8d75-01c98d93ba75
+NEW ANIMAL, Goat, weight: 212.0kg, age:1 in week:8
+
+
+UUID: ac71fe64-cde8-4031-b714-9248aceb7cea
+NEW ANIMAL, Goat, weight: 196.0kg, age:2 in week:5
+
+
+UUID: bb61a4e9-0fe5-41ad-9934-51c32a3f009a
+NEW ANIMAL, Goat, weight: 168.0kg, age:6 in week:1
+
+
+UUID: ce43c01f-274c-4de2-9d3c-5aa8fd559ba0
+NEW ANIMAL, Goat, weight: 386.0kg, age:6 in week:5
+
+
+UUID: 59fb05bd-6e5b-4eb9-9f9a-072703017981
+NEW ANIMAL, Pig, weight: 164.0kg, age:18 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 4
+ANIMAL HAS BEEN PROCESSED IN WEEK: 4
+NEW MEAT, PORK, amount: 152.8kg, in week: 4
+NEW PRODUCT, Pork dumpling, amount: 19kg, shop price: 5729.96 in week:4
+NEW PRODUCT, Pork roast, amount: 19kg, shop price: 5729.96 in week:4
+NEW PRODUCT, Pork leg, amount: 9kg, shop price: 5729.96 in week:4
+NEW PRODUCT, Pork flank, amount: 9kg, shop price: 5729.96 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 5729.96 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 5729.96 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 5729.96 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 5729.96 in week:4
+NEW PRODUCT, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:4
+NEW PRODUCT, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:4
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+NEW PRODUCT, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:4
+
+
+UUID: f880e16c-0e21-44bd-b0e0-18f542e3e71f
+NEW ANIMAL, Goat, weight: 266.0kg, age:4 in week:2
+
+
+UUID: 7398cd0f-4a77-44a5-a0d4-890fe30b390e
+NEW ANIMAL, Goat, weight: 172.0kg, age:3 in week:1
+
+
+UUID: d6e810ce-3b6d-4590-9f82-84eff159ca70
+NEW ANIMAL, Pig, weight: 318.0kg, age:16 in week:9
+
+
+UUID: 193d7c3f-a51f-4c40-b02d-1cbf3488c3e7
+NEW ANIMAL, Chicken, weight: 1.0kg, age:9 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 3
+ANIMAL HAS BEEN PROCESSED IN WEEK: 3
+NEW MEAT, CHICKEN, amount: 0.85kg, in week: 3
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 21.18 in week:3
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 21.18 in week:3
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 21.18 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 21.18 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 21.18 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 21.18 in week:3
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:3
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:3
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
+
+
+UUID: 098ab40e-440e-4cd3-83ea-09392153f178
+NEW ANIMAL, Cow, weight: 278.0kg, age:10 in week:1
+
+
+UUID: a81483ac-371a-4424-9859-ddf3242355ac
+NEW ANIMAL, Fish, weight: 1.0kg, age:4 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 3
+ANIMAL HAS BEEN PROCESSED IN WEEK: 3
+NEW MEAT, FISH, amount: 0.85kg, in week: 3
+NEW PRODUCT, CARP, amount: 0kg, shop price: 27.53 in week:3
+PRODUCT HAS BEEN SHIPPED, CARP, shop price: 27.53 in week:3
+NEW PRODUCT, Carp 750g, amount: 750g, shop price: 420.0 in week:3
+PRODUCT HAS BEEN SHIPPED, Carp 750g, shop price: 420.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Carp 750g, amount: 750g, shop price: 420.0 in week:3
+
+
+UUID: 23d72fcf-0311-46df-adb4-752d5da8c843
+NEW ANIMAL, Goat, weight: 397.0kg, age:8 in week:5
+
+
+UUID: f1f56ef2-0308-4f53-ab82-b564edad84b2
+NEW ANIMAL, Pig, weight: 529.0kg, age:13 in week:3
+
+
+UUID: 1f3c499c-2c7f-4c0d-a2f9-d6b8bd3d8308
+NEW ANIMAL, Cow, weight: 423.0kg, age:17 in week:1
+
+
+UUID: 54f20f0f-8c7c-4b1c-be18-5fe09a2c60e0
+NEW ANIMAL, Cow, weight: 330.0kg, age:7 in week:1
+
+
+UUID: c345d552-bbcc-47d5-b624-9f8fd16ecc60
+NEW ANIMAL, Goat, weight: 367.0kg, age:14 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 3
+
+
+UUID: 47de53c7-76b0-4bee-84c1-163c2b872f96
+NEW ANIMAL, Pig, weight: 391.0kg, age:4 in week:4
+
+
+UUID: 905d91ae-e48a-45bb-8039-44dcb91fbd96
+NEW ANIMAL, Goat, weight: 325.0kg, age:12 in week:3
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 7
+
+
+UUID: a0c89ecf-99be-4526-8763-bd08691e8844
+NEW ANIMAL, Goat, weight: 156.0kg, age:1 in week:1
+
+
+UUID: 563aca9e-6635-4b17-bc42-bb1739cd42b1
+NEW ANIMAL, Fish, weight: 2.0kg, age:1 in week:1
 ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 6
 ANIMAL HAS BEEN PROCESSED IN WEEK: 6
-NEW MEAT, FISH, amount: 6.764142000000002kg, in week: 6
-NEW PRODUCT, CATFISH, amount: 0kg, shop price: 219.83461500000007 in week:6
-PRODUCT HAS BEEN SHIPPED, CATFISH, shop price: 219.83461500000007 in week:6
-NEW PRODUCT, Catfish 600g, amount: 600kg, shop price: 500.0 in week:6
+NEW MEAT, FISH, amount: 2.25kg, in week: 6
+NEW PRODUCT, CATFISH, amount: 0kg, shop price: 73.28 in week:6
+PRODUCT HAS BEEN SHIPPED, CATFISH, shop price: 73.28 in week:6
+NEW PRODUCT, Catfish 600g, amount: 600g, shop price: 500.0 in week:6
 PRODUCT HAS BEEN SHIPPED, Catfish 600g, shop price: 500.0 in week:6
 PRODUCT HAS BEEN PURCHASED, Catfish 600g, amount: 600g, shop price: 500.0 in week:6
 
 
-UUID: e5776f09-b2bc-49a7-afe6-e119c074c324
+UUID: 4b628d64-a984-4969-9525-944cf8a0f490
+NEW ANIMAL, Pig, weight: 216.0kg, age:15 in week:7
+
+
+UUID: 41e9c08b-7b33-4e40-bd9c-51512ff7f79c
+NEW ANIMAL, Goat, weight: 189.0kg, age:9 in week:9
+
+
+UUID: b67a59c7-3493-40f2-a9de-e0005c858a3f
+NEW ANIMAL, Fish, weight: 5.0kg, age:2 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 5
+ANIMAL HAS BEEN PROCESSED IN WEEK: 5
+NEW MEAT, FISH, amount: 5.12kg, in week: 5
+NEW PRODUCT, PERCH, amount: 0kg, shop price: 166.54 in week:5
+PRODUCT HAS BEEN SHIPPED, PERCH, shop price: 166.54 in week:5
+NEW PRODUCT, Perch 600g, amount: 600g, shop price: 500.0 in week:5
+PRODUCT HAS BEEN SHIPPED, Perch 600g, shop price: 500.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Perch 600g, amount: 592g, shop price: 500.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Perch 600g, amount: 592g, shop price: 500.0 in week:5
+
+
+UUID: 274a595f-1a9d-4bca-9576-b1f37febb897
+NEW ANIMAL, Pig, weight: 380.0kg, age:7 in week:1
+
+
+UUID: f692c4f8-fec9-42d2-a0b0-10db6a6904cf
+NEW ANIMAL, Goat, weight: 362.0kg, age:5 in week:1
+
+
+UUID: c40ecd5b-4f3d-40b3-9c28-e9d93adee934
+NEW ANIMAL, Chicken, weight: 3.0kg, age:6 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 6
+ANIMAL HAS BEEN PROCESSED IN WEEK: 6
+NEW MEAT, CHICKEN, amount: 3.38kg, in week: 6
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 84.55 in week:6
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 84.55 in week:6
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 84.55 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 84.55 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 84.55 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 84.55 in week:6
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:6
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:6
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:6
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 92g, shop price: 90.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 137g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 92g, shop price: 90.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 137g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:6
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:6
+
+
+UUID: 95289d2c-1ae5-45bf-8eb6-677413f6d8a8
+NEW ANIMAL, Cow, weight: 431.0kg, age:4 in week:8
+
+
+UUID: 6c44b726-9ae7-4d61-9048-3cf09cab8534
+NEW ANIMAL, Chicken, weight: 1.0kg, age:4 in week:7
+
+
+UUID: 57b8a7e0-f9aa-48e2-8916-88df3de38bff
 NEW ANIMAL, Chicken, weight: 2.0kg, age:9 in week:1
 ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 3
 ANIMAL HAS BEEN PROCESSED IN WEEK: 3
-NEW MEAT, CHICKEN, amount: 1.6940000000000002kg, in week: 3
+NEW MEAT, CHICKEN, amount: 1.69kg, in week: 3
 NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 42.35 in week:3
 NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 42.35 in week:3
 NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 42.35 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 42.35 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 42.35 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 42.35 in week:3
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:3
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:3
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:3
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:3
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:3
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:3
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:3
 PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
-
-
-UUID: 79829a45-d4ec-4ee6-a4c5-f7031bf8bd39
-NEW ANIMAL, Fish, weight: 3.0kg, age:3 in week:10
-
-
-UUID: 79d53402-f3ae-4af9-b998-b64d125fb1da
-NEW ANIMAL, Cow, weight: 450.0kg, age:30 in week:10
-
-
-UUID: 7057bc4b-fce6-4b82-a670-a950c8801709
-NEW ANIMAL, Cow, weight: 217.0kg, age:12 in week:1
-
-
-UUID: 196b8358-80f6-4b3f-922f-f9ab46923038
-NEW ANIMAL, Goat, weight: 274.0kg, age:13 in week:7
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
-
-
-UUID: f5edd65f-fba7-4375-a7c7-e7f2b5e8ef66
-NEW ANIMAL, Fish, weight: 3.0kg, age:5 in week:8
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 9
-ANIMAL HAS BEEN PROCESSED IN WEEK: 9
-NEW MEAT, FISH, amount: 2.31kg, in week: 9
-NEW PRODUCT, ZANDER, amount: 0kg, shop price: 75.075 in week:9
-PRODUCT HAS BEEN SHIPPED, ZANDER, shop price: 75.075 in week:9
-NEW PRODUCT, Zander 600g, amount: 600kg, shop price: 500.0 in week:9
-PRODUCT HAS BEEN SHIPPED, Zander 600g, shop price: 500.0 in week:9
-PRODUCT HAS BEEN PURCHASED, Zander 600g, amount: 600g, shop price: 500.0 in week:9
-
-
-UUID: a3ec90ec-13b9-420b-a6fd-d69bab520d5a
-NEW ANIMAL, Fish, weight: 3.0kg, age:5 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 2
-ANIMAL HAS BEEN PROCESSED IN WEEK: 2
-NEW MEAT, FISH, amount: 2.31kg, in week: 2
-NEW PRODUCT, CARP, amount: 0kg, shop price: 75.075 in week:2
-PRODUCT HAS BEEN SHIPPED, CARP, shop price: 75.075 in week:2
-NEW PRODUCT, Carp 750g, amount: 750kg, shop price: 420.0 in week:2
-PRODUCT HAS BEEN SHIPPED, Carp 750g, shop price: 420.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Carp 750g, amount: 750g, shop price: 420.0 in week:2
-
-
-UUID: f4b076b0-af2d-41d0-be38-f29b0e5b7bd8
-NEW ANIMAL, Cow, weight: 448.0kg, age:2 in week:10
-
-
-UUID: 3f5073e6-29ed-4d0f-b9c4-4a3db48ecdfd
-NEW ANIMAL, Fish, weight: 1.0kg, age:2 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 5
-ANIMAL HAS BEEN PROCESSED IN WEEK: 5
-NEW MEAT, FISH, amount: 1.0248700000000004kg, in week: 5
-NEW PRODUCT, BREAM, amount: 0kg, shop price: 33.308275000000016 in week:5
-PRODUCT HAS BEEN SHIPPED, BREAM, shop price: 33.308275000000016 in week:5
-NEW PRODUCT, Bream 750g, amount: 750kg, shop price: 400.0 in week:5
-PRODUCT HAS BEEN SHIPPED, Bream 750g, shop price: 400.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Bream 750g, amount: 750g, shop price: 400.0 in week:5
-
-
-UUID: 651a5e4d-4a54-4f61-bae4-26074ca302fd
-NEW ANIMAL, Cow, weight: 548.0kg, age:22 in week:2
-
-
-UUID: 16f40d4c-0349-4b5f-9a23-bb345817ef4f
-NEW ANIMAL, Chicken, weight: 1.0kg, age:9 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 3
-ANIMAL HAS BEEN PROCESSED IN WEEK: 3
-NEW MEAT, CHICKEN, amount: 0.8470000000000001kg, in week: 3
-NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 21.175 in week:3
-NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 21.175 in week:3
-NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 21.175 in week:3
-PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 21.175 in week:3
-PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 21.175 in week:3
-PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 21.175 in week:3
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:3
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:3
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:3
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
 PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:3
 PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:3
 
 
-UUID: 905de1ab-8336-4b98-8ae6-4f4113acf8b7
-NEW ANIMAL, Cow, weight: 455.0kg, age:22 in week:1
+UUID: 7c594bce-d735-4315-a2db-72cd3f393d50
+NEW ANIMAL, Chicken, weight: 3.0kg, age:2 in week:1
 ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
 ANIMAL HAS BEEN PROCESSED IN WEEK: 10
-NEW MEAT, BEEF, amount: 751.0063395835004kg, in week: 10
-NEW PRODUCT, Dumpling, amount: 93kg, shop price: 37550.316979175026 in week:10
-NEW PRODUCT, BeefShoulder, amount: 93kg, shop price: 37550.316979175026 in week:10
-NEW PRODUCT, Bovinecheek, amount: 46kg, shop price: 37550.316979175026 in week:10
-NEW PRODUCT, Beeftenderloin, amount: 41kg, shop price: 37550.316979175026 in week:10
-PRODUCT HAS BEEN SHIPPED, Dumpling, shop price: 37550.316979175026 in week:10
-PRODUCT HAS BEEN SHIPPED, BeefShoulder, shop price: 37550.316979175026 in week:10
-PRODUCT HAS BEEN SHIPPED, Bovinecheek, shop price: 37550.316979175026 in week:10
-PRODUCT HAS BEEN SHIPPED, Beeftenderloin, shop price: 37550.316979175026 in week:10
-NEW PRODUCT, Beef Dumpling 300g, amount: 300kg, shop price: 220.0 in week:10
-NEW PRODUCT, Beef Shoulder 300g, amount: 300kg, shop price: 220.0 in week:10
-NEW PRODUCT, Bovine Cheek 300g, amount: 300kg, shop price: 220.0 in week:10
-NEW PRODUCT, Beef TenderLoin 400g, amount: 400kg, shop price: 280.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Beef Dumpling 300g, shop price: 220.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Beef Shoulder 300g, shop price: 220.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Bovine Cheek 300g, shop price: 220.0 in week:10
-PRODUCT HAS BEEN SHIPPED, Beef TenderLoin 400g, shop price: 280.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:10
-
-
-UUID: a1c219a2-6692-4f95-a0b7-6794efe15342
-NEW ANIMAL, Goat, weight: 385.0kg, age:6 in week:3
-
-
-UUID: e3ddb8de-8251-4535-85d1-9dac38b66e44
-NEW ANIMAL, Goat, weight: 380.0kg, age:5 in week:4
-
-
-UUID: 20cc571d-0393-452b-86aa-051c372c221b
-NEW ANIMAL, Fish, weight: 5.0kg, age:1 in week:7
-
-
-UUID: c9af2add-e367-408e-a686-ace2282ae43c
-NEW ANIMAL, Chicken, weight: 1.0kg, age:2 in week:1
-ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
-ANIMAL HAS BEEN PROCESSED IN WEEK: 10
-NEW MEAT, CHICKEN, amount: 1.6505633837000013kg, in week: 10
-NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 41.26408459250003 in week:10
-NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 41.26408459250003 in week:10
-NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 41.26408459250003 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 41.26408459250003 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 41.26408459250003 in week:10
-PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 41.26408459250003 in week:10
-NEW PRODUCT, Chicken Thigh 100g, amount: 100kg, shop price: 90.0 in week:10
-NEW PRODUCT, Chicken Breast 150g, amount: 150kg, shop price: 120.0 in week:10
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:10
-NEW PRODUCT, Chicken Wings 150g, amount: 150kg, shop price: 120.0 in week:10
+NEW MEAT, CHICKEN, amount: 4.95kg, in week: 10
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 123.79 in week:10
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 123.79 in week:10
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 123.79 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 123.79 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 123.79 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 123.79 in week:10
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:10
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:10
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
 PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:10
 PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:10
 PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:10
 PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:10
-PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
 PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:10
 PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:10
 PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
 
 
-UUID: dfb5d068-d277-49e9-b296-9c2c5fc6ebd4
-NEW ANIMAL, Pig, weight: 428.0kg, age:5 in week:3
+UUID: 76a39603-93cf-4445-844e-0f4f6aaec74c
+NEW ANIMAL, Cow, weight: 442.0kg, age:23 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 9
+ANIMAL HAS BEEN PROCESSED IN WEEK: 9
+NEW MEAT, BEEF, amount: 663.23kg, in week: 9
+NEW PRODUCT, Dumpling, amount: 82kg, shop price: 33161.32 in week:9
+NEW PRODUCT, BeefShoulder, amount: 82kg, shop price: 33161.32 in week:9
+NEW PRODUCT, Bovinecheek, amount: 41kg, shop price: 33161.32 in week:9
+NEW PRODUCT, Beeftenderloin, amount: 36kg, shop price: 33161.32 in week:9
+PRODUCT HAS BEEN SHIPPED, Dumpling, shop price: 33161.32 in week:9
+PRODUCT HAS BEEN SHIPPED, BeefShoulder, shop price: 33161.32 in week:9
+PRODUCT HAS BEEN SHIPPED, Bovinecheek, shop price: 33161.32 in week:9
+PRODUCT HAS BEEN SHIPPED, Beeftenderloin, shop price: 33161.32 in week:9
+NEW PRODUCT, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:9
+NEW PRODUCT, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:9
+NEW PRODUCT, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:9
+NEW PRODUCT, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Beef Dumpling 300g, shop price: 220.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Beef Shoulder 300g, shop price: 220.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Bovine Cheek 300g, shop price: 220.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Beef TenderLoin 400g, shop price: 280.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Beef Dumpling 300g, amount: 300g, shop price: 220.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Beef Shoulder 300g, amount: 300g, shop price: 220.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Bovine Cheek 300g, amount: 300g, shop price: 220.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Beef TenderLoin 400g, amount: 400g, shop price: 280.0 in week:9
 
 
-UUID: 952810ce-a0d8-40fc-8a8d-604e38fb1816
-NEW ANIMAL, Goat, weight: 370.0kg, age:15 in week:1
+UUID: e99e7ee4-7226-42ab-92ba-859c9ffa25e2
+NEW ANIMAL, Goat, weight: 217.0kg, age:7 in week:5
+
+
+UUID: 58d12e03-f9b9-4025-a157-186803b3f10f
+NEW ANIMAL, Chicken, weight: 3.0kg, age:2 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
+ANIMAL HAS BEEN PROCESSED IN WEEK: 10
+NEW MEAT, CHICKEN, amount: 4.95kg, in week: 10
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 123.79 in week:10
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 123.79 in week:10
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 123.79 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 123.79 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 123.79 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 123.79 in week:10
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:10
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:10
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:10
+
+
+UUID: 7e351daa-e92a-4124-9971-4b47079c1bf4
+NEW ANIMAL, Goat, weight: 163.0kg, age:15 in week:4
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 5
+
+
+UUID: 66a6e804-df6b-4850-a3f6-4810d9d9e676
+NEW ANIMAL, Chicken, weight: 1.0kg, age:8 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 4
+ANIMAL HAS BEEN PROCESSED IN WEEK: 4
+NEW MEAT, CHICKEN, amount: 0.93kg, in week: 4
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 23.29 in week:4
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 23.29 in week:4
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 23.29 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 23.29 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 23.29 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 23.29 in week:4
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:4
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:4
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+
+
+UUID: d1c3301a-5fa3-4dbd-8186-3a557cfb6f3f
+NEW ANIMAL, Fish, weight: 5.0kg, age:3 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 4
+ANIMAL HAS BEEN PROCESSED IN WEEK: 4
+NEW MEAT, FISH, amount: 4.66kg, in week: 4
+NEW PRODUCT, EEL, amount: 0kg, shop price: 151.4 in week:4
+PRODUCT HAS BEEN SHIPPED, EEL, shop price: 151.4 in week:4
+NEW PRODUCT, Eel 800g, amount: 800g, shop price: 500.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Eel 800g, shop price: 500.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Eel 800g, amount: 800g, shop price: 500.0 in week:4
+
+
+UUID: 3e861de0-8192-454a-b3e9-02a0d02c7e09
+NEW ANIMAL, Pig, weight: 336.0kg, age:14 in week:4
+
+
+UUID: d10bc4d2-66b1-406e-af73-9d987bfe5dc1
+NEW ANIMAL, Pig, weight: 288.0kg, age:6 in week:7
+
+
+UUID: b432cf61-a3c7-493d-9e62-42ac8ce5f051
+NEW ANIMAL, Pig, weight: 380.0kg, age:20 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 2
+ANIMAL HAS BEEN PROCESSED IN WEEK: 2
+NEW MEAT, PORK, amount: 292.6kg, in week: 2
+NEW PRODUCT, Pork dumpling, amount: 36kg, shop price: 10972.5 in week:2
+NEW PRODUCT, Pork roast, amount: 36kg, shop price: 10972.5 in week:2
+NEW PRODUCT, Pork leg, amount: 18kg, shop price: 10972.5 in week:2
+NEW PRODUCT, Pork flank, amount: 18kg, shop price: 10972.5 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 10972.5 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 10972.5 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 10972.5 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 10972.5 in week:2
+NEW PRODUCT, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:2
+NEW PRODUCT, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:2
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+NEW PRODUCT, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:2
+
+
+UUID: 36ddbc07-a9ba-43c7-bd3c-0ba4ddcb0e20
+NEW ANIMAL, Cow, weight: 574.0kg, age:26 in week:10
+
+
+UUID: 16447e64-8ff0-4b66-ae24-2a6085e9d4cd
+NEW ANIMAL, Pig, weight: 540.0kg, age:12 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
+ANIMAL HAS BEEN PROCESSED IN WEEK: 10
+NEW MEAT, PORK, amount: 891.3kg, in week: 10
+NEW PRODUCT, Pork dumpling, amount: 111kg, shop price: 33423.91 in week:10
+NEW PRODUCT, Pork roast, amount: 111kg, shop price: 33423.91 in week:10
+NEW PRODUCT, Pork leg, amount: 55kg, shop price: 33423.91 in week:10
+NEW PRODUCT, Pork flank, amount: 55kg, shop price: 33423.91 in week:10
+PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 33423.91 in week:10
+PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 33423.91 in week:10
+PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 33423.91 in week:10
+PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 33423.91 in week:10
+NEW PRODUCT, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:10
+NEW PRODUCT, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:10
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:10
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:10
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:10
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:10
+NEW PRODUCT, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:10
+
+
+UUID: a8e3638a-27e3-413b-ad05-913cb968f837
+NEW ANIMAL, Chicken, weight: 2.0kg, age:9 in week:9
+
+
+UUID: 4f4c057f-7a5e-46fe-b505-ce30b9cba5ba
+NEW ANIMAL, Pig, weight: 261.0kg, age:10 in week:1
+
+
+UUID: 3aa38bd4-6612-4c1f-8b68-362a5e4aefa5
+NEW ANIMAL, Chicken, weight: 3.0kg, age:8 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 4
+ANIMAL HAS BEEN PROCESSED IN WEEK: 4
+NEW MEAT, CHICKEN, amount: 2.8kg, in week: 4
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 69.88 in week:4
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 69.88 in week:4
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 69.88 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 69.88 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 69.88 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 69.88 in week:4
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:4
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:4
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:4
+
+
+UUID: 58664376-35da-4acf-bfcc-962b5a3be100
+NEW ANIMAL, Chicken, weight: 2.0kg, age:6 in week:9
+
+
+UUID: 10c695d3-f598-4268-89a4-2dd08eeb90a0
+NEW ANIMAL, Fish, weight: 2.0kg, age:1 in week:5
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 10
+ANIMAL HAS BEEN PROCESSED IN WEEK: 10
+NEW MEAT, FISH, amount: 2.25kg, in week: 10
+NEW PRODUCT, ZANDER, amount: 0kg, shop price: 73.28 in week:10
+PRODUCT HAS BEEN SHIPPED, ZANDER, shop price: 73.28 in week:10
+NEW PRODUCT, Zander 600g, amount: 600g, shop price: 500.0 in week:10
+PRODUCT HAS BEEN SHIPPED, Zander 600g, shop price: 500.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Zander 600g, amount: 600g, shop price: 500.0 in week:10
+
+
+UUID: f7022c65-ede8-4961-93b6-f24d6619ccd6
+NEW ANIMAL, Goat, weight: 182.0kg, age:5 in week:10
+
+
+UUID: 07deed57-137e-4cc9-80e7-a92fbf99ffb3
+NEW ANIMAL, Goat, weight: 368.0kg, age:15 in week:1
 ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 2
 
 
-UUID: fd1a53b5-a00a-4595-8967-7776d843cb8f
-NEW ANIMAL, Fish, weight: 3.0kg, age:2 in week:4
+UUID: f6a5e555-a789-4e0e-b5a0-5b8f87a87f2c
+NEW ANIMAL, Chicken, weight: 3.0kg, age:3 in week:8
+
+
+UUID: bb4cbe87-b02e-47a0-93b6-8cff84c86124
+NEW ANIMAL, Pig, weight: 205.0kg, age:19 in week:5
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 7
+ANIMAL HAS BEEN PROCESSED IN WEEK: 7
+NEW MEAT, PORK, amount: 173.64kg, in week: 7
+NEW PRODUCT, Pork dumpling, amount: 21kg, shop price: 6511.31 in week:7
+NEW PRODUCT, Pork roast, amount: 21kg, shop price: 6511.31 in week:7
+NEW PRODUCT, Pork leg, amount: 10kg, shop price: 6511.31 in week:7
+NEW PRODUCT, Pork flank, amount: 10kg, shop price: 6511.31 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 6511.31 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 6511.31 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 6511.31 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 6511.31 in week:7
+NEW PRODUCT, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:7
+NEW PRODUCT, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:7
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+NEW PRODUCT, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:7
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:7
+
+
+UUID: 092c4618-bec6-4b04-a1ec-a5056a5250af
+NEW ANIMAL, Pig, weight: 407.0kg, age:11 in week:5
+
+
+UUID: 405dcf7b-bed5-4418-8dd5-6b013ee7563a
+NEW ANIMAL, Goat, weight: 351.0kg, age:3 in week:1
+
+
+UUID: 255f6f77-5fdc-413c-bbb5-49af0957bd61
+NEW ANIMAL, Pig, weight: 165.0kg, age:12 in week:9
+
+
+UUID: 77b7de3a-a480-4145-97d7-81c8cf4499f9
+NEW ANIMAL, Pig, weight: 346.0kg, age:4 in week:1
+
+
+UUID: 2320c84f-991a-493e-a6b6-c0c5218b5c5f
+NEW ANIMAL, Fish, weight: 2.0kg, age:2 in week:4
 ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 8
 ANIMAL HAS BEEN PROCESSED IN WEEK: 8
-NEW MEAT, FISH, amount: 3.0746100000000007kg, in week: 8
-NEW PRODUCT, EEL, amount: 0kg, shop price: 99.92482500000003 in week:8
-PRODUCT HAS BEEN SHIPPED, EEL, shop price: 99.92482500000003 in week:8
-NEW PRODUCT, Eel 800g, amount: 800kg, shop price: 500.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Eel 800g, shop price: 500.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Eel 800g, amount: 800g, shop price: 500.0 in week:8
+NEW MEAT, FISH, amount: 2.05kg, in week: 8
+NEW PRODUCT, ZANDER, amount: 0kg, shop price: 66.62 in week:8
+PRODUCT HAS BEEN SHIPPED, ZANDER, shop price: 66.62 in week:8
+NEW PRODUCT, Zander 600g, amount: 600g, shop price: 500.0 in week:8
+PRODUCT HAS BEEN SHIPPED, Zander 600g, shop price: 500.0 in week:8
+PRODUCT HAS BEEN PURCHASED, Zander 600g, amount: 600g, shop price: 500.0 in week:8
 
 
-UUID: b9b4fc65-8081-40d2-abeb-e2b5eea3e78f
-NEW ANIMAL, Chicken, weight: 1.0kg, age:4 in week:10
+UUID: cb2076b1-a33d-4840-847e-3c98a75680b0
+NEW ANIMAL, Goat, weight: 157.0kg, age:4 in week:4
 
 
-UUID: ad18fe7a-be2e-42d1-8404-60503a7e404d
-NEW ANIMAL, Fish, weight: 6.0kg, age:2 in week:4
+UUID: 008989d9-ae85-4893-8e06-6dca78c03da4
+NEW ANIMAL, Chicken, weight: 1.0kg, age:10 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 2
+ANIMAL HAS BEEN PROCESSED IN WEEK: 2
+NEW MEAT, CHICKEN, amount: 0.77kg, in week: 2
+NEW PRODUCT, Chicken thigh, amount: 0kg, shop price: 19.25 in week:2
+NEW PRODUCT, Chicken breast, amount: 0kg, shop price: 19.25 in week:2
+NEW PRODUCT, Chicken wings, amount: 0kg, shop price: 19.25 in week:2
+PRODUCT HAS BEEN SHIPPED, Chicken thigh, shop price: 19.25 in week:2
+PRODUCT HAS BEEN SHIPPED, Chicken breast, shop price: 19.25 in week:2
+PRODUCT HAS BEEN SHIPPED, Chicken wings, shop price: 19.25 in week:2
+NEW PRODUCT, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:2
+NEW PRODUCT, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:2
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:2
+NEW PRODUCT, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Chicken Thigh 100g, shop price: 90.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Chicken Breast 150g, shop price: 120.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Chicken Wings 150g, shop price: 120.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Chicken Thigh 100g, amount: 100g, shop price: 90.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Chicken Breast 150g, amount: 150g, shop price: 120.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Chicken Wings 150g, amount: 150g, shop price: 120.0 in week:2
+
+
+UUID: c3cfc200-ea1f-423f-865d-ead627e7836d
+NEW ANIMAL, Chicken, weight: 3.0kg, age:1 in week:1
+
+
+UUID: 54ec2a4c-1cf6-4a7e-b95e-565c1dcbde10
+NEW ANIMAL, Pig, weight: 252.0kg, age:20 in week:3
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 4
+ANIMAL HAS BEEN PROCESSED IN WEEK: 4
+NEW MEAT, PORK, amount: 194.04kg, in week: 4
+NEW PRODUCT, Pork dumpling, amount: 24kg, shop price: 7276.5 in week:4
+NEW PRODUCT, Pork roast, amount: 24kg, shop price: 7276.5 in week:4
+NEW PRODUCT, Pork leg, amount: 12kg, shop price: 7276.5 in week:4
+NEW PRODUCT, Pork flank, amount: 12kg, shop price: 7276.5 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 7276.5 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 7276.5 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 7276.5 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 7276.5 in week:4
+NEW PRODUCT, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:4
+NEW PRODUCT, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:4
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+NEW PRODUCT, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:4
+
+
+UUID: 10821c82-4949-4004-81c1-6b2d7d7e592e
+NEW ANIMAL, Goat, weight: 254.0kg, age:14 in week:6
 ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 8
-ANIMAL HAS BEEN PROCESSED IN WEEK: 8
-NEW MEAT, FISH, amount: 6.1492200000000015kg, in week: 8
-NEW PRODUCT, EEL, amount: 0kg, shop price: 199.84965000000005 in week:8
-PRODUCT HAS BEEN SHIPPED, EEL, shop price: 199.84965000000005 in week:8
-NEW PRODUCT, Eel 800g, amount: 800kg, shop price: 500.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Eel 800g, shop price: 500.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Eel 800g, amount: 800g, shop price: 500.0 in week:8
 
 
-UUID: 9d61c43f-a1bc-40d8-a01a-b563187132cc
-NEW ANIMAL, Cow, weight: 463.0kg, age:27 in week:10
+UUID: 5c2aa98b-2ebe-4b3a-9a11-e6825b449a0a
+NEW ANIMAL, Cow, weight: 362.0kg, age:22 in week:8
+
+
+UUID: 971dbeb4-45b9-4764-95c5-430dde40b605
+NEW ANIMAL, Pig, weight: 189.0kg, age:13 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 9
+ANIMAL HAS BEEN PROCESSED IN WEEK: 9
+NEW MEAT, PORK, amount: 283.6kg, in week: 9
+NEW PRODUCT, Pork dumpling, amount: 35kg, shop price: 10634.88 in week:9
+NEW PRODUCT, Pork roast, amount: 35kg, shop price: 10634.88 in week:9
+NEW PRODUCT, Pork leg, amount: 17kg, shop price: 10634.88 in week:9
+NEW PRODUCT, Pork flank, amount: 17kg, shop price: 10634.88 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 10634.88 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 10634.88 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 10634.88 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 10634.88 in week:9
+NEW PRODUCT, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:9
+NEW PRODUCT, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:9
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+NEW PRODUCT, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:9
+
+
+UUID: e064a5fa-0d43-427c-9a13-d12b1c328557
+NEW ANIMAL, Goat, weight: 275.0kg, age:3 in week:1
+
+
+UUID: 51ef7a95-9960-4db0-b12a-070694d27ea8
+NEW ANIMAL, Cow, weight: 464.0kg, age:10 in week:1
+
+
+UUID: 95329dcc-d65a-4fb4-88da-c08543228d90
+NEW ANIMAL, Pig, weight: 579.0kg, age:13 in week:1
+ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: 9
+ANIMAL HAS BEEN PROCESSED IN WEEK: 9
+NEW MEAT, PORK, amount: 868.8kg, in week: 9
+NEW PRODUCT, Pork dumpling, amount: 108kg, shop price: 32579.87 in week:9
+NEW PRODUCT, Pork roast, amount: 108kg, shop price: 32579.87 in week:9
+NEW PRODUCT, Pork leg, amount: 54kg, shop price: 32579.87 in week:9
+NEW PRODUCT, Pork flank, amount: 54kg, shop price: 32579.87 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork dumpling, shop price: 32579.87 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork roast, shop price: 32579.87 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork leg, shop price: 32579.87 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork flank, shop price: 32579.87 in week:9
+NEW PRODUCT, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:9
+NEW PRODUCT, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:9
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+NEW PRODUCT, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+NEW PRODUCT, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Dumpling 300g, shop price: 150.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Roast 300g, shop price: 160.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Leg 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN SHIPPED, Pork Flank 200g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Dumpling 300g, amount: 300g, shop price: 150.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Roast 300g, amount: 300g, shop price: 160.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Leg 400g, amount: 400g, shop price: 180.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Pork Flank 200g, amount: 200g, shop price: 180.0 in week:9
 
 

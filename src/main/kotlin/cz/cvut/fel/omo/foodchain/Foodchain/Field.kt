@@ -1,6 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain
 
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
+import cz.cvut.fel.omo.foodchain.Foodchain.statics.Config
 import java.util.*
 import kotlin.math.roundToInt
 
@@ -55,7 +56,7 @@ class Field(private var crop: Crop, private val capacity: Int) {
      */
     fun resetField() {
         val generator = Generator()
-        this.crop = generator.generateCrop(1)
+        this.crop = generator.generateCrop((Config.FIELD_CAPACITY_MIN..Config.FIELD_CAPACITY_MAX).random())
     }
 
     /**

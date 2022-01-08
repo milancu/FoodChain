@@ -12,7 +12,6 @@ enum class AnimalType {
     COW,
     PIG,
     CHICKEN,
-    GOAT,
     FISH;
 
     companion object {

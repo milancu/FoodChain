@@ -60,13 +60,6 @@ class Animal(animalType: AnimalType) : Subject, Context {
                 this.price = 100.00
                 this.animalName = "Chicken"
             }
-            AnimalType.GOAT -> {
-                this.weight = (150..400).random().toDouble()
-                this.foodConsumption = (5..8).random()
-                this.age = (1..15).random()
-                this.price = 900.00
-                this.animalName = "Goat"
-            }
             AnimalType.FISH -> {
                 this.weight = (1..6).random().toDouble()
                 this.foodConsumption = (1..5).random()

@@ -22,7 +22,8 @@ open class Product(
     private var amount: Int,
     private var unit: String,
     private var origin: UUID,
-    private var state : State
+    private var state : State,
+    private var age : Int = 0
 ) : Subject, Context {
 
     private var observers: ArrayList<Observer> = ArrayList()
@@ -122,6 +123,13 @@ open class Product(
         }
     }
 
+    open fun notifySpoiled(){
+        for (i in observers) {
+            i.update(this.origin,
+                "THE REST OF PRODUCT WAS SPOILED, in week:" + Week.acutalWeek)
+        }
+    }
+
     /**
      * Decrease amount
      *
@@ -135,11 +143,15 @@ open class Product(
         this.state = state
     }
 
-/*    fun changeState() {
-        this.state.changeToNextState()
-    }*/
-
     fun getState() : State{
         return state
+    }
+
+    fun getAge() : Int{
+        return age
+    }
+
+    fun increaseAge(){
+        this.age++;
     }
 }

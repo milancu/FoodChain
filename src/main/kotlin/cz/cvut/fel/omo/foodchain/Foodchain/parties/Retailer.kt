@@ -3,8 +3,12 @@ package cz.cvut.fel.omo.foodchain.Foodchain.parties
 import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
+import cz.cvut.fel.omo.foodchain.Foodchain.states.Context
+import cz.cvut.fel.omo.foodchain.Foodchain.states.SpoiledState
+import cz.cvut.fel.omo.foodchain.Foodchain.statics.Config
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
+import kotlin.system.exitProcess
 
 /**
  * Retailer
@@ -157,4 +161,27 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
     fun refreshAvailableProducts(products: ArrayList<Product>){
         this.availableProducts = products
     }
+
+    fun checkResources(){
+        var toRemove : ArrayList<Product> = ArrayList()
+        for(product : Product in availableProducts){
+            product.increaseAge()
+            if(product.getAge() >= Config.TIME_OF_PRODUCT_LIFE){
+                logger.info("" + product.getProductType() + " " + product.getName() + " se zkazil a byl vyhozen")
+                product.notifySpoiled()
+                product.setState(SpoiledState(product.getState().getContext(), product.getOriginId()))
+                toRemove.add(product)
+            }
+        }
+        removeProducts(availableProducts, toRemove)
+    }
+
+    private fun removeProducts(original : ArrayList<Product>, toRemove : ArrayList<Product>) : ArrayList<Product>{
+        for(product in toRemove){
+            original.remove(product)
+        }
+        return original
+    }
+
+
 }

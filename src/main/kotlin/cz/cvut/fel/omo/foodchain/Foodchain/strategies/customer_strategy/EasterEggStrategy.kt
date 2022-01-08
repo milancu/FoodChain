@@ -35,7 +35,6 @@ class EasterEggStrategy : CustomerStrategy {
         }
         val productsToReturn = removeProducts(products, toRemove)
         return Pair(spended, productsToReturn)
-        /*return spended*/
     }
 
     /**

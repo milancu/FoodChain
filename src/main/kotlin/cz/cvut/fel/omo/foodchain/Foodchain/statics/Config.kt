@@ -45,5 +45,7 @@ class Config {
         const val LOCATION_LENGTH = 16
 
         const val TRANSPORT_TAX = 0.1
+
+        const val TIME_OF_PRODUCT_LIFE = 6
     }
 }

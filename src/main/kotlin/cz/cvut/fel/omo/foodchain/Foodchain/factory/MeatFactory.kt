@@ -102,7 +102,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
                 FishType.PERCH.toString() -> productToSell.add(packagePerch(meat))
             }
         }
-        meatsForProducts.clear();
+        meatsForProducts.clear()
     }
 
     /**

@@ -33,7 +33,7 @@ object Report : Observer, Export {
     }
 
     fun getReports(): HashMap<UUID, ArrayList<String>> {
-        return reports;
+        return reports
     }
 
     fun getAnimals() : HashMap<UUID, ArrayList<String>>{

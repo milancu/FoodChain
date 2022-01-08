@@ -25,10 +25,7 @@ open class Product(
 ) : Subject, Context {
 
     private var observers: ArrayList<Observer> = ArrayList()
-
     private var productType: ProductType = ProductType.NOTSET
-    private var uuid: UUID = UUID.randomUUID()
-    private var createdAt : Int = Week.acutalWeek
 
     /**
      * Get origin id
@@ -140,6 +137,6 @@ open class Product(
     }
 
     fun increaseAge(){
-        this.age++;
+        this.age++
     }
 }

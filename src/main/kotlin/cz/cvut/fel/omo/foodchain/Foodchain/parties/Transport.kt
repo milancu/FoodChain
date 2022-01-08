@@ -11,6 +11,7 @@ import kotlin.collections.ArrayList
  *
  * @constructor Create empty Transport
  */
+@Suppress("JAVA_CLASS_ON_COMPANION")
 class Transport{
 
     companion object TransportCompany {
@@ -76,7 +77,7 @@ class Transport{
             if(supplies.size == 0) return
             for(supply in supplies){
                 this.cropSupplies.add(supply)
-                supply.notifyTransport();
+                supply.notifyTransport()
             }
         }
 
@@ -88,7 +89,7 @@ class Transport{
         fun takeProducts(products : ArrayList<Product>){
             for(product in products){
                 this.products.add(product)
-                product.notifyTransport();
+                product.notifyTransport()
             }
         }
 
@@ -102,7 +103,7 @@ class Transport{
             logger.info("transport prebira masa : " + meats.size)
             for(meat in meats){
                 this.meats.add(meat)
-                meat.notifyTransport();
+                meat.notifyTransport()
             }
             logger.info("Transport prevzal masa : " + this.meats.size)
         }

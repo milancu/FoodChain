@@ -17,7 +17,7 @@ open class BaseParty(
 ) {
 
     private val identifier : UUID = UUID.randomUUID()
-    protected var unpaidInvoices : ArrayList<Invoice> = ArrayList()
+    private var unpaidInvoices : ArrayList<Invoice> = ArrayList()
     protected var debts : ArrayList<Invoice> = ArrayList()
 
     private val logger = LoggerFactory.getLogger(javaClass)

@@ -166,7 +166,7 @@ class Request {
             retailer.fillIn()
         }
 
-        fun proccesTheInvoice(invoice : Invoice, party : BaseParty){
+        private fun proccesTheInvoice(invoice : Invoice, party : BaseParty){
             Invoices.invoices.add(invoice)
             invoice.attach(Report)
             invoice.notifyUpdate()

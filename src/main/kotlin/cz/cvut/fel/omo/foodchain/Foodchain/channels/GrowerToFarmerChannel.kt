@@ -35,7 +35,7 @@ class GrowerToFarmerChannel(private var growers: ArrayList<Grower>, private var 
      *
      * @return
      */
-    fun findCorrectSupplier() : Grower{
+    private fun findCorrectSupplier() : Grower{
         for(grower in growers){
             for(crop in grower.getSupplies()){
                 if(crop.getType() == CropType.CEREAL){

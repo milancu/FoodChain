@@ -10,6 +10,10 @@ import java.util.*
 /**
  * Invoice
  *
+ * @property subscriber
+ * @property contractor
+ * @property price
+ * @property note
  * @constructor Create empty Invoice
  */
 class Invoice(// odberatel
@@ -113,7 +117,7 @@ class Invoice(// odberatel
 
     override fun notifyUpdate() {
         for (i in observers) {
-            i.update(this.code, "NEW INVOICE, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + this.price + ", in week:" + Week.acutalWeek)
+            i.update(this.code, "NEW INVOICE, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + Math.round(this.price * 100.0) / 100.0  + ", in week:" + Week.acutalWeek)
         }
     }
 
@@ -123,7 +127,7 @@ class Invoice(// odberatel
      */
     fun notifyPaid(){
         for (i in observers) {
-            i.update(this.code, "INVOICE HAS BEEN PAID, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + this.price + ", in week:" + Week.acutalWeek)
+            i.update(this.code, "INVOICE HAS BEEN PAID, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + Math.round(this.price * 100.0) / 100.0 + ", in week:" + Week.acutalWeek)
         }
     }
 
@@ -133,7 +137,7 @@ class Invoice(// odberatel
      */
     fun notifyUnpaid(){
         for (i in observers) {
-            i.update(this.code, "INVOICE HAS NOT BEEN PAID, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + this.price)
+            i.update(this.code, "INVOICE HAS NOT BEEN PAID, Subsriber: " + this.subscriber.getIdentifier() + ", Contractor: " + this.contractor.getIdentifier() + ", price: " + Math.round(this.price * 100.0) / 100.0)
         }
     }
 }

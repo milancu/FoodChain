@@ -130,7 +130,7 @@ class Crop(
 
     override fun notifyUpdate() {
         for (i in observers) {
-            i.update(this.uuid, "NEW CROP, " + this.name + ", amount: " + this.amount + "g, in week: " + Week.acutalWeek)
+            i.update(this.uuid, "NEW CROP, " + this.name + ", amount: " + this.amount + "kg, in week: " + Week.acutalWeek)
         }
     }
 
@@ -147,7 +147,7 @@ class Crop(
     fun notifyTransport() {
         for (i in observers) {
             i.update(this.uuid,
-                "CROPT HAS BEEN SHIPPED, " + this.name + ", amount: " + this.amount + "g, in week:" + Week.acutalWeek)
+                "CROPT HAS BEEN SHIPPED, " + this.name + ", amount: " + this.amount + "kg, in week:" + Week.acutalWeek)
         }
     }
 

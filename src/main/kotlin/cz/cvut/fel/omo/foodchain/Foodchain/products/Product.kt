@@ -98,21 +98,21 @@ open class Product(
     override fun notifyUpdate() {
         for (i in observers) {
             i.update(this.origin,
-                "NEW PRODUCT, " + this.name + ", amount: " + this.amount + "kg, shop price: " + this.shopPrice + " in week:" + Week.acutalWeek)
+                "NEW PRODUCT, " + this.name + ", amount: " + this.amount + this.unit + ", shop price: " + Math.round(this.shopPrice * 100.0) / 100.0 + " in week:" + Week.acutalWeek)
         }
     }
 
     open fun notifyTransport() {
         for (i in observers) {
             i.update(this.origin,
-                "PRODUCT HAS BEEN SHIPPED, " + this.name + ", shop price: " + this.shopPrice + " in week:" + Week.acutalWeek)
+                "PRODUCT HAS BEEN SHIPPED, " + this.name + ", shop price: " + Math.round(this.shopPrice * 100.0) / 100.0 + " in week:" + Week.acutalWeek)
         }
     }
 
     open fun notifyPurchased(amount :Int){
         for (i in observers) {
             i.update(this.origin,
-                "PRODUCT HAS BEEN PURCHASED, " + this.name + ", amount: " + amount.toString() + "g, shop price: " + this.shopPrice + " in week:" + Week.acutalWeek)
+                "PRODUCT HAS BEEN PURCHASED, " + this.name + ", amount: " + amount.toString() + this.unit + ", shop price: " + Math.round(this.shopPrice * 100.0) / 100.0 + " in week:" + Week.acutalWeek)
         }
     }
 

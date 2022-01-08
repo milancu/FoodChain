@@ -1,1870 +1,1537 @@
-UUID: fb81b859-1f09-4c44-8cde-721b7ca812f8
-NEW CROP, POTATO, amount: 1g, in week: 9
+UUID: c9d79aa7-12ca-4379-8cb7-e9b9fc0b2fc4
+NEW CROP, TOMATO, amount: 113kg, in week: 7
 
 
-UUID: be87ca35-27a6-4246-b810-b53aa59fb3e6
-NEW CROP, SUGARBEAT, amount: 451g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 7
-CROPT HAS BEEN SHIPPED, SUGARBEAT, amount: 451g, in week:8
-NEW PRODUCT, Suggar, amount: 293kg, shop price: 42.547200000000004 in week:8
-PRODUCT HAS BEEN SHIPPED, Suggar, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 283g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 281g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 271g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 269g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 267g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 265g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 251g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 201g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 199g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 189g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 179g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 169g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 156g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 154g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 104g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 54g, shop price: 42.547200000000004 in week:9
-PRODUCT HAS BEEN PURCHASED, Suggar, amount: 4g, shop price: 42.547200000000004 in week:9
-PRODUCT WAS SOLD OUT, in week:9
+UUID: 450bed95-8cfb-46ed-8524-ae4879dc523f
+NEW CROP, LENTIL, amount: 223kg, in week: 1
+CROPT HAS BEEN SHIPPED, LENTIL, amount: 223kg, in week:1
+NEW PRODUCT, Can of LENTIL, amount: 178kg, shop price: 7.0 in week:1
+PRODUCT HAS BEEN SHIPPED, Can of LENTIL, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 164kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 154kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 104kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 102kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 100kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 90kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 88kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 86kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 84kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 82kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 72kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 62kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 60kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 58kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 51kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 41kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 39kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 31kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 21kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 19kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 9kg, shop price: 7.0 in week:4
+PRODUCT WAS SOLD OUT, in week:4
 
 
-UUID: c5951e92-74f1-4a2a-8b04-33d23f92c89b
-NEW CROP, SUGARBEAT, amount: 927g, in week: 3
+UUID: d148a88e-adc2-4384-8e3b-995c314763a8
+NEW CROP, HOP, amount: 238kg, in week: 3
 
 
-UUID: 3a202209-cf9d-4088-8636-d508555e5b5f
-NEW CROP, SUGARBEAT, amount: 784g, in week: 6
+UUID: 4312c735-5123-4633-9b30-d483bb848309
+NEW CROP, ONION, amount: 503kg, in week: 9
 
 
-UUID: 825262b1-1263-40ef-8240-7388f2b35310
-NEW CROP, SUGARBEAT, amount: 203g, in week: 4
-
-
-UUID: 19f8aa43-69f9-4e3a-be8a-59e8f8cac9d5
-NEW CROP, LENTIL, amount: 321g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 1
-CROPT HAS BEEN SHIPPED, LENTIL, amount: 321g, in week:2
-NEW PRODUCT, RawLENTIL, amount: 321kg, shop price: 6.0 in week:2
-PRODUCT HAS BEEN SHIPPED, RawLENTIL, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 311g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 261g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 259g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 249g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 247g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 245g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 243g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 193g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 143g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 141g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 131g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 121g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 111g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 61g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 59g, shop price: 6.0 in week:3
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 9g, shop price: 6.0 in week:3
-PRODUCT WAS SOLD OUT, in week:3
-
-
-UUID: ec6a0313-aebf-4c82-ace2-557f23c1451e
-NEW CROP, LENTIL, amount: 342g, in week: 9
-
-
-UUID: 557e14a1-a6b1-48b7-a778-cd73f8e00335
-NEW CROP, CUCCUMBER, amount: 320g, in week: 4
-
-
-UUID: 471872eb-35b4-458b-b839-beca56c8c9ff
-NEW CROP, POTATO, amount: 1g, in week: 2
-
-
-UUID: 503c5ece-f74b-462b-a6b6-2e816ea7df0a
-NEW CROP, OATS, amount: 388g, in week: 6
-
-
-UUID: 36510e22-e216-40e5-8595-02219576024b
-NEW CROP, ONION, amount: 509g, in week: 2
-
-
-UUID: f7b46480-9c49-4233-91cb-8d88e387ee83
-NEW CROP, POPPY, amount: 621g, in week: 10
-
-
-UUID: 0b4415a4-e3f3-47d6-8033-019225de04b6
-NEW CROP, HEMP, amount: 693g, in week: 1
+UUID: 196fc4b3-9ee1-474c-8433-998b4903aec1
+NEW CROP, CUCCUMBER, amount: 1kg, in week: 2
 CROP HAS BEEN HARVESTED IN WEEK: 4
-CROPT HAS BEEN SHIPPED, HEMP, amount: 693g, in week:5
-NEW PRODUCT, Hemp oil, amount: 69kg, shop price: 124.0 in week:5
-PRODUCT HAS BEEN SHIPPED, Hemp oil, shop price: 124.0 in week:6
-PRODUCT HAS BEEN PURCHASED, Hemp oil, amount: 19g, shop price: 124.0 in week:6
-PRODUCT HAS BEEN PURCHASED, Hemp oil, amount: 9g, shop price: 124.0 in week:6
+CROPT HAS BEEN SHIPPED, CUCCUMBER, amount: 1kg, in week:5
+NEW PRODUCT, CUCCUMBER, amount: 1kg, shop price: 16.8 in week:5
+PRODUCT HAS BEEN SHIPPED, CUCCUMBER, shop price: 16.8 in week:6
 PRODUCT WAS SOLD OUT, in week:6
 
 
-UUID: adfde8c5-ad75-4863-a833-642f28d682e8
-NEW CROP, OATS, amount: 622g, in week: 1
+UUID: 93160f34-d63a-43dc-be95-1b9f08649aa5
+NEW CROP, HOP, amount: 746kg, in week: 7
 
 
-UUID: 959671d6-ea0d-4ce9-82e2-56bbfbcd0d3e
-NEW CROP, SALAD, amount: 1g, in week: 8
+UUID: 24748f21-5943-4345-a910-43ce2e40a7dc
+NEW CROP, HOP, amount: 937kg, in week: 3
 
 
-UUID: 39d06ddb-0a9a-45b6-b82a-50e57e93ed6b
-NEW CROP, TOMATO, amount: 102g, in week: 1
+UUID: 96f40f64-e7fd-4b12-85a8-b13f31060efc
+NEW CROP, HOP, amount: 603kg, in week: 3
 
 
-UUID: 7953f228-796d-43ea-8c1c-7ca7c1036654
-NEW CROP, GRAPEVINE, amount: 613g, in week: 1
-CROPT HAS BEEN SHIPPED, GRAPEVINE, amount: 613g, in week:1
-NEW PRODUCT, GRAPEVINE, amount: 613kg, shop price: 68.6 in week:1
-PRODUCT HAS BEEN SHIPPED, GRAPEVINE, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 603g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 553g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 551g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 541g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 539g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 537g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 535g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 485g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 435g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 433g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 423g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 413g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 403g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 397g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 395g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 345g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 333g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 325g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 315g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 307g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 297g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 295g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 293g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 283g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 281g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 271g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 261g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 247g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 237g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 227g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 213g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 203g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 197g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 187g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 177g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 167g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 117g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 105g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 103g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 98g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 96g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 94g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 92g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 82g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 75g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 65g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 55g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 45g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 35g, shop price: 68.6 in week:2
-PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 33g, shop price: 68.6 in week:2
-PRODUCT WAS SOLD OUT, in week:2
+UUID: a3a115e1-22f8-424f-a053-daf291bc87f9
+NEW CROP, WHEET, amount: 910kg, in week: 2
 
 
-UUID: dec11954-11b2-4ae7-915f-d7c2bc8da2c1
-NEW CROP, BARLEY, amount: 1g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 4
+UUID: 1d823229-3523-4ed1-b6ae-20af0a8aa4c6
+NEW CROP, CORN, amount: 116kg, in week: 5
 
 
-UUID: c6cdc87a-67d7-41af-ab19-e399ce541609
-NEW CROP, BARLEY, amount: 776g, in week: 8
+UUID: 0aa4401a-158e-4c55-b7f5-3b0d3cbc6b3b
+NEW CROP, HEMP, amount: 954kg, in week: 2
 
 
-UUID: d4ef25e9-3c06-4e46-a8af-e1154c4e56a5
-NEW CROP, WHEET, amount: 725g, in week: 1
+UUID: 5b304586-e14d-49c1-91ec-34e44f7b0857
+NEW CROP, ONION, amount: 193kg, in week: 2
 
 
-UUID: 566c823e-de22-467e-bb64-0a34c9a778e1
-NEW CROP, FLEX, amount: 510g, in week: 6
+UUID: 47f4f10c-e904-4b7f-a38e-af88236b7bf1
+NEW CROP, ONION, amount: 148kg, in week: 5
 
 
-UUID: 9494d7ec-1cc0-46bf-9b1e-3bc0c927fee4
-NEW CROP, CHERRIES, amount: 757g, in week: 6
+UUID: ec72a36d-1051-4742-b03b-b6c84f0767e7
+NEW CROP, HOP, amount: 212kg, in week: 2
 
 
-UUID: db7dd903-82b5-48fc-be97-959ac56f624e
-NEW CROP, ONION, amount: 916g, in week: 2
+UUID: ff8438e7-06e7-49ab-885f-1101287c4d2b
+NEW CROP, CHERRIES, amount: 316kg, in week: 7
 
 
-UUID: 1801f8df-6f41-4f1f-8432-4055c989eb73
-NEW CROP, OILSEED, amount: 215g, in week: 1
-CROPT HAS BEEN SHIPPED, OILSEED, amount: 215g, in week:1
-NEW PRODUCT, Oilseed oil, amount: 161kg, shop price: 56.0 in week:1
-PRODUCT HAS BEEN SHIPPED, Oilseed oil, shop price: 56.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 151g, shop price: 56.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 101g, shop price: 56.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 99g, shop price: 56.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 89g, shop price: 56.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 87g, shop price: 56.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 85g, shop price: 56.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 83g, shop price: 56.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 69g, shop price: 56.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 19g, shop price: 56.0 in week:2
-PRODUCT WAS SOLD OUT, in week:2
+UUID: 2c832bbc-ddf1-4a30-8f3b-01cad2397811
+NEW CROP, HEMP, amount: 628kg, in week: 8
 
 
-UUID: a5815b07-eaf6-47fa-9147-cd67db3af08e
-NEW CROP, SUGARBEAT, amount: 478g, in week: 4
+UUID: 7abfd0c5-1565-41dc-894b-55d2aff08b82
+NEW CROP, BARLEY, amount: 917kg, in week: 1
 
 
-UUID: 7760e5d1-8bea-429c-bd91-a2f7ed64c3e7
-NEW CROP, APPLE, amount: 800g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 8
-CROPT HAS BEEN SHIPPED, APPLE, amount: 800g, in week:9
-NEW PRODUCT, APPLEjuice, amount: 680kg, shop price: 95.0 in week:9
-PRODUCT HAS BEEN SHIPPED, APPLEjuice, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 670g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 620g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 618g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 608g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 606g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 604g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 602g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 592g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 590g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 580g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 570g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 560g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 552g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 550g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 500g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 450g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 442g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 432g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 423g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 413g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 411g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 409g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 399g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 397g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 387g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 337g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 327g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 321g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 311g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 301g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 295g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 285g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 279g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 269g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 259g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 249g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 199g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 194g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 192g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 190g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 184g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 134g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 132g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 130g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 120g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 110g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 100g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 50g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 40g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 30g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 28g, shop price: 95.0 in week:10
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 18g, shop price: 95.0 in week:10
+UUID: 54ce1599-18b5-41ee-8fb5-ecd3d2c22583
+NEW CROP, RYE, amount: 561kg, in week: 5
+
+
+UUID: f93900be-0205-4f09-8c4c-6de2e402bb0c
+NEW CROP, PLUMS, amount: 211kg, in week: 1
+CROPT HAS BEEN SHIPPED, PLUMS, amount: 211kg, in week:1
+NEW PRODUCT, PLUMSjuice, amount: 179l, shop price: 120.07 in week:1
+PRODUCT HAS BEEN SHIPPED, PLUMSjuice, shop price: 120.07 in week:2
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 167l, shop price: 120.07 in week:2
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 157l, shop price: 120.07 in week:2
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 155l, shop price: 120.07 in week:2
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 153l, shop price: 120.07 in week:2
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 143l, shop price: 120.07 in week:2
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 141l, shop price: 120.07 in week:2
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 91l, shop price: 120.07 in week:2
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 89l, shop price: 120.07 in week:2
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 87l, shop price: 120.07 in week:2
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 85l, shop price: 120.07 in week:2
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 75l, shop price: 120.07 in week:3
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 60l, shop price: 120.07 in week:3
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 58l, shop price: 120.07 in week:3
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 56l, shop price: 120.07 in week:3
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 46l, shop price: 120.07 in week:3
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 44l, shop price: 120.07 in week:3
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 34l, shop price: 120.07 in week:3
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 32l, shop price: 120.07 in week:3
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 22l, shop price: 120.07 in week:4
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 20l, shop price: 120.07 in week:4
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 18l, shop price: 120.07 in week:4
+PRODUCT HAS BEEN PURCHASED, PLUMSjuice, amount: 3l, shop price: 120.07 in week:4
+PRODUCT WAS SOLD OUT, in week:4
+
+
+UUID: 87048b2a-ec14-414e-96ec-9b73c6ed0a2a
+NEW CROP, TOMATO, amount: 733kg, in week: 2
+
+
+UUID: a230a6d7-2e77-4480-a144-532ccb8923dd
+NEW CROP, CORN, amount: 1kg, in week: 4
+
+
+UUID: d5e4b3c7-b2f5-4229-a007-149a1d37ff78
+NEW CROP, CHERRIES, amount: 198kg, in week: 10
+
+
+UUID: 6b261de2-01ab-4c72-a46c-be5df8a7b1a5
+NEW CROP, ONION, amount: 277kg, in week: 5
+
+
+UUID: 33adb11a-e7f7-46c4-8fa0-868a593cefa2
+NEW CROP, FLEX, amount: 171kg, in week: 5
+
+
+UUID: 66eb1da6-c3d1-45be-a3c6-dcb390ae20c9
+NEW CROP, ONION, amount: 538kg, in week: 1
+CROPT HAS BEEN SHIPPED, ONION, amount: 538kg, in week:1
+NEW PRODUCT, Onion rings, amount: 484kg, shop price: 40.0 in week:1
+PRODUCT HAS BEEN SHIPPED, Onion rings, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 478kg, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 468kg, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 454kg, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 404kg, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 402kg, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 400kg, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 390kg, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 383kg, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 381kg, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 372kg, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 370kg, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 368kg, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 366kg, shop price: 40.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 356kg, shop price: 40.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 347kg, shop price: 40.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 345kg, shop price: 40.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 343kg, shop price: 40.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 333kg, shop price: 40.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 331kg, shop price: 40.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 321kg, shop price: 40.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 310kg, shop price: 40.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 308kg, shop price: 40.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 258kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 248kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 246kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 244kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 242kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 240kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 238kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 228kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 226kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 224kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 222kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 212kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 210kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 208kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 203kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 190kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 140kg, shop price: 40.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 130kg, shop price: 40.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 128kg, shop price: 40.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 126kg, shop price: 40.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 116kg, shop price: 40.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 66kg, shop price: 40.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 64kg, shop price: 40.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 54kg, shop price: 40.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 43kg, shop price: 40.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 29kg, shop price: 40.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 19kg, shop price: 40.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 17kg, shop price: 40.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 11kg, shop price: 40.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 2kg, shop price: 40.0 in week:6
+PRODUCT WAS SOLD OUT, in week:6
+
+
+UUID: b8f34188-816f-4d37-981b-b1dfc07e6aa9
+NEW CROP, SUGARBEAT, amount: 449kg, in week: 2
+
+
+UUID: c146c6db-bbdc-4e5f-bd63-15a89919bffd
+NEW CROP, PEAR, amount: 168kg, in week: 10
+
+
+UUID: ef8d0429-0b6e-493b-9721-f829fa42ec8c
+NEW CROP, FLEX, amount: 137kg, in week: 3
+
+
+UUID: cd82899b-3215-416b-90c5-14418007f9dc
+NEW CROP, PLUMS, amount: 150kg, in week: 2
+
+
+UUID: be136b97-0053-43cc-8dc9-56b25d2b2871
+NEW CROP, FLEX, amount: 548kg, in week: 1
+CROP HAS BEEN HARVESTED IN WEEK: 2
+CROPT HAS BEEN SHIPPED, FLEX, amount: 548kg, in week:3
+NEW PRODUCT, Flex material, amount: 82kg, shop price: 251.0 in week:3
+PRODUCT HAS BEEN SHIPPED, Flex material, shop price: 251.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 72kg, shop price: 251.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 62kg, shop price: 251.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 57kg, shop price: 251.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 55kg, shop price: 251.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 53kg, shop price: 251.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 43kg, shop price: 251.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 38kg, shop price: 251.0 in week:4
+PRODUCT WAS SOLD OUT, in week:4
+
+
+UUID: c5c4c333-4d54-4897-a239-2674acfa6fbd
+NEW CROP, HOP, amount: 931kg, in week: 2
+
+
+UUID: 3724b1a4-ec11-44fe-a1ba-36fa0d388c29
+NEW CROP, FLEX, amount: 969kg, in week: 10
+
+
+UUID: 37fe65d0-ca54-48c9-b26d-30f4e5a883c1
+NEW CROP, FLEX, amount: 675kg, in week: 2
+
+
+UUID: e3a471b9-c699-4c37-b08c-f4756f97e399
+NEW CROP, PEAR, amount: 395kg, in week: 8
+
+
+UUID: a3436447-a9bb-4d3b-89ee-07cd90807163
+NEW CROP, LENTIL, amount: 490kg, in week: 9
+
+
+UUID: 07a30147-cc8e-4352-9450-8b84c8eb384e
+NEW CROP, GRAPEVINE, amount: 230kg, in week: 10
+
+
+UUID: 3c6504e2-15ef-4028-9903-2507f044dd4d
+NEW CROP, POPPY, amount: 991kg, in week: 1
+CROP HAS BEEN HARVESTED IN WEEK: 7
+CROPT HAS BEEN SHIPPED, POPPY, amount: 991kg, in week:8
+NEW PRODUCT, Opium, amount: 148kg, shop price: 330.0 in week:8
+PRODUCT HAS BEEN SHIPPED, Opium, shop price: 330.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 146kg, shop price: 330.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 136kg, shop price: 330.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 134kg, shop price: 330.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 124kg, shop price: 330.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 122kg, shop price: 330.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 108kg, shop price: 330.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 106kg, shop price: 330.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 95kg, shop price: 330.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 93kg, shop price: 330.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 43kg, shop price: 330.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 32kg, shop price: 330.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 22kg, shop price: 330.0 in week:9
 PRODUCT WAS SOLD OUT, in week:10
 
 
-UUID: a118e781-6544-424f-8d96-5200a7056122
-NEW CROP, FLEX, amount: 226g, in week: 2
+UUID: ca8495a6-1e84-45e1-b59b-13724a5efaa1
+NEW CROP, BEAN, amount: 460kg, in week: 2
 
 
-UUID: 7c362d4f-af92-40b5-9ab9-9bb1a30de07f
-NEW CROP, APPLE, amount: 822g, in week: 6
+UUID: e60b82a7-2d0c-4f30-8568-a0baf6511146
+NEW CROP, POTATO, amount: 806kg, in week: 5
 
 
-UUID: 065a65ff-8528-4dd9-b202-04ccd10fd6b3
-NEW CROP, SUNFLOWER, amount: 773g, in week: 10
+UUID: e37413cf-9a49-4d4a-a484-0b8c90f54610
+NEW CROP, APPLE, amount: 285kg, in week: 10
 
 
-UUID: b030a04b-02a5-4ff2-b897-933ed0faa658
-NEW CROP, TOMATO, amount: 727g, in week: 6
+UUID: 064721e1-e0ff-44d8-af8c-7efa8a4facef
+NEW CROP, POPPY, amount: 199kg, in week: 5
 
 
-UUID: ed06a6de-a5f3-4a2d-a142-7ec2d5280884
-NEW CROP, SUGARBEAT, amount: 1g, in week: 4
-CROP HAS BEEN HARVESTED IN WEEK: 7
-CROPT HAS BEEN SHIPPED, SUGARBEAT, amount: 1g, in week:8
-NEW PRODUCT, Suggar, amount: 0kg, shop price: 42.547200000000004 in week:8
-PRODUCT HAS BEEN SHIPPED, Suggar, shop price: 42.547200000000004 in week:9
-PRODUCT WAS SOLD OUT, in week:9
+UUID: 02c4ec8a-c30f-4e15-a584-6bc3289c11d8
+NEW CROP, BEAN, amount: 210kg, in week: 8
 
 
-UUID: a8f4aafd-d47b-4622-8f7f-aeda9486df5f
-NEW CROP, BEAN, amount: 443g, in week: 3
-
-
-UUID: af52013d-a7a5-4f98-82a4-edb9beb233d0
-NEW CROP, TOMATO, amount: 134g, in week: 1
-CROPT HAS BEEN SHIPPED, TOMATO, amount: 134g, in week:1
-NEW PRODUCT, Ketchup, amount: 80kg, shop price: 107.14 in week:1
-PRODUCT HAS BEEN SHIPPED, Ketchup, shop price: 107.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 70g, shop price: 107.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 65g, shop price: 107.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 63g, shop price: 107.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 53g, shop price: 107.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 51g, shop price: 107.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 49g, shop price: 107.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 44g, shop price: 107.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 42g, shop price: 107.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 36g, shop price: 107.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 31g, shop price: 107.14 in week:2
-PRODUCT WAS SOLD OUT, in week:2
-
-
-UUID: 6f4b2daf-b2f5-40ff-a3b5-615865445168
-NEW CROP, OATS, amount: 349g, in week: 1
-CROPT HAS BEEN SHIPPED, OATS, amount: 349g, in week:1
-NEW PRODUCT, Oat flakes, amount: 261kg, shop price: 34.0 in week:1
-PRODUCT HAS BEEN SHIPPED, Oat flakes, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 211g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 201g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 199g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 189g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 187g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 185g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 183g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 170g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 120g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 70g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 68g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 58g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 48g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 38g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 26g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 12g, shop price: 34.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Oat flakes, amount: 10g, shop price: 34.0 in week:2
-PRODUCT WAS SOLD OUT, in week:2
-
-
-UUID: 5302aaf1-2e70-4f88-855b-8dcfef31959f
-NEW CROP, GRAPEVINE, amount: 251g, in week: 6
-
-
-UUID: c6cdd92f-cb18-4d18-b03c-2fad6f8561c4
-NEW CROP, TOMATO, amount: 918g, in week: 6
-
-
-UUID: 94d4dc8a-8762-4c6a-8114-60faa8660aeb
-NEW CROP, SUGARBEAT, amount: 895g, in week: 2
-
-
-UUID: 55b8d07e-279e-4b2c-9e94-c5013e0864dc
-NEW CROP, POTATO, amount: 401g, in week: 7
-
-
-UUID: d5c27062-7027-4efe-8bab-67395672bbaf
-NEW CROP, WHEET, amount: 620g, in week: 7
-
-
-UUID: 30685923-36a9-41ac-9b3a-980fbf7a2637
-NEW CROP, CORN, amount: 305g, in week: 1
-CROPT HAS BEEN SHIPPED, CORN, amount: 305g, in week:1
-NEW PRODUCT, Boiled corn, amount: 289kg, shop price: 45.0 in week:1
-PRODUCT HAS BEEN SHIPPED, Boiled corn, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 279g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 277g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 267g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 265g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 263g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 261g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 211g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 161g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 159g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 149g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 139g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 129g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 79g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 77g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 66g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 57g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 47g, shop price: 45.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Boiled corn, amount: 33g, shop price: 45.0 in week:2
-PRODUCT WAS SOLD OUT, in week:2
-
-
-UUID: 6c91d7fa-a8bb-4213-899c-1bff254872de
-NEW CROP, ONION, amount: 839g, in week: 3
-
-
-UUID: d212a4e4-9fd5-4eaa-bb61-0b0549bb6e61
-NEW CROP, OATS, amount: 341g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 8
-
-
-UUID: 933a5f0f-0efe-4499-a26f-bdb1c8b71302
-NEW CROP, PEAR, amount: 132g, in week: 2
-
-
-UUID: aa54a271-e6ce-4dd2-b53a-6ffc5c57a592
-NEW CROP, WHEET, amount: 690g, in week: 9
-
-
-UUID: 13dda7c8-4667-443d-a074-897d8a0b4b76
-NEW CROP, HOP, amount: 441g, in week: 7
-
-
-UUID: 90ce2bbc-dd0c-4f75-b19a-fbb7dcc781de
-NEW CROP, GRAPEVINE, amount: 363g, in week: 8
-
-
-UUID: f4df228e-fdb1-457e-a7e1-5fbb36db485b
-NEW CROP, OATS, amount: 659g, in week: 7
-
-
-UUID: 3105c782-2817-48b5-b856-42cb68fca003
-NEW CROP, RYE, amount: 672g, in week: 7
-
-
-UUID: 66c17684-aa73-4063-8c45-f96b3844a776
-NEW CROP, HOP, amount: 769g, in week: 3
-
-
-UUID: 2151ae80-1e7c-45df-a955-09b64dd6750c
-NEW CROP, HOP, amount: 476g, in week: 3
-
-
-UUID: 21077cb2-967d-4361-9eaa-18087aa0e8e6
-NEW CROP, HEMP, amount: 748g, in week: 10
-
-
-UUID: 645742e7-30f5-411a-9dae-7626f940b3c7
-NEW CROP, WHEET, amount: 293g, in week: 6
-
-
-UUID: 5d69aca1-9001-4da6-a8e6-1dfc3923aa05
-NEW CROP, ONION, amount: 609g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 5
-CROPT HAS BEEN SHIPPED, ONION, amount: 609g, in week:6
-NEW PRODUCT, ONION, amount: 609kg, shop price: 24.0 in week:6
-PRODUCT HAS BEEN SHIPPED, ONION, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 559g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 549g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 547g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 537g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 535g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 533g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 531g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 481g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 479g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 469g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 459g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 449g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 399g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 386g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 384g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 334g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 284g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 271g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 261g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 211g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 201g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 199g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 197g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 187g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 185g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 175g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 165g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 155g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 145g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 135g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 125g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 115g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 105g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 55g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 53g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 51g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 40g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 38g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 36g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 26g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 16g, shop price: 24.0 in week:7
-PRODUCT HAS BEEN PURCHASED, ONION, amount: 6g, shop price: 24.0 in week:7
-PRODUCT WAS SOLD OUT, in week:7
-
-
-UUID: 4d0979da-daf2-41a6-a112-421fa2e9b435
-NEW CROP, GRAPEVINE, amount: 451g, in week: 7
-
-
-UUID: ede3eaae-b3b2-4dcd-94fc-06e2ce859df2
-NEW CROP, OATS, amount: 452g, in week: 3
-
-
-UUID: a8ef78c2-9988-4fe3-a44d-1328328341fb
-NEW CROP, RYE, amount: 430g, in week: 2
-
-
-UUID: 84aa0425-39b7-4fd9-ae62-d5483b2e3ab8
-NEW CROP, CHERRIES, amount: 769g, in week: 9
-
-
-UUID: 2658fa00-71bf-41f4-a852-423eb659a642
-NEW CROP, SUNFLOWER, amount: 633g, in week: 2
-
-
-UUID: 1923adf5-9d6f-491a-ab1f-48537eb99d33
-NEW CROP, APPLE, amount: 793g, in week: 7
-
-
-UUID: 1645355a-e0cb-4e37-9ecc-8150f9775f6d
-NEW CROP, TOMATO, amount: 395g, in week: 3
-
-
-UUID: a155f529-b0f9-4f50-953b-a29e6278586f
-NEW CROP, APPLE, amount: 1g, in week: 7
-
-
-UUID: 58bb4745-ff14-4c2b-a6d3-e3d3be15cfbf
-NEW CROP, SUNFLOWER, amount: 214g, in week: 2
-
-
-UUID: da874740-4d73-46a2-9839-e6046319e95f
-NEW CROP, HEMP, amount: 766g, in week: 7
-
-
-UUID: 9c674d4c-87dc-4e2f-bdef-be3db1d794b3
-NEW CROP, BARLEY, amount: 823g, in week: 7
-
-
-UUID: 690de4c3-58a5-41b9-b11c-49ca4d05036e
-NEW CROP, FLEX, amount: 277g, in week: 10
-
-
-UUID: a6ae1b75-201f-447d-8b8f-2cb1b29ac26e
-NEW CROP, RYE, amount: 758g, in week: 10
-
-
-UUID: 846c75f8-94fa-42bd-99b9-10932c9c7818
-NEW CROP, SUGARBEAT, amount: 458g, in week: 9
-
-
-UUID: afa6e3b0-5af5-4f80-9a36-d11750230c1f
-NEW CROP, OILSEED, amount: 330g, in week: 10
-
-
-UUID: b0b2389c-8264-48e0-9684-80624b1c9fd5
-NEW CROP, BARLEY, amount: 583g, in week: 3
-
-
-UUID: 0eb489f4-813a-45b6-8566-1c9e45dc256d
-NEW CROP, CORN, amount: 229g, in week: 8
-
-
-UUID: f8738c73-f42d-4c01-839c-fb0d97890db1
-NEW CROP, BEAN, amount: 425g, in week: 4
-
-
-UUID: 5a49868b-8fe7-494c-a6d2-d3c280c4c93a
-NEW CROP, SUGARBEAT, amount: 792g, in week: 4
-
-
-UUID: 9eb71a9a-3a3f-48b9-b27c-c04195698f77
-NEW CROP, BEAN, amount: 523g, in week: 1
+UUID: 216d96de-f416-46b8-a84a-06ad06dcab7e
+NEW CROP, FLEX, amount: 547kg, in week: 1
 CROP HAS BEEN HARVESTED IN WEEK: 1
-CROPT HAS BEEN SHIPPED, BEAN, amount: 523g, in week:2
-NEW PRODUCT, Can of BEAN, amount: 418kg, shop price: 14.0 in week:2
-PRODUCT HAS BEEN SHIPPED, Can of BEAN, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 368g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 358g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 308g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 306g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 296g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 294g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 292g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 290g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 279g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 229g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 227g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 217g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 207g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 197g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 195g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 145g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 139g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 129g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 120g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 70g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 60g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 58g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 56g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 46g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 44g, shop price: 14.0 in week:3
-PRODUCT HAS BEEN PURCHASED, Can of BEAN, amount: 34g, shop price: 14.0 in week:3
+CROPT HAS BEEN SHIPPED, FLEX, amount: 547kg, in week:2
+NEW PRODUCT, Flex material, amount: 82kg, shop price: 297.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Flex material, shop price: 297.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 72kg, shop price: 297.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 67kg, shop price: 297.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 65kg, shop price: 297.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 55kg, shop price: 297.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 53kg, shop price: 297.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 48kg, shop price: 297.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 43kg, shop price: 297.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 38kg, shop price: 297.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 28kg, shop price: 297.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 26kg, shop price: 297.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 16kg, shop price: 297.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 11kg, shop price: 297.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Flex material, amount: 9kg, shop price: 297.0 in week:3
 PRODUCT WAS SOLD OUT, in week:3
 
 
-UUID: 30d225e9-4e5a-4983-8cd4-079fbdd0bef0
-NEW CROP, BARLEY, amount: 275g, in week: 9
+UUID: 8e38b118-1c4b-45f6-a226-f79cb85d7f23
+NEW CROP, BARLEY, amount: 138kg, in week: 2
 
 
-UUID: 84fc2a24-7f5c-4b53-a92f-976259784369
-NEW CROP, TOMATO, amount: 965g, in week: 6
+UUID: 7b766d97-6724-4192-906e-fb675ea27fa0
+NEW CROP, ONION, amount: 659kg, in week: 3
 
 
-UUID: 425e4cdf-29f8-4e36-827c-47252f3431ad
-NEW CROP, GRAPEVINE, amount: 811g, in week: 8
+UUID: 9ad6951e-de71-4150-b503-c32a27e0917d
+NEW CROP, CORN, amount: 313kg, in week: 9
 
 
-UUID: 2ccd28d1-4075-4f35-a8b0-4741922c580e
-NEW CROP, POPPY, amount: 167g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 7
-CROPT HAS BEEN SHIPPED, POPPY, amount: 167g, in week:8
-NEW PRODUCT, Opium, amount: 25kg, shop price: 287.0 in week:8
-PRODUCT HAS BEEN SHIPPED, Opium, shop price: 287.0 in week:9
-PRODUCT HAS BEEN PURCHASED, Opium, amount: 15g, shop price: 287.0 in week:9
-PRODUCT WAS SOLD OUT, in week:9
+UUID: e2f54e44-4691-4557-a121-cd39bab8d7b6
+NEW CROP, PLUMS, amount: 851kg, in week: 2
 
 
-UUID: 689b98e1-b187-4d16-989f-85725c91cf03
-NEW CROP, TOMATO, amount: 321g, in week: 4
+UUID: 0b2a715f-b0c7-4612-8f7d-f5072e767acd
+NEW CROP, LENTIL, amount: 873kg, in week: 10
 
 
-UUID: b9590fe6-d2ab-4992-a618-bdcbce7cdabd
-NEW CROP, POPPY, amount: 203g, in week: 10
+UUID: 5b4f4b4f-9e94-40cb-92c2-7164260baf90
+NEW CROP, HOP, amount: 660kg, in week: 9
 
 
-UUID: 65fb28ac-e1d5-4a84-a7a8-658f2ef41c40
-NEW CROP, CORN, amount: 367g, in week: 7
+UUID: bfc51030-3609-47c8-aaff-49e4edbe0ef5
+NEW CROP, HOP, amount: 410kg, in week: 9
 
 
-UUID: 55524d02-1973-44b2-a430-19b1eac2b848
-NEW CROP, APPLE, amount: 983g, in week: 8
+UUID: cd6fd8f1-dc36-4c72-b030-5afd1ef6d984
+NEW CROP, OILSEED, amount: 183kg, in week: 8
 
 
-UUID: b04df7e8-8df1-4c09-84d0-c40418cf0ada
-NEW CROP, GRAPEVINE, amount: 1g, in week: 6
+UUID: 04d1ef44-9df9-4dac-832f-8180e5a250a7
+NEW CROP, HEMP, amount: 332kg, in week: 10
 
 
-UUID: adf2dc40-ae2c-4e24-bbd6-13f88d9bec92
-NEW CROP, HEMP, amount: 968g, in week: 6
+UUID: 12adcce7-bba4-4df1-9234-593356d59fa1
+NEW CROP, FLEX, amount: 924kg, in week: 9
 
 
-UUID: 71f949e7-4b9c-49ac-b0fb-e4bf8ecf5238
-NEW CROP, BARLEY, amount: 454g, in week: 7
+UUID: 7e43a670-0487-4710-b9ed-8e792c65a438
+NEW CROP, PLUMS, amount: 348kg, in week: 7
 
 
-UUID: f4b640a4-6158-4dc4-a67b-e0481972b36f
-NEW CROP, BEAN, amount: 364g, in week: 6
+UUID: e76f3044-cbb6-4419-8e7a-91f7cfd5e6ac
+NEW CROP, LENTIL, amount: 969kg, in week: 7
 
 
-UUID: d07b6bd2-951f-473e-b019-32b3047fcdfc
-NEW CROP, CORN, amount: 844g, in week: 1
-CROPT HAS BEEN SHIPPED, CORN, amount: 844g, in week:1
-NEW PRODUCT, Iced corn, amount: 337kg, shop price: 33.0 in week:1
-PRODUCT HAS BEEN SHIPPED, Iced corn, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 287g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 277g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 275g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 265g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 263g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 261g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 259g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 250g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 200g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 150g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 148g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 138g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 128g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 118g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 68g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 63g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 61g, shop price: 33.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Iced corn, amount: 11g, shop price: 33.0 in week:2
-PRODUCT WAS SOLD OUT, in week:2
+UUID: 5dfea011-77a2-4242-9209-01e4df1b108f
+NEW CROP, PLUMS, amount: 929kg, in week: 10
 
 
-UUID: 150658d2-4c18-4c6f-b999-d93cc5a64405
-NEW CROP, PEAR, amount: 443g, in week: 6
+UUID: 10cbcbad-8792-41d6-bb09-b02b020db27a
+NEW CROP, BARLEY, amount: 960kg, in week: 10
 
 
-UUID: 287e7289-9af9-46ef-b2f4-8a16a23d4698
-NEW CROP, HOP, amount: 643g, in week: 2
+UUID: fef2799c-20ee-4d79-8495-fb39618820a5
+NEW CROP, TOMATO, amount: 327kg, in week: 9
 
 
-UUID: 425a144c-e62e-46d5-8bcd-e91104e2dc74
-NEW CROP, POPPY, amount: 157g, in week: 6
-
-
-UUID: 92459dac-531f-4e3b-8e7a-8baa2a81f134
-NEW CROP, APPLE, amount: 1g, in week: 2
-
-
-UUID: 40773695-33aa-493c-b0fc-c3fff38f9a51
-NEW CROP, PLUMS, amount: 793g, in week: 10
-
-
-UUID: e31e7d3a-60a8-497d-ab1a-124cf4377a3a
-NEW CROP, SUGARBEAT, amount: 882g, in week: 6
-
-
-UUID: 13a623e3-3b50-4aa6-afc9-e99f1df5f8bc
-NEW CROP, RYE, amount: 994g, in week: 7
-
-
-UUID: d71e84ed-66bb-443b-8922-60c728cdf4f6
-NEW CROP, POTATO, amount: 293g, in week: 10
-
-
-UUID: b6096ae4-1c1e-463f-89b6-b315546e4aaf
-NEW CROP, OILSEED, amount: 542g, in week: 9
-
-
-UUID: 04d440d2-7308-45e4-9542-8c56893fec71
-NEW CROP, PLUMS, amount: 324g, in week: 2
-
-
-UUID: 50ff4e9d-1bab-4e05-92aa-ff1ea483b64a
-NEW CROP, WHEET, amount: 935g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 4
-
-
-UUID: c2894180-0ea3-438d-be1e-0944086609a9
-NEW CROP, ONION, amount: 566g, in week: 1
-CROPT HAS BEEN SHIPPED, ONION, amount: 566g, in week:1
-NEW PRODUCT, Onion rings, amount: 509kg, shop price: 40.0 in week:1
-PRODUCT HAS BEEN SHIPPED, Onion rings, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 459g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 449g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 447g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 437g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 435g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 433g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 431g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 419g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 369g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 319g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 317g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 307g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 297g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 287g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 285g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 235g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 185g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 135g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 122g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 109g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 99g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 49g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 39g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 37g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 35g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 25g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 23g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 13g, shop price: 40.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 3g, shop price: 40.0 in week:2
-PRODUCT WAS SOLD OUT, in week:2
-
-
-UUID: 581510a3-c9e5-4561-8a7c-c3696e824311
-NEW CROP, TOMATO, amount: 394g, in week: 1
+UUID: 936ca60a-1e08-45be-9551-2dc3fac2dcf9
+NEW CROP, WHEET, amount: 626kg, in week: 1
 CROP HAS BEEN HARVESTED IN WEEK: 10
 
 
-UUID: 8eef09be-21cc-4410-af97-11414e4e7aa3
-NEW CROP, APPLE, amount: 550g, in week: 3
-
-
-UUID: 2c3344f0-692d-4112-92f2-02bea1057103
-NEW CROP, POPPY, amount: 193g, in week: 6
-
-
-UUID: 5816d586-2b50-4dd2-b63a-64711175ac9a
-NEW CROP, APPLE, amount: 523g, in week: 1
-CROPT HAS BEEN SHIPPED, APPLE, amount: 523g, in week:1
-NEW PRODUCT, APPLEjuice, amount: 444kg, shop price: 95.0 in week:1
-PRODUCT HAS BEEN SHIPPED, APPLEjuice, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 434g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 384g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 382g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 372g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 370g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 368g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 366g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 316g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 266g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 264g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 254g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 244g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 234g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 219g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 210g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 208g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 201g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 191g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 181g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 179g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 177g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 167g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 165g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 155g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 105g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 55g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 45g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 36g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 26g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 16g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 11g, shop price: 95.0 in week:2
-PRODUCT HAS BEEN PURCHASED, APPLEjuice, amount: 1g, shop price: 95.0 in week:2
-PRODUCT WAS SOLD OUT, in week:2
-
-
-UUID: 1b40f5ea-02bd-448a-bf4d-ffb4160f4ad0
-NEW CROP, RYE, amount: 132g, in week: 2
-
-
-UUID: c2d8fe80-e78f-45f9-8115-52009052efd5
-NEW CROP, FLEX, amount: 1g, in week: 10
-
-
-UUID: 037bd930-457a-4461-b840-00352f49c2d3
-NEW CROP, LENTIL, amount: 451g, in week: 6
-
-
-UUID: e7708005-5c41-41de-bc5c-d4a60ad20803
-NEW CROP, TOMATO, amount: 387g, in week: 1
-CROPT HAS BEEN SHIPPED, TOMATO, amount: 387g, in week:1
-NEW PRODUCT, Dried tomatoes, amount: 328kg, shop price: 97.14 in week:1
-PRODUCT HAS BEEN SHIPPED, Dried tomatoes, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 278g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 268g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 266g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 256g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 254g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 252g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 250g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 245g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 195g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 145g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 143g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 133g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 123g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 113g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 63g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 56g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 54g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 48g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 38g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 28g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 26g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 24g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 14g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 12g, shop price: 97.14 in week:2
-PRODUCT HAS BEEN PURCHASED, Dried tomatoes, amount: 2g, shop price: 97.14 in week:2
-PRODUCT WAS SOLD OUT, in week:2
-
-
-UUID: 021496d9-975a-4c60-8b46-abc3709ab129
-NEW CROP, WHEET, amount: 270g, in week: 6
-
-
-UUID: 5ec22aa3-a55c-4b17-8715-6272e0927b1b
-NEW CROP, SUGARBEAT, amount: 154g, in week: 2
-
-
-UUID: e53817df-6bcd-4bb2-adf7-d4bfc8e179f7
-NEW CROP, OATS, amount: 277g, in week: 9
-
-
-UUID: 239cbe9b-d3a6-4f04-8f17-e69c8a5eb6b8
-NEW CROP, CUCCUMBER, amount: 620g, in week: 2
-
-
-UUID: 8ee41ecb-befd-4982-9efc-b78ae55effb1
-NEW CROP, APPLE, amount: 1g, in week: 7
-
-
-UUID: 53965846-a383-491a-923f-c3a70d919d8a
-NEW CROP, POTATO, amount: 998g, in week: 4
-
-
-UUID: cfc076ba-b491-437f-afd5-8743076cafa3
-NEW CROP, BARLEY, amount: 911g, in week: 1
-CROPT HAS BEEN SHIPPED, BARLEY, amount: 911g, in week:1
-NEW PRODUCT, Beer, amount: 227kg, shop price: 6.0 in week:1
-PRODUCT HAS BEEN SHIPPED, Beer, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 217g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 215g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 205g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 203g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 201g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 199g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 185g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 183g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 173g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 163g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 153g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 103g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 91g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 89g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 39g, shop price: 6.0 in week:2
-PRODUCT WAS SOLD OUT, in week:2
-
-
-UUID: 253d083a-5b34-4624-b828-3e17b17edf86
-NEW CROP, LENTIL, amount: 879g, in week: 1
-CROPT HAS BEEN SHIPPED, LENTIL, amount: 879g, in week:1
-NEW PRODUCT, Can of LENTIL, amount: 703kg, shop price: 7.0 in week:1
-PRODUCT HAS BEEN SHIPPED, Can of LENTIL, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 653g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 643g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 641g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 631g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 629g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 627g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 625g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 620g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 570g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 568g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 558g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 548g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 538g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 536g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 486g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 436g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 386g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 379g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 369g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 362g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 312g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 302g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 300g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 298g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 288g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 286g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 276g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 266g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 256g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 246g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 236g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 231g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 225g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 215g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 206g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 196g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 186g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 176g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 126g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 111g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 109g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 107g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 98g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 96g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 94g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 84g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 74g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 64g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 54g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 44g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 42g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 32g, shop price: 7.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 22g, shop price: 7.0 in week:2
-PRODUCT WAS SOLD OUT, in week:2
-
-
-UUID: cbc1b301-e8a4-4722-87b2-1f2bcdc0c6cf
-NEW CROP, OILSEED, amount: 976g, in week: 9
-
-
-UUID: 4a57f1a9-852a-4d4b-8103-8967ffc4baef
-NEW CROP, SALAD, amount: 385g, in week: 1
-CROPT HAS BEEN SHIPPED, SALAD, amount: 385g, in week:1
-NEW PRODUCT, SALAD, amount: 385kg, shop price: 44.675999999999995 in week:1
-PRODUCT HAS BEEN SHIPPED, SALAD, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 375g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 325g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 323g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 313g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 311g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 309g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 307g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 305g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 295g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 285g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 275g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 261g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 254g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 252g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 202g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 152g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 102g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 92g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 78g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 68g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 66g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 64g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 54g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 52g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 42g, shop price: 44.675999999999995 in week:2
-PRODUCT WAS SOLD OUT, in week:2
-
-
-UUID: cf03d254-3a4a-4ffa-a06d-da5dc8fb9afa
-NEW CROP, ONION, amount: 640g, in week: 4
-
-
-UUID: 57b19518-a352-4326-9567-56902ad3852f
-NEW CROP, SALAD, amount: 368g, in week: 10
-
-
-UUID: a93ea3a4-2395-4988-87ec-1aeb42f90399
-NEW CROP, SALAD, amount: 281g, in week: 2
-
-
-UUID: b7f49bf3-771b-488c-82cd-696967e47331
-NEW CROP, OATS, amount: 922g, in week: 2
-
-
-UUID: b5783e8a-06ac-4937-bdd4-a71e6aff30b8
-NEW CROP, SUNFLOWER, amount: 598g, in week: 4
-
-
-UUID: b2f0b5c3-16e5-4ff1-be35-1cb990275e69
-NEW CROP, HEMP, amount: 210g, in week: 6
-
-
-UUID: 331a360e-a7ad-4de5-ba38-bc78ed5de6a6
-NEW CROP, CUCCUMBER, amount: 909g, in week: 4
-
-
-UUID: f08dbd02-fa78-491f-996c-e4efc1648ae7
-NEW CROP, SUGARBEAT, amount: 701g, in week: 4
-
-
-UUID: 961bd882-f1b1-4797-a6fb-ddf0edf78ca8
-NEW CROP, RYE, amount: 553g, in week: 2
-
-
-UUID: 7235c2f8-2818-4655-ab04-5ddbd751e1e5
-NEW CROP, SALAD, amount: 284g, in week: 3
-
-
-UUID: 0b02900f-755a-435e-ae16-1d2573711fa4
-NEW CROP, CUCCUMBER, amount: 404g, in week: 10
-
-
-UUID: 492a81d8-5eb1-424d-aca6-dcbe5162ff87
-NEW CROP, HOP, amount: 286g, in week: 8
-
-
-UUID: 37543107-8672-4070-b2a6-b0a2f52b238b
-NEW CROP, OILSEED, amount: 495g, in week: 6
-
-
-UUID: bead86d1-9391-4da6-95dd-e732ad233371
-NEW CROP, APPLE, amount: 184g, in week: 6
-
-
-UUID: abb28132-2a0e-42b1-b2ef-ba9cc56a7dd1
-NEW CROP, SALAD, amount: 442g, in week: 2
-
-
-UUID: ff4fac37-a8f6-4309-882d-68480da225bc
-NEW CROP, FLEX, amount: 154g, in week: 2
-
-
-UUID: 2fe0c173-0d29-4734-8f90-d3e61f912997
-NEW CROP, PLUMS, amount: 1g, in week: 5
+UUID: 02563c16-f05b-4093-af44-d78798caccfb
+NEW CROP, WHEET, amount: 1kg, in week: 5
+CROP HAS BEEN HARVESTED IN WEEK: 10
+
+
+UUID: 61bcb5cb-a0a8-44e4-af6c-c8d61bbee245
+NEW CROP, POPPY, amount: 105kg, in week: 10
+
+
+UUID: bdbbb80e-7ee9-4d5e-9c9d-f0e45170af8b
+NEW CROP, SUGARBEAT, amount: 220kg, in week: 5
+
+
+UUID: da6e9ded-196e-49c2-a542-60d128a12c9d
+NEW CROP, RYE, amount: 808kg, in week: 9
+
+
+UUID: 736eef74-eab3-4ec5-a75b-cb4f201676ef
+NEW CROP, POTATO, amount: 759kg, in week: 10
+
+
+UUID: 63b80f34-f4a2-422e-90a4-5e8655a05900
+NEW CROP, HOP, amount: 357kg, in week: 2
+
+
+UUID: 4fe63cf1-17ac-4e9b-9c7b-09797d99c839
+NEW CROP, WHEET, amount: 1kg, in week: 10
+
+
+UUID: d9f15582-e5ff-4fd3-a2f2-f0959fdbff66
+NEW CROP, POTATO, amount: 196kg, in week: 7
+
+
+UUID: ba1183a0-948e-40a8-bf00-55ee231e5ee2
+NEW CROP, GRAPEVINE, amount: 635kg, in week: 10
+
+
+UUID: ec13fdda-27b6-48de-8223-d4ca22acee63
+NEW CROP, ONION, amount: 834kg, in week: 1
+CROP HAS BEEN HARVESTED IN WEEK: 7
+CROPT HAS BEEN SHIPPED, ONION, amount: 834kg, in week:8
+NEW PRODUCT, Onion rings, amount: 750kg, shop price: 40.0 in week:8
+PRODUCT HAS BEEN SHIPPED, Onion rings, shop price: 40.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 748kg, shop price: 40.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 738kg, shop price: 40.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 736kg, shop price: 40.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 726kg, shop price: 40.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 724kg, shop price: 40.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 722kg, shop price: 40.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 720kg, shop price: 40.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 670kg, shop price: 40.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 665kg, shop price: 40.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 615kg, shop price: 40.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 565kg, shop price: 40.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 563kg, shop price: 40.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 561kg, shop price: 40.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 551kg, shop price: 40.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 549kg, shop price: 40.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 540kg, shop price: 40.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 538kg, shop price: 40.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 536kg, shop price: 40.0 in week:10
+
+
+UUID: 77cf1e5a-0c9a-413a-88bb-f5da8657e98d
+NEW CROP, FLEX, amount: 198kg, in week: 10
+
+
+UUID: 3282ff1f-606d-4e01-91d1-0175ac216be5
+NEW CROP, SALAD, amount: 765kg, in week: 7
+
+
+UUID: bf5bba15-57cc-48a8-a3ff-b20aa51ef454
+NEW CROP, APPLE, amount: 160kg, in week: 3
+
+
+UUID: 731f0488-bc13-472e-a1be-b25bb874ddae
+NEW CROP, WHEET, amount: 702kg, in week: 10
+
+
+UUID: c6ee910c-669b-4d95-82f4-c46aad3d69d8
+NEW CROP, PEAR, amount: 165kg, in week: 10
+
+
+UUID: 975cda61-45b3-4c43-b3fe-65fa27c6af95
+NEW CROP, OILSEED, amount: 100kg, in week: 1
 CROP HAS BEEN HARVESTED IN WEEK: 9
-CROPT HAS BEEN SHIPPED, PLUMS, amount: 1g, in week:10
-NEW PRODUCT, PLUMScompote, amount: 0kg, shop price: 110.07 in week:10
+CROPT HAS BEEN SHIPPED, OILSEED, amount: 100kg, in week:10
+NEW PRODUCT, Biofuel, amount: 15kg, shop price: 474.0 in week:10
 
 
-UUID: 992fae68-dc5d-438f-b95d-7914202d040e
-NEW CROP, APPLE, amount: 648g, in week: 4
+UUID: 173d0ab7-0e1d-4538-a3a6-6feba98a4ff5
+NEW CROP, HOP, amount: 273kg, in week: 10
 
 
-UUID: b33b8ab2-9ef7-4ac6-b43a-1e0b89c828be
-NEW CROP, TOMATO, amount: 861g, in week: 7
-
-
-UUID: f296ab9f-66f2-430d-b1d6-78896bf28d5c
-NEW CROP, GRAPEVINE, amount: 986g, in week: 8
-
-
-UUID: 5f349472-acb7-4556-817d-7cb636860ee3
-NEW CROP, SUGARBEAT, amount: 220g, in week: 9
-
-
-UUID: fa768ebc-ec58-4825-ba82-e84f074d3c3b
-NEW CROP, ONION, amount: 562g, in week: 3
-
-
-UUID: dc94b838-24bb-4e55-bbaa-eb878f553a35
-NEW CROP, WHEET, amount: 285g, in week: 6
-
-
-UUID: c80f3e30-ed6b-4554-bd5d-5f7e32b23180
-NEW CROP, GRAPEVINE, amount: 982g, in week: 4
-
-
-UUID: 77d72f44-8fe7-4522-9483-443fe0dc9322
-NEW CROP, SALAD, amount: 907g, in week: 1
-CROPT HAS BEEN SHIPPED, SALAD, amount: 907g, in week:1
-NEW PRODUCT, SALAD, amount: 907kg, shop price: 44.675999999999995 in week:1
-PRODUCT HAS BEEN SHIPPED, SALAD, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 857g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 847g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 797g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 795g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 785g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 783g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 781g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 779g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 777g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 767g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 757g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 747g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 735g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 733g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 683g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 633g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 583g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 533g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 519g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 509g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 499g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 449g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 439g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 437g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 435g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 425g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 423g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 413g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 363g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 353g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 343g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 333g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 323g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 315g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 305g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 295g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 285g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 278g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 268g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 266g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 264g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 214g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 212g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 210g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 200g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 187g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 177g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 167g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 117g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 107g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 97g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 95g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 86g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 76g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 26g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 11g, shop price: 44.675999999999995 in week:2
-PRODUCT HAS BEEN PURCHASED, SALAD, amount: 1g, shop price: 44.675999999999995 in week:2
+UUID: 3001044d-88e8-48dd-82d2-a01a74c62ad7
+NEW CROP, POPPY, amount: 972kg, in week: 1
+CROPT HAS BEEN SHIPPED, POPPY, amount: 972kg, in week:1
+NEW PRODUCT, Opium, amount: 145kg, shop price: 573.0 in week:1
+PRODUCT HAS BEEN SHIPPED, Opium, shop price: 573.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 140kg, shop price: 573.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 130kg, shop price: 573.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 121kg, shop price: 573.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 71kg, shop price: 573.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 69kg, shop price: 573.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 67kg, shop price: 573.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 57kg, shop price: 573.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 52kg, shop price: 573.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 50kg, shop price: 573.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 40kg, shop price: 573.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Opium, amount: 30kg, shop price: 573.0 in week:2
 PRODUCT WAS SOLD OUT, in week:2
 
 
-UUID: 5c5a05a8-6386-4d7d-9f14-8878920f037f
-NEW CROP, PLUMS, amount: 233g, in week: 2
+UUID: 29cc994e-0a1d-4d92-85b3-56a801a1a513
+NEW CROP, PEAR, amount: 1kg, in week: 7
+CROP HAS BEEN HARVESTED IN WEEK: 8
+CROPT HAS BEEN SHIPPED, PEAR, amount: 1kg, in week:9
+NEW PRODUCT, PEAR, amount: 1kg, shop price: 97.57 in week:9
+PRODUCT HAS BEEN SHIPPED, PEAR, shop price: 97.57 in week:10
+PRODUCT WAS SOLD OUT, in week:10
 
 
-UUID: 623f361c-c784-435d-a059-350daab1f209
-NEW CROP, POPPY, amount: 1g, in week: 10
+UUID: a39191e3-8ae2-4b4c-9202-ec43fa736349
+NEW CROP, APPLE, amount: 228kg, in week: 5
 
 
-UUID: 25032149-faed-45b4-9e48-5381449e9353
-NEW CROP, LENTIL, amount: 359g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 2
-CROPT HAS BEEN SHIPPED, LENTIL, amount: 359g, in week:3
-NEW PRODUCT, Can of LENTIL, amount: 287kg, shop price: 7.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Can of LENTIL, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 237g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 227g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 225g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 215g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 213g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 211g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 209g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 159g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 157g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 147g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 137g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 127g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 77g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 75g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 65g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 15g, shop price: 7.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 5g, shop price: 7.0 in week:4
+UUID: af5ee35e-8be7-4c61-aab6-5ebce4755155
+NEW CROP, SUGARBEAT, amount: 411kg, in week: 7
+
+
+UUID: 178b2f19-4f65-4ed2-9d2e-c9dffe76c513
+NEW CROP, CHERRIES, amount: 982kg, in week: 2
+
+
+UUID: d387edf5-7f91-4d06-ab7a-d0788f721624
+NEW CROP, WHEET, amount: 299kg, in week: 3
+
+
+UUID: dcdcb5aa-d5a1-4e6d-b677-4cd2bed48078
+NEW CROP, BEAN, amount: 440kg, in week: 8
+
+
+UUID: 78cfb462-7280-4602-90e5-1b01758c3cf4
+NEW CROP, GRAPEVINE, amount: 491kg, in week: 9
+
+
+UUID: 045e1b66-c318-4082-898f-912aeb000bbc
+NEW CROP, WHEET, amount: 493kg, in week: 3
+
+
+UUID: e7cf0401-d97a-4c45-ac03-e3a301da9436
+NEW CROP, CHERRIES, amount: 1kg, in week: 9
+
+
+UUID: d54aa3c8-bb4d-4886-ba95-1a104b8f58fd
+NEW CROP, POPPY, amount: 398kg, in week: 1
+CROP HAS BEEN HARVESTED IN WEEK: 1
+CROPT HAS BEEN SHIPPED, POPPY, amount: 398kg, in week:2
+NEW PRODUCT, Milled poppy, amount: 298kg, shop price: 44.0 in week:2
+PRODUCT HAS BEEN SHIPPED, Milled poppy, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 288kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 277kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 275kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 265kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 258kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 256kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 246kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 196kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 194kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 184kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 178kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 176kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 162kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 160kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 147kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 136kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 86kg, shop price: 44.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 77kg, shop price: 44.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 67kg, shop price: 44.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 57kg, shop price: 44.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 55kg, shop price: 44.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Milled poppy, amount: 45kg, shop price: 44.0 in week:4
 PRODUCT WAS SOLD OUT, in week:4
 
 
-UUID: c4a915e0-af2c-4e8d-a7c6-b2382bfc99f0
-NEW CROP, OATS, amount: 248g, in week: 6
-
-
-UUID: 8f8b9557-a498-4e0c-a9de-ef453bafb267
-NEW CROP, POPPY, amount: 405g, in week: 7
-
-
-UUID: 8e8c8a7b-77f1-4035-b4c5-1e519139a580
-NEW CROP, PEAR, amount: 726g, in week: 4
-
-
-UUID: b3d6228c-6e56-4e36-aabf-b10ef66079cb
-NEW CROP, POPPY, amount: 236g, in week: 2
-
-
-UUID: e494b0ca-c202-405e-9fbf-ba2a82ee4a5a
-NEW CROP, SUNFLOWER, amount: 105g, in week: 8
-
-
-UUID: 93bff031-6928-48d2-bb35-6ff62f92f406
-NEW CROP, GRAPEVINE, amount: 646g, in week: 8
-
-
-UUID: 85ede268-8191-49da-af82-54eeab4700c1
-NEW CROP, LENTIL, amount: 993g, in week: 10
-
-
-UUID: 7eac3145-81c5-4a31-a675-bd1803948bcb
-NEW CROP, OILSEED, amount: 814g, in week: 3
-
-
-UUID: 885742de-adb8-4fcb-ac4e-50c39eca838d
-NEW CROP, SUGARBEAT, amount: 164g, in week: 6
-
-
-UUID: 75f4bb0f-d13e-4c82-8cd7-fab279a42fb5
-NEW CROP, PLUMS, amount: 801g, in week: 10
-
-
-UUID: cf314ed4-591f-4400-8ff0-f0318f5bad54
-NEW CROP, CHERRIES, amount: 118g, in week: 3
-
-
-UUID: 65923ee4-300e-4c7a-bde5-c147b19a110f
-NEW CROP, ONION, amount: 1g, in week: 7
-
-
-UUID: 4fb0f99e-2bb9-4e35-ab0d-a5b82f5f1f7d
-NEW CROP, PLUMS, amount: 737g, in week: 4
-
-
-UUID: ca4f659f-1c51-4e1c-975a-68d2636abc49
-NEW CROP, BEAN, amount: 344g, in week: 9
-
-
-UUID: 1636a7fc-e678-49e7-b8c4-a3282e3dbabc
-NEW CROP, HEMP, amount: 821g, in week: 3
-
-
-UUID: 4a828dca-e1d3-4c76-b4c9-d8034a4e8353
-NEW CROP, FLEX, amount: 852g, in week: 1
-CROPT HAS BEEN SHIPPED, FLEX, amount: 852g, in week:1
-NEW PRODUCT, Flex powder, amount: 639kg, shop price: 51.0 in week:1
-PRODUCT HAS BEEN SHIPPED, Flex powder, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 629g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 627g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 617g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 615g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 613g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 611g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 561g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 559g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 549g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 539g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 529g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 523g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 521g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 506g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 491g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 481g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 476g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 466g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 464g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 462g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 452g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 450g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 440g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 390g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 380g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 370g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 360g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 346g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 336g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 326g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 316g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 306g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 256g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 206g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 204g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 202g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 190g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 140g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 138g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 136g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 126g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 116g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 106g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 96g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 86g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 84g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 74g, shop price: 51.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Flex powder, amount: 24g, shop price: 51.0 in week:2
-PRODUCT WAS SOLD OUT, in week:2
-
-
-UUID: 4fdc576d-0b2f-479a-b98f-2df81231fb7d
-NEW CROP, GRAPEVINE, amount: 905g, in week: 10
-
-
-UUID: 12a278f7-eccc-4f31-98e8-c4d18a92b23c
-NEW CROP, POPPY, amount: 266g, in week: 4
-
-
-UUID: 859424fa-ae36-49e7-86fb-704d10f663bf
-NEW CROP, GRAPEVINE, amount: 1g, in week: 4
-
-
-UUID: 2eaf1288-89e5-4dcf-982d-210d5637365e
-NEW CROP, SUNFLOWER, amount: 522g, in week: 4
-
-
-UUID: c1d4a308-2881-4e88-b9aa-6f3fc8d64bdc
-NEW CROP, HEMP, amount: 882g, in week: 7
-
-
-UUID: 6153d29f-e8b2-48c5-acbe-0aff54be420e
-NEW CROP, RYE, amount: 103g, in week: 7
-
-
-UUID: 29e5f56f-3807-435b-a0a3-2799ea9bc53c
-NEW CROP, HEMP, amount: 1g, in week: 3
-CROP HAS BEEN HARVESTED IN WEEK: 5
-CROPT HAS BEEN SHIPPED, HEMP, amount: 1g, in week:6
-NEW PRODUCT, Hemp oil, amount: 0kg, shop price: 62.0 in week:6
-PRODUCT HAS BEEN SHIPPED, Hemp oil, shop price: 62.0 in week:7
-PRODUCT WAS SOLD OUT, in week:7
-
-
-UUID: 844a78cb-1ff6-4396-aba7-fdd76746fa99
-NEW CROP, HOP, amount: 1g, in week: 4
-CROP HAS BEEN HARVESTED IN WEEK: 7
-
-
-UUID: 21d56959-a083-435f-93b8-57fd23e25db8
-NEW CROP, CORN, amount: 140g, in week: 4
-
-
-UUID: 47401a16-494d-4055-a1a0-8b9293718258
-NEW CROP, POPPY, amount: 226g, in week: 2
-
-
-UUID: b069be5c-9f91-4d25-b08e-d55ad9caf7c9
-NEW CROP, POTATO, amount: 848g, in week: 6
-
-
-UUID: e38f8a93-f353-46be-ad8f-843a65b62fa5
-NEW CROP, HEMP, amount: 646g, in week: 1
-
-
-UUID: 23bbf3f1-01c9-4526-9bfd-c2793d25095d
-NEW CROP, WHEET, amount: 152g, in week: 7
-
-
-UUID: 6ab8ec23-14aa-4787-8a13-0889a97c290e
-NEW CROP, CUCCUMBER, amount: 859g, in week: 9
-
-
-UUID: 9f686347-fce9-4351-b382-6b1cac27064c
-NEW CROP, GRAPEVINE, amount: 894g, in week: 2
-
-
-UUID: c74f5fa5-7f82-4d20-a6d1-e0db567d775d
-NEW CROP, CUCCUMBER, amount: 732g, in week: 9
-
-
-UUID: 65a2a871-2207-4c84-abfe-3dd4782a0033
-NEW CROP, BARLEY, amount: 440g, in week: 3
-
-
-UUID: fa2f4e93-09d3-459e-8159-5090f5274779
-NEW CROP, HEMP, amount: 294g, in week: 6
-
-
-UUID: 0547162a-e3c0-4193-bf9c-cea5ff731e1e
-NEW CROP, BARLEY, amount: 554g, in week: 1
-CROPT HAS BEEN SHIPPED, BARLEY, amount: 554g, in week:1
-NEW PRODUCT, Beer, amount: 138kg, shop price: 5.0 in week:1
-PRODUCT HAS BEEN SHIPPED, Beer, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 128g, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 126g, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 116g, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 114g, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 112g, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 110g, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 103g, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 101g, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 91g, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 81g, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 71g, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 57g, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 47g, shop price: 5.0 in week:2
-PRODUCT HAS BEEN PURCHASED, Beer, amount: 45g, shop price: 5.0 in week:2
-PRODUCT WAS SOLD OUT, in week:2
-
-
-UUID: a13fa778-fab1-45dc-b6cb-f7b563b4408b
-NEW CROP, BEAN, amount: 1g, in week: 9
-
-
-UUID: c869a813-67a2-4b9c-80d7-57a34ec8fc94
-NEW CROP, RYE, amount: 101g, in week: 4
-
-
-UUID: 4659975a-7bbf-4e80-983a-476f9d9e9d9a
-NEW CROP, WHEET, amount: 524g, in week: 2
-
-
-UUID: ac7c5d27-28d3-4861-af4b-dea7a326364e
-NEW CROP, HEMP, amount: 480g, in week: 4
-
-
-UUID: 3a05001c-8a5a-4cca-a557-81184034019d
-NEW CROP, SALAD, amount: 158g, in week: 4
-
-
-UUID: e0a380a5-4fc4-4c76-9371-58c4e6b6fbd8
-NEW CROP, GRAPEVINE, amount: 531g, in week: 2
-
-
-UUID: 45b36685-5a2f-4786-a60f-5bf907a8b3b0
-NEW CROP, PEAR, amount: 1g, in week: 2
-
-
-UUID: 238a6d3b-3245-4b60-a6d7-52ed402896f4
-NEW CROP, POTATO, amount: 280g, in week: 3
-
-
-UUID: 03091cbe-4914-4031-a36c-aa1972b1b023
-NEW CROP, CHERRIES, amount: 622g, in week: 9
-
-
-UUID: 5d38ca6f-6089-49f9-9fbe-ba0adb0fc9e5
-NEW CROP, TOMATO, amount: 742g, in week: 6
-
-
-UUID: 56609c33-f87c-4e2b-b087-fedbc09cc7bb
-NEW CROP, POTATO, amount: 115g, in week: 9
-
-
-UUID: aad78ae0-abdc-4cdb-a510-6d364af1c867
-NEW CROP, BEAN, amount: 783g, in week: 4
-
-
-UUID: 5dcb6a81-a364-4a57-90cb-ab6d5fe28fbf
-NEW CROP, OILSEED, amount: 426g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 4
-CROPT HAS BEEN SHIPPED, OILSEED, amount: 426g, in week:5
-NEW PRODUCT, Biofuel, amount: 63kg, shop price: 300.0 in week:5
-PRODUCT HAS BEEN SHIPPED, Biofuel, shop price: 300.0 in week:6
-PRODUCT HAS BEEN PURCHASED, Biofuel, amount: 53g, shop price: 300.0 in week:6
-PRODUCT HAS BEEN PURCHASED, Biofuel, amount: 3g, shop price: 300.0 in week:6
-PRODUCT WAS SOLD OUT, in week:6
-
-
-UUID: dd8f4f37-502c-41bc-afee-336ad51c5134
-NEW CROP, PLUMS, amount: 333g, in week: 3
-
-
-UUID: 70615f0f-956e-4468-9e2b-764346b67930
-NEW CROP, HOP, amount: 590g, in week: 3
-
-
-UUID: b23b37d3-b020-4b88-8bdb-37d4deae5f68
-NEW CROP, OATS, amount: 872g, in week: 7
-
-
-UUID: c0b75202-5270-4043-9679-6e2008608d34
-NEW CROP, BEAN, amount: 246g, in week: 10
-
-
-UUID: 5a2e0fcd-304e-48bd-ae2c-2b5c34c09d2e
-NEW CROP, FLEX, amount: 984g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 10
-
-
-UUID: 1d5ca00f-23d5-483d-b2dd-9c9ba2fc218e
-NEW CROP, SUNFLOWER, amount: 419g, in week: 3
-
-
-UUID: 01f0c1b7-1d31-48f8-8cbf-8f935651257c
-NEW CROP, RYE, amount: 244g, in week: 3
-
-
-UUID: 1848a5b2-8239-41d9-81d5-96881ef96a31
-NEW CROP, SALAD, amount: 450g, in week: 4
-
-
-UUID: a097298b-3f0a-4452-b8b0-6cb16eaa5760
-NEW CROP, HOP, amount: 932g, in week: 2
-
-
-UUID: 9b6ffbd4-5351-43c7-ae59-f88b8ec319a8
-NEW CROP, OILSEED, amount: 491g, in week: 6
-
-
-UUID: 4f782ef4-250a-4de3-91bf-7bf5449e0627
-NEW CROP, OILSEED, amount: 731g, in week: 4
-
-
-UUID: c329efe9-4df4-4773-a554-fd2092b49b11
-NEW CROP, SUNFLOWER, amount: 241g, in week: 2
-
-
-UUID: 3a521d68-6001-444b-9d8b-d2bd26ec8f36
-NEW CROP, PEAR, amount: 280g, in week: 4
-
-
-UUID: b8219b06-65f7-4633-a7fd-e2956888189e
-NEW CROP, GRAPEVINE, amount: 479g, in week: 7
-
-
-UUID: 6771b938-ccde-446f-8141-dff6c7d7e63c
-NEW CROP, HEMP, amount: 200g, in week: 2
-
-
-UUID: ad72a0d0-1832-4097-8b87-9800cb2e4e09
-NEW CROP, RYE, amount: 688g, in week: 10
-
-
-UUID: 86633192-a4a7-47ad-a2cc-55f942551e3c
-NEW CROP, OILSEED, amount: 610g, in week: 3
-
-
-UUID: a7c0f910-a9ac-40b5-8714-990d9853f82e
-NEW CROP, CUCCUMBER, amount: 906g, in week: 3
-
-
-UUID: eb44357c-0c21-4c84-8bc4-8ffb15e0aef3
-NEW CROP, BARLEY, amount: 859g, in week: 10
-
-
-UUID: 5e1fb670-e258-4195-9557-e012d7445c12
-NEW CROP, FLEX, amount: 633g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 3
-CROPT HAS BEEN SHIPPED, FLEX, amount: 633g, in week:4
-NEW PRODUCT, Flex material, amount: 94kg, shop price: 275.0 in week:4
-PRODUCT HAS BEEN SHIPPED, Flex material, shop price: 275.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Flex material, amount: 84g, shop price: 275.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Flex material, amount: 79g, shop price: 275.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Flex material, amount: 77g, shop price: 275.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Flex material, amount: 67g, shop price: 275.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Flex material, amount: 65g, shop price: 275.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Flex material, amount: 63g, shop price: 275.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Flex material, amount: 58g, shop price: 275.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Flex material, amount: 56g, shop price: 275.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Flex material, amount: 6g, shop price: 275.0 in week:5
-PRODUCT HAS BEEN PURCHASED, Flex material, amount: 1g, shop price: 275.0 in week:5
+UUID: b1d6dee0-0fb2-4bed-9627-4492001d2b7f
+NEW CROP, APPLE, amount: 835kg, in week: 9
+
+
+UUID: 3a1e4a89-627a-44d3-9b06-fe4f192aa29d
+NEW CROP, GRAPEVINE, amount: 294kg, in week: 1
+
+
+UUID: 86c86388-704e-4826-a81a-c4765a3f23b8
+NEW CROP, SUNFLOWER, amount: 866kg, in week: 5
+
+
+UUID: ab249e5c-528a-4af9-afba-1d88ac3b19c1
+NEW CROP, CHERRIES, amount: 931kg, in week: 1
+CROP HAS BEEN HARVESTED IN WEEK: 9
+CROPT HAS BEEN SHIPPED, CHERRIES, amount: 931kg, in week:10
+NEW PRODUCT, CHERRIESjam, amount: 791kg, shop price: 85.0 in week:10
+
+
+UUID: 12b5410b-8837-4fa4-804a-a858b13eefc5
+NEW CROP, WHEET, amount: 938kg, in week: 10
+
+
+UUID: e232ee7b-c9da-435e-ac31-f1576c88d7e6
+NEW CROP, BEAN, amount: 530kg, in week: 10
+
+
+UUID: 611a0990-c03f-49e7-963d-076ca5c23304
+NEW CROP, CUCCUMBER, amount: 544kg, in week: 1
+CROPT HAS BEEN SHIPPED, CUCCUMBER, amount: 544kg, in week:1
+NEW PRODUCT, jar of sourCUCCUMBER, amount: 272kg, shop price: 35.0 in week:1
+PRODUCT HAS BEEN SHIPPED, jar of sourCUCCUMBER, shop price: 35.0 in week:2
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 262kg, shop price: 35.0 in week:2
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 248kg, shop price: 35.0 in week:2
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 246kg, shop price: 35.0 in week:2
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 244kg, shop price: 35.0 in week:2
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 234kg, shop price: 35.0 in week:2
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 232kg, shop price: 35.0 in week:2
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 220kg, shop price: 35.0 in week:2
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 206kg, shop price: 35.0 in week:2
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 204kg, shop price: 35.0 in week:2
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 202kg, shop price: 35.0 in week:2
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 200kg, shop price: 35.0 in week:2
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 190kg, shop price: 35.0 in week:3
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 182kg, shop price: 35.0 in week:3
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 180kg, shop price: 35.0 in week:3
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 178kg, shop price: 35.0 in week:3
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 168kg, shop price: 35.0 in week:3
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 166kg, shop price: 35.0 in week:3
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 161kg, shop price: 35.0 in week:3
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 159kg, shop price: 35.0 in week:3
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 109kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 99kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 97kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 95kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 93kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 91kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 77kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 75kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 65kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 63kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 61kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 59kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 57kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 55kg, shop price: 35.0 in week:4
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 47kg, shop price: 35.0 in week:5
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 37kg, shop price: 35.0 in week:5
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 35kg, shop price: 35.0 in week:5
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 33kg, shop price: 35.0 in week:5
+PRODUCT HAS BEEN PURCHASED, jar of sourCUCCUMBER, amount: 18kg, shop price: 35.0 in week:5
 PRODUCT WAS SOLD OUT, in week:5
 
 
-UUID: 29b46bb6-fade-49df-b899-2b5e6df66e81
-NEW CROP, WHEET, amount: 505g, in week: 4
+UUID: 80972a39-d2ea-4da4-8899-99994c4ac06c
+NEW CROP, TOMATO, amount: 590kg, in week: 2
 
 
-UUID: 6b25d9b1-0c68-4bbf-9870-b9a0645fe57f
-NEW CROP, APPLE, amount: 827g, in week: 6
+UUID: a54acd1f-2781-4762-8737-f51a0a7e1c22
+NEW CROP, CORN, amount: 1kg, in week: 8
 
 
-UUID: 40808c51-7ab0-4479-b999-186a2c120040
-NEW CROP, ONION, amount: 363g, in week: 10
+UUID: eb432e0b-1c76-4ea9-981a-5cf3af2c2c9a
+NEW CROP, CUCCUMBER, amount: 857kg, in week: 8
 
 
-UUID: afc059fb-be88-46a4-a2ab-486b57a32ace
-NEW CROP, ONION, amount: 440g, in week: 3
+UUID: 4a01282c-53dd-47e5-a303-ae2d2fcc4c3d
+NEW CROP, BEAN, amount: 1kg, in week: 7
 
 
-UUID: 908b05ac-3de1-4b87-aa45-e0970f430f6c
-NEW CROP, OILSEED, amount: 371g, in week: 9
+UUID: 860645bc-5609-4adc-879e-ff84845f6be1
+NEW CROP, PLUMS, amount: 415kg, in week: 7
 
 
-UUID: 383a9567-0bde-4a95-b1fa-7cf95b162dbe
-NEW CROP, WHEET, amount: 376g, in week: 7
-
-
-UUID: ec7bdb6f-05ce-4c60-ae60-d74c2c490e61
-NEW CROP, OILSEED, amount: 507g, in week: 2
-
-
-UUID: 325fb473-cb49-4b36-8d57-9a657c525a8c
-NEW CROP, CHERRIES, amount: 765g, in week: 7
-
-
-UUID: c72c2748-4af9-4467-9fb5-ad0cfe79bdfa
-NEW CROP, ONION, amount: 344g, in week: 2
-
-
-UUID: d71ed8aa-0964-46c6-adeb-1235ec61a66d
-NEW CROP, TOMATO, amount: 143g, in week: 3
-
-
-UUID: cc744c13-337b-47bc-8101-04bb68e1c63e
-NEW CROP, OILSEED, amount: 227g, in week: 2
-
-
-UUID: b57164a0-4169-49fc-af8d-08ef93759e9a
-NEW CROP, APPLE, amount: 125g, in week: 6
-
-
-UUID: 4dfff5d5-135f-4d8c-8d8e-e91f2ee2d340
-NEW CROP, OATS, amount: 310g, in week: 3
-
-
-UUID: 6e437c6a-6173-4352-ba66-7afb7cd24b8c
-NEW CROP, BARLEY, amount: 1g, in week: 4
-
-
-UUID: 4325e3ee-032c-4f10-8cf3-785c304fafdb
-NEW CROP, CORN, amount: 171g, in week: 2
-
-
-UUID: e75d597b-8392-4e28-beea-73f3fe51951b
-NEW CROP, SALAD, amount: 1g, in week: 7
-
-
-UUID: be308900-6c15-4d4a-a7bd-ce84b95ee9c7
-NEW CROP, POPPY, amount: 660g, in week: 6
-
-
-UUID: 6ebc457d-232e-4a76-88a1-0ce2c460376f
-NEW CROP, OATS, amount: 499g, in week: 10
-
-
-UUID: 25bc5f68-69bd-4970-bc6f-792f36e5ee64
-NEW CROP, POPPY, amount: 810g, in week: 6
-
-
-UUID: aa14051d-8f32-4a99-99aa-0d3aeb98ce73
-NEW CROP, TOMATO, amount: 682g, in week: 2
-
-
-UUID: fd1a10cc-a950-4983-9f4a-4e9d30156b1d
-NEW CROP, SUNFLOWER, amount: 361g, in week: 6
-
-
-UUID: 7484b2aa-37a0-42fd-b208-02bf1fd1a9c9
-NEW CROP, WHEET, amount: 737g, in week: 2
-
-
-UUID: c9134c91-96a2-45ed-bdc4-5bdd60cd4dfb
-NEW CROP, BEAN, amount: 617g, in week: 4
-
-
-UUID: bd9efa09-e108-4be3-8376-3579b630bca9
-NEW CROP, LENTIL, amount: 631g, in week: 6
-
-
-UUID: 91becc65-aa59-4798-9d29-ccaf3c7dbe0f
-NEW CROP, GRAPEVINE, amount: 1g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 2
-CROPT HAS BEEN SHIPPED, GRAPEVINE, amount: 1g, in week:3
-NEW PRODUCT, GRAPEVINE, amount: 1kg, shop price: 68.6 in week:3
-PRODUCT HAS BEEN SHIPPED, GRAPEVINE, shop price: 68.6 in week:4
+UUID: b99ce019-102f-4b96-9ba4-3e72b8f909d8
+NEW CROP, PEAR, amount: 534kg, in week: 1
+CROPT HAS BEEN SHIPPED, PEAR, amount: 534kg, in week:1
+NEW PRODUCT, PEARjam, amount: 453kg, shop price: 119.69 in week:1
+PRODUCT HAS BEEN SHIPPED, PEARjam, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 440kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 430kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 425kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 375kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 373kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 371kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 366kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 356kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 343kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 338kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 336kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 329kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 321kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 271kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 260kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 258kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 256kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 254kg, shop price: 119.69 in week:2
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 244kg, shop price: 119.69 in week:3
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 239kg, shop price: 119.69 in week:3
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 189kg, shop price: 119.69 in week:3
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 182kg, shop price: 119.69 in week:3
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 180kg, shop price: 119.69 in week:3
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 175kg, shop price: 119.69 in week:3
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 173kg, shop price: 119.69 in week:3
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 162kg, shop price: 119.69 in week:3
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 152kg, shop price: 119.69 in week:3
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 150kg, shop price: 119.69 in week:3
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 144kg, shop price: 119.69 in week:3
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 139kg, shop price: 119.69 in week:3
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 137kg, shop price: 119.69 in week:3
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 127kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 122kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 120kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 115kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 108kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 106kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 91kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 89kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 84kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 79kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 74kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 69kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 67kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 59kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 57kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 47kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 45kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 40kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 38kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 36kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 25kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 23kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 21kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 16kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 7kg, shop price: 119.69 in week:4
+PRODUCT HAS BEEN PURCHASED, PEARjam, amount: 1kg, shop price: 119.69 in week:4
 PRODUCT WAS SOLD OUT, in week:4
 
 
-UUID: 2e325ec7-863f-47b5-9e49-bf0ed34fec86
-NEW CROP, LENTIL, amount: 550g, in week: 1
-CROPT HAS BEEN SHIPPED, LENTIL, amount: 550g, in week:1
-NEW PRODUCT, RawLENTIL, amount: 550kg, shop price: 6.0 in week:1
-PRODUCT HAS BEEN SHIPPED, RawLENTIL, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 500g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 490g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 440g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 438g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 428g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 426g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 424g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 422g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 417g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 415g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 405g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 395g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 385g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 383g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 333g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 283g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 271g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 261g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 251g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 249g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 247g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 237g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 235g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 225g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 215g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 200g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 190g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 180g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 170g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 165g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 155g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 145g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 135g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 133g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 118g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 116g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 114g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 112g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 102g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 97g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 87g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 77g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 67g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 57g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 55g, shop price: 6.0 in week:2
-PRODUCT HAS BEEN PURCHASED, RawLENTIL, amount: 45g, shop price: 6.0 in week:2
+UUID: 46a143b4-7cc6-4de5-90ba-80f6ce4ee8f8
+NEW CROP, CORN, amount: 699kg, in week: 9
+
+
+UUID: 3be8a58d-1d17-49c9-b9b7-90301bd4d826
+NEW CROP, PLUMS, amount: 517kg, in week: 3
+
+
+UUID: 15e1a40c-4356-42cd-badc-05a704328ff0
+NEW CROP, CUCCUMBER, amount: 696kg, in week: 9
+
+
+UUID: 96518744-9ec2-4a8e-853f-e9101b786cda
+NEW CROP, RYE, amount: 1kg, in week: 1
+CROP HAS BEEN HARVESTED IN WEEK: 3
+
+
+UUID: 0a4e4fb8-7b7e-40c2-b2ea-5d07f5f1de8b
+NEW CROP, SUGARBEAT, amount: 970kg, in week: 5
+
+
+UUID: 6279ec05-4421-4fae-9844-181cdb2b5262
+NEW CROP, FLEX, amount: 676kg, in week: 5
+
+
+UUID: 8c75554a-a4f4-4d8f-80d0-2e6b0d4e4952
+NEW CROP, RYE, amount: 503kg, in week: 1
+CROP HAS BEEN HARVESTED IN WEEK: 2
+
+
+UUID: 9a3299b9-9934-4bab-baf7-8173d1246950
+NEW CROP, ONION, amount: 320kg, in week: 1
+
+
+UUID: d2677c78-a793-4df0-8dd7-72da4bfabc6c
+NEW CROP, SALAD, amount: 933kg, in week: 3
+
+
+UUID: b9fc4929-cdad-4fbb-b50a-802e165e8f51
+NEW CROP, POPPY, amount: 271kg, in week: 7
+
+
+UUID: 9a1b7923-5a96-4cf6-af91-caee57b0a77d
+NEW CROP, WHEET, amount: 1kg, in week: 1
+CROP HAS BEEN HARVESTED IN WEEK: 5
+
+
+UUID: baa2400c-2311-4c5d-bcc8-fdf76d15e122
+NEW CROP, HEMP, amount: 253kg, in week: 10
+
+
+UUID: 7435349d-aa2f-4b52-84c8-d5907767e500
+NEW CROP, SUGARBEAT, amount: 1kg, in week: 5
+CROP HAS BEEN HARVESTED IN WEEK: 8
+CROPT HAS BEEN SHIPPED, SUGARBEAT, amount: 1kg, in week:9
+NEW PRODUCT, Suggar, amount: 0kg, shop price: 42.55 in week:9
+PRODUCT HAS BEEN SHIPPED, Suggar, shop price: 42.55 in week:10
+PRODUCT WAS SOLD OUT, in week:10
+
+
+UUID: de107f97-dd3e-4260-b65a-35a1bcaafb65
+NEW CROP, OATS, amount: 472kg, in week: 5
+
+
+UUID: 748661de-aa06-49b9-b938-ad4bed670103
+NEW CROP, FLEX, amount: 680kg, in week: 5
+
+
+UUID: 133f4127-e1f7-41bf-acab-f61a82e52af6
+NEW CROP, BARLEY, amount: 549kg, in week: 10
+
+
+UUID: 92da7617-8061-4164-88d9-3abe9828f574
+NEW CROP, SALAD, amount: 321kg, in week: 1
+CROPT HAS BEEN SHIPPED, SALAD, amount: 321kg, in week:1
+NEW PRODUCT, SALAD, amount: 321kg, shop price: 44.68 in week:1
+PRODUCT HAS BEEN SHIPPED, SALAD, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 307kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 297kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 292kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 242kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 240kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 238kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 228kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 213kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 211kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 200kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 198kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 196kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 194kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 184kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 134kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 122kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 120kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 118kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 108kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 106kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 91kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 84kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 82kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 72kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 70kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 65kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 63kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 54kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 52kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 50kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 48kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 38kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 36kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 34kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 32kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 30kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 28kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 20kg, shop price: 44.68 in week:4
+PRODUCT WAS SOLD OUT, in week:4
+
+
+UUID: eb6c1631-5fb9-430b-bf98-2735a4452ff4
+NEW CROP, WHEET, amount: 836kg, in week: 5
+
+
+UUID: 256dbff7-44e0-44d3-aa52-e2a21e3d5293
+NEW CROP, OILSEED, amount: 508kg, in week: 3
+
+
+UUID: 9d13d068-2eee-4043-a6c1-bc6da4c11b42
+NEW CROP, OILSEED, amount: 111kg, in week: 9
+
+
+UUID: f3aa18da-f65e-456c-b604-2c3d7b19299f
+NEW CROP, HOP, amount: 667kg, in week: 9
+
+
+UUID: 756ac3ae-084d-4fea-b3de-62c0f1d55cac
+NEW CROP, SUGARBEAT, amount: 393kg, in week: 9
+
+
+UUID: 2adc0791-046c-44b1-8b87-cb91c209d68b
+NEW CROP, APPLE, amount: 853kg, in week: 10
+
+
+UUID: 03d6b64f-b3ec-44f5-9ac5-bde489b28316
+NEW CROP, TOMATO, amount: 883kg, in week: 3
+
+
+UUID: f48b2e50-0f7a-47e1-91dd-ca4da83bfae3
+NEW CROP, OATS, amount: 639kg, in week: 8
+
+
+UUID: e254c129-c682-4f20-90b3-d0422a683d4c
+NEW CROP, SUNFLOWER, amount: 283kg, in week: 5
+
+
+UUID: d71ac300-a17a-41e0-bf78-4155d2b4c512
+NEW CROP, ONION, amount: 1kg, in week: 1
+CROP HAS BEEN HARVESTED IN WEEK: 7
+CROPT HAS BEEN SHIPPED, ONION, amount: 1kg, in week:8
+NEW PRODUCT, ONION, amount: 1kg, shop price: 24.0 in week:8
+PRODUCT HAS BEEN SHIPPED, ONION, shop price: 24.0 in week:9
+PRODUCT WAS SOLD OUT, in week:9
+
+
+UUID: fc7c04f3-f5e7-44fc-b385-6b46e0674622
+NEW CROP, RYE, amount: 623kg, in week: 3
+
+
+UUID: 8ba1063c-bc44-4fd1-8fef-3a3dadb2897b
+NEW CROP, RYE, amount: 933kg, in week: 1
+CROP HAS BEEN HARVESTED IN WEEK: 3
+
+
+UUID: f2eadd4d-5ee6-4ade-bd30-74b517e064ee
+NEW CROP, FLEX, amount: 980kg, in week: 8
+
+
+UUID: 5e1678be-da81-4d02-a441-b531f135667a
+NEW CROP, LENTIL, amount: 723kg, in week: 1
+CROPT HAS BEEN SHIPPED, LENTIL, amount: 723kg, in week:1
+NEW PRODUCT, Can of LENTIL, amount: 578kg, shop price: 7.0 in week:1
+PRODUCT HAS BEEN SHIPPED, Can of LENTIL, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 568kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 554kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 504kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 502kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 500kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 490kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 488kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 477kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 427kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 417kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 415kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 413kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 411kg, shop price: 7.0 in week:2
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 401kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 399kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 397kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 389kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 379kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 377kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 372kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 357kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 355kg, shop price: 7.0 in week:3
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 305kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 295kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 293kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 279kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 277kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 269kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 267kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 265kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 263kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 253kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 251kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 249kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 247kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 234kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 232kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 230kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 218kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 210kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 205kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 155kg, shop price: 7.0 in week:4
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 145kg, shop price: 7.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 143kg, shop price: 7.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 141kg, shop price: 7.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 129kg, shop price: 7.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 79kg, shop price: 7.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 77kg, shop price: 7.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 67kg, shop price: 7.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 54kg, shop price: 7.0 in week:5
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 4kg, shop price: 7.0 in week:5
+PRODUCT WAS SOLD OUT, in week:5
+
+
+UUID: 7562cd7a-7972-470f-b3a5-5b3539640c87
+NEW CROP, HOP, amount: 243kg, in week: 9
+
+
+UUID: 03faea23-15cf-459b-a6a0-8d4bd250bd21
+NEW CROP, WHEET, amount: 354kg, in week: 9
+
+
+UUID: 6d5ec444-3778-49f3-9322-25eddb0bed4f
+NEW CROP, SUNFLOWER, amount: 155kg, in week: 5
+
+
+UUID: 06dde6c1-db75-4b8a-a651-dd1e24e1b050
+NEW CROP, BARLEY, amount: 1kg, in week: 7
+
+
+UUID: ea5a495f-7eff-48cf-8339-2c5045e92694
+NEW CROP, WHEET, amount: 309kg, in week: 7
+
+
+UUID: a02fcb76-6370-4aff-a46a-4fa62ad828e3
+NEW CROP, CUCCUMBER, amount: 612kg, in week: 7
+
+
+UUID: 8674e660-7072-441a-be4f-dc8f1d4bb4d5
+NEW CROP, CORN, amount: 539kg, in week: 9
+
+
+UUID: ccc7d66c-2766-425c-b97d-fb5c6a5b24cc
+NEW CROP, POPPY, amount: 472kg, in week: 9
+
+
+UUID: aea0f01b-e28b-409c-ae70-077d077819f4
+NEW CROP, OILSEED, amount: 560kg, in week: 2
+
+
+UUID: b2ce6ad2-3d96-4aa5-abd1-62890e2e2777
+NEW CROP, OATS, amount: 460kg, in week: 7
+
+
+UUID: 97fd8359-2109-4d14-80e7-54944b4d98a8
+NEW CROP, POTATO, amount: 557kg, in week: 10
+
+
+UUID: 3283bd40-cd73-4ec2-a186-b1e158eab1ce
+NEW CROP, OILSEED, amount: 304kg, in week: 2
+
+
+UUID: e2314b25-8cce-4730-b2e1-4684f00bcfb6
+NEW CROP, RYE, amount: 612kg, in week: 2
+
+
+UUID: 67970dfc-ef0f-4805-a760-a676a99928db
+NEW CROP, SUNFLOWER, amount: 226kg, in week: 5
+
+
+UUID: cebc76c6-bb18-4c08-a537-7fb89a4be49b
+NEW CROP, LENTIL, amount: 454kg, in week: 2
+
+
+UUID: 082eac5a-1ab0-4a29-861b-602b4251cbb9
+NEW CROP, PEAR, amount: 818kg, in week: 9
+
+
+UUID: f12ab088-71fa-4d34-b49a-0fa85b9e7cf6
+NEW CROP, RYE, amount: 1kg, in week: 8
+
+
+UUID: 2ec454a8-08f5-4410-b460-a042bebe692e
+NEW CROP, PEAR, amount: 325kg, in week: 9
+
+
+UUID: d65b0129-3c7f-4c82-af81-e8be8907788c
+NEW CROP, CHERRIES, amount: 869kg, in week: 9
+
+
+UUID: eed78250-84fa-4f60-865e-1250936af13b
+NEW CROP, CHERRIES, amount: 233kg, in week: 5
+
+
+UUID: 357ae6ca-253f-43c5-972f-b7c92241b2ae
+NEW CROP, CORN, amount: 965kg, in week: 9
+
+
+UUID: f51018a9-36d2-4418-9824-9b350013af32
+NEW CROP, RYE, amount: 128kg, in week: 9
+
+
+UUID: 95331c28-04ba-4db3-954b-bce37df65f08
+NEW CROP, RYE, amount: 224kg, in week: 1
+
+
+UUID: 6434237f-5193-4cfb-a582-97a574757737
+NEW CROP, GRAPEVINE, amount: 729kg, in week: 3
+
+
+UUID: 3fb174b2-2c4d-4c63-bd2f-1f43ccb7bebe
+NEW CROP, CHERRIES, amount: 279kg, in week: 3
+
+
+UUID: f4532220-1bf1-4d03-aed0-f756acd0ac9e
+NEW CROP, CHERRIES, amount: 1kg, in week: 5
+
+
+UUID: 56bb6d57-8e1e-4bbc-a808-d68be9f0f677
+NEW CROP, CUCCUMBER, amount: 241kg, in week: 2
+
+
+UUID: 256310b2-43ae-432b-a3bc-bd90000d0e3a
+NEW CROP, GRAPEVINE, amount: 479kg, in week: 8
+
+
+UUID: f3a8a4fa-141d-4a6a-a55b-707badf70ea2
+NEW CROP, CHERRIES, amount: 123kg, in week: 1
+CROPT HAS BEEN SHIPPED, CHERRIES, amount: 123kg, in week:1
+NEW PRODUCT, CHERRIESjuice, amount: 104l, shop price: 85.0 in week:1
+PRODUCT HAS BEEN SHIPPED, CHERRIESjuice, shop price: 85.0 in week:2
+PRODUCT HAS BEEN PURCHASED, CHERRIESjuice, amount: 94l, shop price: 85.0 in week:2
+PRODUCT HAS BEEN PURCHASED, CHERRIESjuice, amount: 79l, shop price: 85.0 in week:2
+PRODUCT HAS BEEN PURCHASED, CHERRIESjuice, amount: 29l, shop price: 85.0 in week:2
+PRODUCT HAS BEEN PURCHASED, CHERRIESjuice, amount: 27l, shop price: 85.0 in week:2
+PRODUCT HAS BEEN PURCHASED, CHERRIESjuice, amount: 25l, shop price: 85.0 in week:2
+PRODUCT HAS BEEN PURCHASED, CHERRIESjuice, amount: 15l, shop price: 85.0 in week:2
+PRODUCT HAS BEEN PURCHASED, CHERRIESjuice, amount: 6l, shop price: 85.0 in week:2
 PRODUCT WAS SOLD OUT, in week:2
 
 
-UUID: 92515d6d-30c6-46cc-82f6-f8017787d3b7
-NEW CROP, RYE, amount: 672g, in week: 7
+UUID: ed51a7b0-664c-421f-8995-bf815c72b585
+NEW CROP, OILSEED, amount: 771kg, in week: 7
 
 
-UUID: 0b544e06-9e67-4699-93db-66b90b45ca79
-NEW CROP, OILSEED, amount: 485g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 2
-CROPT HAS BEEN SHIPPED, OILSEED, amount: 485g, in week:3
-NEW PRODUCT, Oilseed oil, amount: 363kg, shop price: 58.0 in week:3
-PRODUCT HAS BEEN SHIPPED, Oilseed oil, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 353g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 351g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 341g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 339g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 337g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 335g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 326g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 276g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 274g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 264g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 254g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 244g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 194g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 192g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 142g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 92g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 86g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 76g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 69g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 59g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 57g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 55g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 45g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 43g, shop price: 58.0 in week:4
-PRODUCT HAS BEEN PURCHASED, Oilseed oil, amount: 33g, shop price: 58.0 in week:4
-PRODUCT WAS SOLD OUT, in week:4
+UUID: 8a1bb2f9-b714-4ea9-8f58-eada2ecbd743
+NEW CROP, HOP, amount: 1kg, in week: 3
+CROP HAS BEEN HARVESTED IN WEEK: 5
+CROPT HAS BEEN SHIPPED, HOP, amount: 1kg, in week:6
+NEW PRODUCT, Beer, amount: 0l, shop price: 5.0 in week:6
+PRODUCT HAS BEEN SHIPPED, Beer, shop price: 5.0 in week:7
+PRODUCT WAS SOLD OUT, in week:7
 
 
-UUID: c50ef178-28c0-479c-9b5a-ef8c2d9e6190
-NEW CROP, ONION, amount: 731g, in week: 1
-CROP HAS BEEN HARVESTED IN WEEK: 6
-CROPT HAS BEEN SHIPPED, ONION, amount: 731g, in week:7
-NEW PRODUCT, Onion rings, amount: 657kg, shop price: 40.0 in week:7
-PRODUCT HAS BEEN SHIPPED, Onion rings, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 647g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 597g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 595g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 585g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 583g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 581g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 579g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 577g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 567g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 557g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 547g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 545g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 495g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 481g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 473g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 463g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 453g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 451g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 449g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 439g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 437g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 427g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 417g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 407g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 397g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 386g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 376g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 371g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 361g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 351g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 341g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 291g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 282g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 280g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 272g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 270g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 256g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 254g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 252g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 240g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 230g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 216g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 206g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 196g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 186g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 176g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 174g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 124g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 114g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 64g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 14g, shop price: 40.0 in week:8
-PRODUCT HAS BEEN PURCHASED, Onion rings, amount: 1g, shop price: 40.0 in week:8
-PRODUCT WAS SOLD OUT, in week:8
+UUID: d05f9d5c-a576-4c69-93f4-0c387cc89a40
+NEW CROP, SALAD, amount: 751kg, in week: 5
 
 
-UUID: 8fc5cf71-271d-4f28-b155-6f430e3ffd5b
-NEW CROP, OATS, amount: 1g, in week: 8
-CROP HAS BEEN HARVESTED IN WEEK: 9
+UUID: 5be6fb9d-b276-42ad-a5ff-3f0b9a9f5193
+NEW CROP, RYE, amount: 574kg, in week: 9
 
 
-UUID: caa2eece-27e4-49d0-bac0-1ff0617e97e2
-NEW CROP, FLEX, amount: 485g, in week: 6
+UUID: 120c7553-18ec-4b4e-8965-d64e1161afef
+NEW CROP, FLEX, amount: 247kg, in week: 10
 
 
-UUID: 0a9684c7-43a9-44aa-a706-4c2500af3f26
-NEW CROP, SUGARBEAT, amount: 1g, in week: 5
-CROP HAS BEEN HARVESTED IN WEEK: 6
-CROPT HAS BEEN SHIPPED, SUGARBEAT, amount: 1g, in week:7
-NEW PRODUCT, Suggar, amount: 0kg, shop price: 42.547200000000004 in week:7
-PRODUCT HAS BEEN SHIPPED, Suggar, shop price: 42.547200000000004 in week:8
-PRODUCT WAS SOLD OUT, in week:8
+UUID: 86ae53b7-2518-4974-a113-2a8408d6a369
+NEW CROP, LENTIL, amount: 485kg, in week: 9
 
 
-UUID: a953ecac-c28d-4eeb-a0bd-6873b1ff7753
-NEW CROP, HEMP, amount: 896g, in week: 4
+UUID: 7a926d0c-110b-407f-84a8-dee2d9bef040
+NEW CROP, LENTIL, amount: 343kg, in week: 7
 
 
-UUID: d72c9646-1625-4b16-9af2-ec942b28e4eb
-NEW CROP, BARLEY, amount: 1g, in week: 6
+UUID: 94df28f1-439f-4b57-a0cb-d76095fde1d2
+NEW CROP, BARLEY, amount: 460kg, in week: 2
 
 
-UUID: 854344d0-4997-4860-bbdd-628e0e75b2bf
-NEW CROP, BARLEY, amount: 817g, in week: 3
+UUID: f1e61642-50b3-43ec-afbb-076145d9e892
+NEW CROP, BARLEY, amount: 1kg, in week: 7
+
+
+UUID: 34683b5a-3f57-4b21-b149-ac37ef3ca66c
+NEW CROP, WHEET, amount: 273kg, in week: 7
+
+
+UUID: 70ba399c-d66f-4dcc-a2da-853e9b95b79f
+NEW CROP, POPPY, amount: 980kg, in week: 10
+
+
+UUID: b6a3e5f8-ad4c-41a0-99b2-ea540e1ba121
+NEW CROP, ONION, amount: 466kg, in week: 9
+
+
+UUID: ea1d3b14-6d69-47d0-9b95-65b861f19501
+NEW CROP, BEAN, amount: 824kg, in week: 9
+
+
+UUID: f1193539-5d48-4cbb-b055-d518a1abf258
+NEW CROP, LENTIL, amount: 679kg, in week: 1
+CROP HAS BEEN HARVESTED IN WEEK: 7
+CROPT HAS BEEN SHIPPED, LENTIL, amount: 679kg, in week:8
+NEW PRODUCT, Can of LENTIL, amount: 543kg, shop price: 7.0 in week:8
+PRODUCT HAS BEEN SHIPPED, Can of LENTIL, shop price: 7.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 541kg, shop price: 7.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 531kg, shop price: 7.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 529kg, shop price: 7.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 519kg, shop price: 7.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 517kg, shop price: 7.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 515kg, shop price: 7.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 513kg, shop price: 7.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 463kg, shop price: 7.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 452kg, shop price: 7.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 440kg, shop price: 7.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 390kg, shop price: 7.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 340kg, shop price: 7.0 in week:9
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 338kg, shop price: 7.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 336kg, shop price: 7.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 326kg, shop price: 7.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 318kg, shop price: 7.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 316kg, shop price: 7.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 310kg, shop price: 7.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 297kg, shop price: 7.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 295kg, shop price: 7.0 in week:10
+PRODUCT HAS BEEN PURCHASED, Can of LENTIL, amount: 293kg, shop price: 7.0 in week:10
+
+
+UUID: 2197b96d-d7fd-42f5-8f54-4c77376dd2d3
+NEW CROP, HEMP, amount: 703kg, in week: 8
+
+
+UUID: 4d8d487d-c29e-4449-a9d2-e63db4037bb9
+NEW CROP, POPPY, amount: 848kg, in week: 10
+
+
+UUID: 4573de70-3e47-4647-927b-e3ecde60df8c
+NEW CROP, APPLE, amount: 924kg, in week: 8
+
+
+UUID: e7fc04c9-84d8-4b10-969c-f122fdb68189
+NEW CROP, HEMP, amount: 195kg, in week: 2
+
+
+UUID: c74f72cc-02f2-49bc-9bd1-8c573e8d0ab9
+NEW CROP, SUNFLOWER, amount: 576kg, in week: 7
+
+
+UUID: d1c16f3a-e92c-4e9d-8819-47e7079426a2
+NEW CROP, HOP, amount: 248kg, in week: 10
+
+
+UUID: 49752c29-67fb-4e1e-8cd8-13d0e4331001
+NEW CROP, OATS, amount: 199kg, in week: 7
+
+
+UUID: 219aa6d7-c162-488a-bf05-f1850188f829
+NEW CROP, SALAD, amount: 715kg, in week: 2
+
+
+UUID: 332fe7ae-4a32-4aea-a18d-de020778c72b
+NEW CROP, SUGARBEAT, amount: 1kg, in week: 9
+
+
+UUID: 1a7c11c9-69cd-417a-b848-a5b9c510f46a
+NEW CROP, PEAR, amount: 414kg, in week: 9
+
+
+UUID: ee328dba-006a-4688-97b1-1e1b640c8142
+NEW CROP, ONION, amount: 138kg, in week: 5
+
+
+UUID: 9270152b-e5ea-41ed-9047-a0335cc10867
+NEW CROP, PLUMS, amount: 903kg, in week: 5
+
+
+UUID: d709e269-6b47-4c6d-8b81-8e204605ee61
+NEW CROP, ONION, amount: 433kg, in week: 8
+
+
+UUID: 622fef53-720f-4a7d-b84c-fd56293e06ba
+NEW CROP, GRAPEVINE, amount: 464kg, in week: 1
+CROPT HAS BEEN SHIPPED, GRAPEVINE, amount: 464kg, in week:1
+NEW PRODUCT, GRAPEVINE, amount: 464kg, shop price: 68.6 in week:1
+PRODUCT HAS BEEN SHIPPED, GRAPEVINE, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 455kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 445kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 433kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 431kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 429kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 419kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 406kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 404kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 393kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 382kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 332kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 330kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 328kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 326kg, shop price: 68.6 in week:2
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 316kg, shop price: 68.6 in week:3
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 314kg, shop price: 68.6 in week:3
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 312kg, shop price: 68.6 in week:3
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 304kg, shop price: 68.6 in week:3
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 294kg, shop price: 68.6 in week:3
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 292kg, shop price: 68.6 in week:3
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 290kg, shop price: 68.6 in week:3
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 280kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 278kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 276kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 264kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 262kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 260kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 258kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 248kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 246kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 244kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 242kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 235kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 233kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 231kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 223kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 215kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 165kg, shop price: 68.6 in week:4
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 155kg, shop price: 68.6 in week:5
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 153kg, shop price: 68.6 in week:5
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 151kg, shop price: 68.6 in week:5
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 141kg, shop price: 68.6 in week:5
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 139kg, shop price: 68.6 in week:5
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 129kg, shop price: 68.6 in week:5
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 119kg, shop price: 68.6 in week:5
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 117kg, shop price: 68.6 in week:5
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 110kg, shop price: 68.6 in week:6
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 100kg, shop price: 68.6 in week:6
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 90kg, shop price: 68.6 in week:6
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 83kg, shop price: 68.6 in week:6
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 78kg, shop price: 68.6 in week:6
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 76kg, shop price: 68.6 in week:6
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 74kg, shop price: 68.6 in week:7
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 64kg, shop price: 68.6 in week:7
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 54kg, shop price: 68.6 in week:7
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 44kg, shop price: 68.6 in week:7
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 42kg, shop price: 68.6 in week:7
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 40kg, shop price: 68.6 in week:7
+PRODUCT HAS BEEN PURCHASED, GRAPEVINE, amount: 38kg, shop price: 68.6 in week:7
+PRODUCT WAS SOLD OUT, in week:7
+
+
+UUID: 0b0f0ec4-9d10-489f-94fc-e467bc4ae705
+NEW CROP, OATS, amount: 606kg, in week: 2
+
+
+UUID: ceecb2fb-ac3a-4e26-89d3-37aa4aea7108
+NEW CROP, HOP, amount: 595kg, in week: 5
+
+
+UUID: 30080412-c139-43a3-9986-19cb6fd3a68e
+NEW CROP, SALAD, amount: 643kg, in week: 7
+
+
+UUID: 46543e6a-5d7a-408a-a402-416e9c8f53ba
+NEW CROP, APPLE, amount: 1kg, in week: 7
+
+
+UUID: 7d1f831f-64af-45cf-9a95-3a9c41df4f2f
+NEW CROP, BEAN, amount: 221kg, in week: 3
+
+
+UUID: 0cdad10e-48af-46e9-b236-96f15ae08229
+NEW CROP, CHERRIES, amount: 663kg, in week: 2
+
+
+UUID: 39dbbbbb-ffc2-4227-bec5-ea0eb6666e88
+NEW CROP, RYE, amount: 235kg, in week: 10
+
+
+UUID: 7cba3d9d-7c28-4787-a7ec-f50e87de8015
+NEW CROP, BARLEY, amount: 513kg, in week: 7
+
+
+UUID: 1ac307de-51c8-43b9-bfd4-a19ca424b2a1
+NEW CROP, SALAD, amount: 443kg, in week: 10
+
+
+UUID: 233cbd5b-6856-49d7-a7e2-9e2734958112
+NEW CROP, POTATO, amount: 309kg, in week: 3
+
+
+UUID: e9554829-90c5-4002-bb23-fd417c83d8f1
+NEW CROP, BARLEY, amount: 1kg, in week: 3
+CROP HAS BEEN HARVESTED IN WEEK: 5
+
+
+UUID: a8f7483e-e64b-4f57-975c-b822c11cba19
+NEW CROP, WHEET, amount: 437kg, in week: 7
+
+
+UUID: 1a567a95-7a72-40cf-b33b-071e6f0c70ef
+NEW CROP, CORN, amount: 438kg, in week: 5
+
+
+UUID: 9b58e5f3-1e8c-4f74-af68-072fb4f1bc5f
+NEW CROP, POTATO, amount: 791kg, in week: 10
+
+
+UUID: bca729ff-c317-420e-b609-b1615e6b90f9
+NEW CROP, PLUMS, amount: 652kg, in week: 2
+
+
+UUID: e9261a01-a0e1-401e-915d-b274b35d4e11
+NEW CROP, POPPY, amount: 815kg, in week: 9
+
+
+UUID: 5a5260b7-79ac-4d01-aac3-f52132a792b2
+NEW CROP, WHEET, amount: 857kg, in week: 2
+
+
+UUID: 2695ddeb-77af-47d8-826f-d846dbc07b29
+NEW CROP, POTATO, amount: 784kg, in week: 7
+
+
+UUID: 4ddefedc-5c11-4fb3-be7d-185d96ee73a4
+NEW CROP, WHEET, amount: 806kg, in week: 8
+
+
+UUID: 1478239d-c8e5-41ae-ad06-5e06d0429627
+NEW CROP, HOP, amount: 666kg, in week: 8
+
+
+UUID: bc6f56ab-35e2-4af0-9391-c4144478fde0
+NEW CROP, RYE, amount: 198kg, in week: 10
+
+
+UUID: 75eb60d8-7784-47fd-bed6-76bbfb2ec3c6
+NEW CROP, TOMATO, amount: 141kg, in week: 1
+CROPT HAS BEEN SHIPPED, TOMATO, amount: 141kg, in week:1
+NEW PRODUCT, Ketchup, amount: 84l, shop price: 107.14 in week:1
+PRODUCT HAS BEEN SHIPPED, Ketchup, shop price: 107.14 in week:2
+PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 74l, shop price: 107.14 in week:2
+PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 69l, shop price: 107.14 in week:2
+PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 19l, shop price: 107.14 in week:2
+PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 17l, shop price: 107.14 in week:2
+PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 15l, shop price: 107.14 in week:2
+PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 10l, shop price: 107.14 in week:2
+PRODUCT HAS BEEN PURCHASED, Ketchup, amount: 0l, shop price: 107.14 in week:2
+PRODUCT WAS SOLD OUT, in week:2
+
+
+UUID: 4b32c4c5-bbde-43d8-b3f8-230da0a27c76
+NEW CROP, OILSEED, amount: 679kg, in week: 5
+
+
+UUID: c5d4c93c-f5ed-490c-8603-f3d258595653
+NEW CROP, BARLEY, amount: 790kg, in week: 5
+
+
+UUID: 0263c742-63c0-4fa8-b8e0-9f250ae71fb9
+NEW CROP, FLEX, amount: 807kg, in week: 7
+
+
+UUID: 3edfe16f-530a-4b5d-af11-3c9973935829
+NEW CROP, HOP, amount: 575kg, in week: 2
+
+
+UUID: 49921cc3-e475-4e7b-8dfb-c180ca3f16cd
+NEW CROP, SALAD, amount: 502kg, in week: 1
+CROP HAS BEEN HARVESTED IN WEEK: 1
+CROPT HAS BEEN SHIPPED, SALAD, amount: 502kg, in week:2
+NEW PRODUCT, SALAD, amount: 502kg, shop price: 44.68 in week:2
+PRODUCT HAS BEEN SHIPPED, SALAD, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 492kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 478kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 476kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 466kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 459kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 457kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 450kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 440kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 438kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 428kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 417kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 415kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 409kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 407kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 402kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 352kg, shop price: 44.68 in week:3
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 342kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 292kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 282kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 280kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 270kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 220kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 210kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 200kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 188kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 186kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 184kg, shop price: 44.68 in week:4
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 174kg, shop price: 44.68 in week:5
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 164kg, shop price: 44.68 in week:5
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 162kg, shop price: 44.68 in week:5
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 152kg, shop price: 44.68 in week:5
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 150kg, shop price: 44.68 in week:5
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 144kg, shop price: 44.68 in week:5
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 142kg, shop price: 44.68 in week:5
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 132kg, shop price: 44.68 in week:5
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 130kg, shop price: 44.68 in week:5
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 128kg, shop price: 44.68 in week:5
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 126kg, shop price: 44.68 in week:5
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 116kg, shop price: 44.68 in week:6
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 106kg, shop price: 44.68 in week:6
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 99kg, shop price: 44.68 in week:6
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 86kg, shop price: 44.68 in week:6
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 84kg, shop price: 44.68 in week:6
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 82kg, shop price: 44.68 in week:6
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 72kg, shop price: 44.68 in week:6
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 62kg, shop price: 44.68 in week:6
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 12kg, shop price: 44.68 in week:6
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 10kg, shop price: 44.68 in week:6
+PRODUCT HAS BEEN PURCHASED, SALAD, amount: 0kg, shop price: 44.68 in week:7
+PRODUCT WAS SOLD OUT, in week:7
+
+
+UUID: 87e744a8-556d-4a94-a428-cbfed5ca6d7c
+NEW CROP, SUNFLOWER, amount: 215kg, in week: 7
+
+
+UUID: e51c38b5-8a59-4e47-bf85-683ebd52e086
+NEW CROP, LENTIL, amount: 664kg, in week: 7
+
+
+UUID: 5e0b300c-0dd2-49f8-a90e-879fa956ba33
+NEW CROP, WHEET, amount: 1kg, in week: 2
+CROP HAS BEEN HARVESTED IN WEEK: 7
+
+
+UUID: a52e3af1-b85c-45cd-8ed2-63a8acfc202a
+NEW CROP, HOP, amount: 268kg, in week: 3
+
+
+UUID: c7fc3ae7-d5d8-4390-b554-81832b901bff
+NEW CROP, HEMP, amount: 756kg, in week: 2
+
+
+UUID: 3f215317-fbc3-4a25-a203-6684eea7c400
+NEW CROP, SUGARBEAT, amount: 202kg, in week: 5
+
+
+UUID: 7f8197a3-8e4c-4115-93d4-d5d7a167b7ee
+NEW CROP, RYE, amount: 386kg, in week: 2
+
+
+UUID: 9326c2f8-2c5d-4e93-9e73-5ccd371edb45
+NEW CROP, BARLEY, amount: 148kg, in week: 5
+
+
+UUID: 85fcdf59-a509-4a44-a38a-0f5c91a8d963
+NEW CROP, TOMATO, amount: 202kg, in week: 7
+
+
+UUID: c5eb9357-eb3e-40f2-8c94-e1ca13e12038
+NEW CROP, SALAD, amount: 836kg, in week: 10
+
+
+UUID: ae6d5374-b165-471c-8dc1-ded466f9cb74
+NEW CROP, SALAD, amount: 923kg, in week: 5
+
+
+UUID: 22c3aa9f-5a19-418a-8300-f6309205eb00
+NEW CROP, BARLEY, amount: 1kg, in week: 10
+
+
+UUID: 9838ac7a-04ad-4720-b46a-f2207f7b4505
+NEW CROP, LENTIL, amount: 737kg, in week: 9
+
+
+UUID: 21d96e0a-37bd-4613-8bd6-90bfe2c09e2a
+NEW CROP, SALAD, amount: 681kg, in week: 5
 
 

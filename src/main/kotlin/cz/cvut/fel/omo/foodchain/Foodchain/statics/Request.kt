@@ -29,15 +29,18 @@ class Request {
             for (crop in crops) {
                 money += crop.getAmount() * crop.getShopPrice()
             }
-            val invoice = Invoice(processor, grower, money, InvoiceType.CROP)
-            proccesTheInvoice(invoice, processor)
 
             grower.transportSupplies()
             Transport.cargoDeduction()
             grower.raiseField()
 
-            val transportInvoice = Invoice(processor, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
-            proccesTheInvoice(transportInvoice, processor)
+            if(money > 0){
+                val invoice = Invoice(processor, grower, money, InvoiceType.CROP)
+                proccesTheInvoice(invoice, processor)
+
+                val transportInvoice = Invoice(processor, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
+                proccesTheInvoice(transportInvoice, processor)
+            }
 
             processor.takeSupplies(Transport.transportCropSuplies())
         }
@@ -54,9 +57,6 @@ class Request {
             for (animal in processedAnimals) {
                 money += animal.getAmount() * animal.getShopPrice()
             }
-            val invoice = Invoice(meatFactory, farmer, money, InvoiceType.MEAT)
-            proccesTheInvoice(invoice, meatFactory)
-
 
             val processedMeat =  ArrayList<MeatProduct>()
 
@@ -66,13 +66,17 @@ class Request {
                 processedMeat.addAll(meatStrategy.execute(meat))
             }
 
-
             Transport.takeMeat(processedMeat)
             Transport.cargoDeduction()
             meatFactory.takeMeat(Transport.transportMeats())
 
-            val transportInvoice = Invoice(meatFactory, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
-            proccesTheInvoice(transportInvoice, meatFactory)
+            if(money > 0){
+                val invoice = Invoice(meatFactory, farmer, money, InvoiceType.MEAT)
+                proccesTheInvoice(invoice, meatFactory)
+
+                val transportInvoice = Invoice(meatFactory, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
+                proccesTheInvoice(transportInvoice, meatFactory)
+            }
         }
 
         fun requestTransportToWarehouse(processor: Processor, retailer: Retailer) {
@@ -88,11 +92,13 @@ class Request {
             for (product in transportedProducts) {
                 money += product.getAmount() * product.getShopPrice()
             }
-            val invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
-            proccesTheInvoice(invoice, retailer)
+            if(money > 0){
+                val invoice = Invoice(retailer, processor, money, InvoiceType.PRODUCT)
+                proccesTheInvoice(invoice, retailer)
 
-            val transportInvoice = Invoice(retailer, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
-            proccesTheInvoice(transportInvoice, retailer)
+                val transportInvoice = Invoice(retailer, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
+                proccesTheInvoice(transportInvoice, retailer)
+            }
 
             retailer.buyProducts(transportedProducts)
         }
@@ -109,12 +115,13 @@ class Request {
             for (product in transportedProducts){
                 money += product.getAmount() * product.getShopPrice()
             }
-            val invoice = Invoice(retailer, meatFactory, money, InvoiceType.PRODUCT)
-            proccesTheInvoice(invoice, retailer)
+            if(money > 0){
+                val invoice = Invoice(retailer, meatFactory, money, InvoiceType.PRODUCT)
+                proccesTheInvoice(invoice, retailer)
 
-            val transportInvoice = Invoice(retailer, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
-            proccesTheInvoice(transportInvoice, retailer)
-
+                val transportInvoice = Invoice(retailer, Transport.transport, money * Config.TRANSPORT_TAX, InvoiceType.TRANSPORT)
+                proccesTheInvoice(transportInvoice, retailer)
+            }
             retailer.buyProducts(transportedProducts)
         }
 
@@ -131,9 +138,10 @@ class Request {
                     break
                 }
             }
-
-            val invoice = Invoice(farmer, grower, money, InvoiceType.PRODUCT)
-            proccesTheInvoice(invoice, farmer)
+            if (money > 0) {
+                val invoice = Invoice(farmer, grower, money, InvoiceType.PRODUCT)
+                proccesTheInvoice(invoice, farmer)
+            }
         }
 
         fun requestProccessMeat(meatFactory: MeatFactory){
@@ -148,8 +156,10 @@ class Request {
             retailer.refreshAvailableProducts(products)
 
             // Faktura
-            val invoice = Invoice(customer, retailer, money, InvoiceType.SHOPPING)
-            proccesTheInvoice(invoice, customer)
+            if(money > 0){
+                val invoice = Invoice(customer, retailer, money, InvoiceType.SHOPPING)
+                proccesTheInvoice(invoice, customer)
+            }
         }
 
         fun requestTakeOutToShop(retailer: Retailer){

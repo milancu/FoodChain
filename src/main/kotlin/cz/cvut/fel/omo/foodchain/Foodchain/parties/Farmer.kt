@@ -58,7 +58,7 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
      *
      * @return
      */
-    fun controlAnimalsForProcessing(): AnimalToProcess {
+    private fun controlAnimalsForProcessing(): AnimalToProcess {
         animalToProcess.clearList()
         animals.iterator().forEach { animal ->
             when (animal.getName()) {
@@ -119,15 +119,6 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
                 this.amountOfMoney -= newAnimal.getWeight()
             }
         }
-    }
-
-    /**
-     * Get animals to processing
-     *
-     * @return
-     */
-    fun getAnimalsToProcessing(): ArrayList<Animal> {
-        return this.animalsToProcessing
     }
 
     /**

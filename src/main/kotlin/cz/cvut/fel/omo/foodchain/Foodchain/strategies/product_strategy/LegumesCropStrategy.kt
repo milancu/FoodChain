@@ -13,8 +13,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  */
 class LegumesCropStrategy : ProcessorCropStrategy {
     override fun execute(crop: Crop): Product {
-        val random: Int = (1..2).random()
-        when (random) {
+        when ((1..2).random()) {
             1 -> {
                 val product =  CropProduct(
                     "Raw" + crop.getName().toString(),

@@ -8,7 +8,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.statics
 class Config {
     companion object Params {
         // main config
-        var WEEKS: Int = 10;
+        var WEEKS: Int = 10
         var GROWERS: Int = 2
         var FARMERS: Int = 2
         var PROCESSORS: Int = 2

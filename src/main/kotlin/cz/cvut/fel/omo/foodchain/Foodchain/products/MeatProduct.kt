@@ -54,7 +54,6 @@ class MeatProduct(
     }
 
     fun getTypeOfMeat() : String {
-        return this.typeOfMeat;
+        return this.typeOfMeat
     }
-
 }

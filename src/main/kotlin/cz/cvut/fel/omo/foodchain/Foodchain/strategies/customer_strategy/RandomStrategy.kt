@@ -20,7 +20,7 @@ class RandomStrategy : CustomerStrategy {
 
         for(product in products){
             val random : Int = (0..1).random()
-            val randomSize : Int = /*(5..15).random()*/ 50
+            val randomSize : Int = (5..15).random()
             if(random == 1){
                 if(product.getProductType() == ProductType.MEAT){
                     product.notifyPurchased(product.getAmount())

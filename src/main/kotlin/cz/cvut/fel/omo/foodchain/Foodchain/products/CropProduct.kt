@@ -25,7 +25,7 @@ class CropProduct(
     private var unit: String,
     private var origin: UUID,
     state : State
-    ) :  Product(name, shopPrice, productionCost, amount, unit, origin, state) {
+) :  Product(name, shopPrice, productionCost, amount, unit, origin, state) {
 
     override fun getName() : String{
         return this.name

@@ -4,20 +4,20 @@ import cz.cvut.fel.omo.foodchain.Foodchain.animals.Animal
 
 class AnimalToProcess : CustomIterator {
 
-    private var animalList : ArrayList<Animal>;
+    private var animalList : ArrayList<Animal>
 
-    constructor() {
-        this.animalList = ArrayList<Animal>()
+    init {
+        this.animalList = ArrayList()
     }
 
     override fun hasNext(): Boolean {
-        return !animalList.isEmpty()
+        return animalList.isNotEmpty()
     }
 
     override fun next(): Animal {
         val animal = animalList[0]
         animalList.removeAt(0)
-        return animal;
+        return animal
     }
 
     fun add(animal: Animal) {
@@ -25,7 +25,7 @@ class AnimalToProcess : CustomIterator {
     }
 
     fun clearList() {
-        animalList = ArrayList<Animal>();
+        animalList = ArrayList()
     }
 
     @JvmName("getAnimalList1")

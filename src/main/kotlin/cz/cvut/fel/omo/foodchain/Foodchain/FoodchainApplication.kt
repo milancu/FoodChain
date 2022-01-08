@@ -42,10 +42,10 @@ class FoodchainApplication {
         Config.VEGAN_SHOP_SIZE = VEGAN_SHOP_SIZE
         Config.WORKOUT_SHOP_SIZE = WORKOUT_SHOP_SIZE
 
-        val simulation: Simulation = Simulation()
+        val simulation = Simulation()
 
         for (i in (1..Config.WEEKS)) {
-            logger.info(i.toString() + ". WEEK")
+            logger.info("$i. WEEK")
             simulation.runWeek()
         }
 

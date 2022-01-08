@@ -52,14 +52,6 @@ class Meat(
         return this.shopPrice
     }
 
-    /**
-     * Get production cost
-     *
-     * @return
-     */
-    fun getProductionCost(): Double {
-        return this.productionCost
-    }
 
     /**
      * Get amount

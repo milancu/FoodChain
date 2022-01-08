@@ -2,6 +2,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.strategies.customer_strategy
 
 import cz.cvut.fel.omo.foodchain.Foodchain.statics.Config
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Customer
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 import org.slf4j.LoggerFactory
 
@@ -14,7 +15,7 @@ class VeganStrategy : CustomerStrategy {
 
     private val logger = LoggerFactory.getLogger(javaClass)
 
-    override fun execute(products : ArrayList<Product>) : Pair<Double, ArrayList<Product>>{
+    override fun execute(customer : Customer, products : ArrayList<Product>) : Pair<Double, ArrayList<Product>>{
         var spended = 0.0
         val toRemove : ArrayList<Product> = ArrayList()
 
@@ -23,7 +24,7 @@ class VeganStrategy : CustomerStrategy {
             ) {
                 if(product.getAmount() >= Config.STANDARD_SHOP_SIZE){
                     product.decreaseAmount(Config.VEGAN_SHOP_SIZE)
-                    product.notifyPurchased(product.getAmount())
+                    product.notifyPurchased(customer, Config.STANDARD_SHOP_SIZE)
                     spended += Config.VEGAN_SHOP_SIZE * product.getShopPrice()
                 } else {
                     toRemove.add(product)

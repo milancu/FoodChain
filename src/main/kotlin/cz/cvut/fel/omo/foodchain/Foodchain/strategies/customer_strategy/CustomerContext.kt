@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.strategies.customer_strategy
 
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Customer
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 /**
@@ -60,7 +61,7 @@ class CustomerContext(var strategy: CustomerStrategy) {
      * @param products
      * @return
      */
-    fun goShopping(products : ArrayList<Product>) : Pair<Double, ArrayList<Product>>{
-        return strategy.execute(products)
+    fun goShopping(customer : Customer, products : ArrayList<Product>) : Pair<Double, ArrayList<Product>>{
+        return strategy.execute(customer , products)
     }
 }

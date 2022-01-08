@@ -8,6 +8,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.states.State
 import cz.cvut.fel.omo.foodchain.Foodchain.statics.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Grower
 import java.util.*
 
 /**
@@ -111,7 +112,7 @@ class Crop(
 
 
     /**
-     * Grow
+     * Grown
      *
      */
     fun grow() {
@@ -136,9 +137,9 @@ class Crop(
      * Notify was harvested
      *
      */
-    fun notifyWasHarvested(){
+    fun notifyWasHarvested(grower : Grower){
         for (i in observers) {
-            i.update(this.uuid, "CROP HAS BEEN HARVESTED IN WEEK: " + Week.acutalWeek)
+            i.update(this.uuid, "CROP HAS BEEN HARVESTED IN WEEK: " + Week.acutalWeek + " by " + grower.getIdentifier())
         }
     }
 
@@ -148,7 +149,6 @@ class Crop(
                 "CROPT HAS BEEN SHIPPED, " + this.name + ", amount: " + this.amount + "kg, in week:" + Week.acutalWeek)
         }
     }
-
 
     /**
      * Set state

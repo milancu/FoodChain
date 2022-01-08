@@ -70,7 +70,7 @@ class Customer(subjectName: String, location: String, amountOfMoney: Double) :
      * @return
      */
     fun buyProducts(products: ArrayList<Product>): Pair<Double, ArrayList<Product>> {
-        return context.goShopping(products)
+        return context.goShopping(this, products)
     }
 
     /**

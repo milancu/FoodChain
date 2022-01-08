@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.strategies.customer_strategy
 
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Customer
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
 /**
@@ -14,5 +15,5 @@ interface CustomerStrategy {
      * @param products
      * @return
      */
-    fun execute(products : ArrayList<Product>): Pair<Double, ArrayList<Product>>
+    fun execute(customer : Customer, products : ArrayList<Product>): Pair<Double, ArrayList<Product>>
 }

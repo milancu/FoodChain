@@ -6,6 +6,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.states.Context
 import cz.cvut.fel.omo.foodchain.Foodchain.states.State
 import cz.cvut.fel.omo.foodchain.Foodchain.statics.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Customer
 import java.util.*
 
 /**
@@ -94,10 +95,11 @@ open class Product(
         }
     }
 
-    open fun notifyPurchased(amount :Int){
+    open fun notifyPurchased(customer : Customer, amount :Int){
         for (i in observers) {
             i.update(this.origin,
-                "PRODUCT HAS BEEN PURCHASED, " + this.name + ", amount: " + amount.toString() + this.unit + ", shop price: " + Math.round(this.shopPrice * 100.0) / 100.0 + " in week:" + Week.acutalWeek)
+                "PRODUCT HAS BEEN PURCHASED, " + this.name + ", amount: " + amount.toString() + this.unit + ", shop price: " +
+                        Math.round(this.shopPrice * 100.0) / 100.0 + " in week:" + Week.acutalWeek + " by customer " + customer.getIdentifier())
         }
     }
 

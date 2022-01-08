@@ -2,6 +2,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.strategies.customer_strategy
 
 import cz.cvut.fel.omo.foodchain.Foodchain.statics.Config
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Customer
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 import org.slf4j.LoggerFactory
 
@@ -14,7 +15,7 @@ class MeatLoverStrategy : CustomerStrategy {
 
     private val logger = LoggerFactory.getLogger(javaClass)
 
-    override fun execute(products: ArrayList<Product>): Pair<Double, ArrayList<Product>> {
+    override fun execute(customer : Customer, products: ArrayList<Product>): Pair<Double, ArrayList<Product>> {
         var spended = 0.0
         val toRemove : ArrayList<Product> = ArrayList()
 
@@ -23,14 +24,9 @@ class MeatLoverStrategy : CustomerStrategy {
                 product.getProductType() == ProductType.OTHERS ||
                 product.getProductType() == ProductType.SAUCE
             ) {
-                if(product.getProductType() == ProductType.MEAT){
-                    product.notifyPurchased(product.getAmount())
-                    spended += Config.WORKOUT_SHOP_SIZE * product.getShopPrice()
-                    toRemove.add(product)
-                }
-                 else if(product.getAmount() >= Config.WORKOUT_SHOP_SIZE){
+                if(product.getAmount() >= Config.WORKOUT_SHOP_SIZE){
                     product.decreaseAmount(Config.WORKOUT_SHOP_SIZE)
-                    product.notifyPurchased(product.getAmount())
+                    product.notifyPurchased(customer, Config.WORKOUT_SHOP_SIZE)
                     spended += Config.WORKOUT_SHOP_SIZE * product.getShopPrice()
                 } else {
                     toRemove.add(product)
@@ -42,7 +38,6 @@ class MeatLoverStrategy : CustomerStrategy {
         }
         val productsToReturn = removeProducts(products, toRemove)
         return Pair(spended, productsToReturn)
-        /*return spended*/
     }
 
     /**

@@ -74,7 +74,7 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
                 logger.info("Plodina " + field.getCrop().getName() + " sklizena v poctu " + field.getCrop().getAmount())
                 val crop = field.getCrop()
                 harvestedCrop.add(crop)
-                crop.notifyWasHarvested()
+                crop.notifyWasHarvested(this)
                 field.resetField()
             } else {
                 field.growCrop()

@@ -65,31 +65,31 @@ class Farmer(subjectName: String, location: String, amountOfMoney: Double) :
                 "Cow" -> {
                     if (animal.getAge() > 30) {
                         animalToProcess.add(animal)
-                        animal.notifyAnimalWasMoveToProcess()
+                        animal.notifyAnimalWasMoveToProcess(this)
                     }
                 }
                 "Pig" -> {
                     if (animal.getAge() > 20) {
                         animalToProcess.add(animal)
-                        animal.notifyAnimalWasMoveToProcess()
+                        animal.notifyAnimalWasMoveToProcess(this)
                     }
                 }
                 "Chicken" -> {
                     if (animal.getAge() > 10) {
                         animalToProcess.add(animal)
-                        animal.notifyAnimalWasMoveToProcess()
+                        animal.notifyAnimalWasMoveToProcess(this)
                     }
                 }
                 "Goat" -> {
                     if (animal.getAge() > 15) {
                         animalToProcess.add(animal)
-                        animal.notifyAnimalWasMoveToProcess()
+                        animal.notifyAnimalWasMoveToProcess(this)
                     }
                 }
                 "Fish" -> {
                     if (animal.getAge() > 5) {
                         animalToProcess.add(animal)
-                        animal.notifyAnimalWasMoveToProcess()
+                        animal.notifyAnimalWasMoveToProcess(this)
                     }
                 }
             }

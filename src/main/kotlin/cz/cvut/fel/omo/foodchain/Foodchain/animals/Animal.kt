@@ -8,6 +8,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.states.State
 import cz.cvut.fel.omo.foodchain.Foodchain.statics.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Farmer
 import java.util.*
 
 /**
@@ -149,11 +150,11 @@ class Animal(animalType: AnimalType) : Subject, Context {
      * Notify animal was move to process
      *
      */
-    fun notifyAnimalWasMoveToProcess(){
+    fun notifyAnimalWasMoveToProcess(farmer : Farmer){
         for (i in observers) {
             i.update(
                 this.origin,
-                "ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: " + Week.acutalWeek
+                "ANIMAL HAS BEEN MOVED TO PROCESS IN WEEK: " + Week.acutalWeek + " by " + farmer.getIdentifier()
             )
         }
     }

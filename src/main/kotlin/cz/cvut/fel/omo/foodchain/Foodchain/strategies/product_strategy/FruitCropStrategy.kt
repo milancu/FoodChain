@@ -3,6 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.strategies.product_strategy
 import cz.cvut.fel.omo.foodchain.Foodchain.observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.CropProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
@@ -13,9 +14,9 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  * @constructor Create empty Fruit crop strategy
  */
 class FruitCropStrategy : ProcessorCropStrategy {
-    override fun execute(crop: Crop): Product {
+    override fun execute(proccessor : Processor, crop: Crop): Product {
         if (crop.getName() == CropName.GRAPEVINE) {
-            return createFromVine(crop)
+            return createFromVine(proccessor, crop)
         }
         when ((1..4).random()) {
             1 -> {
@@ -30,7 +31,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
 
             }
@@ -46,7 +47,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             3 -> {
@@ -61,7 +62,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             else -> {
@@ -76,7 +77,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
         }
@@ -88,7 +89,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun createFromVine(crop: Crop): Product {
+    private fun createFromVine(proccessor : Processor, crop: Crop): Product {
         when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
@@ -102,7 +103,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             else -> {
@@ -117,7 +118,7 @@ class FruitCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
         }

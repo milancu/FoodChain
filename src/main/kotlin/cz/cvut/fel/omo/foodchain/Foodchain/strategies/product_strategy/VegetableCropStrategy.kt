@@ -3,6 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.strategies.product_strategy
 import cz.cvut.fel.omo.foodchain.Foodchain.observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.CropProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
@@ -13,9 +14,9 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  * @constructor Create empty Vegetable crop strategy
  */
 class VegetableCropStrategy : ProcessorCropStrategy {
-    override fun execute(crop: Crop): Product {
+    override fun execute(proccessor : Processor, crop: Crop): Product {
         when (crop.getName()) {
-            CropName.POTATO -> return createFromPotato(crop)
+            CropName.POTATO -> return createFromPotato(proccessor, crop)
             CropName.SALAD -> {
                 val product = CropProduct(
                     crop.getName().toString(),
@@ -28,12 +29,12 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
-            CropName.CUCCUMBER -> return createFromCucumber(crop)
-            CropName.TOMATO -> return createFromTomato(crop)
-            CropName.ONION -> return createFromOnion(crop)
+            CropName.CUCCUMBER -> return createFromCucumber(proccessor, crop)
+            CropName.TOMATO -> return createFromTomato(proccessor, crop)
+            CropName.ONION -> return createFromOnion(proccessor, crop)
             CropName.SUGARBEAT -> {
                 val product = CropProduct(
                     "Suggar",
@@ -46,7 +47,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             else -> throw Exception("Wrong crop name input: " + crop.getName() + "Vegetable strategy")
@@ -59,7 +60,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun createFromTomato(crop: Crop): Product {
+    private fun createFromTomato(proccessor : Processor, crop: Crop): Product {
         when ((1..4).random()) {
             1 -> {
                 val product = CropProduct(
@@ -74,7 +75,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 )
 
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             2 -> {
@@ -90,7 +91,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 )
 
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             3 -> {
@@ -106,7 +107,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 )
 
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             else -> {
@@ -123,7 +124,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
 
 
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
         }
@@ -135,7 +136,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun createFromCucumber(crop: Crop): Product {
+    private fun createFromCucumber(proccessor : Processor, crop: Crop): Product {
         when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
@@ -150,7 +151,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 )
 
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             else -> {
@@ -166,7 +167,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 )
 
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
         }
@@ -178,7 +179,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun createFromOnion(crop: Crop): Product {
+    private fun createFromOnion(proccessor : Processor, crop: Crop): Product {
         when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
@@ -193,7 +194,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 )
 
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             else -> {
@@ -209,7 +210,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 )
 
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
         }
@@ -221,7 +222,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun createFromPotato(crop: Crop): Product {
+    private fun createFromPotato(proccessor : Processor, crop: Crop): Product {
         when ((1..3).random()) {
             1 -> {
                 val product = CropProduct(
@@ -236,7 +237,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 )
 
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             2 -> {
@@ -252,7 +253,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 )
 
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             else -> {
@@ -268,7 +269,7 @@ class VegetableCropStrategy : ProcessorCropStrategy {
                 )
 
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
         }

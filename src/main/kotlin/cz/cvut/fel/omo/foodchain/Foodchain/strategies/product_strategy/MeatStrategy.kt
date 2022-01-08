@@ -5,6 +5,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.FishType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
+import cz.cvut.fel.omo.foodchain.Foodchain.factory.MeatFactory
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
 import kotlin.collections.ArrayList
@@ -16,19 +17,19 @@ import kotlin.collections.ArrayList
  */
 class MeatStrategy : ProcessorMeatStrategy {
 
-    override fun execute(meat: Meat): ArrayList<MeatProduct> {
+    override fun execute(factory : MeatFactory, meat: Meat): ArrayList<MeatProduct> {
         return when (meat.getType()) {
             MeatType.BEEF -> {
-                executeBeef(meat)
+                executeBeef(factory, meat)
             }
             MeatType.FISH -> {
-                executeFish(meat)
+                executeFish(factory, meat)
             }
             MeatType.CHICKEN -> {
-                executeChicken(meat)
+                executeChicken(factory, meat)
             }
             MeatType.PORK -> {
-                executePork(meat)
+                executePork(factory, meat)
             }
         }
     }
@@ -39,7 +40,7 @@ class MeatStrategy : ProcessorMeatStrategy {
      * @param meat
      * @return
      */
-    private fun executeBeef(meat: Meat): ArrayList<MeatProduct> {
+    private fun executeBeef(factory : MeatFactory, meat: Meat): ArrayList<MeatProduct> {
         val meats = ArrayList<MeatProduct>()
         val dumpling = MeatProduct(
             "Dumpling",
@@ -89,10 +90,10 @@ class MeatStrategy : ProcessorMeatStrategy {
         beefShoulder.attach(Report)
         bovinecheek.attach(Report)
         beeftenderloin.attach(Report)
-        dumpling.notifyUpdate()
-        beefShoulder.notifyUpdate()
-        bovinecheek.notifyUpdate()
-        beeftenderloin.notifyUpdate()
+        dumpling.notifyCreateProduct(factory)
+        beefShoulder.notifyCreateProduct(factory)
+        bovinecheek.notifyCreateProduct(factory)
+        beeftenderloin.notifyCreateProduct(factory)
 
         meats.addAll(
             listOf(
@@ -108,7 +109,7 @@ class MeatStrategy : ProcessorMeatStrategy {
      * @param meat
      * @return
      */
-    private fun executeChicken(meat: Meat): ArrayList<MeatProduct> {
+    private fun executeChicken(factory : MeatFactory, meat: Meat): ArrayList<MeatProduct> {
         val meats = ArrayList<MeatProduct>()
         val chickenThigh = MeatProduct(
             "Chicken thigh",
@@ -148,9 +149,9 @@ class MeatStrategy : ProcessorMeatStrategy {
         chickenBreast.attach(Report)
         chickenWings.attach(Report)
 
-        chickenThigh.notifyUpdate()
-        chickenBreast.notifyUpdate()
-        chickenWings.notifyUpdate()
+        chickenThigh.notifyCreateProduct(factory)
+        chickenBreast.notifyCreateProduct(factory)
+        chickenWings.notifyCreateProduct(factory)
 
         meats.addAll(
             listOf(
@@ -166,7 +167,7 @@ class MeatStrategy : ProcessorMeatStrategy {
      * @param meat
      * @return
      */
-    private fun executePork(meat: Meat): ArrayList<MeatProduct> {
+    private fun executePork(factory : MeatFactory, meat: Meat): ArrayList<MeatProduct> {
         val meats = ArrayList<MeatProduct>()
         val porkDumpling = MeatProduct(
             "Pork dumpling",
@@ -218,10 +219,10 @@ class MeatStrategy : ProcessorMeatStrategy {
         porkLeg.attach(Report)
         porkFlank.attach(Report)
 
-        porkDumpling.notifyUpdate()
-        porkRoast.notifyUpdate()
-        porkLeg.notifyUpdate()
-        porkFlank.notifyUpdate()
+        porkDumpling.notifyCreateProduct(factory)
+        porkRoast.notifyCreateProduct(factory)
+        porkLeg.notifyCreateProduct(factory)
+        porkFlank.notifyCreateProduct(factory)
 
         meats.addAll(
             listOf(
@@ -237,7 +238,7 @@ class MeatStrategy : ProcessorMeatStrategy {
      * @param meat
      * @return
      */
-    private fun executeFish(meat: Meat): ArrayList<MeatProduct> {
+    private fun executeFish(factory : MeatFactory, meat: Meat): ArrayList<MeatProduct> {
         val meats = ArrayList<MeatProduct>()
         when ((1..6).random()) {
             1 -> {
@@ -253,7 +254,7 @@ class MeatStrategy : ProcessorMeatStrategy {
                     meat.getState().changeToNextState()
                 )
                 carp.attach(Report)
-                carp.notifyUpdate()
+                carp.notifyCreateProduct(factory)
                 meats.add(carp)
             }
             2 -> {
@@ -269,7 +270,7 @@ class MeatStrategy : ProcessorMeatStrategy {
                     meat.getState().changeToNextState()
                 )
                 bream.attach(Report)
-                bream.notifyUpdate()
+                bream.notifyCreateProduct(factory)
                 meats.add(bream)
 
             }
@@ -286,7 +287,7 @@ class MeatStrategy : ProcessorMeatStrategy {
                     meat.getState().changeToNextState()
                 )
                 eel.attach(Report)
-                eel.notifyUpdate()
+                eel.notifyCreateProduct(factory)
                 meats.add(eel)
 
             }
@@ -303,7 +304,7 @@ class MeatStrategy : ProcessorMeatStrategy {
                     meat.getState().changeToNextState()
                 )
                 zander.attach(Report)
-                zander.notifyUpdate()
+                zander.notifyCreateProduct(factory)
                 meats.add(zander)
 
             }
@@ -320,7 +321,7 @@ class MeatStrategy : ProcessorMeatStrategy {
                     meat.getState().changeToNextState()
                 )
                 catfish.attach(Report)
-                catfish.notifyUpdate()
+                catfish.notifyCreateProduct(factory)
                 meats.add(catfish)
 
             }
@@ -337,7 +338,7 @@ class MeatStrategy : ProcessorMeatStrategy {
                     meat.getState().changeToNextState()
                 )
                 perch.attach(Report)
-                perch.notifyUpdate()
+                perch.notifyCreateProduct(factory)
                 meats.add(perch)
             }
         }

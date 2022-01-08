@@ -63,7 +63,7 @@ class Request {
             val meatStrategy = MeatStrategy()
 
             for(meat in processedAnimals){
-                processedMeat.addAll(meatStrategy.execute(meat))
+                processedMeat.addAll(meatStrategy.execute(meatFactory, meat))
             }
 
             Transport.takeMeat(processedMeat)

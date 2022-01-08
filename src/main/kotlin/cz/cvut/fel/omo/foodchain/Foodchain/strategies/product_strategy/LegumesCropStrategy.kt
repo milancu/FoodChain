@@ -2,6 +2,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.strategies.product_strategy
 
 import cz.cvut.fel.omo.foodchain.Foodchain.observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.CropProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
@@ -12,7 +13,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  * @constructor Create empty Legumes crop strategy
  */
 class LegumesCropStrategy : ProcessorCropStrategy {
-    override fun execute(crop: Crop): Product {
+    override fun execute(proccessor : Processor, crop: Crop): Product {
         when ((1..2).random()) {
             1 -> {
                 val product =  CropProduct(
@@ -26,7 +27,7 @@ class LegumesCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             else -> {
@@ -41,7 +42,7 @@ class LegumesCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
         }

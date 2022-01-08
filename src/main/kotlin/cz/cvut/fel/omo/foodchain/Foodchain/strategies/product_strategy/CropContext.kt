@@ -1,5 +1,6 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.strategies.product_strategy
 
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 
@@ -62,8 +63,8 @@ class CropContext(var strategy: ProcessorCropStrategy) {
      * @param crop
      * @return
      */
-    fun processProduct(crop : Crop) : Product{
-        return strategy.execute(crop)
+    fun processProduct(processor : Processor, crop : Crop) : Product{
+        return strategy.execute(processor, crop)
     }
 
 

@@ -3,6 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.strategies.product_strategy
 import cz.cvut.fel.omo.foodchain.Foodchain.observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.CropProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
@@ -13,14 +14,14 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  * @constructor Create empty Cereal crop strategy
  */
 class CerealCropStrategy : ProcessorCropStrategy {
-    override fun execute(crop: Crop): Product {
+    override fun execute(proccessor : Processor, crop: Crop): Product {
         return when (crop.getName()) {
-            CropName.BARLEY -> prepareForBeer(crop)
-            CropName.CORN -> createFromCorn(crop)
-            CropName.OATS -> createFromOats(crop)
-            CropName.RYE -> createFromGrain(crop)
-            CropName.WHEET -> createFromGrain(crop)
-            CropName.HOP -> prepareForBeer(crop)
+            CropName.BARLEY -> prepareForBeer(proccessor, crop)
+            CropName.CORN -> createFromCorn(proccessor, crop)
+            CropName.OATS -> createFromOats(proccessor, crop)
+            CropName.RYE -> createFromGrain(proccessor, crop)
+            CropName.WHEET -> createFromGrain(proccessor, crop)
+            CropName.HOP -> prepareForBeer(proccessor, crop)
             else -> throw Exception("Wrong crop name input")
         }
     }
@@ -31,7 +32,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun createFromGrain(crop: Crop): Product {
+    private fun createFromGrain(processor : Processor, crop: Crop): Product {
         when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
@@ -45,7 +46,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(processor)
                 return product
             }
             else -> {
@@ -60,7 +61,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(processor)
                 return product
             }
         }
@@ -72,7 +73,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun prepareForBeer(crop: Crop): Product {
+    private fun prepareForBeer(processor : Processor, crop: Crop): Product {
         val product = CropProduct(
             "Beer",
             ProductType.ALCOHOL,
@@ -84,7 +85,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
             crop.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(processor)
         return product
     }
 
@@ -94,7 +95,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun createFromCorn(crop: Crop): Product {
+    private fun createFromCorn(processor : Processor, crop: Crop): Product {
         when ((1..3).random()) {
             1 -> {
                 val product = CropProduct(
@@ -108,7 +109,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(processor)
                 return product
             }
             2 -> {
@@ -123,7 +124,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(processor)
                 return product
             }
             else -> {
@@ -138,7 +139,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(processor)
                 return product
             }
         }
@@ -150,7 +151,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun createFromOats(crop: Crop): Product {
+    private fun createFromOats(processor : Processor, crop: Crop): Product {
         when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
@@ -164,7 +165,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(processor)
                 return product
             }
             else -> {
@@ -179,7 +180,7 @@ class CerealCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(processor)
                 return product
             }
         }

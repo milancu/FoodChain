@@ -6,6 +6,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.states.Context
 import cz.cvut.fel.omo.foodchain.Foodchain.states.State
 import cz.cvut.fel.omo.foodchain.Foodchain.statics.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Customer
 import java.util.*
 
@@ -84,7 +85,16 @@ open class Product(
     override fun notifyUpdate() {
         for (i in observers) {
             i.update(this.origin,
-                "NEW PRODUCT, " + this.name + ", amount: " + this.amount + this.unit + ", shop price: " + Math.round(this.shopPrice * 100.0) / 100.0 + " in week:" + Week.acutalWeek)
+                "NEW PRODUCT, " + this.name + ", amount: " + this.amount + this.unit + ", shop price: "
+                        + Math.round(this.shopPrice * 100.0) / 100.0 + " in week:" + Week.acutalWeek)
+        }
+    }
+
+    open fun notifyCreateProduct(party : BaseParty) {
+        for (i in observers) {
+            i.update(this.origin,
+                "NEW PRODUCT, " + this.name + ", amount: " + this.amount + this.unit + ", shop price: "
+                        + Math.round(this.shopPrice * 100.0) / 100.0 + " in week:" + Week.acutalWeek + " by" + party.getIdentifier())
         }
     }
 

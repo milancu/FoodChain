@@ -37,23 +37,23 @@ class Processor(subjectName : String, location : String, amountOfMoney : Double)
         when(crop.getType()){
             CropType.CEREAL -> {
                 context = CropContext(cerealStrategy)
-                return context.processProduct(crop)
+                return context.processProduct(this, crop)
             }
             CropType.FRUIT -> {
                 context = CropContext(fruitStrategy)
-                return context.processProduct(crop)
+                return context.processProduct(this, crop)
             }
             CropType.VEGETABLE -> {
                 context = CropContext(vegetableStrategy)
-                return context.processProduct(crop)
+                return context.processProduct(this, crop)
             }
             CropType.LEGUMES -> {
                 context = CropContext(legumesStrategy)
-                return context.processProduct(crop)
+                return context.processProduct(this, crop)
             }
             CropType.FLOWER -> {
                 context = CropContext(flowerStrategy)
-                return context.processProduct(crop)
+                return context.processProduct(this, crop)
             }
             else -> throw Exception("Wrong crop type")
         }

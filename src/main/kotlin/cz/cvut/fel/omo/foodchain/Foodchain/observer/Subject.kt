@@ -1,5 +1,7 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.observer
 
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.BaseParty
+
 /**
  * Subject
  *

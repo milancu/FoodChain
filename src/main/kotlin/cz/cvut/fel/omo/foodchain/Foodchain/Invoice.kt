@@ -16,7 +16,7 @@ import java.util.*
  * @property note
  * @constructor Create empty Invoice
  */
-class Invoice(// odberatel
+class Invoice( // odberatel
     private val subscriber: BaseParty,// dodavatel
     private val contractor: BaseParty, private val price: Double, private val note: InvoiceType
 ) : Subject {

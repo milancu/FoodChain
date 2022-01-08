@@ -3,6 +3,7 @@ package cz.cvut.fel.omo.foodchain.Foodchain.strategies.product_strategy
 import cz.cvut.fel.omo.foodchain.Foodchain.observer.Report
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropName
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
+import cz.cvut.fel.omo.foodchain.Foodchain.parties.Processor
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.CropProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
@@ -14,13 +15,13 @@ import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
  * @constructor Create empty Flower crop strategy
  */
 class FlowerCropStrategy : ProcessorCropStrategy {
-    override fun execute(crop: Crop): Product {
+    override fun execute(proccessor : Processor, crop: Crop): Product {
         return when (crop.getName()) {
-            CropName.FLEX -> createFromFlex(crop)
-            CropName.HEMP -> createFromHemp(crop)
-            CropName.OILSEED -> createFromOilSeed(crop)
-            CropName.POPPY -> createFromPoppy(crop)
-            CropName.SUNFLOWER -> createFromSunflower(crop)
+            CropName.FLEX -> createFromFlex(proccessor, crop)
+            CropName.HEMP -> createFromHemp(proccessor, crop)
+            CropName.OILSEED -> createFromOilSeed(proccessor, crop)
+            CropName.POPPY -> createFromPoppy(proccessor, crop)
+            CropName.SUNFLOWER -> createFromSunflower(proccessor, crop)
             else -> throw Exception("Wrong crop name input " + crop.getName())
         }
     }
@@ -31,7 +32,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun createFromFlex(crop: Crop): Product {
+    private fun createFromFlex(proccessor : Processor, crop: Crop): Product {
         when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
@@ -45,7 +46,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             else -> {
@@ -60,7 +61,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
         }
@@ -72,7 +73,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun createFromSunflower(crop: Crop): Product {
+    private fun createFromSunflower(proccessor : Processor, crop: Crop): Product {
         when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
@@ -86,7 +87,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             else -> {
@@ -101,7 +102,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
         }
@@ -113,7 +114,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun createFromPoppy(crop: Crop): Product {
+    private fun createFromPoppy(proccessor : Processor, crop: Crop): Product {
         when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
@@ -127,7 +128,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             else -> {
@@ -142,7 +143,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
         }
@@ -154,7 +155,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun createFromHemp(crop: Crop): Product {
+    private fun createFromHemp(proccessor : Processor, crop: Crop): Product {
         when ((1..6).random()) {
             1 -> {
                 val product = CropProduct(
@@ -168,7 +169,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             2 -> {
@@ -183,7 +184,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             3 -> {
@@ -198,7 +199,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             4 -> {
@@ -213,7 +214,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             5 -> {
@@ -228,7 +229,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             else -> {
@@ -243,7 +244,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
         }
@@ -255,7 +256,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
      * @param crop
      * @return
      */
-    private fun createFromOilSeed(crop: Crop): Product {
+    private fun createFromOilSeed(proccessor : Processor, crop: Crop): Product {
         when ((1..2).random()) {
             1 -> {
                 val product = CropProduct(
@@ -269,7 +270,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
             else -> {
@@ -284,7 +285,7 @@ class FlowerCropStrategy : ProcessorCropStrategy {
                     crop.getState().changeToNextState()
                 )
                 product.attach(Report)
-                product.notifyUpdate()
+                product.notifyCreateProduct(proccessor)
                 return product
             }
         }

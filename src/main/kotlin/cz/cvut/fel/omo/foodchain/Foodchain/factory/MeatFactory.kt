@@ -124,7 +124,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -147,7 +147,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -170,7 +170,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -193,7 +193,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -216,7 +216,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -239,7 +239,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -262,7 +262,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -285,7 +285,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -308,7 +308,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -331,7 +331,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -354,7 +354,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -370,7 +370,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -386,7 +386,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -402,7 +402,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -418,7 +418,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -434,7 +434,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 
@@ -450,7 +450,7 @@ class MeatFactory(subjectName: String, location: String, amountOfMoney: Double) 
             meat.getState().changeToNextState()
         )
         product.attach(Report)
-        product.notifyUpdate()
+        product.notifyCreateProduct(this)
         return product
     }
 }

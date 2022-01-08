@@ -22,11 +22,23 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
 
     private val logger = LoggerFactory.getLogger(javaClass)
 
+
+    /**
+     * Set initial field
+     *
+     * @return
+     */
     private fun setInitialField() : ArrayList<Field>{
         val generator = Generator()
         return generator.generateFields()
     }
 
+
+    /**
+     * Set inital supplies
+     *
+     * @return
+     */
     private fun setInitalSupplies() : ArrayList<Crop>{
         val generator = Generator()
         return generator.generateCrops()
@@ -101,7 +113,6 @@ class Grower(subjectName : String, location : String, amountOfMoney : Double)
     fun addEmergencyCrop(crop : Crop){
         supplies.add(crop)
     }
-
 }
 
 

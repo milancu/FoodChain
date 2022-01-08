@@ -4,7 +4,6 @@ package cz.cvut.fel.omo.foodchain.Foodchain.observer
 import cz.cvut.fel.omo.foodchain.Foodchain.visitor.Export
 import cz.cvut.fel.omo.foodchain.Foodchain.visitor.ExportVisitor
 import cz.cvut.fel.omo.foodchain.Foodchain.visitor.Visitor
-import java.io.File
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap

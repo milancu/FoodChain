@@ -8,9 +8,7 @@ import cz.cvut.fel.omo.foodchain.Foodchain.states.State
 import cz.cvut.fel.omo.foodchain.Foodchain.statics.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.AnimalType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
-import org.slf4j.LoggerFactory
 import java.util.*
-
 
 /**
  * Animal

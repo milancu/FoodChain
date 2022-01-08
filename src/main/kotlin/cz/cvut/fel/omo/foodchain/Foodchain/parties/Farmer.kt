@@ -1,15 +1,12 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
 import cz.cvut.fel.omo.foodchain.Foodchain.Generator
-import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.iterator.AnimalToProcess
 import cz.cvut.fel.omo.foodchain.Foodchain.animals.Animal
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
-
-// TODO duplicity kodu a iterator - Mila nebudu ti sem smatat
 
 /**
  * Farmer

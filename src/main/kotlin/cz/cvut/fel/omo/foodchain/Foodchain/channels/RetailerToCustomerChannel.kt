@@ -5,7 +5,6 @@ import cz.cvut.fel.omo.foodchain.Foodchain.statics.Request
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Customer
 import cz.cvut.fel.omo.foodchain.Foodchain.parties.Retailer
 import org.slf4j.LoggerFactory
-import kotlin.system.exitProcess
 
 /**
  * Retailer to customer channel

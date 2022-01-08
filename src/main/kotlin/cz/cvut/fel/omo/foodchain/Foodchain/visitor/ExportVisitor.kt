@@ -7,6 +7,12 @@ import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
 
+
+/**
+ * Export visitor
+ *
+ * @constructor Create empty Export visitor
+ */
 class ExportVisitor : Visitor{
 
     private var reports : HashMap<UUID, ArrayList<String>> = HashMap()
@@ -63,14 +69,29 @@ class ExportVisitor : Visitor{
         }
     }
 
+    /**
+     * Get animals
+     *
+     * @return
+     */
     fun getAnimals() : HashMap<UUID, ArrayList<String>>{
         return animalReports
     }
 
+    /**
+     * Get crops
+     *
+     * @return
+     */
     fun getCrops() : HashMap<UUID, ArrayList<String>>{
         return cropReports
     }
 
+    /**
+     * Get invoices
+     *
+     * @return
+     */
     fun getInvoices() : HashMap<UUID, ArrayList<String>>{
         return financeReports
     }

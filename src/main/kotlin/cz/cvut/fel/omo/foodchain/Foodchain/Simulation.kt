@@ -27,6 +27,11 @@ class Simulation {
         Week.acutalWeek++
     }
 
+
+    /**
+     * Print stats
+     *
+     */
     private fun printStats(){
         channelG2P.printStats()
         channelF2M.printStats()
@@ -36,6 +41,10 @@ class Simulation {
         channelRTC.printStats()
     }
 
+    /**
+     * Run simulation
+     *
+     */
     private fun runSimulation(){
         channelG2F.runSimulation()
         channelG2P.runSimulation()

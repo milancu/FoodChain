@@ -7,7 +7,6 @@ import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
-import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 import kotlin.collections.ArrayList
 
 /**

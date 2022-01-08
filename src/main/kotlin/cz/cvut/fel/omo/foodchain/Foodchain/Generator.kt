@@ -77,12 +77,24 @@ class Generator {
         return crop
     }
 
+    /**
+     * Generate feed
+     *
+     * @param capacity
+     * @return
+     */
     private fun generateFeed(capacity: Int): Crop {
         val cropName = CropName.getCropName()
         val growthTime = (0..Config.FLOWER_MAX_AGE).random()
         return Crop(cropName, CropType.CEREAL, capacity, growthTime)
     }
 
+    /**
+     * Set type
+     *
+     * @param name
+     * @return
+     */
     private fun setType(name: CropName): CropType {
         when (name) {
             CropName.APPLE -> return CropType.FRUIT
@@ -152,9 +164,9 @@ class Generator {
         return BaseParty(generatedName, generatedLocation, generatedMoney)
     }
 
-    private fun generateCustomer() : Customer{
+    private fun generateCustomer(): Customer {
         val base: BaseParty = generateNewParty()
-        val money : Double = (Config.SALARY_MIN..Config.SALARY_MAX).random().toDouble()
+        val money: Double = (Config.SALARY_MIN..Config.SALARY_MAX).random().toDouble()
         return Customer(base.getSubjectName(), base.getLocation(), money)
     }
 
@@ -163,7 +175,7 @@ class Generator {
      *
      * @return
      */
-    fun generateCustomers() : ArrayList<Customer>{
+    fun generateCustomers(): ArrayList<Customer> {
         val customers: ArrayList<Customer> = ArrayList()
         for (i in 1..Config.CUSTOMERS) {
             customers.add(generateCustomer())
@@ -196,7 +208,7 @@ class Generator {
      *
      * @return
      */
-    fun generateFactory() : MeatFactory{
+    fun generateFactory(): MeatFactory {
         val base: BaseParty = generateNewParty()
         return MeatFactory(base.getSubjectName(), base.getLocation(), base.getAmountOfMoney())
     }

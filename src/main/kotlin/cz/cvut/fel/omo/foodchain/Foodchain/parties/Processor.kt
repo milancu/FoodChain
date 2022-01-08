@@ -1,11 +1,9 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
-import cz.cvut.fel.omo.foodchain.Foodchain.Invoice
 import cz.cvut.fel.omo.foodchain.Foodchain.strategies.product_strategy.*
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.CropType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
-import org.slf4j.LoggerFactory
 
 /**
  * Processor
@@ -27,8 +25,6 @@ class Processor(subjectName : String, location : String, amountOfMoney : Double)
 
     private var cropSupplies : ArrayList<Crop> = ArrayList()
     private var products : ArrayList<Product> = ArrayList()
-
-    private val logger = LoggerFactory.getLogger(javaClass)
 
     /**
      * Create product

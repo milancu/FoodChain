@@ -4,7 +4,6 @@ import cz.cvut.fel.omo.foodchain.Foodchain.states.State
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import java.util.*
 
-
 /**
  * Meat product
  *

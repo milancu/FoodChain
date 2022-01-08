@@ -1,11 +1,9 @@
 package cz.cvut.fel.omo.foodchain.Foodchain.parties
 
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Crop
-import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 import cz.cvut.fel.omo.foodchain.Foodchain.products.MeatProduct
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Product
 import org.slf4j.LoggerFactory
-import java.util.*
 import kotlin.collections.ArrayList
 
 /**
@@ -14,6 +12,7 @@ import kotlin.collections.ArrayList
  * @constructor Create empty Transport
  */
 class Transport{
+
     companion object TransportCompany {
 
         private var amountOfMoney : Double = 10000.00
@@ -25,6 +24,12 @@ class Transport{
         private var products : ArrayList<Product> = ArrayList()
         private var meats : ArrayList<MeatProduct> = ArrayList()
 
+
+        /**
+         * Transport crop suplies
+         *
+         * @return
+         */
         fun transportCropSuplies() : ArrayList<Crop>{
             val toTransport : ArrayList<Crop> = cropSupplies
             for(supply in cropSupplies){
@@ -34,6 +39,11 @@ class Transport{
             return toTransport
         }
 
+        /**
+         * Transport products
+         *
+         * @return
+         */
         fun transportProducts() : ArrayList<Product>{
             val toTransport : ArrayList<Product> = products
             for(product in products){
@@ -43,6 +53,11 @@ class Transport{
             return toTransport
         }
 
+        /**
+         * Transport meats
+         *
+         * @return
+         */
         fun transportMeats() : ArrayList<MeatProduct>{
             val toTransport : ArrayList<MeatProduct> = meats
             for(meat in meats){
@@ -52,6 +67,11 @@ class Transport{
             return toTransport
         }
 
+        /**
+         * Take crop supplies
+         *
+         * @param supplies
+         */
         fun takeCropSupplies(supplies : ArrayList<Crop>){
             if(supplies.size == 0) return
             for(supply in supplies){
@@ -60,6 +80,11 @@ class Transport{
             }
         }
 
+        /**
+         * Take products
+         *
+         * @param products
+         */
         fun takeProducts(products : ArrayList<Product>){
             for(product in products){
                 this.products.add(product)
@@ -67,6 +92,12 @@ class Transport{
             }
         }
 
+
+        /**
+         * Take meat
+         *
+         * @param meats
+         */
         fun takeMeat(meats : ArrayList<MeatProduct>){
             logger.info("transport prebira masa : " + meats.size)
             for(meat in meats){
@@ -77,6 +108,10 @@ class Transport{
         }
 
 
+        /**
+         * Cargo deduction
+         *
+         */
         fun cargoDeduction(){
             var costs = 0.0
             for(meat in meats){

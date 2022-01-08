@@ -8,8 +8,6 @@ import cz.cvut.fel.omo.foodchain.Foodchain.statics.Week
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.ProductType
 import java.util.*
 
-//TODO jakto ze productionCost neni pouzita? Vyres, zbytek asi mila? Date?
-
 /**
  * Product
  *
@@ -31,16 +29,6 @@ open class Product(
     private var productType: ProductType = ProductType.NOTSET
     private var uuid: UUID = UUID.randomUUID()
     private var createdAt : Int = Week.acutalWeek
-
-
-    /**
-     * Get create at
-     *
-     * @return
-     */
-    fun getCreateAt() : Int {
-        return this.createdAt
-    }
 
     /**
      * Get origin id

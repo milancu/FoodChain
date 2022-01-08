@@ -29,8 +29,6 @@ class Crop(
     private var productionCost: Double = shopPrice * 0.01
     private var state : State = CropState(this, uuid)
 
-
-
     /**
      * Get u u i d
      *
@@ -151,10 +149,21 @@ class Crop(
         }
     }
 
+
+    /**
+     * Set state
+     *
+     * @param state
+     */
     override fun setState(state: State) {
         this.state = state
     }
 
+    /**
+     * Get state
+     *
+     * @return
+     */
     fun getState() : State{
         return state
     }

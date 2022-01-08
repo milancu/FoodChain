@@ -6,75 +6,59 @@ import cz.cvut.fel.omo.foodchain.Foodchain.animals.Animal
 import cz.cvut.fel.omo.foodchain.Foodchain.enums.MeatType
 import cz.cvut.fel.omo.foodchain.Foodchain.products.Meat
 
+/**
+ * Butcher
+ *
+ * @constructor Create empty Butcher
+ */
 class Butcher {
 
+
+    /**
+     * Proccess animal
+     *
+     * @param animals
+     * @return
+     */
     fun proccessAnimal(animals: AnimalToProcess): ArrayList<Meat> { //ITERATOR
-        val meatList = ArrayList<Meat>()
+        var meatList = ArrayList<Meat>()
 
         while (animals.hasNext()) {
             val animal: Animal = animals.next()
             when (animal.getName()) {
                 "Cow" -> {
-                    val shopPrice = 0.7 * animal.getWeight() * MeatType.BEEF.price
-                    val beef = Meat(
-                        MeatType.BEEF,
-                        shopPrice,
-                        shopPrice * 1.4,
-                        0.7 * animal.getWeight(),
-                        animal.getOriginId(), animal.getState().changeToNextState().changeToNextState()
-                    )
-                    meatList.add(beef)
-                    animal.notifyAnimalWasProcessed()
-                    beef.attach(Report)
-                    beef.notifyUpdate()
+                    meatList = prepareMeat(meatList, animal, MeatType.BEEF)
                 }
 
                 "Pig" -> {
-                    val shopPrice = 0.7 * animal.getWeight() * MeatType.PORK.price
-                    val pork = Meat(
-                        MeatType.PORK,
-                        shopPrice,
-                        shopPrice * 1.4,
-                        0.7 * animal.getWeight(),
-                        animal.getOriginId(), animal.getState().changeToNextState()
-                    )
-                    meatList.add(pork)
-                    animal.notifyAnimalWasProcessed()
-                    pork.attach(Report)
-                    pork.notifyUpdate()
+                    meatList = prepareMeat(meatList, animal, MeatType.PORK)
                 }
 
                 "Chicken" -> {
-                    val shopPrice = 0.7 * animal.getWeight() * MeatType.CHICKEN.price
-                    val chicken = Meat(
-                        MeatType.CHICKEN,
-                        shopPrice,
-                        shopPrice * 1.4,
-                        0.7 * animal.getWeight(),
-                        animal.getOriginId(), animal.getState().changeToNextState()
-                    )
-                    meatList.add(chicken)
-                    animal.notifyAnimalWasProcessed()
-                    chicken.attach(Report)
-                    chicken.notifyUpdate()
+                    meatList = prepareMeat(meatList, animal, MeatType.CHICKEN)
                 }
 
                 "Fish" -> {
-                    val shopPrice = 0.7 * animal.getWeight() * MeatType.FISH.price
-                    val fish = Meat(
-                        MeatType.FISH,
-                        shopPrice,
-                        shopPrice * 1.4,
-                        0.7 * animal.getWeight(),
-                        animal.getOriginId(), animal.getState().changeToNextState()
-                    )
-                    meatList.add(fish)
-                    animal.notifyAnimalWasProcessed()
-                    fish.attach(Report)
-                    fish.notifyUpdate()
+                    meatList = prepareMeat(meatList, animal, MeatType.FISH)
                 }
             }
         }
+        return meatList
+    }
+
+    private fun prepareMeat(meatList : ArrayList<Meat>, animal : Animal, type : MeatType) : ArrayList<Meat>{
+        val shopPrice = 0.7 * animal.getWeight() * type.price
+        val meat = Meat(
+            type,
+            shopPrice,
+            shopPrice * 1.4,
+            0.7 * animal.getWeight(),
+            animal.getOriginId(), animal.getState().changeToNextState().changeToNextState()
+        )
+        meatList.add(meat)
+        animal.notifyAnimalWasProcessed()
+        meat.attach(Report)
+        meat.notifyUpdate()
         return meatList
     }
 }

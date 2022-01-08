@@ -80,6 +80,12 @@ open class BaseParty(
         amountOfMoney += value
     }
 
+
+    /**
+     * Pay for invoice
+     *
+     * @param invoice
+     */
     open fun payForInvoice(invoice : Invoice) {
         if (amountOfMoney >= invoice.getPrice()) {
             invoice.getContractor().takeMoney(invoice.getPrice())

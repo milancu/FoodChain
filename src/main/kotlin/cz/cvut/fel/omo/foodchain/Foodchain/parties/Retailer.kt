@@ -145,7 +145,6 @@ class Retailer(subjectName: String, location: String, amountOfMoney: Double) :
 
     fun checkResources(){
         val toRemove : ArrayList<Product> = ArrayList()
-        println("aaaaaaaaaaaaaaaaaaaaaaaaaaaa" + availableProducts.size)
         for(product : Product in availableProducts){
             product.increaseAge()
             logger.info(product.getName() + "se blizi datu spotreby")

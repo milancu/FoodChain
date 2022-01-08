@@ -30,7 +30,7 @@ class FoodchainApplication {
         @RequestParam(value = "WORKOUT_SHOP_SIZE") WORKOUT_SHOP_SIZE: Int,
         model : Model
     ) {
-        val simulation: Simulation = Simulation()
+        println("start")
 
         Config.WEEKS = WEEKS
         Config.GROWERS = GROWERS
@@ -41,6 +41,8 @@ class FoodchainApplication {
         Config.STANDARD_SHOP_SIZE = STANDARD_SHOP_SIZE
         Config.VEGAN_SHOP_SIZE = VEGAN_SHOP_SIZE
         Config.WORKOUT_SHOP_SIZE = WORKOUT_SHOP_SIZE
+
+        val simulation: Simulation = Simulation()
 
         for (i in (1..Config.WEEKS)) {
             logger.info(i.toString() + ". WEEK")

@@ -119,6 +119,9 @@ div label {
     border-radius: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    letter-spacing: 1px;
+    font-family: 'Agency FB';
+    font-weight: bold;
 }
 
 #navbar li {
@@ -149,6 +152,7 @@ div label {
 /* Change the link color to #111 (black) on hover */
 #navbar li a:hover {
     background-color: #e89999;
+    letter-spacing: 3px;
 }
 
 

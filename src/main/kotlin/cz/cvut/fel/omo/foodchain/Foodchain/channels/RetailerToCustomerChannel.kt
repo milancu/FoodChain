@@ -35,8 +35,6 @@ class RetailerToCustomerChannel(private var retailers: ArrayList<Retailer>) : Ch
         }
         var i = 1
         for(retailer in retailers){
-            // TODO malo zbozi v obchode, malo volani na zkazeni potravin, spatne tahani poctu retaileru v configu
-            println("retailer: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" + i)
             i++
             retailer.checkResources()
         }
